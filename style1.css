@@ -14,8 +14,9 @@ body {
 	background-color: #fff;
 	padding: 20px;
 }
-.img {
+a.img {
 	text-align: center;
+	text-decoration: none;
 }
 img {
 	display: block;
