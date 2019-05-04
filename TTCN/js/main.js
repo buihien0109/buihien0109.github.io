@@ -87,4 +87,15 @@ $(document).ready(function () {
 	}, function () {
 		$(this).children(".button-inside").removeClass('full');
 	});
+
+	//scroll header
+	$(window).on('scroll', function (){		
+		if ($(".header").offset().top > 5) {
+			$(".header").addClass("fixed-top");
+		} else {
+			$(".header").removeClass("fixed-top");
+		}		
+	});	
+
+
 });
