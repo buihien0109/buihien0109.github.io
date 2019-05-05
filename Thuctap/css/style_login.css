@@ -1,68 +1,97 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+*, *:before, *:after, body, html{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+ html {
+     overflow-y: scroll;
+     line-height: 1.5;
+     font-family: "Roboto", sans-serif;
+     font-weight: normal;
+     color: rgba(0, 0, 0, 0.87);
+}
 body{
-	margin: 0;
-	padding: 0;
-	font-family: sans-serif;
-	background: url('../img/ballpen-blur-book-1925536.jpg');
+	background: url('../img/bglogo.png');
 	background-size: cover;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
   }
-  .box{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
+.box{
+	position: relative;
 	width: 400px;
 	padding: 40px;
 	background: rgba(0,0,0,.8);
 	box-sizing: border-box;
 	box-shadow: 0 15px 25px rgba(0,0,0,.5);
 	border-radius: 10px;
-  }
-  .box h2{
-	margin: 0 0 30px;
-	padding: 0;
-	color: #fff;
-	text-align: center;
-  }
-  .box .inputBox{
-	position: relative;
-  }
-  .box .inputBox input{
-	width: 100%;
-	padding: 10px 0;
-	font-size: 16px;
-	color: #fff;
-	letter-spacing: 1px; 
-	margin-bottom: 30px;
-	border: none;
-	border-bottom: 1px solid #fff;
-	outline: none;
-	background: transparent;
-  }
-  .box .inputBox label{
+}
+.box img {
+	width: 80px;
+	height: 80px;
 	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 10px 0;
-	font-size: 16px;
+	top: -40px;
+	right: 41%;
+}
+.box h2{
+margin:17px 0 30px;
+padding: 0;
+color: #fff;
+text-align: center;
+}
+.box .inputBox{
+position: relative;
+}
+.box .inputBox input{
+width: 100%;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+letter-spacing: 1px; 
+margin-bottom: 30px;
+border: none;
+border-bottom: 1px solid #fff;
+outline: none;
+background: transparent;
+}
+.box .inputBox label{
+position: absolute;
+top: 0;
+left: 0;
+padding: 10px 0;
+font-size: 16px;
+color: #fff;
+letter-spacing: 1px; 
+pointer-events: none;
+transition: .5s;
+}
+.box .inputBox input:focus ~ label, .box .inputBox input:valid ~ label{
+top: -18px;
+left: 0;
+color: #03a9f4;
+font-size: 12px;
+}
+.box input[type="submit"]{
+background: transparent;
+border: none;
+outline: none;
+color: #fff;
+background: #03a9f4;
+padding: 10px 20px;
+cursor: pointer;
+border-radius: 5px;
+}
+.box .inputBox span {
 	color: #fff;
-	letter-spacing: 1px; 
-	pointer-events: none;
-	transition: .5s;
-  }
-  .box .inputBox input:focus ~ label, .box .inputBox input:valid ~ label{
-	top: -18px;
-	left: 0;
-	color: #03a9f4;
-	font-size: 12px;
-  }
-  .box input[type="submit"]{
-	background: transparent;
-	border: none;
-	outline: none;
-	color: #fff;
-	background: #03a9f4;
-	padding: 10px 20px;
-	cursor: pointer;
-	border-radius: 5px;
-  }
+	position: absolute;
+	right: 1rem;
+    top: 0.5rem;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.box .inputBox input:focus ~ span {
+	opacity: 1;
+	transition: all 0.5s ease;
+}

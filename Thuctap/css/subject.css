@@ -12,7 +12,6 @@
 }
  body {
      font-size: 16px;
-     background-color: #e9eaea;
 }
 /*/
 ///////////////////// //// HEADER ////// /////////////////////
@@ -22,7 +21,7 @@
      min-height: 100px;
      display: grid;
      grid-template-columns: 1fr 1fr 270px 150px;
-     background-color: #fff;
+     background:url(../img/bglogo.png);
     position: fixed;
     left: 0px;
     top: 0px;
@@ -41,7 +40,7 @@
     cursor: pointer;
 }
 .header a {
-     color: rgba(0, 0, 0, 0.87);
+     color: #fff;
 }
 .header ul li a:hover {
     text-decoration: underline;
@@ -64,7 +63,6 @@
 }
 .header.fixed-top{
     transition: all ease .4s;
-    background: #9feaea;
 }
 a.color-white {
     color: #fff !important;
@@ -85,7 +83,7 @@ a.color-white {
     text-align: center;
     animation: scroll-left 20s linear infinite;
     text-transform: uppercase;
-    font-size: 26px;
+    font-size: 20px;
 }
 
 @keyframes scroll-left {
