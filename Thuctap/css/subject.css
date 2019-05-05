@@ -114,16 +114,16 @@ a.color-white {
      height: 50px;
      line-height: 50px;
      text-align: center;
-     background-color: #4B2E83;
+     background-color: #052F4C;
      font-size: 30px;
      color: #fff;
      border-radius: 50%;
 }
  .go-top:hover {
      transition: .3s;
-     border: 2px solid #4B2E83;
+     border: 2px solid #052F4C;
      background-color: #fff;
-     color: #4B2E83;
+     color: #052F4C;
 }
 /*/
 ///////////////////// //// FOOTER ////// /////////////////////
