@@ -11,7 +11,7 @@ body {
 ul.sidebar-menu {
     max-width: 400px;
     list-style-type: none;
-    width: 210px;
+    width: 215px;
 }
 ul.nav-fix-left {
     position: fixed;
@@ -24,14 +24,14 @@ ul.nav-fix-left {
 }
 .sidebar-menu li a  {
     background-color: #008c9e;
-    padding: 20px 25px;
+    padding: 15px 25px;
     display: block;
     text-decoration: none;
     color: #fff;
 }
 .sidebar-menu li a:hover  {
     background-color: #52565d;
-    padding: 20px 25px;
+    padding: 15px 25px;
     display: block;
     text-decoration: none;
     color: #fff;
@@ -54,10 +54,11 @@ li.have-children, li {
 }
 .have-children span::after {
   position: absolute;
-  right: 5px;
+  right: 10px;
   content: "\f054";
   color: #fff;
   transition: all .5s;
+  transform: rotate(180deg);
 }
 li.active.have-children span::after {
     -moz-transform: rotate(90deg);

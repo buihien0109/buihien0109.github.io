@@ -20,7 +20,7 @@
      width: 100%;
      min-height: 100px;
      display: grid;
-     grid-template-columns: 1fr 1fr 270px 150px;
+     grid-template-columns: 140px 1fr 270px 150px;
      background:url(../img/bglogo.png);
     position: fixed;
     left: 0px;
@@ -53,6 +53,10 @@
 .header__logo img.logo {
     position: absolute;
     left: 30px;
+}
+.header__banner {
+    display: flex;
+    align-items: center;
 }
 .header__contact {
     position: relative;
@@ -790,7 +794,6 @@ a.color-white {
 }
  .button-fill.orange {
      background: #008c9e;
-    ;
      color: #fff;
 }
  .button-fill.orange .button-inside {
