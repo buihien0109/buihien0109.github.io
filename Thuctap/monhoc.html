@@ -16,13 +16,15 @@
 </head>
 
 <body>
-    <header class="header" id="header">
+    <header class="header" id="header"> <!-- HEADER -->
             <div class="header__logo">
                 <a href="subject.html" class="back-home">
                     <img src="img/logo-fita-new1.png" class="logo" style="width: 80px; height: 80px;">
                 </a>
             </div>
-            <div class="header__banner"></div>
+            <div class="header__banner">
+                <img src="img/slogan-vi-new1.png" alt="">
+            </div>
             <div class="header__contact flex-center">
                 <ul class="list-unstyled nav-list">
                     <li>
@@ -40,42 +42,63 @@
                 </ul>
             </div>
             <div class="header__btn-login flex-center">
-                <a href="login.html">
-                    <div class="button-fill orange">
-                        <div class="button-text">Đăng nhập</div>
-                        <div class="button-inside">
-                            <div class="inside-text">Đăng&nbspNhập</div>
-                        </div>
+                <!-- <a href="login.html"> -->
+                    <button type="button "class="btn-login-modal" onclick="document.getElementById('modal-login-id').style.display='block'">Đăng nhập</button>
+                    <div id="modal-login-id" class="modal-login">
+  
+                  <form class="modal-content-login animate" action="action_page.php">
+                    <div class="imgcontainer">
+                      <span onclick="document.getElementById('modal-login-id').style.display='none'" class="close" title="Close Modal">&times;</span>
                     </div>
-                </a>
+
+                    <div class="container">
+                      <label for="uname"><b>Mã sinh viên</b></label>
+                      <input type="text" placeholder="..." name="uname" required>
+
+                      <label for="psw"><b>Mật khẩu</b></label>
+                      <input type="password" placeholder="..." name="psw" required>
+
+                      <label>
+                        <input type="checkbox" checked="checked" name="remember"> Nhớ mật khẩu
+                      </label>
+                        
+                      <button class="btn-login" type="submit">Đăng nhập</button>
+                      <!-- <span class="psw">Quên <a href="#">mật khẩu?</a></span> -->
+                    </div>
+
+                    
+                  </form>
+                </div>
+                <!-- </a> -->
             </div>
-        </header>
+        </header> <!-- END HEADER -->
+
     <div class="container">
         <main class="row">
             <ul class="sidebar-menu nav-fix-left" id="side-nav">
                 <li><span class="nav-section-title"></span></li>
-                <li><a href="#"><span class="fa fa-university"></span>Đề cương</a>
+                <li><a href="decuong.html"><span class="fa fa-university"></span>Đề cương</a>
                 </li>
-                <li><a href="#"><span class="fa fa-tags"></span>Link</a>
+                <li><a href="link.html"><span class="fa fa-tags"></span>Link</a>
                 </li>
-                <li><a href="#"><span class="fa fa-trophy"></span>Bài Giảng</a>
+                <li><a href="baigiang.html"><span class="fa fa-trophy"></span>Bài Giảng</a>
                 </li>
-                <li class="have-children"><a href="#"><span class="fa fa-gavel"></span>Bài tập lớn</a>
+                <li class="have-children"><a href="baitaplon.html"><span class="fa fa-gavel"></span>Bài tập lớn</a>
                     <ul>
-                        <li><a href="#">Đăng kí BTL</a></li>
-                        <li><a href="#">Nộp BTL</a></li>
+                        <li><a href="baitaplon.html">Đăng kí BTL</a></li>
+                        <li><a href="baitaplon.html">Nộp BTL</a></li>
                     </ul>
                 </li>
-                <li class="have-children"><a href="#"><span class="fa fa-user-o"></span>Bài tập về nhà</a>
+                <li class="have-children"><a href="btvn.html"><span class="fa fa-user-o"></span>Bài tập về nhà</a>
                     <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
+                        <li><a href="btvn.html">Link 1</a></li>
+                        <li><a href="btvn.html">Link 2</a></li>
                     </ul>
                 </li>
-                <li><a href="#"><span class="fa fa-picture-o"></span>Thực hành</a></li>
-                <li><a href="#"><span class="fa fa-flag"></span>Thi</a>
+                <li><a href="thuchanh.html"><span class="fa fa-picture-o"></span>Thực hành</a></li>
+                <li><a href="thi.html"><span class="fa fa-flag"></span>Thi</a>
                 </li>
-                <li><a href="#"><span class="fa fa-envelope-o"></span>Thông báo</a></li>
+                <li><a href="thongbao.html"><span class="fa fa-envelope-o"></span>Thông báo</a></li>
             </ul>
         </main>
         <section id="home" class="main-content">
@@ -87,9 +110,9 @@
             <section class="home-content">
                 <article class="box content-box">
 
-                    <button class="home-button">Nội quy</button>
+                    <button class="home-button btn-modal-info">Nội quy</button>
 
-                    <div class="modal-overlay">
+                    <div class="modal-overlay" style="display: none;">
                                     <div class="modal">
                                         <a class="close-modal">
                                             <svg viewBox="0 0 20 20">
@@ -110,22 +133,13 @@
                                         <!-- content -->
                                     </div>
                                     <!-- modal -->
-                                </div>
+                    </div>
                 </article>
                 <article class="box content-box">
                     <a href="#" class="home-button">Sách tham khảo</a>
                 </article>
                 <article class="box content-box">
                     <a href="http://daotao.vnua.edu.vn/default.aspx?page=nhapmasv&flag=ThoiKhoaBieu" target="_blank"class="home-button">Thời khóa biểu</a>
-                </article>
-                <article class="box content-box">
-                    <a href="#" class="home-button">Textbook</a>
-                </article>
-                <article class="box content-box">
-                    <a href="#" class="home-button">WPL</a>
-                </article>
-                <article class="box content-box">
-                    <a href="#" class="home-button">Links</a>
                 </article>
             </section>
 

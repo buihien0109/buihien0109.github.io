@@ -1,13 +1,5 @@
 @import url(subject.css);
-*, *:before, *:after, body, html{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    font-size: 16px;
-}
+
 ul.sidebar-menu {
     max-width: 400px;
     list-style-type: none;
@@ -82,13 +74,7 @@ li.active.have-children span::after {
   background-color: #262626;
   padding-left: 8px;
 }
-
-.active {
-  background-color: green;
-  color: white;
-}
-
-.home-content button {
+.home-content > article > button {
     position: relative;
      text-align: center;
     -moz-box-shadow: 0 0 2px #eee;
@@ -113,14 +99,14 @@ li.active.have-children span::after {
     text-decoration: none;
     font-size: 16px;
 }
- .home-content button:hover {
+ .home-content > article > button:hover {
     color: #fff;
     background-color: #0A4273;
     text-decoration: none;
     opacity: 1;
     background-position: right center;
 }
- .home-content button:focus {
+ .home-content > article > button:focus {
      outline: none;
 }
 
@@ -169,7 +155,7 @@ a.home-button {
     text-decoration: none;
 }
 
-.content-box a:hover{
+.content-box > a:hover{
     color: #fff;
     background-color: #0A4273;
     text-decoration: none;

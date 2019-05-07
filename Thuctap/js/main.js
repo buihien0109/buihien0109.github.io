@@ -18,7 +18,7 @@ $(document).ready(function () {
 	});
 
 
-	$(".sidebar-menu > li.have-children a").on("click", function (i) {
+	$(".sidebar-menu > li.have-children > a").on("click", function (i) {
 		i.preventDefault();
 		if (!$(this).parent().hasClass("active")) {
 			$(".sidebar-menu li ul").slideUp();
@@ -34,7 +34,7 @@ $(document).ready(function () {
 	//modal
 	var elements = $('.modal-overlay, .modal');
 
-	$('button').click(function () {
+	$('button.btn-modal-info').click(function () {
 		elements.addClass('active');
 	});
 
@@ -45,41 +45,32 @@ $(document).ready(function () {
 
 	//Slide
 	var slideIndex = 1;
-	showSlides(slideIndex);
+showSlides(slideIndex);
 
-	function plusSlides(n) {
-		showSlides(slideIndex += n);
-	}
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
 
-	function currentSlide(n) {
-		showSlides(slideIndex = n);
-	}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
 
-	function showSlides(n) {
-		var i;
-		var slides = document.getElementsByClassName("mySlides");
-		var dots = document.getElementsByClassName("dot");
-		//Create Infinite loop for slideshow
-		if (n > slides.length) {
-			slideIndex = 1
-		}
-		if (n < 1) {
-			slideIndex = slides.length
-		}
-		//Dispay none all sldie images
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		//Remove all class 'active' for dots
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		}
-		//Display block only 1 image
-		slides[slideIndex - 1].style.display = "block";
-		//Add class 'active' to only 1 dot 
-		dots[slideIndex - 1].className += " active";
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
 
-	}
 
 	//btn-login
 	$(".button-fill").hover(function () {
@@ -89,12 +80,12 @@ $(document).ready(function () {
 	});
 
 	//scroll header
-	$(window).on('scroll', function (){		
-		if ($(".header").offset().top > 5) {
-			$(".header").addClass("fixed-top");
-		} else {
-			$(".header").removeClass("fixed-top");
-		}		
-	});	
+	// $(window).on('scroll', function (){		
+	// 	if ($(".header").offset().top > 5) {
+	// 		$(".header").addClass("fixed-top");
+	// 	} else {
+	// 		$(".header").removeClass("fixed-top");
+	// 	}		
+	// });	
 	
 });
