@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Thiệp chúc mừng năm mới</title>
+</head>
+
+<body>
+    <div class="demo">
+            <iframe src="./Happy New Year Remix.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+        <h1>Chúc mừng năm mới 2019</h1>
+        <p class="text1">Chúc mọi người một năm mới sức khỏe dồi dào, và gặp nhiều may mắn</p>
+        <p class="text2">Happy new year</p>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./jquery.fireworks.js"></script>
+    <script>
+         $('.demo').fireworks({
+        sound: true, // sound effect
+        opacity: 0.9,
+        width: '100%',
+        height: '100%'
+    });
+    </script>
+   
+
+</body>
+
+</html>
