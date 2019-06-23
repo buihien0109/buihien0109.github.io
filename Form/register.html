@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <form id="form-register" action="success.html">
+            <h1>Register</h1>
+            <input type="text" name="name" id="name" placeholder="Họ tên" />
+            <div class="err"></div>
+
+            <input type="text" name="birthday" id="birthday" placeholder="Ngày sinh" />
+            <div class="err"></div>
+
+            <div class="sex-wrapper">
+                <span>Giới tính</span>
+
+                <!-- Với định danh là "sex" thì chỉ có 1 giá trị radio được xác định -->
+                <!-- Thuộc tính for trong lable dùng để click vào chữ trong lable cũng check vào giá trị radio -->
+                <div class="sex">
+                    <input type="radio" name="sex" value="male" id="male" />
+                    <label for="male">Nam</label>
+                </div>
+                <div class="sex">
+                    <input type="radio" name="sex" value="female" id="female" />
+                    <label for="female">Nữ</label>
+                </div>
+
+                <div class="sex">
+                    <input type="radio" name="sex" value="other" id="other" />
+                    <label for="other">Khác</label>
+                </div>
+
+            </div>
+            <div class="err"></div>
+
+            <input type="text" name="address" id="address" placeholder="Địa chỉ" />
+            <div class="err"></div>
+
+            <input type="text" name="phonenumber" id="phonenumber" placeholder="Số điện thoại" />
+            <div class="err"></div>
+              
+            <input type="email" name="email" id="email" placeholder="Email" />
+            <div class="err"></div>
+
+            <input type="password" name="password" id="password" placeholder="Mật khẩu" />
+            <div class="err"></div>
+
+            <div class="buttons">
+                <input type="submit" value="Register" />
+                <input type="submit" value="Reset">
+            </div>
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        $('#form-register').on('submit',validateData)
+        function validateData() {
+            let isValid = true
+            if($('#name').val().trim() === '') {
+                $('#name').next('.err').text('Name is empty')
+                isValid = false
+            }
+            else {
+                $('#name').next('.err').text('')
+            }
+            if($('#email').val().trim().match(/gmail.com/) === null) {
+                $('#email').next('.err').text('Email is invalid')
+                isValid = false
+            }
+            else {
+                $('#email').next('.err').text('')
+            }
+            return isValid
+        }
+    </script>
+</body>
+
+</html>
