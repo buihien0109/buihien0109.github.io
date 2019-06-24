@@ -80,10 +80,11 @@ input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hove
     font-weight: 600
 }
 .err {
-    height: 20px;
     color: red;
-    margin-bottom: 10px;
     font-weight: bold;
+    position: relative;
+    left: 0;
+    bottom: 4px;
 }
 
 /* SUCCESS */
