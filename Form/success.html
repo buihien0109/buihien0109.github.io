@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
 </head>
-
 <body>
     <div class='wrapper'>
         <h1>Đăng ký thành công</h1>
@@ -28,7 +26,6 @@
             <div id='address'>
                 <div class='name'>Địa chỉ</div>
                 <div class='value'></div>
-                <div class='clear'></div>
             </div>
             <div id='phone'>
                 <div class='name'>Điện thoại</div>
@@ -51,10 +48,9 @@
         let url = new URL(window.location.href);
         let name_val = url.searchParams.get("name");
         let birthday_val = url.searchParams.get("birthday");
-        let sex_val = url.searchParams.get("sex");
-        
+        let sex_val = url.searchParams.get("sex");       
         let address_val = url.searchParams.get("address");
-        let phone_val = url.searchParams.get("phone");
+        let phone_val = url.searchParams.get("phonenumber");
         let email_val = url.searchParams.get("email");
         let password_val = url.searchParams.get("password");
 
@@ -65,8 +61,6 @@
         document.getElementsByClassName('value')[4].innerText = phone_val;
         document.getElementsByClassName('value')[5].innerText = email_val;
         document.getElementsByClassName('value')[6].innerText = password_val;
-
     </script>
 </body>
-
 </html>
