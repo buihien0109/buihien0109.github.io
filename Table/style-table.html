@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./style.css">
+    <title>Table</title>
+</head>
+
+<body>
+    <h1>Style table</h1>
+    <div class="table-wrapper">
+        <table>
+            <thead>
+                <tr>
+                    <th>profile_image</th>
+                    <th>dispaly_name</th>
+                    <th>reputation</th>
+                    <th>website_url</th>
+                    <th>creation_date</th>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        $.ajax({
+            url: "https://cody-json-server.herokuapp.com/db",
+            success: function (data) {
+                let users = data.items;
+                render(users);
+            }
+        });
+        function render(users) {
+            const tbody = document.getElementsByTagName('tbody')[0]
+            for (let i = 0; i < users.length; i++) {
+                const user = users[i];
+                let tr = document.createElement('tr')
+                let creation_date = new Date(user.creation_date)
+                tr.innerHTML = `<tr>
+                    <td>
+                        <img src = "${user.profile_image}"/>
+                    </td>
+
+                    <td>
+                        <a href = "${user.link}" title = "${user.link}">${user.display_name}</a>
+                    </td>
+
+                    <td>
+                        ${user.reputation}
+                    </td>
+
+                    <td>
+                        <a href = "${user.website_url}" title = "${user.website_url}">${user.website_url}</a>
+                    </td>
+
+                    <td>
+                        ${creation_date.toLocaleString()}
+                    </td>
+                    
+                </tr>`
+
+                tbody.appendChild(tr)
+            }
+        }
+    </script>
+    <script>
+        $('th').click(function () {
+            let table = $(this).parents('table').eq(0)
+            console.log(table)
+            let rows = table.find('tr:gt(0)').toArray().sort(comparer($(this).index()))
+            this.asc = !this.asc
+            if (!this.asc) { rows = rows.reverse() }
+            for (var i = 0; i < rows.length; i++) { table.append(rows[i]) }
+        })
+
+        function comparer(index) {
+            return function (a, b) {
+                var valA = getCellValue(a, index), valB = getCellValue(b, index)
+                return $.isNumeric(valA) && $.isNumeric(valB) ? valA - valB : valA.localeCompare(valB)
+            }
+        }
+
+        function getCellValue(row, index) { return $(row).children('td').eq(index).text() }
+
+    </script>
+</body>
+
+</html>
