@@ -1,0 +1,76 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.bg {
+  background-color: #e7b066;
+}
+
+.row img {
+  max-width: 100%;
+}
+
+#menu {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#menu a:hover,
+a.active {
+  color: #000 !important;
+}
+
+#menu a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+}
+
+.row > div {
+  position: relative;
+}
+
+div > img {
+  max-width: 100%;
+  border: 6px solid #e7b066;
+}
+
+div > .caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.4s ease;
+  z-index: 10;
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+}
+
+div:hover > .caption {
+  opacity: 1;
+}
+
+.row > div::before {
+  content: " ";
+  position: absolute;
+  width: 95%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+.row > div:hover::before {
+  opacity: 1;
+  border: 6px solid transparent;
+}
