@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgb(104, 145, 162);
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    background-color: azure;
+}
+
+.header a.btn-login{
+    text-decoration: none;
+}
+.header a.btn-login:hover{
+    color: #fff;
+}
+footer {
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
