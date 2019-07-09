@@ -186,29 +186,19 @@ button.toogle-menu i {
     flex-direction: row;
     justify-content: space-between;
 }
-/* #banner .banner-img{
-    width: auto;
-    float: left;
-} */
 #banner .banner-img a img {
     display: block;
     max-width: 100%;
 }
 #banner .banner-content {
-    /* position: absolute;
-    right: 0;
-    bottom: 0; */
     width: 41.43%;
     margin-top: 2%;
-    /* float: right; */
 }
+
 @media screen and (max-width: 1200px) {
     #banner {
         flex-direction: column;
     }
-    /* #banner .banner-img {
-        float: none;
-    } */
 }
 #banner .banner-content h1 {
     font-size: 48px;

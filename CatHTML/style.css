@@ -34,11 +34,9 @@ h2 {
     margin-bottom: 76px;
 }
 .mb-136 {
-    margin-bottom: 136px;
+    margin-bottom: 136px !important;
 }
-p {
-    line-height: 24px;
-}
+
 body {
     width: 1200px;
     max-width: 1200px;
@@ -46,6 +44,25 @@ body {
     color: #626262;
     font-size: 14px;
     font-family: 'Playfair Display', serif;
+}
+p {
+    line-height: 24px;
+}
+a {
+    display: block;
+    margin: 0;
+    padding: 0;
+    color: #626262;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
 }
 header.container {
     width: 1062px;
@@ -64,12 +81,16 @@ header.container {
     font-family: 'Inconsolata', monospace;
     font-size: 30px;
     text-transform: uppercase;
+    letter-spacing: 6px;
 }
 .navbar-light .navbar-nav .nav-link {
     color: #626262;
     text-transform: uppercase;
     padding-left: 50px;
     padding-right: 50px;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+    color: red;
 }
 section.container{
     width: 900px;
@@ -109,6 +130,7 @@ div.container-fluid {
     justify-content: center;
     padding-top: 74px;
     padding-bottom: 74px;
+    margin-bottom: 104px;
 }
 .sign-up {
     display: flex;
@@ -153,20 +175,29 @@ input:focus, input:active {
     font-size: 20px;
     background-color: #fff;
     color: #626262;
+    transition: all .4s ease
+}
+.load-more:hover {
+    color: red;
+    border: 1px solid red;
 }
 
 footer {
     padding: 40px 70px 40px 150px;
-    margin-bottom: 100px;
     background-color: #f0f0f0;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 .contact a {
+    display: inline-block;
     color: #000;
     text-decoration: none;
     padding-right: 15px;
+}
+.contact a:hover{
+    color: red;
 }
 .follow {
     display: flex;
@@ -179,4 +210,114 @@ footer {
 .follow a{
     margin-left: 22px;
     color: #626262;
+}
+.follow a:hover i{
+    color: red;
+}
+
+@media (min-width: 768px) and (max-width: 991px){
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 0;
+    }
+    header.container, section.container {
+        max-width: 720px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mr-60 {
+        margin-right: 0;
+    }
+    .col-md-6 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 0;
+    }
+    header.container, section.container {
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mr-60 {
+        margin-right: 0;
+    }
+    .col-md-6, .post {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .float-right-0 {
+        float: right;
+        padding-right: 0;
+    }
+    footer {
+        flex-direction: column;
+        padding: 40px;
+    }
+    footer > div {
+        margin-bottom: 20px;
+    }
+
+}
+@media (max-width: 575px) {
+    body {
+        width: 100%;
+    }
+    .navbar-light .navbar-nav .nav-link {
+        padding-left: 0;
+    }
+    header.container, section.container {
+        max-width: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .mr-60 {
+        margin-right: 0;
+    }
+    .col-md-6, .post {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer {
+        flex-direction: column;
+        padding: 40px;
+    }
+    footer > div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    header.container {
+        width: 1062px;
+        margin-left: 70px;
+        margin-right: 70px;
+        margin-bottom: 50px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    section.container{
+        width: 900px;
+        max-width: 900px;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    footer {
+        padding: 40px 70px 40px 150px;
+        background-color: #f0f0f0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    footer > div {
+        margin-bottom: 0;
+    }
 }
