@@ -1,0 +1,445 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ----------------font-face--------------- */
+@font-face {
+    font-family: 'latobold';
+    src: url('./fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('./fonts/lato-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoitalic';
+    src: url('./fonts/lato-italic-webfont.woff2') format('woff2'),
+         url('./fonts/lato-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('./fonts/lato-light-webfont.woff2') format('woff2'),
+         url('./fonts/lato-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('./fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('./fonts/lato-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.container-fluid {
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+}
+.height-100 {
+    height: 100%;
+}
+@media (min-width: 768px) {
+    .col-md-6-copy {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 31%;
+        border: none;
+    }
+}
+input::placeholder {
+    color: #ffffff !important;
+  }
+/* --------------hearder------------ */
+#header {
+    position: relative;
+}
+#header .title-page {
+    position: absolute;
+    top: 4%;
+    left: 16%;
+    color: #ffffff;
+    font-size: 24px;
+    font-family: latobold;
+}
+#header .banner-content {
+    width: 63%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: #ffffff;
+    text-align: center;
+}
+#header .banner-content h2{
+    font-size: 55px;
+    line-height: 60px; 
+    font-family: latobold;
+}
+#header .banner-content p{
+    font-size: 18px;
+    line-height: 32px; 
+    font-family: latoregular;
+    padding: 0 135px;
+}
+#header .banner-content .banner-form {
+    margin-top: 43px; 
+}
+#header .banner-content .banner-form input[type=text], #header .banner-content .banner-form input[type=email]{
+    background-color: #979797;
+    border: none;
+    outline: none;
+    height: 56px;
+    width: 266px;
+}
+#header .banner-content .banner-form button[type=submit]{
+    background: linear-gradient(90deg, #FE985B 2.77%, #FE4FA7 100%);
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    outline: none;
+    padding: 17px 52px
+}
+#header .banner-content .banner-form button[type=submit]:hover {
+    background: linear-gradient(90deg, #FE4FA7 100%, #FE985B 2.77%);
+}
+@media screen and (max-width: 1200px) {
+    #header .banner-content .banner-form {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    #header .banner-content .banner-form input[type=text], #header .banner-content .banner-form input[type=email]{
+        width: 200px;
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 992px) {
+    #header .banner-content {
+        width: 90%;
+    }
+    #header .banner-content .banner-form input[type=text], #header .banner-content .banner-form input[type=email]{
+        width: 200px;
+        margin-right: 10px;
+    }
+    #header .banner-content p {
+        padding: 0; 
+    }
+}
+@media screen and (max-width: 768px) {
+    #header .banner-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        top: 60%;
+    }
+    #header .banner-content h2{
+        font-size: 34px;
+        line-height: 40px; 
+        font-family: latobold;
+    }
+    #header .banner-content p{
+        font-size: 18px;
+        line-height: 32px; 
+        font-family: latoregular;
+    }
+    #header .banner-content .banner-form {
+        margin-top: 0; 
+        margin-left: 10px;
+    }
+    #header .banner-content .banner-form input[type=text], #header .banner-content .banner-form input[type=email]{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 600px) {
+    #header .banner-content {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 230px;
+        color:#414141;
+    }
+}
+/* --------------content------------ */
+#content h2 {
+    font-size: 36px;
+    line-height: 51px; 
+    font-family: latobold;
+    margin-bottom: 52px;
+}
+#content h5 {
+    font-size: 18px;
+    font-family: latobold;
+}
+#content p {
+    font-size: 16px;
+    line-height: 28px; 
+    font-family: latolight;
+    margin-bottom: 30px;
+}
+#content p.pr-177 {
+    padding-right: 177px;
+}
+#content .content-header {
+    padding: 117px 0;
+    border-bottom: 1px solid #E2E2E2;
+}
+#content .content-nav {
+    padding-top: 90px;
+    padding-bottom: 132px;
+}
+#content .content-nav h5 {
+    margin: 18px 0;
+}
+@media screen and (max-width: 567px) {
+    #content {
+        padding-left: 20px;
+        padding-right: 20px; 
+    }
+    #content .content-title {
+        text-align: center;
+    }
+    #content .content-title .pr-177 {
+        padding-right: 0;
+    }
+}
+/* --------------describe------------ */
+#describe {
+    background-color: #F6FAFD
+}
+#describe p {
+    font-size: 24px;
+    line-height: 40px; 
+    font-family: latoregular;
+}
+#describe .author h5 {
+    font-size: 24px;
+    font-family: latobold;
+}
+#describe .author p {
+    font-size: 20px;
+    font-family: latoregular;
+}
+@media screen and (max-width: 768px) {
+    #describe .describe-content {
+        margin: 30px
+    }
+    #describe .describe-content .author{
+        margin-bottom: 30px
+    }
+}
+/* --------------pricing------------ */
+#pricing {
+    padding: 117px 0;
+}
+#pricing .pricing-card{
+    margin-top: 100px;
+}
+#pricing .pricing-title {
+    width: 44%;
+    margin: auto;
+}
+#pricing .pricing-title h2{
+    font-size: 36px;
+    line-height: 51px; 
+    font-family: latobold;
+    color: #414141;
+}
+#pricing .pricing-title {
+    font-size: 16px;
+    line-height: 28px; 
+    font-family: latolight;
+    color: #6C6C6C
+}
+#pricing .pricing-card .card{
+    border: none;
+}
+#pricing .pricing-card .card:hover{
+    background-color: #F6FAFD;
+}
+#pricing .pricing-card .card .card-title {
+    color: #414141;
+    font-size: 14px;
+    font-family: latobold;
+}
+#pricing .pricing-card .card .price {
+    display: inline-block;
+    color: #FE4FA7;
+    font-size: 72px;
+    font-family: latobold;
+}
+#pricing .pricing-card .card .month{
+    color: #414141;
+    font-size: 14px;
+    font-family: latobold;
+}
+#pricing .pricing-card .card .card-text{
+    color: #6C6C6C;
+    font-size: 16px;
+    line-height: 28px;
+    font-family: latolight;
+}
+#pricing .pricing-card .card .btn-start {
+    background: linear-gradient(90deg, #FE985B 2.77%, #FE4FA7 97.42%);
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    font-family: latoregular;
+    border: none;
+    outline: none;
+    padding: 15px 50px;
+
+color: #FFFFFF;
+
+}
+@media screen and (max-width: 768px) {
+    #pricing {
+        padding: 60px 0;
+    }
+    #pricing .pricing-title {
+        width: 90%;
+        margin: auto;
+    }
+    #pricing .pricing-card .card{
+        width: 70%;
+        margin: auto;
+        margin-bottom: 30px;
+        border: 1px solid #979797;
+    }
+}
+@media screen and (max-width: 576px) {
+    #pricing .pricing-card .card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+}
+/* --------------get-start------------ */
+#get-started {
+    background-image: linear-gradient(to right,#FE985B, #FE4FA7);
+}
+#get-started .get-started-content {
+    width: 47.4%;
+    margin: auto;
+    text-align: center;
+    padding: 120px 0;
+    color: #ffffff;
+}
+#get-started .get-started-content h2{
+    font-size: 55px;
+    line-height: 60px; 
+    font-family: latobold;
+}
+#get-started .get-started-content p{
+    font-size: 20px;
+    line-height: 30px;
+    font-family: latoregular; 
+    padding: 0px 49px;
+    margin-top: 28px;
+    margin-bottom: 56px;
+}
+#get-started .get-started-content .btn-started{
+    font-size: 18px;
+    background-color: #ffffff;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+#get-started .get-started-content .btn-started:hover {
+    background-color: #F6FAFD;
+}
+@media screen and (max-width: 768px) {
+    #get-started .get-started-content {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 576px) {
+    #get-started .get-started-content {
+        width: 92%;
+    }
+}
+/* --------------footer------------ */
+footer {
+    padding: 86px 0;
+}
+footer h3{
+    font-size: 24px;
+    font-family: latobold;
+}
+footer .nav-contact {
+    margin: 30px 0;
+}
+footer .nav-contact ul li a {
+    display: inline-block;
+    padding: 0 40px;
+    font-family: latobold;
+    font-size: 14px;
+    line-height: 20px;
+    text-decoration: none;
+    color: #464646;
+    cursor: pointer;
+}
+footer .nav-web ul li a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #464646;
+    cursor: pointer;
+}
+footer .copy-right ul li a {
+    display: inline-block;
+    padding: 0 20px;
+    font-size: 14px;
+    font-family: latoregular;
+    text-decoration: none;
+    color: #464646;
+    cursor: pointer;
+}
+footer .nav-web {
+    margin-bottom: 30px;
+}
+
+footer .nav-contact ul li a:hover, footer .nav-web ul li a:hover, footer .copy-right ul li a:hover {
+    color: #FE50A6;
+}
+@media screen and (max-width: 768px) {
+    /* footer .nav-contact, footer .copy-right {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    } */
+    footer .nav-contact ul li a {
+        padding: 0 20px;
+    }
+    footer .nav-copy-right ul li a {
+        padding: 0 10px;
+    }
+}
+@media screen and (max-width: 576px) {
+    footer .nav-contact ul,footer .copy-right ul {
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+        align-items: center;
+    }
+}
