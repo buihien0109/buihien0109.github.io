@@ -1,8 +1,14 @@
-section {
+section, #shop-map {
 	width: 1000px;
     margin: auto;
 }
-
+#contact {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+#shop-map {
+    margin-bottom: 75px;
+}
 .clear {
     clear: both;
 }
@@ -20,7 +26,7 @@ section {
     width: 50%;
     float: left;
 }
-.shop h2 {
+.shop h2, #shop-map h2 {
     font-size: 24px;
     display: inline-block;
     padding-bottom: 6px;
@@ -47,4 +53,65 @@ section {
 }
 .box-info .icon-shop-follow span.twitter{
     color: #00aced;
+}
+
+.shop-contact .div-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.shop-contact .div-2 input[type="text"] {
+    width: 45%;
+    float: left;
+}
+.shop-contact input[type="text"] {
+    border: 1px solid #C5B291;
+    border-radius: 4px;
+    padding-left: 5px;
+    height: 38px;
+    line-height: 38px;
+}
+.shop-contact .group-input {
+    margin: 20px 0;
+}
+.shop-contact .group-input:nth-child(1) {
+    margin-top: 0;
+}
+.shop-contact .group-input textarea{
+    border: 1px solid #C5B291;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.shop-contact .btn-form-contact {
+    font-size: 18px;
+    text-transform: uppercase;
+    background: #C5B291;
+    color: #ffffff;
+    border-radius: 4px;
+    float: left;
+    border: none;
+    outline: none;
+    padding: 4px 25px;
+}
+
+/* --------------------------ban do---------------------- */
+#shop-map iframe {
+    height: 500px;
+    width: 100%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
 }

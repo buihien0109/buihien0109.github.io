@@ -80,6 +80,9 @@ img {
 .border-main {
 	border: 1px solid #C5B291;
 }
+.border-main-bottom {
+	border-bottom: 1px solid #C5B291;
+}
 .border-none {
 	border: none;
 }
