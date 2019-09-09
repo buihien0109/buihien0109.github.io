@@ -1,0 +1,64 @@
+section {
+	width: 1000px;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+#duong-dan {
+    border-bottom: 1px solid #C5B291;
+}
+#duong-dan > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+#register {
+    margin-bottom: 95px;
+}
+#register .register-form {
+    width: 500px;
+    height: auto;
+    margin: 95px auto;
+}
+
+.register-form h2 {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.register-form span {
+    font-size: 16px;
+    display: inline-block;
+    color: #4d4d4d;
+}
+.group-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+.group-input input[type="text"] {
+    width: 300px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 5px;
+    border-radius: 4px;
+    border: 1px solid #C5B291; 
+}
+
+.btn-register-form {
+    font-size: 20px;
+    background: #C5B291;
+    color: #ffffff;
+    border-radius: 4px;
+    float: right;
+    border: none;
+    outline: none;
+    padding: 4px 25px;
+}

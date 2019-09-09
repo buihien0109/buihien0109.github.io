@@ -1,0 +1,50 @@
+section {
+	width: 1000px;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+#duong-dan {
+    border-bottom: 1px solid #C5B291;
+}
+#duong-dan > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+
+.shop {
+    width: 50%;
+    float: left;
+}
+.shop h2 {
+    font-size: 24px;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #57AF8A;
+}
+.box-info {
+    margin-bottom: 35px;
+}
+.box-info p {
+    margin-left: 35px;
+}
+.box-info .icon-shop-follow {
+    margin-left: 35px;
+}
+.box-info .icon-shop-follow span{
+    margin-right: 15px;
+}
+.box-info .icon-shop-follow span.facebook{
+    color: #3b5998;
+}
+.box-info .icon-shop-follow span.youtube{
+    color: #DB4437;
+}
+.box-info .icon-shop-follow span.twitter{
+    color: #00aced;
+}

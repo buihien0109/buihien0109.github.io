@@ -261,6 +261,14 @@ nav ul li a:hover {
 
 
 /*------------------blog-------------------*/
+.list-blog {
+	margin-top: 35px;
+	padding-bottom: 70px;
+	border-bottom: 1px solid #C5B291;
+}
+.blog-item {
+	width: 296px;
+}
 .blog-item .img-blog img{
 	width: 296px;
 	height: auto;
