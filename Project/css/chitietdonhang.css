@@ -20,6 +20,8 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+    margin-bottom: 80px;
 }
 #chitietdonhang > h2{
     font-size: 24px;
@@ -66,7 +68,7 @@ section {
 .customer-list-product .row {
     margin-right: 0px !important;
     margin-left: 0px !important;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 .customer-list-product .row:nth-child(1) {
     margin-bottom: 30px;
@@ -83,7 +85,12 @@ section {
 .customer-list-product .row .col-giamgia {
     flex: 15%;
 }
-
+.col-price, .col-total, .col-count, .col-giamgia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 .customer-list-product .row > div > span {
     font-size: 20px;
     display: inline-block;
@@ -97,7 +104,7 @@ section {
     align-items: center;
 }
 .col-name .card-product1 .card-detail1 {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 .col-name .card-product1 .card-detail1 > p{
     font-size: 16px;
@@ -105,6 +112,9 @@ section {
     margin-bottom: 0; 
 }
 button.goback-home {
+    position: absolute;
+    top: 21px;
+    left: 0;
     border: none;
     outline: none;
     color: #FFF;
@@ -114,4 +124,26 @@ button.goback-home {
     padding: 8px 12px;
     margin-top: 20px;
     margin-bottom: 90px;
+}
+
+.total-shopping-card {
+    border-top: 1px solid #C5B291;
+    padding-top: 15px;
+}
+.total-shopping-card .total-money {
+    width: 342px;
+    float: right;
+}
+.total-shopping-card .total-money .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.total-shopping-card .total-money .row span{
+    font-size: 20px;
+}
+.total-shopping-card .total-money .row:nth-child(3) span{
+    color: #C75050;
 }

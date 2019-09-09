@@ -1,0 +1,40 @@
+section {
+	width: 100%;
+    margin: auto;
+}
+#page-404 {
+    min-height: 602px;
+    background-image: url("../images/404-page.png");
+    background-size: cover;
+}
+
+#page-404 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cangiua {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-404 .cangiua h1 {
+    font-size: 80px;
+    color: #FFF;
+}
+#page-404 .cangiua h2 {
+    font-size: 32px;
+    color: #FFF;
+}
+button.goback-home {
+    border: none;
+    outline: none;
+    color: #FFF;
+    background: #C75050;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 10px 12px;
+    margin-top: 100px;
+}
