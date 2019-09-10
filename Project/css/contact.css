@@ -1,7 +1,8 @@
-section, #shop-map {
-	width: 1000px;
-    margin: auto;
+#duong-dan, #contact, #shop-map {
+	max-width: 70%;
+    margin: 0 auto;
 }
+
 #contact {
     margin-top: 75px;
     margin-bottom: 75px;
@@ -25,6 +26,22 @@ section, #shop-map {
 .shop {
     width: 50%;
     float: left;
+}
+@media screen and (max-width: 992px) {
+    .shop {
+        float: none;
+        margin: 0 auto;
+	}
+}
+@media screen and (max-width: 768px) {
+    .shop {
+        width: 70%;
+	}
+}
+@media screen and (max-width: 992px) {
+    .shop {
+        width: 80%;
+	}
 }
 .shop h2, #shop-map h2 {
     font-size: 24px;
@@ -64,6 +81,13 @@ section, #shop-map {
 .shop-contact .div-2 input[type="text"] {
     width: 45%;
     float: left;
+}
+.shop-contact input.email{
+    width: 45%;
+}
+.text-area {
+    width: 100%;
+    height: 100px;
 }
 .shop-contact input[type="text"] {
     border: 1px solid #C5B291;
