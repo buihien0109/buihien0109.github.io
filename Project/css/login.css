@@ -1,6 +1,10 @@
-section {
+#duong-dan, #login-register {
 	width: 1000px;
-    margin: auto;
+  	margin: auto;
+}
+#login-register {
+	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 .clear {
@@ -15,109 +19,177 @@ section {
     margin-left: 10px;
     margin-bottom: 6px;
 }
-.container-login-form { 
-    font-family:'Roboto';
-    width:300px; 
-    float: left;
-    margin:30px auto 0; 
-    display:block; 
-    background:#FFF;
+/* --------------------login--------------- */
+.login-form, .register-form {
+	width: 500px;
+	max-width: 500px;
+	float: left;
+}
+.login-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login-form h2 {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+ .group-input {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+  .floating-form {
+	width:320px;
   }
-  h2 		 { 
-    text-align:center; 
-    margin-bottom:50px; 
+  .floating-label { 
+	position:relative; 
+	margin-bottom:25px; 
   }
-  
-  /* form starting stylings ------------------------------- */
-  .group 			  { 
-    position:relative; 
-    margin-bottom:45px; 
-  }
-  input 				{
-    font-size:18px;
-    padding:10px 10px 10px 5px;
-    display:block;
-    width:300px;
-    border:none;
-    border-bottom:1px solid #757575;
-  }
-  input:focus 		{ outline:none; border: none; }
-  
-  /* LABEL ======================================= */
-  label 				 {
-    color:#999; 
-    font-size:18px;
-    font-weight:normal;
-    position:absolute;
-    pointer-events:none;
-    left:5px;
-    top:10px;
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
+  .floating-input {
+	font-size:14px;
+	padding:4px 4px;
+	display:block;
+	width:100%;
+	height:30px;
+	background-color: transparent;
+	border:none;
+	border-bottom:1px solid #757575;
   }
   
-  /* active state */
-  input:focus ~ label, input:valid ~ label 		{
-    top:-20px;
-    font-size:14px;
-    color:#C5B291;
+  .floating-input:focus {
+	   outline:none;
+	   border-bottom:2px solid #C5B291; 
   }
   
-  /* BOTTOM BARS ================================= */
-  .bar 	{ position:relative; display:block; width:300px; }
-  .bar:before, .bar:after 	{
-    content:'';
-    height:2px; 
-    width:0;
-    bottom:1px; 
-    position:absolute;
-    background:#C5B291; 
-    transition:0.2s ease all; 
-    -moz-transition:0.2s ease all; 
-    -webkit-transition:0.2s ease all;
-  }
-  .bar:before {
-    left:50%;
-  }
-  .bar:after {
-    right:50%; 
+  .floating-label > label {
+	color:#999; 
+	font-size:14px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	left:5px;
+	top:5px;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
   }
   
-  /* active state */
-  input:focus ~ .bar:before, input:focus ~ .bar:after {
-    width:50%;
+  .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+	top:-18px;
+	font-size:14px;
+	color:#C5B291;
   }
   
-  /* HIGHLIGHTER ================================== */
+
+  .floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+	width:50%;
+  }
+  
+  *, *:before, *:after {
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+  }
+  
+  /* highlighter */
   .highlight {
-    position:absolute;
-    height:60%; 
-    width:100px; 
-    top:25%; 
-    left:0;
-    pointer-events:none;
-    opacity:0.5;
+	position:absolute;
+	height:50%; 
+	width:100%; 
+	top:15%; 
+	left:0;
+	pointer-events:none;
+	opacity:0.5;
   }
   
   /* active state */
-  input:focus ~ .highlight {
-    -webkit-animation:inputHighlighter 0.3s ease;
-    -moz-animation:inputHighlighter 0.3s ease;
-    animation:inputHighlighter 0.3s ease;
+  .floating-input:focus ~ .highlight {
+	-webkit-animation:inputHighlighter 0.3s ease;
+	-moz-animation:inputHighlighter 0.3s ease;
+	animation:inputHighlighter 0.3s ease;
   }
   
-  /* ANIMATIONS ================ */
+  /* animation */
   @-webkit-keyframes inputHighlighter {
-      from { background:#5264AE; }
-    to 	{ width:0; background:transparent; }
+	  from { background:#C5B291; }
+	to 	{ width:0; background:transparent; }
   }
   @-moz-keyframes inputHighlighter {
-      from { background:#5264AE; }
-    to 	{ width:0; background:transparent; }
+	  from { background:#C5B291; }
+	to 	{ width:0; background:transparent; }
   }
   @keyframes inputHighlighter {
-      from { background:#5264AE; }
-    to 	{ width:0; background:transparent; }
+	  from { background:#C5B291; }
+	to 	{ width:0; background:transparent; }
   }
+
+  /* ----------------checkbox------------------- */
+  .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #57AF8A;
+    background-color: #57AF8A;
+}
+.btn-login-form {
+	border:none;
+	outline: none;
+	background: #C5B291;
+	color: #fff;
+	cursor: pointer;
+	padding: 6px 16px;
+	border-radius: 4px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+a.forget-password {
+	display: block;
+	color: #4d4d4d;
+	text-decoration: underline;
+}
+a.forget-password:hover {
+	color: #57AF8A;
+}
+/* --------------------register--------------- */
+.register-form {
+	min-height: 477px;
+	border-radius: 4px;
+	background-image: url("../images/dangky-bg.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box-register {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box-register h2 {
+	font-size: 20px;
+	color: #fff;
+}
+
+.box-register p {
+	font-size: 16px;
+	color: #fff;
+	margin: 0 0 20px;
+}
+.box-register p a{
+	text-decoration: underline;
+	color: #fff;
+}
+.box-register .btn-register-account {
+	border: none;
+	outline: none;
+	display: inline-block;
+	padding: 6px 16px;
+	background: #57AF8A;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+}
 

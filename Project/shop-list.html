@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shop-list.css">
+    <title>Danh mục sản phẩm</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <section id="header">
+        <!-- Địa chỉ Email -->
+        <div class="contact-link-header bg-main color-text-main">
+            <div class="container-header">
+                <p class="font-left">Email: admin@carpo.com - Phone: 012345678</p>
+            </div>
+        </div>
+        <div class="container-header">
+
+            <!-- Logo - Tìm Kiếm - Login - Shopping card -->
+            <div class="header-main d-flex flex-row justify-content-between align-items-center">
+                <div class="img">
+                    <img src="./images/logo.png" alt="logo" class="img-responsive logo">
+                </div>
+                <div class="search-box border-main">
+                    <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
+                    <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center color-text-main">
+                    <div class="btn-login">
+                        <span class="btn-login-icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                        <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
+                    </div>
+                    <div class="btn-login">
+                        <span class="btn-login-icon">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </span>
+                        <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navgation - Thanh điều hướng -->
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Khuyến mại</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section> <!-- END -HEADER -->
+
+    <section id="duong-dan">
+        <a href="index.html">
+            <span>Trang chủ</span>
+        </a>
+        <span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </span>
+        <a href="login.html">
+            <span>Danh mục sản phẩm</span>
+        </a>
+    </section>
+
+    <section id="shop-list">
+
+        <!-- BỘ LỌC -->
+        <div class="category">
+
+            <!-- GIÁ -->
+            <div class="category-box">
+                <h2 class="text-uppercase">Giá</h2>
+                <div class="list-choice">
+                    <div class="item-choice">
+                        <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5">
+                        <span class="checkmark"></span>
+                        <label class="choice" for="Field5_0">0 - 200.000đ</label>
+                    </div>
+                    <div class="item-choice">
+                        <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+                        <span class="checkmark"></span>
+                        <label class="choice" for="Field5_1">200.000đ - 500.000đ</label>
+                    </div>
+                    <div class="item-choice">
+                        <input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+                        <span class="checkmark"></span>
+                        <label class="choice" for="Field5_2">500.000đ - 1.000.000đ</label>
+                    </div>
+                    <div class="item-choice">
+                        <input id="Field5_3" name="Field5" type="radio" value="Four Choice" tabindex="8">
+                        <span class="checkmark"></span>
+                        <label class="choice" for="Field5_3">1.000.000đ - 2.000.000đ</label>
+                    </div>
+                    <div class="item-choice">
+                        <input id="Field5_4" name="Field5" type="radio" value="Five Choice" tabindex="9">
+                        <span class="checkmark"></span>
+                        <label class="choice" for="Field5_4"><i class="fa fa-angle-right" aria-hidden="true"></i>
+                            5.000.000đ </label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- MÀU SẮC -->
+            <div class="category-box">
+                <h2 class="text-uppercase">Màu sắc</h2>
+                <div class="box-color">
+                    <div class="row">
+                        <div class="color-type">
+                            <span class="bg-color bg-color-green"></span>
+                            <span>Xanh</span>
+                        </div>
+                        <div class="color-type">
+                            <span class="bg-color bg-color-white"></span>
+                            <span>Trắng</span>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="color-type">
+                            <span class="bg-color bg-color-yellow"></span>
+                            <span>Vàng</span>
+                        </div>
+                        <div class="color-type">
+                            <span class="bg-color bg-color-violet"></span>
+                            <span>Tím</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SIZE -->
+            <div class="category-box">
+                <h2 class="text-uppercase">Size</h2>
+                <div class="list-checkbox">
+                    <div class="row">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation1">
+                            <label class="custom-control-label" for="customControlValidation1">M</label>
+                        </div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation2">
+                            <label class="custom-control-label" for="customControlValidation2">L</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation3">
+                            <label class="custom-control-label" for="customControlValidation3">XL</label>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- HÌNH THỨC -->
+            <div class="category-box">
+                <h2 class="text-uppercase">Hình thức</h2>
+                <div class="list-choice">
+                    <div class="item-choice">
+                        <input id="km" name="Field5" type="radio" value="First Choice" tabindex="5">
+                        <span class="checkmark"></span>
+                        <label class="choice" for="km">Hàng khuyến mại</label>
+                    </div>
+                    <div class="item-choice">
+                        <input id="new" name="Field5" type="radio" value="Second Choice" tabindex="6">
+                        <span class="checkmark"></span>
+                        <label class="choice" for="new">Hàng mới về</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- DANH MỤC SẢN PHẨM -->
+        <div class="shop-list-product">
+            <div class="sort-box">
+                <div class="type-see">
+                    <span>
+                        <i class="fa fa-th" aria-hidden="true"></i>
+                    </span>
+                    <span>
+                        <i class="fa fa-th-list" aria-hidden="true"></i>
+                    </span>
+                </div>
+
+                <select class="classic">
+                    <option>----Sắp xếp----</option>
+                    <option>Theo giá tăng dần</option>
+                    <option>Theo giá giảm dần</option>
+                    <option>Giảm giá nhiều</option>
+                    <option>Đánh giá nhiều nhất</option>
+                    <option>Được mua nhiều nhất</option>
+                </select>
+            </div>
+
+            <!-- Danh sach san pham -->
+            <div class="list-products">
+                <div class="row">
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 1.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 2.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 3.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 1.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 2.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 3.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 1.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 2.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                    <div class="product-item">
+                        <div class="img-product">
+                            <img src="./images/ao thun 3.png">
+                            <div class="link-product d-flex justify-content-around align-items-center">
+                                <span>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+                                </span>
+                                <span>
+                                    <i class="fa fa-eye" aria-hidden="true"></i>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="decript-product">
+                            <span class="name-product color-text-main font-16 d-block">
+                                Áo thun nam trơn túi ngực
+                            </span>
+                            <span class="price-product d-block">
+                                230.000đ
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PHÂN TRANG -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+
+
+        <div class="clear"></div>
+    </section>
+
+
+
+    <footer>
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="text-uppercase color-text-main">Về carpo</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Thông tin về Carpo</a>
+                    </li>
+                    <li>
+                        <a href="#">Quá trình phát triển</a>
+                    </li>
+                    <li>
+                        <a href="#">Hệ thống cửa hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Tuyển dụng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="text-uppercase color-text-main">Hỗ trợ mua hàng</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Hướng dẫn thanh toán</a>
+                    </li>
+                    <li>
+                        <a href="#">Phương thức vận chuyển</a>
+                    </li>
+                    <li>
+                        <a href="#">Tra cứu đơn hàng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="text-uppercase color-text-main">Chính sách khách hàng</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Khách hàng VIP</a>
+                    </li>
+                    <li>
+                        <a href="#">Khách hàng thanh toán</a>
+                    </li>
+                    <li>
+                        <a href="#">Chính sách đổi trả</a>
+                    </li>
+                    <li>
+                        <a href="#">Chính sách bảo mật</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="text-uppercase color-text-main">Đăng ký nhận thông tin</h2>
+                <div class="register-email border-main">
+                    <input type="text" name="timkiem" placeholder="Email của bạn" class="border-none">
+                    <button type="submit" class="btn-register-email bg-green text-white text-uppercase font-14">Đăng
+                        ký</button>
+                </div>
+                <div class="follow">
+                    <span class="color-text-main font-14">Theo dõi chúng tôi qua</span>
+                    <div class="icon-follow d-inline-block">
+                        <span class="facebook">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

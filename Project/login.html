@@ -92,45 +92,56 @@
         </a>
     </section>
 
-    <section id="login">
-        <!-- form login -->
+    <section id="login-register">
         <div class="login-form">
-            <div class="container-login-form">
-
-                <h2>Đăng nhập</h2>
-
-                <form>
-
-                    <div class="group">
-                        <input type="text" required>
+            <h2 class="text-uppercase text-center">Đăng nhập tài khoản</h2>
+            <div class="form-login-floating">
+                <div class="floating-form">
+                    <div class="floating-label">
+                        <input class="floating-input" type="text" placeholder=" ">
                         <span class="highlight"></span>
-                        <span class="bar"></span>
                         <label>Tài khoản</label>
                     </div>
 
-                    <div class="group">
-                        <input type="text" required>
+                    <div class="floating-label">
+                        <input class="floating-input" type="password" placeholder=" ">
                         <span class="highlight"></span>
-                        <span class="bar"></span>
                         <label>Mật khẩu</label>
                     </div>
-                    <div class="group">
-                        <button type="submit" class="btn-login-form text-uppercase">Đăng nhập</button>
+                </div>
+                <div class="list-checkbox">
+                    <div class="custom-control custom-checkbox">
+                        <input type="checkbox" class="custom-control-input" id="customControlValidation3">
+                        <label class="custom-control-label" for="customControlValidation3">Nhớ mật khẩu</label>
                     </div>
+                </div>
+                <button class="btn-login-form text-uppercase">
+                    Đăng nhập
+                </button>
+                <a href="#" class="forget-password">
+                    Quên mật khẩu
+                </a>
+            </div>
 
-                </form>
+        </div>
 
-
+        <div class="register-form">
+            <div class="box-register">
+                <h2 class="text-uppercase">Nếu bạn chưa có tài khoản</h2>
+                <p>Hãy bấm vào
+                    <a href="./register.html">
+                        Đăng ký
+                    </a>
+                </p>
+                <button class="btn-register-account text-uppercase">Đăng ký tài khoản</button>
             </div>
         </div>
 
-        <!-- form register -->
-        <div class="login-form">
-
-        </div>
-
         <div class="clear"></div>
+
     </section>
+
+
 
 
     <footer>
