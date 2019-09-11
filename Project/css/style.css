@@ -140,6 +140,9 @@ img.logo {
 	display: inline-block;
 	margin-right: 4px;
 }
+a, a:hover {
+	text-decoration: none;
+}
 
 /*--------------Thanh dieu huong---------------*/
 nav {
