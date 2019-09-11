@@ -1,0 +1,155 @@
+.container {
+	width: 1000px;
+  	margin: 60px auto;
+}
+
+.clear {
+    clear: both;
+}
+#duong-dan .container{
+    border-bottom: 1px solid #C5B291;
+}
+#duong-dan .container > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+.list-slide-pro {
+    width: 50%;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.list-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+.info-product {
+    width: 50%;
+    float: left;
+    padding: 27px;
+}
+.info-product h2{
+    font-size: 20px;
+    font-weight: 700;
+    color: #4d4d4d;
+}
+.info-product .stock {
+    margin: 10px 0;
+}
+.info-product .stock .badge{
+    margin-right: 30px;
+}
+.star span {
+    color: #FFBF35;
+    font-size:  20px;
+}
+.price-pro {
+    font-size: 24px;
+}
+.soluong {
+    margin-bottom: 20px;
+}
+.color span, .size span, .soluong span{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.list-size span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #C5B291;
+    margin-right: 10px;
+}
+.list-color span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.list-color span:nth-child(1){
+    background: #C75050;
+}
+.list-color span:nth-child(2){
+    background: #4D4D4D;
+}
+.list-color span:nth-child(3){
+    background: #57AF8A;
+}
+.list-color span:nth-child(4){
+    background: #FFBF35;
+}
+.color, .size {
+    margin-bottom: 20px;
+}
+.total-money {
+    font-size: 20px;
+    font-weight: bold;
+}
+button.buy-now {
+    display: inline-block;
+    color: #fff;
+    background: #C5B291;
+    padding: 6px 16px;
+    border-radius: 4px;
+    border: none;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+button.add-shopping-card {
+    display: inline-block;
+    color: #C5B291;
+    border: none;
+    outline: none;
+    background: #fff;
+    border: 1px solid #C5B291;
+    border-radius: 4px;
+    padding: 6px 12px;
+    text-transform: uppercase;
+}
+
+.col-count-change a {
+    background: #C5B291;
+    color: #ffffff;
+}
+.col-count-change span {
+    display: inline-block;
+    color: #ffffff;
+    background: #C5B291;
+    padding: 4px 8px;
+    margin: 0;
+}
+
+/* ----------------------nhan xet ve san pham---------------- */
+.tab-link {
+    display: flex;
+    flex-direction: row;
+}
+.tab-link .tab-item {
+    border: 1px solid #C5B291;
+    padding: 8px 16px;
+    color: #C5B291;
+    background: #ffffff;
+    margin-right: 10px;
+}
+.tab-link .tab-item:hover , .tab-item.tab-active {
+    background: #C5B291;
+    color: #ffffff;
+}
+.tab-link .tab-item span {
+    display: inline-block;
+    text-transform: uppercase;
+}
+.tab-content {
+    border: 1px solid #C5B291;
+    margin-top: 5px;
+    min-height: 100px;
+    padding: 10px 20px;
+}

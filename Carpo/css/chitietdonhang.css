@@ -1,0 +1,149 @@
+#chitietdonhang, #duong-dan {
+	width: 1000px;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+#duong-dan {
+    border-bottom: 1px solid #C5B291;
+}
+#duong-dan > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+#chitietdonhang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 80px;
+}
+#chitietdonhang > h2{
+    font-size: 24px;
+    display: inline-block;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #57AF8A;
+    text-align: center;
+    margin: 45px 0;
+}
+/* ------------------chi tiet khach hang---------------- */
+.customer-detail {
+    width: 100%;
+    margin-bottom: 53px;
+}
+.customer-detail .id-detail{
+    margin: 0 0 40px;
+}
+.customer-detail .id-detail p{
+    line-height: 1;
+}
+/* ------------------chi tiet don hang---------------- */
+.customer-list-product {
+    width: 100%;
+}
+.customer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.customer-info .customer-address {
+    width: 300px;
+}
+.customer-info .customer-address h2{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.customer-info .customer-address .box-detail {
+    min-height: 190px;
+    border: 1px solid #C5B291;
+    border-radius: 4px;
+    padding: 15px;
+}
+.customer-list-product .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-bottom: 40px;
+}
+.customer-list-product .row:nth-child(1) {
+    margin-bottom: 30px;
+}
+.customer-list-product .row:nth-child(1) > div > span {
+    font-size: 20px;
+}
+.customer-list-product .row .col-name {
+    flex: 40%;
+}
+.customer-list-product .row .col-count,
+.customer-list-product .row .col-price,
+.customer-list-product .row .col-total,
+.customer-list-product .row .col-giamgia {
+    flex: 15%;
+}
+.col-price, .col-total, .col-count, .col-giamgia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.customer-list-product .row > div > span {
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.col-name .card-product1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.col-name .card-product1 .card-detail1 {
+    margin-left: 30px;
+}
+.col-name .card-product1 .card-detail1 > p{
+    font-size: 16px;
+    color: #4d4d4d;
+    margin-bottom: 0; 
+}
+button.goback-home {
+    position: absolute;
+    top: 21px;
+    left: 0;
+    border: none;
+    outline: none;
+    color: #FFF;
+    background: #C75050;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}
+
+.total-shopping-card {
+    border-top: 1px solid #C5B291;
+    padding-top: 15px;
+}
+.total-shopping-card .total-money {
+    width: 342px;
+    float: right;
+}
+.total-shopping-card .total-money .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.total-shopping-card .total-money .row span{
+    font-size: 20px;
+}
+.total-shopping-card .total-money .row:nth-child(3) span{
+    color: #C75050;
+}

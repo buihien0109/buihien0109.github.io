@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://code.jquery.com/jquery-3.4.1.min.js">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./css/style.css">
+	<title>Carpo Shop</title>
+</head>
+
+<body>
+	<!-- HEADER -->
+	<section id="header">
+		<!-- Địa chỉ Email -->
+		<div class="contact-link-header bg-main color-text-main">
+			<div class="container-header">
+				<p class="font-left">Email: admin@carpo.com - Phone: 012345678</p>
+			</div>
+		</div>
+		<div class="container-header">
+
+			<!-- Logo - Tìm Kiếm - Login - Shopping card -->
+			<div class="header-main d-flex flex-row justify-content-between align-items-center">
+				<div class="img">
+					<a href="./index.html">
+						<img src="./images/logo.png" alt="logo" class="img-responsive logo">
+					</a>
+
+				</div>
+				<div class="search-box border-main">
+					<input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
+					<button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
+				</div>
+				<div class="d-flex flex-row justify-content-between align-items-center color-text-main">
+					<a href="./login.html">
+						<div class="btn-login">
+							<span class="btn-login-icon">
+								<i class="fa fa-user" aria-hidden="true"></i>
+							</span>
+							<span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
+						</div>
+					</a>
+					<a href="./shopping-card.html">
+						<div class="btn-login">
+							<span class="btn-login-icon">
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
+						</div>
+					</a>
+
+				</div>
+			</div>
+
+			<!-- Navgation - Thanh điều hướng -->
+			<!-- <nav>
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link active" href="./index.html">Trang chủ</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="./shop-list.html" role="button"
+							aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+						<div class="dropdown-menu">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<a class="dropdown-item" href="#">Something else here</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Separated link</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Khuyến mại</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link " href="#">Liên hệ</a>
+					</li>
+				</ul>
+			</nav> -->
+			<nav class="navbar justify-content-center">
+
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Trang chủ<span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sản phẩm</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Khuyến mại</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Liên hệ</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</section> <!-- END -HEADER -->
+
+	<section id="slide">
+		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-interval="2000">
+					<img src="./images/banner.png" class="d-block w-100" alt="...">
+					<p class="carousel-caption">Ảnh 1</p>
+				</div>
+				<div class="carousel-item" data-interval="2000">
+					<img src="./images/banner.png" class="d-block w-100" alt="...">
+					<p class="carousel-caption">Ảnh 2</p>
+				</div>
+				<div class="carousel-item" data-interval="2000">
+					<img src="./images/banner.png" class="d-block w-100" alt="...">
+					<p class="carousel-caption">Ảnh 3</p>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section>
+
+	<section id="new-product">
+
+		<!-- Chính sách mua hàng -->
+		<div class="purchase-policy border-main d-flex flex-row justify-content-center align-items-center">
+
+			<div class="purchase-policy-item d-flex flex-row justify-content-center align-items-center">
+				<div class="purchase-policy-item-icon">
+					<span>
+						<i class="fa fa-truck" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="purchase-policy-item-content">
+					<h3>Miễn phí vận chuyển</h3>
+					<p>Miễn phí đổi và trả hàng</p>
+				</div>
+			</div>
+
+			<div class="purchase-policy-item border-both d-flex flex-row justify-content-center align-items-center">
+				<div class="purchase-policy-item-icon">
+					<span>
+						<i class="fa fa-usd" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="purchase-policy-item-content">
+					<h3>15 ngày đổi trả</h3>
+					<p>Với hóa đơn trên 500.000đ</p>
+				</div>
+			</div>
+
+			<div class="purchase-policy-item d-flex flex-row justify-content-center align-items-center">
+				<div class="purchase-policy-item-icon">
+					<span>
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+					</span>
+				</div>
+				<div class="purchase-policy-item-content">
+					<h3>Hỗ trợ 24/7</h3>
+					<p>Với hóa đơn trên 500.000đ</p>
+				</div>
+			</div>
+
+		</div>
+		<!-- Sản phẩm mới -->
+		<div class="new-product">
+			<div class="title-new-product">
+				<div class="lable-new d-flex flex-row justify-content-center align-items-center">
+					<span>Sản phẩm mới</span>
+				</div>
+			</div>
+
+			<div class="list-new-product d-flex justify-content-between align-items-center flex-wrap">
+				<a href="./product-detail.html">
+					<div class="product-item">
+
+						<div class="img-product">
+							<img src="./images/6.jfif">
+							<div class="link-product d-flex justify-content-around align-items-center">
+								<span>
+									<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+								</span>
+								<span>
+									<i class="fa fa-heart" aria-hidden="true"></i>
+								</span>
+								<span>
+									<i class="fa fa-eye" aria-hidden="true"></i>
+								</span>
+							</div>
+						</div>
+						<div class="decript-product">
+							<span class="name-product color-text-main font-16 d-block">
+								Áo thun nam trơn túi ngực
+							</span>
+							<span class="price-product d-block">
+								230.000đ
+							</span>
+						</div>
+					</div>
+				</a>
+
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<!-- Banner 2 -->
+	<section id="slide">
+		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+			<div class="carousel-inner">
+				<div class="carousel-item active" data-interval="2000">
+					<img src="./images/banner.png" class="d-block w-100" alt="...">
+					<p class="carousel-caption">Ảnh 1</p>
+				</div>
+				<div class="carousel-item" data-interval="2000">
+					<img src="./images/banner.png" class="d-block w-100" alt="...">
+					<p class="carousel-caption">Ảnh 2</p>
+				</div>
+				<div class="carousel-item" data-interval="2000">
+					<img src="./images/banner.png" class="d-block w-100" alt="...">
+					<p class="carousel-caption">Ảnh 3</p>
+				</div>
+			</div>
+			<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</section> <!-- end banner 2 -->
+
+	<!-- SAN PHAM GIAM GIA -->
+	<section id="discounted-product">
+
+		<!-- Sản phẩm mới -->
+		<div class="new-product">
+			<div class="title-new-product">
+				<div class="lable-new d-flex flex-row justify-content-center align-items-center">
+					<span>Sản phẩm giảm giá</span>
+				</div>
+			</div>
+
+			<div class="list-new-product d-flex justify-content-between align-items-center flex-wrap">
+
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+				<div class="product-item">
+					<div class="img-product">
+						<img src="./images/6.jfif">
+						<div class="link-product d-flex justify-content-around align-items-center">
+							<span>
+								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-heart" aria-hidden="true"></i>
+							</span>
+							<span>
+								<i class="fa fa-eye" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+					<div class="decript-product">
+						<span class="name-product color-text-main font-16 d-block">
+							Áo thun nam trơn túi ngực
+						</span>
+						<span class="price-product d-block">
+							230.000đ
+						</span>
+					</div>
+				</div>
+
+				<button class="see-more text-white bg-main d-flex justify-content-center align-items-center">Xem
+					thêm</button>
+			</div>
+		</div>
+	</section>
+
+	<section id="blog">
+		<div class="title-new-product">
+			<div class="lable-new d-flex flex-row justify-content-center align-items-center">
+				<span>Bài viết</span>
+			</div>
+		</div>
+		<div class="list-blog">
+			<div class="blog-item">
+				<div class="img-blog">
+					<img src="images/aothun1.png">
+				</div>
+				<div class="author-blog d-flex justify-content-between align-items-center">
+					<span class="font-14">02-08-2019</span>
+					<span class="font-14">Đăng bởi: Admin</span>
+				</div>
+				<div class="title-blog">
+					<p class="font-20">Sợi Bamboo là gì? Tại sao Áo Sơ Mi sợi Bamboo lại được ưa chuộng như vậy</p>
+				</div>
+				<div class="content-blog">
+					<p class="font-14">Sợi bamboo hay còn gọi là sợi tre,có thành phần chủ yếu từ cây tre, tre được biết
+						đến là loại cây dễ trồng, sinh trưởng nhanh</p>
+				</div>
+			</div>
+			<div class="blog-item">
+				<div class="img-blog">
+					<img src="images/aothun1.png">
+				</div>
+				<div class="author-blog d-flex justify-content-between align-items-center">
+					<span class="font-14">02-08-2019</span>
+					<span class="font-14">Đăng bởi: Admin</span>
+				</div>
+				<div class="title-blog">
+					<p class="font-20">Sợi Bamboo là gì? Tại sao Áo Sơ Mi sợi Bamboo lại được ưa chuộng như vậy</p>
+				</div>
+				<div class="content-blog">
+					<p class="font-14">Sợi bamboo hay còn gọi là sợi tre,có thành phần chủ yếu từ cây tre, tre được biết
+						đến là loại cây dễ trồng, sinh trưởng nhanh</p>
+				</div>
+			</div>
+			<div class="blog-item">
+				<div class="img-blog">
+					<img src="images/aothun1.png">
+				</div>
+				<div class="author-blog d-flex justify-content-between align-items-center">
+					<span class="font-14">02-08-2019</span>
+					<span class="font-14">Đăng bởi: Admin</span>
+				</div>
+				<div class="title-blog">
+					<p class="font-20">Sợi Bamboo là gì? Tại sao Áo Sơ Mi sợi Bamboo lại được ưa chuộng như vậy</p>
+				</div>
+				<div class="content-blog">
+					<p class="font-14">Sợi bamboo hay còn gọi là sợi tre,có thành phần chủ yếu từ cây tre, tre được biết
+						đến là loại cây dễ trồng, sinh trưởng nhanh</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-sm-6">
+					<h2 class="text-uppercase color-text-main">Về carpo</h2>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#">Thông tin về Carpo</a>
+						</li>
+						<li>
+							<a href="#">Quá trình phát triển</a>
+						</li>
+						<li>
+							<a href="#">Hệ thống cửa hàng</a>
+						</li>
+						<li>
+							<a href="#">Tuyển dụng</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h2 class="text-uppercase color-text-main">Hỗ trợ mua hàng</h2>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#">Hướng dẫn mua hàng</a>
+						</li>
+						<li>
+							<a href="#">Hướng dẫn thanh toán</a>
+						</li>
+						<li>
+							<a href="#">Phương thức vận chuyển</a>
+						</li>
+						<li>
+							<a href="#">Tra cứu đơn hàng</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h2 class="text-uppercase color-text-main">Chính sách khách hàng</h2>
+					<ul class="list-unstyled">
+						<li>
+							<a href="#">Khách hàng VIP</a>
+						</li>
+						<li>
+							<a href="#">Khách hàng thanh toán</a>
+						</li>
+						<li>
+							<a href="#">Chính sách đổi trả</a>
+						</li>
+						<li>
+							<a href="#">Chính sách bảo mật</a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-md-3 col-sm-6">
+					<h2 class="text-uppercase color-text-main">Đăng ký nhận thông tin</h2>
+					<div class="register-email border-main">
+						<input type="text" name="timkiem" placeholder="Email của bạn" class="border-none">
+						<button type="submit" class="btn-register-email bg-green text-white text-uppercase font-14">Đăng
+							ký</button>
+					</div>
+					<div class="follow">
+						<span class="color-text-main font-14">Theo dõi chúng tôi qua</span>
+						<div class="icon-follow d-inline-block">
+							<span class="facebook">
+								<i class="fa fa-facebook-official" aria-hidden="true"></i>
+							</span>
+							<span class="youtube">
+								<i class="fa fa-youtube-play" aria-hidden="true"></i>
+							</span>
+							<span class="twitter">
+								<i class="fa fa-twitter-square" aria-hidden="true"></i>
+							</span>
+						</div>
+					</div>
+				</div>
+			</div>
+	</footer>
+
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

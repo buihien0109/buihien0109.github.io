@@ -1,0 +1,195 @@
+#duong-dan, #login-register {
+	width: 1000px;
+  	margin: auto;
+}
+#login-register {
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+.clear {
+    clear: both;
+}
+#duong-dan {
+    border-bottom: 1px solid #C5B291;
+}
+#duong-dan > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+/* --------------------login--------------- */
+.login-form, .register-form {
+	width: 500px;
+	max-width: 500px;
+	float: left;
+}
+.login-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.login-form h2 {
+	font-size: 20px;
+	margin-bottom: 30px;
+}
+ .group-input {
+	position: relative;
+	margin-bottom: 25px;
+}
+
+  .floating-form {
+	width:320px;
+  }
+  .floating-label { 
+	position:relative; 
+	margin-bottom:25px; 
+  }
+  .floating-input {
+	font-size:14px;
+	padding:4px 4px;
+	display:block;
+	width:100%;
+	height:30px;
+	background-color: transparent;
+	border:none;
+	border-bottom:1px solid #757575;
+  }
+  
+  .floating-input:focus {
+	   outline:none;
+	   border-bottom:2px solid #C5B291; 
+  }
+  
+  .floating-label > label {
+	color:#999; 
+	font-size:14px;
+	font-weight:normal;
+	position:absolute;
+	pointer-events:none;
+	left:5px;
+	top:5px;
+	transition:0.2s ease all; 
+	-moz-transition:0.2s ease all; 
+	-webkit-transition:0.2s ease all;
+  }
+  
+  .floating-input:focus ~ label, .floating-input:not(:placeholder-shown) ~ label {
+	top:-18px;
+	font-size:14px;
+	color:#C5B291;
+  }
+  
+
+  .floating-input:focus ~ .bar:before, .floating-input:focus ~ .bar:after, .floating-select:focus ~ .bar:before, .floating-select:focus ~ .bar:after {
+	width:50%;
+  }
+  
+  *, *:before, *:after {
+	  -webkit-box-sizing: border-box;
+	  -moz-box-sizing: border-box;
+	  box-sizing: border-box;
+  }
+  
+  /* highlighter */
+  .highlight {
+	position:absolute;
+	height:50%; 
+	width:100%; 
+	top:15%; 
+	left:0;
+	pointer-events:none;
+	opacity:0.5;
+  }
+  
+  /* active state */
+  .floating-input:focus ~ .highlight {
+	-webkit-animation:inputHighlighter 0.3s ease;
+	-moz-animation:inputHighlighter 0.3s ease;
+	animation:inputHighlighter 0.3s ease;
+  }
+  
+  /* animation */
+  @-webkit-keyframes inputHighlighter {
+	  from { background:#C5B291; }
+	to 	{ width:0; background:transparent; }
+  }
+  @-moz-keyframes inputHighlighter {
+	  from { background:#C5B291; }
+	to 	{ width:0; background:transparent; }
+  }
+  @keyframes inputHighlighter {
+	  from { background:#C5B291; }
+	to 	{ width:0; background:transparent; }
+  }
+
+  /* ----------------checkbox------------------- */
+  .custom-control-input:checked~.custom-control-label::before {
+    color: #fff;
+    border-color: #57AF8A;
+    background-color: #57AF8A;
+}
+.btn-login-form {
+	border:none;
+	outline: none;
+	background: #C5B291;
+	color: #fff;
+	cursor: pointer;
+	padding: 6px 16px;
+	border-radius: 4px;
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+a.forget-password {
+	display: block;
+	color: #4d4d4d;
+	text-decoration: underline;
+}
+a.forget-password:hover {
+	color: #57AF8A;
+}
+/* --------------------register--------------- */
+.register-form {
+	min-height: 477px;
+	border-radius: 4px;
+	background-image: url("../images/dangky-bg.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box-register {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.box-register h2 {
+	font-size: 20px;
+	color: #fff;
+}
+
+.box-register p {
+	font-size: 16px;
+	color: #fff;
+	margin: 0 0 20px;
+}
+.box-register p a{
+	text-decoration: underline;
+	color: #fff;
+}
+.box-register .btn-register-account {
+	border: none;
+	outline: none;
+	display: inline-block;
+	padding: 6px 16px;
+	background: #57AF8A;
+	color: #fff;
+	cursor: pointer;
+	border-radius: 4px;
+}
+

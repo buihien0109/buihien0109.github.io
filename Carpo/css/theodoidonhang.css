@@ -1,0 +1,74 @@
+#theodoidonhang, #duong-dan {
+	width: 1000px;
+    margin: auto;
+}
+
+.clear {
+    clear: both;
+}
+#duong-dan {
+    border-bottom: 1px solid #C5B291;
+}
+#duong-dan > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+#theodoidonhang {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#theodoidonhang h2{
+    font-size: 24px;
+    display: inline-block;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #57AF8A;
+    text-align: center;
+    margin: 45px 0;
+}
+
+/* ------------------đơn hàng của tôi---------------- */
+.list-product-shopping-card {
+    width: 100%;
+}
+.list-product-shopping-card .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-bottom: 20px;
+}
+.list-product-shopping-card .row:nth-child(1) {
+    margin-bottom: 30px;
+}
+.list-product-shopping-card .row:nth-child(1) > div > span {
+    font-size: 20px;
+}
+.list-product-shopping-card .row .col-name {
+    flex: 35%;
+}
+.list-product-shopping-card .row .col-id,
+.list-product-shopping-card .row .col-time,
+.list-product-shopping-card .row .col-total {
+    flex: 15%;
+}
+.list-product-shopping-card .row .col-status {
+    flex: 20%;
+}
+.list-product-shopping-card .row > div > span {
+    font-size: 16px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+button.goback-home {
+    border: none;
+    outline: none;
+    color: #FFF;
+    background: #C75050;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-top: 20px;
+    margin-bottom: 90px;
+}

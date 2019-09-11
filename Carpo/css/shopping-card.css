@@ -1,0 +1,353 @@
+#card-product, #duong-dan, #pay-info, #chinhsachmuahang{
+	width: 1000px;
+    margin: auto;
+}
+#contact {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+#shop-map {
+    margin-bottom: 75px;
+}
+.clear {
+    clear: both;
+}
+#duong-dan {
+    border-bottom: 1px solid #C5B291;
+}
+#duong-dan > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+ img {
+     display: block;
+     max-width: 100%;
+     margin: 0 auto;
+ }
+/* ----------------Giỏ hàng của bạn----------------- */
+#card-product h2 {
+    font-size: 24px;
+    margin: 40px 0;
+    text-transform: uppercase;
+}
+.group-btn-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 75px;
+}
+.group-btn-card button {
+    text-transform: uppercase;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 20px;
+}
+.group-btn-card .btn-continue {
+    background: #C75050;
+    color: #ffffff;
+}
+.group-btn-card .btn-delete {
+    background: #AAAAAA;
+    color: #ffffff;
+}
+.list-product-shopping-card .row {
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    margin-bottom: 50px;
+}
+.list-product-shopping-card .row:nth-child(1) {
+    margin-bottom: 30px;
+}
+.list-product-shopping-card .row .col-name {
+    flex: 65%;
+}
+.list-product-shopping-card .row .col-count,
+.list-product-shopping-card .row .col-price,
+.list-product-shopping-card .row .col-total {
+    flex: calc(35%/3);
+}
+.list-product-shopping-card .row > div > span {
+    font-size: 20px;
+    display: inline-block;
+    margin-bottom: 8px;
+}
+.col-name .card-product {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.col-name .card-product .card-img{
+    width: 96px;
+    height: 100px;
+}
+.col-name .card-product .card-detail {
+    margin-left: 20px;
+}
+.col-name .card-product .card-detail > p{
+    font-size: 16px;
+    color: #4d4d4d;
+    margin-bottom: 0; 
+}
+.col-name .card-product .card-detail > p:nth-child(2){
+    margin-bottom: 16px; 
+}
+.col-name .card-product .card-detail a > span{
+    font-size: 14px;
+    color: #C75050;
+}
+.col-price, .col-total, .col-count {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.col-price > span, .col-total > span {
+    font-size: 20px;
+}
+.col-count .col-count-change, .col-count .col-count-change a {
+    background: #C5B291;
+    color: #ffffff;
+}
+.col-count .col-count-change span {
+    display: inline-block;
+    padding: 4px 8px;
+    margin: 0;
+}
+/* --------------------seclect-------------- */
+select {
+
+    /* styling */
+    background-color: white;
+    border: 1px solid #C5B291;
+    border-radius: 4px;
+    display: inline-block;
+    font: inherit;
+    width: 201px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 5px;
+    
+    /* reset */
+  
+    margin: 0;      
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+  }
+  
+  
+  /* arrows */
+  
+  select.classic {
+    background-image:
+      linear-gradient(45deg, transparent 50%, white 50%),
+      linear-gradient(135deg, white 50%, transparent 50%),
+      linear-gradient(to right, #57AF8A, #57AF8A);
+    /* background: #57AF8A; */
+    background-position:
+      calc(100% - 20px) calc(1em + 2px),
+      calc(100% - 15px) calc(1em + 2px),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+  }
+  
+  select.classic:focus {
+    background-image:
+      linear-gradient(45deg, white 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, white 50%),
+      linear-gradient(to right, gray, gray);
+    background-position:
+      calc(100% - 15px) 1em,
+      calc(100% - 20px) 1em,
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+    border-color: grey;
+    outline: 0;
+  }
+
+/* --------------------Tổng tiền đơn hàng-------------- */
+.total-shopping-card {
+    border-top: 1px solid #C5B291;
+}
+.total-shopping-card p{
+    font-size: 20px;
+    color: #4d4d4d;
+    text-align: right;
+    margin-top: 16px;
+}
+.total-shopping-card p span{
+    color: #C75050;
+}
+
+/* --------------------Thanh toán------------------------- */
+#pay-info {
+    display: flex;
+    flex-direction: row;
+    margin-top: 84px;
+}
+#pay-info .pay-same {
+    flex: calc(100%/3);
+}
+.pay-address {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 20px;
+}
+.pay-same h3 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 33px;
+}
+.pay-address .group-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.pay-address .group-input input{
+    height: 38px;
+    line-height: 38px;
+    padding-left: 5px;
+    border-radius: 4px;
+    border: 1px solid #C5B291; 
+}
+.pay-address .group-input textarea{
+    border: 1px solid #C5B291;
+    border-radius: 4px;
+    padding-left: 5px;
+    padding-top: 5px;
+}
+
+/* -----------------lựa chon--------------- */
+.pay-type {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.pay-type .list-choice {
+    display: flex;
+    flex-direction: column;
+    
+}
+.pay-type .list-choice .item-choice {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    position: relative;
+}
+label.choice {
+    margin-left: 30px !important;
+}
+.pay-type .list-choice .item-choice input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.checkmark {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+.pay-type .list-choice .item-choice input ~ .checkmark {
+    background-color: #ccc;
+}
+.pay-type .list-choice .item-choice input:checked ~ .checkmark {
+    background-color: #57AF8A;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.pay-type .list-choice .item-choice input:checked ~ .checkmark:after {
+    display: block;
+}
+.item-choice .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+/* -----------------------bước cuối------------------- */
+.pay-same.pay-final {
+    padding-left: 20px;
+}
+.pay-final p{
+    margin-top: 6px;
+    font-size: 14px;
+}
+.ma-giam-gia {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.ma-giam-gia input{
+    height: 38px;
+    line-height: 38px;
+    padding-left: 5px;
+    border-radius: 4px;
+    border: 1px solid #C5B291; 
+}
+.ma-giam-gia button {
+    display: inline-block;
+    font-size: 14px;
+    background: #4D4D4D;
+    color: #ffffff;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.red {
+    color: #C75050;
+}
+.thanhtoan-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.btn-final {
+    display: inline-block;
+    font-size: 20px;
+    background: #C75050;
+    color: #ffffff;
+    margin-top: 15px;
+    padding: 6px 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    float: right;
+}

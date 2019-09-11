@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/shopping-card.css">
+    <title>Đăng ký tài khoản</title>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <section id="header">
+        <!-- Địa chỉ Email -->
+        <div class="contact-link-header bg-main color-text-main">
+            <div class="container-header">
+                <p class="font-left">Email: admin@carpo.com - Phone: 012345678</p>
+            </div>
+        </div>
+        <div class="container-header">
+
+            <!-- Logo - Tìm Kiếm - Login - Shopping card -->
+            <div class="header-main d-flex flex-row justify-content-between align-items-center">
+                <div class="img">
+                    <img src="./images/logo.png" alt="logo" class="img-responsive logo">
+                </div>
+                <div class="search-box border-main">
+                    <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
+                    <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
+                </div>
+                <div class="d-flex flex-row justify-content-between align-items-center color-text-main">
+                    <div class="btn-login">
+                        <span class="btn-login-icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </span>
+                        <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
+                    </div>
+                    <div class="btn-login">
+                        <span class="btn-login-icon">
+                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        </span>
+                        <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Navgation - Thanh điều hướng -->
+            <nav>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Trang chủ</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                            aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Separated link</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Khuyến mại</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Liên hệ</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </section> <!-- END -HEADER -->
+
+    <section id="duong-dan">
+        <a href="index.html">
+            <span>Trang chủ</span>
+        </a>
+        <span>
+            <i class="fa fa-angle-right" aria-hidden="true"></i>
+        </span>
+        <a href="login.html">
+            <span>Giỏ hàng</span>
+        </a>
+    </section>
+
+    <section id="card-product">
+        <h2>Giỏ hàng của bạn</h2>
+        <div class="group-btn-card">
+            <button class="btn-continue">Tiếp tục mua hàng</button>
+            <button class="btn-delete">Xóa giỏ hàng</button>
+        </div>
+        <div class="list-product-shopping-card">
+            <div class="row border-main-bottom">
+                <div class="col-name">
+                    <span>Tên sản phẩm</span>
+                </div>
+                <div class="text-center col-count">
+                    <span>Số lượng</span>
+                </div>
+                <div class="text-center col-price">
+                    <span>Giá tiền</span>
+                </div>
+                <div class="text-center col-total">
+                    <span>Tổng tiền</span>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-name">
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="./images/14.jpg" alt="">
+                        </div>
+                        <div class="card-detail">
+                            <p>Áo polo dáng xuông</p>
+                            <p>SKU : PL01002</p>
+                            <a href="#">
+                                <span>
+                                    <i class="fa fa-trash-o" aria-hidden="true"> Xóa khỏi giỏ hàng</i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-count">
+                    <div class="col-count-change">
+                        <a href="#">
+                            <span>-</span>
+                        </a>
+
+                        <span>1</span>
+                        <a href="#">
+                            <span>+</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center col-price">
+                    <span>230.000đ</span>
+                </div>
+                <div class="text-center col-total">
+                    <span>230.000đ</span>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-name">
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="./images/14.jpg" alt="">
+                        </div>
+                        <div class="card-detail">
+                            <p>Áo polo dáng xuông</p>
+                            <p>SKU : PL01002</p>
+                            <a href="#">
+                                <span>
+                                    <i class="fa fa-trash-o" aria-hidden="true"> Xóa khỏi giỏ hàng</i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-count">
+                    <div class="col-count-change">
+                        <a href="#">
+                            <span>-</span>
+                        </a>
+
+                        <span>1</span>
+                        <a href="#">
+                            <span>+</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center col-price">
+                    <span>230.000đ</span>
+                </div>
+                <div class="text-center col-total">
+                    <span>230.000đ</span>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col-name">
+                    <div class="card-product">
+                        <div class="card-img">
+                            <img src="./images/14.jpg" alt="">
+                        </div>
+                        <div class="card-detail">
+                            <p>Áo polo dáng xuông</p>
+                            <p>SKU : PL01002</p>
+                            <a href="#">
+                                <span>
+                                    <i class="fa fa-trash-o" aria-hidden="true"> Xóa khỏi giỏ hàng</i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-count">
+                    <div class="col-count-change">
+                        <a href="#">
+                            <span>-</span>
+                        </a>
+
+                        <span>1</span>
+                        <a href="#">
+                            <span>+</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text-center col-price">
+                    <span>230.000đ</span>
+                </div>
+                <div class="text-center col-total">
+                    <span>230.000đ</span>
+                </div>
+            </div>
+
+            <div class="total-shopping-card">
+                <p class="text-uppercase">Tổng tiền đơn hàng: <span>990.000đ</span></p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="pay-info">
+        <div class="pay-same pay-address">
+            <h3>Thông tin khách hàng</h3>
+            <form>
+                <div class="group-input">
+                    <span>Họ tên</span>
+                    <input type="text">
+                </div>
+                <div class="group-input">
+                    <span>Email</span>
+                    <input type="text">
+                </div>
+                <div class="group-input">
+                    <span>Số điện thoại</span>
+                    <input type="text">
+                </div>
+                <div class="group-input">
+                    <span>Tỉnh/Thành phố</span>
+                    <select class="classic">
+                        <option>----Chọn----</option>
+                        <option>Hà Nội</option>
+                        <option>TP Hồ Chí Minh</option>
+                        <option>Thái Bình</option>
+                        <option>Hải Phòng</option>
+                        <option>Đà Nẵng</option>
+                    </select>
+                </div>
+                <div class="group-input">
+                    <span>Địa chỉ</span>
+                    <textarea name="" id="" cols="22" rows="3"></textarea>
+                </div>
+                <div class="group-input">
+                    <span>Ghi chú</span>
+                    <textarea name="" id="" cols="22" rows="3"></textarea>
+                </div>
+            </form>
+        </div>
+
+        <div class="pay-same pay-type">
+            <h3>Hình thức thanh toán</h3>
+            <div class="list-choice">
+                <div class="item-choice">
+                    <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5" checked="checked">
+                    <span class="checkmark"></span>
+                    <label class="choice" for="Field5_0">Thanh toán tiền mặt khi nhận hàng</label>
+                </div>
+                <div class="item-choice">
+                    <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
+                    <span class="checkmark"></span>
+                    <label class="choice" for="Field5_1">Thanh toán trực tuyến (Internet Banking | Visa, Master, JCB,
+                        VNPAY-QR)</label>
+                </div>
+                <div class="item-choice">
+                    <input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
+                    <span class="checkmark"></span>
+                    <label class="choice" for="Field5_2">Thanh toán trả góp qua thẻ tín dụng</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="pay-same pay-final">
+            <p>Bạn có mã giảm giá không?</p>
+            <div class="ma-giam-gia">
+                <input type="text" name="" id="" placeholder="NHẬP MÃ TẠI ĐÂY">
+                <button type="submit" class="text-uppercase">Áp dụng</button>
+            </div>
+            <div class="info-thanhtoan">
+                <div class="thanhtoan-item">
+                    <span>Tạm tính</span>
+                    <span>920.000đ</span>
+                </div>
+                <div class="thanhtoan-item">
+                    <span>Giảm giá</span>
+                    <span>- 0đ</span>
+                </div>
+                <div class="red thanhtoan-item">
+                    <span>Giảm giá thanh toán trực tuyến</span>
+                    <span>- 0đ</span>
+                </div>
+                <div class="thanhtoan-item">
+                    <span>Phí vận chuyển</span>
+                    <span>0đ</span>
+                </div>
+                <div class="thanhtoan-item">
+                    <span>Thành tiền</span>
+                    <span>920.000đ</span>
+                </div>
+            </div>
+            <button class="btn-final">Hoàn tất</button>
+        </div>
+    </section>
+
+    <section id="chinhsachmuahang">
+        <div class="purchase-policy border-main d-flex flex-row justify-content-center align-items-center">
+
+            <div class="purchase-policy-item d-flex flex-row justify-content-center align-items-center">
+                <div class="purchase-policy-item-icon">
+                    <span>
+                        <i class="fa fa-truck" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="purchase-policy-item-content">
+                    <h3>Miễn phí vận chuyển</h3>
+                    <p>Miễn phí đổi và trả hàng</p>
+                </div>
+            </div>
+
+            <div class="purchase-policy-item border-both d-flex flex-row justify-content-center align-items-center">
+                <div class="purchase-policy-item-icon">
+                    <span>
+                        <i class="fa fa-usd" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="purchase-policy-item-content">
+                    <h3>15 ngày đổi trả</h3>
+                    <p>Với hóa đơn trên 500.000đ</p>
+                </div>
+            </div>
+
+            <div class="purchase-policy-item d-flex flex-row justify-content-center align-items-center">
+                <div class="purchase-policy-item-icon">
+                    <span>
+                        <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    </span>
+                </div>
+                <div class="purchase-policy-item-content">
+                    <h3>Hỗ trợ 24/7</h3>
+                    <p>Với hóa đơn trên 500.000đ</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="text-uppercase color-text-main">Về carpo</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Thông tin về Carpo</a>
+                    </li>
+                    <li>
+                        <a href="#">Quá trình phát triển</a>
+                    </li>
+                    <li>
+                        <a href="#">Hệ thống cửa hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Tuyển dụng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="text-uppercase color-text-main">Hỗ trợ mua hàng</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Hướng dẫn mua hàng</a>
+                    </li>
+                    <li>
+                        <a href="#">Hướng dẫn thanh toán</a>
+                    </li>
+                    <li>
+                        <a href="#">Phương thức vận chuyển</a>
+                    </li>
+                    <li>
+                        <a href="#">Tra cứu đơn hàng</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="text-uppercase color-text-main">Chính sách khách hàng</h2>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">Khách hàng VIP</a>
+                    </li>
+                    <li>
+                        <a href="#">Khách hàng thanh toán</a>
+                    </li>
+                    <li>
+                        <a href="#">Chính sách đổi trả</a>
+                    </li>
+                    <li>
+                        <a href="#">Chính sách bảo mật</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="text-uppercase color-text-main">Đăng ký nhận thông tin</h2>
+                <div class="register-email border-main">
+                    <input type="text" name="timkiem" placeholder="Email của bạn" class="border-none">
+                    <button type="submit" class="btn-register-email bg-green text-white text-uppercase font-14">Đăng
+                        ký</button>
+                </div>
+                <div class="follow">
+                    <span class="color-text-main font-14">Theo dõi chúng tôi qua</span>
+                    <div class="icon-follow d-inline-block">
+                        <span class="facebook">
+                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                        </span>
+                        <span class="youtube">
+                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                        </span>
+                        <span class="twitter">
+                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>

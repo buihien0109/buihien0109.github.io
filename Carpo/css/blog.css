@@ -1,0 +1,188 @@
+#list-blogs, #duong-dan {
+	width: 1100px;
+    margin: auto;
+}
+#list-blogs {
+    margin-top: 40px; 
+    margin-bottom: 80px; 
+}
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+#contact {
+    margin-top: 75px;
+    margin-bottom: 75px;
+}
+#shop-map {
+    margin-bottom: 75px;
+}
+.clear {
+    clear: both;
+}
+#duong-dan {
+    border-bottom: 1px solid #C5B291;
+}
+#duong-dan > span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
+.bg-vertical {
+    float: left;
+    width: 15px;
+    height: auto;
+    background: #F5F5F5;
+    margin: 0 80px;
+}
+
+/* -----------------danh mục bài viết---------------- */
+.category {
+    max-width: 253px;
+    float: left;
+}
+
+.category h2 {
+    font-size: 24px;
+    display: inline-block;
+    padding-bottom: 6px;
+    margin-bottom: 26px;
+    border-bottom: 2px solid #57AF8A;
+}
+.danhmucbaiviet {
+    display: flex;
+    flex-direction: column;
+}
+.danhmucbaiviet h3, .baivietganday h3, .tukhoaphobien h3{
+    font-size: 20px;
+    color: #4d4d4d;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.danhmucbaiviet a, .baivietganday a{
+    display: inline-block;
+    cursor: pointer;
+    color: #4d4d4d;
+    border-bottom: 1px solid #C5B291;
+    padding-bottom: 5px;
+    margin-bottom: 25px;
+}
+
+span.sobaiviet {
+    display: inline-block;
+    float: right;
+}
+.danhmucbaiviet a:hover, .baivietganday a:hover {
+    text-decoration: none;
+    color: #C5B291;
+}
+/* -----------------bài viết gần đây---------------- */
+
+
+
+/* -----------------từ khóa phổ biến---------------- */
+.tukhoaphobien .row {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
+}
+.tukhoaphobien .row a {
+    display: inline-block;
+    padding: 5px 15px;
+    background: #F9F9F9;
+    color: #4d4d4d;
+    border-radius: 4px;
+    margin-right: 10px;
+    transition: all .4s ease;
+}
+.tukhoaphobien .row a:hover {
+    text-decoration: none;
+    background: #57AF8A;
+    color: #ffffff;
+}
+
+/* -----------------danh sách bài viết---------------- */
+.list-blogs {
+    width: 668px;
+    float: right;
+    margin-top: 108px;
+    position: relative;
+}
+.list-blogs::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 0;
+    left: -100px;
+    background: #F5F5F5;
+}
+.list-blogs .post-item {
+    margin-bottom: 73px;
+}
+.list-blogs .post-item .author-post span {
+    font-size: 14px;
+    display: inline-block;
+    margin-right: 40px;
+    margin-top: 10px;
+    color: #4d4d4d;
+}
+.list-blogs .post-item .title-post p{
+    font-size: 24px;
+    color: #4d4d4d;
+}
+.list-blogs .post-item .content-post p{
+    font-size: 16px;
+    color: #4d4d4d;
+}
+
+/* -------------------Phân trang------------------------- */
+.page-link {
+    color: #57AF8A;
+    border: 1px solid #57AF8A;
+}
+.page-link:hover, .page-link.active{
+    color: #ffffff;
+    background: #57AF8A;
+    border: 1px solid #57AF8A;
+}
+
+/* -------------------Chi tiết bài viết------------------------- */
+.blog-detail {
+    width: 668px;
+    float: right;
+    margin-top: 93px;
+    color: #4d4d4d;
+    position: relative;
+}
+.blog-detail::before {
+    content: "";
+    position: absolute;
+    width: 15px;
+    height: 100%;
+    top: 0;
+    left: -100px;
+    background: #F5F5F5;
+}
+.blog-detail p {
+    font-size: 16px;
+    line-height: 24px;
+}
+.blog-detail img.img-post-detail {
+    margin-bottom: 20px !important;
+}
+.blog-detail .tacgiabv {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.blog-detail .tacgiabv span {
+    display: inline-block;
+    font-size: 14px;
+    margin-right: 40px;
+}
+/* -------------------Bài viết tương tự------------------------- */
+.list-blog {
+    border-bottom: none !important;
+}
