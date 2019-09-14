@@ -125,9 +125,22 @@ img {
 }
 
 /*////////-------HEADER---------/////////*/
+header {
+	background-image: url(../images/bglogo.png);
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+header a, header span {
+	color: #fff !important;
+}
 .header-main {
 	width: 80% !important;
 	margin: auto;
+}
+@media screen and (max-width: 1920px) {
+	.header-main .img-logo {
+		left: 0;
+	}
 }
 @media screen and (max-width: 1200px) {
     .header-main {
@@ -139,18 +152,37 @@ img {
 		position: relative;
 		height: 100px;
 	}
-} 
+}
+.header-main .img-logo {
+	background: #ffffff;
+	border-radius: 50%;
+}
 img.img-responsive.logo {
+	position: relative;
+	top: -5px;
+	right: 0;
     width: 120px;
     height: 120px;
 }
 @media screen and (max-width: 992px) {
-    img.img-responsive.logo {
-		position: absolute;
-		width: 100px;
-		height: 100px;
-		right: 43%;
-		top: 0;
+	header {
+		padding-bottom: 6px;
+		padding-top: 6px;
+	}
+	.header-main .img-logo {
+		position: relative;
+		left: 43%;
+	}
+	img.img-responsive.logo {
+		top: -5px;
+		right: 0;
+		width: 80px;
+		height: 80px;
+	}
+}
+@media screen and (max-width: 576px) {
+    header .img {
+		right: 40%;
 	}
 }
 .header-main .navigation-hiden {
@@ -296,6 +328,7 @@ span.toggler-icon {
 	justify-content: center;
 	align-items: center;
 }
+
 .purchase-policy-item {
 	padding: 20px;
 	flex: 33.33%;
@@ -331,6 +364,23 @@ span.toggler-icon {
 	font-size: 14px;
 	color: #57AF8A;
 	font-family: latoregular;
+}
+@media screen and (max-width: 576px) {
+    .purchase-policy {
+		flex-direction: column;
+		border: none;
+	}
+	.border-both {
+		border-right: none;
+		border-left: none;
+	}
+	.purchase-policy-item {
+		padding-bottom: 0;
+		border-bottom: 1px solid #C5B291 
+	}
+	section#slide {
+		display: none;
+	}
 }
 /*//tiêu đề sản phẩm mới*/
 .title-new-product {
