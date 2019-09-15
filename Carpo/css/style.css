@@ -123,6 +123,19 @@ img {
 .font-20 {
 	font-size: 20px !important;
 }
+.clear {
+    clear: both;
+}
+#duong-dan .container{
+	border-bottom: 1px solid #C5B291;
+	margin-top: 40px;
+}
+#duong-dan span {
+    display: inline-block;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 6px;
+}
 
 /*////////-------HEADER---------/////////*/
 header {
@@ -400,14 +413,15 @@ span.toggler-icon {
 	}
 } 
 .lable-new {
-	width: 244px;
+	width: 220px;
 	height: 60px;
 	background: #C5B291;
 }
 .lable-new > span {
 	display: inline-block;
-	font-size: 26px;
+	font-size: 18px;
 	color: #ffffff;
+	text-transform: uppercase;
 }
 
 .list-new-product {
@@ -516,6 +530,22 @@ span.toggler-icon {
 	}
 }
 
+/*------------------brand-------------------*/
+#brand {
+    margin: 80px 0;
+}
+#brand .container{
+    border: 1px solid #C5B291;
+    padding-bottom: 22px;
+    padding-top: 22px;
+}
+.list-brand {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /*------------------footer-------------------*/
 footer {
 	border-top: 1px solid #C5B291;
@@ -602,4 +632,21 @@ footer ul li a:hover {
     footer{
 		padding: 50px 20px;
 	}
+}
+
+
+
+
+
+
+
+.navbar-scroll {
+	background-image: url(../images/bglogo.png);
+	padding: 0;
+	box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.4);
+	transition-duration: 0.6s;
+	position: fixed;
+	top: 0;
+	height: 70px;
+	z-index: 1;
 }

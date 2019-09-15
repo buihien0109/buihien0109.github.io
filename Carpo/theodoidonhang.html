@@ -15,70 +15,113 @@
 
 <body>
     <!-- HEADER -->
-    <section id="header">
-        <!-- Địa chỉ Email -->
-        <div class="contact-link-header bg-main color-text-main">
-            <div class="container-header">
-                <p class="font-left">Email: admin@carpo.com - Phone: 012345678</p>
-            </div>
-        </div>
-        <div class="container-header">
+    <header>
+		<div class="container-fluid">
 
-            <!-- Logo - Tìm Kiếm - Login - Shopping card -->
-            <div class="header-main d-flex flex-row justify-content-between align-items-center">
-                <div class="img">
-                    <img src="./images/logo.png" alt="logo" class="img-responsive logo">
-                </div>
-                <div class="search-box border-main">
-                    <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
-                    <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
-                </div>
-                <div class="d-flex flex-row justify-content-between align-items-center color-text-main">
-                    <div class="btn-login">
-                        <span class="btn-login-icon">
-                            <i class="fa fa-user" aria-hidden="true"></i>
-                        </span>
-                        <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
-                    </div>
-                    <div class="btn-login">
-                        <span class="btn-login-icon">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </span>
-                        <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
-                    </div>
-                </div>
-            </div>
+			<!-- Liên hệ ADMIN -->
+			<!-- <div class="contact-admin">
+				<span>Email: admin@carpo.com - Phone: 012345678</span>
+			</div> -->
 
-            <!-- Navgation - Thanh điều hướng -->
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Trang chủ</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Khuyến mại</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link " href="#">Liên hệ</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </section> <!-- END -HEADER -->
+			<!-- Thanh điều hướng - tìm kiếm -->
+			<div class="header-main d-flex flex-row justify-content-between align-items-center">
+				<div class="img-logo">
+					<img src="./images/logo.png" alt="logo" class="img-responsive logo">
+				</div>
+				<!-- <div class="navigation-hiden">
+					<nav>
+						
+							<ul class="mr-auto ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Trang chủ</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Sản phẩm</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Khuyến mại</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Blog</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Liên hệ</a>
+								</li>
+							</ul>
+
+					</nav>
+				</div> -->
+				<div class="search-box border-main">
+					<input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
+					<button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
+				</div>
+				<div class="g-btn-login d-flex flex-row justify-content-between align-items-center color-text-main">
+					<div class="btn-login btn-search">
+						<span class="btn-login-icon">
+							<i class="fa fa-search" aria-hidden="true"></i>
+						</span>
+					</div>
+					<div class="btn-login">
+						<span class="btn-login-icon">
+							<i class="fa fa-user" aria-hidden="true"></i>
+						</span>
+						<span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
+					</div>
+					<div class="btn-login">
+						<span class="btn-login-icon">
+							<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+						</span>
+						<span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container-fluid container-fluid-nav">
+			<div class="container">
+				<nav class="navbar navbar-expand-lg">
+
+					<!-- Collapse button -->
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#basicExampleNav" aria-controls="basicExampleNav" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="toggler-icon"></span>
+						<span class="toggler-icon"></span>
+						<span class="toggler-icon"></span>
+					</button>
+
+					<!-- Collapsible content -->
+					<div class="collapse navbar-collapse" id="basicExampleNav">
+
+						<!-- Links -->
+						<ul class="navbar-nav mr-auto ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="#">Trang chủ
+
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Sản phẩm</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Khuyến mại</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">Liên hệ</a>
+							</li>
+							<!-- Dropdown -->
+
+
+						</ul>
+						<!-- Links -->
+						<!-- Collapsible content -->
+
+				</nav>
+			</div>
+		</div>
+	</header>
 
     <section id="duong-dan">
         <a href="index.html">

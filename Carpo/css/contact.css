@@ -1,7 +1,3 @@
-#duong-dan, #contact, #shop-map {
-	max-width: 70%;
-    margin: 0 auto;
-}
 
 #contact {
     margin-top: 75px;
@@ -10,38 +6,25 @@
 #shop-map {
     margin-bottom: 75px;
 }
-.clear {
-    clear: both;
-}
-#duong-dan {
-    border-bottom: 1px solid #C5B291;
-}
-#duong-dan > span {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-}
 
 .shop {
     width: 50%;
     float: left;
 }
 @media screen and (max-width: 992px) {
-    .shop {
-        float: none;
-        margin: 0 auto;
-	}
+    .shop-info {
+        padding-right: 20px;
+    }
 }
 @media screen and (max-width: 768px) {
     .shop {
-        width: 70%;
-	}
-}
-@media screen and (max-width: 992px) {
-    .shop {
-        width: 80%;
-	}
+        width: 100%;
+        float: none;
+    }
+    .shop-info {
+        margin-bottom: 60px;
+        padding-right: 0;
+    }
 }
 .shop h2, #shop-map h2 {
     font-size: 24px;

@@ -10,139 +10,194 @@
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/login.css">
-    <title>Đăng ký tài khoản</title>
+    <title>Đăng nhập</title>
 </head>
 
 <body>
     <!-- HEADER -->
-    <section id="header">
-        <!-- Địa chỉ Email -->
-        <div class="contact-link-header bg-main color-text-main">
-            <div class="container-header">
-                <p class="font-left">Email: admin@carpo.com - Phone: 012345678</p>
-            </div>
-        </div>
-        <div class="container-header">
+    <header>
+        <div class="container-fluid">
 
-            <!-- Logo - Tìm Kiếm - Login - Shopping card -->
+            <!-- Liên hệ ADMIN -->
+            <!-- <div class="contact-admin">
+				<span>Email: admin@carpo.com - Phone: 012345678</span>
+			</div> -->
+
+            <!-- Thanh điều hướng - tìm kiếm -->
             <div class="header-main d-flex flex-row justify-content-between align-items-center">
-                <div class="img">
-                    <img src="./images/logo.png" alt="logo" class="img-responsive logo">
+                <div class="img-logo">
+                    <a href="./index.html">
+                        <img src="./images/logo.png" alt="logo" class="img-responsive logo">
+                    </a>
+
                 </div>
+                <!-- <div class="navigation-hiden">
+					<nav>
+						
+							<ul class="mr-auto ml-auto">
+								<li class="nav-item">
+									<a class="nav-link" href="#">Trang chủ</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Sản phẩm</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Khuyến mại</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Blog</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#">Liên hệ</a>
+								</li>
+							</ul>
+
+					</nav>
+				</div> -->
                 <div class="search-box border-main">
                     <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
                     <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
                 </div>
-                <div class="d-flex flex-row justify-content-between align-items-center color-text-main">
-                    <div class="btn-login">
+                <div class="g-btn-login d-flex flex-row justify-content-between align-items-center color-text-main">
+                    <div class="btn-login btn-search">
                         <span class="btn-login-icon">
-                            <i class="fa fa-user" aria-hidden="true"></i>
+                            <i class="fa fa-search" aria-hidden="true"></i>
                         </span>
-                        <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
                     </div>
-                    <div class="btn-login">
-                        <span class="btn-login-icon">
-                            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        </span>
-                        <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
-                    </div>
+                    <a href="./login.html">
+                        <div class="btn-login">
+                            <span class="btn-login-icon">
+                                <i class="fa fa-user" aria-hidden="true"></i>
+                            </span>
+                            <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
+                        </div>
+                    </a>
+                    <a href="./shopping-card.html">
+                        <div class="btn-login">
+                            <span class="btn-login-icon">
+                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                            </span>
+                            <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
+                        </div>
+                    </a>
+
                 </div>
             </div>
-
-            <!-- Navgation - Thanh điều hướng -->
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Trang chủ</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button"
-                            aria-haspopup="true" aria-expanded="false">Sản phẩm</a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Separated link</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Khuyến mại</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./contact.html">Liên hệ</a>
-                    </li>
-                </ul>
-            </nav>
-
-            
         </div>
-    </section> <!-- END -HEADER -->
+        <div class="container-fluid container-fluid-nav">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+
+                    <!-- Collapse button -->
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                        <span class="toggler-icon"></span>
+                    </button>
+
+                    <!-- Collapsible content -->
+                    <div class="collapse navbar-collapse" id="basicExampleNav">
+
+                        <!-- Links -->
+                        <ul class="navbar-nav mr-auto ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Trang chủ
+
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./shop-list.html">Sản phẩm</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./shop-list.html">Khuyến mại</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact.html">Liên hệ</a>
+                            </li>
+                            <!-- Dropdown -->
+
+
+                        </ul>
+                        <!-- Links -->
+                        <!-- Collapsible content -->
+
+                </nav>
+            </div>
+        </div>
+    </header>
 
     <section id="duong-dan">
-        <a href="index.html">
-            <span>Trang chủ</span>
-        </a>
-        <span>
-            <i class="fa fa-angle-right" aria-hidden="true"></i>
-        </span>
-        <a href="login.html">
-            <span>Đăng nhập</span>
-        </a>
+        <div class="container">
+            <a href="./index.html">
+                <span>Trang chủ</span>
+            </a>
+            <span>
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </span>
+            <a href="./login.html">
+                <span>Đăng nhập</span>
+            </a>
+        </div>
+
     </section>
 
     <section id="login-register">
-        <div class="login-form">
-            <h2 class="text-uppercase text-center">Đăng nhập tài khoản</h2>
-            <div class="form-login-floating">
-                <div class="floating-form">
-                    <div class="floating-label">
-                        <input class="floating-input" type="text" placeholder=" ">
-                        <span class="highlight"></span>
-                        <label>Tài khoản</label>
-                    </div>
+        <div class="container">
+            <div class="login-form">
+                <h2 class="text-uppercase text-center">Đăng nhập tài khoản</h2>
+                <div class="form-login-floating">
+                    <div class="floating-form">
+                        <div class="floating-label">
+                            <input class="floating-input" type="text" placeholder=" ">
+                            <span class="highlight"></span>
+                            <label>Tài khoản</label>
+                        </div>
 
-                    <div class="floating-label">
-                        <input class="floating-input" type="password" placeholder=" ">
-                        <span class="highlight"></span>
-                        <label>Mật khẩu</label>
+                        <div class="floating-label">
+                            <input class="floating-input" type="password" placeholder=" ">
+                            <span class="highlight"></span>
+                            <label>Mật khẩu</label>
+                        </div>
                     </div>
-                </div>
-                <div class="list-checkbox">
-                    <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customControlValidation3">
-                        <label class="custom-control-label" for="customControlValidation3">Nhớ mật khẩu</label>
+                    <div class="list-checkbox">
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation3">
+                            <label class="custom-control-label" for="customControlValidation3">Nhớ mật khẩu</label>
+                        </div>
                     </div>
-                </div>
-                <button class="btn-login-form text-uppercase">
-                    Đăng nhập
-                </button>
-                <a href="#" class="forget-password">
-                    Quên mật khẩu
-                </a>
-            </div>
-
-        </div>
-
-        <div class="register-form">
-            <div class="box-register">
-                <h2 class="text-uppercase">Nếu bạn chưa có tài khoản</h2>
-                <p>Hãy bấm vào
-                    <a href="./register.html">
-                        Đăng ký
+                    <button class="btn-login-form text-uppercase">
+                        Đăng nhập
+                    </button>
+                    <a href="#" class="forget-password">
+                        Quên mật khẩu
                     </a>
-                </p>
-                <a href="./register.html">
-                    <button class="btn-register-account text-uppercase">Đăng ký tài khoản</button>
-                </a>
-                
+                </div>
+
             </div>
+
+            <div class="register-form">
+                <img src="./images/dangky-bg.png" alt="">
+                <div class="box-register">
+                    <h2 class="text-uppercase">Nếu bạn chưa có tài khoản</h2>
+                    <p>Hãy bấm vào
+                        <a href="./register.html">
+                            Đăng ký
+                        </a>
+                    </p>
+                    <a href="./register.html">
+                        <button class="btn-register-account text-uppercase">Đăng ký tài khoản</button>
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="clear"></div>
         </div>
 
-        <div class="clear"></div>
 
     </section>
 

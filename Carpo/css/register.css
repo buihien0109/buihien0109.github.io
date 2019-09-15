@@ -1,29 +1,12 @@
-#register, #duong-dan {
-	width: 1000px;
-    margin: auto;
-}
 
-.clear {
-    clear: both;
-}
-#duong-dan {
-    border-bottom: 1px solid #C5B291;
-}
-#duong-dan > span {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-}
 #register {
     margin-bottom: 95px;
+    margin-top: 95px;
 }
-#register .register-form {
-    width: 500px;
-    height: auto;
-    margin: 95px auto;
+.register-form {
+    width: 550px;
+    margin: auto;
 }
-
 .register-form h2 {
     font-size: 24px;
     font-weight: bold;
@@ -44,7 +27,7 @@
     margin: 25px 0;
 }
 .group-input input[type="text"] {
-    width: 300px;
+    width: 65%;
     height: 38px;
     line-height: 38px;
     padding-left: 5px;
@@ -61,4 +44,26 @@
     border: none;
     outline: none;
     padding: 4px 25px;
+}
+@media screen and (max-width: 768px) {
+    .register-form {
+        width: 90% !important;
+        margin: auto;
+    }
+    .register-form h2 {
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .group-input {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .register-form span {
+        display: block;
+    }
+    .group-input input[type="text"] {
+        width: 100%; 
+    }
 }

@@ -1,29 +1,23 @@
-#duong-dan, #login-register {
-	width: 1000px;
-  	margin: auto;
-}
 #login-register {
 	margin-top: 80px;
 	margin-bottom: 80px;
 }
 
-.clear {
-    clear: both;
-}
-#duong-dan {
-    border-bottom: 1px solid #C5B291;
-}
-#duong-dan > span {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-}
+
 /* --------------------login--------------- */
 .login-form, .register-form {
-	width: 500px;
-	max-width: 500px;
+	width: 50%;
 	float: left;
+}
+@media screen and (max-width: 768px) {
+    .login-form, .register-form {
+		width: 100%;
+		margin: auto;
+		float: none;
+	}
+	.login-form {
+		margin-bottom: 13%;
+	}
 }
 .login-form {
 	display: flex;
@@ -152,17 +146,21 @@ a.forget-password:hover {
 }
 /* --------------------register--------------- */
 .register-form {
-	min-height: 477px;
+	position: relative;
 	border-radius: 4px;
-	background-image: url("../images/dangky-bg.png");
+	/* background-image: url("../images/dangky-bg.png");
 	background-size: contain;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .box-register {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -191,5 +189,15 @@ a.forget-password:hover {
 	color: #fff;
 	cursor: pointer;
 	border-radius: 4px;
+}
+@media screen and (max-width: 768px) {
+    .box-register {
+		width: 90%;
+	}
+}
+@media screen and (max-width: 576px) {
+    .box-register {
+		width: 100%;
+	}
 }
 

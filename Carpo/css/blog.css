@@ -1,35 +1,14 @@
-#list-blogs, #duong-dan {
-	width: 1100px;
-    margin: auto;
-}
+
 #list-blogs {
     margin-top: 40px; 
     margin-bottom: 80px; 
 }
-img {
-    display: block;
-    max-width: 100%;
-    margin: auto;
-}
+
 #contact {
     margin-top: 75px;
     margin-bottom: 75px;
 }
-#shop-map {
-    margin-bottom: 75px;
-}
-.clear {
-    clear: both;
-}
-#duong-dan {
-    border-bottom: 1px solid #C5B291;
-}
-#duong-dan > span {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-}
+
 .bg-vertical {
     float: left;
     width: 15px;
@@ -39,8 +18,22 @@ img {
 }
 
 /* -----------------danh mục bài viết---------------- */
+.toggle-blog {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #57AF8A;
+    background: #ffffff;
+    display: none;
+}
+.toggle-blog span {
+    display: block;
+    height: 3px;
+    background: #57AF8A;
+    margin: 5px;
+    
+}
 .category {
-    max-width: 253px;
+    width: 26%;
     float: left;
 }
 
@@ -105,20 +98,12 @@ span.sobaiviet {
 
 /* -----------------danh sách bài viết---------------- */
 .list-blogs {
-    width: 668px;
+    width: 67%;
     float: right;
     margin-top: 108px;
     position: relative;
 }
-.list-blogs::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 100%;
-    top: 0;
-    left: -100px;
-    background: #F5F5F5;
-}
+
 .list-blogs .post-item {
     margin-bottom: 73px;
 }
@@ -185,4 +170,19 @@ span.sobaiviet {
 /* -------------------Bài viết tương tự------------------------- */
 .list-blog {
     border-bottom: none !important;
+}
+
+/* -------------------responsive------------------------- */
+@media screen and (max-width: 768px) {
+    .category {
+        display: none;
+    }
+    .list-blogs {
+        width: 100%;
+        float: none;
+        margin-top: 40px;
+    }
+    .toggle-blog {
+        display: block;
+    }
 }
