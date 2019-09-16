@@ -1,31 +1,19 @@
-section {
+/* section {
 	width: 1185px;
     margin: auto;
-}
+} */
 #shop-list {
     margin-top: 60px;
     margin-bottom: 60px; 
 }
-.clear {
-    clear: both;
-}
-#duong-dan {
-    border-bottom: 1px solid #C5B291;
-}
-#duong-dan > span {
-    display: inline-block;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-bottom: 6px;
-}
+
 .row {
     margin-left: 0;
     margin-right: 0;
 }
 /* ------------BỘ LỌC--------------- */
 .category {
-    max-width: 270px;
-    width: 270px;
+    width: 26%;
     float: left;
     border: 1px solid #C5B291;
     padding: 20px;
@@ -135,8 +123,7 @@ label.choice {
 
 /* -------------DANH MỤC SẢN PHẨM---------- */
 .shop-list-product {
-    max-width: 900px;
-    width: 900px;
+    width: 72%;
     float: right;
 }
 .sort-box {
@@ -145,6 +132,8 @@ label.choice {
     justify-content: space-between;
     align-items: center;
     margin-bottom: 40px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #C5B291;
 }
 .sort-box .type-see {
     margin-left: 42px;
