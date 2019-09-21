@@ -77,6 +77,9 @@ a {
 	display: inline-block;
 	color: #4D4D4D;
 }
+a:hover {
+	text-decoration:  none;
+}
 ul {
 	margin: 0;
 	padding: 0;
@@ -86,6 +89,14 @@ img {
 	display: block;
 	max-width: 100%;
 	margin: auto;
+}
+.btn-hover:hover {
+	transition: all .3s ease;
+	background: #736854 !important;
+}
+.btn-red-hover:hover {
+	transition: all .3s ease;
+	background: #842e2e !important;
 }
 .color-text-main {
 	color: #4D4D4D;
@@ -135,6 +146,9 @@ img {
     margin-right: 10px;
     margin-left: 10px;
     margin-bottom: 6px;
+}
+.duong-dan-active {
+	color: #C5B291;
 }
 
 /*////////-------HEADER---------/////////*/
@@ -287,6 +301,9 @@ span.toggler-icon {
     margin: 8px;
     background-color: #57AF8A;
     display: block;
+}
+.menu-active {
+	border-bottom: 2px solid #C5B291 !important;
 }
 @media screen and (max-width: 992px) {
     .container-fluid .container{

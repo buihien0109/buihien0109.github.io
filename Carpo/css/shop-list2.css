@@ -272,3 +272,65 @@ select {
     display: inline-block;
     margin-right: 5px;
 }
+
+@media screen and (max-width: 992px) {
+    .category {
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .category {
+        padding-bottom: 0px;
+    }
+    .category-box {
+        margin-bottom: 0px;
+    }
+    .category-box:nth-child(1) {
+        flex: 40%;
+    }
+    .category-box:nth-child(2) {
+        flex: 20%;
+    }
+    .category-box:nth-child(3) {
+        flex: 20%;
+    }
+    .category-box:nth-child(4) {
+        flex: 20%;
+    }
+
+    .shop-list-product {
+        width: 100%;
+        float: none;
+        margin-top: 50px;
+    }
+    .list-products {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .category {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .category {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box-color {
+        display: grid;
+        grid-template-columns: 120px 120px;
+    }
+    .list-checkbox {
+        display: grid;
+        grid-template-columns: 140px 140px;
+    }
+    .product-item-v2 {
+        flex-direction: column;
+    }
+}

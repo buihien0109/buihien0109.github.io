@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/chitietdonhang.css">
     <title>Chi tiết đơn hàng</title>
@@ -64,14 +65,19 @@
                             <i class="fa fa-search" aria-hidden="true"></i>
                         </span>
                     </div>
-                    <a href="./login.html">
+                    
                         <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
+                            <div class="dropdown">
+                                <button class="dropbtn">Bùi Hiên
+                                    <i class="fa fa-caret-down"></i>
+                                </button>
+                                <div class="dropdown-content">
+                                    <a href="./chitietdonhang.html">Chi tiết đơn hàng</a>
+                                    <a href="./theodoidonhang.html">Theo dõi đơn hàng</a>
+                                </div>
+                            </div>
                         </div>
-                    </a>
+                    
                     <a href="./shopping-card.html">
                         <div class="btn-login">
                             <span class="btn-login-icon">
@@ -138,7 +144,7 @@
             <span>
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
             </span>
-            <a href="./chitietdonhang.html">
+            <a href="./chitietdonhang.html" class="duong-dan-active">
                 <span>Chi tiết đơn hàng</span>
             </a>
         </div>
@@ -299,7 +305,10 @@
                 </div>
             </div>
 
-            <button class="goback-home text-uppercase">Quay lại trang chủ</button>
+            <a href="./index.html">
+                <button class="goback-home text-uppercase btn-red-hover">Quay lại trang chủ</button>
+            </a>
+
     </section>
 
 

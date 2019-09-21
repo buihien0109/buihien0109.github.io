@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/shop-list.css">
     <title>Danh mục sản phẩm</title>
@@ -107,10 +108,10 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Sản phẩm</a>
+                                <a class="nav-link menu-active" href="./shop-list.html">Sản phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Khuyến mại</a>
+                                <a class="nav-link" href="./khuyenmai.html">Khuyến mại</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./blog.html">Blog</a>
@@ -138,7 +139,7 @@
             <span>
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
             </span>
-            <a href="./shop-list.html">
+            <a href="./shop-list.html" class="duong-dan-active">
                 <span>Sản phẩm</span>
             </a>
         </div>
@@ -269,95 +270,21 @@
 
                     <select class="classic">
                         <option>----Sắp xếp----</option>
-                        <option>Theo giá tăng dần</option>
-                        <option>Theo giá giảm dần</option>
-                        <option>Giảm giá nhiều</option>
-                        <option>Đánh giá nhiều nhất</option>
-                        <option>Được mua nhiều nhất</option>
+                        <option><a href="./shop-list.html">Theo giá tăng dần</a></option>
+                        <option><a href="./shop-list.html">Theo giá giảm dần</a></option>
+                        <option><a href="./shop-list.html">Giảm giá nhiều</a></option>
+                        <option><a href="./shop-list.html">Đánh giá nhiều nhất</a></option>
+                        <option><a href="./shop-list.html">Được mua nhiều nhất</a></option>
                     </select>
                 </div>
 
                 <!-- Danh sach san pham -->
                 <div class="list-products">
-                    <div class="row">
-                        <div class="product-item">
-                            <div class="img-product">
-                                <img src="./images/ao thun 1.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
-                                </span>
-                                <span class="price-product d-block">
-                                    230.000đ
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <div class="img-product">
-                                <img src="./images/ao thun 2.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
-                                </span>
-                                <span class="price-product d-block">
-                                    230.000đ
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <div class="img-product">
-                                <img src="./images/ao thun 3.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
-                                </span>
-                                <span class="price-product d-block">
-                                    230.000đ
-                                </span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="row">
+                    <a href="./product-detail.html">
                         <div class="product-item">
                             <div class="img-product">
-                                <img src="./images/ao thun 1.png">
+                                <img src="./images/at1.png">
                                 <div class="link-product d-flex justify-content-around align-items-center">
                                     <span>
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -379,9 +306,11 @@
                                 </span>
                             </div>
                         </div>
+                    </a>
+                    <a href="./product-detail.html">
                         <div class="product-item">
                             <div class="img-product">
-                                <img src="./images/ao thun 2.png">
+                                <img src="./images/at2.png">
                                 <div class="link-product d-flex justify-content-around align-items-center">
                                     <span>
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -396,16 +325,18 @@
                             </div>
                             <div class="decript-product">
                                 <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
+                                    Áo phông polo Justmen
                                 </span>
                                 <span class="price-product d-block">
-                                    230.000đ
+                                    430.000đ
                                 </span>
                             </div>
                         </div>
+                    </a>
+                    <a href="./product-detail.html">
                         <div class="product-item">
                             <div class="img-product">
-                                <img src="./images/ao thun 3.png">
+                                <img src="./images/at3.png">
                                 <div class="link-product d-flex justify-content-around align-items-center">
                                     <span>
                                         <i class="fa fa-shopping-cart" aria-hidden="true"></i>
@@ -420,109 +351,206 @@
                             </div>
                             <div class="decript-product">
                                 <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
+                                    Áo phông polo cao cấp
                                 </span>
                                 <span class="price-product d-block">
-                                    230.000đ
+                                    670.000đ
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </a>
 
-                    <div class="row">
-                        <div class="product-item">
-                            <div class="img-product">
-                                <img src="./images/ao thun 1.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
-                                </span>
-                                <span class="price-product d-block">
-                                    230.000đ
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <div class="img-product">
-                                <img src="./images/ao thun 2.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
-                                </span>
-                                <span class="price-product d-block">
-                                    230.000đ
-                                </span>
-                            </div>
-                        </div>
-                        <div class="product-item">
-                            <div class="img-product">
-                                <img src="./images/ao thun 3.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
-                                </span>
-                                <span class="price-product d-block">
-                                    230.000đ
-                                </span>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- PHÂN TRANG -->
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-end">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                                    <i class="fa fa-angle-left" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                            <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#">
-                                    <i class="fa fa-angle-right" aria-hidden="true"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+
+                    <a href="./product-detail.html">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <img src="./images/at4.png">
+                                <div class="link-product d-flex justify-content-around align-items-center">
+                                    <span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="decript-product">
+                                <span class="name-product color-text-main font-16 d-block">
+                                    Áo phông polo basic
+                                </span>
+                                <span class="price-product d-block">
+                                    540.000đ
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./product-detail.html">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <img src="./images/at5.png">
+                                <div class="link-product d-flex justify-content-around align-items-center">
+                                    <span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="decript-product">
+                                <span class="name-product color-text-main font-16 d-block">
+                                    Áo phông polo caro
+                                </span>
+                                <span class="price-product d-block">
+                                    210.000đ
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./product-detail.html">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <img src="./images/at6.png">
+                                <div class="link-product d-flex justify-content-around align-items-center">
+                                    <span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="decript-product">
+                                <span class="name-product color-text-main font-16 d-block">
+                                    Áo thun in hình
+                                </span>
+                                <span class="price-product d-block">
+                                    330.000đ
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+
+
+
+                    <a href="./product-detail.html">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <img src="./images/at8.png">
+                                <div class="link-product d-flex justify-content-around align-items-center">
+                                    <span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="decript-product">
+                                <span class="name-product color-text-main font-16 d-block">
+                                    Áo wash in hình
+                                </span>
+                                <span class="price-product d-block">
+                                    420.000đ
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./product-detail.html">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <img src="./images/at9.png">
+                                <div class="link-product d-flex justify-content-around align-items-center">
+                                    <span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="decript-product">
+                                <span class="name-product color-text-main font-16 d-block">
+                                    Áo thun nam in hình
+                                </span>
+                                <span class="price-product d-block">
+                                    270.000đ
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="./product-detail.html">
+                        <div class="product-item">
+                            <div class="img-product">
+                                <img src="./images/at10.png">
+                                <div class="link-product d-flex justify-content-around align-items-center">
+                                    <span>
+                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-heart" aria-hidden="true"></i>
+                                    </span>
+                                    <span>
+                                        <i class="fa fa-eye" aria-hidden="true"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="decript-product">
+                                <span class="name-product color-text-main font-16 d-block">
+                                    Áo thun cổ tròn miix
+                                </span>
+                                <span class="price-product d-block">
+                                    350.000đ
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+
+
+
+
+
+
                 </div>
+
+                <div class="clear"></div>
+                <!-- PHÂN TRANG -->
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                <i class="fa fa-angle-left" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="fa fa-angle-right" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
             <div class="clear"></div>

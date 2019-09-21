@@ -135,9 +135,7 @@ label.choice {
     padding-bottom: 15px;
     border-bottom: 1px solid #C5B291;
 }
-.sort-box .type-see {
-    margin-left: 42px;
-}
+
 .sort-box .type-see span{
     display: inline-block;
     font-size: 20px;
@@ -160,7 +158,6 @@ select {
     /* reset */
   
     margin: 0;      
-    margin-right: 42px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -208,12 +205,12 @@ select {
 
 
 /* -------------danh sach san pham----------- */
-.list-products .row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 40px;
+.list-products{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-row-gap: 40px;
+    grid-column-gap: 30px;
+    margin-bottom: 70px;
 }
 
 /* -------------------Phân trang------------------------- */
@@ -225,4 +222,73 @@ select {
     color: #ffffff;
     background: #57AF8A;
     border: 1px solid #57AF8A;
+}
+
+@media screen and (max-width: 992px) {
+    .category {
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-direction: row;
+    }
+    .category {
+        padding-bottom: 0px;
+    }
+    .category-box {
+        margin-bottom: 0px;
+    }
+    .category-box:nth-child(1) {
+        flex: 40%;
+    }
+    .category-box:nth-child(2) {
+        flex: 20%;
+    }
+    .category-box:nth-child(3) {
+        flex: 20%;
+    }
+    .category-box:nth-child(4) {
+        flex: 20%;
+    }
+
+    .shop-list-product {
+        width: 100%;
+        float: none;
+        margin-top: 50px;
+    }
+    .list-products {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .category {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 20px;
+    }
+    .list-products {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 30px;
+    }
+}
+@media screen and (max-width: 576px) {
+    .category {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+    }
+    .box-color {
+        display: grid;
+        grid-template-columns: 120px 120px;
+    }
+    .list-checkbox {
+        display: grid;
+        grid-template-columns: 140px 140px;
+    }
+    .list-products {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-gap: 30px;
+    }
 }

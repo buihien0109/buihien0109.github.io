@@ -108,8 +108,12 @@ button.add-shopping-card {
     border-radius: 4px;
     padding: 6px 12px;
     text-transform: uppercase;
+    transition: all .4s ease;
 }
-
+button.add-shopping-card:hover {
+    background: #C5B291;
+    color: #ffffff;
+}
 .col-count-change a {
     background: #C5B291;
     color: #ffffff;

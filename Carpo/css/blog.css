@@ -36,7 +36,9 @@
     width: 26%;
     float: left;
 }
-
+.closebtn {
+    display: none;
+}
 .category h2 {
     font-size: 24px;
     display: inline-block;
@@ -142,7 +144,7 @@ span.sobaiviet {
     color: #4d4d4d;
     position: relative;
 }
-.blog-detail::before {
+/* .blog-detail::before {
     content: "";
     position: absolute;
     width: 15px;
@@ -150,7 +152,7 @@ span.sobaiviet {
     top: 0;
     left: -100px;
     background: #F5F5F5;
-}
+} */
 .blog-detail p {
     font-size: 16px;
     line-height: 24px;
@@ -174,10 +176,29 @@ span.sobaiviet {
 
 /* -------------------responsive------------------------- */
 @media screen and (max-width: 768px) {
-    .category {
-        display: none;
+    .container {
+        position: relative;
     }
-    .list-blogs {
+    .category {
+        width: 0;
+        height: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        transition: 0.5s;
+        /* padding: 10px 20px; */
+        background: #ffffff
+    }
+    .closebtn {
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        font-size: 36px;
+    }
+    .list-blogs, .blog-detail {
         width: 100%;
         float: none;
         margin-top: 40px;

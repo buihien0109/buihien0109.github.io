@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/blog.css">
     <title>Danh sách bài viết</title>
@@ -20,8 +21,8 @@
 
             <!-- Liên hệ ADMIN -->
             <!-- <div class="contact-admin">
-                        <span>Email: admin@carpo.com - Phone: 012345678</span>
-                    </div> -->
+                                        <span>Email: admin@carpo.com - Phone: 012345678</span>
+                                    </div> -->
 
             <!-- Thanh điều hướng - tìm kiếm -->
             <div class="header-main d-flex flex-row justify-content-between align-items-center">
@@ -32,28 +33,28 @@
 
                 </div>
                 <!-- <div class="navigation-hiden">
-                            <nav>
-                                
-                                    <ul class="mr-auto ml-auto">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Trang chủ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Sản phẩm</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Khuyến mại</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Blog</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Liên hệ</a>
-                                        </li>
-                                    </ul>
-        
-                            </nav>
-                        </div> -->
+                                            <nav>
+                                                
+                                                    <ul class="mr-auto ml-auto">
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Trang chủ</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Sản phẩm</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Khuyến mại</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Blog</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Liên hệ</a>
+                                                        </li>
+                                                    </ul>
+                        
+                                            </nav>
+                                        </div> -->
                 <div class="search-box border-main">
                     <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
                     <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
@@ -110,10 +111,10 @@
                                 <a class="nav-link" href="./shop-list.html">Sản phẩm</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Khuyến mại</a>
+                                <a class="nav-link" href="./khuyenmai.html">Khuyến mại</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="./blog.html">Blog</a>
+                                <a class="nav-link menu-active" href="./blog.html">Blog</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="./contact.html">Liên hệ</a>
@@ -138,7 +139,7 @@
             <span>
                 <i class="fa fa-angle-right" aria-hidden="true"></i>
             </span>
-            <a href="./blog.html">
+            <a href="./blog.html" class="duong-dan-active">
                 <span>Bài viết</span>
             </a>
         </div>
@@ -146,73 +147,74 @@
 
     <section id="list-blogs">
         <div class="container">
-            <button class="toggle-blog">
+            <button class="toggle-blog" onclick="openNav()">
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <div class="category">
+            <div class="category" id="mySidepanel">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
                 <h2 class="text-uppercase">Bài viết</h2>
                 <!-- DANH MUC BAI VIET -->
                 <div class="danhmucbaiviet">
                     <h3 class="text-uppercase">Danh mục bài viết</h3>
-                    <a href="#">
+                    <a href="./blog.html">
                         <div class="chude">
                             <span class="tenchude">
-                                Lorem Ipsum
+                                Thời trang thế giới
                             </span>
                             <span class="sobaiviet">
                                 (7)
                             </span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="./blog.html">
                         <div class="chude">
                             <span class="tenchude">
-                                Lorem Ipsum
+                                Xu hướng
                             </span>
                             <span class="sobaiviet">
-                                (7)
+                                (3)
                             </span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="./blog.html">
                         <div class="chude">
                             <span class="tenchude">
-                                Lorem Ipsum
+                                Thẩm mỹ
                             </span>
                             <span class="sobaiviet">
-                                (7)
+                                (1)
                             </span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="./blog.html">
                         <div class="chude">
                             <span class="tenchude">
-                                Lorem Ipsum
+                                Mix đồ nữ
                             </span>
                             <span class="sobaiviet">
-                                (7)
+                                (5)
                             </span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="./blog.html">
                         <div class="chude">
                             <span class="tenchude">
-                                Lorem Ipsum
+                                Phong cách
                             </span>
                             <span class="sobaiviet">
-                                (7)
+                                (2)
                             </span>
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="./blog.html">
                         <div class="chude">
                             <span class="tenchude">
-                                Lorem Ipsum
+                                Thiết kế độc - lạ
                             </span>
                             <span class="sobaiviet">
-                                (7)
+                                (4)
                             </span>
                         </div>
                     </a>
@@ -221,17 +223,17 @@
                 <!-- BÀI VIẾT GẦN ĐÂY -->
                 <div class="baivietganday">
                     <h3 class="text-uppercase">Bài viết gần đây</h3>
-                    <a href="#">
-                        Lorem ipsum dolor sit amet, ad usu simul quando postulant. Ei habeo atomorum ius.
+                    <a href="./blog-detail.html">
+                        [HOT] Áo sơ mi Denim: 101 cách phối đẹp 2019
                     </a>
-                    <a href="#">
-                        Lorem ipsum dolor sit amet, ad usu simul quando postulant. Ei habeo atomorum ius.
+                    <a href="./blog-detail.html">
+                        Cách mặc áo thun cặp đôi: Thời trang cho tình yêu thăng hoa
                     </a>
-                    <a href="#">
-                        Lorem ipsum dolor sit amet, ad usu simul quando postulant. Ei habeo atomorum ius.
+                    <a href="./blog-detail.html">
+                        Quà tặng trung thu cho bé: Ý nghĩa đến từ sắc màu thời trang
                     </a>
-                    <a href="#">
-                        Lorem ipsum dolor sit amet, ad usu simul quando postulant. Ei habeo atomorum ius.
+                    <a href="./blog-detail.html">
+                        Áo thun oversize Nữ: mặc sao cho đúng, phối sao cho đẹp!
                     </a>
                 </div>
 
@@ -239,23 +241,23 @@
                 <div class="tukhoaphobien">
                     <h3 class="text-uppercase">Từ khóa phổ biến</h3>
                     <div class="row">
-                        <a href="#">
+                        <a href="./blog.html">
                             <span>nam</span>
                         </a>
-                        <a href="#">
+                        <a href="./blog.html">
                             <span>thời trang</span>
                         </a>
                     </div>
                     <div class="row">
-                        <a href="#">
+                        <a href="./blog.html">
                             <span>xu hướng</span>
                         </a>
-                        <a href="#">
+                        <a href="./blog.html">
                             <span>áo thun</span>
                         </a>
                     </div>
                     <div class="row">
-                        <a href="#">
+                        <a href="./blog.html">
                             <span>phong cách</span>
                         </a>
                     </div>
@@ -266,63 +268,72 @@
 
             <!-- DANH SÁCH BÀI VIẾT -->
             <div class="list-blogs">
-                <div class="post-item">
-                    <div class="img-post">
-                        <img src="images/post1.png">
+                <a href="./blog-detail.html">
+                    <div class="post-item">
+                        <div class="img-post">
+                            <img src="images/post1.png">
+                        </div>
+                        <div class="author-post">
+                            <span class="">Ngày đăng: 02-08-2019</span>
+                            <span class="">Đăng bởi: Admin</span>
+                        </div>
+                        <div class="title-post">
+                            <p class="">Áo thun oversize Nữ: mặc sao cho đúng, phối sao cho đẹp!</p>
+                        </div>
+                        <div class="content-post">
+                            <p class="">Mặc gì hôm nay? – câu hỏi hóc búa đối với bao nhiêu cô nàng mỗi buổi sáng. Hôm
+                                nay
+                                mình thấy không thích mặc váy như mọi khi, cũng không muốn mặc sơ mi như vẫn vậy. Nếu
+                                nàng
+                                thấy quá khó chọn, hôm nay CANIFA BLOG sẽ chọn giúp nàng – Áo thun nữ oversize!</p>
+                        </div>
                     </div>
-                    <div class="author-post">
-                        <span class="">Ngày đăng: 02-08-2019</span>
-                        <span class="">Đăng bởi: Admin</span>
+                </a>
+                <a href="./blog-detail.html">
+                    <div class="post-item">
+                        <div class="img-post">
+                            <img src="images/BG2.jpg">
+                        </div>
+                        <div class="author-post">
+                            <span class="">Ngày đăng: 11-09-2019</span>
+                            <span class="">Đăng bởi: Admin</span>
+                        </div>
+                        <div class="title-post">
+                            <p class="">Cách mặc áo thun cặp đôi: Thời trang cho tình yêu thăng hoa</p>
+                        </div>
+                        <div class="content-post">
+                            <p class="">Khi yêu nhau thì con người ta sẽ đồng điệu về mọi thứ. Và “guu” thời trang đôi
+                                cũng
+                                không nằm ngoài quy luật đó. Nhưng những gì mà các bạn trẻ Việt Nam thể hiện đã nâng xu
+                                hướng thời trang áo thun cặp đôi lên một tầm cao mới.</p>
+                        </div>
                     </div>
-                    <div class="title-post">
-                        <p class="">Lorem ipsum dolor sit amet, ad usu simul quando postulant</p>
+                </a>
+                <a href="./blog-detail.html">
+                    <div class="post-item">
+                        <div class="img-post">
+                            <img src="images/bg1.jpg">
+                        </div>
+                        <div class="author-post">
+                            <span class="">Ngày đăng: 13-09-2019</span>
+                            <span class="">Đăng bởi: Admin</span>
+                        </div>
+                        <div class="title-post">
+                            <p class="">Quà tặng trung thu cho bé: Ý nghĩa đến từ sắc màu thời trang</p>
+                        </div>
+                        <div class="content-post">
+                            <p class="">Một mùa trung thu nữa lại đang đến gần với hương vị ngọt ngào của bánh nướng,
+                                bánh
+                                dẻo, sự nhộn nhịp khắp nẻo đường của hội múa lân, rước đèn hay những màu sắc rực rỡ của
+                                những chiếc đèn ông sao. Những gương mặt đầy háo hức của các bé mỗi dịp trung thu lại
+                                khiến
+                                người lớn cũng như được quay trở về tuổi thơ với những món đồ chơi bình dị.</p>
+                        </div>
                     </div>
-                    <div class="content-post">
-                        <p class="">Lorem ipsum dolor sit amet, ad usu simul quando postulant. Ei habeo atomorum ius.
-                            Sea
-                            mutat deserunt te, assum inciderint ex usu. Id vis euismod ornatus, reque veritus scriptorem
-                            at
-                            sed. Unum primis iuvaret ut nec, at fuisset sensibus intellegam per.</p>
-                    </div>
-                </div>
-                <div class="post-item">
-                    <div class="img-post">
-                        <img src="images/post1.png">
-                    </div>
-                    <div class="author-post">
-                        <span class="">Ngày đăng: 02-08-2019</span>
-                        <span class="">Đăng bởi: Admin</span>
-                    </div>
-                    <div class="title-post">
-                        <p class="">Lorem ipsum dolor sit amet, ad usu simul quando postulant</p>
-                    </div>
-                    <div class="content-post">
-                        <p class="">Lorem ipsum dolor sit amet, ad usu simul quando postulant. Ei habeo atomorum ius.
-                            Sea
-                            mutat deserunt te, assum inciderint ex usu. Id vis euismod ornatus, reque veritus scriptorem
-                            at
-                            sed. Unum primis iuvaret ut nec, at fuisset sensibus intellegam per.</p>
-                    </div>
-                </div>
-                <div class="post-item">
-                    <div class="img-post">
-                        <img src="images/post1.png">
-                    </div>
-                    <div class="author-post">
-                        <span class="">Ngày đăng: 02-08-2019</span>
-                        <span class="">Đăng bởi: Admin</span>
-                    </div>
-                    <div class="title-post">
-                        <p class="">Lorem ipsum dolor sit amet, ad usu simul quando postulant</p>
-                    </div>
-                    <div class="content-post">
-                        <p class="">Lorem ipsum dolor sit amet, ad usu simul quando postulant. Ei habeo atomorum ius.
-                            Sea
-                            mutat deserunt te, assum inciderint ex usu. Id vis euismod ornatus, reque veritus scriptorem
-                            at
-                            sed. Unum primis iuvaret ut nec, at fuisset sensibus intellegam per.</p>
-                    </div>
-                </div>
+                </a>
+
+
+
 
                 <!-- PHÂN TRANG -->
                 <nav aria-label="Page navigation example">
@@ -431,6 +442,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidepanel").style.width = "250px";
+            document.getElementById("mySidepanel").style.paddingBottom = "10px";
+            document.getElementById("mySidepanel").style.paddingTop = "10px";
+            document.getElementById("mySidepanel").style.paddingLeft = "20px";
+            document.getElementById("mySidepanel").style.paddingRight = "20px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidepanel").style.width = "0";
+            document.getElementById("mySidepanel").style.paddingBottom = "0px";
+            document.getElementById("mySidepanel").style.paddingTop = "0px";
+            document.getElementById("mySidepanel").style.paddingLeft = "0px";
+            document.getElementById("mySidepanel").style.paddingRight = "0px";
+        }
+    </script>
 </body>
 
 </html>

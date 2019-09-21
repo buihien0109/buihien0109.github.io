@@ -1,0 +1,8 @@
+#new-product .sort-box {
+    margin-top: 40px;
+    border-bottom: none;
+}
+#new-product .sort-box .classic {
+    display: inline-block;
+    float: right;
+}
