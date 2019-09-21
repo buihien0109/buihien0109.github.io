@@ -1,38 +1,40 @@
-{
-	{
-		"id" : "AP123456",
-		"name" : "áo thun cổ tròn",
-		"price" : "120.000đ",
-		"description" : "Mặc thích lắm"
-	},
-	{
-		"id" : "AP013456",
-		"name" : "áo thun cổ tròn dáng xuông",
-		"price" : "220.000đ",
-		"description" : "Mặc mát lắm"
-	},
-	{
-		"id" : "AP23141",
-		"name" : "áo thun sọc caro",
-		"price" : "340.000đ",
-		"description" : "Cũng tạm"
-	},
-	{
-		"id" : "AP4124213",
-		"name" : "áo thun miix",
-		"price" : "320.000đ",
-		"description" : "Mặc đẹp quá trời"
-	},
-	{
-		"id" : "AT731833",
-		"name" : "áo thun nam kẻ sọc",
-		"price" : "450.000đ",
-		"description" : "Nhìn rất style"
-	},
-	{
-		"id" : "AP463534",
-		"name" : "áo thun caro sọc ngang",
-		"price" : "170.000đ",
-		"description" : "Khá là thích"
-	}
-}
+[
+	"product" : [
+		{
+			"id" : "AP123456",
+			"name" : "áo thun cổ tròn",
+			"price" : "120.000đ",
+			"description" : "Mặc thích lắm"
+		},
+		{
+			"id" : "AP013456",
+			"name" : "áo thun cổ tròn dáng xuông",
+			"price" : "220.000đ",
+			"description" : "Mặc mát lắm"
+		},
+		{
+			"id" : "AP23141",
+			"name" : "áo thun sọc caro",
+			"price" : "340.000đ",
+			"description" : "Cũng tạm"
+		},
+		{
+			"id" : "AP4124213",
+			"name" : "áo thun miix",
+			"price" : "320.000đ",
+			"description" : "Mặc đẹp quá trời"
+		},
+		{
+			"id" : "AT731833",
+			"name" : "áo thun nam kẻ sọc",
+			"price" : "450.000đ",
+			"description" : "Nhìn rất style"
+		},
+		{
+			"id" : "AP463534",
+			"name" : "áo thun caro sọc ngang",
+			"price" : "170.000đ",
+			"description" : "Khá là thích"
+		}
+	]
+]
