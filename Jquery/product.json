@@ -1,4 +1,4 @@
-[
+{
 	"product" : [
 		{
 			"id" : "AP123456",
@@ -37,4 +37,4 @@
 			"description" : "Khá là thích"
 		}
 	]
-]
+}
