@@ -465,6 +465,9 @@ span.toggler-icon {
 		grid-template-columns: 1fr;
 		grid-gap: 40px;
 	}
+	.list-new-product > div {
+		text-align: center;
+	}
 }
 
 .product-item .img-product {
