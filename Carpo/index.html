@@ -9,153 +9,103 @@
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
+	<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Carpo Shop</title>
 </head>
 
 <body>
-	<header>
-		<div class="container-fluid">
-
-			<!-- Liên hệ ADMIN -->
-			<!-- <div class="contact-admin">
-									<span>Email: admin@carpo.com - Phone: 012345678</span>
-								</div> -->
-
-			<!-- Thanh điều hướng - tìm kiếm -->
-			<div class="header-main d-flex flex-row justify-content-between align-items-center">
-				<div class="img-logo">
-					<a href="./index.html">
-						<img src="./images/logo.png" alt="logo" class="img-responsive logo">
-					</a>
-
-				</div>
-				<!-- <div class="navigation-hiden">
-										<nav>
-											
-												<ul class="mr-auto ml-auto">
-													<li class="nav-item">
-														<a class="nav-link" href="#">Trang chủ</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Sản phẩm</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Khuyến mại</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Blog</a>
-													</li>
-													<li class="nav-item">
-														<a class="nav-link" href="#">Liên hệ</a>
-													</li>
-												</ul>
-					
-										</nav>
-									</div> -->
-				<div class="search-box border-main">
-					<input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
-					<button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
-				</div>
-				<div class="g-btn-login d-flex flex-row justify-content-between align-items-center color-text-main">
-					<div class="btn-login btn-search">
-						<span class="btn-login-icon">
-							<i class="fa fa-search" aria-hidden="true"></i>
-						</span>
-					</div>
-					<a href="./login.html">
-						<div class="btn-login">
-							<span class="btn-login-icon">
-								<i class="fa fa-user" aria-hidden="true"></i>
-							</span>
-							<span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
-						</div>
-					</a>
-					<a href="./shopping-card.html">
-						<div class="btn-login">
-							<span class="btn-login-icon">
-								<i class="fa fa-shopping-cart" aria-hidden="true"></i>
-							</span>
-							<span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
-						</div>
-					</a>
-
-				</div>
-			</div>
-		</div>
-		<div class="container-fluid container-fluid-nav">
+	<div class="wrapper">
+		<div class="header">
 			<div class="container">
-				<nav class="navbar navbar-expand-lg">
-
-					<!-- Collapse button -->
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-						aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-						<span class="toggler-icon"></span>
-						<span class="toggler-icon"></span>
-						<span class="toggler-icon"></span>
-					</button>
-
-					<!-- Collapsible content -->
-					<div class="collapse navbar-collapse" id="basicExampleNav">
-
-						<!-- Links -->
-						<ul class="navbar-nav mr-auto ml-auto">
-							<li class="nav-item">
-								<a class="nav-link menu-active" href="./index.html">Trang chủ
-
-								</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./shop-list.html">Sản phẩm</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./khuyenmai.html">Khuyến mại</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./blog.html">Blog</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="./contact.html">Liên hệ</a>
-							</li>
-							<!-- Dropdown -->
-
-
-						</ul>
-						<!-- Links -->
-						<!-- Collapsible content -->
-
-				</nav>
+				<div class="row">
+					<div class="col-md-2 col-sm-2">
+						<div class="logo"><a href="index.html" class="name-logo">CarpoShop</a></div>
+					</div>
+					<div class="col-md-10 col-sm-10">
+						<div class="header_top">
+							<div class="row">
+								<div class="col-md-3 float-right">
+									<ul class="usermenu">
+										<li><a href="checkout.html" class="log">Đăng nhập</a></li>
+										<li><a href="checkout2.html" class="reg">Đăng ký</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="clearfix"></div>
+						<div class="header_bottom">
+							<ul class="option">
+								<li id="search" class="search">
+									<form><input class="search-submit" type="submit" value=""><input
+											class="search-input" placeholder="Enter your search term..." type="text"
+											value="" name="search">
+									</form>
+								</li>
+								<li class="option-cart">
+									<a href="#" class="cart-icon">Giỏ hàng <span class="cart_no">02</span></a>
+									<ul class="option-cart-item">
+										<li>
+											<div class="cart-item">
+												<div class="image"><img src="./images/11.jpg"
+														alt="">
+												</div>
+												<div class="item-description">
+													<p class="name">Lincoln chair</p>
+													<p>Size: <span class="light-red">One size</span><br>Quantity: <span
+															class="light-red">01</span></p>
+												</div>
+												<div class="right">
+													<p class="price">$30.00</p>
+													<a href="#" class="remove"><img src="./images/remove.png"
+															alt="remove"></a>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="cart-item">
+												<div class="image"><img src="./images/14.jpg"
+														alt="">
+												</div>
+												<div class="item-description">
+													<p class="name">Lincoln chair</p>
+													<p>Size: <span class="light-red">One size</span><br>Quantity: <span
+															class="light-red">01</span></p>
+												</div>
+												<div class="right">
+													<p class="price">$30.00</p>
+													<a href="#" class="remove"><img src="images/remove.png"
+															alt="remove"></a>
+												</div>
+											</div>
+										</li>
+										<li><span class="total">Total <strong>$60.00</strong></span><button
+												class="checkout"
+												onClick="location.href='checkout.html'">CheckOut</button></li>
+									</ul>
+								</li>
+							</ul>
+							<div class="navbar-header">
+								<button type="button" class="navbar-toggle"
+									data-toggle="collapse" data-target=".navbar-collapse"><span class="sr-only">Toggle
+										navigation</span><span class="icon-bar"></span><span
+										class="icon-bar"></span><span class="icon-bar"></span></button></div>
+							<div class="navbar-collapse collapse">
+								<ul class="nav navbar-nav">
+									<li><a href="productgird.html">Trang chủ</a></li>
+									<li><a href="productlitst.html">Sản phẩm</a></li>
+									<li><a href="productgird.html">Khuyến mại</a></li>
+									<li><a href="productgird.html">Bài viết</a></li>
+									<li><a href="productgird.html">Liên hệ</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</header>
-
-	<section id="slide">
-		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-			<div class="carousel-inner">
-				<div class="carousel-item active" data-interval="2000">
-					<img src="./images/banner.png" class="d-block w-100" alt="...">
-					<p class="carousel-caption">Ảnh 1</p>
-				</div>
-				<div class="carousel-item" data-interval="2000">
-					<img src="./images/banner.png" class="d-block w-100" alt="...">
-					<p class="carousel-caption">Ảnh 2</p>
-				</div>
-				<div class="carousel-item" data-interval="2000">
-					<img src="./images/banner.png" class="d-block w-100" alt="...">
-					<p class="carousel-caption">Ảnh 3</p>
-				</div>
-			</div>
-			<a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="sr-only">Previous</span>
-			</a>
-			<a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="sr-only">Next</span>
-			</a>
-		</div>
-	</section>
+		<div class="clearfix"></div>
+	</div>
 
 	<section id="new-product">
 		<div class="container">
@@ -400,8 +350,8 @@
 										230.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>460.000đ</del>
-										</span>
+										<del>460.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -433,8 +383,8 @@
 										210.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>480.000đ</del>
-										</span>
+										<del>480.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -466,8 +416,8 @@
 										330.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>580.000đ</del>
-										</span>
+										<del>580.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -499,8 +449,8 @@
 										420.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>650.000đ</del>
-										</span>
+										<del>650.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -532,8 +482,8 @@
 										270.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>540.000đ</del>
-										</span>
+										<del>540.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -565,8 +515,8 @@
 										350.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>570.000đ</del>
-										</span>
+										<del>570.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -598,8 +548,8 @@
 										360.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>640.000đ</del>
-										</span>
+										<del>640.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -631,8 +581,8 @@
 										290.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>340.000đ</del>
-										</span>
+										<del>340.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -664,8 +614,8 @@
 										330.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>660.000đ</del>
-										</span>
+										<del>660.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -697,8 +647,8 @@
 										230.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>560.000đ</del>
-										</span>
+										<del>560.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>
@@ -730,8 +680,8 @@
 										250.000đ
 									</span>
 									<span class="price-product-giam d-inline-block">
-											<del>599.000đ</del>
-										</span>
+										<del>599.000đ</del>
+									</span>
 								</div>
 							</div>
 						</a>

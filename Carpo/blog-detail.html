@@ -9,126 +9,55 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/blog1.css">
     <title>Chi tiết bài viết</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container-fluid">
 
-            <!-- Liên hệ ADMIN -->
-            <!-- <div class="contact-admin">
-                                            <span>Email: admin@carpo.com - Phone: 012345678</span>
-                                        </div> -->
-
-            <!-- Thanh điều hướng - tìm kiếm -->
-            <div class="header-main d-flex flex-row justify-content-between align-items-center">
-                <div class="img-logo">
-                    <a href="./index.html">
-                        <img src="./images/logo.png" alt="logo" class="img-responsive logo">
-                    </a>
-
-                </div>
-                <!-- <div class="navigation-hiden">
-                                                <nav>
-                                                    
-                                                        <ul class="mr-auto ml-auto">
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">Trang chủ</a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">Sản phẩm</a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">Khuyến mại</a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">Blog</a>
-                                                            </li>
-                                                            <li class="nav-item">
-                                                                <a class="nav-link" href="#">Liên hệ</a>
-                                                            </li>
-                                                        </ul>
-                            
-                                                </nav>
-                                            </div> -->
-                <div class="search-box border-main">
-                    <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
-                    <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
-                </div>
-                <div class="g-btn-login d-flex flex-row justify-content-between align-items-center color-text-main">
-                    <div class="btn-login btn-search">
-                        <span class="btn-login-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="./login.html">
-                        <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
-                        </div>
-                    </a>
-                    <a href="./shopping-card.html">
-                        <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
-                        </div>
-                    </a>
-
-                </div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+            <a class="navbar-brand order-xs-2 order-sm-2 order-md-2 order-lg-1" href="#"><strong>CarpoShop</strong></a>
+            <button class="navbar-toggler order-xs-1 order-sm-1 order-md-1 order-lg-2" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./shop-list.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./khuyenmai.html">Khuyến mại</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./contact.html">Liên hệ</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="container-fluid container-fluid-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav nav-flex-icons order-xs-3 order-sm-3 order-md-3 order-lg-3">
+                <li class="nav-item sm-display-none">
+                    <a class="nav-link"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html"><i class="fa fa-user text-white" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item sm-display-none">
+                    <a class="nav-link"><i class="fa fa-shopping-cart text-white" aria-hidden="true"></i></a>
+                </li>
 
-                    <!-- Collapse button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                    </button>
+            </ul>
+        </nav>
 
-                    <!-- Collapsible content -->
-                    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                        <!-- Links -->
-                        <ul class="navbar-nav mr-auto ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Trang chủ
-
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Sản phẩm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./khuyenmai.html">Khuyến mại</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link menu-active" href="./blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Liên hệ</a>
-                            </li>
-                            <!-- Dropdown -->
-
-
-                        </ul>
-                        <!-- Links -->
-                        <!-- Collapsible content -->
-
-                </nav>
-            </div>
-        </div>
     </header>
 
     <section id="duong-dan">
@@ -151,263 +80,293 @@
         </div>
     </section>
 
-    <section id="list-blogs">
+    <section class="blog_post">
         <div class="container">
-            <button class="toggle-blog" onclick="openNav()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="category" id="mySidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <h2 class="text-uppercase">Bài viết</h2>
-                <!-- DANH MUC BAI VIET -->
-                <div class="danhmucbaiviet">
-                    <h3 class="text-uppercase">Danh mục bài viết</h3>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Thời trang thế giới
-                            </span>
-                            <span class="sobaiviet">
-                                (7)
-                            </span>
+            <div class="row">
+                <div class="col-xs-12 col-sm-9">
+                    <div class="entry-detail">
+                        <div class="entry-photo">
+                            <figure><img src="./images/post1.png" alt="Blog"></figure>
                         </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Xu hướng
-                            </span>
-                            <span class="sobaiviet">
-                                (3)
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Thẩm mỹ
-                            </span>
-                            <span class="sobaiviet">
-                                (1)
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Mix đồ nữ
-                            </span>
-                            <span class="sobaiviet">
-                                (5)
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Phong cách
-                            </span>
-                            <span class="sobaiviet">
-                                (2)
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Thiết kế độc - lạ
-                            </span>
-                            <span class="sobaiviet">
-                                (4)
-                            </span>
-                        </div>
-                    </a>
-                </div>
+                        <div class="entry-meta-data">
 
-                <!-- BÀI VIẾT GẦN ĐÂY -->
-                <div class="baivietganday">
-                    <h3 class="text-uppercase">Bài viết gần đây</h3>
-                    <a href="./blog-detail.html">
-                        [HOT] Áo sơ mi Denim: 101 cách phối đẹp 2019
-                    </a>
-                    <a href="./blog-detail.html">
-                        Cách mặc áo thun cặp đôi: Thời trang cho tình yêu thăng hoa
-                    </a>
-                    <a href="./blog-detail.html">
-                        Quà tặng trung thu cho bé: Ý nghĩa đến từ sắc màu thời trang
-                    </a>
-                    <a href="./blog-detail.html">
-                        Áo thun oversize Nữ: mặc sao cho đúng, phối sao cho đẹp!
-                    </a>
-                </div>
+                            <div class="blog-top-desc">
+                                <div class="blog-date"> 03 Sep 2018 </div>
+                                <h1>Áo thun nam – phép màu cho những màu sắc mùa hè</h1>
+                                <div class="jtv-entry-meta"> <i class="fa fa-user-o"></i> <strong>Admin</strong> <a
+                                        href="#"><i class="fa fa-commenting-o"></i> <strong>15 Bình luận</strong></a>
+                                    <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                            class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                            class="fa fa-star-o"></i>&nbsp; <span>(5 sao)</span></div>
+                                </div>
+                            </div>
 
-                <!-- TỪ KHÓA PHỔ BIẾN -->
-                <div class="tukhoaphobien">
-                    <h3 class="text-uppercase">Từ khóa phổ biến</h3>
-                    <div class="row">
-                        <a href="./blog.html">
-                            <span>nam</span>
-                        </a>
-                        <a href="./blog.html">
-                            <span>thời trang</span>
-                        </a>
+
+
+                        </div>
+                        <div class="content-text clearfix">
+                            <p>Áo thun nam ra đời được coi là một loại trang phục kết hợp hài hòa được với rất nhiều các
+                                phụ kiện hay xu hướng thời trang nam khác nhau. Với thời trang Hè 2017 này, bạn sẽ lựa
+                                chọn màu sắc chiếc áo thun đa màu nào để tạo ra những phép màu cho bảng màu của mùa Hè
+                                sôi động này?</p>
+                            <p>Áo thun trắng luôn là sự lựa chọn hàng đầu của các chàng trai bởi sự đơn giản, dễ phối đồ
+                                và mang lại phtong cách tươi mới, trẻ trung, hiện đại cho người mặc.</p>
+                            <blockquote> Áo Khoác Parka thường được gọi với cái tên “bình dân” là áo khoác Bắc Cực hay
+                                Anorak là trang phục tốt nhất để chống lại cái rét buốt của khí hậu những ngày đại hàn.
+                                Áo được làm từ các loại vải không thấm nước và có độ dài dao động trong khoảng từ thắt
+                                lưng tới đầu gối. Những chiếc áo khoác Parka của H2T được thiết kế hơi rộng, đem lại cảm
+                                giác thoải mái, phóng khoáng và một chút “bụi phủi” mang đậm chất du mục cho người mặc.
+                                Đừng tiếc chi mạnh tay cho 1 in 48 mẫu Áo Khoác Parka "Cực" ấm Ưa Chuộng nhất mùa Lạnh
+                                này nhé bởi bạn sẽ không bao giờ thất vọng đâu! </blockquote>
+                            <p>Có nguồn gốc từ loại áo chống rét của người Eskimo, áo parka rất được ưu ái trong những
+                                ngày đại hàn bởi khả năng giữ ấm tuyệt vời. Đặc điểm của chiếc áo khoác này tại H2T là
+                                được cắt may rộng rãi, có thể có mũ và lớp lót lông bên trong, thường gắn liền với các
+                                gam màu trầm, quân đội như xanh khaki, nâu, đen... Item này rất được ưa chuộng ở các
+                                nước xứ lạnh bởi ngoài khả năng giữ ấm tương đối tốt, nó còn mang lại nét phóng khoáng,
+                                thoải mái cho người mặc. </p>
+                            <p>Để chống chọi hiệu quả với cái rét ẩm của miền Bắc, bạn nên diện những chiếc áo dày dặn
+                                bên trong như len vặn thừng để giữ ấm tuyệt đối cho cơ thể. Cũng nên chọn áo trong có
+                                gam màu tương phản với áo parka để trang phục thêm nổi bật hơn trong các mẫu dưới đây
+                                của H2T nhé.</p>
+                            <p>Dáng áo parka này giữ ấm cực tốt. Kiểu dáng trẻ trung, tiện lợi phù hợp với thời trang
+                                dạo phố thường ngày là điểm mạnh của áo parka. Chất liệu gió bên ngoài cùng lớp lót ấm
+                                áp bên trong giúp bạn có thể sống sót qua mùa đông khắc nghiệt nhất. </p>
+                        </div>
+                        <div class="entry-tags"> <span>Từ khóa:</span> <a href="#">thời trang,</a> <a href="#">áo
+                                thun,</a> <a href="#">làm đẹp</a> </div>
                     </div>
-                    <div class="row">
-                        <a href="./blog.html">
-                            <span>xu hướng</span>
-                        </a>
-                        <a href="./blog.html">
-                            <span>áo thun</span>
-                        </a>
+
+                    <!-- Comment -->
+                    <div class="single-box">
+                        <div class="best-title text-left">
+                            <h2>Bình luận</h2>
+                        </div>
+                        <div class="comment-list">
+                            <ul>
+                                <li>
+                                    <div class="avartar"> <img src="./images/avatar.jpg" alt="Avatar"> </div>
+                                    <div class="comment-body">
+                                        <div class="comment-meta"> <span class="author"><a href="#">bui_hien</a></span>
+                                            <span class="date">2018-04-01</span> </div>
+                                        <div class="comment"> Bai viết thật hay cung cấp nhiều kiến thức bổ ích, giúp
+                                            tôi rất nhiều trong thời trang </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <div class="avartar"> <img src="./images/nam2.jpg" alt="Avatar"> </div>
+                                            <div class="comment-body">
+                                                <div class="comment-meta"> <span class="author"><a
+                                                            href="#">pham_phuong</a></span> <span
+                                                        class="date">2018-04-03</span> </div>
+                                                <div class="comment"> Áo thường được đệm lớp bông dày, với mũ to bản có
+                                                    viền lông, là vũ khí chống gió rét, mưa nhỏ rất tốt. Parka xanh quân
+                                                    đội vẫn luôn là màu sắc được phái mạnh ưa chộng nhất bên cạnh những
+                                                    màu sắc khác cũng như xanh hải quân, đen, xám… Chúng dễ kết hợp với
+                                                    các trang phục khác như áo bò, vest, sơ mi, áo phông… </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="avartar"> <img src="./images/img-girl2.jpg" alt="Avatar"> </div>
+                                            <div class="comment-body">
+                                                <div class="comment-meta"> <span class="author"><a
+                                                            href="#">Admin</a></span> <span
+                                                        class="date">2018-04-05</span> </div>
+                                                <div class="comment"> Áo Parka nam thường được giới trẻ lựa chọn cho
+                                                    mình vào mùa đông. Nếu bạn là tín đồ thời trang thì chắc chắn không
+                                                    thể thiếu áo Parka gió nam AP-0527 này trong tủ đồ của bạn. </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <div class="avartar"> <img src="./images/img-girl4.jpg" alt="Avatar"> </div>
+                                    <div class="comment-body">
+                                        <div class="comment-meta"> <span class="author"><a
+                                                    href="#">pham_phuong</a></span>
+                                            <span class="date">2018-04-11</span> </div>
+                                        <div class="comment"> Đúng như tên gọi của nó, áo có lớp ngoài vải gió cao cấp
+                                            cùng mix da mang đến vẻ cá tính, thời thượng cho các chàng trai. Ngoài ra,
+                                            lớp lót lông dạy dặn bên trong sẽ giúp các chàng cực ấm áp trong những thời
+                                            tiết lạnh hay cực lạnh đấy. Chàng có thể mix cùng áo len, áo thun cùng quần
+                                            hộp cùng tông màu zanzi </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="avartar"> <img src="./images/father.jpg" alt="Avatar"> </div>
+                                    <div class="comment-body">
+                                        <div class="comment-meta"> <span class="author"><a
+                                                    href="#">cong_anh_89</a></span>
+                                            <span class="date">2018-04-24</span> </div>
+                                        <div class="comment"> Chất liệu kaki dày dặn kèm lót lông ấm áp cũng là một
+                                            trong số những áo khoác Parka nam cực hot cho những ngày lạnh. Bạn thấy đấy,
+                                            chiếc áo này cực dễ mặc và mix đồ cho những chàng trai hay cả những cô gái
+                                            yêu thích phong cách cá tính, chất chơi. </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="row">
-                        <a href="./blog.html">
-                            <span>phong cách</span>
-                        </a>
+                    <div class="single-box comment-box">
+                        <div class="best-title text-left">
+                            <h2>Để lại bình luận</h2>
+                        </div>
+                        <div class="coment-form">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <label for="name">Tên</label>
+                                    <input id="name" type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-6">
+                                    <label for="email">Email</label>
+                                    <input id="email" type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="website">Tiêu đề</label>
+                                    <input id="website" type="text" class="form-control">
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="message">Nội dung</label>
+                                    <textarea name="message" id="message" rows="8" class="form-control"></textarea>
+                                </div>
+                            </div>
+                            <button class="button"><span>Thêm bình luận</span></button>
+                        </div>
                     </div>
+                    <!-- ./Comment -->
                 </div>
-            </div>
-
-            <div class="bg-vertical"></div>
-
-            <!-- DANH SÁCH BÀI VIẾT -->
-            <div class="blog-detail">
-                <h2>Áo thun nam – phép màu cho những màu sắc mùa hè</h2>
-                <div class="tacgiabv">
-                    <span class="">Ngày đăng: 02-08-2019</span>
-                    <span class="">Đăng bởi: Admin</span>
-                </div>
-                <p>Áo thun nam ra đời được coi là một loại trang phục kết hợp hài hòa được với rất nhiều các phụ kiện
-                    hay xu
-                    hướng thời trang nam khác nhau. Với thời trang Hè 2017 này, bạn sẽ lựa chọn màu sắc chiếc áo thun đa
-                    màu
-                    nào
-                    để tạo ra những phép màu cho bảng màu của mùa Hè sôi động này?</p>
-                <h3>1. Áo thun trắng</h3>
-                <p>Áo thun trắng luôn là sự lựa chọn hàng đầu của các chàng trai bởi sự đơn giản, dễ phối đồ và mang lại
-                    phtong
-                    cách tươi mới, trẻ trung, hiện đại cho người mặc.</p>
-                <img src="./images/post1.png" alt="" class="img-post-detail">
-                <p>Áo thun trắng hay áo thun trơn cách điệu sẽ giúp bạn năng động và cá tính hơn. Bạn có thể kết hợp rất
-                    nhiều
-                    phong cách thời trang với áo thun trắng nam như:
-                </p>
-                <p>Áo thun trắng nam + sơ mi nam để mở + t-shirt + quần jean nam tối màu => Phong cách năng động
-                </p>
-                <p>Áo thun trắng nam + quần tây => Vẻ cổ điển những năm 1950
-                </p>
-                <p>Áo phông trắng nam + quần jean xắn gấu + giày thể thao, giày lười nam => Trẻ trung, gọn gàng
-                </p>
-                <p>Áo thun nam trắng cách tân + quần đen + bomber jacket => Phong cách hoàn hảo, trung tâm thu hút mọi
-                    ánh
-                    nhìn
-                </p>
-                <p>Áo phông nam trắng + quần short + áo khoác bomber => cặp đôi hoàn hảo khi nhiệt độ ngoài trời trên 20
-                    độ
-                    C
-                </p>
-                <h3>2. Áo thun đỏ</h3>
-                <p>Áo thun đỏ vốn mang trên mình màu sắc rực rỡ khiến bạn nam hay e dè khi lựa chọn. Tuy nhiên, việc kết
-                    hợp
-                    giữa mà đỏ với những gam màu trung tính trên chiếc áo thun nam sẽ giúp các chàng nổi bật, gây ấn
-                    tượng
-                    với
-                    mọi người và đặc biệt không sợ quá lòe loẹt.</p>
-                <img src="./images/bv2-2.png" alt="" class="img-post-detail">
-                <p>Với chiếc áo thun nam màu đỏ bạn nên kết hợp các loại trang phục tối màu để tránh thành con công rực
-                    rỡ
-                    mùa
-                    Hè nhé!</p>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </section>
-
-    <section id="blog">
-        <div class="container">
-            <div class="title-new-product">
-                <div class="lable-new d-flex flex-row justify-content-center align-items-center">
-                    <span>Bài viết</span>
-                </div>
-            </div>
-
-            <div class="list-blog">
-                <div>
-                    <a href="./blog-detail.html">
-                        <div class="blog-item">
-                            <div class="img-blog">
-                                <img src="images/blog3.png">
-                            </div>
-                            <div class="author-blog d-flex justify-content-between align-items-center">
-                                <span class="font-14">02-08-2019</span>
-                                <span class="font-14">Đăng bởi: Admin</span>
-                            </div>
-                            <div class="title-blog">
-                                <p class="font-20">Sợi Bamboo là gì? Tại sao Áo Sơ Mi sợi Bamboo lại được ưa chuộng như
-                                    vậy
-                                </p>
-                            </div>
-                            <div class="content-blog">
-                                <p class="font-14">Sợi bamboo hay còn gọi là sợi tre,có thành phần chủ yếu từ cây tre,
-                                    tre
-                                    được
-                                    biết
-                                    đến là loại cây dễ trồng, sinh trưởng nhanh</p>
+                <!-- right colunm -->
+                <aside class="sidebar col-xs-12 col-sm-3">
+                    <div class="search">
+                        <input class="form-control" type="search" placeholder="Tìm kiếm">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <!-- Blog category -->
+                    <div class="block blog-module">
+                        <div class="block-title">
+                            <h3>Danh mục</h3>
+                        </div>
+                        <div class="block_content">
+                            <div class="layered layered-category">
+                                <div class="layered-content">
+                                    <ul class="tree-menu">
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Xu hướng</a></li>
+                                        <li><i class="fa fa-angle-right"></i>&nbsp; <a href="#">Thời trang thế giới</a>
+                                        </li>
+                                        <li><i class="fa fa-angle-right"></i>&nbsp; <a href="#">Thẩm mỹ</a></li>
+                                        <li><i class="fa fa-angle-right"></i>&nbsp; <a href="#">Phối đồ</a>
+                                        </li>
+                                        <li><i class="fa fa-angle-right"></i>&nbsp; <a href="#">Phong cách</a></li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
-                <div>
-                    <a href="./blog-detail.html">
-                        <div class="blog-item">
-                            <div class="img-blog">
-                                <img src="images/blog3.png">
-                            </div>
-                            <div class="author-blog d-flex justify-content-between align-items-center">
-                                <span class="font-14">07-09-2019</span>
-                                <span class="font-14">Đăng bởi: Admin</span>
-                            </div>
-                            <div class="title-blog">
-                                <p class="font-20">3 Kiểu Quần Jeans nam “không thể thiếu” trong tủ đồ một chàng trai
-                                    Hiện
-                                    Đại
-                                </p>
-                            </div>
-                            <div class="content-blog">
-                                <p class="font-14">Bất chấp mọi xu hướng thời trang, Quần Jean Nam kể từ khi ra đời hơn
-                                    1
-                                    thế kỷ trước đến nay vẫn là món đồ yêu thích</p>
+                    <!-- Popular Posts -->
+                    <div class="block blog-module">
+                        <div class="block-title">
+                            <h3>Bài viết phổ biến</h3>
+                        </div>
+                        <div class="block_content">
+                            <div class="layered">
+                                <div class="layered-content">
+                                    <ul class="blog-list-sidebar">
+                                        <li>
+                                            <div class="post-thumb"> <a href="#"><img src="./images/8.png"
+                                                        alt="Blog"></a> </div>
+                                            <div class="post-info">
+                                                <h5 class="entry_title"><a href="#">Mẹo xử lí vết bẩn cứng đầu dính trên
+                                                        áo khoác gió</a></h5>
+                                                <div class="post-meta"> <span class="date"><i
+                                                            class="fa fa-calendar"></i> 2019-01-03</span> <span
+                                                        class="comment-count"> <i class="fa fa-comment-o"></i> 3 </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-thumb"> <a href="#"><img src="./images/ao thun 1.png"
+                                                        alt="Blog"></a> </div>
+                                            <div class="post-info">
+                                                <h5 class="entry_title"><a href="#">Sợi Modal là gì? Tại sao nên mua áo
+                                                        sợi Modal</a></h5>
+                                                <div class="post-meta"> <span class="date"><i
+                                                            class="fa fa-calendar"></i> 2019-02-02</span> <span
+                                                        class="comment-count"> <i class="fa fa-comment-o"></i> 6 </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-thumb"> <a href="#"><img src="./images/at3.png"
+                                                        alt="Blog"></a> </div>
+                                            <div class="post-info">
+                                                <h5 class="entry_title"><a href="#">TOP 99 Mẫu Áo Khoác Jeans nam mới
+                                                        nhất 2019 cho các chàng Trai Thời Thượng</a></h5>
+                                                <div class="post-meta"> <span class="date"><i
+                                                            class="fa fa-calendar"></i> 2019-09-08</span> <span
+                                                        class="comment-count"> <i class="fa fa-comment-o"></i> 10
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
-                <div>
-                    <a href="./blog-detail.html">
-                        <div class="blog-item">
-                            <div class="img-blog">
-                                <img src="images/blog2.png">
-                            </div>
-                            <div class="author-blog d-flex justify-content-between align-items-center">
-                                <span class="font-14">11-09-2019</span>
-                                <span class="font-14">Đăng bởi: Admin</span>
-                            </div>
-                            <div class="title-blog">
-                                <p class="font-20">Những món đồ cơ bản giúp đàn ông trở nên quyến rũ
-                                </p>
-                            </div>
-                            <div class="content-blog">
-                                <p class="font-14">Sự thu hút của đàn ông không chỉ nằm ở dung mạo có sẵn. Phong cách,
-                                    thần
-                                    thái cùng gu thời trang sành điệu mới chính là điều khiến phái đẹp ngưỡng mộ.</p>
+                    <!-- Recent Comments -->
+                    <div class="block blog-module">
+                        <div class="block-title">
+                            <h3>Bình luận gần đây</h3>
+                        </div>
+                        <div class="block_content">
+                            <div class="layered">
+                                <div class="layered-content">
+                                    <ul class="recent-comment-list">
+                                        <li>
+                                            <h5><a href="#">Áo Khoác Parka thường được gọi với cái tên “bình dân”</a>
+                                            </h5>
+                                            <div class="comment"> "Áo được làm từ các loại vải không thấm nước và có độ
+                                                dài dao động trong khoảng từ thắt lưng tới đầu gối, thiết kế hơi
+                                                rộng..." </div>
+                                            <div class="author">Đăng bởi <a href="#">Admin</a></div>
+                                        </li>
+                                        <li>
+                                            <h5><a href="#">Vải jeans được mệnh danh chất liệu sở hữu sự trẻ trung</a>
+                                            </h5>
+                                            <div class="comment"> " Áo khoác jeans nam chính vì vậy nên được yêu chuộng
+                                                và trở thành item phải có đối với các tín đồ thời trang...." </div>
+                                            <div class="author">Đăng bởi <a href="#">Admin</a></div>
+                                        </li>
+                                        <li>
+                                            <h5><a href="#">Đối với những chàng trai theo phong cách bụi bặm</a></h5>
+                                            <div class="comment"> " Hãy sở hữu 1 trong các mẫu áo khoác bò nam mới nhất
+                                                2019 của H2T và học lỏm bí quyết và công thức mix áo bò của các chàng
+                                                trai..." </div>
+                                            <div class="author">Đăng bởi <a href="#">Admin</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
-                    </a>
-                </div>
+                    </div>
 
+                    <!-- tags -->
+                    <div class="block block-tags">
+                        <div class="block-title">
+                            <h3>Từ khóa phổ biến</h3>
+                        </div>
+                        <div class="block-content">
+                            <div class="tags-list"> <a href="#">Xu hướng</a> <a href="#">Nam</a> <a href="#">Quần áo</a>
+                                <a href="#">Mix đồ</a> <a href="#">Nữ</a> <a href="#">Làm đẹp</a> <a href="#">Thời
+                                    trang</a> </div>
+                        </div>
+                    </div>
+                    <!-- ./Banner -->
+                </aside>
+                <!-- ./right colunm -->
             </div>
         </div>
     </section>
@@ -415,78 +374,71 @@
 
 
     <footer>
-        <div class="row">
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Về carpo</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Thông tin về Carpo</a>
-                    </li>
-                    <li>
-                        <a href="#">Quá trình phát triển</a>
-                    </li>
-                    <li>
-                        <a href="#">Hệ thống cửa hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Tuyển dụng</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Hỗ trợ mua hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Hướng dẫn mua hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Hướng dẫn thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Phương thức vận chuyển</a>
-                    </li>
-                    <li>
-                        <a href="#">Tra cứu đơn hàng</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Chính sách khách hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Khách hàng VIP</a>
-                    </li>
-                    <li>
-                        <a href="#">Khách hàng thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách đổi trả</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách bảo mật</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Đăng ký nhận thông tin</h2>
-                <div class="register-email border-main">
-                    <input type="text" name="timkiem" placeholder="Email của bạn" class="border-none">
-                    <button type="submit" class="btn-register-email bg-green text-white text-uppercase font-14">Đăng
-                        ký</button>
-                </div>
-                <div class="follow">
-                    <span class="color-text-main font-14">Theo dõi chúng tôi qua</span>
-                    <div class="icon-follow d-inline-block">
-                        <span class="facebook">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </span>
-                        <span class="youtube">
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </span>
-                        <span class="twitter">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </span>
+        <div class="footer-inner">
+            <div class="news-letter">
+                <div class="container">
+                    <div class="heading text-center">
+                        <h2>ĐĂNG KÝ NHẬN THÔNG BÁO</h2>
+                        <span>Đăng ký nhận thông tin khuyến mãi và cập nhật sản phẩm mới nhất từ Carpo.</span>
                     </div>
+                    <form>
+                        <input type="email" placeholder="Nhập địa chỉ Email của bạn" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <h4>Carpo</h4>
+                        <div class="contacts-info">
+                            <p>Cửa hàng thời trang nam mang phong cách mới lạ </p>
+                            <address>
+                                <i class="fa fa-location-arrow"></i> <span>123 Nguyễn Trãi, Thanh Xuân, Hà Nội</span>
+                            </address>
+                            <div class="phone-footer"><i class="fa fa-phone"></i> +0 123 456 98765</div>
+                            <div class="email-footer"><i class="fa fa-envelope"></i> <a
+                                    href="mailto:support@example.com">Carpo@gmail.com</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                        <h4>Về chúng tôi</h4>
+                        <ul class="links">
+                            <li><a href="#">Thông tin về Carpo</a></li>
+                            <li><a href="#">Quá trình phát triển</a></li>
+                            <li><a href="#">Hệ thông cửa hàng</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                        <h4>HỖ TRỢ MUA HÀNG</h4>
+                        <ul class="links">
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Phương thức vận chuyển</a></li>
+                            <li><a href="#">Tra cứu đơn hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+                        <div class="social">
+                            <h4>Theo dõi chúng tôi</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 coppyright text-center">© 2019 CarpoShop.</div>
                 </div>
             </div>
         </div>
@@ -496,25 +448,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script>
-        function openNav() {
-            if (window.innerWidth <= 768) {
-                document.getElementById("mySidepanel").style.width = "250px";
-                document.getElementById("mySidepanel").style.paddingBottom = "10px";
-                document.getElementById("mySidepanel").style.paddingTop = "10px";
-                document.getElementById("mySidepanel").style.paddingLeft = "20px";
-                document.getElementById("mySidepanel").style.paddingRight = "20px";
-            }
-        }
-
-        function closeNav() {
-            document.getElementById("mySidepanel").style.width = "0";
-            document.getElementById("mySidepanel").style.paddingBottom = "0px";
-            document.getElementById("mySidepanel").style.paddingTop = "0px";
-            document.getElementById("mySidepanel").style.paddingLeft = "0px";
-            document.getElementById("mySidepanel").style.paddingRight = "0px";
-        }
-    </script>
 </body>
 
 </html>

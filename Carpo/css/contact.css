@@ -17,6 +17,10 @@
     }
 }
 @media screen and (max-width: 768px) {
+    #contact {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
     .shop {
         width: 100%;
         float: none;
@@ -34,13 +38,10 @@
     border-bottom: 2px solid #57AF8A;
 }
 .box-info {
-    margin-bottom: 35px;
+    margin-bottom: 20px;
 }
-.box-info p {
-    margin-left: 35px;
-}
-.box-info .icon-shop-follow {
-    margin-left: 35px;
+.box-info p{
+    margin-bottom: 0;
 }
 .box-info .icon-shop-follow span{
     margin-right: 15px;
@@ -54,7 +55,9 @@
 .box-info .icon-shop-follow span.twitter{
     color: #00aced;
 }
-
+::placeholder {
+    font-size: 14px;
+}
 .shop-contact .div-2 {
     display: flex;
     flex-direction: row;
@@ -102,7 +105,21 @@
     outline: none;
     padding: 4px 25px;
 }
-
+@media screen and (max-width: 576px) {
+    .shop-contact .div-2 input[type="text"] {
+        width: 100%;
+        float: none;
+    }
+    .shop-contact .div-2 input[type="text"]:nth-child(2) {
+        margin-top: 20px;
+    }
+    .shop-contact input.email{
+        width: 100% !important;
+    }
+    .shop-contact .div-2 {
+        flex-direction: column;
+    }
+}
 /* --------------------------ban do---------------------- */
 #shop-map iframe {
     height: 500px;

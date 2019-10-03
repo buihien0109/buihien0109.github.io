@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/header.css">
     <link rel="stylesheet" href="./css/chitietdonhang.css">
     <title>Chi tiết đơn hàng</title>
 </head>
@@ -17,124 +17,49 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container-fluid">
 
-            <!-- Liên hệ ADMIN -->
-            <!-- <div class="contact-admin">
-                        <span>Email: admin@carpo.com - Phone: 012345678</span>
-                    </div> -->
-
-            <!-- Thanh điều hướng - tìm kiếm -->
-            <div class="header-main d-flex flex-row justify-content-between align-items-center">
-                <div class="img-logo">
-                    <a href="./index.html">
-                        <img src="./images/logo.png" alt="logo" class="img-responsive logo">
-                    </a>
-
-                </div>
-                <!-- <div class="navigation-hiden">
-                            <nav>
-                                
-                                    <ul class="mr-auto ml-auto">
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Trang chủ</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Sản phẩm</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Khuyến mại</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Blog</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#">Liên hệ</a>
-                                        </li>
-                                    </ul>
-        
-                            </nav>
-                        </div> -->
-                <div class="search-box border-main">
-                    <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
-                    <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
-                </div>
-                <div class="g-btn-login d-flex flex-row justify-content-between align-items-center color-text-main">
-                    <div class="btn-login btn-search">
-                        <span class="btn-login-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    
-                        <div class="btn-login">
-                            <div class="dropdown">
-                                <button class="dropbtn">Bùi Hiên
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-content">
-                                    <a href="./chitietdonhang.html">Chi tiết đơn hàng</a>
-                                    <a href="./theodoidonhang.html">Theo dõi đơn hàng</a>
-                                </div>
-                            </div>
-                        </div>
-                    
-                    <a href="./shopping-card.html">
-                        <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
-                        </div>
-                    </a>
-
-                </div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+            <a class="navbar-brand order-xs-2 order-sm-2 order-md-2 order-lg-1" href="#"><strong>CarpoShop</strong></a>
+            <button class="navbar-toggler order-xs-1 order-sm-1 order-md-1 order-lg-2" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./shop-list.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./khuyenmai.html">Khuyến mại</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./contact.html">Liên hệ</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="container-fluid container-fluid-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav nav-flex-icons order-xs-3 order-sm-3 order-md-3 order-lg-3">
+                <li class="nav-item sm-display-none">
+                    <a class="nav-link"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html"><i class="fa fa-user text-white" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item sm-display-none">
+                    <a class="nav-link"><i class="fa fa-shopping-cart text-white" aria-hidden="true"></i></a>
+                </li>
 
-                    <!-- Collapse button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                    </button>
+            </ul>
+        </nav>
 
-                    <!-- Collapsible content -->
-                    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                        <!-- Links -->
-                        <ul class="navbar-nav mr-auto ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Trang chủ
-
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Sản phẩm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Khuyến mại</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Liên hệ</a>
-                            </li>
-                            <!-- Dropdown -->
-
-
-                        </ul>
-                        <!-- Links -->
-                        <!-- Collapsible content -->
-
-                </nav>
-            </div>
-        </div>
     </header>
+
 
     <section id="duong-dan">
         <div class="container">
@@ -311,84 +236,72 @@
 
     </section>
 
-
-
-
-
-
     <footer>
-        <div class="row">
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Về carpo</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Thông tin về Carpo</a>
-                    </li>
-                    <li>
-                        <a href="#">Quá trình phát triển</a>
-                    </li>
-                    <li>
-                        <a href="#">Hệ thống cửa hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Tuyển dụng</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Hỗ trợ mua hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Hướng dẫn mua hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Hướng dẫn thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Phương thức vận chuyển</a>
-                    </li>
-                    <li>
-                        <a href="#">Tra cứu đơn hàng</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Chính sách khách hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Khách hàng VIP</a>
-                    </li>
-                    <li>
-                        <a href="#">Khách hàng thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách đổi trả</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách bảo mật</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Đăng ký nhận thông tin</h2>
-                <div class="register-email border-main">
-                    <input type="text" name="timkiem" placeholder="Email của bạn" class="border-none">
-                    <button type="submit" class="btn-register-email bg-green text-white text-uppercase font-14">Đăng
-                        ký</button>
-                </div>
-                <div class="follow">
-                    <span class="color-text-main font-14">Theo dõi chúng tôi qua</span>
-                    <div class="icon-follow d-inline-block">
-                        <span class="facebook">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </span>
-                        <span class="youtube">
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </span>
-                        <span class="twitter">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </span>
+        <div class="footer-inner">
+            <div class="news-letter">
+                <div class="container">
+                    <div class="heading text-center">
+                        <h2>ĐĂNG KÝ NHẬN THÔNG BÁO</h2>
+                        <span>Đăng ký nhận thông tin khuyến mãi và cập nhật sản phẩm mới nhất từ Carpo.</span>
                     </div>
+                    <form>
+                        <input type="email" placeholder="Nhập địa chỉ Email của bạn" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <h4>Carpo</h4>
+                        <div class="contacts-info">
+                            <p>Cửa hàng thời trang nam mang phong cách mới lạ </p>
+                            <address>
+                                <i class="fa fa-location-arrow"></i> <span>123 Nguyễn Trãi, Thanh Xuân, Hà Nội</span>
+                            </address>
+                            <div class="phone-footer"><i class="fa fa-phone"></i> +0 123 456 98765</div>
+                            <div class="email-footer"><i class="fa fa-envelope"></i> <a
+                                    href="mailto:support@example.com">Carpo@gmail.com</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                        <h4>Về chúng tôi</h4>
+                        <ul class="links">
+                            <li><a href="#">Thông tin về Carpo</a></li>
+                            <li><a href="#">Quá trình phát triển</a></li>
+                            <li><a href="#">Hệ thông cửa hàng</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                        <h4>HỖ TRỢ MUA HÀNG</h4>
+                        <ul class="links">
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Phương thức vận chuyển</a></li>
+                            <li><a href="#">Tra cứu đơn hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+                        <div class="social">
+                            <h4>Theo dõi chúng tôi</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 coppyright text-center">© 2019 CarpoShop.</div>
                 </div>
             </div>
         </div>

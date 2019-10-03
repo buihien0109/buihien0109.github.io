@@ -8,127 +8,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/blog1.css">
     <title>Danh sách bài viết</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container-fluid">
 
-            <!-- Liên hệ ADMIN -->
-            <!-- <div class="contact-admin">
-                                        <span>Email: admin@carpo.com - Phone: 012345678</span>
-                                    </div> -->
-
-            <!-- Thanh điều hướng - tìm kiếm -->
-            <div class="header-main d-flex flex-row justify-content-between align-items-center">
-                <div class="img-logo">
-                    <a href="./index.html">
-                        <img src="./images/logo.png" alt="logo" class="img-responsive logo">
-                    </a>
-
-                </div>
-                <!-- <div class="navigation-hiden">
-                                            <nav>
-                                                
-                                                    <ul class="mr-auto ml-auto">
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Trang chủ</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Sản phẩm</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Khuyến mại</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Blog</a>
-                                                        </li>
-                                                        <li class="nav-item">
-                                                            <a class="nav-link" href="#">Liên hệ</a>
-                                                        </li>
-                                                    </ul>
-                        
-                                            </nav>
-                                        </div> -->
-                <div class="search-box border-main">
-                    <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
-                    <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
-                </div>
-                <div class="g-btn-login d-flex flex-row justify-content-between align-items-center color-text-main">
-                    <div class="btn-login btn-search">
-                        <span class="btn-login-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="./login.html">
-                        <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
-                        </div>
-                    </a>
-                    <a href="./shopping-card.html">
-                        <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
-                        </div>
-                    </a>
-
-                </div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+            <a class="navbar-brand order-xs-2 order-sm-2 order-md-2 order-lg-1" href="#"><strong>CarpoShop</strong></a>
+            <button class="navbar-toggler order-xs-1 order-sm-1 order-md-1 order-lg-2" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./shop-list.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./khuyenmai.html">Khuyến mại</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./contact.html">Liên hệ</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="container-fluid container-fluid-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav nav-flex-icons order-xs-3 order-sm-3 order-md-3 order-lg-3">
+                <li class="nav-item sm-display-none">
+                    <a class="nav-link"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html"><i class="fa fa-user text-white" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item sm-display-none">
+                    <a class="nav-link"><i class="fa fa-shopping-cart text-white" aria-hidden="true"></i></a>
+                </li>
 
-                    <!-- Collapse button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                    </button>
+            </ul>
+        </nav>
 
-                    <!-- Collapsible content -->
-                    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                        <!-- Links -->
-                        <ul class="navbar-nav mr-auto ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Trang chủ
-
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Sản phẩm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./khuyenmai.html">Khuyến mại</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link menu-active" href="./blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Liên hệ</a>
-                            </li>
-                            <!-- Dropdown -->
-
-
-                        </ul>
-                        <!-- Links -->
-                        <!-- Collapsible content -->
-
-                </nav>
-            </div>
-        </div>
     </header>
 
     <section id="duong-dan">
@@ -145,321 +74,469 @@
         </div>
     </section>
 
-    <section id="list-blogs">
+    <section class="blog_post">
         <div class="container">
-            <button class="toggle-blog" onclick="openNav()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <div class="category" id="mySidepanel">
-                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-                <h2 class="text-uppercase">Bài viết</h2>
-                <!-- DANH MUC BAI VIET -->
-                <div class="danhmucbaiviet">
-                    <h3 class="text-uppercase">Danh mục bài viết</h3>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Thời trang thế giới
-                            </span>
-                            <span class="sobaiviet">
-                                (7)
-                            </span>
+            <div class="row">
+                <div class="col-xs-12 col-sm-9" id="center_column">
+                    <div class="center_column">
+                        <div class="page-title">
+                            <h2>Bài viết</h2>
                         </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Xu hướng
-                            </span>
-                            <span class="sobaiviet">
-                                (3)
-                            </span>
+                        <ul class="blog-posts">
+                            <li class="post-item">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="entry-thumb"> <a href="./blog-detail.html">
+                                                    <figure><img src="./images/11.jpg" alt="Blog"></figure>
+                                                </a> </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <h3 class="entry-title"><a href="./blog-detail.html">Sợi Bamboo là gì?
+                                                    Tại sao Áo Sơ Mi sợi Bamboo lại được ưa chuộng như vậy</a></h3>
+                                            <div class="entry-meta-data"> <span class="author"> <i
+                                                        class="fa fa-user"></i>&nbsp; by: <a href="#">Admin</a></span>
+                                                <span class="cat"> <i class="fa fa-folder"></i>&nbsp; <a href="#">Tin
+                                                        tức
+                                                    </a> </span> <span class="comment-count">
+                                                    <i class="fa fa-comment"></i>&nbsp; 3 </span> <span class="date"><i
+                                                        class="fa fa-calendar"></i>&nbsp; 2018-08-05</span> </div>
+                                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                    class="fa fa-star-o"></i>&nbsp; <span>(5 votes)</span></div>
+                                            <div class="entry-excerpt">Sợi bamboo hay còn gọi là sợi tre,có thành phần
+                                                chủ yếu từ cây tre, tre được biết đến là loại cây dễ trồng, sinh trưởng
+                                                nhanh, đặc biệt không cần phun thuốc hoá học khi trồng nên khi được sử
+                                                dụng làm sợi thì loại sợi này được coi là sợi tương đối an toàn!</div>
+                                            <a href="./blog-detail.html" class="read-more">Xem thêm&nbsp; <i
+                                                    class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="post-item">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="entry-thumb"> <a href="./blog-detail.html">
+                                                    <figure><img src="./images/13.jpg" alt="Blog"></figure>
+                                                </a> </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <h3 class="entry-title"><a href="./blog-detail.html">Đừng tiếc Chi mạnh
+                                                    tay cho 48 mẫu Áo Khoác Parka Cực Ấm, Ưa Chuộng nhất mùa Lạnh
+                                                    này</a></h3>
+                                            <div class="entry-meta-data"> <span class="author"> <i
+                                                        class="fa fa-user"></i>&nbsp; by: <a href="#">Admin</a></span>
+                                                <span class="cat"> <i class="fa fa-folder"></i>&nbsp; <a href="#">Tin
+                                                        tức
+                                                    </a> </span> <span class="comment-count">
+                                                    <i class="fa fa-comment"></i>&nbsp; 3 </span> <span class="date"><i
+                                                        class="fa fa-calendar"></i>&nbsp; 2018-08-06</span> </div>
+                                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                    class="fa fa-star-o"></i>&nbsp; <span>(5 votes)</span></div>
+                                            <div class="entry-excerpt">Để chống chọi hiệu quả với cái rét ẩm của miền
+                                                Bắc, bạn nên diện những chiếc áo dày dặn bên trong như len vặn thừng để
+                                                giữ ấm tuyệt đối cho cơ thể. Cũng nên chọn áo trong có gam màu tương
+                                                phản với áo parka để trang phục thêm nổi bật hơn trong các mẫu dưới đây
+                                                của H2T nhé.</div>
+                                            <a href="./blog-detail.html" class="read-more">Xem thêm&nbsp; <i
+                                                    class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="post-item">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="entry-thumb"> <a href="./blog-detail.html">
+                                                    <figure><img src="./images/14.jpg" alt="Blog"></figure>
+                                                </a> </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <h3 class="entry-title"><a href="./blog-detail.html">TOP 99 Mẫu Áo Khoác
+                                                    Jeans nam mới nhất 2019 cho các chàng Trai Thời Thượng</a></h3>
+                                            <div class="entry-meta-data"> <span class="author"> <i
+                                                        class="fa fa-user"></i>&nbsp; by: <a href="#">Admin</a></span>
+                                                <span class="cat"> <i class="fa fa-folder"></i>&nbsp; <a href="#">Tin
+                                                        tức
+                                                    </a> </span> <span class="comment-count">
+                                                    <i class="fa fa-comment"></i>&nbsp; 7 </span> <span class="date"><i
+                                                        class="fa fa-calendar"></i>&nbsp; 2018-08-13</span> </div>
+                                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                    class="fa fa-star-o"></i>&nbsp; <span>(5 votes)</span></div>
+                                            <div class="entry-excerpt">Vải jeans được mệnh danh chất liệu sở hữu sự trẻ
+                                                trung vĩnh cửu và trở thành nguồn cảm hứng cho nhiều nhà tạo mốt lớn
+                                                trên thế giới. .</div>
+                                            <a href="./blog-detail.html" class="read-more">Xem thêm&nbsp; <i
+                                                    class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="post-item">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="entry-thumb"> <a href="./blog-detail.html">
+                                                    <figure><img src="./images/15.png" alt="Blog"></figure>
+                                                </a> </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <h3 class="entry-title"><a href="./blog-detail.html">Hướng dẫn chọn size
+                                                    áo và size giày nam chuẩn khi mua hàng online</a></h3>
+                                            <div class="entry-meta-data"> <span class="author"> <i
+                                                        class="fa fa-user"></i>&nbsp; by: <a href="#">Admin</a></span>
+                                                <span class="cat"> <i class="fa fa-folder"></i>&nbsp; <a href="#">Tin
+                                                        tức
+                                                    </a> </span> <span class="comment-count">
+                                                    <i class="fa fa-comment"></i>&nbsp; 5 </span> <span class="date"><i
+                                                        class="fa fa-calendar"></i>&nbsp; 2018-08-15</span> </div>
+                                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                    class="fa fa-star-o"></i>&nbsp; <span>(5 votes)</span></div>
+                                            <div class="entry-excerpt">Phái mạnh thường ít quan tâm tới số đo hay size
+                                                áo chuẩn mà thường thử đồ nào vừa thì chọn size đó. Tuy nhiên, để sở hữu
+                                                những chiếc áo chuẩn form thì những thông số dưới đây sẽ giúp bạn chọn
+                                                được những chiếc áo vừa in và tiện lợi hơn khi không bị lung túng khi
+                                                mua hàng online.</div>
+                                            <a href="./blog-detail.html" class="read-more">Xem thêm&nbsp; <i
+                                                    class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="post-item">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="entry-thumb"> <a href="./blog-detail.html">
+                                                    <figure><img src="./images/16.jpg" alt="Blog"></figure>
+                                                </a> </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <h3 class="entry-title"><a href="./blog-detail.html">Cách sử dụng và bảo
+                                                    quản giày da như mới | H2T</a></h3>
+                                            <div class="entry-meta-data"> <span class="author"> <i
+                                                        class="fa fa-user"></i>&nbsp; by: <a href="#">Admin</a></span>
+                                                <span class="cat"> <i class="fa fa-folder"></i>&nbsp; <a href="#">Tin
+                                                        tức
+                                                    </a> </span> <span class="comment-count">
+                                                    <i class="fa fa-comment"></i>&nbsp; 10 </span> <span class="date"><i
+                                                        class="fa fa-calendar"></i>&nbsp; 2018-09-09</span> </div>
+                                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                    class="fa fa-star-o"></i>&nbsp; <span>(5 votes)</span></div>
+                                            <div class="entry-excerpt">Giày da đã và đang là một người bạn thân thiết
+                                                với chúng ta từ các hoạt động công tác, học tập cho đến những buổi đi
+                                                chơi, dạo phố. Tuy nhiên chất liệu da và ở vị trí của một đôi giày thì
+                                                việc gìn giữ độ bền cho đôi giày da của bạn dường như chưa được quan tâm
+                                                nhiều.</div>
+                                            <a href="./blog-detail.html" class="read-more">Xem thêm&nbsp; <i
+                                                    class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="post-item">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="entry-thumb"> <a href="./blog-detail.html">
+                                                    <figure><img src="./images/17.jpg" alt="Blog"></figure>
+                                                </a> </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <h3 class="entry-title"><a href="./blog-detail.html">Mách nhỏ giữ áo thun
+                                                    bền đẹp như mới</a></h3>
+                                            <div class="entry-meta-data"> <span class="author"> <i
+                                                        class="fa fa-user"></i>&nbsp; by: <a href="#">Admin</a></span>
+                                                <span class="cat"> <i class="fa fa-folder"></i>&nbsp; <a href="#">Tin
+                                                        tức
+                                                    </a> </span> <span class="comment-count">
+                                                    <i class="fa fa-comment"></i>&nbsp; 3 </span> <span class="date"><i
+                                                        class="fa fa-calendar"></i>&nbsp; 2018-09-13</span> </div>
+                                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                    class="fa fa-star-o"></i>&nbsp; <span>(5 votes)</span></div>
+                                            <div class="entry-excerpt">Khi mới mua áo thun về, nếu áo thun có đính hạt
+                                                hoặc có hình in bạn nên lộn trái áo lại dùng bàn ủi, ủi lại phía sau để
+                                                tăng độ bền của hình in và hạt trang trí.
+
+                                                Để tăng độ bền màu áo, bạn đừng vội giặt áo với xà phòng mà nên ngâm áo
+                                                trong nước lạnh pha giấm hoặc muối khoảng tiếng rồi xả sạch với nước
+                                                lạnh, cách làm này khiến màu của áo hạn chế bị phai trong quá trình sử
+                                                dụng</div>
+                                            <a href="./blog-detail.html" class="read-more">Xem thêm&nbsp; <i
+                                                    class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="post-item">
+                                <article class="entry">
+                                    <div class="row">
+                                        <div class="col-sm-5">
+                                            <div class="entry-thumb"> <a href="./blog-detail.html">
+                                                    <figure><img src="./images/7.png" alt="Blog"></figure>
+                                                </a> </div>
+                                        </div>
+                                        <div class="col-sm-7">
+                                            <h3 class="entry-title"><a href="./blog-detail.html">Mẹo xử lí vết bẩn
+                                                    cứng đầu dính trên áo khoác gió</a></h3>
+                                            <div class="entry-meta-data"> <span class="author"> <i
+                                                        class="fa fa-user"></i>&nbsp; by: <a href="#">Admin</a></span>
+                                                <span class="cat"> <i class="fa fa-folder"></i>&nbsp; <a href="#">Tin
+                                                        tức
+                                                    </a> </span> <span class="comment-count">
+                                                    <i class="fa fa-comment"></i>&nbsp; 13 </span> <span class="date"><i
+                                                        class="fa fa-calendar"></i>&nbsp; 2018-10-10</span> </div>
+                                            <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                    class="fa fa-star-o"></i>&nbsp; <span>(5 votes)</span></div>
+                                            <div class="entry-excerpt">Nếu vô tình bị đổ cà phê hay nước trà nên áo
+                                                khoác mà bạn không có thời gian để giặt nó ngay lập tức thì các vết bẩn
+                                                này sẽ khó được tẩy sạch. Ngay khi bị bẩn bạn hoàn toàn có thể giặt sạch
+                                                nó trong nước ấm. Tuy nhiên trong trường hợp bạn đang ở công sở tất
+                                                nhiên phải đợi đến khi về nhà bạn mới có thể giặt nó, lúc này vết bẩn đã
+                                                khô lại, bạn có thể làm theo cách sau.</div>
+                                            <a href="./blog-detail.html" class="read-more">Xem thêm&nbsp; <i
+                                                    class="fa fa-angle-double-right"></i></a>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <div class="sortPagiBar">
+                            <div class="pagination-area">
+                                <ul class="pagination">
+                                    <li><a href="#">«</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#">»</a></li>
+                                </ul>
+                            </div>
                         </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Thẩm mỹ
-                            </span>
-                            <span class="sobaiviet">
-                                (1)
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Mix đồ nữ
-                            </span>
-                            <span class="sobaiviet">
-                                (5)
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Phong cách
-                            </span>
-                            <span class="sobaiviet">
-                                (2)
-                            </span>
-                        </div>
-                    </a>
-                    <a href="./blog.html">
-                        <div class="chude">
-                            <span class="tenchude">
-                                Thiết kế độc - lạ
-                            </span>
-                            <span class="sobaiviet">
-                                (4)
-                            </span>
-                        </div>
-                    </a>
+                    </div>
                 </div>
 
-                <!-- BÀI VIẾT GẦN ĐÂY -->
-                <div class="baivietganday">
-                    <h3 class="text-uppercase">Bài viết gần đây</h3>
-                    <a href="./blog-detail.html">
-                        [HOT] Áo sơ mi Denim: 101 cách phối đẹp 2019
-                    </a>
-                    <a href="./blog-detail.html">
-                        Cách mặc áo thun cặp đôi: Thời trang cho tình yêu thăng hoa
-                    </a>
-                    <a href="./blog-detail.html">
-                        Quà tặng trung thu cho bé: Ý nghĩa đến từ sắc màu thời trang
-                    </a>
-                    <a href="./blog-detail.html">
-                        Áo thun oversize Nữ: mặc sao cho đúng, phối sao cho đẹp!
-                    </a>
-                </div>
+                <!-- Right colunm -->
+                <aside class="sidebar col-xs-12 col-sm-3">
+                    <div class="search">
+                        <input class="form-control" type="search" placeholder="Tìm kiếm">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                    <!-- Blog category -->
+                    <div class="block blog-module">
+                        <div class="block-title">
+                            <h3>Danh mục</h3>
+                        </div>
+                        <div class="block_content">
+                            <div class="layered layered-category">
+                                <div class="layered-content">
+                                    <ul class="tree-menu">
+                                        <li><a href="#"><i class="fa fa-angle-right"></i>&nbsp; Xu hướng</a></li>
+                                        <li><i class="fa fa-angle-right"></i>&nbsp; <a href="#">Thời trang thế giới</a>
+                                        </li>
+                                        <li><i class="fa fa-angle-right"></i>&nbsp; <a href="#">Thẩm mỹ</a></li>
+                                        <li><i class="fa fa-angle-right"></i>&nbsp; <a href="#">Phối đồ</a>
+                                        </li>
+                                        <li><i class="fa fa-angle-right"></i>&nbsp; <a href="#">Phong cách</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-                <!-- TỪ KHÓA PHỔ BIẾN -->
-                <div class="tukhoaphobien">
-                    <h3 class="text-uppercase">Từ khóa phổ biến</h3>
-                    <div class="row">
-                        <a href="./blog.html">
-                            <span>nam</span>
-                        </a>
-                        <a href="./blog.html">
-                            <span>thời trang</span>
-                        </a>
+                    <!-- Popular Posts -->
+                    <div class="block blog-module">
+                        <div class="block-title">
+                            <h3>Bài viết phổ biến</h3>
+                        </div>
+                        <div class="block_content">
+                            <div class="layered">
+                                <div class="layered-content">
+                                    <ul class="blog-list-sidebar">
+                                        <li>
+                                            <div class="post-thumb"> <a href="#"><img src="./images/8.png"
+                                                        alt="Blog"></a> </div>
+                                            <div class="post-info">
+                                                <h5 class="entry_title"><a href="#">Mẹo xử lí vết bẩn cứng đầu dính trên
+                                                        áo khoác gió</a></h5>
+                                                <div class="post-meta"> <span class="date"><i
+                                                            class="fa fa-calendar"></i> 2019-01-03</span> <span
+                                                        class="comment-count"> <i class="fa fa-comment-o"></i> 3 </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-thumb"> <a href="#"><img src="./images/ao thun 1.png"
+                                                        alt="Blog"></a> </div>
+                                            <div class="post-info">
+                                                <h5 class="entry_title"><a href="#">Sợi Modal là gì? Tại sao nên mua áo
+                                                        sợi Modal</a></h5>
+                                                <div class="post-meta"> <span class="date"><i
+                                                            class="fa fa-calendar"></i> 2019-02-02</span> <span
+                                                        class="comment-count"> <i class="fa fa-comment-o"></i> 6 </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="post-thumb"> <a href="#"><img src="./images/at3.png"
+                                                        alt="Blog"></a> </div>
+                                            <div class="post-info">
+                                                <h5 class="entry_title"><a href="#">TOP 99 Mẫu Áo Khoác Jeans nam mới
+                                                        nhất 2019 cho các chàng Trai Thời Thượng</a></h5>
+                                                <div class="post-meta"> <span class="date"><i
+                                                            class="fa fa-calendar"></i> 2019-09-08</span> <span
+                                                        class="comment-count"> <i class="fa fa-comment-o"></i> 10
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <a href="./blog.html">
-                            <span>xu hướng</span>
-                        </a>
-                        <a href="./blog.html">
-                            <span>áo thun</span>
-                        </a>
+
+                    <!-- Recent Comments -->
+                    <div class="block blog-module">
+                        <div class="block-title">
+                            <h3>Bình luận gần đây</h3>
+                        </div>
+                        <div class="block_content">
+                            <div class="layered">
+                                <div class="layered-content">
+                                    <ul class="recent-comment-list">
+                                        <li>
+                                            <h5><a href="#">Áo Khoác Parka thường được gọi với cái tên “bình dân”</a>
+                                            </h5>
+                                            <div class="comment"> "Áo được làm từ các loại vải không thấm nước và có độ
+                                                dài dao động trong khoảng từ thắt lưng tới đầu gối, thiết kế hơi
+                                                rộng..." </div>
+                                            <div class="author">Đăng bởi <a href="#">Admin</a></div>
+                                        </li>
+                                        <li>
+                                            <h5><a href="#">Vải jeans được mệnh danh chất liệu sở hữu sự trẻ trung</a>
+                                            </h5>
+                                            <div class="comment"> " Áo khoác jeans nam chính vì vậy nên được yêu chuộng
+                                                và trở thành item phải có đối với các tín đồ thời trang...." </div>
+                                            <div class="author">Đăng bởi <a href="#">Admin</a></div>
+                                        </li>
+                                        <li>
+                                            <h5><a href="#">Đối với những chàng trai theo phong cách bụi bặm</a></h5>
+                                            <div class="comment"> " Hãy sở hữu 1 trong các mẫu áo khoác bò nam mới nhất
+                                                2019 của H2T và học lỏm bí quyết và công thức mix áo bò của các chàng
+                                                trai..." </div>
+                                            <div class="author">Đăng bởi <a href="#">Admin</a></div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="row">
-                        <a href="./blog.html">
-                            <span>phong cách</span>
-                        </a>
+
+                    <!-- tags -->
+                    <div class="block block-tags">
+                        <div class="block-title">
+                            <h3>Từ khóa phổ biến</h3>
+                        </div>
+                        <div class="block-content">
+                            <div class="tags-list"> <a href="#">Xu hướng</a> <a href="#">Nam</a> <a href="#">Quần áo</a>
+                                <a href="#">Mix đồ</a> <a href="#">Nữ</a> <a href="#">Làm đẹp</a> <a href="#">Thời
+                                    trang</a> </div>
+                        </div>
                     </div>
-                </div>
+                    <!-- ./Banner -->
+                </aside>
+                <!-- ./right colunm -->
             </div>
-
-            <div class="bg-vertical"></div>
-
-            <!-- DANH SÁCH BÀI VIẾT -->
-            <div class="list-blogs">
-                <a href="./blog-detail.html">
-                    <div class="post-item">
-                        <div class="img-post">
-                            <img src="images/post1.png">
-                        </div>
-                        <div class="author-post">
-                            <span class="">Ngày đăng: 02-08-2019</span>
-                            <span class="">Đăng bởi: Admin</span>
-                        </div>
-                        <div class="title-post">
-                            <p class="">Áo thun oversize Nữ: mặc sao cho đúng, phối sao cho đẹp!</p>
-                        </div>
-                        <div class="content-post">
-                            <p class="">Mặc gì hôm nay? – câu hỏi hóc búa đối với bao nhiêu cô nàng mỗi buổi sáng. Hôm
-                                nay
-                                mình thấy không thích mặc váy như mọi khi, cũng không muốn mặc sơ mi như vẫn vậy. Nếu
-                                nàng
-                                thấy quá khó chọn, hôm nay CANIFA BLOG sẽ chọn giúp nàng – Áo thun nữ oversize!</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="./blog-detail.html">
-                    <div class="post-item">
-                        <div class="img-post">
-                            <img src="images/BG2.jpg">
-                        </div>
-                        <div class="author-post">
-                            <span class="">Ngày đăng: 11-09-2019</span>
-                            <span class="">Đăng bởi: Admin</span>
-                        </div>
-                        <div class="title-post">
-                            <p class="">Cách mặc áo thun cặp đôi: Thời trang cho tình yêu thăng hoa</p>
-                        </div>
-                        <div class="content-post">
-                            <p class="">Khi yêu nhau thì con người ta sẽ đồng điệu về mọi thứ. Và “guu” thời trang đôi
-                                cũng
-                                không nằm ngoài quy luật đó. Nhưng những gì mà các bạn trẻ Việt Nam thể hiện đã nâng xu
-                                hướng thời trang áo thun cặp đôi lên một tầm cao mới.</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="./blog-detail.html">
-                    <div class="post-item">
-                        <div class="img-post">
-                            <img src="images/bg1.jpg">
-                        </div>
-                        <div class="author-post">
-                            <span class="">Ngày đăng: 13-09-2019</span>
-                            <span class="">Đăng bởi: Admin</span>
-                        </div>
-                        <div class="title-post">
-                            <p class="">Quà tặng trung thu cho bé: Ý nghĩa đến từ sắc màu thời trang</p>
-                        </div>
-                        <div class="content-post">
-                            <p class="">Một mùa trung thu nữa lại đang đến gần với hương vị ngọt ngào của bánh nướng,
-                                bánh
-                                dẻo, sự nhộn nhịp khắp nẻo đường của hội múa lân, rước đèn hay những màu sắc rực rỡ của
-                                những chiếc đèn ông sao. Những gương mặt đầy háo hức của các bé mỗi dịp trung thu lại
-                                khiến
-                                người lớn cũng như được quay trở về tuổi thơ với những món đồ chơi bình dị.</p>
-                        </div>
-                    </div>
-                </a>
-
-
-
-
-                <!-- PHÂN TRANG -->
-                <nav aria-label="Page navigation example">
-                    <ul class="pagination justify-content-end">
-                        <li class="page-item disabled">
-                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
-                                <i class="fa fa-angle-left" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                        <li class="page-item"><a class="page-link active" href="#">1</a></li>
-                        <li class="page-item"><a class="page-link" href="#">2</a></li>
-                        <li class="page-item"><a class="page-link" href="#">3</a></li>
-                        <li class="page-item">
-                            <a class="page-link" href="#">
-                                <i class="fa fa-angle-right" aria-hidden="true"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-
-            <div class="clear"></div>
+            <!-- ./row-->
         </div>
     </section>
 
-
-
     <footer>
-        <div class="row">
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Về carpo</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Thông tin về Carpo</a>
-                    </li>
-                    <li>
-                        <a href="#">Quá trình phát triển</a>
-                    </li>
-                    <li>
-                        <a href="#">Hệ thống cửa hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Tuyển dụng</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Hỗ trợ mua hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Hướng dẫn mua hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Hướng dẫn thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Phương thức vận chuyển</a>
-                    </li>
-                    <li>
-                        <a href="#">Tra cứu đơn hàng</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Chính sách khách hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Khách hàng VIP</a>
-                    </li>
-                    <li>
-                        <a href="#">Khách hàng thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách đổi trả</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách bảo mật</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Đăng ký nhận thông tin</h2>
-                <div class="register-email border-main">
-                    <input type="text" name="timkiem" placeholder="Email của bạn" class="border-none">
-                    <button type="submit" class="btn-register-email bg-green text-white text-uppercase font-14">Đăng
-                        ký</button>
-                </div>
-                <div class="follow">
-                    <span class="color-text-main font-14">Theo dõi chúng tôi qua</span>
-                    <div class="icon-follow d-inline-block">
-                        <span class="facebook">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </span>
-                        <span class="youtube">
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </span>
-                        <span class="twitter">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </span>
+        <div class="footer-inner">
+            <div class="news-letter">
+                <div class="container">
+                    <div class="heading text-center">
+                        <h2>ĐĂNG KÝ NHẬN THÔNG BÁO</h2>
+                        <span>Đăng ký nhận thông tin khuyến mãi và cập nhật sản phẩm mới nhất từ Carpo.</span>
                     </div>
+                    <form>
+                        <input type="email" placeholder="Nhập địa chỉ Email của bạn" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <h4>Carpo</h4>
+                        <div class="contacts-info">
+                            <p>Cửa hàng thời trang nam mang phong cách mới lạ </p>
+                            <address>
+                                <i class="fa fa-location-arrow"></i> <span>123 Nguyễn Trãi, Thanh Xuân, Hà Nội</span>
+                            </address>
+                            <div class="phone-footer"><i class="fa fa-phone"></i> +0 123 456 98765</div>
+                            <div class="email-footer"><i class="fa fa-envelope"></i> <a
+                                    href="mailto:support@example.com">Carpo@gmail.com</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                        <h4>Về chúng tôi</h4>
+                        <ul class="links">
+                            <li><a href="#">Thông tin về Carpo</a></li>
+                            <li><a href="#">Quá trình phát triển</a></li>
+                            <li><a href="#">Hệ thông cửa hàng</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                        <h4>HỖ TRỢ MUA HÀNG</h4>
+                        <ul class="links">
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Phương thức vận chuyển</a></li>
+                            <li><a href="#">Tra cứu đơn hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+                        <div class="social">
+                            <h4>Theo dõi chúng tôi</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 coppyright text-center">© 2019 CarpoShop.</div>
                 </div>
             </div>
         </div>
     </footer>
 
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
-    <script>
-        function openNav() {
-            document.getElementById("mySidepanel").style.width = "250px";
-            document.getElementById("mySidepanel").style.paddingBottom = "10px";
-            document.getElementById("mySidepanel").style.paddingTop = "10px";
-            document.getElementById("mySidepanel").style.paddingLeft = "20px";
-            document.getElementById("mySidepanel").style.paddingRight = "20px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidepanel").style.width = "0";
-            document.getElementById("mySidepanel").style.paddingBottom = "0px";
-            document.getElementById("mySidepanel").style.paddingTop = "0px";
-            document.getElementById("mySidepanel").style.paddingLeft = "0px";
-            document.getElementById("mySidepanel").style.paddingRight = "0px";
-        }
-    </script>
 </body>
 
 </html>
