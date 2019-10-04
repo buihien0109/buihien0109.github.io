@@ -63,7 +63,8 @@ img {
 }
 .btn-hover:hover {
 	transition: all .3s ease;
-	background: #736854 !important;
+	background: #494e62 !important;
+    color: #fff;
 }
 .btn-red-hover:hover {
 	transition: all .3s ease;

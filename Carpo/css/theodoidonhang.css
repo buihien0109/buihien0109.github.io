@@ -1,66 +1,147 @@
-
-#theodoidonhang .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.main-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-#theodoidonhang h2{
+.main-container h2{
     font-size: 24px;
     display: inline-block;
     padding-bottom: 6px;
     border-bottom: 2px solid #57AF8A;
     text-align: center;
-    margin: 45px 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 /* ------------------đơn hàng của tôi---------------- */
-.list-product-shopping-card {
-    width: 100%;
+
+.cart-page-area .cart_item td {
+	border: 1px #e5e5e5 solid;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
 }
-.list-product-shopping-card .row {
-    margin-right: 0px !important;
-    margin-left: 0px !important;
-    margin-bottom: 20px;
+.item-title > a:hover {
+	color: #f82e56;
 }
-.list-product-shopping-card .row:nth-child(1) {
-    margin-bottom: 30px;
+.cart-page-area thead th {
+	border: 1px #e5e5e5 solid !important;
+	text-align: center;
 }
-.list-product-shopping-card .row:nth-child(1) > div > span {
-    font-size: 20px;
+.product-thumbnail {
+	width: 10%
 }
-.list-product-shopping-card .row .col-name {
-    flex: 35%;
+.cart-page-area .product-name {
+	width: 40%;
 }
-.list-product-shopping-card .row .col-id,
-.list-product-shopping-card .row .col-time,
-.list-product-shopping-card .row .col-total {
-    flex: 15%;
+.product-price {
+	width: 10%
 }
-.list-product-shopping-card .row .col-status {
-    flex: 20%;
+.product-quantity {
+	width: 20%
 }
-.list-product-shopping-card .row > div > span {
-    font-size: 16px;
+.product-subtotal {
+	width: 10%
+}
+table.table {
+	margin-bottom: 0;
+	width: 100%;
+}
+.cart_item > input {
+	text-align: center;
+	width: 50px;
+}
+
+.shop-cart-table thead tr {
+	background: #f8f8f8;
+}
+.shop-cart-table thead tr th {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px 0px;
+}
+.shop-cart-table {
+	margin-bottom: 30px;
+	width: 100%;
+}
+.cart tbody tr {
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.cart tbody tr:hover {
+	background: #f6f6f7 none repeat scroll 0 0
+}
+.btn-continue-shopping {
     display: inline-block;
-    margin-bottom: 8px;
+    border: 0px solid #f82e56;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: #f82e56;
+    outline: none;
 }
-h2 {
-    text-align: center;
-  }
-  
-  table caption {
-      padding: .5em 0;
-  }
-  
-  @media screen and (max-width: 767px) {
-    table caption {
-      border-bottom: 1px solid #ddd;
+.btn-continue-shopping:hover {
+    background: #494e62;
+    color: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+    .shop-cart-table {
+        width: 780px;
+        margin-bottom: 0px;
     }
-  }
-  
-  .p {
-    text-align: center;
-    padding-top: 140px;
-    font-size: 14px;
-  }
+    .cart-page-area .table-responsive {
+        border: none;
+        border-right: 1px #e5e5e5 solid;
+    }
+    .cart-page-area .product-name {
+        width: 28%;
+    }
+    .product-thumbnail {
+        width: 12%;
+    }
+    .product-price {
+        width: 8%;
+    }
+    .product-quantity {
+        width: 28%;
+    }
+    .product-subtotal {
+        width: 12%;
+    }
+    .product-remove {
+        width: 12%;
+    }
+    .btn-continue-shopping {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 480px) {
+    .shop-cart-table {
+        width: 780px;
+        margin-bottom: 0px;
+    }
+    .cart-page-area .table-responsive {
+        border: none;
+        border-right: 1px #e5e5e5 solid;
+    }
+    .cart-page-area .product-name {
+        width: 28%;
+    }
+    .product-thumbnail {
+        width: 12%;
+    }
+    .product-price {
+        width: 8%;
+    }
+    .product-quantity {
+        width: 28%;
+    }
+    .product-subtotal {
+        width: 12%;
+    }
+    .product-remove {
+        width: 12%;
+    }
+}
