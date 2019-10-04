@@ -2,516 +2,566 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png"/>
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/shopping-card.css">
-    <title>Giỏ hàng</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-11/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/shopping-card.css">
+  <link rel="stylesheet" href="./css/res.css">
+  <title>Giỏ hàng</title>
 </head>
 
 <body>
-    <!-- HEADER -->
-    <header>
-        <div class="container-fluid">
+  <!-- HEADER -->
+  <header>
 
-            <!-- Liên hệ ADMIN -->
-            <!-- <div class="contact-admin">
-                                <span>Email: admin@carpo.com - Phone: 012345678</span>
-                            </div> -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+      <a class="navbar-brand order-xs-2 order-sm-2 order-md-2 order-lg-1" href="#"><strong>CarpoShop</strong></a>
+      <button class="navbar-toggler order-xs-1 order-sm-1 order-md-1 order-lg-2" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto ml-auto">
+          <li class="nav-item">
+            <a class="nav-link text-uppercase text-white" href="./index.html">Trang chủ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase text-white" href="./shop-list.html">Sản phẩm</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase text-white" href="./blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase text-white" href="./contact.html">Liên hệ</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-uppercase text-white" href="./track-order.html">Theo dõi đơn hàng</a>
+          </li>
+        </ul>
+      </div>
+      <ul class="navbar-nav nav-flex-icons order-xs-3 order-sm-3 order-md-3 order-lg-3">
+        <li class="nav-item sm-display-none">
+          <a class="nav-link"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./login.html"><i class="fa fa-user text-white" aria-hidden="true"></i></a>
+        </li>
+        <li class="nav-item sm-display-none">
+          <a class="nav-link" href="./shopping-card.html"><i class="fa fa-shopping-cart text-white"
+              aria-hidden="true"></i></a>
+        </li>
 
-            <!-- Thanh điều hướng - tìm kiếm -->
-            <div class="header-main d-flex flex-row justify-content-between align-items-center">
-                <div class="img-logo">
-                    <a href="./index.html">
-                        <img src="./images/logo.png" alt="logo" class="img-responsive logo">
-                    </a>
+      </ul>
+    </nav>
 
-                </div>
-                <!-- <div class="navigation-hiden">
-                                    <nav>
-                                        
-                                            <ul class="mr-auto ml-auto">
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Trang chủ</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Sản phẩm</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Khuyến mại</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Blog</a>
-                                                </li>
-                                                <li class="nav-item">
-                                                    <a class="nav-link" href="#">Liên hệ</a>
-                                                </li>
-                                            </ul>
-                
-                                    </nav>
-                                </div> -->
-                <div class="search-box border-main">
-                    <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
-                    <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
-                </div>
-                <div class="g-btn-login d-flex flex-row justify-content-between align-items-center color-text-main">
-                    <div class="btn-login btn-search">
-                        <span class="btn-login-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    
-                        <div class="btn-login">
-                            <div class="dropdown">
-                                <button class="dropbtn">Bùi Hiên
-                                    <i class="fa fa-caret-down"></i>
-                                </button>
-                                <div class="dropdown-content">
-                                    <a href="./chitietdonhang.html">Chi tiết đơn hàng</a>
-                                    <a href="./theodoidonhang.html">Theo dõi đơn hàng</a>
+  </header>
+
+  <section id="duong-dan">
+    <div class="container">
+      <a href="index.html">
+        <span>Trang chủ</span>
+      </a>
+      <span>
+        <i class="fa fa-angle-right" aria-hidden="true"></i>
+      </span>
+      <a href="shopping-card.html">
+        <span>Giỏ hàng</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="main-container col1-layout">
+    <div class="main container">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12">
+          <div class="product-area">
+            <div class="title-tab-product-category">
+              <div class="text-center">
+                <ul class="nav jtv-heading-style" role="tablist">
+                  <li role="presentation" class="active"><a href="#cart" aria-controls="cart" role="tab"
+                      data-toggle="tab">1 Giỏ hàng của bạn</a></li>
+                  <li role="presentation" class=""><a href="#checkout" aria-controls="checkout" role="tab"
+                      data-toggle="tab">2 Hoàn tất thông tin</a></li>
+                  <li role="presentation" class=""><a href="#complete-order" aria-controls="complete-order" role="tab"
+                      data-toggle="tab">3 Tiến hành đặt hàng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="content-tab-product-category">
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane fade in active" id="cart">
+                  <!-- cart are start-->
+                  <div class="cart-page-area">
+                    <form method="post" action="#">
+                      <div class="table-responsive">
+                        <table class="shop-cart-table">
+                          <thead>
+                            <tr>
+                              <th class="product-thumbnail ">Ảnh</th>
+                              <th class="product-name ">Tên sản phẩm</th>
+                              <th class="product-price ">Giá</th>
+                              <th class="product-quantity">Số lương</th>
+                              <th class="product-subtotal ">Tổng tiền</th>
+                              <th class="product-remove">Xóa</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr class="cart_item">
+                              <td class="item-img"><a href="#"><img src="./images/14.jpg" alt="Product tilte is here ">
+                                </a></td>
+                              <td class="item-title"><a href="#">Áo thun dáng xuông </a></td>
+                              <td class="item-price"> 230.000đ </td>
+                              <td class="item-qty">
+                                <div class="cart-quantity">
+                                  <div class="product-qty">
+                                    <div class="cart-quantity">
+                                      <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input value="2" name="qtybutton" class="cart-plus-minus-box" type="text">
+                                        <div class="inc qtybutton">+</div>
+                                      </div>
+                                    </div>
+                                  </div>
                                 </div>
+                              </td>
+                              <td class="total-price"><strong> 460.000đ</strong></td>
+                              <td class="remove-item"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr class="cart_item">
+                              <td class="item-img"><a href="#"><img src="./images/15.png" alt="Product tilte is here ">
+                                </a></td>
+                              <td class="item-title"><a href="#">Áo thun caro </a></td>
+                              <td class="item-price"> 420.000đ </td>
+                              <td class="item-qty">
+                                <div class="cart-quantity">
+                                  <div class="product-qty">
+                                    <div class="cart-quantity">
+                                      <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input value="1" name="qtybutton" class="cart-plus-minus-box" type="text">
+                                        <div class="inc qtybutton">+</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="total-price"><strong> 420.000đ</strong></td>
+                              <td class="remove-item"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr class="cart_item">
+                              <td class="item-img"><a href="#"><img src="./images/16.jpg" alt="Product tilte is here ">
+                                </a></td>
+                              <td class="item-title"><a href="#">Áo polo cổ tròn</a></td>
+                              <td class="item-price"> 560.000đ</td>
+                              <td class="item-qty">
+                                <div class="cart-quantity">
+                                  <div class="product-qty">
+                                    <div class="cart-quantity">
+                                      <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input value="1" name="qtybutton" class="cart-plus-minus-box" type="text">
+                                        <div class="inc qtybutton">+</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="total-price"><strong> 560.000đ</strong></td>
+                              <td class="remove-item"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            <tr class="cart_item">
+                              <td class="item-img"><a href="#"><img src="./images/17.jpg" alt="Product tilte is here ">
+                                </a></td>
+                              <td class="item-title"><a href="#">Áo in hình </a></td>
+                              <td class="item-price"> 360.000đ </td>
+                              <td class="item-qty">
+                                <div class="cart-quantity">
+                                  <div class="product-qty">
+                                    <div class="cart-quantity">
+                                      <div class="cart-plus-minus">
+                                        <div class="dec qtybutton">-</div>
+                                        <input value="1" name="qtybutton" class="cart-plus-minus-box" type="text">
+                                        <div class="inc qtybutton">+</div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </td>
+                              <td class="total-price"><strong> 360.000đ</strong></td>
+                              <td class="remove-item"><a href="#"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="cart-bottom-area">
+                        <div class="row">
+                          <div class="col-md-8 col-sm-7 col-xs-12">
+                            <div class="update-coupne-area">
+                              <div class="update-continue-btn text-right">
+                                <button class="button btn-continue" title="Continue Shopping" type="button"><span>Tiếp
+                                    tục mua hàng</span></button>
+                                <button class="button btn-empty" title="Clear Cart" value="empty_cart"
+                                  name="update_cart_action" type="submit"><span>Xóa giỏ hàng</span></button>
+                                <button class="button btn-update" title="Update Cart" value="update_qty"
+                                  name="update_cart_action" type="submit"><span>Cập nhật giỏ hàng</span></button>
+                              </div>
+                              <div class="coupn-area">
+                                <div class="discount">
+                                  <h3>Mã giảm giá</h3>
+                                  <label for="coupon_code">Bạn có mã giảm giá không?</label>
+                                  <input type="hidden" value="0" id="remove-coupone" name="remove">
+                                  <input type="text" value="" name="coupon_code" id="coupon_code"
+                                    class="input-text fullwidth">
+                                  <button value="Apply Coupon" onclick="discountForm.submit(false)"
+                                    class="button coupon " title="Apply Coupon" type="button"><span>Áp
+                                      dụng</span></button>
+                                </div>
+                              </div>
                             </div>
+                          </div>
+                          <div class="col-md-4 col-sm-5 col-xs-12">
+                            <div class="cart-total-area">
+                              <div class="catagory-title cat-tit-5 text-right">
+                                <h3>Tổng tiền</h3>
+                              </div>
+                              <div class="sub-shipping">
+                                <p>Tổng tiền <span>1.200.000đ</span></p>
+                                <p>Ship <span>15.000đ</span></p>
+                              </div>
+                              <div class="process-cart-total">
+                                <p>Tổng cổng <span>1.215.000đ</span></p>
+                              </div>
+                              <div class="process-checkout-btn text-right">
+                                <button class="button btn-proceed-checkout" title="Proceed to Checkout"
+                                  type="button"><span>Xử lý checkout</span></button>
+                              </div>
+                            </div>
+                          </div>
                         </div>
-                    
-                    <a href="./shopping-card.html">
-                        <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
-                        </div>
-                    </a>
-
+                      </div>
+                    </form>
+                  </div>
+                  <!-- cart are end-->
                 </div>
+                <div role="tabpanel" class="tab-pane  fade in " id="checkout">
+                  <!-- Checkout are start-->
+                  <div class="checkout-area">
+                    <div class="">
+                      <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                          <div class="coupne-customer-area mb50">
+                            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                              <div class="panel panel-checkout">
+                                <div class="panel-heading" role="tab" id="headingTwo">
+                                  <h4 class="panel-title"> <img src="images/acc.jpg" alt=""> Bạn có tài khoản chưa? <a
+                                      class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                      href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"> Click vào
+                                      để đăng nhập </a> </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                  aria-labelledby="headingTwo">
+                                  <div class="panel-body">
+                                    <div class="sm-des"> Nếu bạn đã mua sắm với chúng tôi trước đây, vui lòng nhập thông
+                                      tin của bạn vào các ô bên dưới. Nếu bạn là khách hàng mới, vui lòng tiếp tục với
+                                      phần Thanh toán & Giao hàng.. </div>
+                                    <br>
+                                    <div class="first-last-area">
+                                      <div class="input-box">
+                                        <label>Tên đăng nhập</label>
+                                        <input type="email" class="info" name="email">
+                                      </div>
+                                      <div class="input-box">
+                                        <label>Mật khẩu</label>
+                                        <input type="password" class="info" name="padd">
+                                      </div>
+                                      <div class="frm-action cc-area">
+                                        <div class="input-box tci-box"> <a href="#" class="btn-def btn2">Đăng nhập</a>
+                                        </div>
+                                        <span>
+                                          <input type="checkbox" class="remr">
+                                          Nhớ mật khẩu </span> <a class="forgotten forg" href="#">Quên mật khẩu</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="panel panel-checkout">
+                                <div class="panel-heading" role="tab" id="headingThree">
+                                  <h4 class="panel-title"> <img src="images/acc.jpg" alt=""> Bạn có mã giảm giá không?
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                      href="#collapseThree" aria-expanded="false" aria-controls="collapseThree"> Nhập mã
+                                      giảm giá tại đây </a> </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                  aria-labelledby="headingThree">
+                                  <div class="panel-body coupon-body">
+                                    <div class="first-last-area">
+                                      <div class="input-box">
+                                        <input type="text" placeholder="Mã giảm giá" class="info" name="code">
+                                      </div>
+                                      <div class="frm-action">
+                                        <div class="input-box tci-box"> <a href="#" class="btn-def btn2">Áp dụng</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-6 col-xs-12">
+                              <div class="billing-details">
+                                <div class="contact-text right-side">
+                                  <h2>Chi tiết đơn hàng</h2>
+                                  <form action="#">
+                                    <div class="row">
+                                      <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-box">
+                                          <label>Họ <em>*</em></label>
+                                          <input type="text" name="namm" class="info">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-box">
+                                          <label>Tên<em>*</em></label>
+                                          <input type="text" name="namm" class="info">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="input-box">
+                                          <label>Tên công ty</label>
+                                          <input type="text" name="cpany" class="info">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-box">
+                                          <label>Email<em>*</em></label>
+                                          <input type="email" name="email" class="info">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-6 col-sm-6 col-xs-12">
+                                        <div class="input-box">
+                                          <label>Số điện thoại<em>*</em></label>
+                                          <input type="text" name="phone" class="info">
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="input-box">
+                                          <label>Thành phố <em>*</em></label>
+                                          <select class="selectpicker select-custom" data-live-search="true">
+                                            <option data-tokens="Hà Nội">--Chọn thành phố--</option>
+                                            <option data-tokens="Hà Nội">Hà Nội</option>
+                                            <option data-tokens="Hải Phòng">Hải Phòng</option>
+                                            <option data-tokens="Sài Gòn">Sài Gòn</option>
+                                            <option data-tokens="Thái Bình">Thái Bình</option>
+                                            <option data-tokens="Quảng Ninh">Quảng Ninh</option>
+                                            <option data-tokens="Đà Nẵng">Đà Nẵng</option>
+
+                                          </select>
+                                        </div>
+                                      </div>
+                                      <div class="col-md-12 col-sm-12 col-xs-12">
+                                        <div class="input-box">
+                                          <label>Địa chỉ <em>*</em></label>
+                                          <input type="text" name="add1" class="info mb-10">
+
+                                        </div>
+                                      </div>
+
+                                    </div>
+                                  </form>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-6 col-xs-12">
+                              <div class="billing-details">
+                                <div class="right-side">
+
+                                  <div class="form">
+                                    <div class="input-box">
+                                      <label>Ghi chú đặt hàng</label>
+                                      <textarea class="area-tex"></textarea>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Checkout are end-->
+                </div>
+                <div role="tabpanel" class="tab-pane  fade in" id="complete-order">
+                  <div class="row">
+                    <div class="col-xs-12">
+                      <div class="checkout-payment-area">
+                        <div class="checkout-total">
+                          <h3>Đơn hàng của bạn</h3>
+                          <form action="#" method="post">
+                            <div class="table-responsive">
+                              <table class="checkout-area table">
+                                <thead>
+                                  <tr class="cart_item check-heading">
+                                    <td class="ctg-type"> Sản phẩm</td>
+                                    <td class="cgt-des"> Số tiền</td>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr class="cart_item check-item prd-name">
+                                    <td class="ctg-type"> Áo thun dáng xuông × <span>1</span></td>
+                                    <td class="cgt-des"> 230.000đ</td>
+                                  </tr>
+                                  <tr class="cart_item check-item prd-name">
+                                    <td class="ctg-type"> Áo kẻ care × <span>1</span></td>
+                                    <td class="cgt-des"> 450.000</td>
+                                  </tr>
+                                  <tr class="cart_item">
+                                    <td class="ctg-type"> Tổng tiền</td>
+                                    <td class="cgt-des">680.000đ</td>
+                                  </tr>
+                                  <tr class="cart_item">
+                                    <td class="ctg-type">Phí ship</td>
+                                    <td class="cgt-des ship-opt">
+                                      <div class="shipp">
+                                        <input type="radio" id="pay-toggle" name="ship">
+                                        <label for="pay-toggle">Ship COD: <span>30.000đ</span></label>
+                                      </div>
+                                      <div class="shipp">
+                                        <input type="radio" id="pay-toggle2" name="ship">
+                                        <label for="pay-toggle2">Free ship</label>
+                                      </div>
+                                    </td>
+                                  </tr>
+                                  <tr class="cart_item">
+                                    <td class="ctg-type crt-total"> Tổng cộng</td>
+                                    <td class="cgt-des prc-total"> 710.000đ </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="payment-section">
+                          <div class="pay-toggle">
+                            <form action="#">
+                              <div class="pay-type-total">
+                                <div class="pay-type">
+                                  <input type="radio" id="pay-toggle01" name="pay">
+                                  <label for="pay-toggle01">Chuyển tiền trực tuyến</label>
+                                </div>
+                                <div class="pay-type">
+                                  <input type="radio" id="pay-toggle02" name="pay">
+                                  <label for="pay-toggle02">Thanh toán khi nhận hàng</label>
+                                </div>
+                                <div class="pay-type">
+                                  <input type="radio" id="pay-toggle03" name="pay">
+                                  <label for="pay-toggle03">Thanh toán qua thẻ tín dụng</label>
+                                </div>
+
+                              </div>
+                              <div class="input-box"> <a class="btn-def btn2" href="#">Đặt hàng</a> </div>
+                            </form>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-        <div class="container-fluid container-fluid-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
-
-                    <!-- Collapse button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                    </button>
-
-                    <!-- Collapsible content -->
-                    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                        <!-- Links -->
-                        <ul class="navbar-nav mr-auto ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Trang chủ
-
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Sản phẩm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Khuyến mại</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Liên hệ</a>
-                            </li>
-                            <!-- Dropdown -->
+      </div>
+    </div>
+  </section>
 
 
-                        </ul>
-                        <!-- Links -->
-                        <!-- Collapsible content -->
 
-                </nav>
-            </div>
-        </div>
-    </header>
-
-    <section id="duong-dan">
+  <footer>
+    <div class="footer-inner">
+      <div class="news-letter">
         <div class="container">
-            <a href="index.html">
-                <span>Trang chủ</span>
-            </a>
-            <span>
-                <i class="fa fa-angle-right" aria-hidden="true"></i>
-            </span>
-            <a href="login.html">
-                <span>Giỏ hàng</span>
-            </a>
+          <div class="heading text-center">
+            <h2>ĐĂNG KÝ NHẬN THÔNG BÁO</h2>
+            <span>Đăng ký nhận thông tin khuyến mãi và cập nhật sản phẩm mới nhất từ Carpo.</span>
+          </div>
+          <form>
+            <input type="email" placeholder="Nhập địa chỉ Email của bạn" required>
+            <button type="submit">Đăng ký</button>
+          </form>
         </div>
-    </section>
-
-    <section id="card-product">
-        <div class="container">
-            <h2>Giỏ hàng của bạn</h2>
-            <div class="group-btn-card">
-                <a href="./index.html">
-                    <button class="btn-red-hover btn-continue">Tiếp tục mua hàng</button>
-                </a>
-
-                <button class="btn-hover btn-delete">Xóa giỏ hàng</button>
-            </div>
-            <div class="list-product-shopping-card">
-                <div class="row border-main-bottom">
-                    <div class="col-name">
-                        <span>Tên sản phẩm</span>
-                    </div>
-                    <div class="text-center col-count">
-                        <span>Số lượng</span>
-                    </div>
-                    <div class="text-center col-price">
-                        <span>Giá tiền</span>
-                    </div>
-                    <div class="text-center col-total">
-                        <span>Tổng tiền</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-name">
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="./images/14.jpg" alt="">
-                            </div>
-                            <div class="card-detail">
-                                <p>Áo polo dáng xuông</p>
-                                <p>SKU : PL01002</p>
-                                <a href="#">
-                                    <span>
-                                        <i class="fa fa-trash-o" aria-hidden="true"> Xóa khỏi giỏ hàng</i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center col-count">
-                        <div class="col-count-change">
-                            <a href="#">
-                                <span>-</span>
-                            </a>
-
-                            <span>1</span>
-                            <a href="#">
-                                <span>+</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="text-center col-price">
-                        <span>230.000đ</span>
-                    </div>
-                    <div class="text-center col-total">
-                        <span>230.000đ</span>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-name">
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="./images/14.jpg" alt="">
-                            </div>
-                            <div class="card-detail">
-                                <p>Áo polo dáng xuông</p>
-                                <p>SKU : PL01002</p>
-                                <a href="#">
-                                    <span>
-                                        <i class="fa fa-trash-o" aria-hidden="true"> Xóa khỏi giỏ hàng</i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center col-count">
-                        <div class="col-count-change">
-                            <a href="#">
-                                <span>-</span>
-                            </a>
-
-                            <span>1</span>
-                            <a href="#">
-                                <span>+</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="text-center col-price">
-                        <span>230.000đ</span>
-                    </div>
-                    <div class="text-center col-total">
-                        <span>230.000đ</span>
-                    </div>
-                </div>
-                <div class="row ">
-                    <div class="col-name">
-                        <div class="card-product">
-                            <div class="card-img">
-                                <img src="./images/14.jpg" alt="">
-                            </div>
-                            <div class="card-detail">
-                                <p>Áo polo dáng xuông</p>
-                                <p>SKU : PL01002</p>
-                                <a href="#">
-                                    <span>
-                                        <i class="fa fa-trash-o" aria-hidden="true"> Xóa khỏi giỏ hàng</i>
-                                    </span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center col-count">
-                        <div class="col-count-change">
-                            <a href="#">
-                                <span>-</span>
-                            </a>
-
-                            <span>1</span>
-                            <a href="#">
-                                <span>+</span>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="text-center col-price">
-                        <span>230.000đ</span>
-                    </div>
-                    <div class="text-center col-total">
-                        <span>230.000đ</span>
-                    </div>
-                </div>
-
-                <div class="total-shopping-card">
-                    <p class="text-uppercase">Tổng tiền đơn hàng: <span>990.000đ</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="pay-info">
-        <div class="container">
-            <div class="pay-same pay-address">
-                <h3>Thông tin khách hàng</h3>
-                <form>
-                    <div class="group-input">
-                        <span>Họ tên</span>
-                        <input type="text">
-                    </div>
-                    <div class="group-input">
-                        <span>Email</span>
-                        <input type="text">
-                    </div>
-                    <div class="group-input">
-                        <span>Số điện thoại</span>
-                        <input type="text">
-                    </div>
-                    <div class="group-input">
-                        <span>Tỉnh/Thành phố</span>
-                        <select class="classic">
-                            <option>----Chọn----</option>
-                            <option>Hà Nội</option>
-                            <option>TP Hồ Chí Minh</option>
-                            <option>Thái Bình</option>
-                            <option>Hải Phòng</option>
-                            <option>Đà Nẵng</option>
-                        </select>
-                    </div>
-                    <div class="group-input">
-                        <span>Địa chỉ</span>
-                        <textarea name="" id="" cols="22" rows="3"></textarea>
-                    </div>
-                    <div class="group-input">
-                        <span>Ghi chú</span>
-                        <textarea name="" id="" cols="22" rows="3"></textarea>
-                    </div>
-                </form>
-            </div>
-
-            <div class="pay-same pay-type">
-                <h3>Hình thức thanh toán</h3>
-                <div class="list-choice">
-                    <div class="item-choice">
-                        <input id="Field5_0" name="Field5" type="radio" value="First Choice" tabindex="5"
-                            checked="checked">
-                        <span class="checkmark"></span>
-                        <label class="choice" for="Field5_0">Thanh toán tiền mặt khi nhận hàng</label>
-                    </div>
-                    <div class="item-choice">
-                        <input id="Field5_1" name="Field5" type="radio" value="Second Choice" tabindex="6">
-                        <span class="checkmark"></span>
-                        <label class="choice" for="Field5_1">Thanh toán trực tuyến (Internet Banking | Visa, Master,
-                            JCB,
-                            VNPAY-QR)</label>
-                    </div>
-                    <div class="item-choice">
-                        <input id="Field5_2" name="Field5" type="radio" value="Third Choice" tabindex="7">
-                        <span class="checkmark"></span>
-                        <label class="choice" for="Field5_2">Thanh toán trả góp qua thẻ tín dụng</label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="pay-same pay-final">
-                <p>Bạn có mã giảm giá không?</p>
-                <div class="ma-giam-gia">
-                    <input type="text" name="" id="" placeholder="NHẬP MÃ TẠI ĐÂY">
-                    <button type="submit" class="btn-hover text-uppercase">Áp dụng</button>
-                </div>
-                <div class="info-thanhtoan">
-                    <div class="thanhtoan-item">
-                        <span>Tạm tính</span>
-                        <span>920.000đ</span>
-                    </div>
-                    <div class="thanhtoan-item">
-                        <span>Giảm giá</span>
-                        <span>- 0đ</span>
-                    </div>
-                    <div class="red thanhtoan-item">
-                        <span>Giảm giá thanh toán trực tuyến</span>
-                        <span>- 0đ</span>
-                    </div>
-                    <div class="thanhtoan-item">
-                        <span>Phí vận chuyển</span>
-                        <span>0đ</span>
-                    </div>
-                    <div class="thanhtoan-item">
-                        <span>Thành tiền</span>
-                        <span>920.000đ</span>
-                    </div>
-                </div>
-                <button class="btn-red-hover btn-final">Hoàn tất</button>
-            </div>
-        </div>
-    </section>
-
-    <section id="chinhsachmuahang">
-        <div class="container">
-            <div class="purchase-policy border-main d-flex flex-row justify-content-center align-items-center">
-
-                <div class="purchase-policy-item d-flex flex-row justify-content-center align-items-center">
-                    <div class="purchase-policy-item-icon">
-                        <span>
-                            <i class="fa fa-truck" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <div class="purchase-policy-item-content">
-                        <h3>Miễn phí vận chuyển</h3>
-                        <p>Miễn phí đổi và trả hàng</p>
-                    </div>
-                </div>
-
-                <div class="purchase-policy-item border-both d-flex flex-row justify-content-center align-items-center">
-                    <div class="purchase-policy-item-icon">
-                        <span>
-                            <i class="fa fa-usd" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <div class="purchase-policy-item-content">
-                        <h3>15 ngày đổi trả</h3>
-                        <p>Với hóa đơn trên 500.000đ</p>
-                    </div>
-                </div>
-
-                <div class="purchase-policy-item d-flex flex-row justify-content-center align-items-center">
-                    <div class="purchase-policy-item-icon">
-                        <span>
-                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <div class="purchase-policy-item-content">
-                        <h3>Hỗ trợ 24/7</h3>
-                        <p>Với hóa đơn trên 500.000đ</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <footer>
+      </div>
+      <div class="container">
         <div class="row">
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Về carpo</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Thông tin về Carpo</a>
-                    </li>
-                    <li>
-                        <a href="#">Quá trình phát triển</a>
-                    </li>
-                    <li>
-                        <a href="#">Hệ thống cửa hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Tuyển dụng</a>
-                    </li>
-                </ul>
+          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+            <h4>Carpo</h4>
+            <div class="contacts-info">
+              <p>Cửa hàng thời trang nam mang phong cách mới lạ </p>
+              <address>
+                <i class="fa fa-location-arrow"></i> <span>123 Nguyễn Trãi, Thanh Xuân, Hà Nội</span>
+              </address>
+              <div class="phone-footer"><i class="fa fa-phone"></i> +0 123 456 98765</div>
+              <div class="email-footer"><i class="fa fa-envelope"></i> <a
+                  href="mailto:support@example.com">Carpo@gmail.com</a> </div>
             </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Hỗ trợ mua hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Hướng dẫn mua hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Hướng dẫn thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Phương thức vận chuyển</a>
-                    </li>
-                    <li>
-                        <a href="#">Tra cứu đơn hàng</a>
-                    </li>
-                </ul>
+          </div>
+          <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+            <h4>Về chúng tôi</h4>
+            <ul class="links">
+              <li><a href="#">Thông tin về Carpo</a></li>
+              <li><a href="#">Quá trình phát triển</a></li>
+              <li><a href="#">Hệ thông cửa hàng</a></li>
+              <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+            <h4>HỖ TRỢ MUA HÀNG</h4>
+            <ul class="links">
+              <li><a href="#">Hướng dẫn mua hàng</a></li>
+              <li><a href="#">Hướng dẫn thanh toán</a></li>
+              <li><a href="#">Phương thức vận chuyển</a></li>
+              <li><a href="#">Tra cứu đơn hàng</a></li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+            <div class="social">
+              <h4>Theo dõi chúng tôi</h4>
+              <ul>
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+              </ul>
             </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Chính sách khách hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Khách hàng VIP</a>
-                    </li>
-                    <li>
-                        <a href="#">Khách hàng thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách đổi trả</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách bảo mật</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Đăng ký nhận thông tin</h2>
-                <div class="register-email border-main">
-                    <input type="text" name="timkiem" placeholder="Email của bạn" class="border-none">
-                    <button type="submit" class="btn-register-email bg-green text-white text-uppercase font-14">Đăng
-                        ký</button>
-                </div>
-                <div class="follow">
-                    <span class="color-text-main font-14">Theo dõi chúng tôi qua</span>
-                    <div class="icon-follow d-inline-block">
-                        <span class="facebook">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </span>
-                        <span class="youtube">
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </span>
-                        <span class="twitter">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                </div>
-            </div>
+          </div>
         </div>
-    </footer>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-xs-12 coppyright text-center">© 2019 CarpoShop.</div>
+        </div>
+      </div>
+    </div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

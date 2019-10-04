@@ -11,124 +11,54 @@
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/product-detail.css">
+    <link rel="stylesheet" href="./css/res.css">
     <title>Chi tiết sản phẩm</title>
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
-        <div class="container-fluid">
 
-            <!-- Liên hệ ADMIN -->
-            <!-- <div class="contact-admin">
-                            <span>Email: admin@carpo.com - Phone: 012345678</span>
-                        </div> -->
-
-            <!-- Thanh điều hướng - tìm kiếm -->
-            <div class="header-main d-flex flex-row justify-content-between align-items-center">
-                <div class="img-logo">
-                    <a href="./index.html">
-                        <img src="./images/logo.png" alt="logo" class="img-responsive logo">
-                    </a>
-
-                </div>
-                <!-- <div class="navigation-hiden">
-                                <nav>
-                                    
-                                        <ul class="mr-auto ml-auto">
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Trang chủ</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Sản phẩm</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Khuyến mại</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Blog</a>
-                                            </li>
-                                            <li class="nav-item">
-                                                <a class="nav-link" href="#">Liên hệ</a>
-                                            </li>
-                                        </ul>
-            
-                                </nav>
-                            </div> -->
-                <div class="search-box border-main">
-                    <input type="text" name="timkiem" placeholder="Nhập từ khóa" class="border-none">
-                    <button type="submit" class="btn-search bg-main text-white">Tìm kiếm</button>
-                </div>
-                <div class="g-btn-login d-flex flex-row justify-content-between align-items-center color-text-main">
-                    <div class="btn-login btn-search">
-                        <span class="btn-login-icon">
-                            <i class="fa fa-search" aria-hidden="true"></i>
-                        </span>
-                    </div>
-                    <a href="./login.html">
-                        <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">ĐĂNG NHẬP</span>
-                        </div>
-                    </a>
-                    <a href="./shopping-card.html">
-                        <div class="btn-login">
-                            <span class="btn-login-icon">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </span>
-                            <span class="btn-login-text font-14 text-uppercase">GIỎ HÀNG</span>
-                        </div>
-                    </a>
-
-                </div>
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark pink scrolling-navbar">
+            <a class="navbar-brand order-xs-2 order-sm-2 order-md-2 order-lg-1" href="#"><strong>CarpoShop</strong></a>
+            <button class="navbar-toggler order-xs-1 order-sm-1 order-md-1 order-lg-2" type="button"
+                data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./shop-list.html">Sản phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./contact.html">Liên hệ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-uppercase text-white" href="./track-order.html">Theo dõi đơn hàng</a>
+                    </li>
+                </ul>
             </div>
-        </div>
-        <div class="container-fluid container-fluid-nav">
-            <div class="container">
-                <nav class="navbar navbar-expand-lg">
+            <ul class="navbar-nav nav-flex-icons order-xs-3 order-sm-3 order-md-3 order-lg-3">
+                <li class="nav-item sm-display-none">
+                    <a class="nav-link"><i class="fa fa-search text-white" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html"><i class="fa fa-user text-white" aria-hidden="true"></i></a>
+                </li>
+                <li class="nav-item sm-display-none">
+                    <a class="nav-link" href="./shopping-card.html"><i class="fa fa-shopping-cart text-white" aria-hidden="true"></i></a>
+                </li>
 
-                    <!-- Collapse button -->
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
-                        aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                        <span class="toggler-icon"></span>
-                    </button>
+            </ul>
+        </nav>
 
-                    <!-- Collapsible content -->
-                    <div class="collapse navbar-collapse" id="basicExampleNav">
-
-                        <!-- Links -->
-                        <ul class="navbar-nav mr-auto ml-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="./index.html">Trang chủ
-
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Sản phẩm</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./shop-list.html">Khuyến mại</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./blog.html">Blog</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="./contact.html">Liên hệ</a>
-                            </li>
-                            <!-- Dropdown -->
-
-
-                        </ul>
-                        <!-- Links -->
-                        <!-- Collapsible content -->
-
-                </nav>
-            </div>
-        </div>
     </header>
 
     <section id="duong-dan">
@@ -148,340 +78,593 @@
             <a href="./product-detail.html">
                 <span>Áo thun cổ trơn túi ngực</span>
             </a>
-
         </div>
     </section>
 
-    <section id="product-detail">
+    <section class="main-container col1-layout">
         <div class="container">
-            <div class="list-slide-pro">
-                <div class="slide-product">
-                    <img src="./images/sl1.png" alt="">
-                </div>
-                <div class="list-slide">
-                    <img src="./images/sl2.png" alt="">
-                    <img src="./images/sl3.png" alt="">
-                    <img src="./images/sl4.png" alt="">
-                    <img src="./images/sl5.png" alt="">
-                </div>
-            </div>
+            <div class="row">
+                <div class="product-view">
+                    <div class="product-essential">
+                        <form action="#" method="post" id="product_addtocart_form">
+                            <div class="product-img-box col-lg-4 col-sm-5 col-xs-12">
+                                <div class="product-image">
+                                    <div class="product-full">
+                                        <img id="product-zoom" src="./images/7.png" data-zoom-image="./images/17.jpg"
+                                            alt="product-image" />
+                                    </div>
+                                    
+                                </div>
+                                <!-- end: more-images -->
+                            </div>
+                            <div class="product-shop col-lg-8 col-sm-7 col-xs-12">
+                                <div class="product-name">
+                                    <h1>Áo thun cổ trơn túi ngực</h1>
+                                </div>
+                                <div class="rating"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i
+                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                        class="fa fa-star-o"></i> </div>
+                                <div class="price-block">
+                                    <div class="price-box">
+                                        <p class="special-price"> <span class="price-label">Giá khuyến mại</span><span
+                                                class="price"> 230.000đ </span></p>
+                                        <p class="old-price"> <span class="price-label">Giá:</span><span
+                                                class="price"></span>
+                                            470.000đ </span></p>
+                                        <p class="availability in-stock"><span>Còn hàng</span></p>
+                                    </div>
+                                </div>
+                                <div class="short-description">
+                                    <h2>Mô tả</h2>
+                                    <p>Áo phông Cotton US, in dưới túi. Phom Regular, cổ tròn, ngắn tay. Phong cách năng
+                                        động, khỏe khoăn. Phù hợp với quần short và jeans</p>
+                                    <br>
+                                    <p> Áo thun trắng luôn là sự lựa chọn hàng đầu của các chàng trai bởi sự đơn giản,
+                                        dễ phối đồ và mang lại phtong cách tươi mới, trẻ trung, hiện đại cho người mặc.
+                                    </p>
+                                </div>
+                                <div class="add-to-box">
+                                    <div class="add-to-cart">
+                                        <div class="pull-left">
+                                            <div class="custom pull-left">
+                                                <label>Số lượng:</label>
+                                                <button type="button" class="increase items-count">
+                                                    <i class="fa fa-minus">&nbsp;</i></button>
+                                                <input type="text" class="input-text qty" title="Qty" value="1"
+                                                    maxlength="12" id="qty" name="qty">
+                                                <button onClick="var result = document.getElementById('qty'); var qty = result.value; if( !isNaN( qty )) result.value++;return false;" class="increase items-count" type="button">
+                                                    <i class="fa fa-plus">&nbsp;</i></button>
+                                            </div>
+                                        </div>
+                                        <button onClick="productAddToCartForm.submit(this)" class="button btn-cart"
+                                            title="Add to Cart" type="button"><i class="fa fa-shopping-cart"></i> Thêm
+                                            vào giỏ hàng</button>
+                                    </div>
 
-
-            <div class="info-product">
-                <h2 class="text-uppercase">Áo thun cổ trơn túi ngực</h2>
-                <div class="stock">
-                    <span class="badge badge-pill badge-secondary">Còn hàng</span>
-                    <span>SKU : AT001</span>
-                </div>
-                <div class="star">
-                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                    <span><i class="fa fa-star" aria-hidden="true"></i></span>
-                </div>
-                <p class="price-pro">230.000đ</p>
-                <p class="decript-pro">Áo phông Cotton US, in dưới túi.
-                    Phom Regular, cổ tròn, ngắn tay.
-                    Phong cách năng động, khỏe khoăn. Phù hợp với quần short và jeans</p>
-                <div class="size">
-                    <span>Size</span>
-                    <div class="list-size">
-                        <span>S</span>
-                        <span>M</span>
-                        <span>L</span>
-                        <span>XL</span>
-                    </div>
-                </div>
-                <div class="color">
-                    <span>Màu sắc</span>
-                    <div class="list-color">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-                <div class="soluong">
-                    <span>Số lượng</span>
-                    <div class="col-count-change">
-                        <a href="#" class="btn-hover">
-                            <span>-</span>
-                        </a>
-
-                        <span>1</span>
-                        <a href="#" class="btn-hover">
-                            <span>+</span>
-                        </a>
-                    </div>
-                </div>
-
-                <p class="total-money">Tổng tiền: 230.000đ</p>
-                <div class="list-btn">
-                    <a href="./shopping-card.html">
-                        <button class="buy-now btn-hover">Mua ngay</button>
-                    </a>
-
-                    <a href="./shopping-card.html">
-                        <button class="add-shopping-card">
-                            <span class="icon-shopping-card">
-                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                            </span>
-                            Thêm vào giỏ hàng
-                        </button>
-                    </a>
-
-                </div>
-            </div>
-
-            <div class="clear"></div>
-        </div>
-    </section>
-
-    <section id="comment">
-        <div class="container">
-            <div class="tab-link">
-                <div class="tab-item tab-active">
-                    <span class="">Chi tiết sản phẩm</span>
-                </div>
-                <div class="tab-item">
-                    <span>Hướng dẫn mua hàng</span>
-                </div>
-                <div class="tab-item">
-                    <span>Đánh giá - Nhận xét</span>
-                </div>
-            </div>
-            <div class="tab-content">
-                <span>Chưa có mô tả cho sản phẩm này</span>
-            </div>
-        </div>
-    </section>
-
-    <section id="new-product">
-        <div class="container">
-            <!-- Sản phẩm mới -->
-            <div class="new-product">
-                <div class="title-new-product">
-                    <div class="lable-new d-flex flex-row justify-content-center align-items-center">
-                        <span>Sản phẩm tương tự</span>
-                    </div>
-                </div>
-
-                <div class="list-new-product">
-                    <a href="./product-detail.html">
-                        <div class="product-item">
-
-                            <div class="img-product">
-                                <img src="./images/at1.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
+                                </div>
+                                <div class="social">
+                                    <ul>
+                                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam trơn túi ngực
-                                </span>
-                                <span class="price-product d-block">
-                                    230.000đ
-                                </span>
+                        </form>
+                    </div>
+                </div>
+                <div class="product-collateral col-lg-12 col-sm-12 col-xs-12">
+                    <ul id="product-detail-tab" class="nav nav-tabs product-tabs">
+                        <li class="active"> <a href="#product_tabs_description" data-toggle="tab"> Chi tiết sản phẩm
+                            </a></li>
+                        <li><a href="#reviews_tabs" data-toggle="tab">Đánh giá sản phẩm</a></li>
+                        <li><a href="#product_tabs_custom" data-toggle="tab">Hướng dẫn mua hàng</a></li>
+                    </ul>
+                    <div id="productTabContent" class="tab-content">
+                        <div class="tab-pane fade in active" id="product_tabs_description">
+                            <div class="std">
+                                <p>Có nguồn gốc từ loại áo chống rét của người Eskimo, áo parka rất được ưu ái trong
+                                    những ngày đại hàn bởi khả năng giữ ấm tuyệt vời. Đặc điểm của chiếc áo khoác này
+                                    tại H2T là được cắt may rộng rãi, có thể có mũ và lớp lót lông bên trong, thường gắn
+                                    liền với các gam màu trầm, quân đội như xanh khaki, nâu, đen... Item này rất được ưa
+                                    chuộng ở các nước xứ lạnh bởi ngoài khả năng giữ ấm tương đối tốt, nó còn mang lại
+                                    nét phóng khoáng, thoải mái cho người mặc..</p>
+                                <p> Nếu có một lời khuyên dành cho bạn ngay khi tiết trời đang sang thu vào đông này thì
+                                    đó là: Đừng ngại chi tiền cho những chiếc áo khoác chất lượng! Có thể nói không một
+                                    món đồ nào quan trọng và đáng đầu tư hơn một chiếc áo khoác ấm khi trời chuyển lạnh.
+                                    Để chọn được chiếc áo khoác tốt và phù hợp nhất bạn nên ưu tiên 3 tiêu chí: chất
+                                    liệu, kiểu dáng và sự tiện dụng. Vì sao chất liệu cần được đặt lên hàng đầu? Bởi một
+                                    chiếc áo khoác có chất liệu tốt sẽ thể hiện khả năng giữ ấm tuyệt vời của nó. Mà
+                                    trời lạnh thì không gì quý giá hơn sự ấm áp phải không?.</p>
                             </div>
                         </div>
-                    </a>
-                    <a href="./product-detail.html">
-                        <div class="product-item">
-
-                            <div class="img-product">
-                                <img src="./images/at2.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
+                        <div class="tab-pane fade" id="reviews_tabs">
+                            <div class="box-collateral box-reviews" id="customer-reviews">
+                                <div class="box-reviews1">
+                                    <div class="form-add">
+                                        <form id="review-form" method="post"
+                                            action="http://www.jtvcommerce.com/review/product/post/id/176/">
+                                            <h3>Viết đánh giá của bạn</h3>
+                                            <fieldset>
+                                                <h4>Làm thế nào để bạn đánh giá sản phẩm này? <em
+                                                        class="required">*</em></h4>
+                                                <span id="input-message-box"></span>
+                                                <table id="product-review-table" class="data-table">
+                                                    <thead>
+                                                        <tr class="first last">
+                                                            <th>&nbsp;</th>
+                                                            <th><span class="nobr">1 *</span></th>
+                                                            <th><span class="nobr">2 *</span></th>
+                                                            <th><span class="nobr">3 *</span></th>
+                                                            <th><span class="nobr">4 *</span></th>
+                                                            <th><span class="nobr">5 *</span></th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr class="first odd">
+                                                            <th>Giá bán</th>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="11" id="Price_1" name="ratings[3]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="12" id="Price_2" name="ratings[3]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="13" id="Price_3" name="ratings[3]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="14" id="Price_4" name="ratings[3]"></td>
+                                                            <td class="value last"><input type="radio" class="radio"
+                                                                    value="15" id="Price_5" name="ratings[3]"></td>
+                                                        </tr>
+                                                        <tr class="even">
+                                                            <th>Giá trị</th>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="6" id="Value_1" name="ratings[2]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="7" id="Value_2" name="ratings[2]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="8" id="Value_3" name="ratings[2]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="9" id="Value_4" name="ratings[2]"></td>
+                                                            <td class="value last"><input type="radio" class="radio"
+                                                                    value="10" id="Value_5" name="ratings[2]"></td>
+                                                        </tr>
+                                                        <tr class="last odd">
+                                                            <th>Chất lượng</th>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="1" id="Quality_1" name="ratings[1]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="2" id="Quality_2" name="ratings[1]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="3" id="Quality_3" name="ratings[1]"></td>
+                                                            <td class="value"><input type="radio" class="radio"
+                                                                    value="4" id="Quality_4" name="ratings[1]"></td>
+                                                            <td class="value last"><input type="radio" class="radio"
+                                                                    value="5" id="Quality_5" name="ratings[1]"></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                                <input type="hidden" value="" class="validate-rating"
+                                                    name="validate_rating">
+                                                <div class="review1">
+                                                    <ul class="form-list">
+                                                        <li>
+                                                            <label class="required" for="nickname_field">Họ
+                                                                tên<em>*</em></label>
+                                                            <div class="input-box">
+                                                                <input type="text" class="input-text"
+                                                                    id="nickname_field" name="nickname">
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <label class="required" for="summary_field">Tóm
+                                                                tắt<em>*</em></label>
+                                                            <div class="input-box">
+                                                                <input type="text" class="input-text" id="summary_field"
+                                                                    name="title">
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="review2">
+                                                    <ul>
+                                                        <li>
+                                                            <label class="required " for="review_field">Đánh
+                                                                giá<em>*</em></label>
+                                                            <div class="input-box">
+                                                                <textarea rows="3" cols="5" id="review_field"
+                                                                    name="detail"></textarea>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                    <div class="buttons-set">
+                                                        <button class="button submit" title="Submit Review"
+                                                            type="submit"><span>Gửi đánh giá</span></button>
+                                                    </div>
+                                                </div>
+                                            </fieldset>
+                                        </form>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam miix
-                                </span>
-                                <span class="price-product d-block">
-                                    330.000đ
-                                </span>
-                            </div>
                         </div>
-                    </a>
-                    <a href="./product-detail.html">
-                        <div class="product-item">
+                        <div class="tab-pane fade" id="product_tabs_custom">
+                            <div class="product-tabs-content-inner clearfix">
+                                <p><b>1. Khu vực Hà Nội: (Ship hàng vào 16h chiều hàng ngày)</b></p>
 
-                            <div class="img-product">
-                                <img src="./images/at3.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun nam kẻ sọc
-                                </span>
-                                <span class="price-product d-block">
-                                    290.000đ
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-                    <a href="./product-detail.html">
-                        <div class="product-item">
+                                <p><i>* Với các bạn ở HN có thể đến trực tiếp cửa hàng 146 Xã Đàn, 51 Xuân Thủy, 390 Quang
+                                        Trung, 491A Nguyễn Văn Cừ (mở cửa từ 8:00 am- 22:00 pm) để giao dịch trực tiếp.</i></p>
 
-                            <div class="img-product">
-                                <img src="./images/at4.png">
-                                <div class="link-product d-flex justify-content-around align-items-center">
-                                    <span>
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-heart" aria-hidden="true"></i>
-                                    </span>
-                                    <span>
-                                        <i class="fa fa-eye" aria-hidden="true"></i>
-                                    </span>
-                                </div>
-                            </div>
-                            <div class="decript-product">
-                                <span class="name-product color-text-main font-16 d-block">
-                                    Áo thun cổ tròn dáng xuông
-                                </span>
-                                <span class="price-product d-block">
-                                    450.000đ
-                                </span>
+                                <p><i>* Các bạn ở HN nhưng không có có điều kiện qua xem trực tiếp có thể liên hệ với bên mình
+                                        để đc vận chuyển và thanh toán trực tiếp tại nhà bằng cách inbox trực tiếp fb hoặc chat
+                                        trực tiếp trên website Shop: https://h2tstore.vn</i></p>
+
+                                <p><i>(Địa chỉ vs số đt người nhận + Mẫu áo +Mầu áo+ size hoặc chiều cao cân nặng -->inbox tại
+                                        https://www.facebook.com/shopH2T hoặc gửi đơn hàng trên web )</i></p>
+
+                                <p><i>(Giá trị thanh toán = giá trị hàng + 30K tiền phí ship ko kể số lượng)</i></p>
+
+                                <p><b><i>Khi chuyển đến sẽ gọi điện cho bạn trước 30 phút!</i></b></p> 
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="brand">
-        <div class="container">
-            <div class="list-brand">
-                <div class="brand-item">
-                    <img src="./images/th1.png" alt="">
+    <!-- <div class="container">
+        <div class="jtv-related-products">
+            <div class="slider-items-products">
+                <div class="jtv-new-title">
+                    <h2>Related Products</h2>
                 </div>
-                <div class="brand-item">
-                    <img src="./images/th2.png" alt="">
-                </div>
-                <div class="brand-item">
-                    <img src="./images/th3.png" alt="">
-                </div>
-                <div class="brand-item">
-                    <img src="./images/th4.png" alt="">
-                </div>
-                <div class="brand-item">
-                    <img src="./images/th5.png" alt="">
-                </div>
-                <div class="brand-item">
-                    <img src="./images/th6.png" alt="">
+                <div class="related-block">
+                    <div id="jtv-related-products-slider" class="product-flexslider hidden-buttons">
+                        <div class="slider-items slider-width-col4 products-grid">
+                            <div class="item">
+                                <div class="item-inner">
+                                    <div class="item-img">
+                                        <div class="item-img-info"><a class="product-image"
+                                                title="Product tilte is here" href="#"> <img alt="Product tilte is here"
+                                                    src="../images/products/product-fashion-1.jpg"> </a>
+                                            <div class="new-label new-top-left">new</div>
+                                            <div class="mask-shop-white"></div>
+                                            <div class="new-label new-top-left">new</div>
+                                            <a class="quickview-btn" href="quick-view.html"><span>Quick View</span></a>
+                                            <a href="wishlist.html">
+                                                <div class="mask-left-shop"><i class="fa fa-heart"></i></div>
+                                            </a> <a href="compare.html">
+                                                <div class="mask-right-shop"><i class="fa fa-signal"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="info-inner">
+                                            <div class="item-title"> <a title="Product tilte is here" href="#"> Product
+                                                    tilte is here </a> </div>
+                                            <div class="item-content">
+                                                <div class="rating"> <i class="fa fa-star"></i> <i
+                                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                                                <div class="item-price">
+                                                    <div class="price-box"> <span class="regular-price"> <span
+                                                                class="price">$115.00</span></span></div>
+                                                </div>
+                                                <div class="actions">
+                                                    <button class="button btn-cart" type="button"><span><i
+                                                                class="fa fa-shopping-cart"></i> Add to
+                                                            Cart</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-inner">
+                                    <div class="item-img">
+                                        <div class="item-img-info"><a class="product-image"
+                                                title="Product tilte is here" href="#"> <img alt="Product tilte is here"
+                                                    src="../images/products/product-fashion-1.jpg"> </a>
+                                            <div class="sale-label sale-top-right">Sale</div>
+                                            <div class="mask-shop-white"></div>
+                                            <div class="new-label new-top-left">new</div>
+                                            <a class="quickview-btn" href="quick-view.html"><span>Quick View</span></a>
+                                            <a href="wishlist.html">
+                                                <div class="mask-left-shop"><i class="fa fa-heart"></i></div>
+                                            </a> <a href="compare.html">
+                                                <div class="mask-right-shop"><i class="fa fa-signal"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="info-inner">
+                                            <div class="item-title"> <a title="Product tilte is here" href="#"> Product
+                                                    tilte is here </a> </div>
+                                            <div class="item-content">
+                                                <div class="rating"> <i class="fa fa-star"></i> <i
+                                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                                                <div class="item-price">
+                                                    <div class="price-box"> <span class="regular-price"> <span
+                                                                class="price">$99.00</span></span></div>
+                                                </div>
+                                                <div class="actions">
+                                                    <button class="button btn-cart" type="button"><span><i
+                                                                class="fa fa-shopping-cart"></i> Add to
+                                                            Cart</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-inner">
+                                    <div class="item-img">
+                                        <div class="item-img-info"><a class="product-image"
+                                                title="Product tilte is here" href="#"> <img alt="Product tilte is here"
+                                                    src="../images/products/product-fashion-1.jpg"> </a>
+                                            <div class="mask-shop-white"></div>
+                                            <div class="new-label new-top-left">new</div>
+                                            <a class="quickview-btn" href="quick-view.html"><span>Quick View</span></a>
+                                            <a href="wishlist.html">
+                                                <div class="mask-left-shop"><i class="fa fa-heart"></i></div>
+                                            </a> <a href="compare.html">
+                                                <div class="mask-right-shop"><i class="fa fa-signal"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="info-inner">
+                                            <div class="item-title"> <a title="Product tilte is here" href="#"> Product
+                                                    tilte is here </a> </div>
+                                            <div class="item-content">
+                                                <div class="rating"> <i class="fa fa-star"></i> <i
+                                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                                                <div class="item-price">
+                                                    <div class="price-box"> <span class="regular-price"> <span
+                                                                class="price">$79.90</span></span></div>
+                                                </div>
+                                                <div class="actions">
+                                                    <button class="button btn-cart" type="button"><span><i
+                                                                class="fa fa-shopping-cart"></i> Add to
+                                                            Cart</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-inner">
+                                    <div class="item-img">
+                                        <div class="item-img-info"><a class="product-image"
+                                                title="Product tilte is here" href="#"> <img alt="Product tilte is here"
+                                                    src="../images/products/product-fashion-1.jpg"> </a>
+                                            <div class="sale-label sale-top-left">Sale</div>
+                                            <div class="mask-shop-white"></div>
+                                            <div class="new-label new-top-left">new</div>
+                                            <a class="quickview-btn" href="quick-view.html"><span>Quick View</span></a>
+                                            <a href="wishlist.html">
+                                                <div class="mask-left-shop"><i class="fa fa-heart"></i></div>
+                                            </a> <a href="compare.html">
+                                                <div class="mask-right-shop"><i class="fa fa-signal"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="info-inner">
+                                            <div class="item-title"> <a title="Product tilte is here" href="#"> Product
+                                                    tilte is here </a> </div>
+                                            <div class="item-content">
+                                                <div class="rating"> <i class="fa fa-star"></i> <i
+                                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                                                <div class="item-price">
+                                                    <div class="price-box"> <span class="regular-price"> <span
+                                                                class="price">$49.00</span></span></div>
+                                                </div>
+                                                <div class="actions">
+                                                    <button class="button btn-cart" type="button"><span><i
+                                                                class="fa fa-shopping-cart"></i> Add to
+                                                            Cart</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-inner">
+                                    <div class="item-img">
+                                        <div class="item-img-info"><a class="product-image"
+                                                title="Product tilte is here" href="#"> <img alt="Product tilte is here"
+                                                    src="../images/products/product-fashion-1.jpg"> </a>
+                                            <div class="mask-shop-white"></div>
+                                            <div class="new-label new-top-left">new</div>
+                                            <a class="quickview-btn" href="quick-view.html"><span>Quick View</span></a>
+                                            <a href="wishlist.html">
+                                                <div class="mask-left-shop"><i class="fa fa-heart"></i></div>
+                                            </a> <a href="compare.html">
+                                                <div class="mask-right-shop"><i class="fa fa-signal"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="info-inner">
+                                            <div class="item-title"> <a title="Product tilte is here" href="#"> Product
+                                                    tilte is here </a> </div>
+                                            <div class="item-content">
+                                                <div class="rating"> <i class="fa fa-star"></i> <i
+                                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                                                <div class="item-price">
+                                                    <div class="price-box"> <span class="regular-price"> <span
+                                                                class="price">$97.00</span></span></div>
+                                                </div>
+                                                <div class="actions">
+                                                    <button class="button btn-cart" type="button"><span><i
+                                                                class="fa fa-shopping-cart"></i> Add to
+                                                            Cart</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-inner">
+                                    <div class="item-img">
+                                        <div class="item-img-info"><a class="product-image"
+                                                title="Product tilte is here" href="#"> <img alt="Product tilte is here"
+                                                    src="../images/products/product-fashion-1.jpg"> </a>
+                                            <div class="mask-shop-white"></div>
+                                            <div class="new-label new-top-left">new</div>
+                                            <a class="quickview-btn" href="quick-view.html"><span>Quick View</span></a>
+                                            <a href="wishlist.html">
+                                                <div class="mask-left-shop"><i class="fa fa-heart"></i></div>
+                                            </a> <a href="compare.html">
+                                                <div class="mask-right-shop"><i class="fa fa-signal"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="info-inner">
+                                            <div class="item-title"> <a title="Product tilte is here" href="#"> Product
+                                                    tilte is here </a> </div>
+                                            <div class="item-content">
+                                                <div class="rating"> <i class="fa fa-star"></i> <i
+                                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                                                <div class="item-price">
+                                                    <div class="price-box"> <span class="regular-price"> <span
+                                                                class="price">$199.00</span></span></div>
+                                                </div>
+                                                <div class="actions">
+                                                    <button class="button btn-cart" type="button"><span><i
+                                                                class="fa fa-shopping-cart"></i> Add to
+                                                            Cart</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="item-inner">
+                                    <div class="item-img">
+                                        <div class="item-img-info"><a class="product-image"
+                                                title="Product tilte is here" href="#"> <img alt="Product tilte is here"
+                                                    src="../images/products/product-fashion-1.jpg"> </a>
+                                            <div class="mask-shop-white"></div>
+                                            <div class="new-label new-top-left">new</div>
+                                            <a class="quickview-btn" href="quick-view.html"><span>Quick View</span></a>
+                                            <a href="wishlist.html">
+                                                <div class="mask-left-shop"><i class="fa fa-heart"></i></div>
+                                            </a> <a href="compare.html">
+                                                <div class="mask-right-shop"><i class="fa fa-signal"></i></div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="item-info">
+                                        <div class="info-inner">
+                                            <div class="item-title"> <a title="Product tilte is here" href="#"> Product
+                                                    tilte is here </a> </div>
+                                            <div class="item-content">
+                                                <div class="rating"> <i class="fa fa-star"></i> <i
+                                                        class="fa fa-star"></i> <i class="fa fa-star-o"></i> <i
+                                                        class="fa fa-star-o"></i> <i class="fa fa-star-o"></i> </div>
+                                                <div class="item-price">
+                                                    <div class="price-box"> <span class="regular-price"> <span
+                                                                class="price">$75.00</span></span></div>
+                                                </div>
+                                                <div class="actions">
+                                                    <button class="button btn-cart" type="button"><span><i
+                                                                class="fa fa-shopping-cart"></i> Add to
+                                                            Cart</span></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
+    </div> -->
 
 
 
     <footer>
-        <div class="row">
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Về carpo</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Thông tin về Carpo</a>
-                    </li>
-                    <li>
-                        <a href="#">Quá trình phát triển</a>
-                    </li>
-                    <li>
-                        <a href="#">Hệ thống cửa hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Tuyển dụng</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Hỗ trợ mua hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Hướng dẫn mua hàng</a>
-                    </li>
-                    <li>
-                        <a href="#">Hướng dẫn thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Phương thức vận chuyển</a>
-                    </li>
-                    <li>
-                        <a href="#">Tra cứu đơn hàng</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Chính sách khách hàng</h2>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">Khách hàng VIP</a>
-                    </li>
-                    <li>
-                        <a href="#">Khách hàng thanh toán</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách đổi trả</a>
-                    </li>
-                    <li>
-                        <a href="#">Chính sách bảo mật</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-md-3">
-                <h2 class="text-uppercase color-text-main">Đăng ký nhận thông tin</h2>
-                <div class="register-email border-main">
-                    <input type="text" name="timkiem" placeholder="Email của bạn" class="border-none">
-                    <button type="submit" class="btn-register-email bg-green text-white text-uppercase font-14">Đăng
-                        ký</button>
-                </div>
-                <div class="follow">
-                    <span class="color-text-main font-14">Theo dõi chúng tôi qua</span>
-                    <div class="icon-follow d-inline-block">
-                        <span class="facebook">
-                            <i class="fa fa-facebook-official" aria-hidden="true"></i>
-                        </span>
-                        <span class="youtube">
-                            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                        </span>
-                        <span class="twitter">
-                            <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                        </span>
+        <div class="footer-inner">
+            <div class="news-letter">
+                <div class="container">
+                    <div class="heading text-center">
+                        <h2>ĐĂNG KÝ NHẬN THÔNG BÁO</h2>
+                        <span>Đăng ký nhận thông tin khuyến mãi và cập nhật sản phẩm mới nhất từ Carpo.</span>
                     </div>
+                    <form>
+                        <input type="email" placeholder="Nhập địa chỉ Email của bạn" required>
+                        <button type="submit">Đăng ký</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <h4>Carpo</h4>
+                        <div class="contacts-info">
+                            <p>Cửa hàng thời trang nam mang phong cách mới lạ </p>
+                            <address>
+                                <i class="fa fa-location-arrow"></i> <span>123 Nguyễn Trãi, Thanh Xuân, Hà Nội</span>
+                            </address>
+                            <div class="phone-footer"><i class="fa fa-phone"></i> +0 123 456 98765</div>
+                            <div class="email-footer"><i class="fa fa-envelope"></i> <a
+                                    href="mailto:support@example.com">Carpo@gmail.com</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                        <h4>Về chúng tôi</h4>
+                        <ul class="links">
+                            <li><a href="#">Thông tin về Carpo</a></li>
+                            <li><a href="#">Quá trình phát triển</a></li>
+                            <li><a href="#">Hệ thông cửa hàng</a></li>
+                            <li><a href="#">Tuyển dụng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-2 col-sm-6 col-xs-12">
+                        <h4>HỖ TRỢ MUA HÀNG</h4>
+                        <ul class="links">
+                            <li><a href="#">Hướng dẫn mua hàng</a></li>
+                            <li><a href="#">Hướng dẫn thanh toán</a></li>
+                            <li><a href="#">Phương thức vận chuyển</a></li>
+                            <li><a href="#">Tra cứu đơn hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-lg-3 col-md-4 col-sm-6">
+                        <div class="social">
+                            <h4>Theo dõi chúng tôi</h4>
+                            <ul>
+                                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12 coppyright text-center">© 2019 CarpoShop.</div>
                 </div>
             </div>
         </div>
@@ -490,6 +673,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>

@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Arsenal&display=swap');
 
 *, *::before, *::after {
     margin: 0;
@@ -5,7 +6,7 @@
     box-sizing: border-box;
 }
 body {
-	font-family: "Lato", sans-serif;
+	font-family: 'Arsenal', sans-serif;
 	/* background: #f3f3f3; */
 }
 .container {
@@ -28,7 +29,9 @@ body {
 }
 @media screen and (max-width: 576px) {
     .container {
-		width: 93.75%;
+        width: 93.75%;
+        padding-left: 0;
+        padding-right: 0;
 	}
 }
 .container-fluid {
@@ -60,7 +63,8 @@ img {
 }
 .btn-hover:hover {
 	transition: all .3s ease;
-	background: #736854 !important;
+	background: #494e62 !important;
+    color: #fff;
 }
 .btn-red-hover:hover {
 	transition: all .3s ease;
@@ -112,16 +116,97 @@ img {
 #duong-dan span {
     display: inline-block;
     margin-right: 10px;
-    margin-left: 10px;
+    margin-left: 0px;
     margin-bottom: 6px;
 }
 .duong-dan-active {
 	color: #C5B291;
 }
+@media screen and (max-width: 1200px) {
+    #duong-dan span {
+        margin-right: 10px;
+    }
+}
 
 /*////////-------HEADER---------/////////*/
-
-
+header {
+    font-family: 'Lato', sans-serif;
+}
+.fixed-top {
+    position: static;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.pink.scrolling-navbar {
+    background: #292c38;
+    color: white;
+}
+a.nav-link.text-uppercase.text-white {
+    font-family: "Lato";
+    cursor: pointer;
+    transition: all .5s ease;
+}
+a.nav-link.text-uppercase.text-white:hover {
+    color: rgba(255,255,255,.4) !important;
+}
+button.navbar-toggler {
+    color: #fff !important;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width: 992px) {
+    ul.navbar-nav.nav-flex-icons {
+        flex-direction: row;
+    }
+    ul.navbar-nav.nav-flex-icons .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    a.navbar-brand {
+        margin-right: 0;
+        margin-left: 1em; 
+    }
+    div#navbarSupportedContent {
+        order: 4;
+    }
+    .navbar-toggler {
+        padding: 0;
+    }
+}
+@media screen and (min-width: 992px) {
+    a.navbar-brand {
+        position: absolute;
+    }
+    a.nav-link.text-uppercase.text-white {
+        padding: 0 1.5rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    a.navbar-brand {
+        margin-left: 0; 
+    }
+    .sm-display-none {
+        display: none;
+    }
+    i.fa.fa-user.text-white {
+        font-size: 20px;
+    }
+    .order-sm-1 {
+        -ms-flex-order: 1;
+        order: 1;
+    }
+    .order-sm-2 {
+        -ms-flex-order: 2;
+        order: 2;
+    }
+    .order-sm-3 {
+        -ms-flex-order: 3;
+        order: 3;
+    }
+}
+/*--------------Thanh dieu huong---------------*/
 
 /*------------------new-product-------------------*/
 /* #new-product, #discounted-product, #blog {
@@ -148,7 +233,7 @@ img {
 }
 
 .purchase-policy-item {
-	padding: 20px;
+	padding: 10px 5px;
 	flex: 33.33%;
 	display: flex;
 	flex-direction: row;
@@ -166,10 +251,15 @@ img {
 	color:  #57AF8A;
 	margin-right: 32px;
 }
+@media screen and (max-width: 992px) {
+    .purchase-policy-item-icon > span {
+        margin-right: 15px;
+    }
+}
 @media screen and (max-width: 768px) {
 	.purchase-policy-item {
 		flex-direction: column;
-	}
+    }
 } 
 .purchase-policy-item-content {
 	color: #57AF8A !important;
@@ -181,7 +271,7 @@ img {
 .purchase-policy-item-content p{
 	font-size: 14px;
 	color: #57AF8A;
-	font-family: latoregular;
+	margin-bottom: 0;
 }
 @media screen and (max-width: 576px) {
     .purchase-policy {
@@ -250,8 +340,8 @@ img {
 }
 @media screen and (max-width: 576px) {
     .list-new-product {
-		grid-template-columns: 1fr;
-		grid-gap: 40px;
+		grid-template-columns: repeat(2,1fr);
+		grid-gap: 10px;
 	}
 	.list-new-product > div {
 		text-align: center;
@@ -825,7 +915,6 @@ button.button span span {
 .footer-top .newsletter .validation-advice {
 	left: 106px;
 }
-
 
 
 
