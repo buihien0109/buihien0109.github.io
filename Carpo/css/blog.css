@@ -211,8 +211,8 @@ a.read-more:hover {
 	padding-top: 20px;
 	list-style: outside none none;
 	color: #999;
-	font-size: 12px;
-	line-height: 20px;
+	font-size: 16px;
+	line-height: 24px;
 }
 .center_column .blog-posts .post-item {
 	border-bottom: 1px #eee solid;
@@ -305,7 +305,7 @@ a.read-more:hover {
 	color: #999;
 }
 .blog-list-sidebar li .post-info h5 {
-	font-size: 13px;
+	font-size: 16px;
 	margin: 0px;
 }
 .blog-list-sidebar li .post-info .post-meta {
@@ -341,11 +341,11 @@ a.read-more:hover {
 .recent-comment-list li .comment {
 	margin-top: 5px;
 	color: #666;
-	font-size: 13px;
+	font-size: 14px;
 }
 .recent-comment-list li>h5>a {
 	color: #333;
-	font-size: 13px;
+	font-size: 16px;
 }
 .recent-comment-list h5 {
 	margin: 0px;
@@ -379,11 +379,9 @@ a.read-more:hover {
 	color: #999;
 }
 .entry-title a {
-	font-size: 15px;
+	font-size: 18px;
+	font-weight: 500;
 	display: inherit;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
 	padding: 0px;
 }
 .entry-thumb {
@@ -463,7 +461,7 @@ a.read-more:hover {
 }
 /*      Blockquotes  */
 blockquote, blockquote p {
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 24px;
 	color: #5c5c5c;
 	font-style: italic;
@@ -493,7 +491,7 @@ blockquote {
 }
 /** COMMMENT list**/
 .single-box {
-	font-size: 13px;
+	font-size: 16px;
 	margin-bottom: 30px;
 }
 .single-box h2 {
@@ -692,7 +690,7 @@ h3.entry-title {
     border: 0;
     background: #fff;
     padding: 6px 12px;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     white-space: nowrap;
     color: #333;
@@ -706,9 +704,9 @@ h3.entry-title {
 .tags-list a {
     background-color: #f0f0f0;
     padding: 2px 6px;
-    margin-bottom: 4px;
+    margin-bottom: 12px;
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
 }
 .tags-list a:hover {
     background-color: #f82e56;

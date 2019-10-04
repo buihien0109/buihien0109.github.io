@@ -23,6 +23,7 @@
 	padding: 15px 15px 12px;
 	font-weight: 600;
 	text-transform: uppercase;
+	text-align: center;
 }
 .block .block-title h3 {
 	margin: auto;
@@ -90,7 +91,6 @@
 	display: inline-block;
 	cursor: pointer;
 	line-height: 12px;
-	font-weight: 600;
 }
 .size ul {
 	margin-bottom: 6px !important;
@@ -111,8 +111,8 @@
 	padding: 3px 10px;
 	color: #666;
 	float: left;
-	font-size: 11px;
-	font-weight: 700;
+	font-size: 16px;
+	font-weight: 500;
 	text-transform: uppercase;
 	text-decoration: none;
 	border-radius: 0px;
@@ -136,17 +136,18 @@
 	padding: 0;
 }
 .sidebar .block dt {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 	color: #333;
 	padding: 10px 0;
-	padding-bottom: 0px!important
+	padding-bottom: 0px!important;
+	text-transform: uppercase;
 }
 .sidebar .block dd {
 	border-bottom: 0 solid #CCCCCC;
 	margin: 0;
 	padding: 0 5px;
-	margin-bottom: 15px
+	margin-bottom: 15px;
 }
 .block-layered-nav dd.last {
 	margin-bottom: 0px;
@@ -160,7 +161,7 @@
 	line-height: 24px;
 }
 .sidebar {
-	font-size: 14px;
+	font-size: 16px;
 }
 .sidebar .block-layered-nav .price {
 	font-size: 13px;
@@ -178,7 +179,7 @@
 }
 .sidebar a, .sidebar .block-layered-nav .price .sub {
 	color: #222;
-	font-size: 14px;
+	font-size: 16px;
 }
 .sidebar .block-layered-nav .price {
 	color: #666;

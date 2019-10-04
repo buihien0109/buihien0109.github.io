@@ -7,7 +7,6 @@
 }
 body {
 	font-family: 'Arsenal', sans-serif;
-	/* background: #f3f3f3; */
 }
 /* .container {
 	max-width: 1000px;
@@ -40,7 +39,6 @@ body {
 p {
     font-size: 16px;
     color: #4D4D4D;
-    font-family: latoregular;
 }
 a {
 	text-decoration:  none;
@@ -115,11 +113,14 @@ img {
         margin-right: 10px;
     }
 }
+.read_btn {
+	color: #f82e56;
+}
+span.price {
+    font-size: 24px;
+}
 
 /*////////-------HEADER---------/////////*/
-header {
-    font-family: 'Lato', sans-serif;
-}
 .fixed-top {
     position: static;
     top: 0;
@@ -132,9 +133,9 @@ nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.pink.scrolling-navbar {
     color: white;
 }
 a.nav-link.text-uppercase.text-white {
-    font-family: "Lato";
     cursor: pointer;
-    transition: all .5s ease;
+	transition: all .5s ease;
+	font-size: 18px;
 }
 a.nav-link.text-uppercase.text-white:hover {
     color: rgba(255,255,255,.4) !important;
@@ -144,6 +145,17 @@ button.navbar-toggler {
     border: none;
     outline: none;
 }
+a.icon-header {
+    border: 1px #3c404e solid;
+    border-radius: 2px;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 24px;
+    text-align: center;
+    display: inline-block;
+    margin-left: 10px;
+} 
 @media screen and (max-width: 992px) {
     ul.navbar-nav.nav-flex-icons {
         flex-direction: row;
@@ -204,6 +216,7 @@ button.navbar-toggler {
 	text-align: center;
 	background: #fff;
 	margin-top: 35px;
+	margin-bottom: 35px;
 }
 .support-policy-box .support-policy {
 	font-size: 12px;
@@ -239,7 +252,7 @@ button.navbar-toggler {
 .news-letter .heading span {
 	display: inline-block;
 	width: 100%;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.1px;
 	color: #999;
@@ -253,8 +266,8 @@ button.navbar-toggler {
 	height: 54px;
 	width: 70%;
 	padding: 0 20px;
-	display: inline;
-	font-size: 12px;
+	display: inline-block;
+	font-size: 16px;
 	float: left;
 	outline: none;
 	border: none;
@@ -269,6 +282,7 @@ button.navbar-toggler {
 	width: 28%;
 	background: #f82e56;
 	outline: none;
+	text-transform: uppercase;
 }
 .news-letter form button:hover {
 	background: #494e62;
@@ -294,7 +308,7 @@ footer ul li:last-child {
 footer a {
 	padding-top: 7px;
 	padding-bottom: 7px;
-	font-size: 13px
+	font-size: 16px;
 }
 .com-add {
 	border-bottom: 1px solid #f7f7f7;
@@ -313,25 +327,11 @@ footer .footer-inner h3 {
 	margin: 0 0 15px;
 	padding: 0 0 10px;
 }
-.contacts-info address {
-	border: medium none;
-	color: #aaa;
-	display: block;
-	font-size: 13px;
-	font-style: normal;
-	line-height: 1.5em;
-	margin: 5px auto 18px;
-	padding-bottom: 0px;
-	padding-top: 5px;
-	text-align: left;
-	font-weight: 400;
-}
 .contacts-info {
 	margin-top: 0px;
 	display: inline-block;
 }
-footer li a {
-}
+
 footer .links li a:before {
 	content: "\f105";
 	font-family: FontAwesome;
@@ -356,7 +356,7 @@ footer .links li a:before {
 	color: #fff
 }
 footer p {
-	font-size: 13px;
+	font-size: 16px;
 	color: #aaa;
 	padding-top: 5px;
 	padding-bottom: 5px;
@@ -380,7 +380,7 @@ footer p {
 }
 footer h4 {
 	padding: 0 0 10px;
-	font-size: 15px;
+	font-size: 18px;
 	color: #fff;
 	font-weight: 500;
 	text-transform: uppercase;
@@ -432,8 +432,8 @@ footer .coppyright {
 }
 .email-footer a {
 	font-size: 13px;
-	line-height: 35px;
-	color: #aaa
+	line-height: 24px;
+	color: #aaa;
 }
 .phone-footer {
 	overflow: hidden;
@@ -516,16 +516,12 @@ footer ul span {
 }
 address {
 	display: block;
-	margin: auto;
-	font-style: normal;
-	line-height: 21px;
-	color: #999;
-	padding-top: 10px;
-	margin-top: 10px;
-	text-align: left;
-	padding-bottom: 15px;
-	border-bottom: 1px #eaeaea solid;
-	margin-bottom: 15px
+    margin: auto;
+    font-style: normal;
+    line-height: 42px;
+    color: #999;
+    text-align: left;
+    font-size: 13px;
 }
 .footer-logo {
 	text-align: left;
@@ -1134,7 +1130,7 @@ button.button span span {
 	transition : all 0.2s ease-out;
 }
 .item:hover .item-img .mask-shop-white {
-	background: rgba(255,255,255,.8);
+	background: rgba(255,255,255,.4);
 	border-radius: 0px;
 }
 .item .item-img .mask-shop-white::before {
@@ -1545,7 +1541,8 @@ button.button span span {
     margin-bottom: 5px;
 }
 .blog-inner {
-    display: inline-block;
+	display: flex;
+	flex-wrap: wrap;
     margin-top: 15px;
 }
 .blog-preview_item {
