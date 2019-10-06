@@ -4,7 +4,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-lable, input, h1, p{
+label, input, h1, p{
     color: #464646;
     font-family: 'Roboto', sans-serif !important;
 }
@@ -14,8 +14,18 @@ th, tr, td, a, button {
 .f-14 {
     font-size: 14px;
 }
+label {
+    font-weight: 600 !important;
+}
 .bg-body {
     background: #e7dbdb;
+}
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: none;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(0,0,0,0);
 }
 .modal-loading{
 	position: fixed;
