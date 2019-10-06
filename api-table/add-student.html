@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./style.css">
+
+    <title>Thêm học viên</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-uppercase text-center m-4">Thêm học viên</h1>
+        <div class="row">
+            <div class="col-md-6 mr-auto ml-auto">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Tên học viên:</label>
+                        <input type="text" class="form-control" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="birth">Năm sinh:</label>
+                        <input type="text" class="form-control" id="birth">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Số điện thoại:</label>
+                        <input type="text" class="form-control" id="phone">
+                    </div>
+                    <a href="javascript:void(0)" class="text-uppercase btn btn-danger mr-4" onclick="addUser()">
+                        <i class="fas fa-check-circle mr-2"></i>Hoàn thành
+                    </a>
+                    <a href="./index.html" class="text-uppercase btn btn-success">
+                        <i class="fas fa-arrow-alt-circle-left mr-2"></i>Quay lại trang chủ
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-loading hide">
+        <div class="caption">loading...</div>
+        <div class="animation"></div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <script>
+        function addUser() {
+            let name = $('#name').val()
+            let birthYear = $('#birth').val()
+            let email = $('#email').val()
+            let phone = $('#phone').val()
+
+            let isLoading = true;
+            loading(isLoading)
+
+            $.ajax({
+                url: "https://quan-ly-hoc-vien.herokuapp.com/users/",
+                method: "POST",
+                data: {
+                    name: name,
+                    birthYear: birthYear,
+                    email: email,
+                    phone: phone
+                }
+            }).done(function (result) {
+                isLoading = false;
+                loading(isLoading)
+                window.location = 'index.html'
+            }).fail(function () {
+                alert("Thêm học viên không thành công")
+            })
+        }
+
+        function loading(isLoading) {
+            if (isLoading) {
+                $('.modal-loading').removeClass("hide")
+                $('body').addClass("bg-body")
+            } else {
+                $('.modal-loading').addClass("hide")
+                $('body').removeClass("bg-body")
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>
