@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shopping Cart</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <main>
+      <header class="container">
+        <h1>Shopping Cart</h1>
+
+        <ul class="breadcrumb">
+          <li>Home</li>
+          <li>Shopping Cart</li>
+        </ul>
+
+        <span class="count"><span class="number-items"></span> items in the bag</span>
+      </header>
+
+      <section class="container">
+        <ul class="products">
+  
+        </ul>
+      </section>
+
+      <section class="container container-promo">
+        <div class="promotion">
+          <label for="promo-code">Have A Promo Code?</label>
+          <input type="text" id="promo-code" onchange="getPromoCode()"/> 
+          <button type="button" onclick="isValidPromaCode()"></button>
+        </div>
+
+        <div class="summary">
+          <ul>
+            <li>Subtotal <span class="subtotal"></span></li>
+            <li>VAT(10%) <span class="vat"></span></li>
+            <li class="total">Total <span class="total-money"></span></li>
+          </ul>
+        </div>
+
+        <div class="checkout">
+          <button type="button">Check Out</button>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

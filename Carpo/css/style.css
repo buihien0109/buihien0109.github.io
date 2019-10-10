@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arsenal&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
 *, *::before, *::after {
     margin: 0;
@@ -6,32 +6,9 @@
     box-sizing: border-box;
 }
 body {
-	font-family: 'Arsenal', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
-/* .container {
-	max-width: 1000px;
-	padding-right: 15px;
-	padding-left: 15px;
-	margin-left: auto;
-	margin-right: auto;
-}
-@media screen and (max-width: 992px) {
-    .container {
-		width: 96%;
-	}
-}
-@media screen and (max-width: 768px) {
-    .container {
-		width: 93.75%;
-	}
-}
-@media screen and (max-width: 576px) {
-    .container {
-        width: 93.75%;
-        padding-left: 0;
-        padding-right: 0;
-	}
-} */
+
 .container-fluid {
     padding: 0;
 }
