@@ -8,9 +8,12 @@
 	<script src="js/jquery.js"></script>
 </head>
 <body>
+	<!-- Hình nền cho game -->
 	<div class="bg">
 		<img src="images/bg.jpg" alt="background image">
 	</div>
+
+	<!-- Popup replay game khi chuẩn bị chơi game -->
 	<div class="dialog_start">
 		<div class="content">
 			<h1>Memory Card Game</h1>
@@ -19,12 +22,17 @@
 			<button class="start" id="start" onclick="start()">Start</button>
 		</div>
 	</div>
+
+	<!-- Thanh progressBar đếm thời gian -->
 	<div class="timer">
 		<progress max="" value="" id="timer"></progress>
 	</div>
+	
 	<div class="wrapper">
-
+		<!-- Nơi để render card -->
 	</div>
+
+	<!-- Hiệu ứng tuyết rơi -->
 	<div class="snowflakes" aria-hidden="true">
 		<div class="snowflake">
 			❅
@@ -57,6 +65,8 @@
 			❄
 		</div>
 	</div>
+
+	<!-- Các thể loại nhạc -->
 	<audio id="failed-music">
 		<source src="audio/failed.mp3" type="audio/mpeg"/>
 	</audio>
@@ -69,6 +79,8 @@
 	<audio id="gameover-music">
 		<source src="audio/gameover.mp3" type="audio/mpeg"/>
 	</audio>
+
+	<!-- Popup replay game khi chiến thắng -->
 	<div class="congrat_dialog">
 		<div class="content">
 			<img src="images/congrat.png" alt="Congrat">
@@ -76,6 +88,8 @@
 			<button class="replay" id="replay" onclick="replay()">Replay</button>
 		</div>
 	</div>
+
+	<!-- Popup replay game khi thất bại -->
 	<div class="lose_dialog">
 		<div class="content">
 			<div class="img_content1">
