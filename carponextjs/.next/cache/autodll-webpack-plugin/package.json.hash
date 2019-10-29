@@ -1,0 +1,1 @@
+{"name":"carponextjs","version":"1.0.0","description":"","main":"index.js","scripts":{"dev":"next","build":"next build","start":"next start"},"keywords":[],"author":"","license":"ISC","dependencies":{"@zeit/next-css":"^1.0.1","next":"^9.1.1","react":"^16.11.0","react-dom":"^16.11.0"},"readme":"ERROR: No README data found!","_id":"carponextjs@1.0.0"}
