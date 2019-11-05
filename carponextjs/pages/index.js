@@ -1,8 +1,12 @@
 import Layout from "../components/CarpoLayout";
-import '../styles/style.css'
+import Head from 'next/head'
 
 const Index = () => (
+  
   <Layout>
+    <Head>
+        <title>Home page</title>
+    </Head>
     <div>
       <div className="container jtv-home-revslider">
         <div className="row">

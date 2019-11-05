@@ -1,7 +1,12 @@
 import Layout from "../components/CarpoLayout";
+import Head from 'next/head'
 
 const ProductDetail = () => (
   <Layout>
+    <Head>
+      <title>Product Detail Page</title>
+      <link rel="stylesheet" href="css/product-detail.css" />
+    </Head>
     <div>
       <section id="duong-dan">
         <div className="container">

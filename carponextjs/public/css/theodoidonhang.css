@@ -1,0 +1,148 @@
+.main-container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.main-container h2{
+    font-size: 24px;
+    display: inline-block;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #57AF8A;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+/* ------------------đơn hàng của tôi---------------- */
+
+.cart-page-area .cart_item td {
+	border: 1px #e5e5e5 solid;
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 14px;
+}
+.item-title > a:hover {
+	color: #f82e56;
+}
+.cart-page-area thead th {
+	border: 1px #e5e5e5 solid !important;
+	text-align: center;
+}
+.product-thumbnail {
+	width: 10%
+}
+.cart-page-area .product-name {
+	width: 40%;
+}
+.product-price {
+	width: 10%
+}
+.product-quantity {
+	width: 20%
+}
+.product-subtotal {
+	width: 10%
+}
+table.table {
+	margin-bottom: 0;
+	width: 100%;
+}
+.cart_item > input {
+	text-align: center;
+	width: 50px;
+}
+
+.shop-cart-table thead tr {
+	background: #f8f8f8;
+}
+.shop-cart-table thead tr th {
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 10px 0px;
+}
+.shop-cart-table {
+	margin-bottom: 30px;
+	width: 100%;
+}
+.cart tbody tr {
+	-webkit-transition: all 0.3s ease 0s;
+	transition: all 0.3s ease 0s;
+}
+.cart tbody tr:hover {
+	background: #f6f6f7 none repeat scroll 0 0
+}
+.btn-continue-shopping {
+    display: inline-block;
+    border: 0px solid #f82e56;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 20px;
+    background: #f82e56;
+    outline: none;
+    text-transform: uppercase;
+}
+.btn-continue-shopping:hover {
+    background: #494e62;
+    color: #fff;
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+    .shop-cart-table {
+        width: 780px;
+        margin-bottom: 0px;
+    }
+    .cart-page-area .table-responsive {
+        border: none;
+        border-right: 1px #e5e5e5 solid;
+    }
+    .cart-page-area .product-name {
+        width: 28%;
+    }
+    .product-thumbnail {
+        width: 12%;
+    }
+    .product-price {
+        width: 8%;
+    }
+    .product-quantity {
+        width: 28%;
+    }
+    .product-subtotal {
+        width: 12%;
+    }
+    .product-remove {
+        width: 12%;
+    }
+    .btn-continue-shopping {
+        margin-top: 20px;
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 767px) and (max-width: 480px) {
+    .shop-cart-table {
+        width: 780px;
+        margin-bottom: 0px;
+    }
+    .cart-page-area .table-responsive {
+        border: none;
+        border-right: 1px #e5e5e5 solid;
+    }
+    .cart-page-area .product-name {
+        width: 28%;
+    }
+    .product-thumbnail {
+        width: 12%;
+    }
+    .product-price {
+        width: 8%;
+    }
+    .product-quantity {
+        width: 28%;
+    }
+    .product-subtotal {
+        width: 12%;
+    }
+    .product-remove {
+        width: 12%;
+    }
+}

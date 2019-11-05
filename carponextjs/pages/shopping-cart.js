@@ -1,7 +1,12 @@
 import Layout from '../components/CarpoLayout'
+import Head from 'next/head'
 
 const ShoppingCart = () => (
   <Layout>
+    <Head>
+      <title>Shopping Cart</title>
+      <link rel="stylesheet" href="css/shopping-card.css" />
+    </Head>
     <div>
         <section id="duong-dan">
           <div className="container">

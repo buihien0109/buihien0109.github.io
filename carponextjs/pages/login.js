@@ -1,7 +1,13 @@
 import Layout from "../components/CarpoLayout";
+import Link from "next/link";
+import Head from "next/head"
 
 const Login = () => (
   <Layout>
+    <Head>
+      <title>Login Page</title>
+      <link rel="stylesheet" href="css/login.css" />
+    </Head>
     <div>
       <section id="duong-dan">
         <div className="container">
@@ -69,11 +75,13 @@ const Login = () => (
             <div className="box-register">
               <h2 className="text-uppercase">Nếu bạn chưa có tài khoản</h2>
               <p>Hãy bấm vào Đăng ký</p>
-              <a href="./register.html">
-                <button className="btn-register-account text-uppercase">
-                  Đăng ký tài khoản
-                </button>
-              </a>
+              <Link href="/register">
+                <a href="./register.html">
+                  <button className="btn-register-account text-uppercase">
+                    Đăng ký tài khoản
+                  </button>
+                </a>
+              </Link>
             </div>
           </div>
           <div className="clear" />

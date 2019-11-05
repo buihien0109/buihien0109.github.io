@@ -1,7 +1,13 @@
 import Layout from "../components/CarpoLayout";
+import Link from "next/link"
+import Head from 'next/head'
 
 const TrackOrder = () => (
   <Layout>
+    <Head>
+      <title>Track Order Page</title>
+      <link rel="stylesheet" href="css/track-order.css" />
+    </Head>
     <div>
       <section id="duong-dan">
         <div className="container">
@@ -44,7 +50,9 @@ const TrackOrder = () => (
                   />
                 </li>
                 <li>
-                  <a href="./theodoidonhang.html">Kiểm tra</a>
+                  <Link href="./theodoidonhang">
+                    <a href="./theodoidonhang.html">Kiểm tra</a>
+                  </Link>
                 </li>
               </ul>
             </form>
