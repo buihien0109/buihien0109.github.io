@@ -1,22 +1,15 @@
 import Layout from "../components/CarpoLayout";
 import Link from "next/link";
 import Head from "next/head";
+import fetch from 'isomorphic-unfetch';
+import Title from '../components/shop/Title'
+import View from '../components/shop/View'
+import ListProduct from '../components/shop/ListProduct'
+import Pagination from '../components/shop/Pagination'
 
-const ShopList = () => {
-  const listItem = [
-    {
-      id: 1,
-      name: "Ao thun 1",
-      price: 200000
-    },
-    {
-      id: 2,
-      name: "Ao thun 2",
-      price: 430000
-    }
-  ];
+const ShopList = (props) => {
 
-  const renderItem = listItem.map(item => {
+  const renderItem = props.products.map(item => {
     return (
       <li className="item col-lg-4 col-md-6 col-sm-6 col-xs-6" key={item.id}>
         <Link href={`/shop/${item.id}`}>
@@ -28,7 +21,7 @@ const ShopList = () => {
                   title="Product tilte is here"
                   href="./product-detail.html"
                 >
-                  <img alt="Product tilte is here" src="./images/at1.png" />
+                  <img alt="Product tilte is here" src={item.thumbnail} />
                 </a>
                 <div className="new-label new-top-left">new</div>
                 <div className="sale-label sale-top-right">sale</div>
@@ -145,87 +138,13 @@ const ShopList = () => {
                   </div>
                 </div>
                 <article className="col-main">
-                  <div className="page-title">
-                    <h2>Danh mục sản phẩm</h2>
-                  </div>
-                  <div className="toolbar">
-                    <div id="sort-by">
-                      <label className="left">Sắp xếp: </label>
-                      <ul>
-                        <li>
-                          <a href="#">
-                            Tùy chọn
-                            <span className="right-arrow" />
-                          </a>
-                          <ul>
-                            <li>
-                              <a href="#">Giảm giá nhiều nhất</a>
-                            </li>
-                            <li>
-                              <a href="#">Từ cao đến thấp</a>
-                            </li>
-                            <li>
-                              <a href="#">Đánh giá cao nhất</a>
-                            </li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="pager">
-                      <div id="limiter">
-                        <label>View: </label>
-                        <ul>
-                          <li>
-                            <a href="#">
-                              12
-                              <span className="right-arrow" />
-                            </a>
-                            <ul>
-                              <li>
-                                <a href="#">15</a>
-                              </li>
-                              <li>
-                                <a href="#">20</a>
-                              </li>
-                              <li>
-                                <a href="#">35</a>
-                              </li>
-                            </ul>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  <Title />
+                  <View />
                   <div className="category-products">
                     <ul className="products-grid">{renderItem}</ul>
                   </div>
                   <div className="toolbar bottom">
-                    <div className="row">
-                      <div className="col-sm-12 col-md-6 text-left">
-                        <div className="pages">
-                          <ul className="pagination">
-                            <li>
-                              <a href="#">«</a>
-                            </li>
-                            <li className="active">
-                              <a href="#">1</a>
-                            </li>
-                            <li>
-                              <a href="#">2</a>
-                            </li>
-                            <li>
-                              <a href="#">3</a>
-                            </li>
-                            <li>
-                              <a href="#">»</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div className="col-sm-12 col-md-6 text-right">
-                        Hiển thị 1 - 15 của 25 (2 trang)
-                      </div>
-                    </div>
+                    <Pagination />
                   </div>
                 </article>
               </div>
@@ -447,6 +366,15 @@ const ShopList = () => {
       </div>
     </Layout>
   );
+};
+
+ShopList.getInitialProps = async function() {
+  const res = await fetch('https://carpo.herokuapp.com/products');
+  const data = await res.json();
+  console.log(`Show data fetched. Count: ${JSON.stringify(data)}`);
+  return {
+    products : data
+  };
 };
 
 export default ShopList;

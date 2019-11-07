@@ -929,6 +929,394 @@ const MainHeader = () => __jsx("header", {
 
 /***/ }),
 
+/***/ "./components/shop/ListProduct.js":
+/*!****************************************!*\
+  !*** ./components/shop/ListProduct.js ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+
+
+/***/ }),
+
+/***/ "./components/shop/Pagination.js":
+/*!***************************************!*\
+  !*** ./components/shop/Pagination.js ***!
+  \***************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\DELL\\Desktop\\carponextjs\\components\\shop\\Pagination.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const Pagination = () => {
+  return __jsx("div", {
+    className: "row",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "col-sm-12 col-md-6 text-left",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "pages",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: undefined
+  }, __jsx("ul", {
+    className: "pagination",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, "\xAB")), __jsx("li", {
+    className: "active",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 11
+    },
+    __self: undefined
+  }, "1")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, "2")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, "3")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, "\xBB"))))), __jsx("div", {
+    className: "col-sm-12 col-md-6 text-right",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 25
+    },
+    __self: undefined
+  }, "Hi\u1EC3n th\u1ECB 1 - 15 c\u1EE7a 25 (2 trang)"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Pagination);
+
+/***/ }),
+
+/***/ "./components/shop/Title.js":
+/*!**********************************!*\
+  !*** ./components/shop/Title.js ***!
+  \**********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\DELL\\Desktop\\carponextjs\\components\\shop\\Title.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const Title = () => {
+  return __jsx("div", {
+    className: "page-title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: undefined
+  }, __jsx("h2", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: undefined
+  }, "Danh m\u1EE5c s\u1EA3n ph\u1EA9m"));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Title);
+
+/***/ }),
+
+/***/ "./components/shop/View.js":
+/*!*********************************!*\
+  !*** ./components/shop/View.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+var _jsxFileName = "C:\\Users\\DELL\\Desktop\\carponextjs\\components\\shop\\View.js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+
+const View = () => {
+  return __jsx("div", {
+    className: "toolbar",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 3
+    },
+    __self: undefined
+  }, __jsx("div", {
+    id: "sort-by",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 4
+    },
+    __self: undefined
+  }, __jsx("label", {
+    className: "left",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 5
+    },
+    __self: undefined
+  }, "S\u1EAFp x\u1EBFp: "), __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 6
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 8
+    },
+    __self: undefined
+  }, "T\xF9y ch\u1ECDn", __jsx("span", {
+    className: "right-arrow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 10
+    },
+    __self: undefined
+  })), __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 14
+    },
+    __self: undefined
+  }, "Gi\u1EA3m gi\xE1 nhi\u1EC1u nh\u1EA5t")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 16
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 17
+    },
+    __self: undefined
+  }, "T\u1EEB cao \u0111\u1EBFn th\u1EA5p")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 19
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 20
+    },
+    __self: undefined
+  }, "\u0110\xE1nh gi\xE1 cao nh\u1EA5t")))))), __jsx("div", {
+    className: "pager",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 26
+    },
+    __self: undefined
+  }, __jsx("div", {
+    id: "limiter",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 27
+    },
+    __self: undefined
+  }, __jsx("label", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 28
+    },
+    __self: undefined
+  }, "View: "), __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 29
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 30
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 31
+    },
+    __self: undefined
+  }, "12", __jsx("span", {
+    className: "right-arrow",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 33
+    },
+    __self: undefined
+  })), __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 35
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 36
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 37
+    },
+    __self: undefined
+  }, "15")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 39
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 40
+    },
+    __self: undefined
+  }, "20")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 42
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 43
+    },
+    __self: undefined
+  }, "35"))))))));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (View);
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js":
+/*!***********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js ***!
+  \***********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/json/stringify */ "core-js/library/fn/json/stringify");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
 /*!************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
@@ -2626,65 +3014,71 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/CarpoLayout */ "./components/CarpoLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/core-js/json/stringify */ "./node_modules/@babel/runtime-corejs2/core-js/json/stringify.js");
+/* harmony import */ var _babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _components_CarpoLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/CarpoLayout */ "./components/CarpoLayout.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var _components_shop_Title__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ../components/shop/Title */ "./components/shop/Title.js");
+/* harmony import */ var _components_shop_View__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ../components/shop/View */ "./components/shop/View.js");
+/* harmony import */ var _components_shop_ListProduct__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ../components/shop/ListProduct */ "./components/shop/ListProduct.js");
+/* harmony import */ var _components_shop_ListProduct__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(_components_shop_ListProduct__WEBPACK_IMPORTED_MODULE_8__);
+/* harmony import */ var _components_shop_Pagination__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! ../components/shop/Pagination */ "./components/shop/Pagination.js");
+
 var _jsxFileName = "C:\\Users\\DELL\\Desktop\\carponextjs\\pages\\shop-list.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
 
-const ShopList = () => {
-  const listItem = [{
-    id: 1,
-    name: "Ao thun 1",
-    price: 200000
-  }, {
-    id: 2,
-    name: "Ao thun 2",
-    price: 430000
-  }];
-  const renderItem = listItem.map(item => {
+
+
+
+
+
+const ShopList = props => {
+  const renderItem = props.products.map(item => {
     return __jsx("li", {
       className: "item col-lg-4 col-md-6 col-sm-6 col-xs-6",
       key: item.id,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 14
       },
       __self: undefined
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
       href: `/shop/${item.id}`,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 15
       },
       __self: undefined
     }, __jsx("div", {
       className: "item-inner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 16
       },
       __self: undefined
     }, __jsx("div", {
       className: "item-img",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 17
       },
       __self: undefined
     }, __jsx("div", {
       className: "item-img-info",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 18
       },
       __self: undefined
     }, __jsx("a", {
@@ -2693,43 +3087,43 @@ const ShopList = () => {
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 19
       },
       __self: undefined
     }, __jsx("img", {
       alt: "Product tilte is here",
-      src: "./images/at1.png",
+      src: item.thumbnail,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 24
       },
       __self: undefined
     })), __jsx("div", {
       className: "new-label new-top-left",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 33
+        lineNumber: 26
       },
       __self: undefined
     }, "new"), __jsx("div", {
       className: "sale-label sale-top-right",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 34
+        lineNumber: 27
       },
       __self: undefined
     }, "sale"), __jsx("div", {
       className: "mask-shop-white",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 28
       },
       __self: undefined
     }), __jsx("div", {
       className: "new-label new-top-left",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 29
       },
       __self: undefined
     }, "new"), __jsx("a", {
@@ -2737,34 +3131,34 @@ const ShopList = () => {
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 31
       },
       __self: undefined
     }, __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 32
       },
       __self: undefined
     }, "Xem nhanh")))), __jsx("div", {
       className: "item-info",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 36
       },
       __self: undefined
     }, __jsx("div", {
       className: "info-inner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 37
       },
       __self: undefined
     }, __jsx("div", {
       className: "item-title",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 45
+        lineNumber: 38
       },
       __self: undefined
     }, __jsx("a", {
@@ -2772,105 +3166,105 @@ const ShopList = () => {
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 46
+        lineNumber: 39
       },
       __self: undefined
     }, item.name)), __jsx("div", {
       className: "item-content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 43
       },
       __self: undefined
     }, __jsx("div", {
       className: "rating",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 44
       },
       __self: undefined
     }, __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 45
       },
       __self: undefined
     }), " ", __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 45
       },
       __self: undefined
     }), __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 46
       },
       __self: undefined
     }), " ", __jsx("i", {
       className: "fa fa-star-o",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 46
       },
       __self: undefined
     }), __jsx("i", {
       className: "fa fa-star-o",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 54
+        lineNumber: 47
       },
       __self: undefined
     })), __jsx("div", {
       className: "item-price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 56
+        lineNumber: 49
       },
       __self: undefined
     }, __jsx("div", {
       className: "price-box",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 57
+        lineNumber: 50
       },
       __self: undefined
     }, __jsx("span", {
       className: "regular-price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 58
+        lineNumber: 51
       },
       __self: undefined
     }, __jsx("span", {
       className: "price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 59
+        lineNumber: 52
       },
       __self: undefined
     }, item.price, "\u0111")))), __jsx("div", {
       className: "actions",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 63
+        lineNumber: 56
       },
       __self: undefined
     }, __jsx("div", {
       className: "add_cart",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 64
+        lineNumber: 57
       },
       __self: undefined
     }, __jsx("a", {
       href: "./shopping-card.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 65
+        lineNumber: 58
       },
       __self: undefined
     }, __jsx("button", {
@@ -2878,40 +3272,40 @@ const ShopList = () => {
       type: "button",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 66
+        lineNumber: 59
       },
       __self: undefined
     }, __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 67
+        lineNumber: 60
       },
       __self: undefined
     }, __jsx("i", {
       className: "fa fa-shopping-cart",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 68
+        lineNumber: 61
       },
       __self: undefined
     }), " Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))));
   });
-  return __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 77
     },
     __self: undefined
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 78
     },
     __self: undefined
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 79
     },
     __self: undefined
   }, "Shop Page"), __jsx("link", {
@@ -2919,46 +3313,46 @@ const ShopList = () => {
     href: "css/shop-list.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 80
     },
     __self: undefined
   })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 89
+      lineNumber: 82
     },
     __self: undefined
   }, __jsx("section", {
     id: "duong-dan",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 90
+      lineNumber: 83
     },
     __self: undefined
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 91
+      lineNumber: 84
     },
     __self: undefined
   }, __jsx("a", {
     href: "./index.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 92
+      lineNumber: 85
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 93
+      lineNumber: 86
     },
     __self: undefined
   }, "Trang ch\u1EE7")), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 88
     },
     __self: undefined
   }, __jsx("i", {
@@ -2966,7 +3360,7 @@ const ShopList = () => {
     "aria-hidden": "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 89
     },
     __self: undefined
   })), __jsx("a", {
@@ -2974,55 +3368,55 @@ const ShopList = () => {
     className: "duong-dan-active",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 98
+      lineNumber: 91
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 99
+      lineNumber: 92
     },
     __self: undefined
   }, "S\u1EA3n ph\u1EA9m")))), __jsx("div", {
     className: "main-container col2-left-layout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 96
     },
     __self: undefined
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 97
     },
     __self: undefined
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 105
+      lineNumber: 98
     },
     __self: undefined
   }, __jsx("div", {
     className: "col-sm-9 col-sm-push-3 main-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 99
     },
     __self: undefined
   }, __jsx("div", {
     className: "category-description std",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 100
     },
     __self: undefined
   }, __jsx("div", {
     className: "slider-items-products",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 101
     },
     __self: undefined
   }, __jsx("div", {
@@ -3030,28 +3424,28 @@ const ShopList = () => {
     className: "product-flexslider hidden-buttons",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 102
     },
     __self: undefined
   }, __jsx("div", {
     className: "slider-items slider-width-col1 owl-carousel owl-theme",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 113
+      lineNumber: 106
     },
     __self: undefined
   }, __jsx("div", {
     className: "item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 114
+      lineNumber: 107
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 115
+      lineNumber: 108
     },
     __self: undefined
   }, __jsx("img", {
@@ -3059,41 +3453,41 @@ const ShopList = () => {
     src: "./images/new-fashion.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 109
     },
     __self: undefined
   })), __jsx("div", {
     className: "cat-img-title cat-bg cat-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 121
+      lineNumber: 114
     },
     __self: undefined
   }, __jsx("h2", {
     className: "cat-heading",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 122
+      lineNumber: 115
     },
     __self: undefined
   }, "B\u1EAFt tr\u1ECDn thu v\xE0ng - Sale up \u0111\u1EBFn 50%"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 125
+      lineNumber: 118
     },
     __self: undefined
   }, "\u0110\u1EC3 vi\u1EBFt th\xEAm th\xF4ng tin v\u1EC1 ch\u01B0\u01A1ng tr\xECnh. Vui l\xF2ng truy c\u1EADp Carpo.vn"))), __jsx("div", {
     className: "item",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 131
+      lineNumber: 124
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 125
     },
     __self: undefined
   }, __jsx("img", {
@@ -3101,519 +3495,240 @@ const ShopList = () => {
     src: "./images/new-special.jpg",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 133
+      lineNumber: 126
     },
     __self: undefined
   })), __jsx("div", {
     className: "cat-img-title cat-bg cat-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 138
+      lineNumber: 131
     },
     __self: undefined
   }, __jsx("h2", {
     className: "cat-heading",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 139
+      lineNumber: 132
     },
     __self: undefined
   }, "Th\u1EDDi trang thu \u0111\xF4ng"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 140
+      lineNumber: 133
     },
     __self: undefined
   }, "T\u01B0ng b\u1EEBng l\u1EF1a ch\u1ECDn - Th\u1ECFa th\xEDch mua s\u1EAFm. "))))))), __jsx("article", {
     className: "col-main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 140
     },
     __self: undefined
-  }, __jsx("div", {
-    className: "page-title",
+  }, __jsx(_components_shop_Title__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 141
     },
     __self: undefined
-  }, __jsx("h2", {
+  }), __jsx(_components_shop_View__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 142
     },
     __self: undefined
-  }, "Danh m\u1EE5c s\u1EA3n ph\u1EA9m")), __jsx("div", {
-    className: "toolbar",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 151
-    },
-    __self: undefined
-  }, __jsx("div", {
-    id: "sort-by",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 152
-    },
-    __self: undefined
-  }, __jsx("label", {
-    className: "left",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 153
-    },
-    __self: undefined
-  }, "S\u1EAFp x\u1EBFp: "), __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 154
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 155
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 156
-    },
-    __self: undefined
-  }, "T\xF9y ch\u1ECDn", __jsx("span", {
-    className: "right-arrow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 158
-    },
-    __self: undefined
-  })), __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 160
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 161
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 162
-    },
-    __self: undefined
-  }, "Gi\u1EA3m gi\xE1 nhi\u1EC1u nh\u1EA5t")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 164
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 165
-    },
-    __self: undefined
-  }, "T\u1EEB cao \u0111\u1EBFn th\u1EA5p")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 167
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 168
-    },
-    __self: undefined
-  }, "\u0110\xE1nh gi\xE1 cao nh\u1EA5t")))))), __jsx("div", {
-    className: "pager",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 174
-    },
-    __self: undefined
-  }, __jsx("div", {
-    id: "limiter",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 175
-    },
-    __self: undefined
-  }, __jsx("label", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 176
-    },
-    __self: undefined
-  }, "View: "), __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 177
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 178
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 179
-    },
-    __self: undefined
-  }, "12", __jsx("span", {
-    className: "right-arrow",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 181
-    },
-    __self: undefined
-  })), __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 183
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 184
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 185
-    },
-    __self: undefined
-  }, "15")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 187
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 188
-    },
-    __self: undefined
-  }, "20")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 190
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 191
-    },
-    __self: undefined
-  }, "35")))))))), __jsx("div", {
+  }), __jsx("div", {
     className: "category-products",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 199
+      lineNumber: 143
     },
     __self: undefined
   }, __jsx("ul", {
     className: "products-grid",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 200
+      lineNumber: 144
     },
     __self: undefined
   }, renderItem)), __jsx("div", {
     className: "toolbar bottom",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 202
+      lineNumber: 146
     },
     __self: undefined
-  }, __jsx("div", {
-    className: "row",
+  }, __jsx(_components_shop_Pagination__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 203
+      lineNumber: 147
     },
     __self: undefined
-  }, __jsx("div", {
-    className: "col-sm-12 col-md-6 text-left",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 204
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "pages",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 205
-    },
-    __self: undefined
-  }, __jsx("ul", {
-    className: "pagination",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 206
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 207
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 208
-    },
-    __self: undefined
-  }, "\xAB")), __jsx("li", {
-    className: "active",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 210
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 211
-    },
-    __self: undefined
-  }, "1")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 213
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 214
-    },
-    __self: undefined
-  }, "2")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 216
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 217
-    },
-    __self: undefined
-  }, "3")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 219
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 220
-    },
-    __self: undefined
-  }, "\xBB"))))), __jsx("div", {
-    className: "col-sm-12 col-md-6 text-right",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 225
-    },
-    __self: undefined
-  }, "Hi\u1EC3n th\u1ECB 1 - 15 c\u1EE7a 25 (2 trang)"))))), __jsx("div", {
+  })))), __jsx("div", {
     className: "sidebar col-sm-3 col-xs-12 col-sm-pull-9",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 232
+      lineNumber: 151
     },
     __self: undefined
   }, __jsx("aside", {
     className: "sidebar",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 233
+      lineNumber: 152
     },
     __self: undefined
   }, __jsx("div", {
     className: "block block-layered-nav",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 234
+      lineNumber: 153
     },
     __self: undefined
   }, __jsx("div", {
     className: "block-title",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 235
+      lineNumber: 154
     },
     __self: undefined
   }, __jsx("h3", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 236
+      lineNumber: 155
     },
     __self: undefined
   }, "T\xECm ki\u1EBFm s\u1EA3n ph\u1EA9m")), __jsx("div", {
     className: "block-content",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 238
+      lineNumber: 157
     },
     __self: undefined
   }, __jsx("dl", {
     id: "narrow-by-list",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 239
+      lineNumber: 158
     },
     __self: undefined
   }, __jsx("dt", {
     className: "even",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 240
+      lineNumber: 159
     },
     __self: undefined
   }, "Th\u01B0\u01A1ng hi\u1EC7u"), __jsx("dd", {
     className: "even",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 241
+      lineNumber: 160
     },
     __self: undefined
   }, __jsx("ol", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 242
+      lineNumber: 161
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 243
+      lineNumber: 162
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 244
+      lineNumber: 163
     },
     __self: undefined
   }, "Louis Vuitton"), " (20)"), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 246
+      lineNumber: 165
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 247
+      lineNumber: 166
     },
     __self: undefined
   }, "Chanel"), " (25)"), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 249
+      lineNumber: 168
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 250
+      lineNumber: 169
     },
     __self: undefined
   }, "Prada"), " (8)"), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 252
+      lineNumber: 171
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 253
+      lineNumber: 172
     },
     __self: undefined
   }, "Dior"), " (5)"), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 255
+      lineNumber: 174
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 256
+      lineNumber: 175
     },
     __self: undefined
   }, "Hermes "), " (2)"))), __jsx("dt", {
     className: "odd",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 260
+      lineNumber: 179
     },
     __self: undefined
   }, "Ch\u1EA5t li\u1EC7u"), __jsx("dd", {
     className: "odd",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 261
+      lineNumber: 180
     },
     __self: undefined
   }, __jsx("ol", {
     className: "bag-material",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 262
+      lineNumber: 181
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 263
+      lineNumber: 182
     },
     __self: undefined
   }, __jsx("div", {
     className: "pretty p-icon p-smooth",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 264
+      lineNumber: 183
     },
     __self: undefined
   }, __jsx("input", {
@@ -3623,27 +3738,27 @@ const ShopList = () => {
     id: "Cotton",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 265
+      lineNumber: 184
     },
     __self: undefined
   }), __jsx("label", {
     htmlFor: "Cotton",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 271
+      lineNumber: 190
     },
     __self: undefined
   }, "Cotton"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 274
+      lineNumber: 193
     },
     __self: undefined
   }, __jsx("div", {
     className: "pretty p-icon p-smooth",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 275
+      lineNumber: 194
     },
     __self: undefined
   }, __jsx("input", {
@@ -3653,27 +3768,27 @@ const ShopList = () => {
     id: "Kaki",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 276
+      lineNumber: 195
     },
     __self: undefined
   }), __jsx("label", {
     htmlFor: "Kaki",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 282
+      lineNumber: 201
     },
     __self: undefined
   }, "Kaki"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 285
+      lineNumber: 204
     },
     __self: undefined
   }, __jsx("div", {
     className: "pretty p-icon p-smooth",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 286
+      lineNumber: 205
     },
     __self: undefined
   }, __jsx("input", {
@@ -3683,27 +3798,27 @@ const ShopList = () => {
     id: "Jeans",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 287
+      lineNumber: 206
     },
     __self: undefined
   }), __jsx("label", {
     htmlFor: "Jeans",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 293
+      lineNumber: 212
     },
     __self: undefined
   }, "Jeans"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 296
+      lineNumber: 215
     },
     __self: undefined
   }, __jsx("div", {
     className: "pretty p-icon p-smooth",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 297
+      lineNumber: 216
     },
     __self: undefined
   }, __jsx("input", {
@@ -3713,27 +3828,27 @@ const ShopList = () => {
     id: "ni",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 298
+      lineNumber: 217
     },
     __self: undefined
   }), __jsx("label", {
     htmlFor: "ni",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 304
+      lineNumber: 223
     },
     __self: undefined
   }, "N\u1EC9"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 307
+      lineNumber: 226
     },
     __self: undefined
   }, __jsx("div", {
     className: "pretty p-icon p-smooth",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 308
+      lineNumber: 227
     },
     __self: undefined
   }, __jsx("input", {
@@ -3743,27 +3858,27 @@ const ShopList = () => {
     id: "Lanh",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 309
+      lineNumber: 228
     },
     __self: undefined
   }), __jsx("label", {
     htmlFor: "Lanh",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 315
+      lineNumber: 234
     },
     __self: undefined
   }, "Lanh"))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 318
+      lineNumber: 237
     },
     __self: undefined
   }, __jsx("div", {
     className: "pretty p-icon p-smooth",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 319
+      lineNumber: 238
     },
     __self: undefined
   }, __jsx("input", {
@@ -3773,17 +3888,315 @@ const ShopList = () => {
     id: "lua",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 320
+      lineNumber: 239
     },
     __self: undefined
   }), __jsx("label", {
     htmlFor: "lua",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 326
+      lineNumber: 245
     },
     __self: undefined
   }, "L\u1EE5a t\u1EF1 nhi\xEAn"))), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 248
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "pretty p-icon p-smooth",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 249
+    },
+    __self: undefined
+  }, __jsx("input", {
+    type: "checkbox",
+    name: "Material",
+    defaultValue: "Ren",
+    id: "Ren",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 250
+    },
+    __self: undefined
+  }), __jsx("label", {
+    htmlFor: "Ren",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 256
+    },
+    __self: undefined
+  }, "Ren"))))), __jsx("dt", {
+    className: "odd",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 261
+    },
+    __self: undefined
+  }, "K\xEDch th\u01B0\u1EDBc"), __jsx("div", {
+    className: "size-area",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 262
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "size",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 263
+    },
+    __self: undefined
+  }, __jsx("ul", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 264
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 265
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 266
+    },
+    __self: undefined
+  }, "S")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 268
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 269
+    },
+    __self: undefined
+  }, "L")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 271
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 272
+    },
+    __self: undefined
+  }, "M")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 274
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 275
+    },
+    __self: undefined
+  }, "XL")), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 277
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 278
+    },
+    __self: undefined
+  }, "XXL"))))), __jsx("dt", {
+    className: "odd",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 283
+    },
+    __self: undefined
+  }, "M\xE0u s\u1EAFc"), __jsx("dd", {
+    className: "odd",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 284
+    },
+    __self: undefined
+  }, __jsx("ol", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 285
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 286
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 287
+    },
+    __self: undefined
+  }, "Xanh l\xE1 c\xE2y"), " (1)"), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 289
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 290
+    },
+    __self: undefined
+  }, "Tr\u1EAFng"), " (5)"), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 292
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 293
+    },
+    __self: undefined
+  }, "\u0110en"), " (5)"), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 295
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 296
+    },
+    __self: undefined
+  }, "X\xE1m"), " (4)"), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 298
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 299
+    },
+    __self: undefined
+  }, "X\xE1m \u0111en"), " (3)"), __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 301
+    },
+    __self: undefined
+  }, __jsx("a", {
+    href: "#",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 302
+    },
+    __self: undefined
+  }, "Xanh da tr\u1EDDi"), " (1)")))))), __jsx("div", {
+    className: "block product-price-range ",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 309
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "block-title",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 310
+    },
+    __self: undefined
+  }, __jsx("h3", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 311
+    },
+    __self: undefined
+  }, "Gi\xE1")), __jsx("div", {
+    className: "block-content",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 313
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "slider-range",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 314
+    },
+    __self: undefined
+  }, __jsx("ul", {
+    className: "check-box-list",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 315
+    },
+    __self: undefined
+  }, __jsx("li", {
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 316
+    },
+    __self: undefined
+  }, __jsx("div", {
+    className: "pretty p-icon p-smooth",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 317
+    },
+    __self: undefined
+  }, __jsx("input", {
+    type: "checkbox",
+    name: "cc",
+    defaultValue: "p1",
+    id: "p1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 318
+    },
+    __self: undefined
+  }), __jsx("label", {
+    htmlFor: "p1",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 324
+    },
+    __self: undefined
+  }, "< 200.000\u0111", __jsx("span", {
+    className: "count",
+    __source: {
+      fileName: _jsxFileName,
+      lineNumber: 325
+    },
+    __self: undefined
+  }, "(5)")))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
       lineNumber: 329
@@ -3798,337 +4211,39 @@ const ShopList = () => {
     __self: undefined
   }, __jsx("input", {
     type: "checkbox",
-    name: "Material",
-    defaultValue: "Ren",
-    id: "Ren",
+    name: "cc",
+    defaultValue: "p2",
+    id: "p2",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 331
     },
     __self: undefined
   }), __jsx("label", {
-    htmlFor: "Ren",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 337
-    },
-    __self: undefined
-  }, "Ren"))))), __jsx("dt", {
-    className: "odd",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 342
-    },
-    __self: undefined
-  }, "K\xEDch th\u01B0\u1EDBc"), __jsx("div", {
-    className: "size-area",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 343
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "size",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 344
-    },
-    __self: undefined
-  }, __jsx("ul", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 345
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 346
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 347
-    },
-    __self: undefined
-  }, "S")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 349
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 350
-    },
-    __self: undefined
-  }, "L")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 352
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 353
-    },
-    __self: undefined
-  }, "M")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 355
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 356
-    },
-    __self: undefined
-  }, "XL")), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 358
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 359
-    },
-    __self: undefined
-  }, "XXL"))))), __jsx("dt", {
-    className: "odd",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 364
-    },
-    __self: undefined
-  }, "M\xE0u s\u1EAFc"), __jsx("dd", {
-    className: "odd",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 365
-    },
-    __self: undefined
-  }, __jsx("ol", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 366
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 367
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 368
-    },
-    __self: undefined
-  }, "Xanh l\xE1 c\xE2y"), " (1)"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 370
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 371
-    },
-    __self: undefined
-  }, "Tr\u1EAFng"), " (5)"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 373
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 374
-    },
-    __self: undefined
-  }, "\u0110en"), " (5)"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 376
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 377
-    },
-    __self: undefined
-  }, "X\xE1m"), " (4)"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 379
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 380
-    },
-    __self: undefined
-  }, "X\xE1m \u0111en"), " (3)"), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 382
-    },
-    __self: undefined
-  }, __jsx("a", {
-    href: "#",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 383
-    },
-    __self: undefined
-  }, "Xanh da tr\u1EDDi"), " (1)")))))), __jsx("div", {
-    className: "block product-price-range ",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 390
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "block-title",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 391
-    },
-    __self: undefined
-  }, __jsx("h3", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 392
-    },
-    __self: undefined
-  }, "Gi\xE1")), __jsx("div", {
-    className: "block-content",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 394
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "slider-range",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 395
-    },
-    __self: undefined
-  }, __jsx("ul", {
-    className: "check-box-list",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 396
-    },
-    __self: undefined
-  }, __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 397
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "pretty p-icon p-smooth",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 398
-    },
-    __self: undefined
-  }, __jsx("input", {
-    type: "checkbox",
-    name: "cc",
-    defaultValue: "p1",
-    id: "p1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 399
-    },
-    __self: undefined
-  }), __jsx("label", {
-    htmlFor: "p1",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 405
-    },
-    __self: undefined
-  }, "< 200.000\u0111", __jsx("span", {
-    className: "count",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 406
-    },
-    __self: undefined
-  }, "(5)")))), __jsx("li", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 410
-    },
-    __self: undefined
-  }, __jsx("div", {
-    className: "pretty p-icon p-smooth",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 411
-    },
-    __self: undefined
-  }, __jsx("input", {
-    type: "checkbox",
-    name: "cc",
-    defaultValue: "p2",
-    id: "p2",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 412
-    },
-    __self: undefined
-  }), __jsx("label", {
     htmlFor: "p2",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 418
+      lineNumber: 337
     },
     __self: undefined
   }, "200.000 - 500.000", __jsx("span", {
     className: "count",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 420
+      lineNumber: 339
     },
     __self: undefined
   }, "(12)")))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 424
+      lineNumber: 343
     },
     __self: undefined
   }, __jsx("div", {
     className: "pretty p-icon p-smooth",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 425
+      lineNumber: 344
     },
     __self: undefined
   }, __jsx("input", {
@@ -4138,24 +4253,33 @@ const ShopList = () => {
     id: "p3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 426
+      lineNumber: 345
     },
     __self: undefined
   }), __jsx("label", {
     htmlFor: "p3",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 432
+      lineNumber: 351
     },
     __self: undefined
   }, "500.000 - 1.000.000", __jsx("span", {
     className: "count",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 434
+      lineNumber: 353
     },
     __self: undefined
   }, "(15)")))))))))))))));
+};
+
+ShopList.getInitialProps = async function () {
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_5___default()('https://carpo.herokuapp.com/products');
+  const data = await res.json();
+  console.log(`Show data fetched. Count: ${_babel_runtime_corejs2_core_js_json_stringify__WEBPACK_IMPORTED_MODULE_0___default()(data)}`);
+  return {
+    products: data
+  };
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (ShopList);
@@ -4171,6 +4295,17 @@ const ShopList = () => {
 
 module.exports = __webpack_require__(/*! C:\Users\DELL\Desktop\carponextjs\pages\shop-list.js */"./pages/shop-list.js");
 
+
+/***/ }),
+
+/***/ "core-js/library/fn/json/stringify":
+/*!****************************************************!*\
+  !*** external "core-js/library/fn/json/stringify" ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/json/stringify");
 
 /***/ }),
 
@@ -4248,6 +4383,17 @@ module.exports = require("core-js/library/fn/object/keys");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/promise");
+
+/***/ }),
+
+/***/ "isomorphic-unfetch":
+/*!*************************************!*\
+  !*** external "isomorphic-unfetch" ***!
+  \*************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("isomorphic-unfetch");
 
 /***/ }),
 
