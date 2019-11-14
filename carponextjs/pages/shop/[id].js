@@ -1,19 +1,22 @@
-import Layout from "../../components/CarpoLayout";
+import Layout from "components/CarpoLayout";
 import Head from "next/head";
 import { useState } from "react";
 
 
-const ProductDetail = props => {
+const ProductDetail = (props) => {
+  const { product } = props
   const [countProduct, setCountProduct] = useState(1);
-  const { product } = props;
   const decrease = () => {
     countProduct > 1
       ? setCountProduct(countProduct - 1)
       : setCountProduct(countProduct);
+    console.log('countProduct', countProduct)
   };
   const increase = () => {
     setCountProduct(countProduct + 1);
+    console.log('countProduct', countProduct)
   };
+
   const onAddToCart = () => {
     countProduct < product.quantity
       ? alert("Sản phẩm đã được thêm vào giỏ hàng")
@@ -120,7 +123,6 @@ const ProductDetail = props => {
                                 className="input-text qty"
                                 title="Qty"
                                 defaultValue={countProduct}
-                                maxLength={12}
                                 id="qty"
                                 name="qty"
                               />
@@ -176,17 +178,19 @@ const ProductDetail = props => {
           </div>
         </section>
       </div>
-      */}
     </Layout>
   );
 };
 
-ProductDetail.getInitialProps = async function(props) {
-  const id = props.query.id;
-  const res = await fetch("https://carpo.herokuapp.com/products/" + id);
+ProductDetail.getInitialProps = async function({ query }) {
+  const res = await fetch(
+    `https://carpo.herokuapp.com/products/${query.id}`
+  );
   const data = await res.json();
+
   return {
     product: data
   };
 };
+
 export default ProductDetail;

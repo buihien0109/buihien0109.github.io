@@ -35,10 +35,10 @@ const MainHeader = () => (
             </Link>
           </li>
           <li className="nav-item">
-            <Link href="/shop-list">
+            <Link href="/shop">
               <a
                 className="nav-link text-uppercase text-white"
-                href="./shop-list.html"
+                href="./shop.html"
               >
                 Sản phẩm
               </a>

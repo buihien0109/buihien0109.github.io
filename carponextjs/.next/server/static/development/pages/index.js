@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\CarpoNextJS\\components\\CarpoLayout.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\CarpoLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -147,7 +147,7 @@ const Layout = props => __jsx("div", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\CarpoNextJS\\components\\Footer.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -650,7 +650,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\CarpoNextJS\\components\\Header.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -754,7 +754,7 @@ const MainHeader = () => __jsx("header", {
   },
   __self: undefined
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/shop-list",
+  href: "/shop",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 38
@@ -762,7 +762,7 @@ const MainHeader = () => __jsx("header", {
   __self: undefined
 }, __jsx("a", {
   className: "nav-link text-uppercase text-white",
-  href: "./shop-list.html",
+  href: "./shop.html",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 39
@@ -930,86 +930,86 @@ const MainHeader = () => __jsx("header", {
 /***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/map.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/core-js/map.js ***!
-  \*************************************************************************/
+/*!************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/map.js ***!
+  \************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/map */ "./node_modules/core-js/library/fn/map.js");
+module.exports = __webpack_require__(/*! core-js/library/fn/map */ "core-js/library/fn/map");
 
 /***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js":
-/*!***********************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/assign.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "./node_modules/core-js/library/fn/object/assign.js");
+module.exports = __webpack_require__(/*! core-js/library/fn/object/assign */ "core-js/library/fn/object/assign");
 
 /***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js":
-/*!***********************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/core-js/object/create.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/create.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "./node_modules/core-js/library/fn/object/create.js");
+module.exports = __webpack_require__(/*! core-js/library/fn/object/create */ "core-js/library/fn/object/create");
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8":
-/*!********************************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
-  \********************************************************************************************/
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js":
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "./node_modules/core-js/library/fn/object/define-property.js");
+module.exports = __webpack_require__(/*! core-js/library/fn/object/define-property */ "core-js/library/fn/object/define-property");
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js?28c3":
-/*!********************************************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
-  \********************************************************************************************************/
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js":
+/*!*******************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js");
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "core-js/library/fn/object/get-own-property-descriptor");
 
 /***/ }),
 
-/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js?6c41":
-/*!*********************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
-  \*********************************************************************************/
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
+/*!********************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "./node_modules/core-js/library/fn/object/keys.js");
+module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core-js/library/fn/object/keys");
 
 /***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/promise.js":
-/*!*****************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
-  \*****************************************************************************/
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/promise.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "./node_modules/core-js/library/fn/promise.js");
+module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/library/fn/promise");
 
 /***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/extends.js":
-/*!*****************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/helpers/extends.js ***!
-  \*****************************************************************************/
+/*!****************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/extends.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -1038,9 +1038,9 @@ module.exports = _extends;
 /***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js":
-/*!*******************************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
-  \*******************************************************************************************/
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireDefault.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -1055,15 +1055,15 @@ module.exports = _interopRequireDefault;
 /***/ }),
 
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js":
-/*!********************************************************************************************!*\
-  !*** ../carponextjs/node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js ***!
-  \********************************************************************************************/
+/*!*******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/interopRequireWildcard.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-var _Object$getOwnPropertyDescriptor = __webpack_require__(/*! ../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js?28c3");
+var _Object$getOwnPropertyDescriptor = __webpack_require__(/*! ../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
 
-var _Object$defineProperty = __webpack_require__(/*! ../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! ../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 function _interopRequireWildcard(obj) {
   if (obj && obj.__esModule) {
@@ -1094,3126 +1094,10 @@ module.exports = _interopRequireWildcard;
 
 /***/ }),
 
-/***/ "./node_modules/core-js/library/fn/map.js":
-/*!*************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/fn/map.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
-__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
-__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
-__webpack_require__(/*! ../modules/es6.map */ "./node_modules/core-js/library/modules/es6.map.js");
-__webpack_require__(/*! ../modules/es7.map.to-json */ "./node_modules/core-js/library/modules/es7.map.to-json.js");
-__webpack_require__(/*! ../modules/es7.map.of */ "./node_modules/core-js/library/modules/es7.map.of.js");
-__webpack_require__(/*! ../modules/es7.map.from */ "./node_modules/core-js/library/modules/es7.map.from.js");
-module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Map;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/assign.js":
-/*!***********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/fn/object/assign.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.assign */ "./node_modules/core-js/library/modules/es6.object.assign.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.assign;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/create.js":
-/*!***********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/fn/object/create.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.create */ "./node_modules/core-js/library/modules/es6.object.create.js");
-var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
-module.exports = function create(P, D) {
-  return $Object.create(P, D);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/define-property.js":
-/*!********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/fn/object/define-property.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.define-property */ "./node_modules/core-js/library/modules/es6.object.define-property.js");
-var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
-module.exports = function defineProperty(it, key, desc) {
-  return $Object.defineProperty(it, key, desc);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js":
-/*!********************************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/fn/object/get-own-property-descriptor.js ***!
-  \********************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.get-own-property-descriptor */ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js");
-var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object;
-module.exports = function getOwnPropertyDescriptor(it, key) {
-  return $Object.getOwnPropertyDescriptor(it, key);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/object/keys.js":
-/*!*********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/fn/object/keys.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../../modules/es6.object.keys */ "./node_modules/core-js/library/modules/es6.object.keys.js");
-module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.keys;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/fn/promise.js":
-/*!*****************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/fn/promise.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ../modules/es6.object.to-string */ "./node_modules/core-js/library/modules/es6.object.to-string.js");
-__webpack_require__(/*! ../modules/es6.string.iterator */ "./node_modules/core-js/library/modules/es6.string.iterator.js");
-__webpack_require__(/*! ../modules/web.dom.iterable */ "./node_modules/core-js/library/modules/web.dom.iterable.js");
-__webpack_require__(/*! ../modules/es6.promise */ "./node_modules/core-js/library/modules/es6.promise.js");
-__webpack_require__(/*! ../modules/es7.promise.finally */ "./node_modules/core-js/library/modules/es7.promise.finally.js");
-__webpack_require__(/*! ../modules/es7.promise.try */ "./node_modules/core-js/library/modules/es7.promise.try.js");
-module.exports = __webpack_require__(/*! ../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Promise;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_a-function.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_a-function.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (it) {
-  if (typeof it != 'function') throw TypeError(it + ' is not a function!');
-  return it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_add-to-unscopables.js":
-/*!**********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_add-to-unscopables.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function () { /* empty */ };
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_an-instance.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_an-instance.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (it, Constructor, name, forbiddenField) {
-  if (!(it instanceof Constructor) || (forbiddenField !== undefined && forbiddenField in it)) {
-    throw TypeError(name + ': incorrect invocation!');
-  } return it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_an-object.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_an-object.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-module.exports = function (it) {
-  if (!isObject(it)) throw TypeError(it + ' is not an object!');
-  return it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_array-from-iterable.js":
-/*!***********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_array-from-iterable.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var forOf = __webpack_require__(/*! ./_for-of */ "./node_modules/core-js/library/modules/_for-of.js");
-
-module.exports = function (iter, ITERATOR) {
-  var result = [];
-  forOf(iter, false, result.push, result, ITERATOR);
-  return result;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_array-includes.js":
-/*!******************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_array-includes.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// false -> Array#indexOf
-// true  -> Array#includes
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/library/modules/_to-length.js");
-var toAbsoluteIndex = __webpack_require__(/*! ./_to-absolute-index */ "./node_modules/core-js/library/modules/_to-absolute-index.js");
-module.exports = function (IS_INCLUDES) {
-  return function ($this, el, fromIndex) {
-    var O = toIObject($this);
-    var length = toLength(O.length);
-    var index = toAbsoluteIndex(fromIndex, length);
-    var value;
-    // Array#includes uses SameValueZero equality algorithm
-    // eslint-disable-next-line no-self-compare
-    if (IS_INCLUDES && el != el) while (length > index) {
-      value = O[index++];
-      // eslint-disable-next-line no-self-compare
-      if (value != value) return true;
-    // Array#indexOf ignores holes, Array#includes - not
-    } else for (;length > index; index++) if (IS_INCLUDES || index in O) {
-      if (O[index] === el) return IS_INCLUDES || index || 0;
-    } return !IS_INCLUDES && -1;
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_array-methods.js":
-/*!*****************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_array-methods.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 0 -> Array#forEach
-// 1 -> Array#map
-// 2 -> Array#filter
-// 3 -> Array#some
-// 4 -> Array#every
-// 5 -> Array#find
-// 6 -> Array#findIndex
-var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
-var IObject = __webpack_require__(/*! ./_iobject */ "./node_modules/core-js/library/modules/_iobject.js");
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/library/modules/_to-length.js");
-var asc = __webpack_require__(/*! ./_array-species-create */ "./node_modules/core-js/library/modules/_array-species-create.js");
-module.exports = function (TYPE, $create) {
-  var IS_MAP = TYPE == 1;
-  var IS_FILTER = TYPE == 2;
-  var IS_SOME = TYPE == 3;
-  var IS_EVERY = TYPE == 4;
-  var IS_FIND_INDEX = TYPE == 6;
-  var NO_HOLES = TYPE == 5 || IS_FIND_INDEX;
-  var create = $create || asc;
-  return function ($this, callbackfn, that) {
-    var O = toObject($this);
-    var self = IObject(O);
-    var f = ctx(callbackfn, that, 3);
-    var length = toLength(self.length);
-    var index = 0;
-    var result = IS_MAP ? create($this, length) : IS_FILTER ? create($this, 0) : undefined;
-    var val, res;
-    for (;length > index; index++) if (NO_HOLES || index in self) {
-      val = self[index];
-      res = f(val, index, O);
-      if (TYPE) {
-        if (IS_MAP) result[index] = res;   // map
-        else if (res) switch (TYPE) {
-          case 3: return true;             // some
-          case 5: return val;              // find
-          case 6: return index;            // findIndex
-          case 2: result.push(val);        // filter
-        } else if (IS_EVERY) return false; // every
-      }
-    }
-    return IS_FIND_INDEX ? -1 : IS_SOME || IS_EVERY ? IS_EVERY : result;
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_array-species-constructor.js":
-/*!*****************************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_array-species-constructor.js ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var isArray = __webpack_require__(/*! ./_is-array */ "./node_modules/core-js/library/modules/_is-array.js");
-var SPECIES = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('species');
-
-module.exports = function (original) {
-  var C;
-  if (isArray(original)) {
-    C = original.constructor;
-    // cross-realm fallback
-    if (typeof C == 'function' && (C === Array || isArray(C.prototype))) C = undefined;
-    if (isObject(C)) {
-      C = C[SPECIES];
-      if (C === null) C = undefined;
-    }
-  } return C === undefined ? Array : C;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_array-species-create.js":
-/*!************************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_array-species-create.js ***!
-  \************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 9.4.2.3 ArraySpeciesCreate(originalArray, length)
-var speciesConstructor = __webpack_require__(/*! ./_array-species-constructor */ "./node_modules/core-js/library/modules/_array-species-constructor.js");
-
-module.exports = function (original, length) {
-  return new (speciesConstructor(original))(length);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_classof.js":
-/*!***********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_classof.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// getting tag from 19.1.3.6 Object.prototype.toString()
-var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js");
-var TAG = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('toStringTag');
-// ES3 wrong here
-var ARG = cof(function () { return arguments; }()) == 'Arguments';
-
-// fallback for IE11 Script Access Denied error
-var tryGet = function (it, key) {
-  try {
-    return it[key];
-  } catch (e) { /* empty */ }
-};
-
-module.exports = function (it) {
-  var O, T, B;
-  return it === undefined ? 'Undefined' : it === null ? 'Null'
-    // @@toStringTag case
-    : typeof (T = tryGet(O = Object(it), TAG)) == 'string' ? T
-    // builtinTag case
-    : ARG ? cof(O)
-    // ES3 arguments fallback
-    : (B = cof(O)) == 'Object' && typeof O.callee == 'function' ? 'Arguments' : B;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_cof.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_cof.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var toString = {}.toString;
-
-module.exports = function (it) {
-  return toString.call(it).slice(8, -1);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_collection-strong.js":
-/*!*********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_collection-strong.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f;
-var create = __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/library/modules/_object-create.js");
-var redefineAll = __webpack_require__(/*! ./_redefine-all */ "./node_modules/core-js/library/modules/_redefine-all.js");
-var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
-var anInstance = __webpack_require__(/*! ./_an-instance */ "./node_modules/core-js/library/modules/_an-instance.js");
-var forOf = __webpack_require__(/*! ./_for-of */ "./node_modules/core-js/library/modules/_for-of.js");
-var $iterDefine = __webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/modules/_iter-define.js");
-var step = __webpack_require__(/*! ./_iter-step */ "./node_modules/core-js/library/modules/_iter-step.js");
-var setSpecies = __webpack_require__(/*! ./_set-species */ "./node_modules/core-js/library/modules/_set-species.js");
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
-var fastKey = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/modules/_meta.js").fastKey;
-var validate = __webpack_require__(/*! ./_validate-collection */ "./node_modules/core-js/library/modules/_validate-collection.js");
-var SIZE = DESCRIPTORS ? '_s' : 'size';
-
-var getEntry = function (that, key) {
-  // fast case
-  var index = fastKey(key);
-  var entry;
-  if (index !== 'F') return that._i[index];
-  // frozen object case
-  for (entry = that._f; entry; entry = entry.n) {
-    if (entry.k == key) return entry;
-  }
-};
-
-module.exports = {
-  getConstructor: function (wrapper, NAME, IS_MAP, ADDER) {
-    var C = wrapper(function (that, iterable) {
-      anInstance(that, C, NAME, '_i');
-      that._t = NAME;         // collection type
-      that._i = create(null); // index
-      that._f = undefined;    // first entry
-      that._l = undefined;    // last entry
-      that[SIZE] = 0;         // size
-      if (iterable != undefined) forOf(iterable, IS_MAP, that[ADDER], that);
-    });
-    redefineAll(C.prototype, {
-      // 23.1.3.1 Map.prototype.clear()
-      // 23.2.3.2 Set.prototype.clear()
-      clear: function clear() {
-        for (var that = validate(this, NAME), data = that._i, entry = that._f; entry; entry = entry.n) {
-          entry.r = true;
-          if (entry.p) entry.p = entry.p.n = undefined;
-          delete data[entry.i];
-        }
-        that._f = that._l = undefined;
-        that[SIZE] = 0;
-      },
-      // 23.1.3.3 Map.prototype.delete(key)
-      // 23.2.3.4 Set.prototype.delete(value)
-      'delete': function (key) {
-        var that = validate(this, NAME);
-        var entry = getEntry(that, key);
-        if (entry) {
-          var next = entry.n;
-          var prev = entry.p;
-          delete that._i[entry.i];
-          entry.r = true;
-          if (prev) prev.n = next;
-          if (next) next.p = prev;
-          if (that._f == entry) that._f = next;
-          if (that._l == entry) that._l = prev;
-          that[SIZE]--;
-        } return !!entry;
-      },
-      // 23.2.3.6 Set.prototype.forEach(callbackfn, thisArg = undefined)
-      // 23.1.3.5 Map.prototype.forEach(callbackfn, thisArg = undefined)
-      forEach: function forEach(callbackfn /* , that = undefined */) {
-        validate(this, NAME);
-        var f = ctx(callbackfn, arguments.length > 1 ? arguments[1] : undefined, 3);
-        var entry;
-        while (entry = entry ? entry.n : this._f) {
-          f(entry.v, entry.k, this);
-          // revert to the last existing entry
-          while (entry && entry.r) entry = entry.p;
-        }
-      },
-      // 23.1.3.7 Map.prototype.has(key)
-      // 23.2.3.7 Set.prototype.has(value)
-      has: function has(key) {
-        return !!getEntry(validate(this, NAME), key);
-      }
-    });
-    if (DESCRIPTORS) dP(C.prototype, 'size', {
-      get: function () {
-        return validate(this, NAME)[SIZE];
-      }
-    });
-    return C;
-  },
-  def: function (that, key, value) {
-    var entry = getEntry(that, key);
-    var prev, index;
-    // change existing entry
-    if (entry) {
-      entry.v = value;
-    // create new entry
-    } else {
-      that._l = entry = {
-        i: index = fastKey(key, true), // <- index
-        k: key,                        // <- key
-        v: value,                      // <- value
-        p: prev = that._l,             // <- previous entry
-        n: undefined,                  // <- next entry
-        r: false                       // <- removed
-      };
-      if (!that._f) that._f = entry;
-      if (prev) prev.n = entry;
-      that[SIZE]++;
-      // add to index
-      if (index !== 'F') that._i[index] = entry;
-    } return that;
-  },
-  getEntry: getEntry,
-  setStrong: function (C, NAME, IS_MAP) {
-    // add .keys, .values, .entries, [@@iterator]
-    // 23.1.3.4, 23.1.3.8, 23.1.3.11, 23.1.3.12, 23.2.3.5, 23.2.3.8, 23.2.3.10, 23.2.3.11
-    $iterDefine(C, NAME, function (iterated, kind) {
-      this._t = validate(iterated, NAME); // target
-      this._k = kind;                     // kind
-      this._l = undefined;                // previous
-    }, function () {
-      var that = this;
-      var kind = that._k;
-      var entry = that._l;
-      // revert to the last existing entry
-      while (entry && entry.r) entry = entry.p;
-      // get next entry
-      if (!that._t || !(that._l = entry = entry ? entry.n : that._t._f)) {
-        // or finish the iteration
-        that._t = undefined;
-        return step(1);
-      }
-      // return step by kind
-      if (kind == 'keys') return step(0, entry.k);
-      if (kind == 'values') return step(0, entry.v);
-      return step(0, [entry.k, entry.v]);
-    }, IS_MAP ? 'entries' : 'values', !IS_MAP, true);
-
-    // add [@@species], 23.1.2.2, 23.2.2.2
-    setSpecies(NAME);
-  }
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_collection-to-json.js":
-/*!**********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_collection-to-json.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var classof = __webpack_require__(/*! ./_classof */ "./node_modules/core-js/library/modules/_classof.js");
-var from = __webpack_require__(/*! ./_array-from-iterable */ "./node_modules/core-js/library/modules/_array-from-iterable.js");
-module.exports = function (NAME) {
-  return function toJSON() {
-    if (classof(this) != NAME) throw TypeError(NAME + "#toJSON isn't generic");
-    return from(this);
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_collection.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_collection.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var meta = __webpack_require__(/*! ./_meta */ "./node_modules/core-js/library/modules/_meta.js");
-var fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js");
-var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-var redefineAll = __webpack_require__(/*! ./_redefine-all */ "./node_modules/core-js/library/modules/_redefine-all.js");
-var forOf = __webpack_require__(/*! ./_for-of */ "./node_modules/core-js/library/modules/_for-of.js");
-var anInstance = __webpack_require__(/*! ./_an-instance */ "./node_modules/core-js/library/modules/_an-instance.js");
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/library/modules/_set-to-string-tag.js");
-var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f;
-var each = __webpack_require__(/*! ./_array-methods */ "./node_modules/core-js/library/modules/_array-methods.js")(0);
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
-
-module.exports = function (NAME, wrapper, methods, common, IS_MAP, IS_WEAK) {
-  var Base = global[NAME];
-  var C = Base;
-  var ADDER = IS_MAP ? 'set' : 'add';
-  var proto = C && C.prototype;
-  var O = {};
-  if (!DESCRIPTORS || typeof C != 'function' || !(IS_WEAK || proto.forEach && !fails(function () {
-    new C().entries().next();
-  }))) {
-    // create collection constructor
-    C = common.getConstructor(wrapper, NAME, IS_MAP, ADDER);
-    redefineAll(C.prototype, methods);
-    meta.NEED = true;
-  } else {
-    C = wrapper(function (target, iterable) {
-      anInstance(target, C, NAME, '_c');
-      target._c = new Base();
-      if (iterable != undefined) forOf(iterable, IS_MAP, target[ADDER], target);
-    });
-    each('add,clear,delete,forEach,get,has,set,keys,values,entries,toJSON'.split(','), function (KEY) {
-      var IS_ADDER = KEY == 'add' || KEY == 'set';
-      if (KEY in proto && !(IS_WEAK && KEY == 'clear')) hide(C.prototype, KEY, function (a, b) {
-        anInstance(this, C, KEY);
-        if (!IS_ADDER && IS_WEAK && !isObject(a)) return KEY == 'get' ? undefined : false;
-        var result = this._c[KEY](a === 0 ? 0 : a, b);
-        return IS_ADDER ? this : result;
-      });
-    });
-    IS_WEAK || dP(C.prototype, 'size', {
-      get: function () {
-        return this._c.size;
-      }
-    });
-  }
-
-  setToStringTag(C, NAME);
-
-  O[NAME] = C;
-  $export($export.G + $export.W + $export.F, O);
-
-  if (!IS_WEAK) common.setStrong(C, NAME, IS_MAP);
-
-  return C;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_core.js":
-/*!********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_core.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var core = module.exports = { version: '2.6.10' };
-if (typeof __e == 'number') __e = core; // eslint-disable-line no-undef
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_ctx.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_ctx.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// optional / simple context binding
-var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/library/modules/_a-function.js");
-module.exports = function (fn, that, length) {
-  aFunction(fn);
-  if (that === undefined) return fn;
-  switch (length) {
-    case 1: return function (a) {
-      return fn.call(that, a);
-    };
-    case 2: return function (a, b) {
-      return fn.call(that, a, b);
-    };
-    case 3: return function (a, b, c) {
-      return fn.call(that, a, b, c);
-    };
-  }
-  return function (/* ...args */) {
-    return fn.apply(that, arguments);
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_defined.js":
-/*!***********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_defined.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// 7.2.1 RequireObjectCoercible(argument)
-module.exports = function (it) {
-  if (it == undefined) throw TypeError("Can't call method on  " + it);
-  return it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_descriptors.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_descriptors.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// Thank's IE8 for his funny defineProperty
-module.exports = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
-  return Object.defineProperty({}, 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_dom-create.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_dom-create.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var document = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").document;
-// typeof document.createElement is 'object' in old IE
-var is = isObject(document) && isObject(document.createElement);
-module.exports = function (it) {
-  return is ? document.createElement(it) : {};
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_enum-bug-keys.js":
-/*!*****************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_enum-bug-keys.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// IE 8- don't enum bug keys
-module.exports = (
-  'constructor,hasOwnProperty,isPrototypeOf,propertyIsEnumerable,toLocaleString,toString,valueOf'
-).split(',');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_export.js":
-/*!**********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_export.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
-var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
-var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var PROTOTYPE = 'prototype';
-
-var $export = function (type, name, source) {
-  var IS_FORCED = type & $export.F;
-  var IS_GLOBAL = type & $export.G;
-  var IS_STATIC = type & $export.S;
-  var IS_PROTO = type & $export.P;
-  var IS_BIND = type & $export.B;
-  var IS_WRAP = type & $export.W;
-  var exports = IS_GLOBAL ? core : core[name] || (core[name] = {});
-  var expProto = exports[PROTOTYPE];
-  var target = IS_GLOBAL ? global : IS_STATIC ? global[name] : (global[name] || {})[PROTOTYPE];
-  var key, own, out;
-  if (IS_GLOBAL) source = name;
-  for (key in source) {
-    // contains in native
-    own = !IS_FORCED && target && target[key] !== undefined;
-    if (own && has(exports, key)) continue;
-    // export native or passed
-    out = own ? target[key] : source[key];
-    // prevent global pollution for namespaces
-    exports[key] = IS_GLOBAL && typeof target[key] != 'function' ? source[key]
-    // bind timers to global for call from export context
-    : IS_BIND && own ? ctx(out, global)
-    // wrap global constructors for prevent change them in library
-    : IS_WRAP && target[key] == out ? (function (C) {
-      var F = function (a, b, c) {
-        if (this instanceof C) {
-          switch (arguments.length) {
-            case 0: return new C();
-            case 1: return new C(a);
-            case 2: return new C(a, b);
-          } return new C(a, b, c);
-        } return C.apply(this, arguments);
-      };
-      F[PROTOTYPE] = C[PROTOTYPE];
-      return F;
-    // make static versions for prototype methods
-    })(out) : IS_PROTO && typeof out == 'function' ? ctx(Function.call, out) : out;
-    // export proto methods to core.%CONSTRUCTOR%.methods.%NAME%
-    if (IS_PROTO) {
-      (exports.virtual || (exports.virtual = {}))[key] = out;
-      // export proto methods to core.%CONSTRUCTOR%.prototype.%NAME%
-      if (type & $export.R && expProto && !expProto[key]) hide(expProto, key, out);
-    }
-  }
-};
-// type bitmap
-$export.F = 1;   // forced
-$export.G = 2;   // global
-$export.S = 4;   // static
-$export.P = 8;   // proto
-$export.B = 16;  // bind
-$export.W = 32;  // wrap
-$export.U = 64;  // safe
-$export.R = 128; // real proto method for `library`
-module.exports = $export;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_fails.js":
-/*!*********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_fails.js ***!
-  \*********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (exec) {
-  try {
-    return !!exec();
-  } catch (e) {
-    return true;
-  }
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_for-of.js":
-/*!**********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_for-of.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
-var call = __webpack_require__(/*! ./_iter-call */ "./node_modules/core-js/library/modules/_iter-call.js");
-var isArrayIter = __webpack_require__(/*! ./_is-array-iter */ "./node_modules/core-js/library/modules/_is-array-iter.js");
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var toLength = __webpack_require__(/*! ./_to-length */ "./node_modules/core-js/library/modules/_to-length.js");
-var getIterFn = __webpack_require__(/*! ./core.get-iterator-method */ "./node_modules/core-js/library/modules/core.get-iterator-method.js");
-var BREAK = {};
-var RETURN = {};
-var exports = module.exports = function (iterable, entries, fn, that, ITERATOR) {
-  var iterFn = ITERATOR ? function () { return iterable; } : getIterFn(iterable);
-  var f = ctx(fn, that, entries ? 2 : 1);
-  var index = 0;
-  var length, step, iterator, result;
-  if (typeof iterFn != 'function') throw TypeError(iterable + ' is not iterable!');
-  // fast case for arrays with default iterator
-  if (isArrayIter(iterFn)) for (length = toLength(iterable.length); length > index; index++) {
-    result = entries ? f(anObject(step = iterable[index])[0], step[1]) : f(iterable[index]);
-    if (result === BREAK || result === RETURN) return result;
-  } else for (iterator = iterFn.call(iterable); !(step = iterator.next()).done;) {
-    result = call(iterator, f, step.value, entries);
-    if (result === BREAK || result === RETURN) return result;
-  }
-};
-exports.BREAK = BREAK;
-exports.RETURN = RETURN;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_global.js":
-/*!**********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_global.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// https://github.com/zloirock/core-js/issues/86#issuecomment-115759028
-var global = module.exports = typeof window != 'undefined' && window.Math == Math
-  ? window : typeof self != 'undefined' && self.Math == Math ? self
-  // eslint-disable-next-line no-new-func
-  : Function('return this')();
-if (typeof __g == 'number') __g = global; // eslint-disable-line no-undef
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_has.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_has.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var hasOwnProperty = {}.hasOwnProperty;
-module.exports = function (it, key) {
-  return hasOwnProperty.call(it, key);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_hide.js":
-/*!********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_hide.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
-var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
-module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? function (object, key, value) {
-  return dP.f(object, key, createDesc(1, value));
-} : function (object, key, value) {
-  object[key] = value;
-  return object;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_html.js":
-/*!********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_html.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var document = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").document;
-module.exports = document && document.documentElement;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_ie8-dom-define.js":
-/*!******************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_ie8-dom-define.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") && !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
-  return Object.defineProperty(__webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/library/modules/_dom-create.js")('div'), 'a', { get: function () { return 7; } }).a != 7;
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_invoke.js":
-/*!**********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_invoke.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// fast apply, http://jsperf.lnkit.com/fast-apply/5
-module.exports = function (fn, args, that) {
-  var un = that === undefined;
-  switch (args.length) {
-    case 0: return un ? fn()
-                      : fn.call(that);
-    case 1: return un ? fn(args[0])
-                      : fn.call(that, args[0]);
-    case 2: return un ? fn(args[0], args[1])
-                      : fn.call(that, args[0], args[1]);
-    case 3: return un ? fn(args[0], args[1], args[2])
-                      : fn.call(that, args[0], args[1], args[2]);
-    case 4: return un ? fn(args[0], args[1], args[2], args[3])
-                      : fn.call(that, args[0], args[1], args[2], args[3]);
-  } return fn.apply(that, args);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iobject.js":
-/*!***********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_iobject.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// fallback for non-array-like ES3 and non-enumerable old V8 strings
-var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js");
-// eslint-disable-next-line no-prototype-builtins
-module.exports = Object('z').propertyIsEnumerable(0) ? Object : function (it) {
-  return cof(it) == 'String' ? it.split('') : Object(it);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_is-array-iter.js":
-/*!*****************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_is-array-iter.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// check on default Array iterator
-var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
-var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
-var ArrayProto = Array.prototype;
-
-module.exports = function (it) {
-  return it !== undefined && (Iterators.Array === it || ArrayProto[ITERATOR] === it);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_is-array.js":
-/*!************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_is-array.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.2.2 IsArray(argument)
-var cof = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js");
-module.exports = Array.isArray || function isArray(arg) {
-  return cof(arg) == 'Array';
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_is-object.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_is-object.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (it) {
-  return typeof it === 'object' ? it !== null : typeof it === 'function';
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iter-call.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_iter-call.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// call something on iterator step with safe closing on error
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-module.exports = function (iterator, fn, value, entries) {
-  try {
-    return entries ? fn(anObject(value)[0], value[1]) : fn(value);
-  // 7.4.6 IteratorClose(iterator, completion)
-  } catch (e) {
-    var ret = iterator['return'];
-    if (ret !== undefined) anObject(ret.call(iterator));
-    throw e;
-  }
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iter-create.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_iter-create.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var create = __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/library/modules/_object-create.js");
-var descriptor = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
-var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/library/modules/_set-to-string-tag.js");
-var IteratorPrototype = {};
-
-// 25.1.2.1.1 %IteratorPrototype%[@@iterator]()
-__webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js")(IteratorPrototype, __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator'), function () { return this; });
-
-module.exports = function (Constructor, NAME, next) {
-  Constructor.prototype = create(IteratorPrototype, { next: descriptor(1, next) });
-  setToStringTag(Constructor, NAME + ' Iterator');
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iter-define.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_iter-define.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var LIBRARY = __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js");
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var redefine = __webpack_require__(/*! ./_redefine */ "./node_modules/core-js/library/modules/_redefine.js");
-var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
-var $iterCreate = __webpack_require__(/*! ./_iter-create */ "./node_modules/core-js/library/modules/_iter-create.js");
-var setToStringTag = __webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/library/modules/_set-to-string-tag.js");
-var getPrototypeOf = __webpack_require__(/*! ./_object-gpo */ "./node_modules/core-js/library/modules/_object-gpo.js");
-var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
-var BUGGY = !([].keys && 'next' in [].keys()); // Safari has buggy iterators w/o `next`
-var FF_ITERATOR = '@@iterator';
-var KEYS = 'keys';
-var VALUES = 'values';
-
-var returnThis = function () { return this; };
-
-module.exports = function (Base, NAME, Constructor, next, DEFAULT, IS_SET, FORCED) {
-  $iterCreate(Constructor, NAME, next);
-  var getMethod = function (kind) {
-    if (!BUGGY && kind in proto) return proto[kind];
-    switch (kind) {
-      case KEYS: return function keys() { return new Constructor(this, kind); };
-      case VALUES: return function values() { return new Constructor(this, kind); };
-    } return function entries() { return new Constructor(this, kind); };
-  };
-  var TAG = NAME + ' Iterator';
-  var DEF_VALUES = DEFAULT == VALUES;
-  var VALUES_BUG = false;
-  var proto = Base.prototype;
-  var $native = proto[ITERATOR] || proto[FF_ITERATOR] || DEFAULT && proto[DEFAULT];
-  var $default = $native || getMethod(DEFAULT);
-  var $entries = DEFAULT ? !DEF_VALUES ? $default : getMethod('entries') : undefined;
-  var $anyNative = NAME == 'Array' ? proto.entries || $native : $native;
-  var methods, key, IteratorPrototype;
-  // Fix native
-  if ($anyNative) {
-    IteratorPrototype = getPrototypeOf($anyNative.call(new Base()));
-    if (IteratorPrototype !== Object.prototype && IteratorPrototype.next) {
-      // Set @@toStringTag to native iterators
-      setToStringTag(IteratorPrototype, TAG, true);
-      // fix for some old engines
-      if (!LIBRARY && typeof IteratorPrototype[ITERATOR] != 'function') hide(IteratorPrototype, ITERATOR, returnThis);
-    }
-  }
-  // fix Array#{values, @@iterator}.name in V8 / FF
-  if (DEF_VALUES && $native && $native.name !== VALUES) {
-    VALUES_BUG = true;
-    $default = function values() { return $native.call(this); };
-  }
-  // Define iterator
-  if ((!LIBRARY || FORCED) && (BUGGY || VALUES_BUG || !proto[ITERATOR])) {
-    hide(proto, ITERATOR, $default);
-  }
-  // Plug for library
-  Iterators[NAME] = $default;
-  Iterators[TAG] = returnThis;
-  if (DEFAULT) {
-    methods = {
-      values: DEF_VALUES ? $default : getMethod(VALUES),
-      keys: IS_SET ? $default : getMethod(KEYS),
-      entries: $entries
-    };
-    if (FORCED) for (key in methods) {
-      if (!(key in proto)) redefine(proto, key, methods[key]);
-    } else $export($export.P + $export.F * (BUGGY || VALUES_BUG), NAME, methods);
-  }
-  return methods;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iter-detect.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_iter-detect.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
-var SAFE_CLOSING = false;
-
-try {
-  var riter = [7][ITERATOR]();
-  riter['return'] = function () { SAFE_CLOSING = true; };
-  // eslint-disable-next-line no-throw-literal
-  Array.from(riter, function () { throw 2; });
-} catch (e) { /* empty */ }
-
-module.exports = function (exec, skipClosing) {
-  if (!skipClosing && !SAFE_CLOSING) return false;
-  var safe = false;
-  try {
-    var arr = [7];
-    var iter = arr[ITERATOR]();
-    iter.next = function () { return { done: safe = true }; };
-    arr[ITERATOR] = function () { return iter; };
-    exec(arr);
-  } catch (e) { /* empty */ }
-  return safe;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iter-step.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_iter-step.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (done, value) {
-  return { value: value, done: !!done };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_iterators.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_iterators.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = {};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_library.js":
-/*!***********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_library.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = true;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_meta.js":
-/*!********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_meta.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var META = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/library/modules/_uid.js")('meta');
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var setDesc = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f;
-var id = 0;
-var isExtensible = Object.isExtensible || function () {
-  return true;
-};
-var FREEZE = !__webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
-  return isExtensible(Object.preventExtensions({}));
-});
-var setMeta = function (it) {
-  setDesc(it, META, { value: {
-    i: 'O' + ++id, // object ID
-    w: {}          // weak collections IDs
-  } });
-};
-var fastKey = function (it, create) {
-  // return primitive with prefix
-  if (!isObject(it)) return typeof it == 'symbol' ? it : (typeof it == 'string' ? 'S' : 'P') + it;
-  if (!has(it, META)) {
-    // can't set metadata to uncaught frozen object
-    if (!isExtensible(it)) return 'F';
-    // not necessary to add metadata
-    if (!create) return 'E';
-    // add missing metadata
-    setMeta(it);
-  // return object ID
-  } return it[META].i;
-};
-var getWeak = function (it, create) {
-  if (!has(it, META)) {
-    // can't set metadata to uncaught frozen object
-    if (!isExtensible(it)) return true;
-    // not necessary to add metadata
-    if (!create) return false;
-    // add missing metadata
-    setMeta(it);
-  // return hash weak collections IDs
-  } return it[META].w;
-};
-// add metadata on freeze-family methods calling
-var onFreeze = function (it) {
-  if (FREEZE && meta.NEED && isExtensible(it) && !has(it, META)) setMeta(it);
-  return it;
-};
-var meta = module.exports = {
-  KEY: META,
-  NEED: false,
-  fastKey: fastKey,
-  getWeak: getWeak,
-  onFreeze: onFreeze
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_microtask.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_microtask.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var macrotask = __webpack_require__(/*! ./_task */ "./node_modules/core-js/library/modules/_task.js").set;
-var Observer = global.MutationObserver || global.WebKitMutationObserver;
-var process = global.process;
-var Promise = global.Promise;
-var isNode = __webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js")(process) == 'process';
-
-module.exports = function () {
-  var head, last, notify;
-
-  var flush = function () {
-    var parent, fn;
-    if (isNode && (parent = process.domain)) parent.exit();
-    while (head) {
-      fn = head.fn;
-      head = head.next;
-      try {
-        fn();
-      } catch (e) {
-        if (head) notify();
-        else last = undefined;
-        throw e;
-      }
-    } last = undefined;
-    if (parent) parent.enter();
-  };
-
-  // Node.js
-  if (isNode) {
-    notify = function () {
-      process.nextTick(flush);
-    };
-  // browsers with MutationObserver, except iOS Safari - https://github.com/zloirock/core-js/issues/339
-  } else if (Observer && !(global.navigator && global.navigator.standalone)) {
-    var toggle = true;
-    var node = document.createTextNode('');
-    new Observer(flush).observe(node, { characterData: true }); // eslint-disable-line no-new
-    notify = function () {
-      node.data = toggle = !toggle;
-    };
-  // environments with maybe non-completely correct, but existent Promise
-  } else if (Promise && Promise.resolve) {
-    // Promise.resolve without an argument throws an error in LG WebOS 2
-    var promise = Promise.resolve(undefined);
-    notify = function () {
-      promise.then(flush);
-    };
-  // for other environments - macrotask based on:
-  // - setImmediate
-  // - MessageChannel
-  // - window.postMessag
-  // - onreadystatechange
-  // - setTimeout
-  } else {
-    notify = function () {
-      // strange IE + webpack dev server bug - use .call(global)
-      macrotask.call(global, flush);
-    };
-  }
-
-  return function (fn) {
-    var task = { fn: fn, next: undefined };
-    if (last) last.next = task;
-    if (!head) {
-      head = task;
-      notify();
-    } last = task;
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_new-promise-capability.js":
-/*!**************************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_new-promise-capability.js ***!
-  \**************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 25.4.1.5 NewPromiseCapability(C)
-var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/library/modules/_a-function.js");
-
-function PromiseCapability(C) {
-  var resolve, reject;
-  this.promise = new C(function ($$resolve, $$reject) {
-    if (resolve !== undefined || reject !== undefined) throw TypeError('Bad Promise constructor');
-    resolve = $$resolve;
-    reject = $$reject;
-  });
-  this.resolve = aFunction(resolve);
-  this.reject = aFunction(reject);
-}
-
-module.exports.f = function (C) {
-  return new PromiseCapability(C);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-assign.js":
-/*!*****************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-assign.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// 19.1.2.1 Object.assign(target, source, ...)
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
-var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
-var gOPS = __webpack_require__(/*! ./_object-gops */ "./node_modules/core-js/library/modules/_object-gops.js");
-var pIE = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js");
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var IObject = __webpack_require__(/*! ./_iobject */ "./node_modules/core-js/library/modules/_iobject.js");
-var $assign = Object.assign;
-
-// should work with symbols and should have deterministic property order (V8 bug)
-module.exports = !$assign || __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js")(function () {
-  var A = {};
-  var B = {};
-  // eslint-disable-next-line no-undef
-  var S = Symbol();
-  var K = 'abcdefghijklmnopqrst';
-  A[S] = 7;
-  K.split('').forEach(function (k) { B[k] = k; });
-  return $assign({}, A)[S] != 7 || Object.keys($assign({}, B)).join('') != K;
-}) ? function assign(target, source) { // eslint-disable-line no-unused-vars
-  var T = toObject(target);
-  var aLen = arguments.length;
-  var index = 1;
-  var getSymbols = gOPS.f;
-  var isEnum = pIE.f;
-  while (aLen > index) {
-    var S = IObject(arguments[index++]);
-    var keys = getSymbols ? getKeys(S).concat(getSymbols(S)) : getKeys(S);
-    var length = keys.length;
-    var j = 0;
-    var key;
-    while (length > j) {
-      key = keys[j++];
-      if (!DESCRIPTORS || isEnum.call(S, key)) T[key] = S[key];
-    }
-  } return T;
-} : $assign;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-create.js":
-/*!*****************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-create.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var dPs = __webpack_require__(/*! ./_object-dps */ "./node_modules/core-js/library/modules/_object-dps.js");
-var enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ "./node_modules/core-js/library/modules/_enum-bug-keys.js");
-var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/library/modules/_shared-key.js")('IE_PROTO');
-var Empty = function () { /* empty */ };
-var PROTOTYPE = 'prototype';
-
-// Create object with fake `null` prototype: use iframe Object with cleared prototype
-var createDict = function () {
-  // Thrash, waste and sodomy: IE GC bug
-  var iframe = __webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/library/modules/_dom-create.js")('iframe');
-  var i = enumBugKeys.length;
-  var lt = '<';
-  var gt = '>';
-  var iframeDocument;
-  iframe.style.display = 'none';
-  __webpack_require__(/*! ./_html */ "./node_modules/core-js/library/modules/_html.js").appendChild(iframe);
-  iframe.src = 'javascript:'; // eslint-disable-line no-script-url
-  // createDict = iframe.contentWindow.Object;
-  // html.removeChild(iframe);
-  iframeDocument = iframe.contentWindow.document;
-  iframeDocument.open();
-  iframeDocument.write(lt + 'script' + gt + 'document.F=Object' + lt + '/script' + gt);
-  iframeDocument.close();
-  createDict = iframeDocument.F;
-  while (i--) delete createDict[PROTOTYPE][enumBugKeys[i]];
-  return createDict();
-};
-
-module.exports = Object.create || function create(O, Properties) {
-  var result;
-  if (O !== null) {
-    Empty[PROTOTYPE] = anObject(O);
-    result = new Empty();
-    Empty[PROTOTYPE] = null;
-    // add "__proto__" for Object.getPrototypeOf polyfill
-    result[IE_PROTO] = O;
-  } else result = createDict();
-  return Properties === undefined ? result : dPs(result, Properties);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-dp.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-dp.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ "./node_modules/core-js/library/modules/_ie8-dom-define.js");
-var toPrimitive = __webpack_require__(/*! ./_to-primitive */ "./node_modules/core-js/library/modules/_to-primitive.js");
-var dP = Object.defineProperty;
-
-exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? Object.defineProperty : function defineProperty(O, P, Attributes) {
-  anObject(O);
-  P = toPrimitive(P, true);
-  anObject(Attributes);
-  if (IE8_DOM_DEFINE) try {
-    return dP(O, P, Attributes);
-  } catch (e) { /* empty */ }
-  if ('get' in Attributes || 'set' in Attributes) throw TypeError('Accessors not supported!');
-  if ('value' in Attributes) O[P] = Attributes.value;
-  return O;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-dps.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-dps.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var getKeys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
-
-module.exports = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? Object.defineProperties : function defineProperties(O, Properties) {
-  anObject(O);
-  var keys = getKeys(Properties);
-  var length = keys.length;
-  var i = 0;
-  var P;
-  while (length > i) dP.f(O, P = keys[i++], Properties[P]);
-  return O;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-gopd.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-gopd.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var pIE = __webpack_require__(/*! ./_object-pie */ "./node_modules/core-js/library/modules/_object-pie.js");
-var createDesc = __webpack_require__(/*! ./_property-desc */ "./node_modules/core-js/library/modules/_property-desc.js");
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var toPrimitive = __webpack_require__(/*! ./_to-primitive */ "./node_modules/core-js/library/modules/_to-primitive.js");
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var IE8_DOM_DEFINE = __webpack_require__(/*! ./_ie8-dom-define */ "./node_modules/core-js/library/modules/_ie8-dom-define.js");
-var gOPD = Object.getOwnPropertyDescriptor;
-
-exports.f = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js") ? gOPD : function getOwnPropertyDescriptor(O, P) {
-  O = toIObject(O);
-  P = toPrimitive(P, true);
-  if (IE8_DOM_DEFINE) try {
-    return gOPD(O, P);
-  } catch (e) { /* empty */ }
-  if (has(O, P)) return createDesc(!pIE.f.call(O, P), O[P]);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-gops.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-gops.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-exports.f = Object.getOwnPropertySymbols;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-gpo.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-gpo.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.9 / 15.2.3.2 Object.getPrototypeOf(O)
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/library/modules/_shared-key.js")('IE_PROTO');
-var ObjectProto = Object.prototype;
-
-module.exports = Object.getPrototypeOf || function (O) {
-  O = toObject(O);
-  if (has(O, IE_PROTO)) return O[IE_PROTO];
-  if (typeof O.constructor == 'function' && O instanceof O.constructor) {
-    return O.constructor.prototype;
-  } return O instanceof Object ? ObjectProto : null;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-keys-internal.js":
-/*!************************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-keys-internal.js ***!
-  \************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var arrayIndexOf = __webpack_require__(/*! ./_array-includes */ "./node_modules/core-js/library/modules/_array-includes.js")(false);
-var IE_PROTO = __webpack_require__(/*! ./_shared-key */ "./node_modules/core-js/library/modules/_shared-key.js")('IE_PROTO');
-
-module.exports = function (object, names) {
-  var O = toIObject(object);
-  var i = 0;
-  var result = [];
-  var key;
-  for (key in O) if (key != IE_PROTO) has(O, key) && result.push(key);
-  // Don't enum bug & hidden keys
-  while (names.length > i) if (has(O, key = names[i++])) {
-    ~arrayIndexOf(result, key) || result.push(key);
-  }
-  return result;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-keys.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-keys.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.14 / 15.2.3.14 Object.keys(O)
-var $keys = __webpack_require__(/*! ./_object-keys-internal */ "./node_modules/core-js/library/modules/_object-keys-internal.js");
-var enumBugKeys = __webpack_require__(/*! ./_enum-bug-keys */ "./node_modules/core-js/library/modules/_enum-bug-keys.js");
-
-module.exports = Object.keys || function keys(O) {
-  return $keys(O, enumBugKeys);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-pie.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-pie.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-exports.f = {}.propertyIsEnumerable;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_object-sap.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_object-sap.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// most Object methods by ES6 should accept primitives
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
-var fails = __webpack_require__(/*! ./_fails */ "./node_modules/core-js/library/modules/_fails.js");
-module.exports = function (KEY, exec) {
-  var fn = (core.Object || {})[KEY] || Object[KEY];
-  var exp = {};
-  exp[KEY] = exec(fn);
-  $export($export.S + $export.F * fails(function () { fn(1); }), 'Object', exp);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_perform.js":
-/*!***********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_perform.js ***!
-  \***********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (exec) {
-  try {
-    return { e: false, v: exec() };
-  } catch (e) {
-    return { e: true, v: e };
-  }
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_promise-resolve.js":
-/*!*******************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_promise-resolve.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var newPromiseCapability = __webpack_require__(/*! ./_new-promise-capability */ "./node_modules/core-js/library/modules/_new-promise-capability.js");
-
-module.exports = function (C, x) {
-  anObject(C);
-  if (isObject(x) && x.constructor === C) return x;
-  var promiseCapability = newPromiseCapability.f(C);
-  var resolve = promiseCapability.resolve;
-  resolve(x);
-  return promiseCapability.promise;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_property-desc.js":
-/*!*****************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_property-desc.js ***!
-  \*****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-module.exports = function (bitmap, value) {
-  return {
-    enumerable: !(bitmap & 1),
-    configurable: !(bitmap & 2),
-    writable: !(bitmap & 4),
-    value: value
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_redefine-all.js":
-/*!****************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_redefine-all.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-module.exports = function (target, src, safe) {
-  for (var key in src) {
-    if (safe && target[key]) target[key] = src[key];
-    else hide(target, key, src[key]);
-  } return target;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_redefine.js":
-/*!************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_redefine.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_set-collection-from.js":
-/*!***********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_set-collection-from.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// https://tc39.github.io/proposal-setmap-offrom/
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/library/modules/_a-function.js");
-var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
-var forOf = __webpack_require__(/*! ./_for-of */ "./node_modules/core-js/library/modules/_for-of.js");
-
-module.exports = function (COLLECTION) {
-  $export($export.S, COLLECTION, { from: function from(source /* , mapFn, thisArg */) {
-    var mapFn = arguments[1];
-    var mapping, A, n, cb;
-    aFunction(this);
-    mapping = mapFn !== undefined;
-    if (mapping) aFunction(mapFn);
-    if (source == undefined) return new this();
-    A = [];
-    if (mapping) {
-      n = 0;
-      cb = ctx(mapFn, arguments[2], 2);
-      forOf(source, false, function (nextItem) {
-        A.push(cb(nextItem, n++));
-      });
-    } else {
-      forOf(source, false, A.push, A);
-    }
-    return new this(A);
-  } });
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_set-collection-of.js":
-/*!*********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_set-collection-of.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// https://tc39.github.io/proposal-setmap-offrom/
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-
-module.exports = function (COLLECTION) {
-  $export($export.S, COLLECTION, { of: function of() {
-    var length = arguments.length;
-    var A = new Array(length);
-    while (length--) A[length] = arguments[length];
-    return new this(A);
-  } });
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_set-species.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_set-species.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
-var dP = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js");
-var DESCRIPTORS = __webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js");
-var SPECIES = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('species');
-
-module.exports = function (KEY) {
-  var C = typeof core[KEY] == 'function' ? core[KEY] : global[KEY];
-  if (DESCRIPTORS && C && !C[SPECIES]) dP.f(C, SPECIES, {
-    configurable: true,
-    get: function () { return this; }
-  });
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_set-to-string-tag.js":
-/*!*********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_set-to-string-tag.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var def = __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f;
-var has = __webpack_require__(/*! ./_has */ "./node_modules/core-js/library/modules/_has.js");
-var TAG = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('toStringTag');
-
-module.exports = function (it, tag, stat) {
-  if (it && !has(it = stat ? it : it.prototype, TAG)) def(it, TAG, { configurable: true, value: tag });
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_shared-key.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_shared-key.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var shared = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/library/modules/_shared.js")('keys');
-var uid = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/library/modules/_uid.js");
-module.exports = function (key) {
-  return shared[key] || (shared[key] = uid(key));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_shared.js":
-/*!**********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_shared.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var SHARED = '__core-js_shared__';
-var store = global[SHARED] || (global[SHARED] = {});
-
-(module.exports = function (key, value) {
-  return store[key] || (store[key] = value !== undefined ? value : {});
-})('versions', []).push({
-  version: core.version,
-  mode: __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js") ? 'pure' : 'global',
-  copyright: '© 2019 Denis Pushkarev (zloirock.ru)'
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_species-constructor.js":
-/*!***********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_species-constructor.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.3.20 SpeciesConstructor(O, defaultConstructor)
-var anObject = __webpack_require__(/*! ./_an-object */ "./node_modules/core-js/library/modules/_an-object.js");
-var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/library/modules/_a-function.js");
-var SPECIES = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('species');
-module.exports = function (O, D) {
-  var C = anObject(O).constructor;
-  var S;
-  return C === undefined || (S = anObject(C)[SPECIES]) == undefined ? D : aFunction(S);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_string-at.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_string-at.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/library/modules/_to-integer.js");
-var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
-// true  -> String#at
-// false -> String#codePointAt
-module.exports = function (TO_STRING) {
-  return function (that, pos) {
-    var s = String(defined(that));
-    var i = toInteger(pos);
-    var l = s.length;
-    var a, b;
-    if (i < 0 || i >= l) return TO_STRING ? '' : undefined;
-    a = s.charCodeAt(i);
-    return a < 0xd800 || a > 0xdbff || i + 1 === l || (b = s.charCodeAt(i + 1)) < 0xdc00 || b > 0xdfff
-      ? TO_STRING ? s.charAt(i) : a
-      : TO_STRING ? s.slice(i, i + 2) : (a - 0xd800 << 10) + (b - 0xdc00) + 0x10000;
-  };
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_task.js":
-/*!********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_task.js ***!
-  \********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
-var invoke = __webpack_require__(/*! ./_invoke */ "./node_modules/core-js/library/modules/_invoke.js");
-var html = __webpack_require__(/*! ./_html */ "./node_modules/core-js/library/modules/_html.js");
-var cel = __webpack_require__(/*! ./_dom-create */ "./node_modules/core-js/library/modules/_dom-create.js");
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var process = global.process;
-var setTask = global.setImmediate;
-var clearTask = global.clearImmediate;
-var MessageChannel = global.MessageChannel;
-var Dispatch = global.Dispatch;
-var counter = 0;
-var queue = {};
-var ONREADYSTATECHANGE = 'onreadystatechange';
-var defer, channel, port;
-var run = function () {
-  var id = +this;
-  // eslint-disable-next-line no-prototype-builtins
-  if (queue.hasOwnProperty(id)) {
-    var fn = queue[id];
-    delete queue[id];
-    fn();
-  }
-};
-var listener = function (event) {
-  run.call(event.data);
-};
-// Node.js 0.9+ & IE10+ has setImmediate, otherwise:
-if (!setTask || !clearTask) {
-  setTask = function setImmediate(fn) {
-    var args = [];
-    var i = 1;
-    while (arguments.length > i) args.push(arguments[i++]);
-    queue[++counter] = function () {
-      // eslint-disable-next-line no-new-func
-      invoke(typeof fn == 'function' ? fn : Function(fn), args);
-    };
-    defer(counter);
-    return counter;
-  };
-  clearTask = function clearImmediate(id) {
-    delete queue[id];
-  };
-  // Node.js 0.8-
-  if (__webpack_require__(/*! ./_cof */ "./node_modules/core-js/library/modules/_cof.js")(process) == 'process') {
-    defer = function (id) {
-      process.nextTick(ctx(run, id, 1));
-    };
-  // Sphere (JS game engine) Dispatch API
-  } else if (Dispatch && Dispatch.now) {
-    defer = function (id) {
-      Dispatch.now(ctx(run, id, 1));
-    };
-  // Browsers with MessageChannel, includes WebWorkers
-  } else if (MessageChannel) {
-    channel = new MessageChannel();
-    port = channel.port2;
-    channel.port1.onmessage = listener;
-    defer = ctx(port.postMessage, port, 1);
-  // Browsers with postMessage, skip WebWorkers
-  // IE8 has postMessage, but it's sync & typeof its postMessage is 'object'
-  } else if (global.addEventListener && typeof postMessage == 'function' && !global.importScripts) {
-    defer = function (id) {
-      global.postMessage(id + '', '*');
-    };
-    global.addEventListener('message', listener, false);
-  // IE8-
-  } else if (ONREADYSTATECHANGE in cel('script')) {
-    defer = function (id) {
-      html.appendChild(cel('script'))[ONREADYSTATECHANGE] = function () {
-        html.removeChild(this);
-        run.call(id);
-      };
-    };
-  // Rest old browsers
-  } else {
-    defer = function (id) {
-      setTimeout(ctx(run, id, 1), 0);
-    };
-  }
-}
-module.exports = {
-  set: setTask,
-  clear: clearTask
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-absolute-index.js":
-/*!*********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_to-absolute-index.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/library/modules/_to-integer.js");
-var max = Math.max;
-var min = Math.min;
-module.exports = function (index, length) {
-  index = toInteger(index);
-  return index < 0 ? max(index + length, 0) : min(index, length);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-integer.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_to-integer.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-// 7.1.4 ToInteger
-var ceil = Math.ceil;
-var floor = Math.floor;
-module.exports = function (it) {
-  return isNaN(it = +it) ? 0 : (it > 0 ? floor : ceil)(it);
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-iobject.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_to-iobject.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// to indexed object, toObject with fallback for non-array-like ES3 strings
-var IObject = __webpack_require__(/*! ./_iobject */ "./node_modules/core-js/library/modules/_iobject.js");
-var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
-module.exports = function (it) {
-  return IObject(defined(it));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-length.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_to-length.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.15 ToLength
-var toInteger = __webpack_require__(/*! ./_to-integer */ "./node_modules/core-js/library/modules/_to-integer.js");
-var min = Math.min;
-module.exports = function (it) {
-  return it > 0 ? min(toInteger(it), 0x1fffffffffffff) : 0; // pow(2, 53) - 1 == 9007199254740991
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-object.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_to-object.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.13 ToObject(argument)
-var defined = __webpack_require__(/*! ./_defined */ "./node_modules/core-js/library/modules/_defined.js");
-module.exports = function (it) {
-  return Object(defined(it));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_to-primitive.js":
-/*!****************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_to-primitive.js ***!
-  \****************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 7.1.1 ToPrimitive(input [, PreferredType])
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-// instead of the ES6 spec version, we didn't implement @@toPrimitive case
-// and the second argument - flag - preferred type is a string
-module.exports = function (it, S) {
-  if (!isObject(it)) return it;
-  var fn, val;
-  if (S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
-  if (typeof (fn = it.valueOf) == 'function' && !isObject(val = fn.call(it))) return val;
-  if (!S && typeof (fn = it.toString) == 'function' && !isObject(val = fn.call(it))) return val;
-  throw TypeError("Can't convert object to primitive value");
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_uid.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_uid.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-var id = 0;
-var px = Math.random();
-module.exports = function (key) {
-  return 'Symbol('.concat(key === undefined ? '' : key, ')_', (++id + px).toString(36));
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_user-agent.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_user-agent.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var navigator = global.navigator;
-
-module.exports = navigator && navigator.userAgent || '';
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_validate-collection.js":
-/*!***********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_validate-collection.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-module.exports = function (it, TYPE) {
-  if (!isObject(it) || it._t !== TYPE) throw TypeError('Incompatible receiver, ' + TYPE + ' required!');
-  return it;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/_wks.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/_wks.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var store = __webpack_require__(/*! ./_shared */ "./node_modules/core-js/library/modules/_shared.js")('wks');
-var uid = __webpack_require__(/*! ./_uid */ "./node_modules/core-js/library/modules/_uid.js");
-var Symbol = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js").Symbol;
-var USE_SYMBOL = typeof Symbol == 'function';
-
-var $exports = module.exports = function (name) {
-  return store[name] || (store[name] =
-    USE_SYMBOL && Symbol[name] || (USE_SYMBOL ? Symbol : uid)('Symbol.' + name));
-};
-
-$exports.store = store;
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/core.get-iterator-method.js":
-/*!***************************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/core.get-iterator-method.js ***!
-  \***************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var classof = __webpack_require__(/*! ./_classof */ "./node_modules/core-js/library/modules/_classof.js");
-var ITERATOR = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('iterator');
-var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
-module.exports = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js").getIteratorMethod = function (it) {
-  if (it != undefined) return it[ITERATOR]
-    || it['@@iterator']
-    || Iterators[classof(it)];
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.array.iterator.js":
-/*!*********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.array.iterator.js ***!
-  \*********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var addToUnscopables = __webpack_require__(/*! ./_add-to-unscopables */ "./node_modules/core-js/library/modules/_add-to-unscopables.js");
-var step = __webpack_require__(/*! ./_iter-step */ "./node_modules/core-js/library/modules/_iter-step.js");
-var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-
-// 22.1.3.4 Array.prototype.entries()
-// 22.1.3.13 Array.prototype.keys()
-// 22.1.3.29 Array.prototype.values()
-// 22.1.3.30 Array.prototype[@@iterator]()
-module.exports = __webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/modules/_iter-define.js")(Array, 'Array', function (iterated, kind) {
-  this._t = toIObject(iterated); // target
-  this._i = 0;                   // next index
-  this._k = kind;                // kind
-// 22.1.5.2.1 %ArrayIteratorPrototype%.next()
-}, function () {
-  var O = this._t;
-  var kind = this._k;
-  var index = this._i++;
-  if (!O || index >= O.length) {
-    this._t = undefined;
-    return step(1);
-  }
-  if (kind == 'keys') return step(0, index);
-  if (kind == 'values') return step(0, O[index]);
-  return step(0, [index, O[index]]);
-}, 'values');
-
-// argumentsList[@@iterator] is %ArrayProto_values% (9.4.4.6, 9.4.4.7)
-Iterators.Arguments = Iterators.Array;
-
-addToUnscopables('keys');
-addToUnscopables('values');
-addToUnscopables('entries');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.map.js":
-/*!**********************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.map.js ***!
-  \**********************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var strong = __webpack_require__(/*! ./_collection-strong */ "./node_modules/core-js/library/modules/_collection-strong.js");
-var validate = __webpack_require__(/*! ./_validate-collection */ "./node_modules/core-js/library/modules/_validate-collection.js");
-var MAP = 'Map';
-
-// 23.1 Map Objects
-module.exports = __webpack_require__(/*! ./_collection */ "./node_modules/core-js/library/modules/_collection.js")(MAP, function (get) {
-  return function Map() { return get(this, arguments.length > 0 ? arguments[0] : undefined); };
-}, {
-  // 23.1.3.6 Map.prototype.get(key)
-  get: function get(key) {
-    var entry = strong.getEntry(validate(this, MAP), key);
-    return entry && entry.v;
-  },
-  // 23.1.3.9 Map.prototype.set(key, value)
-  set: function set(key, value) {
-    return strong.def(validate(this, MAP), key === 0 ? 0 : key, value);
-  }
-}, strong, true);
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.assign.js":
-/*!********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.object.assign.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.3.1 Object.assign(target, source)
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-
-$export($export.S + $export.F, 'Object', { assign: __webpack_require__(/*! ./_object-assign */ "./node_modules/core-js/library/modules/_object-assign.js") });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.create.js":
-/*!********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.object.create.js ***!
-  \********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-// 19.1.2.2 / 15.2.3.5 Object.create(O [, Properties])
-$export($export.S, 'Object', { create: __webpack_require__(/*! ./_object-create */ "./node_modules/core-js/library/modules/_object-create.js") });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.define-property.js":
-/*!*****************************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.object.define-property.js ***!
-  \*****************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-// 19.1.2.4 / 15.2.3.6 Object.defineProperty(O, P, Attributes)
-$export($export.S + $export.F * !__webpack_require__(/*! ./_descriptors */ "./node_modules/core-js/library/modules/_descriptors.js"), 'Object', { defineProperty: __webpack_require__(/*! ./_object-dp */ "./node_modules/core-js/library/modules/_object-dp.js").f });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js":
-/*!*****************************************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.object.get-own-property-descriptor.js ***!
-  \*****************************************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.6 Object.getOwnPropertyDescriptor(O, P)
-var toIObject = __webpack_require__(/*! ./_to-iobject */ "./node_modules/core-js/library/modules/_to-iobject.js");
-var $getOwnPropertyDescriptor = __webpack_require__(/*! ./_object-gopd */ "./node_modules/core-js/library/modules/_object-gopd.js").f;
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('getOwnPropertyDescriptor', function () {
-  return function getOwnPropertyDescriptor(it, key) {
-    return $getOwnPropertyDescriptor(toIObject(it), key);
-  };
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.keys.js":
-/*!******************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.object.keys.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// 19.1.2.14 Object.keys(O)
-var toObject = __webpack_require__(/*! ./_to-object */ "./node_modules/core-js/library/modules/_to-object.js");
-var $keys = __webpack_require__(/*! ./_object-keys */ "./node_modules/core-js/library/modules/_object-keys.js");
-
-__webpack_require__(/*! ./_object-sap */ "./node_modules/core-js/library/modules/_object-sap.js")('keys', function () {
-  return function keys(it) {
-    return $keys(toObject(it));
-  };
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.object.to-string.js":
-/*!***********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.object.to-string.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.promise.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.promise.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var LIBRARY = __webpack_require__(/*! ./_library */ "./node_modules/core-js/library/modules/_library.js");
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var ctx = __webpack_require__(/*! ./_ctx */ "./node_modules/core-js/library/modules/_ctx.js");
-var classof = __webpack_require__(/*! ./_classof */ "./node_modules/core-js/library/modules/_classof.js");
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var isObject = __webpack_require__(/*! ./_is-object */ "./node_modules/core-js/library/modules/_is-object.js");
-var aFunction = __webpack_require__(/*! ./_a-function */ "./node_modules/core-js/library/modules/_a-function.js");
-var anInstance = __webpack_require__(/*! ./_an-instance */ "./node_modules/core-js/library/modules/_an-instance.js");
-var forOf = __webpack_require__(/*! ./_for-of */ "./node_modules/core-js/library/modules/_for-of.js");
-var speciesConstructor = __webpack_require__(/*! ./_species-constructor */ "./node_modules/core-js/library/modules/_species-constructor.js");
-var task = __webpack_require__(/*! ./_task */ "./node_modules/core-js/library/modules/_task.js").set;
-var microtask = __webpack_require__(/*! ./_microtask */ "./node_modules/core-js/library/modules/_microtask.js")();
-var newPromiseCapabilityModule = __webpack_require__(/*! ./_new-promise-capability */ "./node_modules/core-js/library/modules/_new-promise-capability.js");
-var perform = __webpack_require__(/*! ./_perform */ "./node_modules/core-js/library/modules/_perform.js");
-var userAgent = __webpack_require__(/*! ./_user-agent */ "./node_modules/core-js/library/modules/_user-agent.js");
-var promiseResolve = __webpack_require__(/*! ./_promise-resolve */ "./node_modules/core-js/library/modules/_promise-resolve.js");
-var PROMISE = 'Promise';
-var TypeError = global.TypeError;
-var process = global.process;
-var versions = process && process.versions;
-var v8 = versions && versions.v8 || '';
-var $Promise = global[PROMISE];
-var isNode = classof(process) == 'process';
-var empty = function () { /* empty */ };
-var Internal, newGenericPromiseCapability, OwnPromiseCapability, Wrapper;
-var newPromiseCapability = newGenericPromiseCapability = newPromiseCapabilityModule.f;
-
-var USE_NATIVE = !!function () {
-  try {
-    // correct subclassing with @@species support
-    var promise = $Promise.resolve(1);
-    var FakePromise = (promise.constructor = {})[__webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('species')] = function (exec) {
-      exec(empty, empty);
-    };
-    // unhandled rejections tracking support, NodeJS Promise without it fails @@species test
-    return (isNode || typeof PromiseRejectionEvent == 'function')
-      && promise.then(empty) instanceof FakePromise
-      // v8 6.6 (Node 10 and Chrome 66) have a bug with resolving custom thenables
-      // https://bugs.chromium.org/p/chromium/issues/detail?id=830565
-      // we can't detect it synchronously, so just check versions
-      && v8.indexOf('6.6') !== 0
-      && userAgent.indexOf('Chrome/66') === -1;
-  } catch (e) { /* empty */ }
-}();
-
-// helpers
-var isThenable = function (it) {
-  var then;
-  return isObject(it) && typeof (then = it.then) == 'function' ? then : false;
-};
-var notify = function (promise, isReject) {
-  if (promise._n) return;
-  promise._n = true;
-  var chain = promise._c;
-  microtask(function () {
-    var value = promise._v;
-    var ok = promise._s == 1;
-    var i = 0;
-    var run = function (reaction) {
-      var handler = ok ? reaction.ok : reaction.fail;
-      var resolve = reaction.resolve;
-      var reject = reaction.reject;
-      var domain = reaction.domain;
-      var result, then, exited;
-      try {
-        if (handler) {
-          if (!ok) {
-            if (promise._h == 2) onHandleUnhandled(promise);
-            promise._h = 1;
-          }
-          if (handler === true) result = value;
-          else {
-            if (domain) domain.enter();
-            result = handler(value); // may throw
-            if (domain) {
-              domain.exit();
-              exited = true;
-            }
-          }
-          if (result === reaction.promise) {
-            reject(TypeError('Promise-chain cycle'));
-          } else if (then = isThenable(result)) {
-            then.call(result, resolve, reject);
-          } else resolve(result);
-        } else reject(value);
-      } catch (e) {
-        if (domain && !exited) domain.exit();
-        reject(e);
-      }
-    };
-    while (chain.length > i) run(chain[i++]); // variable length - can't use forEach
-    promise._c = [];
-    promise._n = false;
-    if (isReject && !promise._h) onUnhandled(promise);
-  });
-};
-var onUnhandled = function (promise) {
-  task.call(global, function () {
-    var value = promise._v;
-    var unhandled = isUnhandled(promise);
-    var result, handler, console;
-    if (unhandled) {
-      result = perform(function () {
-        if (isNode) {
-          process.emit('unhandledRejection', value, promise);
-        } else if (handler = global.onunhandledrejection) {
-          handler({ promise: promise, reason: value });
-        } else if ((console = global.console) && console.error) {
-          console.error('Unhandled promise rejection', value);
-        }
-      });
-      // Browsers should not trigger `rejectionHandled` event if it was handled here, NodeJS - should
-      promise._h = isNode || isUnhandled(promise) ? 2 : 1;
-    } promise._a = undefined;
-    if (unhandled && result.e) throw result.v;
-  });
-};
-var isUnhandled = function (promise) {
-  return promise._h !== 1 && (promise._a || promise._c).length === 0;
-};
-var onHandleUnhandled = function (promise) {
-  task.call(global, function () {
-    var handler;
-    if (isNode) {
-      process.emit('rejectionHandled', promise);
-    } else if (handler = global.onrejectionhandled) {
-      handler({ promise: promise, reason: promise._v });
-    }
-  });
-};
-var $reject = function (value) {
-  var promise = this;
-  if (promise._d) return;
-  promise._d = true;
-  promise = promise._w || promise; // unwrap
-  promise._v = value;
-  promise._s = 2;
-  if (!promise._a) promise._a = promise._c.slice();
-  notify(promise, true);
-};
-var $resolve = function (value) {
-  var promise = this;
-  var then;
-  if (promise._d) return;
-  promise._d = true;
-  promise = promise._w || promise; // unwrap
-  try {
-    if (promise === value) throw TypeError("Promise can't be resolved itself");
-    if (then = isThenable(value)) {
-      microtask(function () {
-        var wrapper = { _w: promise, _d: false }; // wrap
-        try {
-          then.call(value, ctx($resolve, wrapper, 1), ctx($reject, wrapper, 1));
-        } catch (e) {
-          $reject.call(wrapper, e);
-        }
-      });
-    } else {
-      promise._v = value;
-      promise._s = 1;
-      notify(promise, false);
-    }
-  } catch (e) {
-    $reject.call({ _w: promise, _d: false }, e); // wrap
-  }
-};
-
-// constructor polyfill
-if (!USE_NATIVE) {
-  // 25.4.3.1 Promise(executor)
-  $Promise = function Promise(executor) {
-    anInstance(this, $Promise, PROMISE, '_h');
-    aFunction(executor);
-    Internal.call(this);
-    try {
-      executor(ctx($resolve, this, 1), ctx($reject, this, 1));
-    } catch (err) {
-      $reject.call(this, err);
-    }
-  };
-  // eslint-disable-next-line no-unused-vars
-  Internal = function Promise(executor) {
-    this._c = [];             // <- awaiting reactions
-    this._a = undefined;      // <- checked in isUnhandled reactions
-    this._s = 0;              // <- state
-    this._d = false;          // <- done
-    this._v = undefined;      // <- value
-    this._h = 0;              // <- rejection state, 0 - default, 1 - handled, 2 - unhandled
-    this._n = false;          // <- notify
-  };
-  Internal.prototype = __webpack_require__(/*! ./_redefine-all */ "./node_modules/core-js/library/modules/_redefine-all.js")($Promise.prototype, {
-    // 25.4.5.3 Promise.prototype.then(onFulfilled, onRejected)
-    then: function then(onFulfilled, onRejected) {
-      var reaction = newPromiseCapability(speciesConstructor(this, $Promise));
-      reaction.ok = typeof onFulfilled == 'function' ? onFulfilled : true;
-      reaction.fail = typeof onRejected == 'function' && onRejected;
-      reaction.domain = isNode ? process.domain : undefined;
-      this._c.push(reaction);
-      if (this._a) this._a.push(reaction);
-      if (this._s) notify(this, false);
-      return reaction.promise;
-    },
-    // 25.4.5.1 Promise.prototype.catch(onRejected)
-    'catch': function (onRejected) {
-      return this.then(undefined, onRejected);
-    }
-  });
-  OwnPromiseCapability = function () {
-    var promise = new Internal();
-    this.promise = promise;
-    this.resolve = ctx($resolve, promise, 1);
-    this.reject = ctx($reject, promise, 1);
-  };
-  newPromiseCapabilityModule.f = newPromiseCapability = function (C) {
-    return C === $Promise || C === Wrapper
-      ? new OwnPromiseCapability(C)
-      : newGenericPromiseCapability(C);
-  };
-}
-
-$export($export.G + $export.W + $export.F * !USE_NATIVE, { Promise: $Promise });
-__webpack_require__(/*! ./_set-to-string-tag */ "./node_modules/core-js/library/modules/_set-to-string-tag.js")($Promise, PROMISE);
-__webpack_require__(/*! ./_set-species */ "./node_modules/core-js/library/modules/_set-species.js")(PROMISE);
-Wrapper = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js")[PROMISE];
-
-// statics
-$export($export.S + $export.F * !USE_NATIVE, PROMISE, {
-  // 25.4.4.5 Promise.reject(r)
-  reject: function reject(r) {
-    var capability = newPromiseCapability(this);
-    var $$reject = capability.reject;
-    $$reject(r);
-    return capability.promise;
-  }
-});
-$export($export.S + $export.F * (LIBRARY || !USE_NATIVE), PROMISE, {
-  // 25.4.4.6 Promise.resolve(x)
-  resolve: function resolve(x) {
-    return promiseResolve(LIBRARY && this === Wrapper ? $Promise : this, x);
-  }
-});
-$export($export.S + $export.F * !(USE_NATIVE && __webpack_require__(/*! ./_iter-detect */ "./node_modules/core-js/library/modules/_iter-detect.js")(function (iter) {
-  $Promise.all(iter)['catch'](empty);
-})), PROMISE, {
-  // 25.4.4.1 Promise.all(iterable)
-  all: function all(iterable) {
-    var C = this;
-    var capability = newPromiseCapability(C);
-    var resolve = capability.resolve;
-    var reject = capability.reject;
-    var result = perform(function () {
-      var values = [];
-      var index = 0;
-      var remaining = 1;
-      forOf(iterable, false, function (promise) {
-        var $index = index++;
-        var alreadyCalled = false;
-        values.push(undefined);
-        remaining++;
-        C.resolve(promise).then(function (value) {
-          if (alreadyCalled) return;
-          alreadyCalled = true;
-          values[$index] = value;
-          --remaining || resolve(values);
-        }, reject);
-      });
-      --remaining || resolve(values);
-    });
-    if (result.e) reject(result.v);
-    return capability.promise;
-  },
-  // 25.4.4.4 Promise.race(iterable)
-  race: function race(iterable) {
-    var C = this;
-    var capability = newPromiseCapability(C);
-    var reject = capability.reject;
-    var result = perform(function () {
-      forOf(iterable, false, function (promise) {
-        C.resolve(promise).then(capability.resolve, reject);
-      });
-    });
-    if (result.e) reject(result.v);
-    return capability.promise;
-  }
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es6.string.iterator.js":
-/*!**********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es6.string.iterator.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-var $at = __webpack_require__(/*! ./_string-at */ "./node_modules/core-js/library/modules/_string-at.js")(true);
-
-// 21.1.3.27 String.prototype[@@iterator]()
-__webpack_require__(/*! ./_iter-define */ "./node_modules/core-js/library/modules/_iter-define.js")(String, 'String', function (iterated) {
-  this._t = String(iterated); // target
-  this._i = 0;                // next index
-// 21.1.5.2.1 %StringIteratorPrototype%.next()
-}, function () {
-  var O = this._t;
-  var index = this._i;
-  var point;
-  if (index >= O.length) return { value: undefined, done: true };
-  point = $at(O, index);
-  this._i += point.length;
-  return { value: point, done: false };
-});
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.from.js":
-/*!***************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es7.map.from.js ***!
-  \***************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/proposal-setmap-offrom/#sec-map.from
-__webpack_require__(/*! ./_set-collection-from */ "./node_modules/core-js/library/modules/_set-collection-from.js")('Map');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.of.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es7.map.of.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://tc39.github.io/proposal-setmap-offrom/#sec-map.of
-__webpack_require__(/*! ./_set-collection-of */ "./node_modules/core-js/library/modules/_set-collection-of.js")('Map');
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.map.to-json.js":
-/*!******************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es7.map.to-json.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-// https://github.com/DavidBruant/Map-Set.prototype.toJSON
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-
-$export($export.P + $export.R, 'Map', { toJSON: __webpack_require__(/*! ./_collection-to-json */ "./node_modules/core-js/library/modules/_collection-to-json.js")('Map') });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.promise.finally.js":
-/*!**********************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es7.promise.finally.js ***!
-  \**********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-// https://github.com/tc39/proposal-promise-finally
-
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var core = __webpack_require__(/*! ./_core */ "./node_modules/core-js/library/modules/_core.js");
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var speciesConstructor = __webpack_require__(/*! ./_species-constructor */ "./node_modules/core-js/library/modules/_species-constructor.js");
-var promiseResolve = __webpack_require__(/*! ./_promise-resolve */ "./node_modules/core-js/library/modules/_promise-resolve.js");
-
-$export($export.P + $export.R, 'Promise', { 'finally': function (onFinally) {
-  var C = speciesConstructor(this, core.Promise || global.Promise);
-  var isFunction = typeof onFinally == 'function';
-  return this.then(
-    isFunction ? function (x) {
-      return promiseResolve(C, onFinally()).then(function () { return x; });
-    } : onFinally,
-    isFunction ? function (e) {
-      return promiseResolve(C, onFinally()).then(function () { throw e; });
-    } : onFinally
-  );
-} });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/es7.promise.try.js":
-/*!******************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/es7.promise.try.js ***!
-  \******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-// https://github.com/tc39/proposal-promise-try
-var $export = __webpack_require__(/*! ./_export */ "./node_modules/core-js/library/modules/_export.js");
-var newPromiseCapability = __webpack_require__(/*! ./_new-promise-capability */ "./node_modules/core-js/library/modules/_new-promise-capability.js");
-var perform = __webpack_require__(/*! ./_perform */ "./node_modules/core-js/library/modules/_perform.js");
-
-$export($export.S, 'Promise', { 'try': function (callbackfn) {
-  var promiseCapability = newPromiseCapability.f(this);
-  var result = perform(callbackfn);
-  (result.e ? promiseCapability.reject : promiseCapability.resolve)(result.v);
-  return promiseCapability.promise;
-} });
-
-
-/***/ }),
-
-/***/ "./node_modules/core-js/library/modules/web.dom.iterable.js":
-/*!*******************************************************************************!*\
-  !*** ../carponextjs/node_modules/core-js/library/modules/web.dom.iterable.js ***!
-  \*******************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ./es6.array.iterator */ "./node_modules/core-js/library/modules/es6.array.iterator.js");
-var global = __webpack_require__(/*! ./_global */ "./node_modules/core-js/library/modules/_global.js");
-var hide = __webpack_require__(/*! ./_hide */ "./node_modules/core-js/library/modules/_hide.js");
-var Iterators = __webpack_require__(/*! ./_iterators */ "./node_modules/core-js/library/modules/_iterators.js");
-var TO_STRING_TAG = __webpack_require__(/*! ./_wks */ "./node_modules/core-js/library/modules/_wks.js")('toStringTag');
-
-var DOMIterables = ('CSSRuleList,CSSStyleDeclaration,CSSValueList,ClientRectList,DOMRectList,DOMStringList,' +
-  'DOMTokenList,DataTransferItemList,FileList,HTMLAllCollection,HTMLCollection,HTMLFormElement,HTMLSelectElement,' +
-  'MediaList,MimeTypeArray,NamedNodeMap,NodeList,PaintRequestList,Plugin,PluginArray,SVGLengthList,SVGNumberList,' +
-  'SVGPathSegList,SVGPointList,SVGStringList,SVGTransformList,SourceBufferList,StyleSheetList,TextTrackCueList,' +
-  'TextTrackList,TouchList').split(',');
-
-for (var i = 0; i < DOMIterables.length; i++) {
-  var NAME = DOMIterables[i];
-  var Collection = global[NAME];
-  var proto = Collection && Collection.prototype;
-  if (proto && !proto[TO_STRING_TAG]) hide(proto, TO_STRING_TAG, NAME);
-  Iterators[NAME] = Iterators.Array;
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/define-properties/index.js":
-/*!**************************************************************!*\
-  !*** ../carponextjs/node_modules/define-properties/index.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var keys = __webpack_require__(/*! object-keys */ "./node_modules/object-keys/index.js");
-var hasSymbols = typeof Symbol === 'function' && typeof Symbol('foo') === 'symbol';
-
-var toStr = Object.prototype.toString;
-var concat = Array.prototype.concat;
-var origDefineProperty = Object.defineProperty;
-
-var isFunction = function (fn) {
-	return typeof fn === 'function' && toStr.call(fn) === '[object Function]';
-};
-
-var arePropertyDescriptorsSupported = function () {
-	var obj = {};
-	try {
-		origDefineProperty(obj, 'x', { enumerable: false, value: obj });
-		// eslint-disable-next-line no-unused-vars, no-restricted-syntax
-		for (var _ in obj) { // jscs:ignore disallowUnusedVariables
-			return false;
-		}
-		return obj.x === obj;
-	} catch (e) { /* this is IE 8. */
-		return false;
-	}
-};
-var supportsDescriptors = origDefineProperty && arePropertyDescriptorsSupported();
-
-var defineProperty = function (object, name, value, predicate) {
-	if (name in object && (!isFunction(predicate) || !predicate())) {
-		return;
-	}
-	if (supportsDescriptors) {
-		origDefineProperty(object, name, {
-			configurable: true,
-			enumerable: false,
-			value: value,
-			writable: true
-		});
-	} else {
-		object[name] = value;
-	}
-};
-
-var defineProperties = function (object, map) {
-	var predicates = arguments.length > 2 ? arguments[2] : {};
-	var props = keys(map);
-	if (hasSymbols) {
-		props = concat.call(props, Object.getOwnPropertySymbols(map));
-	}
-	for (var i = 0; i < props.length; i += 1) {
-		defineProperty(object, props[i], map[props[i]], predicates[props[i]]);
-	}
-};
-
-defineProperties.supportsDescriptors = !!supportsDescriptors;
-
-module.exports = defineProperties;
-
-
-/***/ }),
-
-/***/ "./node_modules/function-bind/implementation.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/function-bind/implementation.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/* eslint no-invalid-this: 1 */
-
-var ERROR_MESSAGE = 'Function.prototype.bind called on incompatible ';
-var slice = Array.prototype.slice;
-var toStr = Object.prototype.toString;
-var funcType = '[object Function]';
-
-module.exports = function bind(that) {
-    var target = this;
-    if (typeof target !== 'function' || toStr.call(target) !== funcType) {
-        throw new TypeError(ERROR_MESSAGE + target);
-    }
-    var args = slice.call(arguments, 1);
-
-    var bound;
-    var binder = function () {
-        if (this instanceof bound) {
-            var result = target.apply(
-                this,
-                args.concat(slice.call(arguments))
-            );
-            if (Object(result) === result) {
-                return result;
-            }
-            return this;
-        } else {
-            return target.apply(
-                that,
-                args.concat(slice.call(arguments))
-            );
-        }
-    };
-
-    var boundLength = Math.max(0, target.length - args.length);
-    var boundArgs = [];
-    for (var i = 0; i < boundLength; i++) {
-        boundArgs.push('$' + i);
-    }
-
-    bound = Function('binder', 'return function (' + boundArgs.join(',') + '){ return binder.apply(this,arguments); }')(binder);
-
-    if (target.prototype) {
-        var Empty = function Empty() {};
-        Empty.prototype = target.prototype;
-        bound.prototype = new Empty();
-        Empty.prototype = null;
-    }
-
-    return bound;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/function-bind/index.js":
-/*!**********************************************************!*\
-  !*** ../carponextjs/node_modules/function-bind/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var implementation = __webpack_require__(/*! ./implementation */ "./node_modules/function-bind/implementation.js");
-
-module.exports = Function.prototype.bind || implementation;
-
-
-/***/ }),
-
-/***/ "./node_modules/has-symbols/shams.js":
-/*!********************************************************!*\
-  !*** ../carponextjs/node_modules/has-symbols/shams.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-/* eslint complexity: [2, 17], max-statements: [2, 33] */
-module.exports = function hasSymbols() {
-	if (typeof Symbol !== 'function' || typeof Object.getOwnPropertySymbols !== 'function') { return false; }
-	if (typeof Symbol.iterator === 'symbol') { return true; }
-
-	var obj = {};
-	var sym = Symbol('test');
-	var symObj = Object(sym);
-	if (typeof sym === 'string') { return false; }
-
-	if (Object.prototype.toString.call(sym) !== '[object Symbol]') { return false; }
-	if (Object.prototype.toString.call(symObj) !== '[object Symbol]') { return false; }
-
-	// temp disabled per https://github.com/ljharb/object.assign/issues/17
-	// if (sym instanceof Symbol) { return false; }
-	// temp disabled per https://github.com/WebReflection/get-own-property-symbols/issues/4
-	// if (!(symObj instanceof Symbol)) { return false; }
-
-	// if (typeof Symbol.prototype.toString !== 'function') { return false; }
-	// if (String(sym) !== Symbol.prototype.toString.call(sym)) { return false; }
-
-	var symVal = 42;
-	obj[sym] = symVal;
-	for (sym in obj) { return false; } // eslint-disable-line no-restricted-syntax
-	if (typeof Object.keys === 'function' && Object.keys(obj).length !== 0) { return false; }
-
-	if (typeof Object.getOwnPropertyNames === 'function' && Object.getOwnPropertyNames(obj).length !== 0) { return false; }
-
-	var syms = Object.getOwnPropertySymbols(obj);
-	if (syms.length !== 1 || syms[0] !== sym) { return false; }
-
-	if (!Object.prototype.propertyIsEnumerable.call(obj, sym)) { return false; }
-
-	if (typeof Object.getOwnPropertyDescriptor === 'function') {
-		var descriptor = Object.getOwnPropertyDescriptor(obj, sym);
-		if (descriptor.value !== symVal || descriptor.enumerable !== true) { return false; }
-	}
-
-	return true;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/has/src/index.js":
-/*!****************************************************!*\
-  !*** ../carponextjs/node_modules/has/src/index.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var bind = __webpack_require__(/*! function-bind */ "./node_modules/function-bind/index.js");
-
-module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
-
-
-/***/ }),
-
 /***/ "./node_modules/next/dist/client/link.js":
-/*!************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/client/link.js ***!
-  \************************************************************/
+/*!***********************************************!*\
+  !*** ./node_modules/next/dist/client/link.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4231,9 +1115,9 @@ var _map = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2
 
 var _url = __webpack_require__(/*! url */ "url");
 
-var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var _react = _interopRequireWildcard(__webpack_require__(/*! react */ "react"));
 
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "prop-types"));
 
 var _router = _interopRequireDefault(__webpack_require__(/*! ./router */ "./node_modules/next/dist/client/router.js"));
 
@@ -4490,7 +1374,7 @@ Link.propTypes = void 0;
 if (true) {
   const warn = (0, _utils.execOnce)(console.error); // This module gets removed by webpack.IgnorePlugin
 
-  const exact = __webpack_require__(/*! prop-types-exact */ "./node_modules/prop-types-exact/build/index.js");
+  const exact = __webpack_require__(/*! prop-types-exact */ "prop-types-exact");
 
   Link.propTypes = exact({
     href: _propTypes.default.oneOfType([_propTypes.default.string, _propTypes.default.object]).isRequired,
@@ -4518,9 +1402,9 @@ exports.default = _default;
 /***/ }),
 
 /***/ "./node_modules/next/dist/client/router.js":
-/*!**************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/client/router.js ***!
-  \**************************************************************/
+/*!*************************************************!*\
+  !*** ./node_modules/next/dist/client/router.js ***!
+  \*************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4538,9 +1422,9 @@ exports.createRouter = exports.withRouter = exports.default = void 0;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "./node_modules/@babel/runtime-corejs2/helpers/extends.js"));
 
-var _defineProperty = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8"));
+var _defineProperty = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js"));
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
 var _router2 = _interopRequireWildcard(__webpack_require__(/*! ../next-server/lib/router/router */ "./node_modules/next/dist/next-server/lib/router/router.js"));
 
@@ -4684,9 +1568,9 @@ function makePublicRouterInstance(router) {
 /***/ }),
 
 /***/ "./node_modules/next/dist/client/with-router.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/client/with-router.js ***!
-  \*******************************************************************/
+/*!******************************************************!*\
+  !*** ./node_modules/next/dist/client/with-router.js ***!
+  \******************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4700,9 +1584,9 @@ exports.default = withRouter;
 
 var _extends2 = _interopRequireDefault(__webpack_require__(/*! @babel/runtime-corejs2/helpers/extends */ "./node_modules/@babel/runtime-corejs2/helpers/extends.js"));
 
-var _react = _interopRequireDefault(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+var _react = _interopRequireDefault(__webpack_require__(/*! react */ "react"));
 
-var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js"));
+var _propTypes = _interopRequireDefault(__webpack_require__(/*! prop-types */ "prop-types"));
 
 function withRouter(ComposedComponent) {
   class WithRouteWrapper extends _react.default.Component {
@@ -4739,9 +1623,9 @@ function withRouter(ComposedComponent) {
 /***/ }),
 
 /***/ "./node_modules/next/dist/next-server/lib/mitt.js":
-/*!*********************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/next-server/lib/mitt.js ***!
-  \*********************************************************************/
+/*!********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/mitt.js ***!
+  \********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4761,7 +1645,7 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 
 var _Object$create = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/create */ "./node_modules/@babel/runtime-corejs2/core-js/object/create.js");
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 _Object$defineProperty(exports, "__esModule", {
   value: true
@@ -4798,16 +1682,16 @@ exports.default = mitt;
 /***/ }),
 
 /***/ "./node_modules/next/dist/next-server/lib/router-context.js":
-/*!*******************************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/next-server/lib/router-context.js ***!
-  \*******************************************************************************/
+/*!******************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router-context.js ***!
+  \******************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 var __importStar = this && this.__importStar || function (mod) {
   if (mod && mod.__esModule) return mod;
@@ -4821,23 +1705,23 @@ _Object$defineProperty(exports, "__esModule", {
   value: true
 });
 
-const React = __importStar(__webpack_require__(/*! react */ "./node_modules/react/index.js"));
+const React = __importStar(__webpack_require__(/*! react */ "react"));
 
 exports.RouterContext = React.createContext(null);
 
 /***/ }),
 
 /***/ "./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js":
-/*!**********************************************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js ***!
-  \**********************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/rewrite-url-for-export.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 _Object$defineProperty(exports, "__esModule", {
   value: true
@@ -4860,9 +1744,9 @@ exports.rewriteUrlForNextExport = rewriteUrlForNextExport;
 /***/ }),
 
 /***/ "./node_modules/next/dist/next-server/lib/router/router.js":
-/*!******************************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/next-server/lib/router/router.js ***!
-  \******************************************************************************/
+/*!*****************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/router.js ***!
+  \*****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -4873,7 +1757,7 @@ var _Promise = __webpack_require__(/*! @babel/runtime-corejs2/core-js/promise */
 
 var _Object$assign = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/assign */ "./node_modules/@babel/runtime-corejs2/core-js/object/assign.js");
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 var __importDefault = this && this.__importDefault || function (mod) {
   return mod && mod.__esModule ? mod : {
@@ -5221,7 +2105,7 @@ class Router {
       if (true) {
         const {
           isValidElementType
-        } = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+        } = __webpack_require__(/*! react-is */ "react-is");
 
         if (!isValidElementType(Component)) {
           throw new Error(`The default export is not a React Component in page: "${pathname}"`);
@@ -5487,16 +2371,16 @@ exports.default = Router;
 /***/ }),
 
 /***/ "./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js":
-/*!****************************************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js ***!
-  \****************************************************************************************/
+/*!***************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/is-dynamic.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 _Object$defineProperty(exports, "__esModule", {
   value: true
@@ -5514,18 +2398,18 @@ exports.isDynamicRoute = isDynamicRoute;
 /***/ }),
 
 /***/ "./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js":
-/*!*******************************************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/next-server/lib/router/utils/route-matcher.js ***!
-  \*******************************************************************************************/
+/*!******************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/route-matcher.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Object$keys = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js?6c41");
+var _Object$keys = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 _Object$defineProperty(exports, "__esModule", {
   value: true
@@ -5562,16 +2446,16 @@ exports.getRouteMatcher = getRouteMatcher;
 /***/ }),
 
 /***/ "./node_modules/next/dist/next-server/lib/router/utils/route-regex.js":
-/*!*****************************************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/next-server/lib/router/utils/route-regex.js ***!
-  \*****************************************************************************************/
+/*!****************************************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/router/utils/route-regex.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 _Object$defineProperty(exports, "__esModule", {
   value: true
@@ -5595,18 +2479,18 @@ exports.getRouteRegex = getRouteRegex;
 /***/ }),
 
 /***/ "./node_modules/next/dist/next-server/lib/utils.js":
-/*!**********************************************************************!*\
-  !*** ../carponextjs/node_modules/next/dist/next-server/lib/utils.js ***!
-  \**********************************************************************/
+/*!*********************************************************!*\
+  !*** ./node_modules/next/dist/next-server/lib/utils.js ***!
+  \*********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 
 
-var _Object$keys = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js?6c41");
+var _Object$keys = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
 
-var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js?ecd8");
+var _Object$defineProperty = __webpack_require__(/*! @babel/runtime-corejs2/core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
 
 _Object$defineProperty(exports, "__esModule", {
   value: true
@@ -5722,3952 +2606,13 @@ exports.SUPPORTS_PERFORMANCE_USER_TIMING = exports.SUPPORTS_PERFORMANCE && typeo
 /***/ }),
 
 /***/ "./node_modules/next/link.js":
-/*!************************************************!*\
-  !*** ../carponextjs/node_modules/next/link.js ***!
-  \************************************************/
+/*!***********************************!*\
+  !*** ./node_modules/next/link.js ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/next/dist/client/link.js")
-
-
-/***/ }),
-
-/***/ "./node_modules/object-assign/index.js":
-/*!**********************************************************!*\
-  !*** ../carponextjs/node_modules/object-assign/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/*
-object-assign
-(c) Sindre Sorhus
-@license MIT
-*/
-
-
-/* eslint-disable no-unused-vars */
-var getOwnPropertySymbols = Object.getOwnPropertySymbols;
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var propIsEnumerable = Object.prototype.propertyIsEnumerable;
-
-function toObject(val) {
-	if (val === null || val === undefined) {
-		throw new TypeError('Object.assign cannot be called with null or undefined');
-	}
-
-	return Object(val);
-}
-
-function shouldUseNative() {
-	try {
-		if (!Object.assign) {
-			return false;
-		}
-
-		// Detect buggy property enumeration order in older V8 versions.
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=4118
-		var test1 = new String('abc');  // eslint-disable-line no-new-wrappers
-		test1[5] = 'de';
-		if (Object.getOwnPropertyNames(test1)[0] === '5') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test2 = {};
-		for (var i = 0; i < 10; i++) {
-			test2['_' + String.fromCharCode(i)] = i;
-		}
-		var order2 = Object.getOwnPropertyNames(test2).map(function (n) {
-			return test2[n];
-		});
-		if (order2.join('') !== '0123456789') {
-			return false;
-		}
-
-		// https://bugs.chromium.org/p/v8/issues/detail?id=3056
-		var test3 = {};
-		'abcdefghijklmnopqrst'.split('').forEach(function (letter) {
-			test3[letter] = letter;
-		});
-		if (Object.keys(Object.assign({}, test3)).join('') !==
-				'abcdefghijklmnopqrst') {
-			return false;
-		}
-
-		return true;
-	} catch (err) {
-		// We don't expect any of the above to throw, but better to be safe.
-		return false;
-	}
-}
-
-module.exports = shouldUseNative() ? Object.assign : function (target, source) {
-	var from;
-	var to = toObject(target);
-	var symbols;
-
-	for (var s = 1; s < arguments.length; s++) {
-		from = Object(arguments[s]);
-
-		for (var key in from) {
-			if (hasOwnProperty.call(from, key)) {
-				to[key] = from[key];
-			}
-		}
-
-		if (getOwnPropertySymbols) {
-			symbols = getOwnPropertySymbols(from);
-			for (var i = 0; i < symbols.length; i++) {
-				if (propIsEnumerable.call(from, symbols[i])) {
-					to[symbols[i]] = from[symbols[i]];
-				}
-			}
-		}
-	}
-
-	return to;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/object-keys/implementation.js":
-/*!*****************************************************************!*\
-  !*** ../carponextjs/node_modules/object-keys/implementation.js ***!
-  \*****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var keysShim;
-if (!Object.keys) {
-	// modified from https://github.com/es-shims/es5-shim
-	var has = Object.prototype.hasOwnProperty;
-	var toStr = Object.prototype.toString;
-	var isArgs = __webpack_require__(/*! ./isArguments */ "./node_modules/object-keys/isArguments.js"); // eslint-disable-line global-require
-	var isEnumerable = Object.prototype.propertyIsEnumerable;
-	var hasDontEnumBug = !isEnumerable.call({ toString: null }, 'toString');
-	var hasProtoEnumBug = isEnumerable.call(function () {}, 'prototype');
-	var dontEnums = [
-		'toString',
-		'toLocaleString',
-		'valueOf',
-		'hasOwnProperty',
-		'isPrototypeOf',
-		'propertyIsEnumerable',
-		'constructor'
-	];
-	var equalsConstructorPrototype = function (o) {
-		var ctor = o.constructor;
-		return ctor && ctor.prototype === o;
-	};
-	var excludedKeys = {
-		$applicationCache: true,
-		$console: true,
-		$external: true,
-		$frame: true,
-		$frameElement: true,
-		$frames: true,
-		$innerHeight: true,
-		$innerWidth: true,
-		$onmozfullscreenchange: true,
-		$onmozfullscreenerror: true,
-		$outerHeight: true,
-		$outerWidth: true,
-		$pageXOffset: true,
-		$pageYOffset: true,
-		$parent: true,
-		$scrollLeft: true,
-		$scrollTop: true,
-		$scrollX: true,
-		$scrollY: true,
-		$self: true,
-		$webkitIndexedDB: true,
-		$webkitStorageInfo: true,
-		$window: true
-	};
-	var hasAutomationEqualityBug = (function () {
-		/* global window */
-		if (typeof window === 'undefined') { return false; }
-		for (var k in window) {
-			try {
-				if (!excludedKeys['$' + k] && has.call(window, k) && window[k] !== null && typeof window[k] === 'object') {
-					try {
-						equalsConstructorPrototype(window[k]);
-					} catch (e) {
-						return true;
-					}
-				}
-			} catch (e) {
-				return true;
-			}
-		}
-		return false;
-	}());
-	var equalsConstructorPrototypeIfNotBuggy = function (o) {
-		/* global window */
-		if (typeof window === 'undefined' || !hasAutomationEqualityBug) {
-			return equalsConstructorPrototype(o);
-		}
-		try {
-			return equalsConstructorPrototype(o);
-		} catch (e) {
-			return false;
-		}
-	};
-
-	keysShim = function keys(object) {
-		var isObject = object !== null && typeof object === 'object';
-		var isFunction = toStr.call(object) === '[object Function]';
-		var isArguments = isArgs(object);
-		var isString = isObject && toStr.call(object) === '[object String]';
-		var theKeys = [];
-
-		if (!isObject && !isFunction && !isArguments) {
-			throw new TypeError('Object.keys called on a non-object');
-		}
-
-		var skipProto = hasProtoEnumBug && isFunction;
-		if (isString && object.length > 0 && !has.call(object, 0)) {
-			for (var i = 0; i < object.length; ++i) {
-				theKeys.push(String(i));
-			}
-		}
-
-		if (isArguments && object.length > 0) {
-			for (var j = 0; j < object.length; ++j) {
-				theKeys.push(String(j));
-			}
-		} else {
-			for (var name in object) {
-				if (!(skipProto && name === 'prototype') && has.call(object, name)) {
-					theKeys.push(String(name));
-				}
-			}
-		}
-
-		if (hasDontEnumBug) {
-			var skipConstructor = equalsConstructorPrototypeIfNotBuggy(object);
-
-			for (var k = 0; k < dontEnums.length; ++k) {
-				if (!(skipConstructor && dontEnums[k] === 'constructor') && has.call(object, dontEnums[k])) {
-					theKeys.push(dontEnums[k]);
-				}
-			}
-		}
-		return theKeys;
-	};
-}
-module.exports = keysShim;
-
-
-/***/ }),
-
-/***/ "./node_modules/object-keys/index.js":
-/*!********************************************************!*\
-  !*** ../carponextjs/node_modules/object-keys/index.js ***!
-  \********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var slice = Array.prototype.slice;
-var isArgs = __webpack_require__(/*! ./isArguments */ "./node_modules/object-keys/isArguments.js");
-
-var origKeys = Object.keys;
-var keysShim = origKeys ? function keys(o) { return origKeys(o); } : __webpack_require__(/*! ./implementation */ "./node_modules/object-keys/implementation.js");
-
-var originalKeys = Object.keys;
-
-keysShim.shim = function shimObjectKeys() {
-	if (Object.keys) {
-		var keysWorksWithArguments = (function () {
-			// Safari 5.0 bug
-			var args = Object.keys(arguments);
-			return args && args.length === arguments.length;
-		}(1, 2));
-		if (!keysWorksWithArguments) {
-			Object.keys = function keys(object) { // eslint-disable-line func-name-matching
-				if (isArgs(object)) {
-					return originalKeys(slice.call(object));
-				}
-				return originalKeys(object);
-			};
-		}
-	} else {
-		Object.keys = keysShim;
-	}
-	return Object.keys || keysShim;
-};
-
-module.exports = keysShim;
-
-
-/***/ }),
-
-/***/ "./node_modules/object-keys/isArguments.js":
-/*!**************************************************************!*\
-  !*** ../carponextjs/node_modules/object-keys/isArguments.js ***!
-  \**************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var toStr = Object.prototype.toString;
-
-module.exports = function isArguments(value) {
-	var str = toStr.call(value);
-	var isArgs = str === '[object Arguments]';
-	if (!isArgs) {
-		isArgs = str !== '[object Array]' &&
-			value !== null &&
-			typeof value === 'object' &&
-			typeof value.length === 'number' &&
-			value.length >= 0 &&
-			toStr.call(value.callee) === '[object Function]';
-	}
-	return isArgs;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/object.assign/implementation.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/object.assign/implementation.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-// modified from https://github.com/es-shims/es6-shim
-var keys = __webpack_require__(/*! object-keys */ "./node_modules/object-keys/index.js");
-var bind = __webpack_require__(/*! function-bind */ "./node_modules/function-bind/index.js");
-var canBeObject = function (obj) {
-	return typeof obj !== 'undefined' && obj !== null;
-};
-var hasSymbols = __webpack_require__(/*! has-symbols/shams */ "./node_modules/has-symbols/shams.js")();
-var toObject = Object;
-var push = bind.call(Function.call, Array.prototype.push);
-var propIsEnumerable = bind.call(Function.call, Object.prototype.propertyIsEnumerable);
-var originalGetSymbols = hasSymbols ? Object.getOwnPropertySymbols : null;
-
-module.exports = function assign(target, source1) {
-	if (!canBeObject(target)) { throw new TypeError('target must be an object'); }
-	var objTarget = toObject(target);
-	var s, source, i, props, syms, value, key;
-	for (s = 1; s < arguments.length; ++s) {
-		source = toObject(arguments[s]);
-		props = keys(source);
-		var getSymbols = hasSymbols && (Object.getOwnPropertySymbols || originalGetSymbols);
-		if (getSymbols) {
-			syms = getSymbols(source);
-			for (i = 0; i < syms.length; ++i) {
-				key = syms[i];
-				if (propIsEnumerable(source, key)) {
-					push(props, key);
-				}
-			}
-		}
-		for (i = 0; i < props.length; ++i) {
-			key = props[i];
-			value = source[key];
-			if (propIsEnumerable(source, key)) {
-				objTarget[key] = value;
-			}
-		}
-	}
-	return objTarget;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/object.assign/index.js":
-/*!**********************************************************!*\
-  !*** ../carponextjs/node_modules/object.assign/index.js ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var defineProperties = __webpack_require__(/*! define-properties */ "./node_modules/define-properties/index.js");
-
-var implementation = __webpack_require__(/*! ./implementation */ "./node_modules/object.assign/implementation.js");
-var getPolyfill = __webpack_require__(/*! ./polyfill */ "./node_modules/object.assign/polyfill.js");
-var shim = __webpack_require__(/*! ./shim */ "./node_modules/object.assign/shim.js");
-
-var polyfill = getPolyfill();
-
-defineProperties(polyfill, {
-	getPolyfill: getPolyfill,
-	implementation: implementation,
-	shim: shim
-});
-
-module.exports = polyfill;
-
-
-/***/ }),
-
-/***/ "./node_modules/object.assign/polyfill.js":
-/*!*************************************************************!*\
-  !*** ../carponextjs/node_modules/object.assign/polyfill.js ***!
-  \*************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var implementation = __webpack_require__(/*! ./implementation */ "./node_modules/object.assign/implementation.js");
-
-var lacksProperEnumerationOrder = function () {
-	if (!Object.assign) {
-		return false;
-	}
-	// v8, specifically in node 4.x, has a bug with incorrect property enumeration order
-	// note: this does not detect the bug unless there's 20 characters
-	var str = 'abcdefghijklmnopqrst';
-	var letters = str.split('');
-	var map = {};
-	for (var i = 0; i < letters.length; ++i) {
-		map[letters[i]] = letters[i];
-	}
-	var obj = Object.assign({}, map);
-	var actual = '';
-	for (var k in obj) {
-		actual += k;
-	}
-	return str !== actual;
-};
-
-var assignHasPendingExceptions = function () {
-	if (!Object.assign || !Object.preventExtensions) {
-		return false;
-	}
-	// Firefox 37 still has "pending exception" logic in its Object.assign implementation,
-	// which is 72% slower than our shim, and Firefox 40's native implementation.
-	var thrower = Object.preventExtensions({ 1: 2 });
-	try {
-		Object.assign(thrower, 'xy');
-	} catch (e) {
-		return thrower[1] === 'y';
-	}
-	return false;
-};
-
-module.exports = function getPolyfill() {
-	if (!Object.assign) {
-		return implementation;
-	}
-	if (lacksProperEnumerationOrder()) {
-		return implementation;
-	}
-	if (assignHasPendingExceptions()) {
-		return implementation;
-	}
-	return Object.assign;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/object.assign/shim.js":
-/*!*********************************************************!*\
-  !*** ../carponextjs/node_modules/object.assign/shim.js ***!
-  \*********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-var define = __webpack_require__(/*! define-properties */ "./node_modules/define-properties/index.js");
-var getPolyfill = __webpack_require__(/*! ./polyfill */ "./node_modules/object.assign/polyfill.js");
-
-module.exports = function shimAssign() {
-	var polyfill = getPolyfill();
-	define(
-		Object,
-		{ assign: polyfill },
-		{ assign: function () { return Object.assign !== polyfill; } }
-	);
-	return polyfill;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types-exact/build/helpers/isPlainObject.js":
-/*!***********************************************************************************!*\
-  !*** ../carponextjs/node_modules/prop-types-exact/build/helpers/isPlainObject.js ***!
-  \***********************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-exports['default'] = isPlainObject;
-function isPlainObject(x) {
-  return x && (typeof x === 'undefined' ? 'undefined' : _typeof(x)) === 'object' && !Array.isArray(x);
-}
-module.exports = exports['default'];
-//# sourceMappingURL=isPlainObject.js.map
-
-/***/ }),
-
-/***/ "./node_modules/prop-types-exact/build/index.js":
-/*!*******************************************************************!*\
-  !*** ../carponextjs/node_modules/prop-types-exact/build/index.js ***!
-  \*******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports['default'] = forbidExtraProps;
-
-var _object = __webpack_require__(/*! object.assign */ "./node_modules/object.assign/index.js");
-
-var _object2 = _interopRequireDefault(_object);
-
-var _has = __webpack_require__(/*! has */ "./node_modules/has/src/index.js");
-
-var _has2 = _interopRequireDefault(_has);
-
-var _isPlainObject = __webpack_require__(/*! ./helpers/isPlainObject */ "./node_modules/prop-types-exact/build/helpers/isPlainObject.js");
-
-var _isPlainObject2 = _interopRequireDefault(_isPlainObject);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
-
-function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
-
-var zeroWidthSpace = '\u200B';
-var specialProperty = 'prop-types-exact: ' + zeroWidthSpace;
-var semaphore = typeof Symbol === 'function' && typeof Symbol['for'] === 'function' ? Symbol['for'](specialProperty) : /* istanbul ignore next */specialProperty;
-
-function brand(fn) {
-  return (0, _object2['default'])(fn, _defineProperty({}, specialProperty, semaphore));
-}
-
-function isBranded(value) {
-  return value && value[specialProperty] === semaphore;
-}
-
-function forbidExtraProps(propTypes) {
-  if (!(0, _isPlainObject2['default'])(propTypes)) {
-    throw new TypeError('given propTypes must be an object');
-  }
-  if ((0, _has2['default'])(propTypes, specialProperty) && !isBranded(propTypes[specialProperty])) {
-    throw new TypeError('Against all odds, you created a propType for a prop that uses both the zero-width space and our custom string - which, sadly, conflicts with `prop-types-exact`');
-  }
-
-  return (0, _object2['default'])({}, propTypes, _defineProperty({}, specialProperty, brand(function () {
-    function forbidUnknownProps(props, _, componentName) {
-      var unknownProps = Object.keys(props).filter(function (prop) {
-        return !(0, _has2['default'])(propTypes, prop);
-      });
-      if (unknownProps.length > 0) {
-        return new TypeError(String(componentName) + ': unknown props found: ' + String(unknownProps.join(', ')));
-      }
-      return null;
-    }
-
-    return forbidUnknownProps;
-  }())));
-}
-module.exports = exports['default'];
-//# sourceMappingURL=index.js.map
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/checkPropTypes.js":
-/*!****************************************************************!*\
-  !*** ../carponextjs/node_modules/prop-types/checkPropTypes.js ***!
-  \****************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var printWarning = function() {};
-
-if (true) {
-  var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
-  var loggedTypeFailures = {};
-  var has = Function.call.bind(Object.prototype.hasOwnProperty);
-
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-/**
- * Assert that the values match with the type specs.
- * Error messages are memorized and will only be shown once.
- *
- * @param {object} typeSpecs Map of name to a ReactPropType
- * @param {object} values Runtime values that need to be type-checked
- * @param {string} location e.g. "prop", "context", "child context"
- * @param {string} componentName Name of the component for error messages.
- * @param {?Function} getStack Returns the component stack.
- * @private
- */
-function checkPropTypes(typeSpecs, values, location, componentName, getStack) {
-  if (true) {
-    for (var typeSpecName in typeSpecs) {
-      if (has(typeSpecs, typeSpecName)) {
-        var error;
-        // Prop type validation may throw. In case they do, we don't want to
-        // fail the render phase where it didn't fail before. So we log it.
-        // After these have been cleaned up, we'll let them throw.
-        try {
-          // This is intentionally an invariant that gets caught. It's the same
-          // behavior as without this statement except with a better message.
-          if (typeof typeSpecs[typeSpecName] !== 'function') {
-            var err = Error(
-              (componentName || 'React class') + ': ' + location + ' type `' + typeSpecName + '` is invalid; ' +
-              'it must be a function, usually from the `prop-types` package, but received `' + typeof typeSpecs[typeSpecName] + '`.'
-            );
-            err.name = 'Invariant Violation';
-            throw err;
-          }
-          error = typeSpecs[typeSpecName](values, typeSpecName, componentName, location, null, ReactPropTypesSecret);
-        } catch (ex) {
-          error = ex;
-        }
-        if (error && !(error instanceof Error)) {
-          printWarning(
-            (componentName || 'React class') + ': type specification of ' +
-            location + ' `' + typeSpecName + '` is invalid; the type checker ' +
-            'function must return `null` or an `Error` but returned a ' + typeof error + '. ' +
-            'You may have forgotten to pass an argument to the type checker ' +
-            'creator (arrayOf, instanceOf, objectOf, oneOf, oneOfType, and ' +
-            'shape all require an argument).'
-          );
-        }
-        if (error instanceof Error && !(error.message in loggedTypeFailures)) {
-          // Only monitor this failure once because there tends to be a lot of the
-          // same error.
-          loggedTypeFailures[error.message] = true;
-
-          var stack = getStack ? getStack() : '';
-
-          printWarning(
-            'Failed ' + location + ' type: ' + error.message + (stack != null ? stack : '')
-          );
-        }
-      }
-    }
-  }
-}
-
-/**
- * Resets warning cache when testing.
- *
- * @private
- */
-checkPropTypes.resetWarningCache = function() {
-  if (true) {
-    loggedTypeFailures = {};
-  }
-}
-
-module.exports = checkPropTypes;
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/factoryWithTypeCheckers.js":
-/*!*************************************************************************!*\
-  !*** ../carponextjs/node_modules/prop-types/factoryWithTypeCheckers.js ***!
-  \*************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-var assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-
-var ReactPropTypesSecret = __webpack_require__(/*! ./lib/ReactPropTypesSecret */ "./node_modules/prop-types/lib/ReactPropTypesSecret.js");
-var checkPropTypes = __webpack_require__(/*! ./checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
-
-var has = Function.call.bind(Object.prototype.hasOwnProperty);
-var printWarning = function() {};
-
-if (true) {
-  printWarning = function(text) {
-    var message = 'Warning: ' + text;
-    if (typeof console !== 'undefined') {
-      console.error(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-function emptyFunctionThatReturnsNull() {
-  return null;
-}
-
-module.exports = function(isValidElement, throwOnDirectAccess) {
-  /* global Symbol */
-  var ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-  var FAUX_ITERATOR_SYMBOL = '@@iterator'; // Before Symbol spec.
-
-  /**
-   * Returns the iterator method function contained on the iterable object.
-   *
-   * Be sure to invoke the function with the iterable as context:
-   *
-   *     var iteratorFn = getIteratorFn(myIterable);
-   *     if (iteratorFn) {
-   *       var iterator = iteratorFn.call(myIterable);
-   *       ...
-   *     }
-   *
-   * @param {?object} maybeIterable
-   * @return {?function}
-   */
-  function getIteratorFn(maybeIterable) {
-    var iteratorFn = maybeIterable && (ITERATOR_SYMBOL && maybeIterable[ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL]);
-    if (typeof iteratorFn === 'function') {
-      return iteratorFn;
-    }
-  }
-
-  /**
-   * Collection of methods that allow declaration and validation of props that are
-   * supplied to React components. Example usage:
-   *
-   *   var Props = require('ReactPropTypes');
-   *   var MyArticle = React.createClass({
-   *     propTypes: {
-   *       // An optional string prop named "description".
-   *       description: Props.string,
-   *
-   *       // A required enum prop named "category".
-   *       category: Props.oneOf(['News','Photos']).isRequired,
-   *
-   *       // A prop named "dialog" that requires an instance of Dialog.
-   *       dialog: Props.instanceOf(Dialog).isRequired
-   *     },
-   *     render: function() { ... }
-   *   });
-   *
-   * A more formal specification of how these methods are used:
-   *
-   *   type := array|bool|func|object|number|string|oneOf([...])|instanceOf(...)
-   *   decl := ReactPropTypes.{type}(.isRequired)?
-   *
-   * Each and every declaration produces a function with the same signature. This
-   * allows the creation of custom validation functions. For example:
-   *
-   *  var MyLink = React.createClass({
-   *    propTypes: {
-   *      // An optional string or URI prop named "href".
-   *      href: function(props, propName, componentName) {
-   *        var propValue = props[propName];
-   *        if (propValue != null && typeof propValue !== 'string' &&
-   *            !(propValue instanceof URI)) {
-   *          return new Error(
-   *            'Expected a string or an URI for ' + propName + ' in ' +
-   *            componentName
-   *          );
-   *        }
-   *      }
-   *    },
-   *    render: function() {...}
-   *  });
-   *
-   * @internal
-   */
-
-  var ANONYMOUS = '<<anonymous>>';
-
-  // Important!
-  // Keep this list in sync with production version in `./factoryWithThrowingShims.js`.
-  var ReactPropTypes = {
-    array: createPrimitiveTypeChecker('array'),
-    bool: createPrimitiveTypeChecker('boolean'),
-    func: createPrimitiveTypeChecker('function'),
-    number: createPrimitiveTypeChecker('number'),
-    object: createPrimitiveTypeChecker('object'),
-    string: createPrimitiveTypeChecker('string'),
-    symbol: createPrimitiveTypeChecker('symbol'),
-
-    any: createAnyTypeChecker(),
-    arrayOf: createArrayOfTypeChecker,
-    element: createElementTypeChecker(),
-    elementType: createElementTypeTypeChecker(),
-    instanceOf: createInstanceTypeChecker,
-    node: createNodeChecker(),
-    objectOf: createObjectOfTypeChecker,
-    oneOf: createEnumTypeChecker,
-    oneOfType: createUnionTypeChecker,
-    shape: createShapeTypeChecker,
-    exact: createStrictShapeTypeChecker,
-  };
-
-  /**
-   * inlined Object.is polyfill to avoid requiring consumers ship their own
-   * https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is
-   */
-  /*eslint-disable no-self-compare*/
-  function is(x, y) {
-    // SameValue algorithm
-    if (x === y) {
-      // Steps 1-5, 7-10
-      // Steps 6.b-6.e: +0 != -0
-      return x !== 0 || 1 / x === 1 / y;
-    } else {
-      // Step 6.a: NaN == NaN
-      return x !== x && y !== y;
-    }
-  }
-  /*eslint-enable no-self-compare*/
-
-  /**
-   * We use an Error-like object for backward compatibility as people may call
-   * PropTypes directly and inspect their output. However, we don't use real
-   * Errors anymore. We don't inspect their stack anyway, and creating them
-   * is prohibitively expensive if they are created too often, such as what
-   * happens in oneOfType() for any type before the one that matched.
-   */
-  function PropTypeError(message) {
-    this.message = message;
-    this.stack = '';
-  }
-  // Make `instanceof Error` still work for returned errors.
-  PropTypeError.prototype = Error.prototype;
-
-  function createChainableTypeChecker(validate) {
-    if (true) {
-      var manualPropTypeCallCache = {};
-      var manualPropTypeWarningCount = 0;
-    }
-    function checkType(isRequired, props, propName, componentName, location, propFullName, secret) {
-      componentName = componentName || ANONYMOUS;
-      propFullName = propFullName || propName;
-
-      if (secret !== ReactPropTypesSecret) {
-        if (throwOnDirectAccess) {
-          // New behavior only for users of `prop-types` package
-          var err = new Error(
-            'Calling PropTypes validators directly is not supported by the `prop-types` package. ' +
-            'Use `PropTypes.checkPropTypes()` to call them. ' +
-            'Read more at http://fb.me/use-check-prop-types'
-          );
-          err.name = 'Invariant Violation';
-          throw err;
-        } else if ( true && typeof console !== 'undefined') {
-          // Old behavior for people using React.PropTypes
-          var cacheKey = componentName + ':' + propName;
-          if (
-            !manualPropTypeCallCache[cacheKey] &&
-            // Avoid spamming the console because they are often not actionable except for lib authors
-            manualPropTypeWarningCount < 3
-          ) {
-            printWarning(
-              'You are manually calling a React.PropTypes validation ' +
-              'function for the `' + propFullName + '` prop on `' + componentName  + '`. This is deprecated ' +
-              'and will throw in the standalone `prop-types` package. ' +
-              'You may be seeing this warning due to a third-party PropTypes ' +
-              'library. See https://fb.me/react-warning-dont-call-proptypes ' + 'for details.'
-            );
-            manualPropTypeCallCache[cacheKey] = true;
-            manualPropTypeWarningCount++;
-          }
-        }
-      }
-      if (props[propName] == null) {
-        if (isRequired) {
-          if (props[propName] === null) {
-            return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required ' + ('in `' + componentName + '`, but its value is `null`.'));
-          }
-          return new PropTypeError('The ' + location + ' `' + propFullName + '` is marked as required in ' + ('`' + componentName + '`, but its value is `undefined`.'));
-        }
-        return null;
-      } else {
-        return validate(props, propName, componentName, location, propFullName);
-      }
-    }
-
-    var chainedCheckType = checkType.bind(null, false);
-    chainedCheckType.isRequired = checkType.bind(null, true);
-
-    return chainedCheckType;
-  }
-
-  function createPrimitiveTypeChecker(expectedType) {
-    function validate(props, propName, componentName, location, propFullName, secret) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== expectedType) {
-        // `propValue` being instance of, say, date/regexp, pass the 'object'
-        // check, but we can offer a more precise error message here rather than
-        // 'of type `object`'.
-        var preciseType = getPreciseType(propValue);
-
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + preciseType + '` supplied to `' + componentName + '`, expected ') + ('`' + expectedType + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createAnyTypeChecker() {
-    return createChainableTypeChecker(emptyFunctionThatReturnsNull);
-  }
-
-  function createArrayOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside arrayOf.');
-      }
-      var propValue = props[propName];
-      if (!Array.isArray(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an array.'));
-      }
-      for (var i = 0; i < propValue.length; i++) {
-        var error = typeChecker(propValue, i, componentName, location, propFullName + '[' + i + ']', ReactPropTypesSecret);
-        if (error instanceof Error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!isValidElement(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createElementTypeTypeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      if (!ReactIs.isValidElementType(propValue)) {
-        var propType = getPropType(propValue);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected a single ReactElement type.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createInstanceTypeChecker(expectedClass) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!(props[propName] instanceof expectedClass)) {
-        var expectedClassName = expectedClass.name || ANONYMOUS;
-        var actualClassName = getClassName(props[propName]);
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + actualClassName + '` supplied to `' + componentName + '`, expected ') + ('instance of `' + expectedClassName + '`.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createEnumTypeChecker(expectedValues) {
-    if (!Array.isArray(expectedValues)) {
-      if (true) {
-        if (arguments.length > 1) {
-          printWarning(
-            'Invalid arguments supplied to oneOf, expected an array, got ' + arguments.length + ' arguments. ' +
-            'A common mistake is to write oneOf(x, y, z) instead of oneOf([x, y, z]).'
-          );
-        } else {
-          printWarning('Invalid argument supplied to oneOf, expected an array.');
-        }
-      }
-      return emptyFunctionThatReturnsNull;
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      for (var i = 0; i < expectedValues.length; i++) {
-        if (is(propValue, expectedValues[i])) {
-          return null;
-        }
-      }
-
-      var valuesString = JSON.stringify(expectedValues, function replacer(key, value) {
-        var type = getPreciseType(value);
-        if (type === 'symbol') {
-          return String(value);
-        }
-        return value;
-      });
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of value `' + String(propValue) + '` ' + ('supplied to `' + componentName + '`, expected one of ' + valuesString + '.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createObjectOfTypeChecker(typeChecker) {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (typeof typeChecker !== 'function') {
-        return new PropTypeError('Property `' + propFullName + '` of component `' + componentName + '` has invalid PropType notation inside objectOf.');
-      }
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type ' + ('`' + propType + '` supplied to `' + componentName + '`, expected an object.'));
-      }
-      for (var key in propValue) {
-        if (has(propValue, key)) {
-          var error = typeChecker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-          if (error instanceof Error) {
-            return error;
-          }
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createUnionTypeChecker(arrayOfTypeCheckers) {
-    if (!Array.isArray(arrayOfTypeCheckers)) {
-       true ? printWarning('Invalid argument supplied to oneOfType, expected an instance of array.') : undefined;
-      return emptyFunctionThatReturnsNull;
-    }
-
-    for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-      var checker = arrayOfTypeCheckers[i];
-      if (typeof checker !== 'function') {
-        printWarning(
-          'Invalid argument supplied to oneOfType. Expected an array of check functions, but ' +
-          'received ' + getPostfixForTypeWarning(checker) + ' at index ' + i + '.'
-        );
-        return emptyFunctionThatReturnsNull;
-      }
-    }
-
-    function validate(props, propName, componentName, location, propFullName) {
-      for (var i = 0; i < arrayOfTypeCheckers.length; i++) {
-        var checker = arrayOfTypeCheckers[i];
-        if (checker(props, propName, componentName, location, propFullName, ReactPropTypesSecret) == null) {
-          return null;
-        }
-      }
-
-      return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`.'));
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createNodeChecker() {
-    function validate(props, propName, componentName, location, propFullName) {
-      if (!isNode(props[propName])) {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` supplied to ' + ('`' + componentName + '`, expected a ReactNode.'));
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      for (var key in shapeTypes) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          continue;
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-    return createChainableTypeChecker(validate);
-  }
-
-  function createStrictShapeTypeChecker(shapeTypes) {
-    function validate(props, propName, componentName, location, propFullName) {
-      var propValue = props[propName];
-      var propType = getPropType(propValue);
-      if (propType !== 'object') {
-        return new PropTypeError('Invalid ' + location + ' `' + propFullName + '` of type `' + propType + '` ' + ('supplied to `' + componentName + '`, expected `object`.'));
-      }
-      // We need to check all keys in case some are required but missing from
-      // props.
-      var allKeys = assign({}, props[propName], shapeTypes);
-      for (var key in allKeys) {
-        var checker = shapeTypes[key];
-        if (!checker) {
-          return new PropTypeError(
-            'Invalid ' + location + ' `' + propFullName + '` key `' + key + '` supplied to `' + componentName + '`.' +
-            '\nBad object: ' + JSON.stringify(props[propName], null, '  ') +
-            '\nValid keys: ' +  JSON.stringify(Object.keys(shapeTypes), null, '  ')
-          );
-        }
-        var error = checker(propValue, key, componentName, location, propFullName + '.' + key, ReactPropTypesSecret);
-        if (error) {
-          return error;
-        }
-      }
-      return null;
-    }
-
-    return createChainableTypeChecker(validate);
-  }
-
-  function isNode(propValue) {
-    switch (typeof propValue) {
-      case 'number':
-      case 'string':
-      case 'undefined':
-        return true;
-      case 'boolean':
-        return !propValue;
-      case 'object':
-        if (Array.isArray(propValue)) {
-          return propValue.every(isNode);
-        }
-        if (propValue === null || isValidElement(propValue)) {
-          return true;
-        }
-
-        var iteratorFn = getIteratorFn(propValue);
-        if (iteratorFn) {
-          var iterator = iteratorFn.call(propValue);
-          var step;
-          if (iteratorFn !== propValue.entries) {
-            while (!(step = iterator.next()).done) {
-              if (!isNode(step.value)) {
-                return false;
-              }
-            }
-          } else {
-            // Iterator will provide entry [k,v] tuples rather than values.
-            while (!(step = iterator.next()).done) {
-              var entry = step.value;
-              if (entry) {
-                if (!isNode(entry[1])) {
-                  return false;
-                }
-              }
-            }
-          }
-        } else {
-          return false;
-        }
-
-        return true;
-      default:
-        return false;
-    }
-  }
-
-  function isSymbol(propType, propValue) {
-    // Native Symbol.
-    if (propType === 'symbol') {
-      return true;
-    }
-
-    // falsy value can't be a Symbol
-    if (!propValue) {
-      return false;
-    }
-
-    // 19.4.3.5 Symbol.prototype[@@toStringTag] === 'Symbol'
-    if (propValue['@@toStringTag'] === 'Symbol') {
-      return true;
-    }
-
-    // Fallback for non-spec compliant Symbols which are polyfilled.
-    if (typeof Symbol === 'function' && propValue instanceof Symbol) {
-      return true;
-    }
-
-    return false;
-  }
-
-  // Equivalent of `typeof` but with special handling for array and regexp.
-  function getPropType(propValue) {
-    var propType = typeof propValue;
-    if (Array.isArray(propValue)) {
-      return 'array';
-    }
-    if (propValue instanceof RegExp) {
-      // Old webkits (at least until Android 4.0) return 'function' rather than
-      // 'object' for typeof a RegExp. We'll normalize this here so that /bla/
-      // passes PropTypes.object.
-      return 'object';
-    }
-    if (isSymbol(propType, propValue)) {
-      return 'symbol';
-    }
-    return propType;
-  }
-
-  // This handles more types than `getPropType`. Only used for error messages.
-  // See `createPrimitiveTypeChecker`.
-  function getPreciseType(propValue) {
-    if (typeof propValue === 'undefined' || propValue === null) {
-      return '' + propValue;
-    }
-    var propType = getPropType(propValue);
-    if (propType === 'object') {
-      if (propValue instanceof Date) {
-        return 'date';
-      } else if (propValue instanceof RegExp) {
-        return 'regexp';
-      }
-    }
-    return propType;
-  }
-
-  // Returns a string that is postfixed to a warning about an invalid type.
-  // For example, "undefined" or "of type array"
-  function getPostfixForTypeWarning(value) {
-    var type = getPreciseType(value);
-    switch (type) {
-      case 'array':
-      case 'object':
-        return 'an ' + type;
-      case 'boolean':
-      case 'date':
-      case 'regexp':
-        return 'a ' + type;
-      default:
-        return type;
-    }
-  }
-
-  // Returns class name of the object, if any.
-  function getClassName(propValue) {
-    if (!propValue.constructor || !propValue.constructor.name) {
-      return ANONYMOUS;
-    }
-    return propValue.constructor.name;
-  }
-
-  ReactPropTypes.checkPropTypes = checkPropTypes;
-  ReactPropTypes.resetWarningCache = checkPropTypes.resetWarningCache;
-  ReactPropTypes.PropTypes = ReactPropTypes;
-
-  return ReactPropTypes;
-};
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/index.js":
-/*!*******************************************************!*\
-  !*** ../carponextjs/node_modules/prop-types/index.js ***!
-  \*******************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-if (true) {
-  var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
-
-  // By explicitly using `prop-types` you are opting into new development behavior.
-  // http://fb.me/prop-types-in-prod
-  var throwOnDirectAccess = true;
-  module.exports = __webpack_require__(/*! ./factoryWithTypeCheckers */ "./node_modules/prop-types/factoryWithTypeCheckers.js")(ReactIs.isElement, throwOnDirectAccess);
-} else {}
-
-
-/***/ }),
-
-/***/ "./node_modules/prop-types/lib/ReactPropTypesSecret.js":
-/*!**************************************************************************!*\
-  !*** ../carponextjs/node_modules/prop-types/lib/ReactPropTypesSecret.js ***!
-  \**************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/**
- * Copyright (c) 2013-present, Facebook, Inc.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-var ReactPropTypesSecret = 'SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED';
-
-module.exports = ReactPropTypesSecret;
-
-
-/***/ }),
-
-/***/ "./node_modules/react-is/cjs/react-is.development.js":
-/*!************************************************************************!*\
-  !*** ../carponextjs/node_modules/react-is/cjs/react-is.development.js ***!
-  \************************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.8.6
- * react-is.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-Object.defineProperty(exports, '__esModule', { value: true });
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace;
-var REACT_ASYNC_MODE_TYPE = hasSymbol ? Symbol.for('react.async_mode') : 0xeacf;
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' ||
-  // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE);
-}
-
-/**
- * Forked from fbjs/warning:
- * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
- *
- * Only change is we use console.warn instead of console.error,
- * and do nothing when 'console' is not supported.
- * This really simplifies the code.
- * ---
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var lowPriorityWarning = function () {};
-
-{
-  var printWarning = function (format) {
-    for (var _len = arguments.length, args = Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-    if (typeof console !== 'undefined') {
-      console.warn(message);
-    }
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  lowPriorityWarning = function (condition, format) {
-    if (format === undefined) {
-      throw new Error('`lowPriorityWarning(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-    if (!condition) {
-      for (var _len2 = arguments.length, args = Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(undefined, [format].concat(args));
-    }
-  };
-}
-
-var lowPriorityWarning$1 = lowPriorityWarning;
-
-function typeOf(object) {
-  if (typeof object === 'object' && object !== null) {
-    var $$typeof = object.$$typeof;
-    switch ($$typeof) {
-      case REACT_ELEMENT_TYPE:
-        var type = object.type;
-
-        switch (type) {
-          case REACT_ASYNC_MODE_TYPE:
-          case REACT_CONCURRENT_MODE_TYPE:
-          case REACT_FRAGMENT_TYPE:
-          case REACT_PROFILER_TYPE:
-          case REACT_STRICT_MODE_TYPE:
-          case REACT_SUSPENSE_TYPE:
-            return type;
-          default:
-            var $$typeofType = type && type.$$typeof;
-
-            switch ($$typeofType) {
-              case REACT_CONTEXT_TYPE:
-              case REACT_FORWARD_REF_TYPE:
-              case REACT_PROVIDER_TYPE:
-                return $$typeofType;
-              default:
-                return $$typeof;
-            }
-        }
-      case REACT_LAZY_TYPE:
-      case REACT_MEMO_TYPE:
-      case REACT_PORTAL_TYPE:
-        return $$typeof;
-    }
-  }
-
-  return undefined;
-}
-
-// AsyncMode is deprecated along with isAsyncMode
-var AsyncMode = REACT_ASYNC_MODE_TYPE;
-var ConcurrentMode = REACT_CONCURRENT_MODE_TYPE;
-var ContextConsumer = REACT_CONTEXT_TYPE;
-var ContextProvider = REACT_PROVIDER_TYPE;
-var Element = REACT_ELEMENT_TYPE;
-var ForwardRef = REACT_FORWARD_REF_TYPE;
-var Fragment = REACT_FRAGMENT_TYPE;
-var Lazy = REACT_LAZY_TYPE;
-var Memo = REACT_MEMO_TYPE;
-var Portal = REACT_PORTAL_TYPE;
-var Profiler = REACT_PROFILER_TYPE;
-var StrictMode = REACT_STRICT_MODE_TYPE;
-var Suspense = REACT_SUSPENSE_TYPE;
-
-var hasWarnedAboutDeprecatedIsAsyncMode = false;
-
-// AsyncMode should be deprecated
-function isAsyncMode(object) {
-  {
-    if (!hasWarnedAboutDeprecatedIsAsyncMode) {
-      hasWarnedAboutDeprecatedIsAsyncMode = true;
-      lowPriorityWarning$1(false, 'The ReactIs.isAsyncMode() alias has been deprecated, ' + 'and will be removed in React 17+. Update your code to use ' + 'ReactIs.isConcurrentMode() instead. It has the exact same API.');
-    }
-  }
-  return isConcurrentMode(object) || typeOf(object) === REACT_ASYNC_MODE_TYPE;
-}
-function isConcurrentMode(object) {
-  return typeOf(object) === REACT_CONCURRENT_MODE_TYPE;
-}
-function isContextConsumer(object) {
-  return typeOf(object) === REACT_CONTEXT_TYPE;
-}
-function isContextProvider(object) {
-  return typeOf(object) === REACT_PROVIDER_TYPE;
-}
-function isElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-function isForwardRef(object) {
-  return typeOf(object) === REACT_FORWARD_REF_TYPE;
-}
-function isFragment(object) {
-  return typeOf(object) === REACT_FRAGMENT_TYPE;
-}
-function isLazy(object) {
-  return typeOf(object) === REACT_LAZY_TYPE;
-}
-function isMemo(object) {
-  return typeOf(object) === REACT_MEMO_TYPE;
-}
-function isPortal(object) {
-  return typeOf(object) === REACT_PORTAL_TYPE;
-}
-function isProfiler(object) {
-  return typeOf(object) === REACT_PROFILER_TYPE;
-}
-function isStrictMode(object) {
-  return typeOf(object) === REACT_STRICT_MODE_TYPE;
-}
-function isSuspense(object) {
-  return typeOf(object) === REACT_SUSPENSE_TYPE;
-}
-
-exports.typeOf = typeOf;
-exports.AsyncMode = AsyncMode;
-exports.ConcurrentMode = ConcurrentMode;
-exports.ContextConsumer = ContextConsumer;
-exports.ContextProvider = ContextProvider;
-exports.Element = Element;
-exports.ForwardRef = ForwardRef;
-exports.Fragment = Fragment;
-exports.Lazy = Lazy;
-exports.Memo = Memo;
-exports.Portal = Portal;
-exports.Profiler = Profiler;
-exports.StrictMode = StrictMode;
-exports.Suspense = Suspense;
-exports.isValidElementType = isValidElementType;
-exports.isAsyncMode = isAsyncMode;
-exports.isConcurrentMode = isConcurrentMode;
-exports.isContextConsumer = isContextConsumer;
-exports.isContextProvider = isContextProvider;
-exports.isElement = isElement;
-exports.isForwardRef = isForwardRef;
-exports.isFragment = isFragment;
-exports.isLazy = isLazy;
-exports.isMemo = isMemo;
-exports.isPortal = isPortal;
-exports.isProfiler = isProfiler;
-exports.isStrictMode = isStrictMode;
-exports.isSuspense = isSuspense;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/react-is/index.js":
-/*!*****************************************************!*\
-  !*** ../carponextjs/node_modules/react-is/index.js ***!
-  \*****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react-is.development.js */ "./node_modules/react-is/cjs/react-is.development.js");
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/react/cjs/react.development.js":
-/*!******************************************************************!*\
-  !*** ../carponextjs/node_modules/react/cjs/react.development.js ***!
-  \******************************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/** @license React v16.11.0
- * react.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
-
-
-
-
-if (true) {
-  (function() {
-'use strict';
-
-var _assign = __webpack_require__(/*! object-assign */ "./node_modules/object-assign/index.js");
-var checkPropTypes = __webpack_require__(/*! prop-types/checkPropTypes */ "./node_modules/prop-types/checkPropTypes.js");
-
-// TODO: this is special because it gets imported during build.
-
-var ReactVersion = '16.11.0';
-
-// The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-// nor polyfill, then a plain number is used for performance.
-var hasSymbol = typeof Symbol === 'function' && Symbol.for;
-var REACT_ELEMENT_TYPE = hasSymbol ? Symbol.for('react.element') : 0xeac7;
-var REACT_PORTAL_TYPE = hasSymbol ? Symbol.for('react.portal') : 0xeaca;
-var REACT_FRAGMENT_TYPE = hasSymbol ? Symbol.for('react.fragment') : 0xeacb;
-var REACT_STRICT_MODE_TYPE = hasSymbol ? Symbol.for('react.strict_mode') : 0xeacc;
-var REACT_PROFILER_TYPE = hasSymbol ? Symbol.for('react.profiler') : 0xead2;
-var REACT_PROVIDER_TYPE = hasSymbol ? Symbol.for('react.provider') : 0xeacd;
-var REACT_CONTEXT_TYPE = hasSymbol ? Symbol.for('react.context') : 0xeace; // TODO: We don't use AsyncMode or ConcurrentMode anymore. They were temporary
-// (unstable) APIs that have been removed. Can we remove the symbols?
-
-
-var REACT_CONCURRENT_MODE_TYPE = hasSymbol ? Symbol.for('react.concurrent_mode') : 0xeacf;
-var REACT_FORWARD_REF_TYPE = hasSymbol ? Symbol.for('react.forward_ref') : 0xead0;
-var REACT_SUSPENSE_TYPE = hasSymbol ? Symbol.for('react.suspense') : 0xead1;
-var REACT_SUSPENSE_LIST_TYPE = hasSymbol ? Symbol.for('react.suspense_list') : 0xead8;
-var REACT_MEMO_TYPE = hasSymbol ? Symbol.for('react.memo') : 0xead3;
-var REACT_LAZY_TYPE = hasSymbol ? Symbol.for('react.lazy') : 0xead4;
-var REACT_FUNDAMENTAL_TYPE = hasSymbol ? Symbol.for('react.fundamental') : 0xead5;
-var REACT_RESPONDER_TYPE = hasSymbol ? Symbol.for('react.responder') : 0xead6;
-var REACT_SCOPE_TYPE = hasSymbol ? Symbol.for('react.scope') : 0xead7;
-var MAYBE_ITERATOR_SYMBOL = typeof Symbol === 'function' && Symbol.iterator;
-var FAUX_ITERATOR_SYMBOL = '@@iterator';
-function getIteratorFn(maybeIterable) {
-  if (maybeIterable === null || typeof maybeIterable !== 'object') {
-    return null;
-  }
-
-  var maybeIterator = MAYBE_ITERATOR_SYMBOL && maybeIterable[MAYBE_ITERATOR_SYMBOL] || maybeIterable[FAUX_ITERATOR_SYMBOL];
-
-  if (typeof maybeIterator === 'function') {
-    return maybeIterator;
-  }
-
-  return null;
-}
-
-// Do not require this module directly! Use normal `invariant` calls with
-// template literal strings. The messages will be replaced with error codes
-// during build.
-
-/**
- * Use invariant() to assert state which your program assumes to be true.
- *
- * Provide sprintf-style format (only %s is supported) and arguments
- * to provide information about what broke and what you were
- * expecting.
- *
- * The invariant message will be stripped in production, but the invariant
- * will remain to ensure logic does not differ in production.
- */
-
-/**
- * Forked from fbjs/warning:
- * https://github.com/facebook/fbjs/blob/e66ba20ad5be433eb54423f2b097d829324d9de6/packages/fbjs/src/__forks__/warning.js
- *
- * Only change is we use console.warn instead of console.error,
- * and do nothing when 'console' is not supported.
- * This really simplifies the code.
- * ---
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-var lowPriorityWarningWithoutStack = function () {};
-
-{
-  var printWarning = function (format) {
-    for (var _len = arguments.length, args = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
-      args[_key - 1] = arguments[_key];
-    }
-
-    var argIndex = 0;
-    var message = 'Warning: ' + format.replace(/%s/g, function () {
-      return args[argIndex++];
-    });
-
-    if (typeof console !== 'undefined') {
-      console.warn(message);
-    }
-
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      throw new Error(message);
-    } catch (x) {}
-  };
-
-  lowPriorityWarningWithoutStack = function (condition, format) {
-    if (format === undefined) {
-      throw new Error('`lowPriorityWarningWithoutStack(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-
-    if (!condition) {
-      for (var _len2 = arguments.length, args = new Array(_len2 > 2 ? _len2 - 2 : 0), _key2 = 2; _key2 < _len2; _key2++) {
-        args[_key2 - 2] = arguments[_key2];
-      }
-
-      printWarning.apply(void 0, [format].concat(args));
-    }
-  };
-}
-
-var lowPriorityWarningWithoutStack$1 = lowPriorityWarningWithoutStack;
-
-/**
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-var warningWithoutStack = function () {};
-
-{
-  warningWithoutStack = function (condition, format) {
-    for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-      args[_key - 2] = arguments[_key];
-    }
-
-    if (format === undefined) {
-      throw new Error('`warningWithoutStack(condition, format, ...args)` requires a warning ' + 'message argument');
-    }
-
-    if (args.length > 8) {
-      // Check before the condition to catch violations early.
-      throw new Error('warningWithoutStack() currently supports at most 8 arguments.');
-    }
-
-    if (condition) {
-      return;
-    }
-
-    if (typeof console !== 'undefined') {
-      var argsWithFormat = args.map(function (item) {
-        return '' + item;
-      });
-      argsWithFormat.unshift('Warning: ' + format); // We intentionally don't use spread (or .apply) directly because it
-      // breaks IE9: https://github.com/facebook/react/issues/13610
-
-      Function.prototype.apply.call(console.error, console, argsWithFormat);
-    }
-
-    try {
-      // --- Welcome to debugging React ---
-      // This error was thrown as a convenience so that you can use this stack
-      // to find the callsite that caused this warning to fire.
-      var argIndex = 0;
-      var message = 'Warning: ' + format.replace(/%s/g, function () {
-        return args[argIndex++];
-      });
-      throw new Error(message);
-    } catch (x) {}
-  };
-}
-
-var warningWithoutStack$1 = warningWithoutStack;
-
-var didWarnStateUpdateForUnmountedComponent = {};
-
-function warnNoop(publicInstance, callerName) {
-  {
-    var _constructor = publicInstance.constructor;
-    var componentName = _constructor && (_constructor.displayName || _constructor.name) || 'ReactClass';
-    var warningKey = componentName + "." + callerName;
-
-    if (didWarnStateUpdateForUnmountedComponent[warningKey]) {
-      return;
-    }
-
-    warningWithoutStack$1(false, "Can't call %s on a component that is not yet mounted. " + 'This is a no-op, but it might indicate a bug in your application. ' + 'Instead, assign to `this.state` directly or define a `state = {};` ' + 'class property with the desired state in the %s component.', callerName, componentName);
-    didWarnStateUpdateForUnmountedComponent[warningKey] = true;
-  }
-}
-/**
- * This is the abstract API for an update queue.
- */
-
-
-var ReactNoopUpdateQueue = {
-  /**
-   * Checks whether or not this composite component is mounted.
-   * @param {ReactClass} publicInstance The instance we want to test.
-   * @return {boolean} True if mounted, false otherwise.
-   * @protected
-   * @final
-   */
-  isMounted: function (publicInstance) {
-    return false;
-  },
-
-  /**
-   * Forces an update. This should only be invoked when it is known with
-   * certainty that we are **not** in a DOM transaction.
-   *
-   * You may want to call this when you know that some deeper aspect of the
-   * component's state has changed but `setState` was not called.
-   *
-   * This will not invoke `shouldComponentUpdate`, but it will invoke
-   * `componentWillUpdate` and `componentDidUpdate`.
-   *
-   * @param {ReactClass} publicInstance The instance that should rerender.
-   * @param {?function} callback Called after component is updated.
-   * @param {?string} callerName name of the calling function in the public API.
-   * @internal
-   */
-  enqueueForceUpdate: function (publicInstance, callback, callerName) {
-    warnNoop(publicInstance, 'forceUpdate');
-  },
-
-  /**
-   * Replaces all of the state. Always use this or `setState` to mutate state.
-   * You should treat `this.state` as immutable.
-   *
-   * There is no guarantee that `this.state` will be immediately updated, so
-   * accessing `this.state` after calling this method may return the old value.
-   *
-   * @param {ReactClass} publicInstance The instance that should rerender.
-   * @param {object} completeState Next state.
-   * @param {?function} callback Called after component is updated.
-   * @param {?string} callerName name of the calling function in the public API.
-   * @internal
-   */
-  enqueueReplaceState: function (publicInstance, completeState, callback, callerName) {
-    warnNoop(publicInstance, 'replaceState');
-  },
-
-  /**
-   * Sets a subset of the state. This only exists because _pendingState is
-   * internal. This provides a merging strategy that is not available to deep
-   * properties which is confusing. TODO: Expose pendingState or don't use it
-   * during the merge.
-   *
-   * @param {ReactClass} publicInstance The instance that should rerender.
-   * @param {object} partialState Next partial state to be merged with state.
-   * @param {?function} callback Called after component is updated.
-   * @param {?string} Name of the calling function in the public API.
-   * @internal
-   */
-  enqueueSetState: function (publicInstance, partialState, callback, callerName) {
-    warnNoop(publicInstance, 'setState');
-  }
-};
-
-var emptyObject = {};
-
-{
-  Object.freeze(emptyObject);
-}
-/**
- * Base class helpers for the updating state of a component.
- */
-
-
-function Component(props, context, updater) {
-  this.props = props;
-  this.context = context; // If a component has string refs, we will assign a different object later.
-
-  this.refs = emptyObject; // We initialize the default updater but the real one gets injected by the
-  // renderer.
-
-  this.updater = updater || ReactNoopUpdateQueue;
-}
-
-Component.prototype.isReactComponent = {};
-/**
- * Sets a subset of the state. Always use this to mutate
- * state. You should treat `this.state` as immutable.
- *
- * There is no guarantee that `this.state` will be immediately updated, so
- * accessing `this.state` after calling this method may return the old value.
- *
- * There is no guarantee that calls to `setState` will run synchronously,
- * as they may eventually be batched together.  You can provide an optional
- * callback that will be executed when the call to setState is actually
- * completed.
- *
- * When a function is provided to setState, it will be called at some point in
- * the future (not synchronously). It will be called with the up to date
- * component arguments (state, props, context). These values can be different
- * from this.* because your function may be called after receiveProps but before
- * shouldComponentUpdate, and this new state, props, and context will not yet be
- * assigned to this.
- *
- * @param {object|function} partialState Next partial state or function to
- *        produce next partial state to be merged with current state.
- * @param {?function} callback Called after state is updated.
- * @final
- * @protected
- */
-
-Component.prototype.setState = function (partialState, callback) {
-  if (!(typeof partialState === 'object' || typeof partialState === 'function' || partialState == null)) {
-    {
-      throw Error("setState(...): takes an object of state variables to update or a function which returns an object of state variables.");
-    }
-  }
-
-  this.updater.enqueueSetState(this, partialState, callback, 'setState');
-};
-/**
- * Forces an update. This should only be invoked when it is known with
- * certainty that we are **not** in a DOM transaction.
- *
- * You may want to call this when you know that some deeper aspect of the
- * component's state has changed but `setState` was not called.
- *
- * This will not invoke `shouldComponentUpdate`, but it will invoke
- * `componentWillUpdate` and `componentDidUpdate`.
- *
- * @param {?function} callback Called after update is complete.
- * @final
- * @protected
- */
-
-
-Component.prototype.forceUpdate = function (callback) {
-  this.updater.enqueueForceUpdate(this, callback, 'forceUpdate');
-};
-/**
- * Deprecated APIs. These APIs used to exist on classic React classes but since
- * we would like to deprecate them, we're not going to move them over to this
- * modern base class. Instead, we define a getter that warns if it's accessed.
- */
-
-
-{
-  var deprecatedAPIs = {
-    isMounted: ['isMounted', 'Instead, make sure to clean up subscriptions and pending requests in ' + 'componentWillUnmount to prevent memory leaks.'],
-    replaceState: ['replaceState', 'Refactor your code to use setState instead (see ' + 'https://github.com/facebook/react/issues/3236).']
-  };
-
-  var defineDeprecationWarning = function (methodName, info) {
-    Object.defineProperty(Component.prototype, methodName, {
-      get: function () {
-        lowPriorityWarningWithoutStack$1(false, '%s(...) is deprecated in plain JavaScript React classes. %s', info[0], info[1]);
-        return undefined;
-      }
-    });
-  };
-
-  for (var fnName in deprecatedAPIs) {
-    if (deprecatedAPIs.hasOwnProperty(fnName)) {
-      defineDeprecationWarning(fnName, deprecatedAPIs[fnName]);
-    }
-  }
-}
-
-function ComponentDummy() {}
-
-ComponentDummy.prototype = Component.prototype;
-/**
- * Convenience component with default shallow equality check for sCU.
- */
-
-function PureComponent(props, context, updater) {
-  this.props = props;
-  this.context = context; // If a component has string refs, we will assign a different object later.
-
-  this.refs = emptyObject;
-  this.updater = updater || ReactNoopUpdateQueue;
-}
-
-var pureComponentPrototype = PureComponent.prototype = new ComponentDummy();
-pureComponentPrototype.constructor = PureComponent; // Avoid an extra prototype jump for these methods.
-
-_assign(pureComponentPrototype, Component.prototype);
-
-pureComponentPrototype.isPureReactComponent = true;
-
-// an immutable object with a single mutable value
-function createRef() {
-  var refObject = {
-    current: null
-  };
-
-  {
-    Object.seal(refObject);
-  }
-
-  return refObject;
-}
-
-/**
- * Keeps track of the current dispatcher.
- */
-var ReactCurrentDispatcher = {
-  /**
-   * @internal
-   * @type {ReactComponent}
-   */
-  current: null
-};
-
-/**
- * Keeps track of the current batch's configuration such as how long an update
- * should suspend for if it needs to.
- */
-var ReactCurrentBatchConfig = {
-  suspense: null
-};
-
-/**
- * Keeps track of the current owner.
- *
- * The current owner is the component who should own any components that are
- * currently being constructed.
- */
-var ReactCurrentOwner = {
-  /**
-   * @internal
-   * @type {ReactComponent}
-   */
-  current: null
-};
-
-var BEFORE_SLASH_RE = /^(.*)[\\\/]/;
-var describeComponentFrame = function (name, source, ownerName) {
-  var sourceInfo = '';
-
-  if (source) {
-    var path = source.fileName;
-    var fileName = path.replace(BEFORE_SLASH_RE, '');
-
-    {
-      // In DEV, include code for a common special case:
-      // prefer "folder/index.js" instead of just "index.js".
-      if (/^index\./.test(fileName)) {
-        var match = path.match(BEFORE_SLASH_RE);
-
-        if (match) {
-          var pathBeforeSlash = match[1];
-
-          if (pathBeforeSlash) {
-            var folderName = pathBeforeSlash.replace(BEFORE_SLASH_RE, '');
-            fileName = folderName + '/' + fileName;
-          }
-        }
-      }
-    }
-
-    sourceInfo = ' (at ' + fileName + ':' + source.lineNumber + ')';
-  } else if (ownerName) {
-    sourceInfo = ' (created by ' + ownerName + ')';
-  }
-
-  return '\n    in ' + (name || 'Unknown') + sourceInfo;
-};
-
-var Resolved = 1;
-
-function refineResolvedLazyComponent(lazyComponent) {
-  return lazyComponent._status === Resolved ? lazyComponent._result : null;
-}
-
-function getWrappedName(outerType, innerType, wrapperName) {
-  var functionName = innerType.displayName || innerType.name || '';
-  return outerType.displayName || (functionName !== '' ? wrapperName + "(" + functionName + ")" : wrapperName);
-}
-
-function getComponentName(type) {
-  if (type == null) {
-    // Host root, text node or just invalid type.
-    return null;
-  }
-
-  {
-    if (typeof type.tag === 'number') {
-      warningWithoutStack$1(false, 'Received an unexpected object in getComponentName(). ' + 'This is likely a bug in React. Please file an issue.');
-    }
-  }
-
-  if (typeof type === 'function') {
-    return type.displayName || type.name || null;
-  }
-
-  if (typeof type === 'string') {
-    return type;
-  }
-
-  switch (type) {
-    case REACT_FRAGMENT_TYPE:
-      return 'Fragment';
-
-    case REACT_PORTAL_TYPE:
-      return 'Portal';
-
-    case REACT_PROFILER_TYPE:
-      return "Profiler";
-
-    case REACT_STRICT_MODE_TYPE:
-      return 'StrictMode';
-
-    case REACT_SUSPENSE_TYPE:
-      return 'Suspense';
-
-    case REACT_SUSPENSE_LIST_TYPE:
-      return 'SuspenseList';
-  }
-
-  if (typeof type === 'object') {
-    switch (type.$$typeof) {
-      case REACT_CONTEXT_TYPE:
-        return 'Context.Consumer';
-
-      case REACT_PROVIDER_TYPE:
-        return 'Context.Provider';
-
-      case REACT_FORWARD_REF_TYPE:
-        return getWrappedName(type, type.render, 'ForwardRef');
-
-      case REACT_MEMO_TYPE:
-        return getComponentName(type.type);
-
-      case REACT_LAZY_TYPE:
-        {
-          var thenable = type;
-          var resolvedThenable = refineResolvedLazyComponent(thenable);
-
-          if (resolvedThenable) {
-            return getComponentName(resolvedThenable);
-          }
-
-          break;
-        }
-    }
-  }
-
-  return null;
-}
-
-var ReactDebugCurrentFrame = {};
-var currentlyValidatingElement = null;
-function setCurrentlyValidatingElement(element) {
-  {
-    currentlyValidatingElement = element;
-  }
-}
-
-{
-  // Stack implementation injected by the current renderer.
-  ReactDebugCurrentFrame.getCurrentStack = null;
-
-  ReactDebugCurrentFrame.getStackAddendum = function () {
-    var stack = ''; // Add an extra top frame while an element is being validated
-
-    if (currentlyValidatingElement) {
-      var name = getComponentName(currentlyValidatingElement.type);
-      var owner = currentlyValidatingElement._owner;
-      stack += describeComponentFrame(name, currentlyValidatingElement._source, owner && getComponentName(owner.type));
-    } // Delegate to the injected renderer-specific implementation
-
-
-    var impl = ReactDebugCurrentFrame.getCurrentStack;
-
-    if (impl) {
-      stack += impl() || '';
-    }
-
-    return stack;
-  };
-}
-
-/**
- * Used by act() to track whether you're inside an act() scope.
- */
-var IsSomeRendererActing = {
-  current: false
-};
-
-var ReactSharedInternals = {
-  ReactCurrentDispatcher: ReactCurrentDispatcher,
-  ReactCurrentBatchConfig: ReactCurrentBatchConfig,
-  ReactCurrentOwner: ReactCurrentOwner,
-  IsSomeRendererActing: IsSomeRendererActing,
-  // Used by renderers to avoid bundling object-assign twice in UMD bundles:
-  assign: _assign
-};
-
-{
-  _assign(ReactSharedInternals, {
-    // These should not be included in production.
-    ReactDebugCurrentFrame: ReactDebugCurrentFrame,
-    // Shim for React DOM 16.0.0 which still destructured (but not used) this.
-    // TODO: remove in React 17.0.
-    ReactComponentTreeHook: {}
-  });
-}
-
-/**
- * Similar to invariant but only logs a warning if the condition is not met.
- * This can be used to log issues in development environments in critical
- * paths. Removing the logging code for production environments will keep the
- * same logic and follow the same code paths.
- */
-
-var warning = warningWithoutStack$1;
-
-{
-  warning = function (condition, format) {
-    if (condition) {
-      return;
-    }
-
-    var ReactDebugCurrentFrame = ReactSharedInternals.ReactDebugCurrentFrame;
-    var stack = ReactDebugCurrentFrame.getStackAddendum(); // eslint-disable-next-line react-internal/warning-and-invariant-args
-
-    for (var _len = arguments.length, args = new Array(_len > 2 ? _len - 2 : 0), _key = 2; _key < _len; _key++) {
-      args[_key - 2] = arguments[_key];
-    }
-
-    warningWithoutStack$1.apply(void 0, [false, format + '%s'].concat(args, [stack]));
-  };
-}
-
-var warning$1 = warning;
-
-var hasOwnProperty = Object.prototype.hasOwnProperty;
-var RESERVED_PROPS = {
-  key: true,
-  ref: true,
-  __self: true,
-  __source: true
-};
-var specialPropKeyWarningShown;
-var specialPropRefWarningShown;
-
-function hasValidRef(config) {
-  {
-    if (hasOwnProperty.call(config, 'ref')) {
-      var getter = Object.getOwnPropertyDescriptor(config, 'ref').get;
-
-      if (getter && getter.isReactWarning) {
-        return false;
-      }
-    }
-  }
-
-  return config.ref !== undefined;
-}
-
-function hasValidKey(config) {
-  {
-    if (hasOwnProperty.call(config, 'key')) {
-      var getter = Object.getOwnPropertyDescriptor(config, 'key').get;
-
-      if (getter && getter.isReactWarning) {
-        return false;
-      }
-    }
-  }
-
-  return config.key !== undefined;
-}
-
-function defineKeyPropWarningGetter(props, displayName) {
-  var warnAboutAccessingKey = function () {
-    if (!specialPropKeyWarningShown) {
-      specialPropKeyWarningShown = true;
-      warningWithoutStack$1(false, '%s: `key` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName);
-    }
-  };
-
-  warnAboutAccessingKey.isReactWarning = true;
-  Object.defineProperty(props, 'key', {
-    get: warnAboutAccessingKey,
-    configurable: true
-  });
-}
-
-function defineRefPropWarningGetter(props, displayName) {
-  var warnAboutAccessingRef = function () {
-    if (!specialPropRefWarningShown) {
-      specialPropRefWarningShown = true;
-      warningWithoutStack$1(false, '%s: `ref` is not a prop. Trying to access it will result ' + 'in `undefined` being returned. If you need to access the same ' + 'value within the child component, you should pass it as a different ' + 'prop. (https://fb.me/react-special-props)', displayName);
-    }
-  };
-
-  warnAboutAccessingRef.isReactWarning = true;
-  Object.defineProperty(props, 'ref', {
-    get: warnAboutAccessingRef,
-    configurable: true
-  });
-}
-/**
- * Factory method to create a new React element. This no longer adheres to
- * the class pattern, so do not use new to call it. Also, instanceof check
- * will not work. Instead test $$typeof field against Symbol.for('react.element') to check
- * if something is a React Element.
- *
- * @param {*} type
- * @param {*} props
- * @param {*} key
- * @param {string|object} ref
- * @param {*} owner
- * @param {*} self A *temporary* helper to detect places where `this` is
- * different from the `owner` when React.createElement is called, so that we
- * can warn. We want to get rid of owner and replace string `ref`s with arrow
- * functions, and as long as `this` and owner are the same, there will be no
- * change in behavior.
- * @param {*} source An annotation object (added by a transpiler or otherwise)
- * indicating filename, line number, and/or other information.
- * @internal
- */
-
-
-var ReactElement = function (type, key, ref, self, source, owner, props) {
-  var element = {
-    // This tag allows us to uniquely identify this as a React Element
-    $$typeof: REACT_ELEMENT_TYPE,
-    // Built-in properties that belong on the element
-    type: type,
-    key: key,
-    ref: ref,
-    props: props,
-    // Record the component responsible for creating this element.
-    _owner: owner
-  };
-
-  {
-    // The validation flag is currently mutative. We put it on
-    // an external backing store so that we can freeze the whole object.
-    // This can be replaced with a WeakMap once they are implemented in
-    // commonly used development environments.
-    element._store = {}; // To make comparing ReactElements easier for testing purposes, we make
-    // the validation flag non-enumerable (where possible, which should
-    // include every environment we run tests in), so the test framework
-    // ignores it.
-
-    Object.defineProperty(element._store, 'validated', {
-      configurable: false,
-      enumerable: false,
-      writable: true,
-      value: false
-    }); // self and source are DEV only properties.
-
-    Object.defineProperty(element, '_self', {
-      configurable: false,
-      enumerable: false,
-      writable: false,
-      value: self
-    }); // Two elements created in two different places should be considered
-    // equal for testing purposes and therefore we hide it from enumeration.
-
-    Object.defineProperty(element, '_source', {
-      configurable: false,
-      enumerable: false,
-      writable: false,
-      value: source
-    });
-
-    if (Object.freeze) {
-      Object.freeze(element.props);
-      Object.freeze(element);
-    }
-  }
-
-  return element;
-};
-/**
- * https://github.com/reactjs/rfcs/pull/107
- * @param {*} type
- * @param {object} props
- * @param {string} key
- */
-
-
-
-/**
- * https://github.com/reactjs/rfcs/pull/107
- * @param {*} type
- * @param {object} props
- * @param {string} key
- */
-
-function jsxDEV(type, config, maybeKey, source, self) {
-  var propName; // Reserved names are extracted
-
-  var props = {};
-  var key = null;
-  var ref = null; // Currently, key can be spread in as a prop. This causes a potential
-  // issue if key is also explicitly declared (ie. <div {...props} key="Hi" />
-  // or <div key="Hi" {...props} /> ). We want to deprecate key spread,
-  // but as an intermediary step, we will use jsxDEV for everything except
-  // <div {...props} key="Hi" />, because we aren't currently able to tell if
-  // key is explicitly declared to be undefined or not.
-
-  if (maybeKey !== undefined) {
-    key = '' + maybeKey;
-  }
-
-  if (hasValidKey(config)) {
-    key = '' + config.key;
-  }
-
-  if (hasValidRef(config)) {
-    ref = config.ref;
-  } // Remaining properties are added to a new props object
-
-
-  for (propName in config) {
-    if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
-      props[propName] = config[propName];
-    }
-  } // Resolve default props
-
-
-  if (type && type.defaultProps) {
-    var defaultProps = type.defaultProps;
-
-    for (propName in defaultProps) {
-      if (props[propName] === undefined) {
-        props[propName] = defaultProps[propName];
-      }
-    }
-  }
-
-  if (key || ref) {
-    var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
-
-    if (key) {
-      defineKeyPropWarningGetter(props, displayName);
-    }
-
-    if (ref) {
-      defineRefPropWarningGetter(props, displayName);
-    }
-  }
-
-  return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
-}
-/**
- * Create and return a new ReactElement of the given type.
- * See https://reactjs.org/docs/react-api.html#createelement
- */
-
-function createElement(type, config, children) {
-  var propName; // Reserved names are extracted
-
-  var props = {};
-  var key = null;
-  var ref = null;
-  var self = null;
-  var source = null;
-
-  if (config != null) {
-    if (hasValidRef(config)) {
-      ref = config.ref;
-    }
-
-    if (hasValidKey(config)) {
-      key = '' + config.key;
-    }
-
-    self = config.__self === undefined ? null : config.__self;
-    source = config.__source === undefined ? null : config.__source; // Remaining properties are added to a new props object
-
-    for (propName in config) {
-      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
-        props[propName] = config[propName];
-      }
-    }
-  } // Children can be more than one argument, and those are transferred onto
-  // the newly allocated props object.
-
-
-  var childrenLength = arguments.length - 2;
-
-  if (childrenLength === 1) {
-    props.children = children;
-  } else if (childrenLength > 1) {
-    var childArray = Array(childrenLength);
-
-    for (var i = 0; i < childrenLength; i++) {
-      childArray[i] = arguments[i + 2];
-    }
-
-    {
-      if (Object.freeze) {
-        Object.freeze(childArray);
-      }
-    }
-
-    props.children = childArray;
-  } // Resolve default props
-
-
-  if (type && type.defaultProps) {
-    var defaultProps = type.defaultProps;
-
-    for (propName in defaultProps) {
-      if (props[propName] === undefined) {
-        props[propName] = defaultProps[propName];
-      }
-    }
-  }
-
-  {
-    if (key || ref) {
-      var displayName = typeof type === 'function' ? type.displayName || type.name || 'Unknown' : type;
-
-      if (key) {
-        defineKeyPropWarningGetter(props, displayName);
-      }
-
-      if (ref) {
-        defineRefPropWarningGetter(props, displayName);
-      }
-    }
-  }
-
-  return ReactElement(type, key, ref, self, source, ReactCurrentOwner.current, props);
-}
-/**
- * Return a function that produces ReactElements of a given type.
- * See https://reactjs.org/docs/react-api.html#createfactory
- */
-
-
-function cloneAndReplaceKey(oldElement, newKey) {
-  var newElement = ReactElement(oldElement.type, newKey, oldElement.ref, oldElement._self, oldElement._source, oldElement._owner, oldElement.props);
-  return newElement;
-}
-/**
- * Clone and return a new ReactElement using element as the starting point.
- * See https://reactjs.org/docs/react-api.html#cloneelement
- */
-
-function cloneElement(element, config, children) {
-  if (!!(element === null || element === undefined)) {
-    {
-      throw Error("React.cloneElement(...): The argument must be a React element, but you passed " + element + ".");
-    }
-  }
-
-  var propName; // Original props are copied
-
-  var props = _assign({}, element.props); // Reserved names are extracted
-
-
-  var key = element.key;
-  var ref = element.ref; // Self is preserved since the owner is preserved.
-
-  var self = element._self; // Source is preserved since cloneElement is unlikely to be targeted by a
-  // transpiler, and the original source is probably a better indicator of the
-  // true owner.
-
-  var source = element._source; // Owner will be preserved, unless ref is overridden
-
-  var owner = element._owner;
-
-  if (config != null) {
-    if (hasValidRef(config)) {
-      // Silently steal the ref from the parent.
-      ref = config.ref;
-      owner = ReactCurrentOwner.current;
-    }
-
-    if (hasValidKey(config)) {
-      key = '' + config.key;
-    } // Remaining properties override existing props
-
-
-    var defaultProps;
-
-    if (element.type && element.type.defaultProps) {
-      defaultProps = element.type.defaultProps;
-    }
-
-    for (propName in config) {
-      if (hasOwnProperty.call(config, propName) && !RESERVED_PROPS.hasOwnProperty(propName)) {
-        if (config[propName] === undefined && defaultProps !== undefined) {
-          // Resolve default props
-          props[propName] = defaultProps[propName];
-        } else {
-          props[propName] = config[propName];
-        }
-      }
-    }
-  } // Children can be more than one argument, and those are transferred onto
-  // the newly allocated props object.
-
-
-  var childrenLength = arguments.length - 2;
-
-  if (childrenLength === 1) {
-    props.children = children;
-  } else if (childrenLength > 1) {
-    var childArray = Array(childrenLength);
-
-    for (var i = 0; i < childrenLength; i++) {
-      childArray[i] = arguments[i + 2];
-    }
-
-    props.children = childArray;
-  }
-
-  return ReactElement(element.type, key, ref, self, source, owner, props);
-}
-/**
- * Verifies the object is a ReactElement.
- * See https://reactjs.org/docs/react-api.html#isvalidelement
- * @param {?object} object
- * @return {boolean} True if `object` is a ReactElement.
- * @final
- */
-
-function isValidElement(object) {
-  return typeof object === 'object' && object !== null && object.$$typeof === REACT_ELEMENT_TYPE;
-}
-
-var SEPARATOR = '.';
-var SUBSEPARATOR = ':';
-/**
- * Escape and wrap key so it is safe to use as a reactid
- *
- * @param {string} key to be escaped.
- * @return {string} the escaped key.
- */
-
-function escape(key) {
-  var escapeRegex = /[=:]/g;
-  var escaperLookup = {
-    '=': '=0',
-    ':': '=2'
-  };
-  var escapedString = ('' + key).replace(escapeRegex, function (match) {
-    return escaperLookup[match];
-  });
-  return '$' + escapedString;
-}
-/**
- * TODO: Test that a single child and an array with one item have the same key
- * pattern.
- */
-
-
-var didWarnAboutMaps = false;
-var userProvidedKeyEscapeRegex = /\/+/g;
-
-function escapeUserProvidedKey(text) {
-  return ('' + text).replace(userProvidedKeyEscapeRegex, '$&/');
-}
-
-var POOL_SIZE = 10;
-var traverseContextPool = [];
-
-function getPooledTraverseContext(mapResult, keyPrefix, mapFunction, mapContext) {
-  if (traverseContextPool.length) {
-    var traverseContext = traverseContextPool.pop();
-    traverseContext.result = mapResult;
-    traverseContext.keyPrefix = keyPrefix;
-    traverseContext.func = mapFunction;
-    traverseContext.context = mapContext;
-    traverseContext.count = 0;
-    return traverseContext;
-  } else {
-    return {
-      result: mapResult,
-      keyPrefix: keyPrefix,
-      func: mapFunction,
-      context: mapContext,
-      count: 0
-    };
-  }
-}
-
-function releaseTraverseContext(traverseContext) {
-  traverseContext.result = null;
-  traverseContext.keyPrefix = null;
-  traverseContext.func = null;
-  traverseContext.context = null;
-  traverseContext.count = 0;
-
-  if (traverseContextPool.length < POOL_SIZE) {
-    traverseContextPool.push(traverseContext);
-  }
-}
-/**
- * @param {?*} children Children tree container.
- * @param {!string} nameSoFar Name of the key path so far.
- * @param {!function} callback Callback to invoke with each child found.
- * @param {?*} traverseContext Used to pass information throughout the traversal
- * process.
- * @return {!number} The number of children in this subtree.
- */
-
-
-function traverseAllChildrenImpl(children, nameSoFar, callback, traverseContext) {
-  var type = typeof children;
-
-  if (type === 'undefined' || type === 'boolean') {
-    // All of the above are perceived as null.
-    children = null;
-  }
-
-  var invokeCallback = false;
-
-  if (children === null) {
-    invokeCallback = true;
-  } else {
-    switch (type) {
-      case 'string':
-      case 'number':
-        invokeCallback = true;
-        break;
-
-      case 'object':
-        switch (children.$$typeof) {
-          case REACT_ELEMENT_TYPE:
-          case REACT_PORTAL_TYPE:
-            invokeCallback = true;
-        }
-
-    }
-  }
-
-  if (invokeCallback) {
-    callback(traverseContext, children, // If it's the only child, treat the name as if it was wrapped in an array
-    // so that it's consistent if the number of children grows.
-    nameSoFar === '' ? SEPARATOR + getComponentKey(children, 0) : nameSoFar);
-    return 1;
-  }
-
-  var child;
-  var nextName;
-  var subtreeCount = 0; // Count of children found in the current subtree.
-
-  var nextNamePrefix = nameSoFar === '' ? SEPARATOR : nameSoFar + SUBSEPARATOR;
-
-  if (Array.isArray(children)) {
-    for (var i = 0; i < children.length; i++) {
-      child = children[i];
-      nextName = nextNamePrefix + getComponentKey(child, i);
-      subtreeCount += traverseAllChildrenImpl(child, nextName, callback, traverseContext);
-    }
-  } else {
-    var iteratorFn = getIteratorFn(children);
-
-    if (typeof iteratorFn === 'function') {
-      {
-        // Warn about using Maps as children
-        if (iteratorFn === children.entries) {
-          !didWarnAboutMaps ? warning$1(false, 'Using Maps as children is unsupported and will likely yield ' + 'unexpected results. Convert it to a sequence/iterable of keyed ' + 'ReactElements instead.') : void 0;
-          didWarnAboutMaps = true;
-        }
-      }
-
-      var iterator = iteratorFn.call(children);
-      var step;
-      var ii = 0;
-
-      while (!(step = iterator.next()).done) {
-        child = step.value;
-        nextName = nextNamePrefix + getComponentKey(child, ii++);
-        subtreeCount += traverseAllChildrenImpl(child, nextName, callback, traverseContext);
-      }
-    } else if (type === 'object') {
-      var addendum = '';
-
-      {
-        addendum = ' If you meant to render a collection of children, use an array ' + 'instead.' + ReactDebugCurrentFrame.getStackAddendum();
-      }
-
-      var childrenString = '' + children;
-
-      {
-        {
-          throw Error("Objects are not valid as a React child (found: " + (childrenString === '[object Object]' ? 'object with keys {' + Object.keys(children).join(', ') + '}' : childrenString) + ")." + addendum);
-        }
-      }
-    }
-  }
-
-  return subtreeCount;
-}
-/**
- * Traverses children that are typically specified as `props.children`, but
- * might also be specified through attributes:
- *
- * - `traverseAllChildren(this.props.children, ...)`
- * - `traverseAllChildren(this.props.leftPanelChildren, ...)`
- *
- * The `traverseContext` is an optional argument that is passed through the
- * entire traversal. It can be used to store accumulations or anything else that
- * the callback might find relevant.
- *
- * @param {?*} children Children tree object.
- * @param {!function} callback To invoke upon traversing each child.
- * @param {?*} traverseContext Context for traversal.
- * @return {!number} The number of children in this subtree.
- */
-
-
-function traverseAllChildren(children, callback, traverseContext) {
-  if (children == null) {
-    return 0;
-  }
-
-  return traverseAllChildrenImpl(children, '', callback, traverseContext);
-}
-/**
- * Generate a key string that identifies a component within a set.
- *
- * @param {*} component A component that could contain a manual key.
- * @param {number} index Index that is used if a manual key is not provided.
- * @return {string}
- */
-
-
-function getComponentKey(component, index) {
-  // Do some typechecking here since we call this blindly. We want to ensure
-  // that we don't block potential future ES APIs.
-  if (typeof component === 'object' && component !== null && component.key != null) {
-    // Explicit key
-    return escape(component.key);
-  } // Implicit key determined by the index in the set
-
-
-  return index.toString(36);
-}
-
-function forEachSingleChild(bookKeeping, child, name) {
-  var func = bookKeeping.func,
-      context = bookKeeping.context;
-  func.call(context, child, bookKeeping.count++);
-}
-/**
- * Iterates through children that are typically specified as `props.children`.
- *
- * See https://reactjs.org/docs/react-api.html#reactchildrenforeach
- *
- * The provided forEachFunc(child, index) will be called for each
- * leaf child.
- *
- * @param {?*} children Children tree container.
- * @param {function(*, int)} forEachFunc
- * @param {*} forEachContext Context for forEachContext.
- */
-
-
-function forEachChildren(children, forEachFunc, forEachContext) {
-  if (children == null) {
-    return children;
-  }
-
-  var traverseContext = getPooledTraverseContext(null, null, forEachFunc, forEachContext);
-  traverseAllChildren(children, forEachSingleChild, traverseContext);
-  releaseTraverseContext(traverseContext);
-}
-
-function mapSingleChildIntoContext(bookKeeping, child, childKey) {
-  var result = bookKeeping.result,
-      keyPrefix = bookKeeping.keyPrefix,
-      func = bookKeeping.func,
-      context = bookKeeping.context;
-  var mappedChild = func.call(context, child, bookKeeping.count++);
-
-  if (Array.isArray(mappedChild)) {
-    mapIntoWithKeyPrefixInternal(mappedChild, result, childKey, function (c) {
-      return c;
-    });
-  } else if (mappedChild != null) {
-    if (isValidElement(mappedChild)) {
-      mappedChild = cloneAndReplaceKey(mappedChild, // Keep both the (mapped) and old keys if they differ, just as
-      // traverseAllChildren used to do for objects as children
-      keyPrefix + (mappedChild.key && (!child || child.key !== mappedChild.key) ? escapeUserProvidedKey(mappedChild.key) + '/' : '') + childKey);
-    }
-
-    result.push(mappedChild);
-  }
-}
-
-function mapIntoWithKeyPrefixInternal(children, array, prefix, func, context) {
-  var escapedPrefix = '';
-
-  if (prefix != null) {
-    escapedPrefix = escapeUserProvidedKey(prefix) + '/';
-  }
-
-  var traverseContext = getPooledTraverseContext(array, escapedPrefix, func, context);
-  traverseAllChildren(children, mapSingleChildIntoContext, traverseContext);
-  releaseTraverseContext(traverseContext);
-}
-/**
- * Maps children that are typically specified as `props.children`.
- *
- * See https://reactjs.org/docs/react-api.html#reactchildrenmap
- *
- * The provided mapFunction(child, key, index) will be called for each
- * leaf child.
- *
- * @param {?*} children Children tree container.
- * @param {function(*, int)} func The map function.
- * @param {*} context Context for mapFunction.
- * @return {object} Object containing the ordered map of results.
- */
-
-
-function mapChildren(children, func, context) {
-  if (children == null) {
-    return children;
-  }
-
-  var result = [];
-  mapIntoWithKeyPrefixInternal(children, result, null, func, context);
-  return result;
-}
-/**
- * Count the number of children that are typically specified as
- * `props.children`.
- *
- * See https://reactjs.org/docs/react-api.html#reactchildrencount
- *
- * @param {?*} children Children tree container.
- * @return {number} The number of children.
- */
-
-
-function countChildren(children) {
-  return traverseAllChildren(children, function () {
-    return null;
-  }, null);
-}
-/**
- * Flatten a children object (typically specified as `props.children`) and
- * return an array with appropriately re-keyed children.
- *
- * See https://reactjs.org/docs/react-api.html#reactchildrentoarray
- */
-
-
-function toArray(children) {
-  var result = [];
-  mapIntoWithKeyPrefixInternal(children, result, null, function (child) {
-    return child;
-  });
-  return result;
-}
-/**
- * Returns the first child in a collection of children and verifies that there
- * is only one child in the collection.
- *
- * See https://reactjs.org/docs/react-api.html#reactchildrenonly
- *
- * The current implementation of this function assumes that a single child gets
- * passed without a wrapper, but the purpose of this helper function is to
- * abstract away the particular structure of children.
- *
- * @param {?object} children Child collection structure.
- * @return {ReactElement} The first and only `ReactElement` contained in the
- * structure.
- */
-
-
-function onlyChild(children) {
-  if (!isValidElement(children)) {
-    {
-      throw Error("React.Children.only expected to receive a single React element child.");
-    }
-  }
-
-  return children;
-}
-
-function createContext(defaultValue, calculateChangedBits) {
-  if (calculateChangedBits === undefined) {
-    calculateChangedBits = null;
-  } else {
-    {
-      !(calculateChangedBits === null || typeof calculateChangedBits === 'function') ? warningWithoutStack$1(false, 'createContext: Expected the optional second argument to be a ' + 'function. Instead received: %s', calculateChangedBits) : void 0;
-    }
-  }
-
-  var context = {
-    $$typeof: REACT_CONTEXT_TYPE,
-    _calculateChangedBits: calculateChangedBits,
-    // As a workaround to support multiple concurrent renderers, we categorize
-    // some renderers as primary and others as secondary. We only expect
-    // there to be two concurrent renderers at most: React Native (primary) and
-    // Fabric (secondary); React DOM (primary) and React ART (secondary).
-    // Secondary renderers store their context values on separate fields.
-    _currentValue: defaultValue,
-    _currentValue2: defaultValue,
-    // Used to track how many concurrent renderers this context currently
-    // supports within in a single renderer. Such as parallel server rendering.
-    _threadCount: 0,
-    // These are circular
-    Provider: null,
-    Consumer: null
-  };
-  context.Provider = {
-    $$typeof: REACT_PROVIDER_TYPE,
-    _context: context
-  };
-  var hasWarnedAboutUsingNestedContextConsumers = false;
-  var hasWarnedAboutUsingConsumerProvider = false;
-
-  {
-    // A separate object, but proxies back to the original context object for
-    // backwards compatibility. It has a different $$typeof, so we can properly
-    // warn for the incorrect usage of Context as a Consumer.
-    var Consumer = {
-      $$typeof: REACT_CONTEXT_TYPE,
-      _context: context,
-      _calculateChangedBits: context._calculateChangedBits
-    }; // $FlowFixMe: Flow complains about not setting a value, which is intentional here
-
-    Object.defineProperties(Consumer, {
-      Provider: {
-        get: function () {
-          if (!hasWarnedAboutUsingConsumerProvider) {
-            hasWarnedAboutUsingConsumerProvider = true;
-            warning$1(false, 'Rendering <Context.Consumer.Provider> is not supported and will be removed in ' + 'a future major release. Did you mean to render <Context.Provider> instead?');
-          }
-
-          return context.Provider;
-        },
-        set: function (_Provider) {
-          context.Provider = _Provider;
-        }
-      },
-      _currentValue: {
-        get: function () {
-          return context._currentValue;
-        },
-        set: function (_currentValue) {
-          context._currentValue = _currentValue;
-        }
-      },
-      _currentValue2: {
-        get: function () {
-          return context._currentValue2;
-        },
-        set: function (_currentValue2) {
-          context._currentValue2 = _currentValue2;
-        }
-      },
-      _threadCount: {
-        get: function () {
-          return context._threadCount;
-        },
-        set: function (_threadCount) {
-          context._threadCount = _threadCount;
-        }
-      },
-      Consumer: {
-        get: function () {
-          if (!hasWarnedAboutUsingNestedContextConsumers) {
-            hasWarnedAboutUsingNestedContextConsumers = true;
-            warning$1(false, 'Rendering <Context.Consumer.Consumer> is not supported and will be removed in ' + 'a future major release. Did you mean to render <Context.Consumer> instead?');
-          }
-
-          return context.Consumer;
-        }
-      }
-    }); // $FlowFixMe: Flow complains about missing properties because it doesn't understand defineProperty
-
-    context.Consumer = Consumer;
-  }
-
-  {
-    context._currentRenderer = null;
-    context._currentRenderer2 = null;
-  }
-
-  return context;
-}
-
-function lazy(ctor) {
-  var lazyType = {
-    $$typeof: REACT_LAZY_TYPE,
-    _ctor: ctor,
-    // React uses these fields to store the result.
-    _status: -1,
-    _result: null
-  };
-
-  {
-    // In production, this would just set it on the object.
-    var defaultProps;
-    var propTypes;
-    Object.defineProperties(lazyType, {
-      defaultProps: {
-        configurable: true,
-        get: function () {
-          return defaultProps;
-        },
-        set: function (newDefaultProps) {
-          warning$1(false, 'React.lazy(...): It is not supported to assign `defaultProps` to ' + 'a lazy component import. Either specify them where the component ' + 'is defined, or create a wrapping component around it.');
-          defaultProps = newDefaultProps; // Match production behavior more closely:
-
-          Object.defineProperty(lazyType, 'defaultProps', {
-            enumerable: true
-          });
-        }
-      },
-      propTypes: {
-        configurable: true,
-        get: function () {
-          return propTypes;
-        },
-        set: function (newPropTypes) {
-          warning$1(false, 'React.lazy(...): It is not supported to assign `propTypes` to ' + 'a lazy component import. Either specify them where the component ' + 'is defined, or create a wrapping component around it.');
-          propTypes = newPropTypes; // Match production behavior more closely:
-
-          Object.defineProperty(lazyType, 'propTypes', {
-            enumerable: true
-          });
-        }
-      }
-    });
-  }
-
-  return lazyType;
-}
-
-function forwardRef(render) {
-  {
-    if (render != null && render.$$typeof === REACT_MEMO_TYPE) {
-      warningWithoutStack$1(false, 'forwardRef requires a render function but received a `memo` ' + 'component. Instead of forwardRef(memo(...)), use ' + 'memo(forwardRef(...)).');
-    } else if (typeof render !== 'function') {
-      warningWithoutStack$1(false, 'forwardRef requires a render function but was given %s.', render === null ? 'null' : typeof render);
-    } else {
-      !( // Do not warn for 0 arguments because it could be due to usage of the 'arguments' object
-      render.length === 0 || render.length === 2) ? warningWithoutStack$1(false, 'forwardRef render functions accept exactly two parameters: props and ref. %s', render.length === 1 ? 'Did you forget to use the ref parameter?' : 'Any additional parameter will be undefined.') : void 0;
-    }
-
-    if (render != null) {
-      !(render.defaultProps == null && render.propTypes == null) ? warningWithoutStack$1(false, 'forwardRef render functions do not support propTypes or defaultProps. ' + 'Did you accidentally pass a React component?') : void 0;
-    }
-  }
-
-  return {
-    $$typeof: REACT_FORWARD_REF_TYPE,
-    render: render
-  };
-}
-
-function isValidElementType(type) {
-  return typeof type === 'string' || typeof type === 'function' || // Note: its typeof might be other than 'symbol' or 'number' if it's a polyfill.
-  type === REACT_FRAGMENT_TYPE || type === REACT_CONCURRENT_MODE_TYPE || type === REACT_PROFILER_TYPE || type === REACT_STRICT_MODE_TYPE || type === REACT_SUSPENSE_TYPE || type === REACT_SUSPENSE_LIST_TYPE || typeof type === 'object' && type !== null && (type.$$typeof === REACT_LAZY_TYPE || type.$$typeof === REACT_MEMO_TYPE || type.$$typeof === REACT_PROVIDER_TYPE || type.$$typeof === REACT_CONTEXT_TYPE || type.$$typeof === REACT_FORWARD_REF_TYPE || type.$$typeof === REACT_FUNDAMENTAL_TYPE || type.$$typeof === REACT_RESPONDER_TYPE || type.$$typeof === REACT_SCOPE_TYPE);
-}
-
-function memo(type, compare) {
-  {
-    if (!isValidElementType(type)) {
-      warningWithoutStack$1(false, 'memo: The first argument must be a component. Instead ' + 'received: %s', type === null ? 'null' : typeof type);
-    }
-  }
-
-  return {
-    $$typeof: REACT_MEMO_TYPE,
-    type: type,
-    compare: compare === undefined ? null : compare
-  };
-}
-
-function resolveDispatcher() {
-  var dispatcher = ReactCurrentDispatcher.current;
-
-  if (!(dispatcher !== null)) {
-    {
-      throw Error("Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://fb.me/react-invalid-hook-call for tips about how to debug and fix this problem.");
-    }
-  }
-
-  return dispatcher;
-}
-
-function useContext(Context, unstable_observedBits) {
-  var dispatcher = resolveDispatcher();
-
-  {
-    !(unstable_observedBits === undefined) ? warning$1(false, 'useContext() second argument is reserved for future ' + 'use in React. Passing it is not supported. ' + 'You passed: %s.%s', unstable_observedBits, typeof unstable_observedBits === 'number' && Array.isArray(arguments[2]) ? '\n\nDid you call array.map(useContext)? ' + 'Calling Hooks inside a loop is not supported. ' + 'Learn more at https://fb.me/rules-of-hooks' : '') : void 0; // TODO: add a more generic warning for invalid values.
-
-    if (Context._context !== undefined) {
-      var realContext = Context._context; // Don't deduplicate because this legitimately causes bugs
-      // and nobody should be using this in existing code.
-
-      if (realContext.Consumer === Context) {
-        warning$1(false, 'Calling useContext(Context.Consumer) is not supported, may cause bugs, and will be ' + 'removed in a future major release. Did you mean to call useContext(Context) instead?');
-      } else if (realContext.Provider === Context) {
-        warning$1(false, 'Calling useContext(Context.Provider) is not supported. ' + 'Did you mean to call useContext(Context) instead?');
-      }
-    }
-  }
-
-  return dispatcher.useContext(Context, unstable_observedBits);
-}
-function useState(initialState) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useState(initialState);
-}
-function useReducer(reducer, initialArg, init) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useReducer(reducer, initialArg, init);
-}
-function useRef(initialValue) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useRef(initialValue);
-}
-function useEffect(create, inputs) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useEffect(create, inputs);
-}
-function useLayoutEffect(create, inputs) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useLayoutEffect(create, inputs);
-}
-function useCallback(callback, inputs) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useCallback(callback, inputs);
-}
-function useMemo(create, inputs) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useMemo(create, inputs);
-}
-function useImperativeHandle(ref, create, inputs) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useImperativeHandle(ref, create, inputs);
-}
-function useDebugValue(value, formatterFn) {
-  {
-    var dispatcher = resolveDispatcher();
-    return dispatcher.useDebugValue(value, formatterFn);
-  }
-}
-var emptyObject$1 = {};
-function useResponder(responder, listenerProps) {
-  var dispatcher = resolveDispatcher();
-
-  {
-    if (responder == null || responder.$$typeof !== REACT_RESPONDER_TYPE) {
-      warning$1(false, 'useResponder: invalid first argument. Expected an event responder, but instead got %s', responder);
-      return;
-    }
-  }
-
-  return dispatcher.useResponder(responder, listenerProps || emptyObject$1);
-}
-function useTransition(config) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useTransition(config);
-}
-function useDeferredValue(value, config) {
-  var dispatcher = resolveDispatcher();
-  return dispatcher.useDeferredValue(value, config);
-}
-
-function withSuspenseConfig(scope, config) {
-  var previousConfig = ReactCurrentBatchConfig.suspense;
-  ReactCurrentBatchConfig.suspense = config === undefined ? null : config;
-
-  try {
-    scope();
-  } finally {
-    ReactCurrentBatchConfig.suspense = previousConfig;
-  }
-}
-
-/**
- * ReactElementValidator provides a wrapper around a element factory
- * which validates the props passed to the element. This is intended to be
- * used only in DEV and could be replaced by a static type checker for languages
- * that support it.
- */
-var propTypesMisspellWarningShown;
-
-{
-  propTypesMisspellWarningShown = false;
-}
-
-var hasOwnProperty$1 = Object.prototype.hasOwnProperty;
-
-function getDeclarationErrorAddendum() {
-  if (ReactCurrentOwner.current) {
-    var name = getComponentName(ReactCurrentOwner.current.type);
-
-    if (name) {
-      return '\n\nCheck the render method of `' + name + '`.';
-    }
-  }
-
-  return '';
-}
-
-function getSourceInfoErrorAddendum(source) {
-  if (source !== undefined) {
-    var fileName = source.fileName.replace(/^.*[\\\/]/, '');
-    var lineNumber = source.lineNumber;
-    return '\n\nCheck your code at ' + fileName + ':' + lineNumber + '.';
-  }
-
-  return '';
-}
-
-function getSourceInfoErrorAddendumForProps(elementProps) {
-  if (elementProps !== null && elementProps !== undefined) {
-    return getSourceInfoErrorAddendum(elementProps.__source);
-  }
-
-  return '';
-}
-/**
- * Warn if there's no key explicitly set on dynamic arrays of children or
- * object keys are not valid. This allows us to keep track of children between
- * updates.
- */
-
-
-var ownerHasKeyUseWarning = {};
-
-function getCurrentComponentErrorInfo(parentType) {
-  var info = getDeclarationErrorAddendum();
-
-  if (!info) {
-    var parentName = typeof parentType === 'string' ? parentType : parentType.displayName || parentType.name;
-
-    if (parentName) {
-      info = "\n\nCheck the top-level render call using <" + parentName + ">.";
-    }
-  }
-
-  return info;
-}
-/**
- * Warn if the element doesn't have an explicit key assigned to it.
- * This element is in an array. The array could grow and shrink or be
- * reordered. All children that haven't already been validated are required to
- * have a "key" property assigned to it. Error statuses are cached so a warning
- * will only be shown once.
- *
- * @internal
- * @param {ReactElement} element Element that requires a key.
- * @param {*} parentType element's parent's type.
- */
-
-
-function validateExplicitKey(element, parentType) {
-  if (!element._store || element._store.validated || element.key != null) {
-    return;
-  }
-
-  element._store.validated = true;
-  var currentComponentErrorInfo = getCurrentComponentErrorInfo(parentType);
-
-  if (ownerHasKeyUseWarning[currentComponentErrorInfo]) {
-    return;
-  }
-
-  ownerHasKeyUseWarning[currentComponentErrorInfo] = true; // Usually the current owner is the offender, but if it accepts children as a
-  // property, it may be the creator of the child that's responsible for
-  // assigning it a key.
-
-  var childOwner = '';
-
-  if (element && element._owner && element._owner !== ReactCurrentOwner.current) {
-    // Give the component that originally created this child.
-    childOwner = " It was passed a child from " + getComponentName(element._owner.type) + ".";
-  }
-
-  setCurrentlyValidatingElement(element);
-
-  {
-    warning$1(false, 'Each child in a list should have a unique "key" prop.' + '%s%s See https://fb.me/react-warning-keys for more information.', currentComponentErrorInfo, childOwner);
-  }
-
-  setCurrentlyValidatingElement(null);
-}
-/**
- * Ensure that every element either is passed in a static location, in an
- * array with an explicit keys property defined, or in an object literal
- * with valid key property.
- *
- * @internal
- * @param {ReactNode} node Statically passed child of any type.
- * @param {*} parentType node's parent's type.
- */
-
-
-function validateChildKeys(node, parentType) {
-  if (typeof node !== 'object') {
-    return;
-  }
-
-  if (Array.isArray(node)) {
-    for (var i = 0; i < node.length; i++) {
-      var child = node[i];
-
-      if (isValidElement(child)) {
-        validateExplicitKey(child, parentType);
-      }
-    }
-  } else if (isValidElement(node)) {
-    // This element was passed in a valid location.
-    if (node._store) {
-      node._store.validated = true;
-    }
-  } else if (node) {
-    var iteratorFn = getIteratorFn(node);
-
-    if (typeof iteratorFn === 'function') {
-      // Entry iterators used to provide implicit keys,
-      // but now we print a separate warning for them later.
-      if (iteratorFn !== node.entries) {
-        var iterator = iteratorFn.call(node);
-        var step;
-
-        while (!(step = iterator.next()).done) {
-          if (isValidElement(step.value)) {
-            validateExplicitKey(step.value, parentType);
-          }
-        }
-      }
-    }
-  }
-}
-/**
- * Given an element, validate that its props follow the propTypes definition,
- * provided by the type.
- *
- * @param {ReactElement} element
- */
-
-
-function validatePropTypes(element) {
-  var type = element.type;
-
-  if (type === null || type === undefined || typeof type === 'string') {
-    return;
-  }
-
-  var name = getComponentName(type);
-  var propTypes;
-
-  if (typeof type === 'function') {
-    propTypes = type.propTypes;
-  } else if (typeof type === 'object' && (type.$$typeof === REACT_FORWARD_REF_TYPE || // Note: Memo only checks outer props here.
-  // Inner props are checked in the reconciler.
-  type.$$typeof === REACT_MEMO_TYPE)) {
-    propTypes = type.propTypes;
-  } else {
-    return;
-  }
-
-  if (propTypes) {
-    setCurrentlyValidatingElement(element);
-    checkPropTypes(propTypes, element.props, 'prop', name, ReactDebugCurrentFrame.getStackAddendum);
-    setCurrentlyValidatingElement(null);
-  } else if (type.PropTypes !== undefined && !propTypesMisspellWarningShown) {
-    propTypesMisspellWarningShown = true;
-    warningWithoutStack$1(false, 'Component %s declared `PropTypes` instead of `propTypes`. Did you misspell the property assignment?', name || 'Unknown');
-  }
-
-  if (typeof type.getDefaultProps === 'function') {
-    !type.getDefaultProps.isReactClassApproved ? warningWithoutStack$1(false, 'getDefaultProps is only used on classic React.createClass ' + 'definitions. Use a static property named `defaultProps` instead.') : void 0;
-  }
-}
-/**
- * Given a fragment, validate that it can only be provided with fragment props
- * @param {ReactElement} fragment
- */
-
-
-function validateFragmentProps(fragment) {
-  setCurrentlyValidatingElement(fragment);
-  var keys = Object.keys(fragment.props);
-
-  for (var i = 0; i < keys.length; i++) {
-    var key = keys[i];
-
-    if (key !== 'children' && key !== 'key') {
-      warning$1(false, 'Invalid prop `%s` supplied to `React.Fragment`. ' + 'React.Fragment can only have `key` and `children` props.', key);
-      break;
-    }
-  }
-
-  if (fragment.ref !== null) {
-    warning$1(false, 'Invalid attribute `ref` supplied to `React.Fragment`.');
-  }
-
-  setCurrentlyValidatingElement(null);
-}
-
-function jsxWithValidation(type, props, key, isStaticChildren, source, self) {
-  var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
-  // succeed and there will likely be errors in render.
-
-  if (!validType) {
-    var info = '';
-
-    if (type === undefined || typeof type === 'object' && type !== null && Object.keys(type).length === 0) {
-      info += ' You likely forgot to export your component from the file ' + "it's defined in, or you might have mixed up default and named imports.";
-    }
-
-    var sourceInfo = getSourceInfoErrorAddendum(source);
-
-    if (sourceInfo) {
-      info += sourceInfo;
-    } else {
-      info += getDeclarationErrorAddendum();
-    }
-
-    var typeString;
-
-    if (type === null) {
-      typeString = 'null';
-    } else if (Array.isArray(type)) {
-      typeString = 'array';
-    } else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
-      typeString = "<" + (getComponentName(type.type) || 'Unknown') + " />";
-      info = ' Did you accidentally export a JSX literal instead of a component?';
-    } else {
-      typeString = typeof type;
-    }
-
-    warning$1(false, 'React.jsx: type is invalid -- expected a string (for ' + 'built-in components) or a class/function (for composite ' + 'components) but got: %s.%s', typeString, info);
-  }
-
-  var element = jsxDEV(type, props, key, source, self); // The result can be nullish if a mock or a custom function is used.
-  // TODO: Drop this when these are no longer allowed as the type argument.
-
-  if (element == null) {
-    return element;
-  } // Skip key warning if the type isn't valid since our key validation logic
-  // doesn't expect a non-string/function type and can throw confusing errors.
-  // We don't want exception behavior to differ between dev and prod.
-  // (Rendering will throw with a helpful message and as soon as the type is
-  // fixed, the key warnings will appear.)
-
-
-  if (validType) {
-    var children = props.children;
-
-    if (children !== undefined) {
-      if (isStaticChildren) {
-        if (Array.isArray(children)) {
-          for (var i = 0; i < children.length; i++) {
-            validateChildKeys(children[i], type);
-          }
-
-          if (Object.freeze) {
-            Object.freeze(children);
-          }
-        } else {
-          warning$1(false, 'React.jsx: Static children should always be an array. ' + 'You are likely explicitly calling React.jsxs or React.jsxDEV. ' + 'Use the Babel transform instead.');
-        }
-      } else {
-        validateChildKeys(children, type);
-      }
-    }
-  }
-
-  if (hasOwnProperty$1.call(props, 'key')) {
-    warning$1(false, 'React.jsx: Spreading a key to JSX is a deprecated pattern. ' + 'Explicitly pass a key after spreading props in your JSX call. ' + 'E.g. <ComponentName {...props} key={key} />');
-  }
-
-  if (type === REACT_FRAGMENT_TYPE) {
-    validateFragmentProps(element);
-  } else {
-    validatePropTypes(element);
-  }
-
-  return element;
-} // These two functions exist to still get child warnings in dev
-// even with the prod transform. This means that jsxDEV is purely
-// opt-in behavior for better messages but that we won't stop
-// giving you warnings if you use production apis.
-
-function jsxWithValidationStatic(type, props, key) {
-  return jsxWithValidation(type, props, key, true);
-}
-function jsxWithValidationDynamic(type, props, key) {
-  return jsxWithValidation(type, props, key, false);
-}
-function createElementWithValidation(type, props, children) {
-  var validType = isValidElementType(type); // We warn in this case but don't throw. We expect the element creation to
-  // succeed and there will likely be errors in render.
-
-  if (!validType) {
-    var info = '';
-
-    if (type === undefined || typeof type === 'object' && type !== null && Object.keys(type).length === 0) {
-      info += ' You likely forgot to export your component from the file ' + "it's defined in, or you might have mixed up default and named imports.";
-    }
-
-    var sourceInfo = getSourceInfoErrorAddendumForProps(props);
-
-    if (sourceInfo) {
-      info += sourceInfo;
-    } else {
-      info += getDeclarationErrorAddendum();
-    }
-
-    var typeString;
-
-    if (type === null) {
-      typeString = 'null';
-    } else if (Array.isArray(type)) {
-      typeString = 'array';
-    } else if (type !== undefined && type.$$typeof === REACT_ELEMENT_TYPE) {
-      typeString = "<" + (getComponentName(type.type) || 'Unknown') + " />";
-      info = ' Did you accidentally export a JSX literal instead of a component?';
-    } else {
-      typeString = typeof type;
-    }
-
-    warning$1(false, 'React.createElement: type is invalid -- expected a string (for ' + 'built-in components) or a class/function (for composite ' + 'components) but got: %s.%s', typeString, info);
-  }
-
-  var element = createElement.apply(this, arguments); // The result can be nullish if a mock or a custom function is used.
-  // TODO: Drop this when these are no longer allowed as the type argument.
-
-  if (element == null) {
-    return element;
-  } // Skip key warning if the type isn't valid since our key validation logic
-  // doesn't expect a non-string/function type and can throw confusing errors.
-  // We don't want exception behavior to differ between dev and prod.
-  // (Rendering will throw with a helpful message and as soon as the type is
-  // fixed, the key warnings will appear.)
-
-
-  if (validType) {
-    for (var i = 2; i < arguments.length; i++) {
-      validateChildKeys(arguments[i], type);
-    }
-  }
-
-  if (type === REACT_FRAGMENT_TYPE) {
-    validateFragmentProps(element);
-  } else {
-    validatePropTypes(element);
-  }
-
-  return element;
-}
-function createFactoryWithValidation(type) {
-  var validatedFactory = createElementWithValidation.bind(null, type);
-  validatedFactory.type = type; // Legacy hook: remove it
-
-  {
-    Object.defineProperty(validatedFactory, 'type', {
-      enumerable: false,
-      get: function () {
-        lowPriorityWarningWithoutStack$1(false, 'Factory.type is deprecated. Access the class directly ' + 'before passing it to createFactory.');
-        Object.defineProperty(this, 'type', {
-          value: type
-        });
-        return type;
-      }
-    });
-  }
-
-  return validatedFactory;
-}
-function cloneElementWithValidation(element, props, children) {
-  var newElement = cloneElement.apply(this, arguments);
-
-  for (var i = 2; i < arguments.length; i++) {
-    validateChildKeys(arguments[i], newElement.type);
-  }
-
-  validatePropTypes(newElement);
-  return newElement;
-}
-
-var hasBadMapPolyfill;
-
-{
-  hasBadMapPolyfill = false;
-
-  try {
-    var frozenObject = Object.freeze({});
-    var testMap = new Map([[frozenObject, null]]);
-    var testSet = new Set([frozenObject]); // This is necessary for Rollup to not consider these unused.
-    // https://github.com/rollup/rollup/issues/1771
-    // TODO: we can remove these if Rollup fixes the bug.
-
-    testMap.set(0, 0);
-    testSet.add(0);
-  } catch (e) {
-    // TODO: Consider warning about bad polyfills
-    hasBadMapPolyfill = true;
-  }
-}
-
-function createFundamentalComponent(impl) {
-  // We use responder as a Map key later on. When we have a bad
-  // polyfill, then we can't use it as a key as the polyfill tries
-  // to add a property to the object.
-  if ( true && !hasBadMapPolyfill) {
-    Object.freeze(impl);
-  }
-
-  var fundamantalComponent = {
-    $$typeof: REACT_FUNDAMENTAL_TYPE,
-    impl: impl
-  };
-
-  {
-    Object.freeze(fundamantalComponent);
-  }
-
-  return fundamantalComponent;
-}
-
-function createEventResponder(displayName, responderConfig) {
-  var getInitialState = responderConfig.getInitialState,
-      onEvent = responderConfig.onEvent,
-      onMount = responderConfig.onMount,
-      onUnmount = responderConfig.onUnmount,
-      onRootEvent = responderConfig.onRootEvent,
-      rootEventTypes = responderConfig.rootEventTypes,
-      targetEventTypes = responderConfig.targetEventTypes,
-      targetPortalPropagation = responderConfig.targetPortalPropagation;
-  var eventResponder = {
-    $$typeof: REACT_RESPONDER_TYPE,
-    displayName: displayName,
-    getInitialState: getInitialState || null,
-    onEvent: onEvent || null,
-    onMount: onMount || null,
-    onRootEvent: onRootEvent || null,
-    onUnmount: onUnmount || null,
-    rootEventTypes: rootEventTypes || null,
-    targetEventTypes: targetEventTypes || null,
-    targetPortalPropagation: targetPortalPropagation || false
-  }; // We use responder as a Map key later on. When we have a bad
-  // polyfill, then we can't use it as a key as the polyfill tries
-  // to add a property to the object.
-
-  if ( true && !hasBadMapPolyfill) {
-    Object.freeze(eventResponder);
-  }
-
-  return eventResponder;
-}
-
-function createScope() {
-  var scopeComponent = {
-    $$typeof: REACT_SCOPE_TYPE
-  };
-
-  {
-    Object.freeze(scopeComponent);
-  }
-
-  return scopeComponent;
-}
-
-// Helps identify side effects in begin-phase lifecycle hooks and setState reducers:
-
- // In some cases, StrictMode should also double-render lifecycles.
-// This can be confusing for tests though,
-// And it can be bad for performance in production.
-// This feature flag can be used to control the behavior:
-
- // To preserve the "Pause on caught exceptions" behavior of the debugger, we
-// replay the begin phase of a failed component inside invokeGuardedCallback.
-
- // Warn about deprecated, async-unsafe lifecycles; relates to RFC #6:
-
- // Gather advanced timing metrics for Profiler subtrees.
-
- // Trace which interactions trigger each commit.
-
- // SSR experiments
-
-
- // Only used in www builds.
-
- // Only used in www builds.
-
- // Disable javascript: URL strings in href for XSS protection.
-
- // React Fire: prevent the value and checked attributes from syncing
-// with their related DOM properties
-
- // These APIs will no longer be "unstable" in the upcoming 16.7 release,
-// Control this behavior with a flag to support 16.6 minor releases in the meanwhile.
-
-var exposeConcurrentModeAPIs = false;
- // Experimental React Flare event system and event components support.
-
-var enableFlareAPI = false; // Experimental Host Component support.
-
-var enableFundamentalAPI = false; // Experimental Scope support.
-
-var enableScopeAPI = false; // New API for JSX transforms to target - https://github.com/reactjs/rfcs/pull/107
-
-var enableJSXTransformAPI = false; // We will enforce mocking scheduler with scheduler/unstable_mock at some point. (v17?)
-// Till then, we warn about the missing mock, but still fallback to a sync mode compatible version
-
- // For tests, we flush suspense fallbacks in an act scope;
-// *except* in some of our own tests, where we test incremental loading states.
-
- // Add a callback property to suspense to notify which promises are currently
-// in the update queue. This allows reporting and tracing of what is causing
-// the user to see a loading state.
-// Also allows hydration callbacks to fire when a dehydrated boundary gets
-// hydrated or deleted.
-
- // Part of the simplification of React.createElement so we can eventually move
-// from React.createElement to React.jsx
-// https://github.com/reactjs/rfcs/blob/createlement-rfc/text/0000-create-element-changes.md
-
-var React = {
-  Children: {
-    map: mapChildren,
-    forEach: forEachChildren,
-    count: countChildren,
-    toArray: toArray,
-    only: onlyChild
-  },
-  createRef: createRef,
-  Component: Component,
-  PureComponent: PureComponent,
-  createContext: createContext,
-  forwardRef: forwardRef,
-  lazy: lazy,
-  memo: memo,
-  useCallback: useCallback,
-  useContext: useContext,
-  useEffect: useEffect,
-  useImperativeHandle: useImperativeHandle,
-  useDebugValue: useDebugValue,
-  useLayoutEffect: useLayoutEffect,
-  useMemo: useMemo,
-  useReducer: useReducer,
-  useRef: useRef,
-  useState: useState,
-  Fragment: REACT_FRAGMENT_TYPE,
-  Profiler: REACT_PROFILER_TYPE,
-  StrictMode: REACT_STRICT_MODE_TYPE,
-  Suspense: REACT_SUSPENSE_TYPE,
-  createElement: createElementWithValidation,
-  cloneElement: cloneElementWithValidation,
-  createFactory: createFactoryWithValidation,
-  isValidElement: isValidElement,
-  version: ReactVersion,
-  __SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED: ReactSharedInternals
-};
-
-if (exposeConcurrentModeAPIs) {
-  React.useTransition = useTransition;
-  React.useDeferredValue = useDeferredValue;
-  React.SuspenseList = REACT_SUSPENSE_LIST_TYPE;
-  React.unstable_withSuspenseConfig = withSuspenseConfig;
-}
-
-if (enableFlareAPI) {
-  React.unstable_useResponder = useResponder;
-  React.unstable_createResponder = createEventResponder;
-}
-
-if (enableFundamentalAPI) {
-  React.unstable_createFundamental = createFundamentalComponent;
-}
-
-if (enableScopeAPI) {
-  React.unstable_createScope = createScope;
-} // Note: some APIs are added with feature flags.
-// Make sure that stable builds for open source
-// don't modify the React object to avoid deopts.
-// Also let's not expose their names in stable builds.
-
-
-if (enableJSXTransformAPI) {
-  {
-    React.jsxDEV = jsxWithValidation;
-    React.jsx = jsxWithValidationDynamic;
-    React.jsxs = jsxWithValidationStatic;
-  }
-}
-
-
-
-var React$2 = Object.freeze({
-	default: React
-});
-
-var React$3 = ( React$2 && React ) || React$2;
-
-// TODO: decide on the top-level export form.
-// This is hacky but makes it work with both Rollup and Jest.
-
-
-var react = React$3.default || React$3;
-
-module.exports = react;
-  })();
-}
-
-
-/***/ }),
-
-/***/ "./node_modules/react/index.js":
-/*!**************************************************!*\
-  !*** ../carponextjs/node_modules/react/index.js ***!
-  \**************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-if (false) {} else {
-  module.exports = __webpack_require__(/*! ./cjs/react.development.js */ "./node_modules/react/cjs/react.development.js");
-}
 
 
 /***/ }),
@@ -9684,9 +2629,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/CarpoLayout */ "./components/CarpoLayout.js");
-/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../styles/style.css */ "./styles/style.css");
-/* harmony import */ var _styles_style_css__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_styles_style_css__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\CarpoNextJS\\pages\\index.js";
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\pages\\index.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -9695,48 +2640,60 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 5
+    lineNumber: 6
   },
   __self: undefined
-}, __jsx("div", {
+}, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 6
+    lineNumber: 7
+  },
+  __self: undefined
+}, __jsx("title", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 8
+  },
+  __self: undefined
+}, "Home page")), __jsx("div", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 10
   },
   __self: undefined
 }, __jsx("div", {
   className: "container jtv-home-revslider",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 7
+    lineNumber: 11
   },
   __self: undefined
 }, __jsx("div", {
   className: "row",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 8
+    lineNumber: 12
   },
   __self: undefined
 }, __jsx("div", {
   className: "col-lg-9 col-sm-9 col-xs-12 jtv-main-home-slider",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 9
+    lineNumber: 13
   },
   __self: undefined
 }, __jsx("div", {
   className: "banner-block",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 10
+    lineNumber: 14
   },
   __self: undefined
 }, " ", __jsx("a", {
   href: "#",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 12
+    lineNumber: 16
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -9744,61 +2701,61 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   alt: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 14
+    lineNumber: 18
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "text-des-container pad-zero",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 16
+    lineNumber: 20
   },
   __self: undefined
 }, __jsx("div", {
   className: "text-des",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 17
+    lineNumber: 21
   },
   __self: undefined
 }, __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 18
+    lineNumber: 22
   },
   __self: undefined
 }, "B\u1ED9 s\u01B0u t\u1EADp"), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 19
+    lineNumber: 23
   },
   __self: undefined
 }, "Thu - \u0110\xF4ng 2019"), __jsx("p", {
   className: "text-danger",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 20
+    lineNumber: 24
   },
   __self: undefined
 }, "Tham gia \u0111\u1EC3 nh\u1EADn c\u01A1 h\u1ED9i gi\u1EA3m gi\xE1 l\xEAn \u0111\u1EBFn 50%"))))), __jsx("div", {
   className: "col-lg-3 col-md-3 col-sm-3 col-xs-12",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 27
+    lineNumber: 31
   },
   __self: undefined
 }, __jsx("div", {
   className: "banner-block",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 28
+    lineNumber: 32
   },
   __self: undefined
 }, " ", __jsx("a", {
   href: "#",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 30
+    lineNumber: 34
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -9806,47 +2763,47 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   alt: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 32
+    lineNumber: 36
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "text-des-container pad-zero",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 34
+    lineNumber: 38
   },
   __self: undefined
 }, __jsx("div", {
   className: "text-des",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 35
+    lineNumber: 39
   },
   __self: undefined
 }, __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 36
+    lineNumber: 40
   },
   __self: undefined
 }, "Phong c\xE1ch m\u1EDBi l\u1EA1"), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 37
+    lineNumber: 41
   },
   __self: undefined
 }, "Ph\u1EE5 ki\u1EC7n nam")))), __jsx("div", {
   className: "banner-block",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 41
+    lineNumber: 45
   },
   __self: undefined
 }, " ", __jsx("a", {
   href: "#",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 43
+    lineNumber: 47
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -9854,193 +2811,193 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   alt: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 45
+    lineNumber: 49
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "text-des-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 47
+    lineNumber: 51
   },
   __self: undefined
 }, __jsx("div", {
   className: "text-des",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 48
+    lineNumber: 52
   },
   __self: undefined
 }, __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 49
+    lineNumber: 53
   },
   __self: undefined
 }, "Xu h\u01B0\u1EDBng 2019"), __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 50
+    lineNumber: 54
   },
   __self: undefined
 }, "B\u1ED9 s\u01B0u t\u1EADp"))))))), __jsx("div", {
   className: "container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 58
+    lineNumber: 62
   },
   __self: undefined
 }, __jsx("div", {
   className: "support-policy-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 59
+    lineNumber: 63
   },
   __self: undefined
 }, __jsx("div", {
   className: "row",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 60
+    lineNumber: 64
   },
   __self: undefined
 }, __jsx("div", {
   className: "col-md-4 col-sm-4 col-xs-12",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 61
+    lineNumber: 65
   },
   __self: undefined
 }, __jsx("div", {
   className: "support-policy",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 62
+    lineNumber: 66
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-truck",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 64
+    lineNumber: 68
   },
   __self: undefined
 }), __jsx("div", {
   className: "content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 65
+    lineNumber: 69
   },
   __self: undefined
 }, "Mi\u1EC5n ph\xED \u0111\u01A1n h\xE0ng tr\xEAn 500.000"))), __jsx("div", {
   className: "col-md-4 col-sm-4 col-xs-12",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 68
+    lineNumber: 72
   },
   __self: undefined
 }, __jsx("div", {
   className: "support-policy",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 69
+    lineNumber: 73
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-phone",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 71
+    lineNumber: 75
   },
   __self: undefined
 }), __jsx("div", {
   className: "content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 72
+    lineNumber: 76
   },
   __self: undefined
 }, "H\u1ED7 tr\u1EE3 +1 123 456 7890"))), __jsx("div", {
   className: "col-md-4 col-sm-4 col-xs-12",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 75
+    lineNumber: 79
   },
   __self: undefined
 }, __jsx("div", {
   className: "support-policy",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 76
+    lineNumber: 80
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-refresh",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 78
+    lineNumber: 82
   },
   __self: undefined
 }), __jsx("div", {
   className: "content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 79
+    lineNumber: 83
   },
   __self: undefined
 }, "30 ng\xE0y \u0111\u1ED5i tr\u1EA3")))))), __jsx("section", {
   className: "main-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 86
+    lineNumber: 90
   },
   __self: undefined
 }, __jsx("div", {
   className: "container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 87
+    lineNumber: 91
   },
   __self: undefined
 }, __jsx("div", {
   className: "row",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 88
+    lineNumber: 92
   },
   __self: undefined
 }, __jsx("div", {
   className: "col-sm-12 col-xs-12",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 89
+    lineNumber: 93
   },
   __self: undefined
 }, __jsx("div", {
   className: "jtv-trending-products",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 91
+    lineNumber: 95
   },
   __self: undefined
 }, __jsx("div", {
   className: "slider-items-products",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 92
+    lineNumber: 96
   },
   __self: undefined
 }, __jsx("div", {
   className: "jtv-new-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 93
+    lineNumber: 97
   },
   __self: undefined
 }, __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 94
+    lineNumber: 98
   },
   __self: undefined
 }, "S\u1EA3n ph\u1EA9m m\u1EDBi nh\u1EA5t")), __jsx("div", {
@@ -10048,42 +3005,42 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   className: "product-flexslider hidden-buttons",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 96
+    lineNumber: 100
   },
   __self: undefined
 }, __jsx("div", {
   className: "slider-items slider-width-col4 products-grid",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 100
+    lineNumber: 104
   },
   __self: undefined
 }, __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 101
+    lineNumber: 105
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 102
+    lineNumber: 106
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 103
+    lineNumber: 107
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 104
+    lineNumber: 108
   },
   __self: undefined
 }, __jsx("a", {
@@ -10092,7 +3049,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 105
+    lineNumber: 109
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -10100,28 +3057,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at2.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 111
+    lineNumber: 115
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 116
+    lineNumber: 120
   },
   __self: undefined
 }, "new"), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 117
+    lineNumber: 121
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 118
+    lineNumber: 122
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -10129,34 +3086,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 119
+    lineNumber: 123
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 123
+    lineNumber: 127
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 127
+    lineNumber: 131
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 128
+    lineNumber: 132
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 129
+    lineNumber: 133
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -10164,105 +3121,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 131
+    lineNumber: 135
   },
   __self: undefined
 }, "\xC1o thun da tr\u01A1n t\xFAi ng\u1EF1c", " ")), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 138
+    lineNumber: 142
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 139
+    lineNumber: 143
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 141
+    lineNumber: 145
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 142
+    lineNumber: 146
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 143
+    lineNumber: 147
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 144
+    lineNumber: 148
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 145
+    lineNumber: 149
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 147
+    lineNumber: 151
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 148
+    lineNumber: 152
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 150
+    lineNumber: 154
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 152
+    lineNumber: 156
   },
   __self: undefined
 }, "320.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 156
+    lineNumber: 160
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 157
+    lineNumber: 161
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 158
+    lineNumber: 162
   },
   __self: undefined
 }, __jsx("button", {
@@ -10270,48 +3227,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 159
+    lineNumber: 163
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 163
+    lineNumber: 167
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 164
+    lineNumber: 168
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 176
+    lineNumber: 180
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 177
+    lineNumber: 181
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 178
+    lineNumber: 182
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 179
+    lineNumber: 183
   },
   __self: undefined
 }, __jsx("a", {
@@ -10320,7 +3277,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 180
+    lineNumber: 184
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -10328,28 +3285,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at3.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 186
+    lineNumber: 190
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "sale-label sale-top-right",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 191
+    lineNumber: 195
   },
   __self: undefined
 }, "Sale"), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 194
+    lineNumber: 198
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 195
+    lineNumber: 199
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -10357,34 +3314,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 196
+    lineNumber: 200
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 200
+    lineNumber: 204
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 204
+    lineNumber: 208
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 205
+    lineNumber: 209
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 206
+    lineNumber: 210
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -10392,105 +3349,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 208
+    lineNumber: 212
   },
   __self: undefined
 }, "\xC1o wash in h\xECnh", " "), " "), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 215
+    lineNumber: 219
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 216
+    lineNumber: 220
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 218
+    lineNumber: 222
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 219
+    lineNumber: 223
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 220
+    lineNumber: 224
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 221
+    lineNumber: 225
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 222
+    lineNumber: 226
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 224
+    lineNumber: 228
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 225
+    lineNumber: 229
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 227
+    lineNumber: 231
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 229
+    lineNumber: 233
   },
   __self: undefined
 }, "530.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 233
+    lineNumber: 237
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 234
+    lineNumber: 238
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 235
+    lineNumber: 239
   },
   __self: undefined
 }, __jsx("button", {
@@ -10498,48 +3455,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 236
+    lineNumber: 240
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 240
+    lineNumber: 244
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 241
+    lineNumber: 245
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 253
+    lineNumber: 257
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 254
+    lineNumber: 258
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 255
+    lineNumber: 259
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 256
+    lineNumber: 260
   },
   __self: undefined
 }, __jsx("a", {
@@ -10548,7 +3505,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 257
+    lineNumber: 261
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -10556,21 +3513,21 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at4.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 263
+    lineNumber: 267
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 268
+    lineNumber: 272
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 269
+    lineNumber: 273
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -10578,34 +3535,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 270
+    lineNumber: 274
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 274
+    lineNumber: 278
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 278
+    lineNumber: 282
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 279
+    lineNumber: 283
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 280
+    lineNumber: 284
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -10613,105 +3570,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 282
+    lineNumber: 286
   },
   __self: undefined
 }, "\xC1o thun th\u1EC3 thao", " "), " "), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 289
+    lineNumber: 293
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 290
+    lineNumber: 294
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 292
+    lineNumber: 296
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 293
+    lineNumber: 297
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 294
+    lineNumber: 298
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 295
+    lineNumber: 299
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 296
+    lineNumber: 300
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 298
+    lineNumber: 302
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 299
+    lineNumber: 303
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 301
+    lineNumber: 305
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 303
+    lineNumber: 307
   },
   __self: undefined
 }, "720.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 307
+    lineNumber: 311
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 308
+    lineNumber: 312
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 309
+    lineNumber: 313
   },
   __self: undefined
 }, __jsx("button", {
@@ -10719,48 +3676,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 310
+    lineNumber: 314
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 314
+    lineNumber: 318
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 315
+    lineNumber: 319
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 327
+    lineNumber: 331
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 328
+    lineNumber: 332
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 329
+    lineNumber: 333
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 330
+    lineNumber: 334
   },
   __self: undefined
 }, __jsx("a", {
@@ -10769,7 +3726,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 331
+    lineNumber: 335
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -10777,28 +3734,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at5.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 337
+    lineNumber: 341
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "sale-label sale-top-right",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 342
+    lineNumber: 346
   },
   __self: undefined
 }, "Sale"), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 345
+    lineNumber: 349
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 346
+    lineNumber: 350
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -10806,34 +3763,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 347
+    lineNumber: 351
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 351
+    lineNumber: 355
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 355
+    lineNumber: 359
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 356
+    lineNumber: 360
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 357
+    lineNumber: 361
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -10841,105 +3798,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 359
+    lineNumber: 363
   },
   __self: undefined
 }, "\xC1o len c\u1ED9c tay m\xF9a h\xE8", " ")), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 366
+    lineNumber: 370
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 367
+    lineNumber: 371
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 369
+    lineNumber: 373
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 370
+    lineNumber: 374
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 371
+    lineNumber: 375
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 372
+    lineNumber: 376
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 373
+    lineNumber: 377
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 375
+    lineNumber: 379
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 376
+    lineNumber: 380
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 378
+    lineNumber: 382
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 380
+    lineNumber: 384
   },
   __self: undefined
 }, "640.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 384
+    lineNumber: 388
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 385
+    lineNumber: 389
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 386
+    lineNumber: 390
   },
   __self: undefined
 }, __jsx("button", {
@@ -10947,48 +3904,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 387
+    lineNumber: 391
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 391
+    lineNumber: 395
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 392
+    lineNumber: 396
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 404
+    lineNumber: 408
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 405
+    lineNumber: 409
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 406
+    lineNumber: 410
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 407
+    lineNumber: 411
   },
   __self: undefined
 }, __jsx("a", {
@@ -10997,7 +3954,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 408
+    lineNumber: 412
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -11005,21 +3962,21 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at6.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 414
+    lineNumber: 418
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 419
+    lineNumber: 423
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 420
+    lineNumber: 424
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -11027,34 +3984,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 421
+    lineNumber: 425
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 425
+    lineNumber: 429
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 429
+    lineNumber: 433
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 430
+    lineNumber: 434
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 431
+    lineNumber: 435
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -11062,105 +4019,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 433
+    lineNumber: 437
   },
   __self: undefined
 }, "\xC1o thun c\u1ED5 tr\xF2n miix", " ")), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 440
+    lineNumber: 444
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 441
+    lineNumber: 445
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 443
+    lineNumber: 447
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 444
+    lineNumber: 448
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 445
+    lineNumber: 449
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 446
+    lineNumber: 450
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 447
+    lineNumber: 451
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 449
+    lineNumber: 453
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 450
+    lineNumber: 454
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 452
+    lineNumber: 456
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 454
+    lineNumber: 458
   },
   __self: undefined
 }, "870.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 458
+    lineNumber: 462
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 459
+    lineNumber: 463
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 460
+    lineNumber: 464
   },
   __self: undefined
 }, __jsx("button", {
@@ -11168,48 +4125,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 461
+    lineNumber: 465
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 465
+    lineNumber: 469
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 466
+    lineNumber: 470
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 478
+    lineNumber: 482
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 479
+    lineNumber: 483
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 480
+    lineNumber: 484
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 481
+    lineNumber: 485
   },
   __self: undefined
 }, __jsx("a", {
@@ -11218,7 +4175,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 482
+    lineNumber: 486
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -11226,28 +4183,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at8.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 488
+    lineNumber: 492
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "sale-label sale-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 493
+    lineNumber: 497
   },
   __self: undefined
 }, "Sale"), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 496
+    lineNumber: 500
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 497
+    lineNumber: 501
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -11255,34 +4212,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 498
+    lineNumber: 502
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 502
+    lineNumber: 506
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 506
+    lineNumber: 510
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 507
+    lineNumber: 511
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 508
+    lineNumber: 512
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -11290,105 +4247,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 510
+    lineNumber: 514
   },
   __self: undefined
 }, "\xC1o thun 3 l\u1ED7", " "), " "), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 517
+    lineNumber: 521
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 518
+    lineNumber: 522
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 520
+    lineNumber: 524
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 521
+    lineNumber: 525
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 522
+    lineNumber: 526
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 523
+    lineNumber: 527
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 524
+    lineNumber: 528
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 526
+    lineNumber: 530
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 527
+    lineNumber: 531
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 529
+    lineNumber: 533
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 531
+    lineNumber: 535
   },
   __self: undefined
 }, "440.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 535
+    lineNumber: 539
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 536
+    lineNumber: 540
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 537
+    lineNumber: 541
   },
   __self: undefined
 }, __jsx("button", {
@@ -11396,48 +4353,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 538
+    lineNumber: 542
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 542
+    lineNumber: 546
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 543
+    lineNumber: 547
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 555
+    lineNumber: 559
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 556
+    lineNumber: 560
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 557
+    lineNumber: 561
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 558
+    lineNumber: 562
   },
   __self: undefined
 }, __jsx("a", {
@@ -11446,7 +4403,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 559
+    lineNumber: 563
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -11454,21 +4411,21 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at9.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 565
+    lineNumber: 569
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 570
+    lineNumber: 574
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 571
+    lineNumber: 575
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -11476,34 +4433,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 572
+    lineNumber: 576
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 576
+    lineNumber: 580
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 580
+    lineNumber: 584
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 581
+    lineNumber: 585
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 582
+    lineNumber: 586
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -11511,105 +4468,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 584
+    lineNumber: 588
   },
   __self: undefined
 }, "\xC1o ph\xF4ng c\u1ED5 tr\xF2n cao c\u1EA5p", " ")), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 591
+    lineNumber: 595
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 592
+    lineNumber: 596
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 594
+    lineNumber: 598
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 595
+    lineNumber: 599
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 596
+    lineNumber: 600
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 597
+    lineNumber: 601
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 598
+    lineNumber: 602
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 600
+    lineNumber: 604
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 601
+    lineNumber: 605
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 603
+    lineNumber: 607
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 605
+    lineNumber: 609
   },
   __self: undefined
 }, "760.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 609
+    lineNumber: 613
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 610
+    lineNumber: 614
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 611
+    lineNumber: 615
   },
   __self: undefined
 }, __jsx("button", {
@@ -11617,75 +4574,75 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 612
+    lineNumber: 616
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 616
+    lineNumber: 620
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 617
+    lineNumber: 621
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))))))))))), __jsx("section", {
   className: "main-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 639
+    lineNumber: 643
   },
   __self: undefined
 }, __jsx("div", {
   className: "container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 640
+    lineNumber: 644
   },
   __self: undefined
 }, __jsx("div", {
   className: "row",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 641
+    lineNumber: 645
   },
   __self: undefined
 }, __jsx("div", {
   className: "col-sm-12 col-xs-12",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 642
+    lineNumber: 646
   },
   __self: undefined
 }, __jsx("div", {
   className: "jtv-trending-products",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 644
+    lineNumber: 648
   },
   __self: undefined
 }, __jsx("div", {
   className: "slider-items-products",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 645
+    lineNumber: 649
   },
   __self: undefined
 }, __jsx("div", {
   className: "jtv-new-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 646
+    lineNumber: 650
   },
   __self: undefined
 }, __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 647
+    lineNumber: 651
   },
   __self: undefined
 }, "S\u1EA3n ph\u1EA9m b\xE1n ch\u1EA1y")), __jsx("div", {
@@ -11693,42 +4650,42 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   className: "product-flexslider hidden-buttons",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 649
+    lineNumber: 653
   },
   __self: undefined
 }, __jsx("div", {
   className: "slider-items slider-width-col4 products-grid",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 653
+    lineNumber: 657
   },
   __self: undefined
 }, __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 654
+    lineNumber: 658
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 655
+    lineNumber: 659
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 656
+    lineNumber: 660
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 657
+    lineNumber: 661
   },
   __self: undefined
 }, __jsx("a", {
@@ -11737,7 +4694,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 658
+    lineNumber: 662
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -11745,28 +4702,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at12.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 664
+    lineNumber: 668
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 669
+    lineNumber: 673
   },
   __self: undefined
 }, "new"), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 670
+    lineNumber: 674
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 671
+    lineNumber: 675
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -11774,34 +4731,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 672
+    lineNumber: 676
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 676
+    lineNumber: 680
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 680
+    lineNumber: 684
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 681
+    lineNumber: 685
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 682
+    lineNumber: 686
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -11809,105 +4766,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 684
+    lineNumber: 688
   },
   __self: undefined
 }, "\xC1o thun da tr\u01A1n t\xFAi ng\u1EF1c", " ")), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 691
+    lineNumber: 695
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 692
+    lineNumber: 696
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 694
+    lineNumber: 698
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 695
+    lineNumber: 699
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 696
+    lineNumber: 700
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 697
+    lineNumber: 701
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 698
+    lineNumber: 702
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 700
+    lineNumber: 704
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 701
+    lineNumber: 705
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 703
+    lineNumber: 707
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 705
+    lineNumber: 709
   },
   __self: undefined
 }, "320.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 709
+    lineNumber: 713
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 710
+    lineNumber: 714
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 711
+    lineNumber: 715
   },
   __self: undefined
 }, __jsx("button", {
@@ -11915,48 +4872,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 712
+    lineNumber: 716
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 716
+    lineNumber: 720
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 717
+    lineNumber: 721
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 729
+    lineNumber: 733
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 730
+    lineNumber: 734
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 731
+    lineNumber: 735
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 732
+    lineNumber: 736
   },
   __self: undefined
 }, __jsx("a", {
@@ -11965,7 +4922,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 733
+    lineNumber: 737
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -11973,28 +4930,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at13.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 739
+    lineNumber: 743
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "sale-label sale-top-right",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 744
+    lineNumber: 748
   },
   __self: undefined
 }, "Sale"), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 747
+    lineNumber: 751
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 748
+    lineNumber: 752
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -12002,34 +4959,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 749
+    lineNumber: 753
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 753
+    lineNumber: 757
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 757
+    lineNumber: 761
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 758
+    lineNumber: 762
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 759
+    lineNumber: 763
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -12037,105 +4994,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 761
+    lineNumber: 765
   },
   __self: undefined
 }, "\xC1o wash in h\xECnh", " "), " "), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 768
+    lineNumber: 772
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 769
+    lineNumber: 773
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 771
+    lineNumber: 775
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 772
+    lineNumber: 776
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 773
+    lineNumber: 777
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 774
+    lineNumber: 778
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 775
+    lineNumber: 779
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 777
+    lineNumber: 781
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 778
+    lineNumber: 782
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 780
+    lineNumber: 784
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 782
+    lineNumber: 786
   },
   __self: undefined
 }, "530.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 786
+    lineNumber: 790
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 787
+    lineNumber: 791
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 788
+    lineNumber: 792
   },
   __self: undefined
 }, __jsx("button", {
@@ -12143,48 +5100,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 789
+    lineNumber: 793
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 793
+    lineNumber: 797
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 794
+    lineNumber: 798
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 806
+    lineNumber: 810
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 807
+    lineNumber: 811
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 808
+    lineNumber: 812
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 809
+    lineNumber: 813
   },
   __self: undefined
 }, __jsx("a", {
@@ -12193,7 +5150,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 810
+    lineNumber: 814
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -12201,21 +5158,21 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at14.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 816
+    lineNumber: 820
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 821
+    lineNumber: 825
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 822
+    lineNumber: 826
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -12223,34 +5180,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 823
+    lineNumber: 827
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 827
+    lineNumber: 831
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 831
+    lineNumber: 835
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 832
+    lineNumber: 836
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 833
+    lineNumber: 837
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -12258,105 +5215,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 835
+    lineNumber: 839
   },
   __self: undefined
 }, "\xC1o thun th\u1EC3 thao", " "), " "), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 842
+    lineNumber: 846
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 843
+    lineNumber: 847
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 845
+    lineNumber: 849
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 846
+    lineNumber: 850
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 847
+    lineNumber: 851
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 848
+    lineNumber: 852
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 849
+    lineNumber: 853
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 851
+    lineNumber: 855
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 852
+    lineNumber: 856
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 854
+    lineNumber: 858
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 856
+    lineNumber: 860
   },
   __self: undefined
 }, "720.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 860
+    lineNumber: 864
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 861
+    lineNumber: 865
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 862
+    lineNumber: 866
   },
   __self: undefined
 }, __jsx("button", {
@@ -12364,48 +5321,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 863
+    lineNumber: 867
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 867
+    lineNumber: 871
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 868
+    lineNumber: 872
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 880
+    lineNumber: 884
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 881
+    lineNumber: 885
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 882
+    lineNumber: 886
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 883
+    lineNumber: 887
   },
   __self: undefined
 }, __jsx("a", {
@@ -12414,7 +5371,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 884
+    lineNumber: 888
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -12422,28 +5379,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/aothun4.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 890
+    lineNumber: 894
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "sale-label sale-top-right",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 895
+    lineNumber: 899
   },
   __self: undefined
 }, "Sale"), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 898
+    lineNumber: 902
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 899
+    lineNumber: 903
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -12451,34 +5408,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 900
+    lineNumber: 904
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 904
+    lineNumber: 908
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 908
+    lineNumber: 912
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 909
+    lineNumber: 913
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 910
+    lineNumber: 914
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -12486,105 +5443,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 912
+    lineNumber: 916
   },
   __self: undefined
 }, "\xC1o len c\u1ED9c tay m\xF9a h\xE8", " ")), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 919
+    lineNumber: 923
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 920
+    lineNumber: 924
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 922
+    lineNumber: 926
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 923
+    lineNumber: 927
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 924
+    lineNumber: 928
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 925
+    lineNumber: 929
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 926
+    lineNumber: 930
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 928
+    lineNumber: 932
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 929
+    lineNumber: 933
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 931
+    lineNumber: 935
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 933
+    lineNumber: 937
   },
   __self: undefined
 }, "640.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 937
+    lineNumber: 941
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 938
+    lineNumber: 942
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 939
+    lineNumber: 943
   },
   __self: undefined
 }, __jsx("button", {
@@ -12592,48 +5549,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 940
+    lineNumber: 944
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 944
+    lineNumber: 948
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 945
+    lineNumber: 949
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 957
+    lineNumber: 961
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 958
+    lineNumber: 962
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 959
+    lineNumber: 963
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 960
+    lineNumber: 964
   },
   __self: undefined
 }, __jsx("a", {
@@ -12642,7 +5599,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 961
+    lineNumber: 965
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -12650,21 +5607,21 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at1.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 967
+    lineNumber: 971
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 972
+    lineNumber: 976
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 973
+    lineNumber: 977
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -12672,34 +5629,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 974
+    lineNumber: 978
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 978
+    lineNumber: 982
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 982
+    lineNumber: 986
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 983
+    lineNumber: 987
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 984
+    lineNumber: 988
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -12707,105 +5664,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 986
+    lineNumber: 990
   },
   __self: undefined
 }, "\xC1o thun c\u1ED5 tr\xF2n miix", " ")), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 993
+    lineNumber: 997
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 994
+    lineNumber: 998
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 996
+    lineNumber: 1000
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 997
+    lineNumber: 1001
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 998
+    lineNumber: 1002
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 999
+    lineNumber: 1003
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1000
+    lineNumber: 1004
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1002
+    lineNumber: 1006
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1003
+    lineNumber: 1007
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1005
+    lineNumber: 1009
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1007
+    lineNumber: 1011
   },
   __self: undefined
 }, "870.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1011
+    lineNumber: 1015
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1012
+    lineNumber: 1016
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1013
+    lineNumber: 1017
   },
   __self: undefined
 }, __jsx("button", {
@@ -12813,48 +5770,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1014
+    lineNumber: 1018
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1018
+    lineNumber: 1022
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1019
+    lineNumber: 1023
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1031
+    lineNumber: 1035
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1032
+    lineNumber: 1036
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1033
+    lineNumber: 1037
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1034
+    lineNumber: 1038
   },
   __self: undefined
 }, __jsx("a", {
@@ -12863,7 +5820,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1035
+    lineNumber: 1039
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -12871,28 +5828,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at10.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1041
+    lineNumber: 1045
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "sale-label sale-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1046
+    lineNumber: 1050
   },
   __self: undefined
 }, "Sale"), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1049
+    lineNumber: 1053
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1050
+    lineNumber: 1054
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -12900,34 +5857,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1051
+    lineNumber: 1055
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1055
+    lineNumber: 1059
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1059
+    lineNumber: 1063
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1060
+    lineNumber: 1064
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1061
+    lineNumber: 1065
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -12935,105 +5892,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1063
+    lineNumber: 1067
   },
   __self: undefined
 }, "\xC1o thun 3 l\u1ED7", " "), " "), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1070
+    lineNumber: 1074
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1071
+    lineNumber: 1075
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1073
+    lineNumber: 1077
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1074
+    lineNumber: 1078
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1075
+    lineNumber: 1079
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1076
+    lineNumber: 1080
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1077
+    lineNumber: 1081
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1079
+    lineNumber: 1083
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1080
+    lineNumber: 1084
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1082
+    lineNumber: 1086
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1084
+    lineNumber: 1088
   },
   __self: undefined
 }, "440.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1088
+    lineNumber: 1092
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1089
+    lineNumber: 1093
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1090
+    lineNumber: 1094
   },
   __self: undefined
 }, __jsx("button", {
@@ -13041,48 +5998,48 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1091
+    lineNumber: 1095
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1095
+    lineNumber: 1099
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1096
+    lineNumber: 1100
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))), __jsx("div", {
   className: "item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1108
+    lineNumber: 1112
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1109
+    lineNumber: 1113
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1110
+    lineNumber: 1114
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1111
+    lineNumber: 1115
   },
   __self: undefined
 }, __jsx("a", {
@@ -13091,7 +6048,7 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1112
+    lineNumber: 1116
   },
   __self: undefined
 }, " ", __jsx("img", {
@@ -13099,21 +6056,21 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/at11.png",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1118
+    lineNumber: 1122
   },
   __self: undefined
 }), " "), __jsx("div", {
   className: "mask-shop-white",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1123
+    lineNumber: 1127
   },
   __self: undefined
 }), __jsx("div", {
   className: "new-label new-top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1124
+    lineNumber: 1128
   },
   __self: undefined
 }, "new"), __jsx("a", {
@@ -13121,34 +6078,34 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1125
+    lineNumber: 1129
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1129
+    lineNumber: 1133
   },
   __self: undefined
 }, "Xem nhanh")))), __jsx("div", {
   className: "item-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1133
+    lineNumber: 1137
   },
   __self: undefined
 }, __jsx("div", {
   className: "info-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1134
+    lineNumber: 1138
   },
   __self: undefined
 }, __jsx("div", {
   className: "item-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1135
+    lineNumber: 1139
   },
   __self: undefined
 }, " ", __jsx("a", {
@@ -13156,105 +6113,105 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./product-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1137
+    lineNumber: 1141
   },
   __self: undefined
 }, "\xC1o ph\xF4ng c\u1ED5 tr\xF2n cao c\u1EA5p", " ")), __jsx("div", {
   className: "item-content",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1144
+    lineNumber: 1148
   },
   __self: undefined
 }, __jsx("div", {
   className: "rating",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1145
+    lineNumber: 1149
   },
   __self: undefined
 }, " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1147
+    lineNumber: 1151
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1148
+    lineNumber: 1152
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1149
+    lineNumber: 1153
   },
   __self: undefined
 }), __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1150
+    lineNumber: 1154
   },
   __self: undefined
 }), " ", __jsx("i", {
   className: "fa fa-star-o",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1151
+    lineNumber: 1155
   },
   __self: undefined
 })), __jsx("div", {
   className: "item-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1153
+    lineNumber: 1157
   },
   __self: undefined
 }, __jsx("div", {
   className: "price-box",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1154
+    lineNumber: 1158
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "regular-price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1156
+    lineNumber: 1160
   },
   __self: undefined
 }, " ", __jsx("span", {
   className: "price",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1158
+    lineNumber: 1162
   },
   __self: undefined
 }, "760.000\u0111")))), __jsx("div", {
   className: "actions",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1162
+    lineNumber: 1166
   },
   __self: undefined
 }, __jsx("div", {
   className: "add_cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1163
+    lineNumber: 1167
   },
   __self: undefined
 }, __jsx("a", {
   href: "./shopping-card.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1164
+    lineNumber: 1168
   },
   __self: undefined
 }, __jsx("button", {
@@ -13262,82 +6219,82 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   type: "button",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1165
+    lineNumber: 1169
   },
   __self: undefined
 }, __jsx("span", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1169
+    lineNumber: 1173
   },
   __self: undefined
 }, __jsx("i", {
   className: "fa fa-shopping-cart",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1170
+    lineNumber: 1174
   },
   __self: undefined
 }), " ", "Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))))))), __jsx("div", {
   className: "jtv-latest-blog",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1188
+    lineNumber: 1192
   },
   __self: undefined
 }, __jsx("div", {
   className: "jtv-new-title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1189
+    lineNumber: 1193
   },
   __self: undefined
 }, __jsx("h2", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1190
+    lineNumber: 1194
   },
   __self: undefined
 }, "Tin t\u1EE9c m\u1EDBi nh\u1EA5t")), __jsx("div", {
   className: "row",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1192
+    lineNumber: 1196
   },
   __self: undefined
 }, __jsx("div", {
   className: "blog-outer-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1193
+    lineNumber: 1197
   },
   __self: undefined
 }, __jsx("div", {
   className: "blog-inner",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1194
+    lineNumber: 1198
   },
   __self: undefined
 }, __jsx("div", {
   className: "col-xs-12 col-sm-6 col-md-4 blog-preview_item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1195
+    lineNumber: 1199
   },
   __self: undefined
 }, __jsx("div", {
   className: "entry-thumb jtv-blog-img-hover",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1196
+    lineNumber: 1200
   },
   __self: undefined
 }, " ", __jsx("a", {
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1198
+    lineNumber: 1202
   },
   __self: undefined
 }, __jsx("img", {
@@ -13345,109 +6302,109 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/l-post1.jpg",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1199
+    lineNumber: 1203
   },
   __self: undefined
 }), " "), " "), __jsx("h4", {
   className: "blog-preview_title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1202
+    lineNumber: 1206
   },
   __self: undefined
 }, __jsx("a", {
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1203
+    lineNumber: 1207
   },
   __self: undefined
 }, "3 Ki\u1EC3u Qu\u1EA7n Jeans nam \u201Ckh\xF4ng th\u1EC3 thi\u1EBFu\u201D trong t\u1EE7 \u0111\u1ED3 m\u1ED9t ch\xE0ng trai Hi\u1EC7n \u0110\u1EA1i")), __jsx("div", {
   className: "blog-preview_info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1208
+    lineNumber: 1212
   },
   __self: undefined
 }, __jsx("ul", {
   className: "post-meta",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1209
+    lineNumber: 1213
   },
   __self: undefined
 }, __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1210
-  },
-  __self: undefined
-}, __jsx("i", {
-  className: "fa fa-user",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1211
-  },
-  __self: undefined
-}), "By ", __jsx("a", {
-  href: "#",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1212
-  },
-  __self: undefined
-}, "Admin")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1214
   },
   __self: undefined
 }, __jsx("i", {
-  className: "fa fa-comments",
+  className: "fa fa-user",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1215
   },
   __self: undefined
-}), __jsx("a", {
+}), "By ", __jsx("a", {
   href: "#",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1216
   },
   __self: undefined
-}, "8 B\xECnh lu\u1EADn")), __jsx("li", {
+}, "Admin")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1218
   },
   __self: undefined
 }, __jsx("i", {
-  className: "fa fa-clock-o",
+  className: "fa fa-comments",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1219
+  },
+  __self: undefined
+}), __jsx("a", {
+  href: "#",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1220
+  },
+  __self: undefined
+}, "8 B\xECnh lu\u1EADn")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1222
+  },
+  __self: undefined
+}, __jsx("i", {
+  className: "fa fa-clock-o",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1223
   },
   __self: undefined
 }), __jsx("span", {
   className: "day",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1220
+    lineNumber: 1224
   },
   __self: undefined
 }, "12"), __jsx("span", {
   className: "month",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1221
+    lineNumber: 1225
   },
   __self: undefined
 }, "Feb"))), __jsx("div", {
   className: "blog-preview_desc",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1224
+    lineNumber: 1228
   },
   __self: undefined
 }, "B\u1EA5t ch\u1EA5p m\u1ECDi xu h\u01B0\u1EDBng th\u1EDDi trang, Qu\u1EA7n Jean Nam k\u1EC3 t\u1EEB khi ra \u0111\u1EDDi h\u01A1n 1 th\u1EBF k\u1EF7 tr\u01B0\u1EDBc \u0111\u1EBFn nay v\u1EABn l\xE0 m\xF3n \u0111\u1ED3 y\xEAu th\xEDch.", __jsx("a", {
@@ -13455,28 +6412,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1228
+    lineNumber: 1232
   },
   __self: undefined
 }, "Xem th\xEAm")))), __jsx("div", {
   className: "col-xs-12 col-sm-6 col-md-4 blog-preview_item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1234
+    lineNumber: 1238
   },
   __self: undefined
 }, __jsx("div", {
   className: "entry-thumb jtv-blog-img-hover",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1235
+    lineNumber: 1239
   },
   __self: undefined
 }, " ", __jsx("a", {
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1237
+    lineNumber: 1241
   },
   __self: undefined
 }, __jsx("img", {
@@ -13484,109 +6441,109 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/l-post2.jpg",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1238
+    lineNumber: 1242
   },
   __self: undefined
 }), " "), " "), __jsx("h4", {
   className: "blog-preview_title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1241
+    lineNumber: 1245
   },
   __self: undefined
 }, __jsx("a", {
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1242
+    lineNumber: 1246
   },
   __self: undefined
 }, "C\xE1ch gi\u1EEF trang ph\u1EE5c b\u1EC1n \u0111\u1EB9p theo t\u1EEBng lo\u1EA1i v\u1EA3i")), __jsx("div", {
   className: "blog-preview_info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1246
+    lineNumber: 1250
   },
   __self: undefined
 }, __jsx("ul", {
   className: "post-meta",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1247
+    lineNumber: 1251
   },
   __self: undefined
 }, __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1248
-  },
-  __self: undefined
-}, __jsx("i", {
-  className: "fa fa-user",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1249
-  },
-  __self: undefined
-}), "By ", __jsx("a", {
-  href: "#",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1250
-  },
-  __self: undefined
-}, "Admin")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1252
   },
   __self: undefined
 }, __jsx("i", {
-  className: "fa fa-comments",
+  className: "fa fa-user",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1253
   },
   __self: undefined
-}), __jsx("a", {
+}), "By ", __jsx("a", {
   href: "#",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1254
   },
   __self: undefined
-}, "20 B\xECnh lu\u1EADn")), __jsx("li", {
+}, "Admin")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1256
   },
   __self: undefined
 }, __jsx("i", {
-  className: "fa fa-clock-o",
+  className: "fa fa-comments",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1257
+  },
+  __self: undefined
+}), __jsx("a", {
+  href: "#",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1258
+  },
+  __self: undefined
+}, "20 B\xECnh lu\u1EADn")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1260
+  },
+  __self: undefined
+}, __jsx("i", {
+  className: "fa fa-clock-o",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1261
   },
   __self: undefined
 }), __jsx("span", {
   className: "day",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1258
+    lineNumber: 1262
   },
   __self: undefined
 }, "25"), __jsx("span", {
   className: "month",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1259
+    lineNumber: 1263
   },
   __self: undefined
 }, "May"))), __jsx("div", {
   className: "blog-preview_desc",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1262
+    lineNumber: 1266
   },
   __self: undefined
 }, "Khi c\u1EA5t gi\u1EEF v\u1EA3i l\u1EE5a, b\u1EA1n n\xEAn treo ch\xFAng ph\u1EB3ng phiu c\u1EA9n th\u1EADn \u1EDF n\u01A1i tr\xE1nh \xE1nh n\u1EAFng tr\u1EF1c ti\u1EBFp. Kh\xF4ng d\xF9ng h\u1ED9p nh\u1EF1a \u0111\u1EC3 \u0111\u1EF1ng b\u1EDFi l\u1EE5a l\xE0 lo\u1EA1i s\u1EE3i v\u1EA3i t\u1EF1 nhi\xEAn v\xE0 ch\xFAng c\u1EA7n \u0111\u01B0\u1EE3c 'th\u1EDF.", " ", __jsx("a", {
@@ -13594,28 +6551,28 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1267
+    lineNumber: 1271
   },
   __self: undefined
 }, "Xem th\xEAm")))), __jsx("div", {
   className: "col-xs-12 col-sm-6 col-md-4 blog-preview_item",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1273
+    lineNumber: 1277
   },
   __self: undefined
 }, __jsx("div", {
   className: "entry-thumb jtv-blog-img-hover",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1274
+    lineNumber: 1278
   },
   __self: undefined
 }, " ", __jsx("a", {
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1276
+    lineNumber: 1280
   },
   __self: undefined
 }, __jsx("img", {
@@ -13623,109 +6580,109 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   src: "./images/l-post3.jpg",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1277
+    lineNumber: 1281
   },
   __self: undefined
 }), " "), " "), __jsx("h4", {
   className: "blog-preview_title",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1280
+    lineNumber: 1284
   },
   __self: undefined
 }, __jsx("a", {
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1281
+    lineNumber: 1285
   },
   __self: undefined
 }, "5 c\xE1ch ph\u1ED1i \u0111\u1ED3 nam cho ng\xE0y h\xE8 s\xF4i \u0111\u1ED9ng")), __jsx("div", {
   className: "blog-preview_info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1285
+    lineNumber: 1289
   },
   __self: undefined
 }, __jsx("ul", {
   className: "post-meta",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1286
+    lineNumber: 1290
   },
   __self: undefined
 }, __jsx("li", {
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1287
-  },
-  __self: undefined
-}, __jsx("i", {
-  className: "fa fa-user",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1288
-  },
-  __self: undefined
-}), "By ", __jsx("a", {
-  href: "#",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1289
-  },
-  __self: undefined
-}, "Admin")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1291
   },
   __self: undefined
 }, __jsx("i", {
-  className: "fa fa-comments",
+  className: "fa fa-user",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1292
   },
   __self: undefined
-}), __jsx("a", {
+}), "By ", __jsx("a", {
   href: "#",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1293
   },
   __self: undefined
-}, "3 B\xECnh lu\u1EADn")), __jsx("li", {
+}, "Admin")), __jsx("li", {
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1295
   },
   __self: undefined
 }, __jsx("i", {
-  className: "fa fa-clock-o",
+  className: "fa fa-comments",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1296
+  },
+  __self: undefined
+}), __jsx("a", {
+  href: "#",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1297
+  },
+  __self: undefined
+}, "3 B\xECnh lu\u1EADn")), __jsx("li", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1299
+  },
+  __self: undefined
+}, __jsx("i", {
+  className: "fa fa-clock-o",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1300
   },
   __self: undefined
 }), __jsx("span", {
   className: "day",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1297
+    lineNumber: 1301
   },
   __self: undefined
 }, "15"), __jsx("span", {
   className: "month",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1298
+    lineNumber: 1302
   },
   __self: undefined
 }, "Sep"))), __jsx("div", {
   className: "blog-preview_desc",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1301
+    lineNumber: 1305
   },
   __self: undefined
 }, "Ch\xFAng ta ch\u1EAFc ch\u1EAFn ai c\u0169ng \u0111\xE3 t\u1EEBng r\u01A1i v\xE0o t\xECnh hu\u1ED1ng sau: t\u1EAFt \u0111\u1ED3ng h\u1ED3 b\xE1o th\u1EE9c, ng\u1EE7 ti\u1EBFp, th\u1EE9c d\u1EADy tr\u1EC5, ch\u1EC9 c\xF2n \u0111\xFAng v\xE0i ph\xFAt \u0111\u1EC3 b\u01B0\u1EDBc ch\xE2n ra kh\u1ECFi nh\xE0 v\xE0 ho\xE0n to\xE0n.", " ", __jsx("a", {
@@ -13733,124 +6690,124 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   href: "./blog-detail.html",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1306
+    lineNumber: 1310
   },
   __self: undefined
 }, "Xem th\xEAm")))))))))))), __jsx("section", {
   className: "main-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1322
+    lineNumber: 1326
   },
   __self: undefined
 }, __jsx("div", {
   className: "container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1323
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "row",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1324
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "col-sm-12 col-xs-12",
-  __source: {
-    fileName: _jsxFileName,
-    lineNumber: 1325
-  },
-  __self: undefined
-}, __jsx("div", {
-  className: "jtv-trending-products",
-  __source: {
-    fileName: _jsxFileName,
     lineNumber: 1327
   },
   __self: undefined
 }, __jsx("div", {
-  className: "slider-items-products",
+  className: "row",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1328
   },
   __self: undefined
 }, __jsx("div", {
-  className: "jtv-new-title",
+  className: "col-sm-12 col-xs-12",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1329
   },
   __self: undefined
-}, __jsx("h2", {
+}, __jsx("div", {
+  className: "jtv-trending-products",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1330
+    lineNumber: 1331
   },
   __self: undefined
-}, "Th\u01B0 vi\u1EC7n \u1EA3nh")), __jsx("div", {
-  className: "gallery-image",
+}, __jsx("div", {
+  className: "slider-items-products",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1332
   },
   __self: undefined
 }, __jsx("div", {
-  className: "row",
+  className: "jtv-new-title",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 1333
+  },
+  __self: undefined
+}, __jsx("h2", {
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1334
+  },
+  __self: undefined
+}, "Th\u01B0 vi\u1EC7n \u1EA3nh")), __jsx("div", {
+  className: "gallery-image",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1336
+  },
+  __self: undefined
+}, __jsx("div", {
+  className: "row",
+  __source: {
+    fileName: _jsxFileName,
+    lineNumber: 1337
   },
   __self: undefined
 }, __jsx("div", {
   className: " col-xs-12 col-sm-12 col-md-8",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1334
+    lineNumber: 1338
   },
   __self: undefined
 }, __jsx("div", {
   className: "img-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1335
+    lineNumber: 1339
   },
   __self: undefined
 }, __jsx("div", {
   className: "img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1336
+    lineNumber: 1340
   },
   __self: undefined
 }, __jsx("h3", {
   className: "text-uppercase",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1337
+    lineNumber: 1341
   },
   __self: undefined
 }, "B\u1ED9 s\u01B0u t\u1EADp th\xE1ng\xA010"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1340
+    lineNumber: 1344
   },
   __self: undefined
 }, "M\u1EDBi l\u1EA1 - phong c\xE1ch")), __jsx("span", {
   className: "top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1342
+    lineNumber: 1346
   },
   __self: undefined
 }), __jsx("span", {
   className: "right-bottom",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1343
+    lineNumber: 1347
   },
   __self: undefined
 }), __jsx("img", {
@@ -13858,55 +6815,55 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   alt: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1344
+    lineNumber: 1348
   },
   __self: undefined
 }))), __jsx("div", {
   className: " col-xs-12 col-sm-12 col-md-4",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1347
+    lineNumber: 1351
   },
   __self: undefined
 }, __jsx("div", {
   className: "img-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1348
+    lineNumber: 1352
   },
   __self: undefined
 }, __jsx("div", {
   className: "img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1349
+    lineNumber: 1353
   },
   __self: undefined
 }, __jsx("h3", {
   className: "text-uppercase",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1350
+    lineNumber: 1354
   },
   __self: undefined
 }, "Xu h\u01B0\u1EDBng"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1351
+    lineNumber: 1355
   },
   __self: undefined
 }, "Th\u1EDDi trang v\xE0 cu\u1ED9c s\u1ED1ng")), __jsx("span", {
   className: "top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1353
+    lineNumber: 1357
   },
   __self: undefined
 }), __jsx("span", {
   className: "right-bottom",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1354
+    lineNumber: 1358
   },
   __self: undefined
 }), __jsx("img", {
@@ -13914,55 +6871,55 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   alt: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1355
+    lineNumber: 1359
   },
   __self: undefined
 }))), __jsx("div", {
   className: " col-xs-12 col-sm-12 col-md-4",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1358
+    lineNumber: 1362
   },
   __self: undefined
 }, __jsx("div", {
   className: "img-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1359
+    lineNumber: 1363
   },
   __self: undefined
 }, __jsx("div", {
   className: "img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1360
+    lineNumber: 1364
   },
   __self: undefined
 }, __jsx("h3", {
   className: "text-uppercase",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1361
+    lineNumber: 1365
   },
   __self: undefined
 }, "instagram"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1362
+    lineNumber: 1366
   },
   __self: undefined
 }, "Tr\u1EBB trung - \u0111\u1ED9c \u0111\xE1o")), __jsx("span", {
   className: "top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1364
+    lineNumber: 1368
   },
   __self: undefined
 }), __jsx("span", {
   className: "right-bottom",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1365
+    lineNumber: 1369
   },
   __self: undefined
 }), __jsx("img", {
@@ -13970,55 +6927,55 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   alt: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1366
+    lineNumber: 1370
   },
   __self: undefined
 }))), __jsx("div", {
   className: " col-xs-12 col-sm-12 col-md-8",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1369
+    lineNumber: 1373
   },
   __self: undefined
 }, __jsx("div", {
   className: "img-container",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1370
+    lineNumber: 1374
   },
   __self: undefined
 }, __jsx("div", {
   className: "img-info",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1371
+    lineNumber: 1375
   },
   __self: undefined
 }, __jsx("h3", {
   className: "text-uppercase",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1372
+    lineNumber: 1376
   },
   __self: undefined
 }, "BTS Thu\xA0\u0110\xF4ng - 2019"), __jsx("p", {
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1375
+    lineNumber: 1379
   },
   __self: undefined
 }, "Phong c\xE1ch \u0111\u1EBFn t\u1EEB s\u1EF1 s\xE1ng t\u1EA1o")), __jsx("span", {
   className: "top-left",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1377
+    lineNumber: 1381
   },
   __self: undefined
 }), __jsx("span", {
   className: "right-bottom",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1378
+    lineNumber: 1382
   },
   __self: undefined
 }), __jsx("img", {
@@ -14026,23 +6983,12 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
   alt: "",
   __source: {
     fileName: _jsxFileName,
-    lineNumber: 1379
+    lineNumber: 1383
   },
   __self: undefined
 })))))))))))));
 
 /* harmony default export */ __webpack_exports__["default"] = (Index);
-
-/***/ }),
-
-/***/ "./styles/style.css":
-/*!**************************!*\
-  !*** ./styles/style.css ***!
-  \**************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-
 
 /***/ }),
 
@@ -14053,8 +6999,118 @@ const Index = () => __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\ADMIN\Desktop\CarpoNextJS\pages\index.js */"./pages/index.js");
+module.exports = __webpack_require__(/*! C:\Users\ADMIN\Desktop\Web-front end\NextJS\carponextjs\pages\index.js */"./pages/index.js");
 
+
+/***/ }),
+
+/***/ "core-js/library/fn/map":
+/*!*****************************************!*\
+  !*** external "core-js/library/fn/map" ***!
+  \*****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/map");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/assign":
+/*!***************************************************!*\
+  !*** external "core-js/library/fn/object/assign" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/assign");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/create":
+/*!***************************************************!*\
+  !*** external "core-js/library/fn/object/create" ***!
+  \***************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/create");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/define-property":
+/*!************************************************************!*\
+  !*** external "core-js/library/fn/object/define-property" ***!
+  \************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/define-property");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-descriptor":
+/*!************************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-descriptor" ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/keys":
+/*!*************************************************!*\
+  !*** external "core-js/library/fn/object/keys" ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/keys");
+
+/***/ }),
+
+/***/ "core-js/library/fn/promise":
+/*!*********************************************!*\
+  !*** external "core-js/library/fn/promise" ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/promise");
+
+/***/ }),
+
+/***/ "next/head":
+/*!****************************!*\
+  !*** external "next/head" ***!
+  \****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "prop-types":
+/*!*****************************!*\
+  !*** external "prop-types" ***!
+  \*****************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types");
+
+/***/ }),
+
+/***/ "prop-types-exact":
+/*!***********************************!*\
+  !*** external "prop-types-exact" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("prop-types-exact");
 
 /***/ }),
 
@@ -14066,6 +7122,17 @@ module.exports = __webpack_require__(/*! C:\Users\ADMIN\Desktop\CarpoNextJS\page
 /***/ (function(module, exports) {
 
 module.exports = require("react");
+
+/***/ }),
+
+/***/ "react-is":
+/*!***************************!*\
+  !*** external "react-is" ***!
+  \***************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-is");
 
 /***/ }),
 

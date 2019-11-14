@@ -1,13 +1,11 @@
 import Link from "next/link";
 
-const Product = props => {
-  const { products } = props;
+const Product = ({ products }) => {
 
-
-  const renderItem = products.map((item, index) => {
+  const productList = products.map((item, index) => {
     return (
       <li className="item col-lg-4 col-md-6 col-sm-6 col-xs-6" key={item.id}>
-        <Link href={`/shop/${item.id}`}>
+        <Link href='/shop/[id]' as={'/shop/' + item.id}>
           <div className="item-inner">
             <div className="item-img">
               <div className="item-img-info">
@@ -69,7 +67,7 @@ const Product = props => {
   });
   return (
     <div className="category-products">
-      <ul className="products-grid">{renderItem}</ul>
+      <ul className="products-grid">{productList}</ul>
     </div>
   );
 };

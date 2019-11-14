@@ -4,6 +4,10 @@
     "static/development/dll/dll_90e8ea1802b868f0c448.js.map"
   ],
   "pages": {
+    "/": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/_app": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
@@ -12,11 +16,15 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/shop-list": [
+    "/index": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
-    "/shop/[id]": [
+    "/next/dist/pages/_error": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
+    "/shop": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ]
