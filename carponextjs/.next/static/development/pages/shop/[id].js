@@ -13,7 +13,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\carponextjs\\components\\CarpoLayout.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\CarpoLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -56,7 +56,7 @@ var Layout = function Layout(props) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\carponextjs\\components\\Footer.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -561,7 +561,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\carponextjs\\components\\Header.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -666,7 +666,7 @@ var MainHeader = function MainHeader() {
     },
     __self: this
   }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-    href: "/shop-list",
+    href: "/shop",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 38
@@ -674,7 +674,7 @@ var MainHeader = function MainHeader() {
     __self: this
   }, __jsx("a", {
     className: "nav-link text-uppercase text-white",
-    href: "./shop-list.html",
+    href: "./shop.html",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 39
@@ -938,6 +938,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js");
 
 /***/ }),
 
@@ -1229,6 +1240,31 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithoutHoles; });
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+
+function _arrayWithoutHoles(arr) {
+  if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js":
 /*!*****************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js ***!
@@ -1277,6 +1313,139 @@ function _asyncToGenerator(fn) {
       _next(undefined);
     });
   };
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArray; });
+/* harmony import */ var _core_js_array_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+/* harmony import */ var _core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_from__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/is-iterable */ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _iterableToArray(iter) {
+  if (_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default()(Object(iter)) || Object.prototype.toString.call(iter) === "[object Arguments]") return _core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default()(iter);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableSpread; });
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _toConsumableArray; });
+/* harmony import */ var _arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js");
+/* harmony import */ var _iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js");
+/* harmony import */ var _nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js");
+
+
+
+function _toConsumableArray(arr) {
+  return Object(_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__["default"])();
 }
 
 /***/ }),
@@ -1770,6 +1939,19 @@ var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/cor
 module.exports = function getOwnPropertyDescriptor(it, key) {
   return $Object.getOwnPropertyDescriptor(it, key);
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/get-own-property-symbols.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/core-js/library/modules/es6.symbol.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getOwnPropertySymbols;
 
 
 /***/ }),
@@ -5641,10 +5823,10 @@ module.exports = bind.call(Function.call, Object.prototype.hasOwnProperty);
 
 /***/ }),
 
-/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js!./":
-/*!*****************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js ***!
-  \*****************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5CWeb-front%20end%5CNextJS%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js!./":
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5CWeb-front%20end%5CNextJS%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js ***!
+  \********************************************************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -11577,27 +11759,38 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _components_CarpoLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../components/CarpoLayout */ "./components/CarpoLayout.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var components_CarpoLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! components/CarpoLayout */ "./components/CarpoLayout.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
 
 
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\carponextjs\\pages\\shop\\[id].js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\pages\\shop\\[id].js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
+
 
 
 
 
 var ProductDetail = function ProductDetail(props) {
-  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_2__["useState"])(1),
+  var product = props.product;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])(1),
       countProduct = _useState[0],
       setCountProduct = _useState[1];
 
-  var product = props.product;
+  var _useState2 = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])([]),
+      shoppingCart = _useState2[0],
+      setShoppingCart = _useState2[1];
 
   var decrease = function decrease() {
     countProduct > 1 ? setCountProduct(countProduct - 1) : setCountProduct(countProduct);
@@ -11607,34 +11800,74 @@ var ProductDetail = function ProductDetail(props) {
     setCountProduct(countProduct + 1);
   };
 
-  var onAddToCart = function onAddToCart() {
-    countProduct < product.quantity ? alert("Sản phẩm đã được thêm vào giỏ hàng") : alert("Không đủ số lượng sản phẩm");
-  }; //Format lại giá tiền
+  var onAddToCart =
+  /*#__PURE__*/
+  function () {
+    var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__["default"])(
+    /*#__PURE__*/
+    _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee() {
+      var id, res, data, productSaveInCart;
+      return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              if (!(countProduct > product.quantity)) {
+                _context.next = 4;
+                break;
+              }
 
+              alert("Không đủ số lượng sản phẩm!");
+              _context.next = 13;
+              break;
 
-  var convertMoney = function convertMoney(price) {
-    return new Intl.NumberFormat("vi-VN", {
-      style: "currency",
-      currency: "VND"
-    }).format(price);
-  };
+            case 4:
+              id = props.url.query.id;
+              _context.next = 7;
+              return fetch("https://carpo.herokuapp.com/products/".concat(id));
 
-  return __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+            case 7:
+              res = _context.sent;
+              _context.next = 10;
+              return res.json();
+
+            case 10:
+              data = _context.sent;
+              productSaveInCart = Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, data, {
+                quantity: countProduct
+              });
+              setShoppingCart(function (shoppingCart) {
+                return [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(shoppingCart), [productSaveInCart]);
+              });
+
+            case 13:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+
+    return function onAddToCart() {
+      return _ref.apply(this, arguments);
+    };
+  }();
+
+  return __jsx(components_CarpoLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 35
     },
     __self: this
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_4___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_6___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 36
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 37
     },
     __self: this
   }, "Product Detail Page"), __jsx("link", {
@@ -11642,46 +11875,46 @@ var ProductDetail = function ProductDetail(props) {
     href: "/css/product-detail.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 38
     },
     __self: this
   })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 40
     },
     __self: this
   }, __jsx("section", {
     id: "duong-dan",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 41
     },
     __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 42
     },
     __self: this
   }, __jsx("a", {
     href: "./index.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: this
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: this
   }, "Trang ch\u1EE7")), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 46
     },
     __self: this
   }, __jsx("i", {
@@ -11689,26 +11922,26 @@ var ProductDetail = function ProductDetail(props) {
     "aria-hidden": "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 47
     },
     __self: this
   })), __jsx("a", {
     href: "./shop-list.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 49
     },
     __self: this
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 50
     },
     __self: this
   }, "S\u1EA3n ph\u1EA9m")), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 52
     },
     __self: this
   }, __jsx("i", {
@@ -11716,55 +11949,55 @@ var ProductDetail = function ProductDetail(props) {
     "aria-hidden": "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 53
     },
     __self: this
   })), __jsx("a", {
     href: "./product-detail.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 55
     },
     __self: this
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 56
     },
     __self: this
   }, product.name)))), __jsx("section", {
     className: "main-container col1-layout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 60
     },
     __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 61
     },
     __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 62
     },
     __self: this
   }, __jsx("div", {
     className: "product-view",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 63
     },
     __self: this
   }, __jsx("div", {
     className: "product-essential",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 64
     },
     __self: this
   }, __jsx("form", {
@@ -11773,28 +12006,28 @@ var ProductDetail = function ProductDetail(props) {
     id: "product_addtocart_form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 65
     },
     __self: this
   }, __jsx("div", {
     className: "product-img-box col-lg-4 col-sm-5 col-xs-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 66
     },
     __self: this
   }, __jsx("div", {
     className: "product-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 67
     },
     __self: this
   }, __jsx("div", {
     className: "product-full",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 68
     },
     __self: this
   }, __jsx("img", {
@@ -11803,170 +12036,170 @@ var ProductDetail = function ProductDetail(props) {
     alt: "product-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 69
     },
     __self: this
   })))), __jsx("div", {
     className: "product-shop col-lg-8 col-sm-7 col-xs-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 78
     },
     __self: this
   }, __jsx("div", {
     className: "product-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 79
     },
     __self: this
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 80
     },
     __self: this
   }, product.name)), __jsx("div", {
     className: "rating",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 82
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-star",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 83
     },
     __self: this
   }), __jsx("i", {
     className: "fa fa-star",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 84
     },
     __self: this
   }), __jsx("i", {
     className: "fa fa-star",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 85
     },
     __self: this
   }), __jsx("i", {
     className: "fa fa-star-o",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 86
     },
     __self: this
   }), __jsx("i", {
     className: "fa fa-star-o",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 87
     },
     __self: this
   })), __jsx("div", {
     className: "price-block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 89
     },
     __self: this
   }, __jsx("div", {
     className: "price-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 90
     },
     __self: this
   }, __jsx("p", {
     className: "special-price",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 91
     },
     __self: this
   }, __jsx("span", {
     className: "price-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 92
     },
     __self: this
   }, "Gi\xE1:"), __jsx("span", {
     className: "price",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 93
     },
     __self: this
-  }, " ", convertMoney(product.price))), __jsx("p", {
+  }, " ", product.price)), __jsx("p", {
     className: "availability in-stock",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 100
     },
     __self: this
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 101
     },
     __self: this
   }, product.instock ? "Còn hàng" : "Hết hàng")))), __jsx("div", {
     className: "short-description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 107
     },
     __self: this
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 108
     },
     __self: this
   }, "M\xF4 t\u1EA3"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 109
     },
     __self: this
   }, product.description)), __jsx("div", {
     className: "add-to-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 111
     },
     __self: this
   }, __jsx("div", {
     className: "add-to-cart",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 112
     },
     __self: this
   }, __jsx("div", {
     className: "pull-left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 113
     },
     __self: this
   }, __jsx("div", {
     className: "custom pull-left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 114
     },
     __self: this
   }, __jsx("label", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 115
     },
     __self: this
   }, "S\u1ED1 l\u01B0\u1EE3ng:"), __jsx("button", {
@@ -11975,14 +12208,14 @@ var ProductDetail = function ProductDetail(props) {
     onClick: decrease,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 116
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-minus",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 121
     },
     __self: this
   }, "\xA0")), __jsx("input", {
@@ -11990,12 +12223,11 @@ var ProductDetail = function ProductDetail(props) {
     className: "input-text qty",
     title: "Qty",
     defaultValue: countProduct,
-    maxLength: 12,
     id: "qty",
     name: "qty",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 123
     },
     __self: this
   }), __jsx("button", {
@@ -12004,14 +12236,14 @@ var ProductDetail = function ProductDetail(props) {
     onClick: increase,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 131
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-plus",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 136
     },
     __self: this
   }, "\xA0")))), __jsx("button", {
@@ -12021,148 +12253,148 @@ var ProductDetail = function ProductDetail(props) {
     onClick: onAddToCart,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 140
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-shopping-cart",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 146
     },
     __self: this
   }), " Th\xEAm v\xE0o gi\u1ECF h\xE0ng"))), __jsx("div", {
     className: "social",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 151
     },
     __self: this
   }, __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 152
     },
     __self: this
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 153
     },
     __self: this
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 154
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 155
     },
     __self: this
   }))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 158
     },
     __self: this
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 159
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 160
     },
     __self: this
   }))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 163
     },
     __self: this
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160
+      lineNumber: 164
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-youtube",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161
+      lineNumber: 165
     },
     __self: this
   }))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 168
     },
     __self: this
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 169
     },
     __self: this
   }, __jsx("i", {
     className: "fa fa-instagram",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 170
     },
     __self: this
-  }))))))))))))), "*/}");
+  }))))))))))))));
 };
 
 ProductDetail.getInitialProps =
 /*#__PURE__*/
 function () {
-  var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  var _ref3 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__["default"])(
   /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(props) {
-    var id, res, data;
-    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(_ref2) {
+    var query, res, data;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
       while (1) {
-        switch (_context.prev = _context.next) {
+        switch (_context2.prev = _context2.next) {
           case 0:
-            id = props.query.id;
-            _context.next = 3;
-            return fetch("https://carpo.herokuapp.com/products/" + id);
+            query = _ref2.query;
+            _context2.next = 3;
+            return fetch("https://carpo.herokuapp.com/products/".concat(query.id));
 
           case 3:
-            res = _context.sent;
-            _context.next = 6;
+            res = _context2.sent;
+            _context2.next = 6;
             return res.json();
 
           case 6:
-            data = _context.sent;
-            return _context.abrupt("return", {
+            data = _context2.sent;
+            return _context2.abrupt("return", {
               product: data
             });
 
           case 8:
           case "end":
-            return _context.stop();
+            return _context2.stop();
         }
       }
-    }, _callee);
+    }, _callee2);
   }));
 
   return function (_x) {
-    return _ref.apply(this, arguments);
+    return _ref3.apply(this, arguments);
   };
 }();
 
@@ -12170,14 +12402,14 @@ function () {
 
 /***/ }),
 
-/***/ 3:
-/*!*********************************************************************************************************************************************************!*\
-  !*** multi next-client-pages-loader?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js ***!
-  \*********************************************************************************************************************************************************/
+/***/ 0:
+/*!************************************************************************************************************************************************************************************!*\
+  !*** multi next-client-pages-loader?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5CWeb-front%20end%5CNextJS%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js ***!
+  \************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js!./");
+module.exports = __webpack_require__(/*! next-client-pages-loader?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5CWeb-front%20end%5CNextJS%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js! */"./node_modules/next/dist/build/webpack/loaders/next-client-pages-loader.js?page=%2Fshop%2F%5Bid%5D&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5CWeb-front%20end%5CNextJS%5Ccarponextjs%5Cpages%5Cshop%5C%5Bid%5D.js!./");
 
 
 /***/ }),
@@ -12193,5 +12425,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[3,"static/runtime/webpack.js"]]]);
+},[[0,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=[id].js.map

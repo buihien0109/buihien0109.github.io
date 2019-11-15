@@ -1,12 +1,15 @@
 import Link from "next/link";
 
-const Product = ({ products }) => {
+const Product = ({ products, onAddToCart }) => {
+  const handleAddToCart = (id, e) => {
+    onAddToCart(id);
+  };
 
   const productList = products.map((item, index) => {
     return (
       <li className="item col-lg-4 col-md-6 col-sm-6 col-xs-6" key={item.id}>
-        <Link href='/shop/[id]' as={'/shop/' + item.id}>
-          <div className="item-inner">
+        <div className="item-inner">
+          <Link href="/shop/[id]" as={"/shop/" + item.id}>
             <div className="item-img">
               <div className="item-img-info">
                 <a
@@ -25,43 +28,44 @@ const Product = ({ products }) => {
                 </a>
               </div>
             </div>
-            <div className="item-info">
-              <div className="info-inner">
-                <div className="item-title">
-                  <a title="Product tilte is here" href="./product-detail.html">
-                    {item.name}
-                  </a>
+          </Link>
+          <div className="item-info">
+            <div className="info-inner">
+              <div className="item-title">
+                <a title="Product tilte is here" href="./product-detail.html">
+                  {item.name}
+                </a>
+              </div>
+              <div className="item-content">
+                <div className="rating">
+                  <i className="fa fa-star" /> <i className="fa fa-star" />
+                  <i className="fa fa-star" /> <i className="fa fa-star-o" />
+                  <i className="fa fa-star-o" />
                 </div>
-                <div className="item-content">
-                  <div className="rating">
-                    <i className="fa fa-star" /> <i className="fa fa-star" />
-                    <i className="fa fa-star" /> <i className="fa fa-star-o" />
-                    <i className="fa fa-star-o" />
+                <div className="item-price">
+                  <div className="price-box">
+                    <span className="regular-price">
+                      <span className="price">{item.price}đ</span>
+                    </span>
                   </div>
-                  <div className="item-price">
-                    <div className="price-box">
-                      <span className="regular-price">
-                        <span className="price">{item.price}đ</span>
+                </div>
+                <div className="actions">
+                  <div className="add_cart">
+                    <button
+                      className="button btn-cart"
+                      type="button"
+                      onClick={() => handleAddToCart(item.id)}
+                    >
+                      <span>
+                        <i className="fa fa-shopping-cart" /> Thêm vào giỏ hàng
                       </span>
-                    </div>
-                  </div>
-                  <div className="actions">
-                    <div className="add_cart">
-                      <a href="./shopping-card.html">
-                        <button className="button btn-cart" type="button">
-                          <span>
-                            <i className="fa fa-shopping-cart" /> Thêm vào giỏ
-                            hàng
-                          </span>
-                        </button>
-                      </a>
-                    </div>
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </Link>
+        </div>
       </li>
     );
   });

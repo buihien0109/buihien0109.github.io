@@ -1,5 +1,8 @@
 import Link from "next/link";
 import fetch from "isomorphic-unfetch";
+import { url } from "../../url.config"
+import queryString from 'query-string';
+import Router from 'next/router';
 
 class Sort extends React.Component {
   constructor(props) {
@@ -10,36 +13,40 @@ class Sort extends React.Component {
   }
 
   async componentDidMount() {
-    const response = await fetch("https://carpo.herokuapp.com/products");
+    const response = await fetch(url);
     const listProduct = await response.json();
     this.setState({
       listProduct: listProduct
     });
   }
 
-  handleFilter = (brand) => {
-    const { listProduct } = this.state
-    let result = listProduct.filter(product => {
-      product.brand === brand
-    })
-    this.setState({
-      listProduct : result
-    })
+  filterProduct = () => {
+    const { router } = Router;
+    let { query } = this.props
+    console.log(query)
+    let { _query} = query
+    _query = "brand=Chanel"
+    console.log(_query)
+    console.log(query)
+    query = queryString.stringify({ ...query, _query});
+    console.log(query)
+    // Router.push({
+    //   pathname: "/shop",
+    //   query: { query: query }
+    // });
   }
-  render() {
-    const { listProduct } = this.state;
-    const { sort, order} = this.props
 
+  render() {
+    console.log(this.props)
+    const { listProduct } = this.state;
     let brands = listProduct.map(product => product.brand);
     brands = brands.filter((brand, i) => brands.indexOf(brand) === i);
     //Render Brand
     const renderBrand = brands.map((brand, index) => {
-      return (
-        // <Link href={`/shop?sort=${sort}&order=${order}&brand=${brand}`} key={index}>
+      return (   
           <li key={index}>
-            <a href="#" onClick={() => this.handleFilter(brand)}>{brand}</a>
+            <a href="#" onClick={this.filterProduct}>{brand}</a>
           </li>
-        // </Link>
       );
     });
 

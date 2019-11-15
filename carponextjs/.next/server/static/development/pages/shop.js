@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 4);
+/******/ 	return __webpack_require__(__webpack_require__.s = 6);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -1267,44 +1267,49 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 const Product = ({
-  products
+  products,
+  onAddToCart
 }) => {
+  const handleAddToCart = (id, e) => {
+    onAddToCart(id);
+  };
+
   const productList = products.map((item, index) => {
     return __jsx("li", {
       className: "item col-lg-4 col-md-6 col-sm-6 col-xs-6",
       key: item.id,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: undefined
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/shop/[id]",
-      as: '/shop/' + item.id,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
+        lineNumber: 10
       },
       __self: undefined
     }, __jsx("div", {
       className: "item-inner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 11
+      },
+      __self: undefined
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/shop/[id]",
+      as: "/shop/" + item.id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
       },
       __self: undefined
     }, __jsx("div", {
       className: "item-img",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 13
       },
       __self: undefined
     }, __jsx("div", {
       className: "item-img-info",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 14
       },
       __self: undefined
     }, __jsx("a", {
@@ -1313,7 +1318,7 @@ const Product = ({
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 15
       },
       __self: undefined
     }, __jsx("img", {
@@ -1321,35 +1326,35 @@ const Product = ({
       src: item.thumbnail,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 20
       },
       __self: undefined
     })), __jsx("div", {
       className: "new-label new-top-left",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 22
       },
       __self: undefined
     }, "new"), __jsx("div", {
       className: "sale-label sale-top-right",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 23
       },
       __self: undefined
     }, "sale"), __jsx("div", {
       className: "mask-shop-white",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 24
       },
       __self: undefined
     }), __jsx("div", {
       className: "new-label new-top-left",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 25
       },
       __self: undefined
     }, "new"), __jsx("a", {
@@ -1357,34 +1362,34 @@ const Product = ({
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 26
       },
       __self: undefined
     }, __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 27
       },
       __self: undefined
-    }, "Xem nhanh")))), __jsx("div", {
+    }, "Xem nhanh"))))), __jsx("div", {
       className: "item-info",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 32
       },
       __self: undefined
     }, __jsx("div", {
       className: "info-inner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 33
       },
       __self: undefined
     }, __jsx("div", {
       className: "item-title",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 34
       },
       __self: undefined
     }, __jsx("a", {
@@ -1392,142 +1397,136 @@ const Product = ({
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 35
       },
       __self: undefined
     }, item.name)), __jsx("div", {
       className: "item-content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 39
       },
       __self: undefined
     }, __jsx("div", {
       className: "rating",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 40
       },
       __self: undefined
     }, __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 41
       },
       __self: undefined
     }), " ", __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 41
       },
       __self: undefined
     }), __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 42
       },
       __self: undefined
     }), " ", __jsx("i", {
       className: "fa fa-star-o",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 42
       },
       __self: undefined
     }), __jsx("i", {
       className: "fa fa-star-o",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 43
       },
       __self: undefined
     })), __jsx("div", {
       className: "item-price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 45
       },
       __self: undefined
     }, __jsx("div", {
       className: "price-box",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 46
       },
       __self: undefined
     }, __jsx("span", {
       className: "regular-price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 47
       },
       __self: undefined
     }, __jsx("span", {
       className: "price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 48
       },
       __self: undefined
     }, item.price, "\u0111")))), __jsx("div", {
       className: "actions",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 52
       },
       __self: undefined
     }, __jsx("div", {
       className: "add_cart",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49
-      },
-      __self: undefined
-    }, __jsx("a", {
-      href: "./shopping-card.html",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 53
       },
       __self: undefined
     }, __jsx("button", {
       className: "button btn-cart",
       type: "button",
+      onClick: () => handleAddToCart(item.id),
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 54
       },
       __self: undefined
     }, __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 59
       },
       __self: undefined
     }, __jsx("i", {
       className: "fa fa-shopping-cart",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 60
       },
       __self: undefined
-    }), " Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))));
+    }), " Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))));
   });
   return __jsx("div", {
     className: "category-products",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 73
     },
     __self: undefined
   }, __jsx("ul", {
     className: "products-grid",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 74
     },
     __self: undefined
   }, productList));
@@ -1546,34 +1545,55 @@ const Product = ({
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var _url_config__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ../../url.config */ "./url.config.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! query-string */ "query-string");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_7__);
+
 
 var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\shop\\Sort.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
-class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
+
+
+
+class Sort extends react__WEBPACK_IMPORTED_MODULE_2___default.a.Component {
   constructor(props) {
     super(props);
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_0__["default"])(this, "handleFilter", brand => {
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "filterProduct", () => {
       const {
-        listProduct
-      } = this.state;
-      let result = listProduct.filter(product => {
-        product.brand === brand;
-      });
-      this.setState({
-        listProduct: result
-      });
+        router
+      } = next_router__WEBPACK_IMPORTED_MODULE_7___default.a;
+      let {
+        query
+      } = this.props;
+      console.log(query);
+      let {
+        _query
+      } = query;
+      _query = "brand=Chanel";
+      console.log(_query);
+      console.log(query);
+      query = query_string__WEBPACK_IMPORTED_MODULE_6___default.a.stringify(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, query, {
+        _query
+      }));
+      console.log(query); // Router.push({
+      //   pathname: "/shop",
+      //   query: { query: query }
+      // });
     });
 
     this.state = {
@@ -1582,7 +1602,7 @@ class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   }
 
   async componentDidMount() {
-    const response = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_3___default()("https://carpo.herokuapp.com/products");
+    const response = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(_url_config__WEBPACK_IMPORTED_MODULE_5__["url"]);
     const listProduct = await response.json();
     this.setState({
       listProduct: listProduct
@@ -1590,60 +1610,54 @@ class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
   }
 
   render() {
+    console.log(this.props);
     const {
       listProduct
     } = this.state;
-    const {
-      sort,
-      order
-    } = this.props;
     let brands = listProduct.map(product => product.brand);
     brands = brands.filter((brand, i) => brands.indexOf(brand) === i); //Render Brand
 
     const renderBrand = brands.map((brand, index) => {
-      return (// <Link href={`/shop?sort=${sort}&order=${order}&brand=${brand}`} key={index}>
-        __jsx("li", {
-          key: index,
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 39
-          },
-          __self: this
-        }, __jsx("a", {
-          href: "#",
-          onClick: () => this.handleFilter(brand),
-          __source: {
-            fileName: _jsxFileName,
-            lineNumber: 40
-          },
-          __self: this
-        }, brand)) // </Link>
-
-      );
+      return __jsx("li", {
+        key: index,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        },
+        __self: this
+      }, __jsx("a", {
+        href: "#",
+        onClick: this.filterProduct,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        },
+        __self: this
+      }, brand));
     }); //Get List material
 
     let materials = listProduct.map(product => product.material);
     materials = materials.filter((material, i) => materials.indexOf(material) === i);
     const renderMaterial = materials.map((material, index) => {
-      return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
         href: `/shop?material=${material}`,
         key: index,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 60
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 61
         },
         __self: this
       }, __jsx("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 62
         },
         __self: this
       }, material)));
@@ -1652,25 +1666,25 @@ class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     let colors = listProduct.map(product => product.color);
     colors = colors.filter((color, i) => colors.indexOf(color) === i);
     const renderColor = colors.map((color, index) => {
-      return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
         href: `/shop?color=${color}`,
         key: index,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 73
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 67
+          lineNumber: 74
         },
         __self: this
       }, __jsx("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 68
+          lineNumber: 75
         },
         __self: this
       }, color)));
@@ -1679,25 +1693,25 @@ class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
     let sizes = listProduct.map(product => product.size);
     sizes = sizes.filter((size, i) => sizes.indexOf(size) === i);
     const renderSize = sizes.map((size, index) => {
-      return __jsx(next_link__WEBPACK_IMPORTED_MODULE_2___default.a, {
+      return __jsx(next_link__WEBPACK_IMPORTED_MODULE_3___default.a, {
         href: `/shop?size=${size}`,
         key: index,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 79
+          lineNumber: 86
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 80
+          lineNumber: 87
         },
         __self: this
       }, __jsx("a", {
         href: "#",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 81
+          lineNumber: 88
         },
         __self: this
       }, size)));
@@ -1706,182 +1720,182 @@ class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       className: "sidebar",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 88
+        lineNumber: 95
       },
       __self: this
     }, __jsx("div", {
       className: "block block-layered-nav",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 89
+        lineNumber: 96
       },
       __self: this
     }, __jsx("div", {
       className: "block-title",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 90
+        lineNumber: 97
       },
       __self: this
     }, __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 91
+        lineNumber: 98
       },
       __self: this
     }, "T\xECm ki\u1EBFm s\u1EA3n ph\u1EA9m")), __jsx("div", {
       className: "block-content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 93
+        lineNumber: 100
       },
       __self: this
     }, __jsx("dl", {
       id: "narrow-by-list",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 94
+        lineNumber: 101
       },
       __self: this
     }, __jsx("dt", {
       className: "even",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 95
+        lineNumber: 102
       },
       __self: this
     }, "Th\u01B0\u01A1ng hi\u1EC7u"), __jsx("dd", {
       className: "even",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 96
+        lineNumber: 103
       },
       __self: this
     }, __jsx("ol", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 97
+        lineNumber: 104
       },
       __self: this
     }, renderBrand)), __jsx("dt", {
       className: "even",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 99
+        lineNumber: 106
       },
       __self: this
     }, "Ch\u1EA5t li\u1EC7u"), __jsx("dd", {
       className: "even",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 100
+        lineNumber: 107
       },
       __self: this
     }, __jsx("ol", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 101
+        lineNumber: 108
       },
       __self: this
     }, renderMaterial)), __jsx("dt", {
       className: "odd",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 103
+        lineNumber: 110
       },
       __self: this
     }, "K\xEDch th\u01B0\u1EDBc"), __jsx("div", {
       className: "size-area",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 104
+        lineNumber: 111
       },
       __self: this
     }, __jsx("div", {
       className: "size",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 105
+        lineNumber: 112
       },
       __self: this
     }, __jsx("ul", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 106
+        lineNumber: 113
       },
       __self: this
     }, renderSize))), __jsx("dt", {
       className: "odd",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 109
+        lineNumber: 116
       },
       __self: this
     }, "M\xE0u s\u1EAFc"), __jsx("dd", {
       className: "odd",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 110
+        lineNumber: 117
       },
       __self: this
     }, __jsx("ol", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 111
+        lineNumber: 118
       },
       __self: this
     }, renderColor))))), __jsx("div", {
       className: "block product-price-range ",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 116
+        lineNumber: 123
       },
       __self: this
     }, __jsx("div", {
       className: "block-title",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 117
+        lineNumber: 124
       },
       __self: this
     }, __jsx("h3", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 118
+        lineNumber: 125
       },
       __self: this
     }, "Gi\xE1")), __jsx("div", {
       className: "block-content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 120
+        lineNumber: 127
       },
       __self: this
     }, __jsx("div", {
       className: "slider-range",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 121
+        lineNumber: 128
       },
       __self: this
     }, __jsx("ul", {
       className: "check-box-list",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 122
+        lineNumber: 129
       },
       __self: this
     }, __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 123
+        lineNumber: 130
       },
       __self: this
     }, __jsx("div", {
       className: "pretty p-icon p-smooth",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 124
+        lineNumber: 131
       },
       __self: this
     }, __jsx("input", {
@@ -1891,34 +1905,34 @@ class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       id: "p1",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 125
+        lineNumber: 132
       },
       __self: this
     }), __jsx("label", {
       htmlFor: "p1",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 131
+        lineNumber: 138
       },
       __self: this
     }, "< 200.000\u0111", __jsx("span", {
       className: "count",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 132
+        lineNumber: 139
       },
       __self: this
     }, "(5)")))), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 136
+        lineNumber: 143
       },
       __self: this
     }, __jsx("div", {
       className: "pretty p-icon p-smooth",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 137
+        lineNumber: 144
       },
       __self: this
     }, __jsx("input", {
@@ -1928,34 +1942,34 @@ class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       id: "p2",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 138
+        lineNumber: 145
       },
       __self: this
     }), __jsx("label", {
       htmlFor: "p2",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 144
+        lineNumber: 151
       },
       __self: this
     }, "200.000 - 500.000", __jsx("span", {
       className: "count",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 145
+        lineNumber: 152
       },
       __self: this
     }, "(12)")))), __jsx("li", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 149
+        lineNumber: 156
       },
       __self: this
     }, __jsx("div", {
       className: "pretty p-icon p-smooth",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 150
+        lineNumber: 157
       },
       __self: this
     }, __jsx("input", {
@@ -1965,21 +1979,21 @@ class Sort extends react__WEBPACK_IMPORTED_MODULE_1___default.a.Component {
       id: "p3",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 151
+        lineNumber: 158
       },
       __self: this
     }), __jsx("label", {
       htmlFor: "p3",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 157
+        lineNumber: 164
       },
       __self: this
     }, "500.000 - 1.000.000", __jsx("span", {
       className: "count",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 158
+        lineNumber: 165
       },
       __self: this
     }, "(15)")))))))));
@@ -2105,21 +2119,21 @@ const View = () => {
       lineNumber: 29
     },
     __self: undefined
-  }, "Default Sorting"), __jsx("option", {
+  }, "M\u1EB7c \u0111\u1ECBnh"), __jsx("option", {
     value: "price-asc",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: undefined
-  }, "Price: low to high"), __jsx("option", {
+  }, "Gi\xE1: T\u1EEB th\u1EA5p t\u1EDBi cao"), __jsx("option", {
     value: "price-desc",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
     },
     __self: undefined
-  }, "Price: high to low"))), __jsx("div", {
+  }, "Gi\xE1: T\u1EEB cao t\u1EDBi th\u1EA5p"))), __jsx("div", {
     className: "pager",
     __source: {
       fileName: _jsxFileName,
@@ -2161,7 +2175,7 @@ const View = () => {
       lineNumber: 46
     },
     __self: undefined
-  }, "Default View"), __jsx("option", {
+  }, "M\u1EB7c \u0111\u1ECBnh"), __jsx("option", {
     value: "10",
     __source: {
       fileName: _jsxFileName,
@@ -2244,6 +2258,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
@@ -2303,6 +2328,49 @@ function _defineProperty(obj, key, value) {
   }
 
   return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
 }
 
 /***/ }),
@@ -3927,11 +3995,10 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! components/CarpoLayout */ "./components/CarpoLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_CarpoLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/CarpoLayout */ "./components/CarpoLayout.js");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
 /* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! isomorphic-unfetch */ "isomorphic-unfetch");
@@ -3943,9 +4010,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var components_shop_Product__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! components/shop/Product */ "./components/shop/Product.js");
 /* harmony import */ var components_shop_Pagination__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! components/shop/Pagination */ "./components/shop/Pagination.js");
 /* harmony import */ var components_shop_Sort__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! components/shop/Sort */ "./components/shop/Sort.js");
+/* harmony import */ var _url_config__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../url.config */ "./url.config.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! query-string */ "query-string");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_13__);
+
 var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\pages\\shop\\index.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
 
 
 
@@ -3958,30 +4029,52 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 
-const ShopList = ({
-  currentPage,
-  products,
-  totalItems,
-  limit,
-  sort,
-  order
-}) => {
-  return __jsx(components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+
+
+const ShopList = props => {
+  let {
+    products,
+    totalItems,
+    query
+  } = props;
+  const {
+    _currentPage,
+    _limit,
+    _sort,
+    _order
+  } = query;
+  const {
+    0: shoppingCart,
+    1: setShoppingCart
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
+
+  const onAddToCart = async id => {
+    const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`https://carpo.herokuapp.com/products/${id}`);
+    const data = await res.json();
+
+    const productSaveInCart = Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, data, {
+      quantity: 1
+    });
+
+    setShoppingCart(shoppingCart => [...shoppingCart, productSaveInCart]);
+  };
+
+  return __jsx(components_CarpoLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 33
     },
     __self: undefined
   }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 34
     },
     __self: undefined
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 35
     },
     __self: undefined
   }, "Shop Page"), __jsx("link", {
@@ -3989,133 +4082,138 @@ const ShopList = ({
     href: "css/shop-list.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 36
     },
     __self: undefined
   })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 38
     },
     __self: undefined
   }, __jsx(components_shop_Path__WEBPACK_IMPORTED_MODULE_6__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 39
     },
     __self: undefined
   }), __jsx("div", {
     className: "main-container col2-left-layout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 40
     },
     __self: undefined
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 41
     },
     __self: undefined
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 42
     },
     __self: undefined
   }, __jsx("div", {
     className: "col-sm-9 col-sm-push-3 main-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 43
     },
     __self: undefined
   }, __jsx(components_shop_Banner__WEBPACK_IMPORTED_MODULE_7__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 44
     },
     __self: undefined
   }), __jsx("article", {
     className: "col-main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 45
     },
     __self: undefined
   }, __jsx(components_shop_Title__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 46
     },
     __self: undefined
   }), __jsx(components_shop_View__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 47
     },
     __self: undefined
   }), __jsx(components_shop_Product__WEBPACK_IMPORTED_MODULE_9__["default"], {
     products: products,
+    onAddToCart: onAddToCart,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 48
     },
     __self: undefined
   }), __jsx("div", {
     className: "toolbar bottom",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 49
     },
     __self: undefined
   }, __jsx(components_shop_Pagination__WEBPACK_IMPORTED_MODULE_10__["default"], {
-    currentPage: currentPage,
+    currentPage: _currentPage,
     totalItems: totalItems,
-    limit: limit,
-    sort: sort,
-    order: order,
+    limit: _limit,
+    sort: _sort,
+    order: _order,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 50
     },
     __self: undefined
   })))), __jsx("div", {
     className: "sidebar col-sm-3 col-xs-12 col-sm-pull-9",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 60
     },
     __self: undefined
   }, __jsx(components_shop_Sort__WEBPACK_IMPORTED_MODULE_11__["default"], {
-    sort: sort,
-    order: order,
+    query: query,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 61
     },
     __self: undefined
   })))))));
 };
 
-ShopList.getInitialProps = async function ({
-  query
-}) {
-  const page = query.page || 1;
-  const limit = 12;
-  const sort = query.sort || 'id';
-  const order = query.order || 'desc';
-  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`https://carpo.herokuapp.com/products?_sort=${sort}&_order=${order}&_page=${page}&_limit=${limit}`);
+ShopList.getInitialProps = async function (context) {
+  console.log(context);
+  const {
+    query
+  } = context;
+  let transformedQuery = {
+    _query: query.query || "",
+    _page: query.page || 1,
+    _limit: query.limit || 12,
+    _sort: query.sort || 'id',
+    _order: query.order || 'desc'
+  }; // transformedQuery = queryString.stringify(transformedQuery)
+  // console.log(transformedQuery)
+  // console.log(`${url}?${transformedQuery}`)
+
+  const res = await isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_4___default()(`${_url_config__WEBPACK_IMPORTED_MODULE_12__["url"]}?${query_string__WEBPACK_IMPORTED_MODULE_13___default.a.stringify(transformedQuery)}`);
   const data = await res.json();
   return {
     products: data,
     totalItems: res.headers.get('X-Total-Count'),
-    currentPage: page,
-    limit: limit,
-    sort: sort,
-    order: order
+    query: transformedQuery
   };
 };
 
@@ -4123,7 +4221,21 @@ ShopList.getInitialProps = async function ({
 
 /***/ }),
 
-/***/ 4:
+/***/ "./url.config.js":
+/*!***********************!*\
+  !*** ./url.config.js ***!
+  \***********************/
+/*! exports provided: url */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "url", function() { return url; });
+const url = 'https://carpo.herokuapp.com/products';
+
+/***/ }),
+
+/***/ 6:
 /*!***********************************!*\
   !*** multi ./pages/shop/index.js ***!
   \***********************************/
@@ -4187,6 +4299,17 @@ module.exports = require("core-js/library/fn/object/define-property");
 /***/ (function(module, exports) {
 
 module.exports = require("core-js/library/fn/object/get-own-property-descriptor");
+
+/***/ }),
+
+/***/ "core-js/library/fn/object/get-own-property-symbols":
+/*!*********************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-symbols");
 
 /***/ }),
 
@@ -4275,6 +4398,17 @@ module.exports = require("prop-types");
 /***/ (function(module, exports) {
 
 module.exports = require("prop-types-exact");
+
+/***/ }),
+
+/***/ "query-string":
+/*!*******************************!*\
+  !*** external "query-string" ***!
+  \*******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("query-string");
 
 /***/ }),
 

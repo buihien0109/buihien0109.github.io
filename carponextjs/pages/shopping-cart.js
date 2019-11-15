@@ -2,6 +2,8 @@ import Layout from '../components/CarpoLayout'
 import Head from 'next/head'
 
 const ShoppingCart = () => (
+
+  
   <Layout>
     <Head>
       <title>Shopping Cart</title>

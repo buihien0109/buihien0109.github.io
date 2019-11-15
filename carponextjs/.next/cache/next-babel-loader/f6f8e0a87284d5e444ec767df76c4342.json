@@ -1,0 +1,1 @@
+{"ast":null,"code":"export const url = 'https://carpo.herokuapp.com/products';","map":{"version":3,"sources":["C:/Users/ADMIN/Desktop/Web-front end/NextJS/carponextjs/url.config.js"],"names":["url"],"mappings":"AAAA,OAAO,MAAMA,GAAG,GAAG,sCAAZ","sourcesContent":["export const url = 'https://carpo.herokuapp.com/products'"]},"metadata":{},"sourceType":"module"}

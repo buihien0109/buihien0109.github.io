@@ -1,33 +1,35 @@
 import Layout from "components/CarpoLayout";
 import Head from "next/head";
 import { useState } from "react";
-
+import { useRouter } from 'next/router'
 
 const ProductDetail = (props) => {
   const { product } = props
   const [countProduct, setCountProduct] = useState(1);
+  const [shoppingCart, setShoppingCart] = useState([])
   const decrease = () => {
     countProduct > 1
       ? setCountProduct(countProduct - 1)
       : setCountProduct(countProduct);
-    console.log('countProduct', countProduct)
   };
   const increase = () => {
     setCountProduct(countProduct + 1);
-    console.log('countProduct', countProduct)
   };
 
-  const onAddToCart = () => {
-    countProduct < product.quantity
-      ? alert("Sản phẩm đã được thêm vào giỏ hàng")
-      : alert("Không đủ số lượng sản phẩm");
-  };
-  //Format lại giá tiền
-  const convertMoney = (price) =>{
-    return new Intl.NumberFormat("vi-VN", {
-      style: "currency",
-      currency: "VND"
-    }).format(price);
+  const onAddToCart = async () => {
+    if(countProduct > product.quantity) {
+      alert("Không đủ số lượng sản phẩm!")
+    } else {
+      const id = props.url.query.id
+      const res = await fetch(
+        `https://carpo.herokuapp.com/products/${id}`
+      );
+      const data = await res.json();
+      const productSaveInCart = {...data, quantity:countProduct}
+      
+      setShoppingCart(shoppingCart => [...shoppingCart, productSaveInCart])
+    }
+
   }
   return (
     <Layout>
@@ -88,7 +90,7 @@ const ProductDetail = (props) => {
                         <div className="price-box">
                           <p className="special-price">
                             <span className="price-label">Giá:</span>
-                            <span className="price"> {convertMoney(product.price)}</span>
+                            <span className="price"> {product.price}</span>
                           </p>
                           {/* <p className="old-price">
                             <span className="price-label">Giá:</span>

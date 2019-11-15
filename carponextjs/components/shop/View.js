@@ -26,9 +26,9 @@ const View = () => {
       <div id="sort-by">
         <label className="left">Sắp xếp: </label>
         <select className="selection-2" onChange={sortData}>
-          <option value="">Default Sorting</option>
-          <option value="price-asc">Price: low to high</option>
-          <option value="price-desc">Price: high to low</option>
+          <option value="">Mặc định</option>
+          <option value="price-asc">Giá: Từ thấp tới cao</option>
+          <option value="price-desc">Giá: Từ cao tới thấp</option>
         </select>
       </div>
       <div className="pager">
@@ -43,7 +43,7 @@ const View = () => {
               });
             }}
           >
-            <option value="">Default View</option>
+            <option value="">Mặc định</option>
             <option value="10">10</option>
             <option value="15">15</option>
             <option value="20">20</option>

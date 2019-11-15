@@ -1365,9 +1365,8 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
       },
       __self: this
     }), __jsx("link", {
-      rel: "shortcut icon",
-      type: "image/png",
-      href: "./images/favicon.png",
+      rel: "stylesheet",
+      href: "/css/owl.carousel.css",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 18
@@ -1375,7 +1374,7 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
       __self: this
     }), __jsx("link", {
       rel: "stylesheet",
-      href: "/css/owl.carousel.css",
+      href: "/css/style.css",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 19
@@ -1383,36 +1382,28 @@ class MyDocument extends next_document__WEBPACK_IMPORTED_MODULE_2___default.a {
       __self: this
     }), __jsx("link", {
       rel: "stylesheet",
-      href: "/css/style.css",
+      href: "/css/responsive.css",
       __source: {
         fileName: _jsxFileName,
         lineNumber: 20
       },
       __self: this
-    }), __jsx("link", {
-      rel: "stylesheet",
-      href: "/css/responsive.css",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 21
-      },
-      __self: this
     })), __jsx("body", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 23
       },
       __self: this
     }, __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["Main"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 25
+        lineNumber: 24
       },
       __self: this
     }), __jsx(next_document__WEBPACK_IMPORTED_MODULE_2__["NextScript"], {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 26
+        lineNumber: 25
       },
       __self: this
     })));

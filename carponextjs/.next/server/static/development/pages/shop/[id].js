@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 6);
+/******/ 	return __webpack_require__(__webpack_require__.s = 3);
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -106,7 +106,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Header */ "./components/Header.js");
 /* harmony import */ var _Footer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./Footer */ "./components/Footer.js");
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\carponextjs\\components\\CarpoLayout.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\CarpoLayout.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -147,7 +147,7 @@ const Layout = props => __jsx("div", {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\carponextjs\\components\\Footer.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\Footer.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -650,7 +650,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
 /* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\carponextjs\\components\\Header.js";
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\Header.js";
 
 var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
@@ -754,7 +754,7 @@ const MainHeader = () => __jsx("header", {
   },
   __self: undefined
 }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-  href: "/shop-list",
+  href: "/shop",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 38
@@ -762,7 +762,7 @@ const MainHeader = () => __jsx("header", {
   __self: undefined
 }, __jsx("a", {
   className: "nav-link text-uppercase text-white",
-  href: "./shop-list.html",
+  href: "./shop.html",
   __source: {
     fileName: _jsxFileName,
     lineNumber: 39
@@ -984,6 +984,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-prope
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js":
 /*!********************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/core-js/object/keys.js ***!
@@ -1003,6 +1014,79 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/keys */ "core
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/promise */ "core-js/library/fn/promise");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js":
+/*!***************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js ***!
+  \***************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _defineProperty; });
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/define-property */ "./node_modules/@babel/runtime-corejs2/core-js/object/define-property.js");
+/* harmony import */ var _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0__);
+
+function _defineProperty(obj, key, value) {
+  if (key in obj) {
+    _core_js_object_define_property__WEBPACK_IMPORTED_MODULE_0___default()(obj, key, {
+      value: value,
+      enumerable: true,
+      configurable: true,
+      writable: true
+    });
+  } else {
+    obj[key] = value;
+  }
+
+  return obj;
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
 
 /***/ }),
 
@@ -2626,26 +2710,35 @@ module.exports = __webpack_require__(/*! ./dist/client/link */ "./node_modules/n
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../components/CarpoLayout */ "./components/CarpoLayout.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! next/head */ "next/head");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\carponextjs\\pages\\shop\\[id].js";
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var components_CarpoLayout__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! components/CarpoLayout */ "./components/CarpoLayout.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next/head */ "next/head");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/router */ "next/router");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_4__);
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
+var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\pages\\shop\\[id].js";
+
+var __jsx = react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement;
+
 
 
 
 
 const ProductDetail = props => {
   const {
-    0: countProduct,
-    1: setCountProduct
-  } = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(1);
-  const {
     product
   } = props;
+  const {
+    0: countProduct,
+    1: setCountProduct
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])(1);
+  const {
+    0: shoppingCart,
+    1: setShoppingCart
+  } = Object(react__WEBPACK_IMPORTED_MODULE_1__["useState"])([]);
 
   const decrease = () => {
     countProduct > 1 ? setCountProduct(countProduct - 1) : setCountProduct(countProduct);
@@ -2655,34 +2748,38 @@ const ProductDetail = props => {
     setCountProduct(countProduct + 1);
   };
 
-  const onAddToCart = () => {
-    countProduct < product.quantity ? alert("Sản phẩm đã được thêm vào giỏ hàng") : alert("Không đủ số lượng sản phẩm");
-  }; //Format lại giá tiền
+  const onAddToCart = async () => {
+    if (countProduct > product.quantity) {
+      alert("Không đủ số lượng sản phẩm!");
+    } else {
+      const id = props.url.query.id;
+      const res = await fetch(`https://carpo.herokuapp.com/products/${id}`);
+      const data = await res.json();
 
+      const productSaveInCart = Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_0__["default"])({}, data, {
+        quantity: countProduct
+      });
 
-  const convertMoney = price => {
-    return new Intl.NumberFormat("vi-VN", {
-      style: "currency",
-      currency: "VND"
-    }).format(price);
+      setShoppingCart(shoppingCart => [...shoppingCart, productSaveInCart]);
+    }
   };
 
-  return __jsx(_components_CarpoLayout__WEBPACK_IMPORTED_MODULE_1__["default"], {
+  return __jsx(components_CarpoLayout__WEBPACK_IMPORTED_MODULE_2__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 35
     },
     __self: undefined
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_2___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_3___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 36
     },
     __self: undefined
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 37
     },
     __self: undefined
   }, "Product Detail Page"), __jsx("link", {
@@ -2690,46 +2787,46 @@ const ProductDetail = props => {
     href: "/css/product-detail.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 38
     },
     __self: undefined
   })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 40
     },
     __self: undefined
   }, __jsx("section", {
     id: "duong-dan",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 36
+      lineNumber: 41
     },
     __self: undefined
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 37
+      lineNumber: 42
     },
     __self: undefined
   }, __jsx("a", {
     href: "./index.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 38
+      lineNumber: 43
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 39
+      lineNumber: 44
     },
     __self: undefined
   }, "Trang ch\u1EE7")), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 41
+      lineNumber: 46
     },
     __self: undefined
   }, __jsx("i", {
@@ -2737,26 +2834,26 @@ const ProductDetail = props => {
     "aria-hidden": "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 42
+      lineNumber: 47
     },
     __self: undefined
   })), __jsx("a", {
     href: "./shop-list.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 44
+      lineNumber: 49
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 50
     },
     __self: undefined
   }, "S\u1EA3n ph\u1EA9m")), __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 47
+      lineNumber: 52
     },
     __self: undefined
   }, __jsx("i", {
@@ -2764,55 +2861,55 @@ const ProductDetail = props => {
     "aria-hidden": "true",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 48
+      lineNumber: 53
     },
     __self: undefined
   })), __jsx("a", {
     href: "./product-detail.html",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 50
+      lineNumber: 55
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 51
+      lineNumber: 56
     },
     __self: undefined
   }, product.name)))), __jsx("section", {
     className: "main-container col1-layout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 55
+      lineNumber: 60
     },
     __self: undefined
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 56
+      lineNumber: 61
     },
     __self: undefined
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 57
+      lineNumber: 62
     },
     __self: undefined
   }, __jsx("div", {
     className: "product-view",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 58
+      lineNumber: 63
     },
     __self: undefined
   }, __jsx("div", {
     className: "product-essential",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 59
+      lineNumber: 64
     },
     __self: undefined
   }, __jsx("form", {
@@ -2821,28 +2918,28 @@ const ProductDetail = props => {
     id: "product_addtocart_form",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 60
+      lineNumber: 65
     },
     __self: undefined
   }, __jsx("div", {
     className: "product-img-box col-lg-4 col-sm-5 col-xs-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 61
+      lineNumber: 66
     },
     __self: undefined
   }, __jsx("div", {
     className: "product-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 62
+      lineNumber: 67
     },
     __self: undefined
   }, __jsx("div", {
     className: "product-full",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 63
+      lineNumber: 68
     },
     __self: undefined
   }, __jsx("img", {
@@ -2851,170 +2948,170 @@ const ProductDetail = props => {
     alt: "product-image",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 64
+      lineNumber: 69
     },
     __self: undefined
   })))), __jsx("div", {
     className: "product-shop col-lg-8 col-sm-7 col-xs-12",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 73
+      lineNumber: 78
     },
     __self: undefined
   }, __jsx("div", {
     className: "product-name",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 74
+      lineNumber: 79
     },
     __self: undefined
   }, __jsx("h1", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 75
+      lineNumber: 80
     },
     __self: undefined
   }, product.name)), __jsx("div", {
     className: "rating",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 77
+      lineNumber: 82
     },
     __self: undefined
   }, __jsx("i", {
     className: "fa fa-star",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 78
+      lineNumber: 83
     },
     __self: undefined
   }), __jsx("i", {
     className: "fa fa-star",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 79
+      lineNumber: 84
     },
     __self: undefined
   }), __jsx("i", {
     className: "fa fa-star",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 80
+      lineNumber: 85
     },
     __self: undefined
   }), __jsx("i", {
     className: "fa fa-star-o",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 81
+      lineNumber: 86
     },
     __self: undefined
   }), __jsx("i", {
     className: "fa fa-star-o",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 82
+      lineNumber: 87
     },
     __self: undefined
   })), __jsx("div", {
     className: "price-block",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 84
+      lineNumber: 89
     },
     __self: undefined
   }, __jsx("div", {
     className: "price-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 85
+      lineNumber: 90
     },
     __self: undefined
   }, __jsx("p", {
     className: "special-price",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 86
+      lineNumber: 91
     },
     __self: undefined
   }, __jsx("span", {
     className: "price-label",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 87
+      lineNumber: 92
     },
     __self: undefined
   }, "Gi\xE1:"), __jsx("span", {
     className: "price",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 88
+      lineNumber: 93
     },
     __self: undefined
-  }, " ", convertMoney(product.price))), __jsx("p", {
+  }, " ", product.price)), __jsx("p", {
     className: "availability in-stock",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 95
+      lineNumber: 100
     },
     __self: undefined
   }, __jsx("span", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 96
+      lineNumber: 101
     },
     __self: undefined
   }, product.instock ? "Còn hàng" : "Hết hàng")))), __jsx("div", {
     className: "short-description",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 102
+      lineNumber: 107
     },
     __self: undefined
   }, __jsx("h2", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 103
+      lineNumber: 108
     },
     __self: undefined
   }, "M\xF4 t\u1EA3"), __jsx("p", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 104
+      lineNumber: 109
     },
     __self: undefined
   }, product.description)), __jsx("div", {
     className: "add-to-box",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 106
+      lineNumber: 111
     },
     __self: undefined
   }, __jsx("div", {
     className: "add-to-cart",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 107
+      lineNumber: 112
     },
     __self: undefined
   }, __jsx("div", {
     className: "pull-left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 108
+      lineNumber: 113
     },
     __self: undefined
   }, __jsx("div", {
     className: "custom pull-left",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 109
+      lineNumber: 114
     },
     __self: undefined
   }, __jsx("label", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 110
+      lineNumber: 115
     },
     __self: undefined
   }, "S\u1ED1 l\u01B0\u1EE3ng:"), __jsx("button", {
@@ -3023,14 +3120,14 @@ const ProductDetail = props => {
     onClick: decrease,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 111
+      lineNumber: 116
     },
     __self: undefined
   }, __jsx("i", {
     className: "fa fa-minus",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 116
+      lineNumber: 121
     },
     __self: undefined
   }, "\xA0")), __jsx("input", {
@@ -3038,12 +3135,11 @@ const ProductDetail = props => {
     className: "input-text qty",
     title: "Qty",
     defaultValue: countProduct,
-    maxLength: 12,
     id: "qty",
     name: "qty",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 118
+      lineNumber: 123
     },
     __self: undefined
   }), __jsx("button", {
@@ -3052,14 +3148,14 @@ const ProductDetail = props => {
     onClick: increase,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 127
+      lineNumber: 131
     },
     __self: undefined
   }, __jsx("i", {
     className: "fa fa-plus",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 132
+      lineNumber: 136
     },
     __self: undefined
   }, "\xA0")))), __jsx("button", {
@@ -3069,115 +3165,116 @@ const ProductDetail = props => {
     onClick: onAddToCart,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 136
+      lineNumber: 140
     },
     __self: undefined
   }, __jsx("i", {
     className: "fa fa-shopping-cart",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 142
+      lineNumber: 146
     },
     __self: undefined
   }), " Th\xEAm v\xE0o gi\u1ECF h\xE0ng"))), __jsx("div", {
     className: "social",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 147
+      lineNumber: 151
     },
     __self: undefined
   }, __jsx("ul", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 148
+      lineNumber: 152
     },
     __self: undefined
   }, __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 149
+      lineNumber: 153
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 150
+      lineNumber: 154
     },
     __self: undefined
   }, __jsx("i", {
     className: "fa fa-facebook",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 151
+      lineNumber: 155
     },
     __self: undefined
   }))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 154
+      lineNumber: 158
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 155
+      lineNumber: 159
     },
     __self: undefined
   }, __jsx("i", {
     className: "fa fa-twitter",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 156
+      lineNumber: 160
     },
     __self: undefined
   }))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 159
+      lineNumber: 163
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 160
+      lineNumber: 164
     },
     __self: undefined
   }, __jsx("i", {
     className: "fa fa-youtube",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 161
+      lineNumber: 165
     },
     __self: undefined
   }))), __jsx("li", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 164
+      lineNumber: 168
     },
     __self: undefined
   }, __jsx("a", {
     href: "#",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 165
+      lineNumber: 169
     },
     __self: undefined
   }, __jsx("i", {
     className: "fa fa-instagram",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 166
+      lineNumber: 170
     },
     __self: undefined
-  }))))))))))))), "*/}");
+  }))))))))))))));
 };
 
-ProductDetail.getInitialProps = async function (props) {
-  const id = props.query.id;
-  const res = await fetch("https://carpo.herokuapp.com/products/" + id);
+ProductDetail.getInitialProps = async function ({
+  query
+}) {
+  const res = await fetch(`https://carpo.herokuapp.com/products/${query.id}`);
   const data = await res.json();
   return {
     product: data
@@ -3188,14 +3285,14 @@ ProductDetail.getInitialProps = async function (props) {
 
 /***/ }),
 
-/***/ 6:
+/***/ 3:
 /*!**********************************!*\
   !*** multi ./pages/shop/[id].js ***!
   \**********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\Users\ADMIN\Desktop\carponextjs\pages\shop\[id].js */"./pages/shop/[id].js");
+module.exports = __webpack_require__(/*! C:\Users\ADMIN\Desktop\Web-front end\NextJS\carponextjs\pages\shop\[id].js */"./pages/shop/[id].js");
 
 
 /***/ }),
@@ -3255,6 +3352,17 @@ module.exports = require("core-js/library/fn/object/get-own-property-descriptor"
 
 /***/ }),
 
+/***/ "core-js/library/fn/object/get-own-property-symbols":
+/*!*********************************************************************!*\
+  !*** external "core-js/library/fn/object/get-own-property-symbols" ***!
+  \*********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("core-js/library/fn/object/get-own-property-symbols");
+
+/***/ }),
+
 /***/ "core-js/library/fn/object/keys":
 /*!*************************************************!*\
   !*** external "core-js/library/fn/object/keys" ***!
@@ -3285,6 +3393,17 @@ module.exports = require("core-js/library/fn/promise");
 /***/ (function(module, exports) {
 
 module.exports = require("next/head");
+
+/***/ }),
+
+/***/ "next/router":
+/*!******************************!*\
+  !*** external "next/router" ***!
+  \******************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("next/router");
 
 /***/ }),
 

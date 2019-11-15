@@ -1179,43 +1179,49 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement;
 
 
 var Product = function Product(_ref) {
-  var products = _ref.products;
+  var products = _ref.products,
+      onAddToCart = _ref.onAddToCart;
+
+  var handleAddToCart = function handleAddToCart(id, e) {
+    onAddToCart(id);
+  };
+
   var productList = products.map(function (item, index) {
     return __jsx("li", {
       className: "item col-lg-4 col-md-6 col-sm-6 col-xs-6",
       key: item.id,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 7
-      },
-      __self: this
-    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
-      href: "/shop/[id]",
-      as: '/shop/' + item.id,
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 8
+        lineNumber: 10
       },
       __self: this
     }, __jsx("div", {
       className: "item-inner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 9
+        lineNumber: 11
+      },
+      __self: this
+    }, __jsx(next_link__WEBPACK_IMPORTED_MODULE_1___default.a, {
+      href: "/shop/[id]",
+      as: "/shop/" + item.id,
+      __source: {
+        fileName: _jsxFileName,
+        lineNumber: 12
       },
       __self: this
     }, __jsx("div", {
       className: "item-img",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 10
+        lineNumber: 13
       },
       __self: this
     }, __jsx("div", {
       className: "item-img-info",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 11
+        lineNumber: 14
       },
       __self: this
     }, __jsx("a", {
@@ -1224,7 +1230,7 @@ var Product = function Product(_ref) {
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 12
+        lineNumber: 15
       },
       __self: this
     }, __jsx("img", {
@@ -1232,35 +1238,35 @@ var Product = function Product(_ref) {
       src: item.thumbnail,
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 17
+        lineNumber: 20
       },
       __self: this
     })), __jsx("div", {
       className: "new-label new-top-left",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 19
+        lineNumber: 22
       },
       __self: this
     }, "new"), __jsx("div", {
       className: "sale-label sale-top-right",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 20
+        lineNumber: 23
       },
       __self: this
     }, "sale"), __jsx("div", {
       className: "mask-shop-white",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 21
+        lineNumber: 24
       },
       __self: this
     }), __jsx("div", {
       className: "new-label new-top-left",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 22
+        lineNumber: 25
       },
       __self: this
     }, "new"), __jsx("a", {
@@ -1268,34 +1274,34 @@ var Product = function Product(_ref) {
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 23
+        lineNumber: 26
       },
       __self: this
     }, __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 24
+        lineNumber: 27
       },
       __self: this
-    }, "Xem nhanh")))), __jsx("div", {
+    }, "Xem nhanh"))))), __jsx("div", {
       className: "item-info",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 28
+        lineNumber: 32
       },
       __self: this
     }, __jsx("div", {
       className: "info-inner",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 29
+        lineNumber: 33
       },
       __self: this
     }, __jsx("div", {
       className: "item-title",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 30
+        lineNumber: 34
       },
       __self: this
     }, __jsx("a", {
@@ -1303,142 +1309,138 @@ var Product = function Product(_ref) {
       href: "./product-detail.html",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 31
+        lineNumber: 35
       },
       __self: this
     }, item.name)), __jsx("div", {
       className: "item-content",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 35
+        lineNumber: 39
       },
       __self: this
     }, __jsx("div", {
       className: "rating",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 36
+        lineNumber: 40
       },
       __self: this
     }, __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 41
       },
       __self: this
     }), " ", __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 37
+        lineNumber: 41
       },
       __self: this
     }), __jsx("i", {
       className: "fa fa-star",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 42
       },
       __self: this
     }), " ", __jsx("i", {
       className: "fa fa-star-o",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 38
+        lineNumber: 42
       },
       __self: this
     }), __jsx("i", {
       className: "fa fa-star-o",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 39
+        lineNumber: 43
       },
       __self: this
     })), __jsx("div", {
       className: "item-price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 41
+        lineNumber: 45
       },
       __self: this
     }, __jsx("div", {
       className: "price-box",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 42
+        lineNumber: 46
       },
       __self: this
     }, __jsx("span", {
       className: "regular-price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 43
+        lineNumber: 47
       },
       __self: this
     }, __jsx("span", {
       className: "price",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 44
+        lineNumber: 48
       },
       __self: this
     }, item.price, "\u0111")))), __jsx("div", {
       className: "actions",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 48
+        lineNumber: 52
       },
       __self: this
     }, __jsx("div", {
       className: "add_cart",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 49
-      },
-      __self: this
-    }, __jsx("a", {
-      href: "./shopping-card.html",
-      __source: {
-        fileName: _jsxFileName,
-        lineNumber: 50
+        lineNumber: 53
       },
       __self: this
     }, __jsx("button", {
       className: "button btn-cart",
       type: "button",
+      onClick: function onClick() {
+        return handleAddToCart(item.id);
+      },
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 51
+        lineNumber: 54
       },
       __self: this
     }, __jsx("span", {
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 52
+        lineNumber: 59
       },
       __self: this
     }, __jsx("i", {
       className: "fa fa-shopping-cart",
       __source: {
         fileName: _jsxFileName,
-        lineNumber: 53
+        lineNumber: 60
       },
       __self: this
-    }), " Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))))));
+    }), " Th\xEAm v\xE0o gi\u1ECF h\xE0ng")))))))));
   });
   return __jsx("div", {
     className: "category-products",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 69
+      lineNumber: 73
     },
     __self: this
   }, __jsx("ul", {
     className: "products-grid",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 70
+      lineNumber: 74
     },
     __self: this
   }, productList));
@@ -1460,19 +1462,26 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/classCallCheck */ "./node_modules/@babel/runtime-corejs2/helpers/esm/classCallCheck.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/createClass */ "./node_modules/@babel/runtime-corejs2/helpers/esm/createClass.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/possibleConstructorReturn */ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/getPrototypeOf */ "./node_modules/@babel/runtime-corejs2/helpers/esm/getPrototypeOf.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/assertThisInitialized */ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
+/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12__);
+/* harmony import */ var _url_config__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../../url.config */ "./url.config.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_14___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_14__);
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! next/router */ "./node_modules/next/dist/client/router.js");
+/* harmony import */ var next_router__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(next_router__WEBPACK_IMPORTED_MODULE_15__);
+
 
 
 
@@ -1484,31 +1493,41 @@ __webpack_require__.r(__webpack_exports__);
 
 var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\components\\shop\\Sort.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_9___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_10___default.a.createElement;
+
+
+
 
 
 
 var Sort =
 /*#__PURE__*/
 function (_React$Component) {
-  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__["default"])(Sort, _React$Component);
+  Object(_babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_8__["default"])(Sort, _React$Component);
 
   function Sort(props) {
     var _this;
 
-    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_2__["default"])(this, Sort);
+    Object(_babel_runtime_corejs2_helpers_esm_classCallCheck__WEBPACK_IMPORTED_MODULE_3__["default"])(this, Sort);
 
-    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_4__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_5__["default"])(Sort).call(this, props));
+    _this = Object(_babel_runtime_corejs2_helpers_esm_possibleConstructorReturn__WEBPACK_IMPORTED_MODULE_5__["default"])(this, Object(_babel_runtime_corejs2_helpers_esm_getPrototypeOf__WEBPACK_IMPORTED_MODULE_6__["default"])(Sort).call(this, props));
 
-    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_8__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_6__["default"])(_this), "handleFilter", function (brand) {
-      var listProduct = _this.state.listProduct;
-      var result = listProduct.filter(function (product) {
-        product.brand === brand;
-      });
-
-      _this.setState({
-        listProduct: result
-      });
+    Object(_babel_runtime_corejs2_helpers_esm_defineProperty__WEBPACK_IMPORTED_MODULE_9__["default"])(Object(_babel_runtime_corejs2_helpers_esm_assertThisInitialized__WEBPACK_IMPORTED_MODULE_7__["default"])(_this), "filterProduct", function () {
+      var router = next_router__WEBPACK_IMPORTED_MODULE_15___default.a.router;
+      var query = _this.props.query;
+      console.log(query);
+      var _query2 = query,
+          _query = _query2._query;
+      _query = "brand=Chanel";
+      console.log(_query);
+      console.log(query);
+      query = query_string__WEBPACK_IMPORTED_MODULE_14___default.a.stringify(Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, query, {
+        _query: _query
+      }));
+      console.log(query); // Router.push({
+      //   pathname: "/shop",
+      //   query: { query: query }
+      // });
     });
 
     _this.state = {
@@ -1517,7 +1536,7 @@ function (_React$Component) {
     return _this;
   }
 
-  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_3__["default"])(Sort, [{
+  Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(Sort, [{
     key: "componentDidMount",
     value: function () {
       var _componentDidMount = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
@@ -1529,7 +1548,7 @@ function (_React$Component) {
             switch (_context.prev = _context.next) {
               case 0:
                 _context.next = 2;
-                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_11___default()("https://carpo.herokuapp.com/products");
+                return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_12___default()(_url_config__WEBPACK_IMPORTED_MODULE_13__["url"]);
 
               case 2:
                 response = _context.sent;
@@ -1561,10 +1580,8 @@ function (_React$Component) {
     value: function render() {
       var _this2 = this;
 
+      console.log(this.props);
       var listProduct = this.state.listProduct;
-      var _this$props = this.props,
-          sort = _this$props.sort,
-          order = _this$props.order;
       var brands = listProduct.map(function (product) {
         return product.brand;
       });
@@ -1573,27 +1590,22 @@ function (_React$Component) {
       }); //Render Brand
 
       var renderBrand = brands.map(function (brand, index) {
-        return (// <Link href={`/shop?sort=${sort}&order=${order}&brand=${brand}`} key={index}>
-          __jsx("li", {
-            key: index,
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 39
-            },
-            __self: this
-          }, __jsx("a", {
-            href: "#",
-            onClick: function onClick() {
-              return _this2.handleFilter(brand);
-            },
-            __source: {
-              fileName: _jsxFileName,
-              lineNumber: 40
-            },
-            __self: this
-          }, brand)) // </Link>
-
-        );
+        return __jsx("li", {
+          key: index,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 47
+          },
+          __self: this
+        }, __jsx("a", {
+          href: "#",
+          onClick: _this2.filterProduct,
+          __source: {
+            fileName: _jsxFileName,
+            lineNumber: 48
+          },
+          __self: this
+        }, brand));
       }); //Get List material
 
       var materials = listProduct.map(function (product) {
@@ -1603,25 +1615,25 @@ function (_React$Component) {
         return materials.indexOf(material) === i;
       });
       var renderMaterial = materials.map(function (material, index) {
-        return __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        return __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
           href: "/shop?material=".concat(material),
           key: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 53
+            lineNumber: 60
           },
           __self: this
         }, __jsx("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 54
+            lineNumber: 61
           },
           __self: this
         }, __jsx("a", {
           href: "#",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 55
+            lineNumber: 62
           },
           __self: this
         }, material)));
@@ -1634,25 +1646,25 @@ function (_React$Component) {
         return colors.indexOf(color) === i;
       });
       var renderColor = colors.map(function (color, index) {
-        return __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        return __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
           href: "/shop?color=".concat(color),
           key: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 66
+            lineNumber: 73
           },
           __self: this
         }, __jsx("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 67
+            lineNumber: 74
           },
           __self: this
         }, __jsx("a", {
           href: "#",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 68
+            lineNumber: 75
           },
           __self: this
         }, color)));
@@ -1665,25 +1677,25 @@ function (_React$Component) {
         return sizes.indexOf(size) === i;
       });
       var renderSize = sizes.map(function (size, index) {
-        return __jsx(next_link__WEBPACK_IMPORTED_MODULE_10___default.a, {
+        return __jsx(next_link__WEBPACK_IMPORTED_MODULE_11___default.a, {
           href: "/shop?size=".concat(size),
           key: index,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 79
+            lineNumber: 86
           },
           __self: this
         }, __jsx("li", {
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 80
+            lineNumber: 87
           },
           __self: this
         }, __jsx("a", {
           href: "#",
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 81
+            lineNumber: 88
           },
           __self: this
         }, size)));
@@ -1692,182 +1704,182 @@ function (_React$Component) {
         className: "sidebar",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 88
+          lineNumber: 95
         },
         __self: this
       }, __jsx("div", {
         className: "block block-layered-nav",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 89
+          lineNumber: 96
         },
         __self: this
       }, __jsx("div", {
         className: "block-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 90
+          lineNumber: 97
         },
         __self: this
       }, __jsx("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 91
+          lineNumber: 98
         },
         __self: this
       }, "T\xECm ki\u1EBFm s\u1EA3n ph\u1EA9m")), __jsx("div", {
         className: "block-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 93
+          lineNumber: 100
         },
         __self: this
       }, __jsx("dl", {
         id: "narrow-by-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 94
+          lineNumber: 101
         },
         __self: this
       }, __jsx("dt", {
         className: "even",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 95
+          lineNumber: 102
         },
         __self: this
       }, "Th\u01B0\u01A1ng hi\u1EC7u"), __jsx("dd", {
         className: "even",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 96
+          lineNumber: 103
         },
         __self: this
       }, __jsx("ol", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 97
+          lineNumber: 104
         },
         __self: this
       }, renderBrand)), __jsx("dt", {
         className: "even",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 99
+          lineNumber: 106
         },
         __self: this
       }, "Ch\u1EA5t li\u1EC7u"), __jsx("dd", {
         className: "even",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 100
+          lineNumber: 107
         },
         __self: this
       }, __jsx("ol", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 101
+          lineNumber: 108
         },
         __self: this
       }, renderMaterial)), __jsx("dt", {
         className: "odd",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 103
+          lineNumber: 110
         },
         __self: this
       }, "K\xEDch th\u01B0\u1EDBc"), __jsx("div", {
         className: "size-area",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 104
+          lineNumber: 111
         },
         __self: this
       }, __jsx("div", {
         className: "size",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 105
+          lineNumber: 112
         },
         __self: this
       }, __jsx("ul", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 106
+          lineNumber: 113
         },
         __self: this
       }, renderSize))), __jsx("dt", {
         className: "odd",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 109
+          lineNumber: 116
         },
         __self: this
       }, "M\xE0u s\u1EAFc"), __jsx("dd", {
         className: "odd",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 110
+          lineNumber: 117
         },
         __self: this
       }, __jsx("ol", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 111
+          lineNumber: 118
         },
         __self: this
       }, renderColor))))), __jsx("div", {
         className: "block product-price-range ",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 116
+          lineNumber: 123
         },
         __self: this
       }, __jsx("div", {
         className: "block-title",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 117
+          lineNumber: 124
         },
         __self: this
       }, __jsx("h3", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 118
+          lineNumber: 125
         },
         __self: this
       }, "Gi\xE1")), __jsx("div", {
         className: "block-content",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 120
+          lineNumber: 127
         },
         __self: this
       }, __jsx("div", {
         className: "slider-range",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 121
+          lineNumber: 128
         },
         __self: this
       }, __jsx("ul", {
         className: "check-box-list",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 122
+          lineNumber: 129
         },
         __self: this
       }, __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 123
+          lineNumber: 130
         },
         __self: this
       }, __jsx("div", {
         className: "pretty p-icon p-smooth",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 124
+          lineNumber: 131
         },
         __self: this
       }, __jsx("input", {
@@ -1877,34 +1889,34 @@ function (_React$Component) {
         id: "p1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 125
+          lineNumber: 132
         },
         __self: this
       }), __jsx("label", {
         htmlFor: "p1",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 131
+          lineNumber: 138
         },
         __self: this
       }, "< 200.000\u0111", __jsx("span", {
         className: "count",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 132
+          lineNumber: 139
         },
         __self: this
       }, "(5)")))), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 136
+          lineNumber: 143
         },
         __self: this
       }, __jsx("div", {
         className: "pretty p-icon p-smooth",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 137
+          lineNumber: 144
         },
         __self: this
       }, __jsx("input", {
@@ -1914,34 +1926,34 @@ function (_React$Component) {
         id: "p2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 138
+          lineNumber: 145
         },
         __self: this
       }), __jsx("label", {
         htmlFor: "p2",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 144
+          lineNumber: 151
         },
         __self: this
       }, "200.000 - 500.000", __jsx("span", {
         className: "count",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 145
+          lineNumber: 152
         },
         __self: this
       }, "(12)")))), __jsx("li", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 149
+          lineNumber: 156
         },
         __self: this
       }, __jsx("div", {
         className: "pretty p-icon p-smooth",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 150
+          lineNumber: 157
         },
         __self: this
       }, __jsx("input", {
@@ -1951,21 +1963,21 @@ function (_React$Component) {
         id: "p3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 151
+          lineNumber: 158
         },
         __self: this
       }), __jsx("label", {
         htmlFor: "p3",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 157
+          lineNumber: 164
         },
         __self: this
       }, "500.000 - 1.000.000", __jsx("span", {
         className: "count",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 158
+          lineNumber: 165
         },
         __self: this
       }, "(15)")))))))));
@@ -1973,7 +1985,7 @@ function (_React$Component) {
   }]);
 
   return Sort;
-}(react__WEBPACK_IMPORTED_MODULE_9___default.a.Component);
+}(react__WEBPACK_IMPORTED_MODULE_10___default.a.Component);
 
 /* harmony default export */ __webpack_exports__["default"] = (Sort);
 
@@ -2093,21 +2105,21 @@ var View = function View() {
       lineNumber: 29
     },
     __self: this
-  }, "Default Sorting"), __jsx("option", {
+  }, "M\u1EB7c \u0111\u1ECBnh"), __jsx("option", {
     value: "price-asc",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 30
     },
     __self: this
-  }, "Price: low to high"), __jsx("option", {
+  }, "Gi\xE1: T\u1EEB th\u1EA5p t\u1EDBi cao"), __jsx("option", {
     value: "price-desc",
     __source: {
       fileName: _jsxFileName,
       lineNumber: 31
     },
     __self: this
-  }, "Price: high to low"))), __jsx("div", {
+  }, "Gi\xE1: T\u1EEB cao t\u1EDBi th\u1EA5p"))), __jsx("div", {
     className: "pager",
     __source: {
       fileName: _jsxFileName,
@@ -2149,7 +2161,7 @@ var View = function View() {
       lineNumber: 46
     },
     __self: this
-  }, "Default View"), __jsx("option", {
+  }, "M\u1EB7c \u0111\u1ECBnh"), __jsx("option", {
     value: "10",
     __source: {
       fileName: _jsxFileName,
@@ -2273,6 +2285,17 @@ module.exports = __webpack_require__(/*! core-js/library/fn/object/define-proper
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-descriptor */ "./node_modules/core-js/library/fn/object/get-own-property-descriptor.js");
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js":
+/*!****************************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js ***!
+  \****************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(/*! core-js/library/fn/object/get-own-property-symbols */ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js");
 
 /***/ }),
 
@@ -2575,6 +2598,31 @@ module.exports = _createClass;
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _arrayWithoutHoles; });
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/is-array */ "./node_modules/@babel/runtime-corejs2/core-js/array/is-array.js");
+/* harmony import */ var _core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0__);
+
+function _arrayWithoutHoles(arr) {
+  if (_core_js_array_is_array__WEBPACK_IMPORTED_MODULE_0___default()(arr)) {
+    for (var i = 0, arr2 = new Array(arr.length); i < arr.length; i++) {
+      arr2[i] = arr[i];
+    }
+
+    return arr2;
+  }
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js":
 /*!**********************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/assertThisInitialized.js ***!
@@ -2785,6 +2833,87 @@ function _inherits(subClass, superClass) {
 
 /***/ }),
 
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js ***!
+  \****************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _iterableToArray; });
+/* harmony import */ var _core_js_array_from__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/array/from */ "./node_modules/@babel/runtime-corejs2/core-js/array/from.js");
+/* harmony import */ var _core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_array_from__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/is-iterable */ "./node_modules/@babel/runtime-corejs2/core-js/is-iterable.js");
+/* harmony import */ var _core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1__);
+
+
+function _iterableToArray(iter) {
+  if (_core_js_is_iterable__WEBPACK_IMPORTED_MODULE_1___default()(Object(iter)) || Object.prototype.toString.call(iter) === "[object Arguments]") return _core_js_array_from__WEBPACK_IMPORTED_MODULE_0___default()(iter);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _nonIterableSpread; });
+function _nonIterableSpread() {
+  throw new TypeError("Invalid attempt to spread non-iterable instance");
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js":
+/*!*************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js ***!
+  \*************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _objectSpread; });
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../core-js/object/get-own-property-descriptor */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-descriptor.js");
+/* harmony import */ var _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../core-js/object/get-own-property-symbols */ "./node_modules/@babel/runtime-corejs2/core-js/object/get-own-property-symbols.js");
+/* harmony import */ var _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../core-js/object/keys */ "./node_modules/@babel/runtime-corejs2/core-js/object/keys.js");
+/* harmony import */ var _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_core_js_object_keys__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _defineProperty__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./defineProperty */ "./node_modules/@babel/runtime-corejs2/helpers/esm/defineProperty.js");
+
+
+
+
+function _objectSpread(target) {
+  for (var i = 1; i < arguments.length; i++) {
+    var source = arguments[i] != null ? arguments[i] : {};
+
+    var ownKeys = _core_js_object_keys__WEBPACK_IMPORTED_MODULE_2___default()(source);
+
+    if (typeof _core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default.a === 'function') {
+      ownKeys = ownKeys.concat(_core_js_object_get_own_property_symbols__WEBPACK_IMPORTED_MODULE_1___default()(source).filter(function (sym) {
+        return _core_js_object_get_own_property_descriptor__WEBPACK_IMPORTED_MODULE_0___default()(source, sym).enumerable;
+      }));
+    }
+
+    ownKeys.forEach(function (key) {
+      Object(_defineProperty__WEBPACK_IMPORTED_MODULE_3__["default"])(target, key, source[key]);
+    });
+  }
+
+  return target;
+}
+
+/***/ }),
+
 /***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js":
 /*!**************************************************************************************!*\
   !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/possibleConstructorReturn.js ***!
@@ -2829,6 +2958,28 @@ function _setPrototypeOf(o, p) {
   };
 
   return _setPrototypeOf(o, p);
+}
+
+/***/ }),
+
+/***/ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js":
+/*!******************************************************************************!*\
+  !*** ./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js ***!
+  \******************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return _toConsumableArray; });
+/* harmony import */ var _arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./arrayWithoutHoles */ "./node_modules/@babel/runtime-corejs2/helpers/esm/arrayWithoutHoles.js");
+/* harmony import */ var _iterableToArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./iterableToArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/iterableToArray.js");
+/* harmony import */ var _nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./nonIterableSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/nonIterableSpread.js");
+
+
+
+function _toConsumableArray(arr) {
+  return Object(_arrayWithoutHoles__WEBPACK_IMPORTED_MODULE_0__["default"])(arr) || Object(_iterableToArray__WEBPACK_IMPORTED_MODULE_1__["default"])(arr) || Object(_nonIterableSpread__WEBPACK_IMPORTED_MODULE_2__["default"])();
 }
 
 /***/ }),
@@ -3357,6 +3508,19 @@ var $Object = __webpack_require__(/*! ../../modules/_core */ "./node_modules/cor
 module.exports = function getOwnPropertyDescriptor(it, key) {
   return $Object.getOwnPropertyDescriptor(it, key);
 };
+
+
+/***/ }),
+
+/***/ "./node_modules/core-js/library/fn/object/get-own-property-symbols.js":
+/*!****************************************************************************!*\
+  !*** ./node_modules/core-js/library/fn/object/get-own-property-symbols.js ***!
+  \****************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+__webpack_require__(/*! ../../modules/es6.symbol */ "./node_modules/core-js/library/modules/es6.symbol.js");
+module.exports = __webpack_require__(/*! ../../modules/_core */ "./node_modules/core-js/library/modules/_core.js").Object.getOwnPropertySymbols;
 
 
 /***/ }),
@@ -7104,6 +7268,112 @@ for (var i = 0; i < DOMIterables.length; i++) {
   if (proto && !proto[TO_STRING_TAG]) hide(proto, TO_STRING_TAG, NAME);
   Iterators[NAME] = Iterators.Array;
 }
+
+
+/***/ }),
+
+/***/ "./node_modules/decode-uri-component/index.js":
+/*!****************************************************!*\
+  !*** ./node_modules/decode-uri-component/index.js ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+var token = '%[a-f0-9]{2}';
+var singleMatcher = new RegExp(token, 'gi');
+var multiMatcher = new RegExp('(' + token + ')+', 'gi');
+
+function decodeComponents(components, split) {
+	try {
+		// Try to decode the entire string first
+		return decodeURIComponent(components.join(''));
+	} catch (err) {
+		// Do nothing
+	}
+
+	if (components.length === 1) {
+		return components;
+	}
+
+	split = split || 1;
+
+	// Split the array in 2 parts
+	var left = components.slice(0, split);
+	var right = components.slice(split);
+
+	return Array.prototype.concat.call([], decodeComponents(left), decodeComponents(right));
+}
+
+function decode(input) {
+	try {
+		return decodeURIComponent(input);
+	} catch (err) {
+		var tokens = input.match(singleMatcher);
+
+		for (var i = 1; i < tokens.length; i++) {
+			input = decodeComponents(tokens, i).join('');
+
+			tokens = input.match(singleMatcher);
+		}
+
+		return input;
+	}
+}
+
+function customDecodeURIComponent(input) {
+	// Keep track of all the replacements and prefill the map with the `BOM`
+	var replaceMap = {
+		'%FE%FF': '\uFFFD\uFFFD',
+		'%FF%FE': '\uFFFD\uFFFD'
+	};
+
+	var match = multiMatcher.exec(input);
+	while (match) {
+		try {
+			// Decode as big chunks as possible
+			replaceMap[match[0]] = decodeURIComponent(match[0]);
+		} catch (err) {
+			var result = decode(match[0]);
+
+			if (result !== match[0]) {
+				replaceMap[match[0]] = result;
+			}
+		}
+
+		match = multiMatcher.exec(input);
+	}
+
+	// Add `%C2` at the end of the map to make sure it does not replace the combinator before everything else
+	replaceMap['%C2'] = '\uFFFD';
+
+	var entries = Object.keys(replaceMap);
+
+	for (var i = 0; i < entries.length; i++) {
+		// Replace all decoded components
+		var key = entries[i];
+		input = input.replace(new RegExp(key, 'g'), replaceMap[key]);
+	}
+
+	return input;
+}
+
+module.exports = function (encodedURI) {
+	if (typeof encodedURI !== 'string') {
+		throw new TypeError('Expected `encodedURI` to be of type `string`, got `' + typeof encodedURI + '`');
+	}
+
+	try {
+		encodedURI = encodedURI.replace(/\+/g, ' ');
+
+		// Try the built in decoder first
+		return decodeURIComponent(encodedURI);
+	} catch (err) {
+		// Fallback to a more advanced decoder
+		return customDecodeURIComponent(encodedURI);
+	}
+};
 
 
 /***/ }),
@@ -11218,6 +11488,320 @@ module.exports = (__webpack_require__(/*! dll-reference dll_ea92a4d9664833a26066
 
 /***/ }),
 
+/***/ "./node_modules/query-string/index.js":
+/*!********************************************!*\
+  !*** ./node_modules/query-string/index.js ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+const strictUriEncode = __webpack_require__(/*! strict-uri-encode */ "./node_modules/strict-uri-encode/index.js");
+const decodeComponent = __webpack_require__(/*! decode-uri-component */ "./node_modules/decode-uri-component/index.js");
+const splitOnFirst = __webpack_require__(/*! split-on-first */ "./node_modules/split-on-first/index.js");
+
+function encoderForArrayFormat(options) {
+	switch (options.arrayFormat) {
+		case 'index':
+			return key => (result, value) => {
+				const index = result.length;
+				if (value === undefined || (options.skipNull && value === null)) {
+					return result;
+				}
+
+				if (value === null) {
+					return [...result, [encode(key, options), '[', index, ']'].join('')];
+				}
+
+				return [
+					...result,
+					[encode(key, options), '[', encode(index, options), ']=', encode(value, options)].join('')
+				];
+			};
+
+		case 'bracket':
+			return key => (result, value) => {
+				if (value === undefined || (options.skipNull && value === null)) {
+					return result;
+				}
+
+				if (value === null) {
+					return [...result, [encode(key, options), '[]'].join('')];
+				}
+
+				return [...result, [encode(key, options), '[]=', encode(value, options)].join('')];
+			};
+
+		case 'comma':
+			return key => (result, value) => {
+				if (value === null || value === undefined || value.length === 0) {
+					return result;
+				}
+
+				if (result.length === 0) {
+					return [[encode(key, options), '=', encode(value, options)].join('')];
+				}
+
+				return [[result, encode(value, options)].join(',')];
+			};
+
+		default:
+			return key => (result, value) => {
+				if (value === undefined || (options.skipNull && value === null)) {
+					return result;
+				}
+
+				if (value === null) {
+					return [...result, encode(key, options)];
+				}
+
+				return [...result, [encode(key, options), '=', encode(value, options)].join('')];
+			};
+	}
+}
+
+function parserForArrayFormat(options) {
+	let result;
+
+	switch (options.arrayFormat) {
+		case 'index':
+			return (key, value, accumulator) => {
+				result = /\[(\d*)\]$/.exec(key);
+
+				key = key.replace(/\[\d*\]$/, '');
+
+				if (!result) {
+					accumulator[key] = value;
+					return;
+				}
+
+				if (accumulator[key] === undefined) {
+					accumulator[key] = {};
+				}
+
+				accumulator[key][result[1]] = value;
+			};
+
+		case 'bracket':
+			return (key, value, accumulator) => {
+				result = /(\[\])$/.exec(key);
+				key = key.replace(/\[\]$/, '');
+
+				if (!result) {
+					accumulator[key] = value;
+					return;
+				}
+
+				if (accumulator[key] === undefined) {
+					accumulator[key] = [value];
+					return;
+				}
+
+				accumulator[key] = [].concat(accumulator[key], value);
+			};
+
+		case 'comma':
+			return (key, value, accumulator) => {
+				const isArray = typeof value === 'string' && value.split('').indexOf(',') > -1;
+				const newValue = isArray ? value.split(',') : value;
+				accumulator[key] = newValue;
+			};
+
+		default:
+			return (key, value, accumulator) => {
+				if (accumulator[key] === undefined) {
+					accumulator[key] = value;
+					return;
+				}
+
+				accumulator[key] = [].concat(accumulator[key], value);
+			};
+	}
+}
+
+function encode(value, options) {
+	if (options.encode) {
+		return options.strict ? strictUriEncode(value) : encodeURIComponent(value);
+	}
+
+	return value;
+}
+
+function decode(value, options) {
+	if (options.decode) {
+		return decodeComponent(value);
+	}
+
+	return value;
+}
+
+function keysSorter(input) {
+	if (Array.isArray(input)) {
+		return input.sort();
+	}
+
+	if (typeof input === 'object') {
+		return keysSorter(Object.keys(input))
+			.sort((a, b) => Number(a) - Number(b))
+			.map(key => input[key]);
+	}
+
+	return input;
+}
+
+function removeHash(input) {
+	const hashStart = input.indexOf('#');
+	if (hashStart !== -1) {
+		input = input.slice(0, hashStart);
+	}
+
+	return input;
+}
+
+function extract(input) {
+	input = removeHash(input);
+	const queryStart = input.indexOf('?');
+	if (queryStart === -1) {
+		return '';
+	}
+
+	return input.slice(queryStart + 1);
+}
+
+function parseValue(value, options) {
+	if (options.parseNumbers && !Number.isNaN(Number(value)) && (typeof value === 'string' && value.trim() !== '')) {
+		value = Number(value);
+	} else if (options.parseBooleans && value !== null && (value.toLowerCase() === 'true' || value.toLowerCase() === 'false')) {
+		value = value.toLowerCase() === 'true';
+	}
+
+	return value;
+}
+
+function parse(input, options) {
+	options = Object.assign({
+		decode: true,
+		sort: true,
+		arrayFormat: 'none',
+		parseNumbers: false,
+		parseBooleans: false
+	}, options);
+
+	const formatter = parserForArrayFormat(options);
+
+	// Create an object with no prototype
+	const ret = Object.create(null);
+
+	if (typeof input !== 'string') {
+		return ret;
+	}
+
+	input = input.trim().replace(/^[?#&]/, '');
+
+	if (!input) {
+		return ret;
+	}
+
+	for (const param of input.split('&')) {
+		let [key, value] = splitOnFirst(options.decode ? param.replace(/\+/g, ' ') : param, '=');
+
+		// Missing `=` should be `null`:
+		// http://w3.org/TR/2012/WD-url-20120524/#collect-url-parameters
+		value = value === undefined ? null : decode(value, options);
+		formatter(decode(key, options), value, ret);
+	}
+
+	for (const key of Object.keys(ret)) {
+		const value = ret[key];
+		if (typeof value === 'object' && value !== null) {
+			for (const k of Object.keys(value)) {
+				value[k] = parseValue(value[k], options);
+			}
+		} else {
+			ret[key] = parseValue(value, options);
+		}
+	}
+
+	if (options.sort === false) {
+		return ret;
+	}
+
+	return (options.sort === true ? Object.keys(ret).sort() : Object.keys(ret).sort(options.sort)).reduce((result, key) => {
+		const value = ret[key];
+		if (Boolean(value) && typeof value === 'object' && !Array.isArray(value)) {
+			// Sort object keys, not values
+			result[key] = keysSorter(value);
+		} else {
+			result[key] = value;
+		}
+
+		return result;
+	}, Object.create(null));
+}
+
+exports.extract = extract;
+exports.parse = parse;
+
+exports.stringify = (object, options) => {
+	if (!object) {
+		return '';
+	}
+
+	options = Object.assign({
+		encode: true,
+		strict: true,
+		arrayFormat: 'none'
+	}, options);
+
+	const formatter = encoderForArrayFormat(options);
+
+	const objectCopy = Object.assign({}, object);
+	if (options.skipNull) {
+		for (const key of Object.keys(objectCopy)) {
+			if (objectCopy[key] === undefined || objectCopy[key] === null) {
+				delete objectCopy[key];
+			}
+		}
+	}
+
+	const keys = Object.keys(objectCopy);
+
+	if (options.sort !== false) {
+		keys.sort(options.sort);
+	}
+
+	return keys.map(key => {
+		const value = object[key];
+
+		if (value === undefined) {
+			return '';
+		}
+
+		if (value === null) {
+			return encode(key, options);
+		}
+
+		if (Array.isArray(value)) {
+			return value
+				.reduce(formatter(key), [])
+				.join('&');
+		}
+
+		return encode(key, options) + '=' + encode(value, options);
+	}).filter(x => x.length > 0).join('&');
+};
+
+exports.parseUrl = (input, options) => {
+	return {
+		url: removeHash(input).split('?')[0] || '',
+		query: parse(extract(input), options)
+	};
+};
+
+
+/***/ }),
+
 /***/ "./node_modules/querystring-es3/decode.js":
 /*!************************************************!*\
   !*** ./node_modules/querystring-es3/decode.js ***!
@@ -12431,6 +13015,54 @@ try {
 
 /***/ }),
 
+/***/ "./node_modules/split-on-first/index.js":
+/*!**********************************************!*\
+  !*** ./node_modules/split-on-first/index.js ***!
+  \**********************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = (string, separator) => {
+	if (!(typeof string === 'string' && typeof separator === 'string')) {
+		throw new TypeError('Expected the arguments to be of type `string`');
+	}
+
+	if (separator === '') {
+		return [string];
+	}
+
+	const separatorIndex = string.indexOf(separator);
+
+	if (separatorIndex === -1) {
+		return [string];
+	}
+
+	return [
+		string.slice(0, separatorIndex),
+		string.slice(separatorIndex + separator.length)
+	];
+};
+
+
+/***/ }),
+
+/***/ "./node_modules/strict-uri-encode/index.js":
+/*!*************************************************!*\
+  !*** ./node_modules/strict-uri-encode/index.js ***!
+  \*************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+module.exports = str => encodeURIComponent(str).replace(/[!'()*]/g, x => `%${x.charCodeAt(0).toString(16).toUpperCase()}`);
+
+
+/***/ }),
+
 /***/ "./node_modules/unfetch/dist/unfetch.mjs":
 /*!***********************************************!*\
   !*** ./node_modules/unfetch/dist/unfetch.mjs ***!
@@ -13293,28 +13925,33 @@ module.exports = function(module) {
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @babel/runtime-corejs2/regenerator */ "./node_modules/@babel/runtime-corejs2/regenerator/index.js");
 /* harmony import */ var _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
-/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var components_CarpoLayout__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! components/CarpoLayout */ "./components/CarpoLayout.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next/link */ "./node_modules/next/link.js");
-/* harmony import */ var next_link__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_link__WEBPACK_IMPORTED_MODULE_4__);
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
-/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_5__);
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
-/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6__);
-/* harmony import */ var components_shop_Title__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! components/shop/Title */ "./components/shop/Title.js");
-/* harmony import */ var components_shop_Path__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! components/shop/Path */ "./components/shop/Path.js");
-/* harmony import */ var components_shop_Banner__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! components/shop/Banner */ "./components/shop/Banner.js");
-/* harmony import */ var components_shop_View__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! components/shop/View */ "./components/shop/View.js");
-/* harmony import */ var components_shop_Product__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! components/shop/Product */ "./components/shop/Product.js");
-/* harmony import */ var components_shop_Pagination__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! components/shop/Pagination */ "./components/shop/Pagination.js");
-/* harmony import */ var components_shop_Sort__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! components/shop/Sort */ "./components/shop/Sort.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/toConsumableArray */ "./node_modules/@babel/runtime-corejs2/helpers/esm/toConsumableArray.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/objectSpread */ "./node_modules/@babel/runtime-corejs2/helpers/esm/objectSpread.js");
+/* harmony import */ var _babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/asyncToGenerator */ "./node_modules/@babel/runtime-corejs2/helpers/esm/asyncToGenerator.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_4__);
+/* harmony import */ var components_CarpoLayout__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! components/CarpoLayout */ "./components/CarpoLayout.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! next/head */ "./node_modules/next/dist/next-server/lib/head.js");
+/* harmony import */ var next_head__WEBPACK_IMPORTED_MODULE_6___default = /*#__PURE__*/__webpack_require__.n(next_head__WEBPACK_IMPORTED_MODULE_6__);
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! isomorphic-unfetch */ "./node_modules/isomorphic-unfetch/browser.js");
+/* harmony import */ var isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7__);
+/* harmony import */ var components_shop_Title__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! components/shop/Title */ "./components/shop/Title.js");
+/* harmony import */ var components_shop_Path__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! components/shop/Path */ "./components/shop/Path.js");
+/* harmony import */ var components_shop_Banner__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! components/shop/Banner */ "./components/shop/Banner.js");
+/* harmony import */ var components_shop_View__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! components/shop/View */ "./components/shop/View.js");
+/* harmony import */ var components_shop_Product__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! components/shop/Product */ "./components/shop/Product.js");
+/* harmony import */ var components_shop_Pagination__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! components/shop/Pagination */ "./components/shop/Pagination.js");
+/* harmony import */ var components_shop_Sort__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! components/shop/Sort */ "./components/shop/Sort.js");
+/* harmony import */ var _url_config__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../url.config */ "./url.config.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! query-string */ "./node_modules/query-string/index.js");
+/* harmony import */ var query_string__WEBPACK_IMPORTED_MODULE_16___default = /*#__PURE__*/__webpack_require__.n(query_string__WEBPACK_IMPORTED_MODULE_16__);
+
+
 
 
 var _jsxFileName = "C:\\Users\\ADMIN\\Desktop\\Web-front end\\NextJS\\carponextjs\\pages\\shop\\index.js";
 
-var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
+var __jsx = react__WEBPACK_IMPORTED_MODULE_4___default.a.createElement;
 
 
 
@@ -13327,29 +13964,78 @@ var __jsx = react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement;
 
 
 
-var ShopList = function ShopList(_ref) {
-  var currentPage = _ref.currentPage,
-      products = _ref.products,
-      totalItems = _ref.totalItems,
-      limit = _ref.limit,
-      sort = _ref.sort,
-      order = _ref.order;
-  return __jsx(components_CarpoLayout__WEBPACK_IMPORTED_MODULE_3__["default"], {
+
+
+var ShopList = function ShopList(props) {
+  var products = props.products,
+      totalItems = props.totalItems,
+      query = props.query;
+  var _currentPage = query._currentPage,
+      _limit = query._limit,
+      _sort = query._sort,
+      _order = query._order;
+
+  var _useState = Object(react__WEBPACK_IMPORTED_MODULE_4__["useState"])([]),
+      shoppingCart = _useState[0],
+      setShoppingCart = _useState[1];
+
+  var onAddToCart =
+  /*#__PURE__*/
+  function () {
+    var _ref = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__["default"])(
+    /*#__PURE__*/
+    _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(id) {
+      var res, data, productSaveInCart;
+      return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              _context.next = 2;
+              return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7___default()("https://carpo.herokuapp.com/products/".concat(id));
+
+            case 2:
+              res = _context.sent;
+              _context.next = 5;
+              return res.json();
+
+            case 5:
+              data = _context.sent;
+              productSaveInCart = Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_2__["default"])({}, data, {
+                quantity: 1
+              });
+              setShoppingCart(function (shoppingCart) {
+                return [].concat(Object(_babel_runtime_corejs2_helpers_esm_toConsumableArray__WEBPACK_IMPORTED_MODULE_1__["default"])(shoppingCart), [productSaveInCart]);
+              });
+
+            case 8:
+            case "end":
+              return _context.stop();
+          }
+        }
+      }, _callee);
+    }));
+
+    return function onAddToCart(_x) {
+      return _ref.apply(this, arguments);
+    };
+  }();
+
+  return __jsx(components_CarpoLayout__WEBPACK_IMPORTED_MODULE_5__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 18
+      lineNumber: 33
     },
     __self: this
-  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_5___default.a, {
+  }, __jsx(next_head__WEBPACK_IMPORTED_MODULE_6___default.a, {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 19
+      lineNumber: 34
     },
     __self: this
   }, __jsx("title", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 35
     },
     __self: this
   }, "Shop Page"), __jsx("link", {
@@ -13357,112 +14043,112 @@ var ShopList = function ShopList(_ref) {
     href: "css/shop-list.css",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 21
+      lineNumber: 36
     },
     __self: this
   })), __jsx("div", {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 23
+      lineNumber: 38
     },
     __self: this
-  }, __jsx(components_shop_Path__WEBPACK_IMPORTED_MODULE_8__["default"], {
+  }, __jsx(components_shop_Path__WEBPACK_IMPORTED_MODULE_9__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 24
+      lineNumber: 39
     },
     __self: this
   }), __jsx("div", {
     className: "main-container col2-left-layout",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 25
+      lineNumber: 40
     },
     __self: this
   }, __jsx("div", {
     className: "container",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 26
+      lineNumber: 41
     },
     __self: this
   }, __jsx("div", {
     className: "row",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 27
+      lineNumber: 42
     },
     __self: this
   }, __jsx("div", {
     className: "col-sm-9 col-sm-push-3 main-inner",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 28
+      lineNumber: 43
     },
     __self: this
-  }, __jsx(components_shop_Banner__WEBPACK_IMPORTED_MODULE_9__["default"], {
+  }, __jsx(components_shop_Banner__WEBPACK_IMPORTED_MODULE_10__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 29
+      lineNumber: 44
     },
     __self: this
   }), __jsx("article", {
     className: "col-main",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 30
+      lineNumber: 45
     },
     __self: this
-  }, __jsx(components_shop_Title__WEBPACK_IMPORTED_MODULE_7__["default"], {
+  }, __jsx(components_shop_Title__WEBPACK_IMPORTED_MODULE_8__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 31
+      lineNumber: 46
     },
     __self: this
-  }), __jsx(components_shop_View__WEBPACK_IMPORTED_MODULE_10__["default"], {
+  }), __jsx(components_shop_View__WEBPACK_IMPORTED_MODULE_11__["default"], {
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 32
+      lineNumber: 47
     },
     __self: this
-  }), __jsx(components_shop_Product__WEBPACK_IMPORTED_MODULE_11__["default"], {
+  }), __jsx(components_shop_Product__WEBPACK_IMPORTED_MODULE_12__["default"], {
     products: products,
+    onAddToCart: onAddToCart,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 33
+      lineNumber: 48
     },
     __self: this
   }), __jsx("div", {
     className: "toolbar bottom",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 34
+      lineNumber: 49
     },
     __self: this
-  }, __jsx(components_shop_Pagination__WEBPACK_IMPORTED_MODULE_12__["default"], {
-    currentPage: currentPage,
+  }, __jsx(components_shop_Pagination__WEBPACK_IMPORTED_MODULE_13__["default"], {
+    currentPage: _currentPage,
     totalItems: totalItems,
-    limit: limit,
-    sort: sort,
-    order: order,
+    limit: _limit,
+    sort: _sort,
+    order: _order,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 35
+      lineNumber: 50
     },
     __self: this
   })))), __jsx("div", {
     className: "sidebar col-sm-3 col-xs-12 col-sm-pull-9",
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 45
+      lineNumber: 60
     },
     __self: this
-  }, __jsx(components_shop_Sort__WEBPACK_IMPORTED_MODULE_13__["default"], {
-    sort: sort,
-    order: order,
+  }, __jsx(components_shop_Sort__WEBPACK_IMPORTED_MODULE_14__["default"], {
+    query: query,
     __source: {
       fileName: _jsxFileName,
-      lineNumber: 46
+      lineNumber: 61
     },
     __self: this
   })))))));
@@ -13471,48 +14157,52 @@ var ShopList = function ShopList(_ref) {
 ShopList.getInitialProps =
 /*#__PURE__*/
 function () {
-  var _ref3 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_1__["default"])(
+  var _ref2 = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_3__["default"])(
   /*#__PURE__*/
-  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(_ref2) {
-    var query, page, limit, sort, order, res, data;
-    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
+  _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee2(context) {
+    var query, transformedQuery, res, data;
+    return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee2$(_context2) {
       while (1) {
-        switch (_context.prev = _context.next) {
+        switch (_context2.prev = _context2.next) {
           case 0:
-            query = _ref2.query;
-            page = query.page || 1;
-            limit = 12;
-            sort = query.sort || 'id';
-            order = query.order || 'desc';
-            _context.next = 7;
-            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_6___default()("https://carpo.herokuapp.com/products?_sort=".concat(sort, "&_order=").concat(order, "&_page=").concat(page, "&_limit=").concat(limit));
+            console.log(context);
+            query = context.query;
+            transformedQuery = {
+              _query: query.query || "",
+              _page: query.page || 1,
+              _limit: query.limit || 12,
+              _sort: query.sort || 'id',
+              _order: query.order || 'desc'
+            }; // transformedQuery = queryString.stringify(transformedQuery)
+            // console.log(transformedQuery)
+            // console.log(`${url}?${transformedQuery}`)
 
-          case 7:
-            res = _context.sent;
-            _context.next = 10;
+            _context2.next = 5;
+            return isomorphic_unfetch__WEBPACK_IMPORTED_MODULE_7___default()("".concat(_url_config__WEBPACK_IMPORTED_MODULE_15__["url"], "?").concat(query_string__WEBPACK_IMPORTED_MODULE_16___default.a.stringify(transformedQuery)));
+
+          case 5:
+            res = _context2.sent;
+            _context2.next = 8;
             return res.json();
 
-          case 10:
-            data = _context.sent;
-            return _context.abrupt("return", {
+          case 8:
+            data = _context2.sent;
+            return _context2.abrupt("return", {
               products: data,
               totalItems: res.headers.get('X-Total-Count'),
-              currentPage: page,
-              limit: limit,
-              sort: sort,
-              order: order
+              query: transformedQuery
             });
 
-          case 12:
+          case 10:
           case "end":
-            return _context.stop();
+            return _context2.stop();
         }
       }
-    }, _callee);
+    }, _callee2);
   }));
 
-  return function (_x) {
-    return _ref3.apply(this, arguments);
+  return function (_x2) {
+    return _ref2.apply(this, arguments);
   };
 }();
 
@@ -13520,7 +14210,21 @@ function () {
 
 /***/ }),
 
-/***/ 1:
+/***/ "./url.config.js":
+/*!***********************!*\
+  !*** ./url.config.js ***!
+  \***********************/
+/*! exports provided: url */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "url", function() { return url; });
+var url = 'https://carpo.herokuapp.com/products';
+
+/***/ }),
+
+/***/ 3:
 /*!**********************************************************************************************************************************************************************!*\
   !*** multi next-client-pages-loader?page=%2Fshop&absolutePagePath=C%3A%5CUsers%5CADMIN%5CDesktop%5CWeb-front%20end%5CNextJS%5Ccarponextjs%5Cpages%5Cshop%5Cindex.js ***!
   \**********************************************************************************************************************************************************************/
@@ -13543,5 +14247,5 @@ module.exports = dll_ea92a4d9664833a26066;
 
 /***/ })
 
-},[[1,"static/runtime/webpack.js"]]]);
+},[[3,"static/runtime/webpack.js"]]]);
 //# sourceMappingURL=shop.js.map
