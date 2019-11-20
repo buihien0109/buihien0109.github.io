@@ -42,21 +42,9 @@ class CreatProduct extends React.Component {
 
   onSubmitFormCreateProduct = async (e) => {
     e.preventDefault()
-    const { name, thumbnail, price, quantity, brand, material, size, color, instock, description } = this.state
     fetch('https://carpo.herokuapp.com/products', {
       method: 'POST',
-      body: JSON.stringify({
-        name: name,
-        thumbnail: thumbnail,
-        price: price,
-        quantity: quantity,
-        brand: brand,
-        material: material,
-        size: size,
-        color: color,
-        instock: instock,
-        description: description
-      }),
+      body: JSON.stringify(this.state),
       headers: {
         "Content-Type": "application/json"
       }

@@ -11,14 +11,13 @@ const Sidebar = props => {
   };
   return (
     <div>
-      <a
+      <button
         id="show-sidebar"
         className="btn btn-sm btn-dark"
-        href="ares"
         onClick={onShowSidebar}
       >
         <i className="fas fa-bars" />
-      </a>
+      </button>
       <nav id="sidebar" className="sidebar-wrapper">
         <div className="sidebar-content">
           <div className="sidebar-brand">
@@ -83,47 +82,50 @@ const Sidebar = props => {
                   </ul>
                 </div>
               </li>
-              <li className="sidebar-dropdown">
+              <li className="sidebar-dropdown active">
                 <a href="ares">
                   <i className="fa fa-shopping-cart" />
-                  <span>E-commerce</span>
-                  <span className="badge badge-pill badge-danger">3</span>
+                  <span>Bài viết</span>
                 </a>
                 <div className="sidebar-submenu">
                   <ul>
                     <li>
-                      <a href="ares">Products</a>
+                      <a href="ares">Danh sách bài viêt</a>
                     </li>
                     <li>
-                      <a href="ares">Orders</a>
-                    </li>
-                    <li>
-                      <a href="ares">Credit cart</a>
+                      <a href="ares">Tạo bài viết</a>
                     </li>
                   </ul>
                 </div>
               </li>
-              <li className="sidebar-dropdown">
+              <li className="sidebar-dropdown active">
                 <a href="ares">
-                  <i className="far fa-gem" />
-                  <span>Components</span>
+                  <i className="fab fa-bandcamp"></i>
+                  <span>Thương hiệu</span>
                 </a>
                 <div className="sidebar-submenu">
                   <ul>
                     <li>
-                      <a href="ares">General</a>
+                      <a href="ares">Danh sách thương hiệu</a>
                     </li>
                     <li>
-                      <a href="ares">Panels</a>
+                      <a href="ares">Tạo thương hiệu</a>
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li className="sidebar-dropdown active">
+                <a href="ares">
+                  <i className="fas fa-user"></i>
+                  <span>Người dùng</span>
+                </a>
+                <div className="sidebar-submenu">
+                  <ul>
+                    <li>
+                      <a href="ares">Danh sách người dùng</a>
                     </li>
                     <li>
-                      <a href="ares">Tables</a>
-                    </li>
-                    <li>
-                      <a href="ares">Icons</a>
-                    </li>
-                    <li>
-                      <a href="ares">Forms</a>
+                      <a href="ares">Thêm người dùng</a>
                     </li>
                   </ul>
                 </div>
