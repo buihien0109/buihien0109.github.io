@@ -15,8 +15,8 @@ const Search = props => {
           onChange={onHandleChangeSearch}
         />
         <span className="input-group-btn">
-          <button className="btn btn-primary" type="button" onClick={props.onSearch}>
-            <span className="fa fa-search"></span>Tìm
+          <button className="btn-search" type="button" onClick={props.onSearch}>
+            <span className="fa fa-search"></span> Search
           </button>
         </span>
       </div>

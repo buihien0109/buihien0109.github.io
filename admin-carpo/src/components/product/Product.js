@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from "react";
 import MainLayout from "../layout/MainLayout";
 import axios from "axios";
-import Products from './component-product/Products'
-import Search from './component-product/Search'
-import View from './component-product/View'
-import Pagination from './component-product/Pagination'
+import Products from "./component-product/Products";
+import Search from "./component-product/Search";
+import View from "./component-product/View";
+import Pagination from "./component-product/Pagination";
 
 const Product = props => {
   //Khai bao state
@@ -15,23 +15,36 @@ const Product = props => {
   const indexOfLastNews = currentPage * productPerPage; //Chỉ số của sản phẩm cuối cùng mỗi page
   const indexOfFirstNews = indexOfLastNews - productPerPage; //Chỉ số của sản phẩm đầu tiên mỗi page
   const currentTodos = product.slice(indexOfFirstNews, indexOfLastNews); //Danh sách sản phẩm mỗi page tương ứng với số sản phẩm mỗi page
-  
+
   const onSelect = data => {
-    setProductPerPage(data);
+    setProductPerPage(Number(data));
   };
 
-  const onChosePage = (event) => {
-      setCurrentPage(Number(event.target.id))
-  }
+  const onChosePage = data => {
+    setCurrentPage(Number(data));
+  };
 
-  const onHandleChangeSearch = data => { //Từ khóa tìm kiếm và lưu vào state
+  const onPrevPage = data => {
+    currentPage > 1
+      ? setCurrentPage(currentPage + data)
+      : setCurrentPage(currentPage);
+  };
+
+  const onNextPage = data => {
+    currentPage < Math.ceil(product.length / productPerPage)
+      ? setCurrentPage(currentPage + data)
+      : setCurrentPage(currentPage);
+  };
+
+  const onHandleChangeSearch = data => {
+    //Từ khóa tìm kiếm và lưu vào state
     setKeyword(data);
   };
-  
+
   //Get data product và lưu vào state
   useEffect(() => {
     axios
-      .get("https://carpo.herokuapp.com/products")
+      .get("https://carpo.herokuapp.com/products?_sort=id&_order=desc")
       .then(res => {
         setProducts(res.data);
       })
@@ -52,8 +65,7 @@ const Product = props => {
       });
   };
 
-  
-
+  //Search tu khoa
   const onSearch = () => {
     if (keyword && keyword.length > 0) {
       axios
@@ -67,7 +79,6 @@ const Product = props => {
           alert(err.message);
         });
     } else {
-      alert("Vui long nhap tu khoa");
       axios
         .get("https://carpo.herokuapp.com/products")
         .then(res => {
@@ -79,29 +90,34 @@ const Product = props => {
     }
   };
 
-
-  
-
   return (
     <MainLayout>
       <div className="container" style={{ marginTop: 10 }}>
-        <h1>Danh sách sản phẩm</h1>
-        <Search 
-          onHandleChangeSearch={onHandleChangeSearch} 
-          onSearch={onSearch}
-        />
-        <View 
-          onSelect={onSelect}
-        />
-        <Products 
-          product={product}
-          onDeleteProduct={onDeleteProduct}
-        />
-        <Pagination 
+        <h1 className="table-title text-center">Danh sách sản phẩm</h1>
+        <div className="row search-bar">
+          <View onSelect={onSelect} />
+          <Search
+            onHandleChangeSearch={onHandleChangeSearch}
+            onSearch={onSearch}
+          />
+        </div>
+
+        <Products
           product={product}
           currentPage={currentPage}
           productPerPage={productPerPage}
+          currentTodos={currentTodos}
+          onDeleteProduct={onDeleteProduct}
+        />
+        <Pagination
+          product={product}
+          currentPage={currentPage}
+          productPerPage={productPerPage}
+          indexOfFirstNews={indexOfFirstNews}
+          indexOfLastNews={indexOfLastNews}
           onChosePage={onChosePage}
+          onPrevPage={onPrevPage}
+          onNextPage={onNextPage}
         />
       </div>
     </MainLayout>

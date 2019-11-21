@@ -1,38 +1,39 @@
-import React from 'react'
-import ProductItem from './ProductItem'
+import React from "react";
+import ProductItem from "./ProductItem";
 
 const Product = props => {
-    const {product} = props
-    const productItem = product.map((p,i) => {
-        return <ProductItem
-            key={p.id}
-            productItem={p}
-            stt={i}
-            onDeleteProduct={props.onDeleteProduct}
-        />
-    })
-
+  const { product, currentPage, productPerPage, currentTodos } = props;
+  const index = currentPage * productPerPage - productPerPage;
+  const productItem = currentTodos.map((p, i) => {
     return (
-        <table
-          id="example"
-          className="table table-striped table-bordered"
-          style={{ width: "100%" }}
-        >
-          <thead>
-            <tr>
-              <th>STT</th>
-              <th>Tên sản phẩm</th>
-              <th>Giá</th>
-              <th>Thương hiệu</th>
-              <th>Chất liệu</th>
-              <th>Size</th>
-              <th>Màu sắc</th>
-              <th></th>
-              <th></th>
-            </tr>
-          </thead>
-          <tbody>{productItem}</tbody>
-        </table>
-    )
-}
-export default Product
+      <ProductItem
+        key={p.id}
+        productItem={p}
+        stt={index + i + 1}
+        onDeleteProduct={props.onDeleteProduct}
+      />
+    );
+  });
+
+  return (
+    <div>
+      <table className="table-fill">
+        <thead>
+          <tr>
+            <th className="text-center">STT</th>
+            <th className="text-center">Tên sản phẩm</th>
+            <th className="text-center">Giá</th>
+            <th className="text-center">Thương hiệu</th>
+            <th className="text-center">Chất liệu</th>
+            <th className="text-center">Size</th>
+            <th className="text-center">Màu sắc</th>
+            <th className="text-center"></th>
+            <th className="text-center"></th>
+          </tr>
+        </thead>
+        <tbody className="table-hover">{productItem}</tbody>
+      </table>
+    </div>
+  );
+};
+export default Product;
