@@ -68,7 +68,7 @@ const Sidebar = props => {
               </li>
               <li className="sidebar-dropdown active">
                 <a href="ares">
-                  <i className="fa fa-tachometer-alt" />
+                  <i className="fas fa-list-alt"></i>
                   <span>Sản phẩm</span>
                 </a>
                 <div className="sidebar-submenu">
@@ -78,54 +78,6 @@ const Sidebar = props => {
                     </li>
                     <li>
                       <Link to="/create-product">Tạo sản phẩm</Link>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="sidebar-dropdown active">
-                <a href="ares">
-                  <i className="fa fa-shopping-cart" />
-                  <span>Bài viết</span>
-                </a>
-                <div className="sidebar-submenu">
-                  <ul>
-                    <li>
-                      <a href="ares">Danh sách bài viêt</a>
-                    </li>
-                    <li>
-                      <a href="ares">Tạo bài viết</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="sidebar-dropdown active">
-                <a href="ares">
-                  <i className="fab fa-bandcamp"></i>
-                  <span>Thương hiệu</span>
-                </a>
-                <div className="sidebar-submenu">
-                  <ul>
-                    <li>
-                      <a href="ares">Danh sách thương hiệu</a>
-                    </li>
-                    <li>
-                      <a href="ares">Tạo thương hiệu</a>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-              <li className="sidebar-dropdown active">
-                <a href="ares">
-                  <i className="fas fa-user"></i>
-                  <span>Người dùng</span>
-                </a>
-                <div className="sidebar-submenu">
-                  <ul>
-                    <li>
-                      <a href="ares">Danh sách người dùng</a>
-                    </li>
-                    <li>
-                      <a href="ares">Thêm người dùng</a>
                     </li>
                   </ul>
                 </div>

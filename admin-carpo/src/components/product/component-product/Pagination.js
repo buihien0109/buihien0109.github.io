@@ -2,24 +2,21 @@ import React from "react";
 
 const Pagination = props => {
   const { product, currentPage, productPerPage, indexOfFirstNews, indexOfLastNews, onChosePage } = props;
-  const pageNumbers = []; //Tính số lượng page
-  const countPage = Math.ceil(product.length / productPerPage)
+  const pageNumbers = []; 
+  const countPage = Math.ceil(product.length / productPerPage) //Tính số lượng page
   for (let i = 1; i <= countPage; i++) {
     pageNumbers.push(i);
   }
+  //Click khi chon page
+  const handleChosePage = number => onChosePage(number);
 
-  const handleChosePage = number => {
-    onChosePage(number);
-  };
+  //Trở về trang trước
+  const onPrevPage = number => props.onPrevPage(number);
 
-  const onPrevPage = number => {
-    props.onPrevPage(number);
-  };
+  //Đi đến trang sau
+  const onNextPage = number => props.onNextPage(number);
 
-  const onNextPage = number => {
-    props.onNextPage(number);
-  };
-
+  //Reder số trang hiển thị
   const renderPage = pageNumbers.map(number => {
     if (currentPage === number) {
       return (
@@ -29,24 +26,25 @@ const Pagination = props => {
       );
     } else {
       return (
-        <li key={number} id={number} onClick={() => handleChosePage(number)}>
-          <button>{number}</button>
+        <li key={number} id={number}>
+          <button onClick={() => handleChosePage(number)}>{number}</button>
         </li>
       );
     }
   });
+  
   return (
     <div className="container-pagination">
     <ul className="pagination">
-      <li onClick={() => onPrevPage(-1)}>
-        <button>
-          <i className="fas fa-angle-double-left"></i>
+      <li>
+        <button onClick={() => onPrevPage(-1)} disabled={currentPage === 1 ? true : false}>
+          <i className="fas fa-chevron-left"></i>
         </button>
       </li>
       {renderPage}
-      <li onClick={() => onNextPage(1)}>
-        <button>
-          <i className="fas fa-angle-double-right"></i>
+      <li>
+        <button onClick={() => onNextPage(1)} disabled={currentPage === countPage ? true : false}>
+          <i className="fas fa-chevron-right"></i>
         </button>
       </li>
     </ul>

@@ -1,13 +1,26 @@
 import React, { useState, useEffect } from "react";
 import MainLayout from "../layout/MainLayout";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 import axios from "axios";
+import ImageUpload from "./component-product/upload/ImageUpload";
+import { Editor } from "@tinymce/tinymce-react";
+import "./CreateProduct.css";
 
 const UpdateProduct = () => {
   const { id } = useParams();
   const [error, setError] = useState("");
   const [product, setProduct] = useState({});
+  const [description, setDescription] = useState('')
+
   console.log(error);
+
+  const handleEditorChange = (content, editor) => {
+    setDescription(content)
+  }
+
+  const handleUploadImage = (url) => {
+    setProduct({...product, thumbnail : url})
+  }
 
   //Lay du lieu de hien thi ra update
   useEffect(() => {
@@ -19,7 +32,7 @@ const UpdateProduct = () => {
       .catch(err => {
         setError(err.message);
       });
-  },[id]);
+  }, [id]);
 
   //Lay du lieu cac truong
   const onChangeFormCreateProduct = e => {
@@ -28,18 +41,6 @@ const UpdateProduct = () => {
     let value = target.value;
     let updateProduct = { ...product, [name]: value };
     setProduct(updateProduct);
-  };
-
-  //Upload anh
-  const onChangeImage = e => {
-    e.preventDefault();
-    let reader = new FileReader();
-    let file = e.target.files[0];
-    let url = `/images/${file.name}`;
-    reader.onloadend = () => {
-      setProduct({ ...product, thumbnail: url });
-    };
-    reader.readAsDataURL(file);
   };
 
   //Gui du lieu len API
@@ -60,194 +61,200 @@ const UpdateProduct = () => {
       }
     );
   };
-  
+
   return (
     <MainLayout>
-      <div className="panel panel-default">
-        <div className="panel-heading">
-          <h3 className="panel-title">Cập nhật sản phẩm</h3>
+      <div className="container pl-0 mb-4">
+        <h3 className="panel-title table-title text-left text-uppercase">
+          Tạo sản phẩm
+        </h3>
+
+        <div className="group-btn">
+          <Link to="/product">
+            <button className="btn-goback">
+              <i className="fas fa-chevron-left"></i> Quay lại
+            </button>
+          </Link>
+          <button
+            type="submit"
+            className="btn-addnew"
+            onClick={onSubmitFormCreateProduct}
+          >
+            <i className="fas fa-plus"></i> Cập nhật sản phẩm
+          </button>
         </div>
+      </div>
+
+      <div className="panel panel-default container mr-auto ml-auto style-panel">
+        <div className="panel-heading"></div>
         <div className="panel-body">
           <form
             className="form-horizontal"
-            onSubmit={onSubmitFormCreateProduct}
+            // onSubmit={onSubmitFormCreateProduct}
           >
-            <div className="form-group">
-              <label htmlFor="name" className="col-sm-3 control-label">
-                Tên sản phẩm
-              </label>
-              <div className="col-sm-9">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  id="name"
-                  defaultValue={product.name}
-                  onChange={onChangeFormCreateProduct}
-                />
+            <div className="row">
+              <div className="col-md-9">
+                <div className="form-group">
+                  <label
+                    htmlFor="name"
+                    className="control-label required-lable"
+                  >
+                    Tên sản phẩm
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="name"
+                    id="name"
+                    defaultValue={product.name}
+                    onChange={onChangeFormCreateProduct}
+                  />
+                </div>
+                <div className="form-group">
+                  <label
+                    htmlFor="name"
+                    className="control-label required-lable"
+                  >
+                    Mô tả sản phẩm
+                  </label>
+                  <Editor
+                    value={product.description}
+                    onEditorChange={handleEditorChange}
+                    plugins="lists link image paste help wordcount"
+                  />
+                </div>
+                <div className="form-group">
+                  <ImageUpload handleUploadImage={handleUploadImage} image={product.thumbnail}/>
+                </div>
               </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="name" className="col-sm-3 control-label">
-                Giá
-              </label>
-              <div className="col-sm-9">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="price"
-                  id="name"
-                  defaultValue={product.price}
-                  onChange={onChangeFormCreateProduct}
-                />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="about" className="col-sm-3 control-label">
-                Mô tả ngắn
-              </label>
-              <div className="col-sm-9">
-                <textarea
-                  className="form-control"
-                  name="description"
-                  defaultValue={product.description}
-                  onChange={onChangeFormCreateProduct}
-                />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="qty" className="col-sm-3 control-label">
-                Số lượng
-              </label>
-              <div className="col-sm-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  name="quantity"
-                  id="qty"
-                  defaultValue={product.quantity}
-                  onChange={onChangeFormCreateProduct}
-                />
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="tech" className="col-sm-3 control-label">
-                Kích thước
-              </label>
-              <div className="col-sm-3">
-                <select
-                  className="form-control"
-                  name="size"
-                  value={product.size}
-                  onChange={onChangeFormCreateProduct}
-                >
-                  <option>--Chọn size--</option>
-                  <option value="S">S</option>
-                  <option value="M">M</option>
-                  <option value="L">L</option>
-                  <option value="XL">XL</option>
-                  <option value="XXL">XXL</option>
-                </select>
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="tech" className="col-sm-3 control-label">
-                Màu sắc
-              </label>
-              <div className="col-sm-3">
-                <select
-                  className="form-control"
-                  name="color"
-                  value={product.color}
-                  onChange={onChangeFormCreateProduct}
-                >
-                  <option>--Chọn color--</option>
-                  <option value="Trắng">Trắng</option>
-                  <option value="Đen">Đen</option>
-                  <option value="Xanh">Xanh</option>
-                  <option value="Đỏ">Đỏ</option>
-                  <option value="Xám đen">Xám đen</option>
-                </select>
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="tech" className="col-sm-3 control-label">
-                Thương hiệu
-              </label>
-              <div className="col-sm-3">
-                <select
-                  className="form-control"
-                  name="brand"
-                  value={product.brand}
-                  onChange={onChangeFormCreateProduct}
-                >
-                  <option>--Chọn Thương Hiệu--</option>
-                  <option value="Chanel">Chanel</option>
-                  <option value="Prada">Prada</option>
-                  <option value="Dior">Dior</option>
-                  <option value="Louis Vuitton">Louis Vuitton</option>
-                  <option value="Hermes">Hermes</option>
-                </select>
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="tech" className="col-sm-3 control-label">
-                Chất liệu
-              </label>
-              <div className="col-sm-3">
-                <select
-                  className="form-control"
-                  name="material"
-                  value={product.material}
-                  onChange={onChangeFormCreateProduct}
-                >
-                  <option>--Chọn chất liệu--</option>
-                  <option value="cotton">Cotton</option>
-                  <option value="nỉ">Nỉ</option>
-                  <option value="kaki">Kaki</option>
-                </select>
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="tech" className="col-sm-3 control-label">
-                Trạng thái sản phẩm
-              </label>
-              <div className="col-sm-3">
-                <select
-                  className="form-control"
-                  name="instock"
-                  value={product.instock}
-                  onChange={onChangeFormCreateProduct}
-                >
-                  <option>--Trạng thái--</option>
-                  <option value={true}>Còn hàng</option>
-                  <option value={false}>Hết hàng</option>
-                </select>
-              </div>
-            </div>
-            <div className="form-group">
-              <label htmlFor="name" className="col-sm-3 control-label">
-                Ảnh sản phẩm
-              </label>
-              <div className="col-sm-3">
-                <label className="control-label small" htmlFor="file_img">
-                  (jpg/png):
-                </label>
-                <br />
-                <input type="file" name="thumbnail" onChange={onChangeImage} />
-              </div>
-            </div>
-
-            <hr />
-            <div className="form-group">
-              <div className="col-sm-offset-3 col-sm-9">
-                <button
-                  type="submit"
-                  className="btn btn-success"
-                  onClick={onSubmitFormCreateProduct}
-                >
-                  Cập nhật sản phẩm
-                </button>
+              <div className="col-md-3">
+                <div className="form-group">
+                  <label
+                    htmlFor="name"
+                    className="control-label required-lable"
+                  >
+                    Giá
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="price"
+                    id="name"
+                    defaultValue={product.price}
+                    onChange={onChangeFormCreateProduct}
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="qty" className="control-label required-lable">
+                    Số lượng
+                  </label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    name="quantity"
+                    id="qty"
+                    defaultValue={product.quantity}
+                    onChange={onChangeFormCreateProduct}
+                  />
+                </div>
+                <div className="form-group">
+                  <label
+                    htmlFor="tech"
+                    className="control-label required-lable"
+                  >
+                    Kích thước
+                  </label>
+                  <select
+                    className="form-control"
+                    name="size"
+                    value={product.size}
+                    onChange={onChangeFormCreateProduct}
+                  >
+                    <option></option>
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                    <option value="XL">XL</option>
+                    <option value="XXL">XXL</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label
+                    htmlFor="tech"
+                    className="control-label required-lable"
+                  >
+                    Màu sắc
+                  </label>
+                  <select
+                    className="form-control"
+                    name="color"
+                    value={product.color}
+                    onChange={onChangeFormCreateProduct}
+                  >
+                    <option></option>
+                    <option value="Trắng">Trắng</option>
+                    <option value="Đen">Đen</option>
+                    <option value="Xanh">Xanh</option>
+                    <option value="Đỏ">Đỏ</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label
+                    htmlFor="tech"
+                    className="control-label required-lable"
+                  >
+                    Thương hiệu
+                  </label>
+                  <select
+                    className="form-control"
+                    name="brand"
+                    value={product.brand}
+                    onChange={onChangeFormCreateProduct}
+                  >
+                    <option></option>
+                    <option value="Chanel">Chanel</option>
+                    <option value="Prada">Prada</option>
+                    <option value="Dior">Dior</option>
+                    <option value="Louis Vuitton">Louis Vuitton</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label
+                    htmlFor="tech"
+                    className="control-label required-lable"
+                  >
+                    Chất liệu
+                  </label>
+                  <select
+                    className="form-control"
+                    name="material"
+                    value={product.material}
+                    onChange={onChangeFormCreateProduct}
+                  >
+                    <option></option>
+                    <option value="cotton">Cotton</option>
+                    <option value="nỉ">Nỉ</option>
+                    <option value="kaki">Kaki</option>
+                  </select>
+                </div>
+                <div className="form-group">
+                  <label
+                    htmlFor="tech"
+                    className="control-label required-lable"
+                  >
+                    Trạng thái sản phẩm
+                  </label>
+                  <select
+                    className="form-control"
+                    name="instock"
+                    value={product.instock}
+                    onChange={onChangeFormCreateProduct}
+                  >
+                    <option></option>
+                    <option value={true}>Còn hàng</option>
+                    <option value={false}>Hết hàng</option>
+                  </select>
+                </div>
               </div>
             </div>
           </form>

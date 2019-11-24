@@ -1,9 +1,7 @@
 import React from "react";
 
 const Search = props => {
-  const onHandleChangeSearch = e => {
-    props.onHandleChangeSearch(e.target.value);
-  };
+  const onHandleChangeSearch = e => props.onHandleChangeSearch(e.target.value);
   return (
     <div className="col-xs-6 col-sm-6 col-md-6 col-lg-6">
       <div className="input-group">
@@ -11,7 +9,7 @@ const Search = props => {
           name="keyword"
           type="text"
           className="form-control"
-          placeholder="Search item by name..."
+          placeholder="Enter keywords ..."
           onChange={onHandleChangeSearch}
         />
         <span className="input-group-btn">
