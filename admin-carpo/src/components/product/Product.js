@@ -5,8 +5,9 @@ import Products from "./component-product/Products";
 import Search from "./component-product/Search";
 import View from "./component-product/View";
 import Pagination from "./component-product/Pagination";
-import queryString from "query-string";
+// import queryString from "query-string";
 import { Link } from "react-router-dom";
+import Swal from 'sweetalert2'
 
 const Product = props => {
   //Khai bao state
@@ -36,31 +37,61 @@ const Product = props => {
   const onHandleChangeSearch = data => setKeyword(data);
 
   //Get data product và lưu vào state
-  useEffect(() => {
+  const getProductFromAPI = () => {
     axios
-      .get("https://carpo.herokuapp.com/products?_sort=id&_order=desc")
-      .then(res => {
-        console.log(res);
-        console.log(queryString.parseUrl(res.config.url));
-        setProducts(res.data);
-      })
-      .catch(err => {
-        alert(err.message);
-      });
+    .get("https://carpo.herokuapp.com/products?_sort=id&_order=desc")
+    .then(res => {
+      // console.log(res);
+      // console.log(queryString.parseUrl(res.config.url));
+      setProducts(res.data);
+    })
+    .catch(err => {
+      alert(err.message);
+    });
+  }
+  useEffect(() => {
+    getProductFromAPI()
   }, []);
 
   //Delete product
-  const onDeleteProduct = id => {
+  const onDeleteProductAPI = id => {
     axios
       .delete(`https://carpo.herokuapp.com/products/${id}`)
       .then(res => {
-        alert("Xóa thành công");
+        Swal.fire({
+          position: 'top-center',
+          icon: 'success',
+          title: 'Xóa sản phẩm thành công',
+          showConfirmButton: false,
+          timer: 2000
+        })
+        getProductFromAPI()
       })
       .catch(err => {
-        alert(err.message);
+        Swal.fire({
+          position: 'top-center',
+          icon: 'error',
+          title: 'Xóa sản phẩm thất bại',
+          showConfirmButton: false,
+          timer: 2000
+        })
       });
   };
 
+  const onDeleteProduct = (id) => {
+    Swal.fire({
+      title: 'Bạn có muốn xóa không?',
+      icon: 'warning',
+      showCancelButton: true,
+      confirmButtonColor: '#3085d6',
+      cancelButtonColor: '#d33',
+      confirmButtonText: 'Xóa'
+    }).then((result) => {
+      if (result.value) {
+        onDeleteProductAPI(id)
+      }
+    })
+  }
   //Search tu khoa
   const onSearch = () => {
     if (keyword && keyword.length > 0) {

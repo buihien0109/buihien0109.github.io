@@ -11,7 +11,10 @@ const ProductItem = props => {
     <tr>
       <td className="text-left">{stt}</td>
       <td className="text-left">{productItem.name}</td>
-      <td className="text-left">{productItem.price}đ</td>
+      <td className="text-left">
+        <img src={productItem.thumbnail || "https://via.placeholder.com/100x70"} alt={productItem.thumbnail} width={100} height={70}/>  
+      </td>
+      <td className="text-left">{numberWithCommas(productItem.price)}đ</td>
       <td className="text-left">{productItem.brand}</td>
       <td className="text-left">{productItem.material}</td>
       <td className="text-left">{productItem.size}</td>

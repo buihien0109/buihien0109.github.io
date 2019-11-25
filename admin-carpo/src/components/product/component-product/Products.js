@@ -26,6 +26,7 @@ const Product = props => {
           <tr>
             <th className="text-center">STT</th>
             <th className="text-center">Tên sản phẩm</th>
+            <th className="text-center">Ảnh</th>
             <th className="text-center">Giá</th>
             <th className="text-center">Thương hiệu</th>
             <th className="text-center">Chất liệu</th>

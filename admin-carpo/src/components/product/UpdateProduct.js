@@ -5,20 +5,23 @@ import axios from "axios";
 import ImageUpload from "./component-product/upload/ImageUpload";
 import { Editor } from "@tinymce/tinymce-react";
 import "./CreateProduct.css";
+import Swal from 'sweetalert2'
 
 const UpdateProduct = () => {
   const { id } = useParams();
   const [error, setError] = useState("");
   const [product, setProduct] = useState({});
   const [description, setDescription] = useState('')
+  const [url, setUrl] = useState('')
 
-  console.log(error);
+  console.log(error,description);
 
   const handleEditorChange = (content, editor) => {
     setDescription(content)
   }
 
   const handleUploadImage = (url) => {
+    setUrl(url)
     setProduct({...product, thumbnail : url})
   }
 
@@ -28,6 +31,7 @@ const UpdateProduct = () => {
       .get(`https://carpo.herokuapp.com/products/${id}`)
       .then(res => {
         setProduct(res.data);
+        setUrl(res.data.thumbnail)
       })
       .catch(err => {
         setError(err.message);
@@ -54,10 +58,22 @@ const UpdateProduct = () => {
       }
     }).then(
       function(response) {
-        alert("Cập nhật sản phẩm thành công");
+        Swal.fire({
+          position: 'top-center',
+          icon: 'success',
+          title: 'Cập nhật sản phẩm thành công',
+          showConfirmButton: false,
+          timer: 2000
+        })
       },
       function(error) {
-        alert("Cập nhật sản phẩm thất bại");
+        Swal.fire({
+          position: 'top-center',
+          icon: 'error',
+          title: 'Cập nhật sản phẩm thất bại',
+          showConfirmButton: false,
+          timer: 2000
+        })
       }
     );
   };
@@ -66,7 +82,7 @@ const UpdateProduct = () => {
     <MainLayout>
       <div className="container pl-0 mb-4">
         <h3 className="panel-title table-title text-left text-uppercase">
-          Tạo sản phẩm
+          Cập nhật sản phẩm
         </h3>
 
         <div className="group-btn">
@@ -124,7 +140,7 @@ const UpdateProduct = () => {
                   />
                 </div>
                 <div className="form-group">
-                  <ImageUpload handleUploadImage={handleUploadImage} image={product.thumbnail}/>
+                  <ImageUpload handleUploadImage={handleUploadImage} url={url}/>
                 </div>
               </div>
               <div className="col-md-3">

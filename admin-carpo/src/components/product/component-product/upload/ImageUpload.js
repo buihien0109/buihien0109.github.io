@@ -1,13 +1,14 @@
 import React from "react";
 import storage from "../../Firebase/index";
 import "./upload.css";
+import Swal from 'sweetalert2'
 
 class ImageUpload extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       image: null,
-      url: "",
+      // url: "",
       progress: 0
     };
   }
@@ -23,7 +24,12 @@ class ImageUpload extends React.Component {
     e.preventDefault();
     const { image } = this.state;
     if(image === null) {
-      alert("Ban chua chon anh")
+      Swal.fire({
+        position: 'top-center',
+        icon: 'error',
+        title: 'Bạn chưa chọn ảnh',
+        showConfirmButton: true,
+      })
     } else {
       const uploadTask = storage.ref(`images/${image.name}`).put(image);
       uploadTask.on(
@@ -46,7 +52,7 @@ class ImageUpload extends React.Component {
             .child(image.name)
             .getDownloadURL()
             .then(url => {
-              this.setState({ url });
+              // this.setState({ url });
               this.props.handleUploadImage(url);
             });
         }
@@ -81,7 +87,7 @@ class ImageUpload extends React.Component {
           </div>
         </div>
         <img
-          src={this.state.url || this.props.image ? this.props.image : ""}
+          src={this.props.url || "https://via.placeholder.com/200x140"}
           alt="Uploaded Images"
           height="140"
           width="200"
