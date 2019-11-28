@@ -1,8 +1,8 @@
 import React from "react";
 import MainLayout from "./components/layout/MainLayout";
-import Product from "./components/product/Product";
-import CreateProduct from './components/product/CreateProduct'
-import UpdateProduct from './components/product/UpdateProduct'
+import Product from "./page/Product";
+import CreateProduct from './page/CreateProduct'
+import UpdateProduct from './page/UpdateProduct'
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 

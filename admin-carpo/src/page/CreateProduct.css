@@ -1,0 +1,78 @@
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 3px;
+    font-weight: 700;
+    color: #414141;
+}
+.required-lable::after {
+    content : "*";
+    color: red;
+    margin-left: 5px;
+}
+.form-group {
+    margin-bottom: 1.2rem;
+}
+.form-control {
+    font-size: 14px;
+}
+.form-control:focus {
+    border : 1px solid #3c8dbc !important;
+    box-shadow: none;
+}
+.form-group input {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    line-height: 34px;
+    color: #555;
+    border: 1px solid #ccc !important;
+    margin-bottom: 15px;
+}
+.style-panel {
+    background: #fff;
+    border-top : 4px solid #3c8dbc;
+    padding-top: 20px;
+}
+.tox.tox-tinymce {
+    min-height: 400px;
+}
+
+.group-btn {
+    margin-top: 20px;
+}
+.btn-addnew {
+    display: inline-block;
+    background: #3c8dbc;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    padding: 7px 12px;
+    margin-left: 10px;
+    font-size: 14px;
+    transition: all .4s ease;
+}
+.btn-addnew:hover {
+    background: #295d7b;
+}
+.btn-goback {
+    display: inline-block;
+    background: #e7e7e7;
+    color: #414141;
+    border-radius: 4px;
+    border: 1px solid #8c8c8c;
+    outline: none;
+    padding: 7px 12px;
+    font-size: 14px;
+    transition: all .4s ease;
+}
+.btn-goback:hover {
+    background: #d4d4d4;
+}
+
+.note-input {
+    font-style: italic;
+    color: crimson;
+}
