@@ -3,6 +3,7 @@ import MainLayout from "./components/layout/MainLayout";
 import Product from "./page/Product";
 import CreateProduct from './page/CreateProduct'
 import UpdateProduct from './page/UpdateProduct'
+import Login from './page/Login'
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
 
@@ -21,6 +22,9 @@ class App extends React.Component {
         </Route>
         <Route path="/update-product/:id">
           <UpdateProduct />
+        </Route>
+        <Route path="/Login">
+          <Login />
         </Route>
       </Switch>
     );

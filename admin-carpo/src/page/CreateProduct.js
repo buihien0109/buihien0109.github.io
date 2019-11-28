@@ -42,7 +42,7 @@ const CreatProduct = props => {
     }).then(
       function(response) {
         Swal.fire({
-          position: "top-center",
+          position: "center",
           icon: "success",
           title: "Tạo sản phẩm thành công",
           showConfirmButton: false,
@@ -52,7 +52,7 @@ const CreatProduct = props => {
       },
       function(error) {
         Swal.fire({
-          position: "top-center",
+          position: "center",
           icon: "error",
           title: "Tạo sản phẩm thất bại",
           showConfirmButton: false,

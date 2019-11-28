@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import Sidebar from "./Sidebar";
+import { auth } from "../product/Firebase/index"
+import Login from '../../page/Login'
 
 const MainLayout = props => {
+
+  auth.onAuthStateChanged(function(user) {
+    if (user) {
+      console.log(user)
+      return <Login />
+    }
+  })
   const [isShow, setIsShow] = useState(true);
   const onCloseSidebar = data => {
     setIsShow(data);
@@ -10,6 +19,7 @@ const MainLayout = props => {
     setIsShow(data);
   };
   let className = "page-wrapper chiller-theme";
+
   return (
     <div className={isShow ? (className += " toggled") : className}>
       <Sidebar onCloseSidebar={onCloseSidebar} onShowSidebar={onShowSidebar} />
