@@ -100,7 +100,13 @@ const Product = props => {
         .then(res => {
           res.data && res.data.length > 0
             ? setProducts(res.data)
-            : alert("Khong tim thay ket qua");
+            : Swal.fire({
+              position: "center",
+              icon: "error",
+              title: "Không tim thấy kết quả tìm kiếm",
+              showConfirmButton: false,
+              timer: 1500
+            });
         })
         .catch(err => {
           alert(err.message);

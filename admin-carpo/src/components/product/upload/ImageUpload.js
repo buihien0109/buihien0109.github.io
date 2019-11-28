@@ -1,5 +1,5 @@
 import React from "react";
-import storage from "../../../Firebase/index";
+import { storage } from "../Firebase/index";
 import "./upload.css";
 import Swal from 'sweetalert2'
 
