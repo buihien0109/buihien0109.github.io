@@ -1,0 +1,536 @@
+select.form-control:not([size]):not([multiple]) {
+    height: calc(2.25rem + 8px);
+}
+
+.btn-blue {
+    outline: none;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+    color: white;
+    background-color: #F2785C;
+    transition: .5s;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.btn-send-order {
+    margin-top: 10px;
+}
+
+.btn-blue:hover {
+    color: white;
+    background-color: #fd8c68;
+}
+
+.shopping-cart-mobile {
+    opacity: 0;
+}
+
+.has-product {
+    min-height: 500px;
+}
+
+.cart-item-detail {
+    display: flex;
+}
+
+.course-img {
+    position: relative;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+    overflow: hidden;
+    width: 200px;
+    min-height: 150px;
+}
+
+.course-img::before {
+    content: "";
+    display: block;
+    padding-top: 70%;
+}
+
+.course-img img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.confirm-body {
+    display: none;
+}
+
+.contact-person {
+    padding-left: 30px;
+}    
+
+.charge-at-home-payment, .cash-payment, .transfer-payment {
+    display: none;
+}
+
+.payment-info {
+    margin: 30px 0px 100px 0px;
+}
+
+.discount-value {
+    font-size: 1.2rem;
+}
+
+.promotion-content a {
+    cursor: pointer;
+    color: #5E5E5E;
+}
+
+.promotion-content a:hover {
+    text-decoration: none;
+}
+
+.voucher-code {
+    font-size: 1.2rem;
+    color: #F99600;
+}
+
+.promotion-content {
+    padding: 15px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    border: 1px solid #c3c3c3;
+}
+
+.pro-item {
+    display : block;
+    width: 100%;
+}
+
+.pro-item > input{ 
+    visibility: hidden; 
+    position: absolute; 
+}
+
+.pro-item > input + div{ 
+    cursor:pointer;
+}
+
+.pro-item > input:checked + div{ 
+    background-color: #d9e8f7;
+    border: 1px solid #3c78e8;
+}
+
+.btn-see-promotion {
+    padding: 0px 10px;
+    border: 1px solid rgba(0,0,0,.09);
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.03);
+    border-radius: 2px;
+    outline: none;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.03);
+    -webkit-box-shadow: 0 1px 1px 0 rgba(0,0,0,.03);
+}
+
+.btn-see-promotion:hover {
+    background-color: rgba(0,0,0,.09);
+}
+
+.btn-see-promotion:focus {
+    outline: none;
+}
+
+.promotion-container {
+    font-size: 0.9rem;
+}
+
+.btn-remove-item {
+    cursor: pointer;
+}
+
+.no-product {
+    padding: 30px 15px;
+    text-align: center;
+    min-height: 350px;
+}
+
+.tab-cart {
+    min-height: 350px;
+}
+
+.btn-send-order {
+    margin-top: 10px;
+}
+
+.company-info {
+    display: none;
+}
+
+.export-receipt-container {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+}
+
+.export-receipt-container:hover {
+    cursor: pointer;
+}
+
+#has-export-receipt {
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 3;
+}
+
+.label-export-receipt {
+    margin-left: 35px;
+}
+
+.checkmark-export-receipt {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #c3c3c3;
+}
+
+.export-receipt-container .checkmark-export-receipt:after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    width: 6px;
+    height: 6px;
+    top: 6px;
+    left: 6px;
+    z-index: 2;
+}
+
+.export-receipt-container input[type="checkbox"]:checked~.checkmark-export-receipt {
+    background-color: #2074a1;
+    border: 1px solid #2074a1;
+}
+
+.btn-back-cart {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.account-info {
+    margin-top: 10px;
+    padding: 15px 15px 20px 15px;
+}
+
+.account-info input {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #c4c4c4;
+    height: 40px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.account-info input:focus {
+    border-bottom: 1px solid #2074a1;
+}
+
+.panel {
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    border: 1px solid #c3c3c3;
+    background-color: #f4f7fa;
+}
+
+.btn-delete {
+    margin-top: 10px;
+}
+
+#btn-move-to-payment {
+    margin-top: 5px;
+    width: 100%;
+}
+
+.total-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clear {
+    clear: both;
+}
+
+.tab-payment {
+    display: none;
+}
+
+.cart-item {
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.cart-item:not(:first-child) {
+    margin-top: 20px;
+}
+
+.cart-item-content {
+    width: calc(100% - 200px);
+    min-height: 150px;
+    padding: 15px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.cart-item-title {
+    float: left;
+    width: 70%;
+    font-size: 1.2rem;
+}
+
+.cart-item-title a {
+    color: #5E5E5E;
+}
+
+.cart-item-price {
+    float: left;
+    text-align: right;
+    width: 30%;
+}
+
+.old-price {
+    text-decoration: line-through;
+    color: #a2a2a2;
+}
+
+.cart-item-promotion-price {
+    font-size: 1.2rem;
+    color: #F99600;
+}
+
+@media (max-width: 992px) {
+    .cart-item-title {
+        width: 100%;
+    }
+
+    .cart-item-price {
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .temporary-price-card {
+        margin-top: 5px;
+    }
+}
+
+.address-detail {
+    border-radius: 4px;
+    width: 100%;
+    border: 1px solid #ced4da;
+    resize: none;
+}
+
+.payment-method-detail {
+    margin: auto;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 30px;
+
+}
+
+.container-ent {
+    width: 100%;
+}
+
+.method-item {
+    display: none;
+    padding: 30px 30px 0 30px;
+    border: 1px solid #c3c3c3;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.method-active {
+    display: block;
+}
+
+.payment-total-bill {
+    margin-top: 28px;
+    padding: 15px;
+}
+
+.checkout-list-title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.checkout-list-title span {
+    text-transform: uppercase;
+}
+
+.checkout-list-price {
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px dashed #dedede;
+}
+
+.checkout-list-item {
+    display: flex;
+    font-size: 0.85rem;
+    padding: 15px 0px;
+    border-top: 1px dashed #dedede;
+}
+
+.checkout-list-course-name {
+    width: 65%;
+    padding-right: 15px;
+}
+
+.checkout-list-course-price {
+    width: 35%;
+    text-align: right;
+}
+
+.promocodeform-code {
+    height: 35px;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.container-payment {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.container-payment input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark-payment {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container-payment input[type="radio"]:checked~.checkmark-payment {
+    background-color: #2074a1;
+}
+
+.container-payment input[type="radio"]:checked~.method-item {
+    display: block;
+}
+
+.checkmark-payment:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container-payment input:checked~.checkmark-payment:after {
+    display: block;
+}
+
+.container-payment .checkmark-payment:after {
+    top: 7px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: white;
+}
+
+@media (max-width: 992px) {
+    .cart-item-content {
+        padding: 15px;
+    }
+}
+
+@media (max-width: 767px) {
+    .cart-item {
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+}
+
+@media (max-width: 575px) {
+    .cart-item-detail {
+        flex-wrap: wrap;
+    }
+
+    .course-img {
+        width: 100%;
+        min-height: auto;
+        position: relative;
+    }
+
+    .course-img::before {
+        content: "";
+        display: block;
+        padding-top: 70%;
+    }
+
+    .course-img img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+
+    .cart-item-content {
+        width: 100%;
+    }
+    .panel {
+        background-color: #fff;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        border: none;
+    }
+    .method-item {
+        display: none;
+        padding: 0px 0px 0px 15px !important;
+        border: none;
+        border-radius: 0px;
+        border-left: 2px solid #2074a1;
+        width: 100%;
+    }
+    .method-item .row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .method-item .method-item-input-child:last-child p {
+        margin-bottom: 0;
+    }
+    .account-info input[type=text], .account-info input[type=email] {
+        margin-bottom: 1rem;
+    }
+}

@@ -1,0 +1,55 @@
+.active-cod-wrap {
+    background-image: url(https://techmaster.vn/resources/image/active-cod.jpg);
+    background-size: cover;
+    padding: 100px 0;
+    background-position: center;
+}
+.active-cod {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    background-color: #fff;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.32);
+}
+.active-cod-detail {
+    
+    padding: 25px;
+}
+.active-cod-title {
+    border-bottom: 1px dashed #dedede;
+    padding: 10px 0;
+}
+
+.active-cod-input {
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 5px;
+
+}
+
+.active-cod-detail input {
+    padding: 5px 15px;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+
+}
+
+.btn-active-cod {
+    height: 40px;
+    width: 100%;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: #28a745;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.btn-active-cod:hover {
+    cursor: pointer;
+}

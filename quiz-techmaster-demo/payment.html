@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/payment.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="container-fluid" id="header"></div>
+    <!-- End Header -->
+
+    <!-- Payment -->
+    <section id="payment">
+        <div class="container body-content cart-body">
+
+            <div class="has-product">
+                <form id="submit-order" name="submit-order" role="form">
+                    <div class="tab-cart" style="display: none;">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Giỏ hàng</h5>
+                            </div>
+                            <div class="col-lg-9 col-md-8 list-cart-item">
+
+                                <div class="cart-item panel" data-item-id="wz0">
+                                    <div class="cart-item-detail">
+                                        <div class="course-img">
+                                            <img src="/teacher/resources/image/course-thumbnail.jpg">
+                                        </div>
+                                        <div class="cart-item-content">
+                                            <div>
+                                                <div class="cart-item-title">
+
+                                                    <a target="_blank"
+                                                        href="/khoa-hoc/wz0/khoa-hoc-kiem-thu-voi-codeceptjs">Khoá học
+                                                        Khoá học kiểm thử với CodeceptJS</a>
+                                                    <div class="promotion-container">
+
+                                                        <span class="promotion-apply">Chọn khuyến mãi</span>&ensp;<i
+                                                            class="fa fa-edit"></i>
+
+                                                    </div>
+
+                                                </div>
+                                                <div class="cart-item-price">
+
+                                                    <div class="cart-item-promotion-price">
+                                                        <span class="techmaster-price">0</span> đ
+                                                    </div>
+                                                    <div class="old-price" style="display: none;">
+                                                        <span class="techmaster-price">0</span> đ
+                                                    </div>
+
+                                                </div>
+                                                <div class="clear"></div>
+                                            </div>
+                                            <div class="btn-delete">
+                                                <a class="btn-remove-item"
+                                                    style="color: #2074a1"><i class="far fa-trash-alt"></i> Xóa</a>
+                                            </div>
+                                        </div>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-lg-3 col-md-4">
+                                <div class="card temporary-price-card panel">
+                                    <div class="card-body total-info" style="font-size: 1.2rem;">
+                                        <span>Tạm tính:</span>
+                                        <strong style="color: #2074a1;"><span
+                                                class="techmaster-price temporary-price">0</span> đ</strong>
+                                    </div>
+                                </div>
+                                <button class="btn btn-blue" id="btn-move-to-payment">Tiến hành thanh toán</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-payment" style="display: block;">
+
+                        <div class="row">
+                            <div class="col-12">
+                                <h5>Thanh toán <span style="font-size: 0.9rem; font-style: italic">(* là trường bắt
+                                        buộc)</span></h5>
+                            </div>
+                            <div class="col-lg-8 col-md-12">
+                                <h6>1. Thông tin tài khoản</h6>
+                                <div class="panel account-info">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <input type="text" id="fullname" name="fullname" placeholder="Họ tên *">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="email" id="email" name="email" placeholder="Email *">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="text" id="phone" name="phone" placeholder="Điện thoại *">
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <h6>2. Phương thức thanh toán</h6>
+                                <div class="panel account-info">
+                                    <div class="container-ent">
+                                        <label class="container-payment">
+                                            <h6>Đóng tiền trực tiếp</h6>
+                                            <input type="radio" checked="checked" value="1" name="payment-method">
+                                            <span class="checkmark-payment"></span>
+                                            <div class="method-item">
+                                                <div class="method-item-input-child row">
+                                                    <p>Địa chỉ văn phòng tại Hà Nội:</p>
+                                                </div>
+                                                <div class="method-item-input-child row">
+                                                    <p style="color:#2074a1">
+                                                        <i class="fa fa-map-marker-alt"></i> Cơ sở Nguyễn Đình Chiểu:
+                                                        Số 14, ngõ 4, Nguyễn Đình Chiểu, Hai Bà Trưng, Hà Nội.</p>
+                                                </div>
+                                                <div class="method-item-input-child row">
+                                                    <p style="color:#2074a1">
+                                                        <i class="fa fa-map-marker-alt"></i> Cơ sở Tố Hữu: S1, Tầng
+                                                        12A, Tòa nhà Viwaseen Tower, số 48, Tố Hữu, Nam Từ Liêm,
+                                                        Hà Nội.</p>
+                                                </div>
+                                                <div class="method-item-input-child row">
+                                                    <p>Thời gian làm việc: từ 9:00 - 18:00 , từ Thứ 2 đến Thứ 6 hàng
+                                                        tuần.</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="container-payment">
+                                            <h6>Chuyển khoản</h6>
+                                            <input type="radio" value="2" name="payment-method">
+                                            <span class="checkmark-payment"></span>
+                                            <div class="method-item">
+                                                <div class="method-item-input-child row">
+                                                    <p style="color:#2074a1">
+                                                        <i class="fa fa-user"></i> Tên tài khoản: Công ty TNHH
+                                                        Techmaster Việt Nam</p>
+                                                </div>
+                                                <div class="method-item-input-child row">
+                                                    <p style="color:#2074a1">
+                                                        <i class="fa fa-credit-card"></i> Số tài khoản: 0021000252385
+                                                    </p>
+                                                </div>
+                                                <div class="method-item-input-child row">
+                                                    <p style="color:#2074a1">
+                                                        <i class="fa fa-university"></i> Ngân hàng Vietcombank chi
+                                                        nhánh Hà Nội.</p>
+                                                </div>
+                                                <div class="method-item-input-child row">
+                                                    <p>Nội dung chuyển khoản: Nộp học phí - &lt;khoá học&gt; - &lt;họ
+                                                        tên&gt; - &lt;số di động&gt;</p>
+                                                </div>
+                                                <div class="method-item-input-child row">
+                                                    <p>Khóa học sẽ được kích hoạt sau khi Techmaster kiểm tra tài khoản
+                                                        và xác nhận việc
+                                                        thanh toán của bạn thành công.</p>
+                                                </div>
+                                            </div>
+                                        </label>
+                                        <label class="container-payment">
+                                            <h6>Thu phí tại nhà</h6>
+                                            <input type="radio" value="3" name="payment-method">
+                                            <span class="checkmark-payment"></span>
+                                            <div class="method-item">
+                                                <div class="method-item-input">
+                                                    <p>Phí vận chuyển áp dụng theo biểu phí của
+                                                        <a href="https://giaohangtietkiem.vn/"
+                                                            style="color:#2074a1">Giao hàng tiết kiệm
+                                                            <i class="fa fa-truck"></i>
+                                                        </a>
+                                                    </p>
+                                                    <p>Địa chỉ giao hàng</p>
+                                                    <div class="form-row">
+                                                        <div class="form-group col-md-6">
+                                                            <select id="city" class="form-control"
+                                                                style="background-color: transparent">
+                                                                <option selected="" value="">Thành phố</option>
+
+                                                                <option value="Hà Nội">Hà Nội</option>
+
+                                                                <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+
+                                                                <option value="Đà Nẵng">Đà Nẵng</option>
+
+                                                                <option value="Thừa Thiên – Huế">Thừa Thiên – Huế
+                                                                </option>
+
+                                                                <option value="Cần Thơ">Cần Thơ</option>
+
+                                                                <option value="Quảng Ngãi">Quảng Ngãi</option>
+
+                                                                <option value="Lâm Đồng">Lâm Đồng</option>
+
+                                                                <option value="Cà Mau">Cà Mau</option>
+
+                                                                <option value="Tiền Giang">Tiền Giang</option>
+
+                                                                <option value="Bình Phước">Bình Phước</option>
+
+                                                                <option value="Thái Bình">Thái Bình</option>
+
+                                                                <option value="Nam Định">Nam Định</option>
+
+                                                                <option value="Sóc Trăng">Sóc Trăng</option>
+
+                                                                <option value="Hòa Bình">Hòa Bình</option>
+
+                                                                <option value="Điện Biên">Điện Biên</option>
+
+                                                                <option value="Lào Cai">Lào Cai</option>
+
+                                                                <option value="Đồng Tháp">Đồng Tháp</option>
+
+                                                                <option value="Kiên Giang">Kiên Giang</option>
+
+                                                                <option value="Hải Phòng">Hải Phòng</option>
+
+                                                                <option value="Hải Dương">Hải Dương</option>
+
+                                                                <option value="Vĩnh Long">Vĩnh Long</option>
+
+                                                                <option value="Bình Thuận">Bình Thuận</option>
+
+                                                                <option value="Tuyên Quang">Tuyên Quang</option>
+
+                                                                <option value="Ninh Thuận">Ninh Thuận</option>
+
+                                                                <option value="Kon Tum">Kon Tum</option>
+
+                                                                <option value="Bạc Liêu">Bạc Liêu</option>
+
+                                                                <option value="Nghệ An">Nghệ An</option>
+
+                                                                <option value="Phú Thọ">Phú Thọ</option>
+
+                                                                <option value="Vĩnh Phúc">Vĩnh Phúc</option>
+
+                                                                <option value="Bắc Kạn">Bắc Kạn</option>
+
+                                                                <option value="Cao Bằng">Cao Bằng</option>
+
+                                                                <option value="Hà Tĩnh">Hà Tĩnh</option>
+
+                                                                <option value="Đồng Nai">Đồng Nai</option>
+
+                                                                <option value="Bình Dương">Bình Dương</option>
+
+                                                                <option value="Bắc Giang">Bắc Giang</option>
+
+                                                                <option value="Khánh Hòa">Khánh Hòa</option>
+
+                                                                <option value="Bà Rịa – Vũng Tàu">Bà Rịa – Vũng Tàu
+                                                                </option>
+
+                                                                <option value="Hà Nam">Hà Nam</option>
+
+                                                                <option value="Hậu Giang">Hậu Giang</option>
+
+                                                                <option value="Quảng Bình">Quảng Bình</option>
+
+                                                                <option value="Gia Lai">Gia Lai</option>
+
+                                                                <option value="Thanh Hóa">Thanh Hóa</option>
+
+                                                                <option value="Lạng Sơn">Lạng Sơn</option>
+
+                                                                <option value="Thái Nguyên">Thái Nguyên</option>
+
+                                                                <option value="Phú Yên">Phú Yên</option>
+
+                                                                <option value="Trà Vinh">Trà Vinh</option>
+
+                                                                <option value="Hà Giang">Hà Giang</option>
+
+                                                                <option value="Đắk Nông">Đắk Nông</option>
+
+                                                                <option value="Hưng Yên">Hưng Yên</option>
+
+                                                                <option value="Đồng Tháp">Đồng Tháp</option>
+
+                                                                <option value="Ninh Bình">Ninh Bình</option>
+
+                                                                <option value="Lai Châu">Lai Châu</option>
+
+                                                                <option value="Bình Định">Bình Định</option>
+
+                                                                <option value="Đắk Lắk">Đắk Lắk</option>
+
+                                                                <option value="Long An">Long An</option>
+
+                                                                <option value="Yên Bái">Yên Bái</option>
+
+                                                                <option value="Quảng Nam">Quảng Nam</option>
+
+                                                                <option value="An Giang">An Giang</option>
+
+                                                                <option value="Tây Ninh">Tây Ninh</option>
+
+                                                                <option value="Bắc Ninh">Bắc Ninh</option>
+
+                                                                <option value="Sơn La">Sơn La</option>
+
+                                                                <option value="Quảng Trị">Quảng Trị</option>
+
+                                                                <option value="Bến Tre">Bến Tre</option>
+
+                                                                <option value="Quảng Ninh">Quảng Ninh</option>
+
+                                                            </select>
+                                                        </div>
+                                                        <div class="form-group col-md-6">
+                                                            <select id="district" class="form-control"
+                                                                style="background-color: transparent">
+                                                                <option value="" selected="">Quận huyện</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <textarea rows="4" class="address-detail" id="address"
+                                                            placeholder="Địa chỉ cụ thể *"
+                                                            style="padding: 10px; background-color: transparent"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </label>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="export-receipt-container">
+                                    <input type="checkbox" id="has-export-receipt">
+                                    <span class="checkmark-export-receipt"></span>
+                                    <span class="label-export-receipt">Xuất hoá đơn giá trị gia tăng</span>
+                                </div>
+                                <div class="panel account-info company-info">
+                                    <div class="row">
+                                        <div class="col-sm-8">
+                                            <input type="text" placeholder="Tên công ty *" id="company-name">
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <input type="text" placeholder="Mã số thuế *" id="tax-code">
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <input type="text" placeholder="Địa chỉ *" id="company-address">
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-blue btn-send-order">GỬI ĐĂNG KÝ</button>
+                            </div>
+                            <div class="col-lg-4 col-md-12">
+                                <div class="payment-total-bill panel">
+                                    <div class="checkout-list-title">
+                                        <span style="line-height: 30px;">Đơn hàng</span>
+                                    </div>
+                                    <div class="list-item">
+                                        <div class="checkout-list-course">
+                                            <div class="checkout-list-item">
+                                                <div class="checkout-list-course-name">
+                                                    <a href="/khoa-hoc/wz0" style="color:#2074a1">Đề thi Web Front End 1</a>
+                                                </div>
+                                                <div class="checkout-list-course-price">
+                                                    <b><span class="techmaster-price">500,000</span> đ</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="checkout-list-price">
+                                        <div class="checkout-list-price-title">Tạm tính</div>
+                                        <div class="checkout-list-price-price">
+                                            <b><span class="techmaster-price temporary-price">500,000</span> đ</b>
+                                        </div>
+                                    </div>
+                                    <div class="checkout-list-price">
+                                        <div class="checkout-list-price-title">Phí vận chuyển</div>
+                                        <div class="checkout-list-price-price">
+                                            <b><span class="techmaster-price shipfree-price">30,000</span> đ</b>
+                                        </div>
+                                    </div>
+                                    <div class="checkout-list-price">
+                                        <div class="checkout-list-price-title">Tổng cộng</div>
+                                        <div class="checkout-list-price-price">
+                                            <b style="color: #fd8c68; font-size: 1.2rem;"><span
+                                                    class="techmaster-price subtotal-price">530,000</span> đ</b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+
+            <div class="modal fade" id="promotionModal" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Chọn khuyến mãi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body list-vouchers">
+                        </div>
+                        <div class="modal-footer">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control" placeholder="Nhập mã giảm giá"
+                                    id="voucher_code">
+                                <div class="input-group-append">
+                                    <button class="btn btn-info btn-apply" type="button">Áp dụng</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Payment -->
+
+    <!-- Footer -->
+    <div style="background-color:#464646" class="container-fluid" id="footer"></div>
+    <!-- End Footer -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $("#has-export-receipt").change(function () {
+            if (this.checked) {
+                $('.company-info').slideDown()
+            } else {
+                $('.company-info').slideUp()
+            }
+        });
+    </script>
+</body>
+
+</html>

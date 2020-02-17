@@ -1,0 +1,182 @@
+#quiz {
+    margin: 3rem 0;
+}
+.quiz__answer {
+    margin: 1rem 0;
+}
+.quiz__answer--time {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.box-time {
+    display: inline-block;
+    font-size: 1.5rem;
+    background-color: #C4C4C4;
+    padding: 0 .5rem;
+}
+.quiz__answer--numbers__title {
+    margin-bottom: 0;
+}
+.quiz__answer--numbers, .quiz__list {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1);
+}
+.quiz__answer--numbers {
+    padding: .5rem;
+}
+.number-question {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.link-to-question {
+    color: #414141;
+    cursor: pointer;
+    transition: all .2s ease-out;
+}
+.link-to-question:hover {
+    color: inherit;
+    font-weight: bold;
+}
+.number-question__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: .5rem 1rem .5rem 0;
+}
+.number-question__item--circle {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    border: 1px solid #C3C3C3;
+    margin-right: 3px;
+}
+.number-question__item--circle.active {
+    background-color: #F2785C;  
+}
+
+/* Hien thi cau hoi va cau tra loi */
+.quiz__list--item {
+    border: 1px solid #C3C3C3;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+.item__question {
+    padding: 1rem;
+    border-bottom: 1px solid #C3C3C3;
+}
+.item__answer {
+    padding: 1rem;
+}
+.item__answer--item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: .5rem;
+}
+.item__answer--item:last-child {
+    margin-bottom: 0;
+}
+.item__answer--item label {
+    margin-bottom: 0;
+    padding: .5rem;
+}
+
+.item__answer--item.true {
+    border: 2px solid #11c26d;
+    border-radius: 4px;
+}
+.item__answer--item.false {
+    border: 2px solid #ff4c52;
+    border-radius: 4px;
+}
+.item__explain {
+    background-color: #eee;
+    padding: 1rem
+}
+.item__explain--title {
+    display: block;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #2074a1;
+    font-weight: bold;
+    margin-bottom: .5rem;
+}
+.quiz__result {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.quiz__result--btn {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #26a69a;
+    color: #fff !important;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+.quiz__result--btn-quit {
+    border: none;
+    border-radius: 2px;
+    display: inline-block;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 16px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    -webkit-tap-highlight-color: transparent;
+    background-color:transparent;
+    color: #414141 !important;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center .quiz__result--btn {
+    margin-left: 1rem;
+}
+
+#back-to-top {
+    cursor: pointer;
+    text-decoration: none;
+    background: #F2785C;
+    border-radius: 50%;
+    bottom: 120pt;
+    display: inline;
+    height: 45pt;
+    padding: 0px;
+    position: fixed;
+    right: 18pt;
+    top: auto;
+    width: 45pt;
+    z-index: 9999;
+    text-align: center;
+    color: white;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .15);
+    transition: box-shadow 150ms linear;
+    line-height: 82px;
+    opacity: 0;
+}
+
+#back-to-top.show {
+    opacity: 1;
+}
+

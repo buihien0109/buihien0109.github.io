@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <title>Profile</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="navbar-fixed">
+        <nav role="navigation" class="top-menu" style="background-color: #F2785C !important">
+            <div class="nav-wrapper">
+                <div class="header__logo-container">
+                    <a href="./index.html" class="header__logo-wrap brand-logo">
+                        <img src="https://techmaster.vn/resources/image/new_logo.png" alt="" class="techmaster-logo">
+                    </a>
+                </div>
+                <button class="btn-responsive__wrapper">
+                    <div class="btn-responsive--inner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="menu-mobile">
+                    <ul class="dropdown-menu__list clearfix" id="mobile-demo">
+                        <li class="menu__link">
+                            <a href="./my-exam.html">Bài thi của tôi</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="./profile.html">Hồ sơ cá nhân</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="/user/dashboard/giao-dich">Lịch sử giao dịch</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="right dropdown__menu">
+                    <li style="position: relative;">
+                        <a class="dropdown-trigger" data-target='dropdown' onclick="ShowUserMenu()">
+                            <div style="display: flex; align-items: center;">
+                                <img src="https://techmaster.vn/media/static/crop/bnlsots51coerket1uu0" alt="Avatar"
+                                    class="dropdown-user-avatar-img">
+                                &nbsp;
+                            </div>
+                        </a>
+                        <ul id="dropdown" class="dropdown-content">
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./active-code.html">Kích hoạt đơn hàng</a></li>
+                            <li><a href="./my-exam.html">Bài thi của tôi</a></li>
+                            <li><a href="./profile.html">Hồ sơ cá nhân</a></li>
+                            <li id="logout"><a>Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="blank_block" id="overlay">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    
+
+    <aside>
+        <ul id="slide-out" class="navigation-right fixed">
+            <li>
+                <div class="user-view">
+                    <img class="navbar-user-avatar-img"
+                        src="https://techmaster.vn/media/static/crop/bnlsots51coerket1uu0">
+                    <a>
+                        <span class="text-white name">Bùi Văn Hiên</span>
+                    </a>
+                    <a>
+                        <span class="text-white email">buihien01091997@gmail.com</span>
+                    </a>
+                </div>
+            </li>
+            <li class="bold">
+                <a href="/user/dashboard/khoa-hoc" class="waves-effect waves-cyan collapsible-header">
+                    <i class="fa fa-bookmark-o"></i> Bài thi của tôi
+                </a>
+            </li>
+            <li class="bold">
+                <a href="/user/dashboard/profile" class="waves-effect waves-cyan collapsible-header">
+                    <i class="fa fa-user"></i> Hồ sơ cá nhân
+                </a>
+            </li>
+            <li class="bold">
+                <a href="/user/dashboard/giao-dich" class="waves-effect waves-cyan collapsible-header">
+                    <i class="fa fa-money"></i> Lịch sử giao dịch
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <main>
+        <div class="main-content">
+            <!-- Body -->
+            <div class="my-profile">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <b class="title-div">Hồ sơ cá nhân</b>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 col-sm-12">
+                        <form role="form" name="update-form" id="update-form">
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                    Ảnh đại diện:
+                                </div>
+                                <div class="data-item-content">
+                                    <div class="edit-avatar">
+                                        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+                                            <div class="modal-dialog edit-avatar-modal" role="document">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">Lựa chọn ảnh đại diện</h5>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <div class="image-editor">
+                                                            <label for="avatar" class="custom-file-upload">
+                                                                Tải ảnh lên
+                                                            </label>
+                                                            <br>
+                                                            <label class="upload-avatar-note">* Kích thước tối thiểu
+                                                                150x150px</label>
+                                                            <label class="upload-avatar-note"> Định dạnh jpg hoặc
+                                                                png.</label>
+                                                            <input id="avatar" type="file" class="cropit-image-input">
+                                                            <div class="cropit-preview"></div>
+                                                            <div class="image-size-label">
+                                                                Thay đổi kích thước
+                                                            </div>
+                                                            <input type="range" class="cropit-image-zoom-input">
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button"
+                                                            class="btn-flat waves-effect waves-green modal-close">Đóng</button>
+                                                        <button class="btn btn-default export" type="button">Áp
+                                                            dụng</button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="avatar-preview">
+                                            <img id="avatar-preview"
+                                                src="https://techmaster.vn/media/static/crop/bnlsots51coerket1uu0">
+                                        </div>
+                                        <button type="button" class="btn btn-primary" id="myBtn" data-toggle="modal"
+                                            data-target="#myModal">Thay ảnh</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                    Email:
+                                </div>
+                                <div class="data-item-content">
+                                    <div style="display: flex; justify-content: space-between; align-items: center">
+                                        <span style="line-height: 3rem;">buihien01091997@gmail.com</span>
+                                        <!-- <a class="btn-edit">
+                                            <i class="fa fa-edit"></i> Sửa
+                                        </a> -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                    Mật khẩu:
+                                </div>
+                                <div class="data-item-content">
+                                    <div style="display: flex; justify-content: space-between; align-items: center"
+                                        class="password-div">
+
+                                        <span style="line-height: 3rem;">***********</span>
+                                        <button class="btn-edit" type="button" data-toggle="modal"
+                                            data-target="#modal-change-password">
+                                            <i class="fa fa-edit"></i>
+                                            Đổi mật khẩu
+                                        </button>
+
+                                        <!-- <span></span>
+                                        <a class="btn-edit modal-trigger" href="#setPasswordModal">
+                                            <i class="fa fa-edit"></i> Đặt mật khẩu
+                                        </a> -->
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                    Họ tên:
+                                </div>
+                                <div class="data-item-content">
+                                    <input type="text" name="full_name" id="full-name" value="Bùi Văn Hiên">
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                    Điện thoại:
+                                </div>
+                                <div class="data-item-content">
+                                    <input type="text" name="phone" id="phone" value="0344005816">
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                    Tên ngân hàng:
+                                </div>
+                                <div class="data-item-content">
+                                    <input type="text" name="bank-name" id="bank-name" value="Vietcombank">
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                    Số tài khoản:
+                                </div>
+                                <div class="data-item-content">
+                                    <input type="text" id="bank-account" value="1234">
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                    Giới thiệu:
+                                </div>
+                                <div class="data-item-content">
+                                    <textarea id="description"
+                                        class="materialize-textarea">Yêu màu tím, thích màu hồng, sống nội tâm, hay khóc thầm và ghét sự giả dối...</textarea>
+                                </div>
+                            </div>
+                            <div class="data-item">
+                                <div class="data-item-label">
+                                </div>
+                                <div class="data-item-content">
+                                    <button type="submit" class="btn-default btn-save-info">Lưu thông tin</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="modal-change-password" tabindex="-1" role="dialog">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Đổi mật khẩu</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="input-field col-sm-12">
+                                        <input id="old-password" type="password" class="validate">
+                                        <label class="active" for="old-password">Mật khẩu cũ</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col-sm-12">
+                                        <input id="new-password" type="password" class="validate">
+                                        <label class="active" for="new-password">Mật khẩu mới</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col-sm-12">
+                                        <input id="retype-password" type="password" class="validate">
+                                        <label class="active" for="retype-password">Nhập lại mật khẩu</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="modal-close">Huỷ</a>
+                                <a class="btn-default btn-change-password">Lưu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal" id="setPasswordModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Đặt mật khẩu</h5>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="input-field col-sm-12">
+                                        <input id="set-password" type="password" class="validate">
+                                        <label class="active" for="set-password">Mật khẩu</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="input-field col-sm-12">
+                                        <input id="retype-set-password" type="password" class="validate">
+                                        <label class="active" for="retype-set-password">Nhập lại mật khẩu</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a class="modal-close waves-effect waves-green btn-flat">Huỷ</a>
+                                <a class="waves-effect waves-light btn modal-trigger btn-set-password">Lưu</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End Header -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropit/0.5.1/jquery.cropit.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+        $('.modal-close').click(function () {
+            $('#modal-change-password').modal('hide')
+        })
+
+        function ShowUserMenu() {
+            $('.dropdown-content').toggle()
+        }
+
+        //Crop image
+        let avatarBase64Encode = '';
+        $(document).ready(function () {
+            $('.image-editor').cropit({
+                imageState: {
+                    src: '',
+                },
+                width: 150,
+                height: 150,
+            });
+
+            $('.rotate-cw').click(function () {
+                $('.image-editor').cropit('rotateCW');
+            });
+            $('.rotate-ccw').click(function () {
+                $('.image-editor').cropit('rotateCCW');
+            });
+
+            $('.export').click(function () {
+                var imageData = $('.image-editor').cropit('export');
+                uploadAvatarBase64(imageData);
+            });
+        });
+    </script>
+</body>
+
+</html>

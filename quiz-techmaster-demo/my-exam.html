@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/profile.css">
+    <link rel="stylesheet" href="./css/my-exam.css">
+    <title>Bài thi của tôi</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="navbar-fixed">
+        <nav role="navigation" class="top-menu" style="background-color: #F2785C !important">
+            <div class="nav-wrapper">
+                <div class="header__logo-container">
+                    <a href="./index.html" class="header__logo-wrap brand-logo">
+                        <img src="https://techmaster.vn/resources/image/new_logo.png" alt="" class="techmaster-logo">
+                    </a>
+                </div>
+                <button class="btn-responsive__wrapper">
+                    <div class="btn-responsive--inner">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </button>
+                <div class="menu-mobile">
+                    <ul class="dropdown-menu__list clearfix" id="mobile-demo">
+                        <li class="menu__link">
+                            <a href="./my-exam.html">Bài thi của tôi</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="./profile.html">Hồ sơ cá nhân</a>
+                        </li>
+                        <li class="menu__link">
+                            <a href="/user/dashboard/giao-dich">Lịch sử giao dịch</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="right dropdown__menu">
+                    <li style="position: relative;">
+                        <a class="dropdown-trigger" data-target='dropdown' onclick="ShowUserMenu()">
+                            <div style="display: flex; align-items: center;">
+                                <img src="https://techmaster.vn/media/static/crop/bnlsots51coerket1uu0" alt="Avatar"
+                                    class="dropdown-user-avatar-img">
+                                &nbsp;
+                            </div>
+                        </a>
+                        <ul id="dropdown" class="dropdown-content">
+                            <li><a href="./index.html">Trang chủ</a></li>
+                            <li><a href="./active-code.html">Kích hoạt đơn hàng</a></li>
+                            <li><a href="./my-exam.html">Bài thi của tôi</a></li>
+                            <li><a href="./profile.html">Hồ sơ cá nhân</a></li>
+                            <li id="logout"><a>Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="blank_block" id="overlay">
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <aside>
+        <ul id="slide-out" class="navigation-right fixed">
+            <li>
+                <div class="user-view">
+                    <img class="navbar-user-avatar-img" src="https://techmaster.vn/media/static/crop/bnlsots51coerket1uu0">
+                    <a>
+                        <span class="text-white name">Bùi Văn Hiên</span>
+                    </a>
+                    <a>
+                        <span class="text-white email">buihien01091997@gmail.com</span>
+                    </a>
+                </div>
+            </li>
+            <li class="bold">
+                <a href="/user/dashboard/khoa-hoc" class="waves-effect waves-cyan collapsible-header">
+                    <i class="fa fa-bookmark-o"></i> Bài thi của tôi
+                </a>
+            </li>
+            <li class="bold">
+                <a href="/user/dashboard/profile" class="waves-effect waves-cyan collapsible-header">
+                    <i class="fa fa-user"></i> Hồ sơ cá nhân
+                </a>
+            </li>
+            <li class="bold">
+                <a href="/user/dashboard/giao-dich" class="waves-effect waves-cyan collapsible-header">
+                    <i class="fa fa-money"></i> Lịch sử giao dịch
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <!-- End Header -->
+
+    <!-- My List Exam -->
+    <main>
+        <div class="main-content">
+            <div class="exam">
+                <div class="my-exam__title">
+                    <h2>BÀI THI CỦA TÔI</h2>
+                </div>
+                <div class="my-exam__list">
+                    <div class="my-exam__list--item">
+                        <div class="my-exam__list--item__thumbnail">
+                            <img src="https://techmaster.vn/media/static/10194/bntfu4c51co0rgshmh80" alt="">
+                        </div>
+                        <div class="my-exam__list--item__info">
+                            <p class="my-exam__list--item__info--title">
+                                Kiến trúc máy tính
+                            </p>
+                            <div class="my-exam__list--item__info--detail">
+                                <p>
+                                    <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                                    Danh mục : Kiến trúc máy tính
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                                    50 câu hỏi
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                    Thời gian: 40 phút
+                                </p>
+                            </div>
+                            <button class="my-exam__list--item__info--btn">Làm bài thi</button>
+                        </div>
+                    </div>
+                
+                    <div class="my-exam__list--item">
+                        <div class="my-exam__list--item__thumbnail">
+                            <img src="https://techmaster.vn/media/static/10194/bnsrc3k51cob6m0mjvog" alt="">
+                        </div>
+                        <div class="my-exam__list--item__info">
+                            <span class="my-exam__list--item__info--title">
+                                Mạng máy tính 1
+                            </span>
+                            <div class="my-exam__list--item__info--detail">
+                                <p>
+                                    <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                                    Danh mục : Mạng máy tính
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                                    80 câu hỏi
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                    Thời gian: 40 phút
+                                </p>
+                            </div>
+                            <button class="my-exam__list--item__info--btn">Làm bài thi</button>
+                        </div>
+                    </div>
+
+                    <div class="my-exam__list--item">
+                        <div class="my-exam__list--item__thumbnail">
+                            <img src="./image/fontend5" alt="">
+                        </div>
+                        <div class="my-exam__list--item__info">
+                            <span class="my-exam__list--item__info--title">
+                                Web Front End
+                            </span>
+                            <div class="my-exam__list--item__info--detail">
+                                <p>
+                                    <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                                    Danh mục : Front End
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                                    80 câu hỏi
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                    Thời gian: 40 phút
+                                </p>
+                            </div>
+                            <button class="my-exam__list--item__info--btn">Làm bài thi</button>
+                        </div>
+                    </div>
+    
+                    <div class="my-exam__list--item">
+                        <div class="my-exam__list--item__thumbnail">
+                            <img src="https://techmaster.vn/media/static/53/bo04nhs51co0rgshmibg" alt="">
+                        </div>
+                        <div class="my-exam__list--item__info">
+                            <span class="my-exam__list--item__info--title">
+                                Angular
+                            </span>
+                            <div class="my-exam__list--item__info--detail">
+                                <p>
+                                    <span><i class="fa fa-code" aria-hidden="true"></i></span>
+                                    Danh mục : Front End
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-question-circle" aria-hidden="true"></i></span>
+                                    80 câu hỏi
+                                </p>
+                                <p>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+                                    Thời gian: 40 phút
+                                </p>
+                            </div>
+                            <button class="my-exam__list--item__info--btn">Làm bài thi</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- End My List Exam -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+
+    <script>
+        function ShowUserMenu() {
+            $('.dropdown-content').toggle()
+        }
+    </script>
+</body>
+
+</html>

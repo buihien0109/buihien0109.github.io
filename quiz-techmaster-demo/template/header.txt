@@ -1,0 +1,226 @@
+
+<div class="header">
+    <div class="header__inner">
+        <button class="btn-responsive__wrapper">
+            <div class="btn-responsive--inner">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </button>
+        <div class="menu-mobile">
+            <ul class="dropdown-menu__list">
+                <li class="menu__link">
+                    <a href="#">
+                        <span class="menu__icon">
+                            <i class="fa fa-code" aria-hidden="true"></i>
+                        </span>
+                        <span>Web Front End</span>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <span class="menu__icon">
+                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                        </span>
+                        <span>Kiến trúc máy tính</span>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <span class="menu__icon">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                        </span>
+                        <span>Cấu trúc dữ liệu giải thuật</span>
+                    </a>
+                </li>
+                <li class="menu__link">
+                    <a href="#">
+                        <span class="menu__icon">
+                            <i class="fa fa-database" aria-hidden="true"></i>
+                        </span>
+                        <span>Hệ thống mạng và máy tính</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="header__logo-container">
+            <a href="./index.html" class="header__logo-wrap">
+                <img src="https://techmaster.vn/resources/image/new_logo.png" alt="" class="techmaster-logo">
+            </a>
+        </div>
+        <div class="header__left">
+            <div class="dropdown-button">
+                <div class="dropdown--open-on-hover dropdown--topics dropdown">
+                    <a href="javascript:void(0)" class="dropdown--toggle">
+                        <span><i class="fa fa-th" aria-hidden="true"></i></span>
+                        <span>DANH MỤC</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li class="h100p">
+                            <ul class="dropdown-menu__list">
+                                <li class="menu__link">
+                                    <a href="./category.html">
+                                        <span class="menu__icon">
+                                            <i class="fa fa-code" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Web Front End</span>
+                                    </a>
+                                </li>
+                                <li class="menu__link">
+                                    <a href="#">
+                                        <span class="menu__icon">
+                                            <i class="fa fa-codepen" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Kiến trúc máy tính</span>
+                                    </a>
+                                </li>
+                                <li class="menu__link">
+                                    <a href="#">
+                                        <span class="menu__icon">
+                                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Cấu trúc dữ liệu giải thuật</span>
+                                    </a>
+                                </li>
+                                <li class="menu__link">
+                                    <a href="#">
+                                        <span class="menu__icon">
+                                            <i class="fa fa-database" aria-hidden="true"></i>
+                                        </span>
+                                        <span>Hệ thống mạng và máy tính</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="header__search-wrapper">
+                <div class="header__search">
+                    <span class="input-group">
+                        <input type="text" name="" id="header-search-field" class="form-control">
+                        <span class="input-group-btn">
+                            <button type="submit" class="btn btn-link">
+                                <span>
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </span>
+                            </button>
+                        </span>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="header__right">
+            <div class="user-nav">
+                <i class="fa fa-user user-top-menu" aria-hidden="true" data-toggle="modal"
+                    data-target="#modal-signin" style="color: white"></i>
+            </div>
+
+
+            <div class="modal fade" id="modal-signin" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li class="nav-item" style="flex: 1">
+                                <a class="nav-link active" id="sign-in-tab" data-toggle="tab"
+                                    href="#sign-in-div" role="tab">Đăng nhập</a>
+                            </li>
+                            <li class="nav-item" style="flex: 1">
+                                <a class="nav-link" id="sign-up-tab" data-toggle="tab" href="#sign-up-div"
+                                    role="tab">Đăng
+                                    ký</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane fade show active" id="sign-in-div" role="tabpanel">
+                                <form>
+                                    <div class="modal-login-item">
+                                        <input type="text" placeholder="Email" id="sign-in-email" required>
+                                    </div>
+                                    <div class="modal-login-item">
+                                        <input type="password" placeholder="Password" id="sign-in-password"
+                                            required>
+                                    </div>
+                                    <div class="modal-login-item-half">
+                                        <label style="display:none" class="checkbox-remember-me">Nhớ tài khoản
+                                            <input type="checkbox" id="sign-in-remember">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <div style="cursor: pointer;" onclick="openForgotPassword()">
+                                            <i class="fa fa-question-circle"></i> Quên mật khẩu</div>
+                                    </div>
+                                    <div style="margin-bottom: 2rem;">
+                                        <button type="button" class="btn btn-green btn-login-modal"
+                                            id="btn-sign-in">Đăng
+                                            nhập</button>
+                                    </div>
+                                    <div class="text-center" style="margin-bottom: 1rem;">
+                                        Hoặc đăng nhập bằng
+                                    </div>
+                                    <div class="text-center">
+                                        <div class="fab google-sign-in">
+                                            <img src="./image/facebook.png">
+                                        </div>
+                                        <div class="fab facebook-sign-in">
+                                            <img src="./image/google.png">
+                                        </div>
+                                        <div class="fab github-sign-in">
+                                            <img src="./image/github-sign.svg">
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="tab-pane fade show" id="sign-up-div" role="tabpanel">
+                                <form>
+                                    <div class="modal-login-item">
+                                        <input type="text" placeholder="Họ tên" id="sign-up-fullname" required>
+                                    </div>
+                                    <div class="modal-login-item">
+                                        <input type="text" placeholder="Email" id="sign-up-email" required>
+                                    </div>
+                                    <div class="modal-login-item">
+                                        <input type="text" placeholder="Điện thoại" id="sign-up-phone" required>
+                                    </div>
+                                    <div class="modal-login-item">
+                                        <input type="password" placeholder="Mật khẩu" id="sign-up-password"
+                                            required>
+                                    </div>
+                                    <div class="modal-login-item">
+                                        <input type="password" placeholder="Nhập lại mật khẩu"
+                                            id="sign-up-retype-password" required>
+                                    </div>
+                                    <div class="modal-login-item">
+                                        <button type="button" class="btn btn-green btn-login-modal"
+                                            id="btn-sign-up">Đăng
+                                            ký</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="forgot-password" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <form class="modal-login-form">
+                            <div style="padding-top: 1px" class="modal-login-item text-center">
+                                <h2>Quên mật khẩu</h2>
+                            </div>
+                            <div class="modal-login-item">
+                                <input type="text" placeholder="Email" id="forgot-password-email" required>
+                            </div>
+                            <button type="button" class="btn btn-green btn-login-modal"
+                                id="btn-forgot-password">Gửi
+                                mail trợ giúp</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="blank_block" id="overlay">
+        </div>
+    </div>
+</div>
