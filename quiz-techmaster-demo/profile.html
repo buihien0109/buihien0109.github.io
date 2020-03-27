@@ -40,7 +40,7 @@
                             <a href="./profile.html">Hồ sơ cá nhân</a>
                         </li>
                         <li class="menu__link">
-                            <a href="/user/dashboard/giao-dich">Lịch sử giao dịch</a>
+                            <a href="#">Lịch sử giao dịch</a>
                         </li>
                     </ul>
                 </div>
@@ -85,17 +85,17 @@
                 </div>
             </li>
             <li class="bold">
-                <a href="/user/dashboard/khoa-hoc" class="waves-effect waves-cyan collapsible-header">
+                <a href="./my-exam.html" class="waves-effect waves-cyan collapsible-header">
                     <i class="fa fa-bookmark-o"></i> Bài thi của tôi
                 </a>
             </li>
             <li class="bold">
-                <a href="/user/dashboard/profile" class="waves-effect waves-cyan collapsible-header">
+                <a href="./profile.html" class="waves-effect waves-cyan collapsible-header">
                     <i class="fa fa-user"></i> Hồ sơ cá nhân
                 </a>
             </li>
             <li class="bold">
-                <a href="/user/dashboard/giao-dich" class="waves-effect waves-cyan collapsible-header">
+                <a href="#" class="waves-effect waves-cyan collapsible-header">
                     <i class="fa fa-money"></i> Lịch sử giao dịch
                 </a>
             </li>
@@ -320,7 +320,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropit/0.5.1/jquery.cropit.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cropit/0.5.1/jquery.cropit.min.js"></script>
     <script src="./js/main.js"></script>
     <script>
         $('.modal-close').click(function () {
@@ -332,28 +332,46 @@
         }
 
         //Crop image
-        let avatarBase64Encode = '';
         $(document).ready(function () {
             $('.image-editor').cropit({
-                imageState: {
-                    src: '',
-                },
-                width: 150,
-                height: 150,
+                exportZoom: 1.25,
+                imageBackground: true,
+                imageBackgroundBorderWidth: 50,
             });
 
-            $('.rotate-cw').click(function () {
-                $('.image-editor').cropit('rotateCW');
-            });
-            $('.rotate-ccw').click(function () {
-                $('.image-editor').cropit('rotateCCW');
-            });
-
-            $('.export').click(function () {
+            $('.export').click(function() {
                 var imageData = $('.image-editor').cropit('export');
-                uploadAvatarBase64(imageData);
+                window.open(imageData);
             });
+            // $('.image-editor').cropit({
+            //     imageState: {
+            //         src: '',
+            //     },
+            //     width: 150,
+            //     height: 150,
+            // });
+
+            // $('.rotate-cw').click(function () {
+            //     $('.image-editor').cropit('rotateCW');
+            // });
+            // $('.rotate-ccw').click(function () {
+            //     $('.image-editor').cropit('rotateCCW');
+            // });
+
+            // $('.export').click(function () {
+            //     let imageData = $('.image-editor').cropit('export');
+            //     console.log(imageData)
+            //     uploadAvatarBase64(imageData);
+            // });
+
+            // function uploadAvatarBase64(base64String) {
+            // let base64DataSplit = base64String.replace(/^data:image\/png;base64,/, '');
+            //     $("#avatar-preview").attr("src", base64DataSplit);
+            //     $('#myModal').modal('close')   
+            // }
         });
+
+        
     </script>
 </body>
 
