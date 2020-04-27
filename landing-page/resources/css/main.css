@@ -1,16 +1,12 @@
-    *:focus {
-        outline: none !important;
+    .body-content {
+        padding: 3rem 0;
     }
     .container--wrapper {
         background-color: #fff;
     }
 
-    .js .animate-box {
+    .ja .animate-box {
         opacity: 0;
-    }
-
-    .body-content {
-        padding: 3rem 0;
     }
 
     /* =============================
@@ -736,7 +732,7 @@
         position: relative;
         overflow: hidden;
         cursor: pointer;
-        color: white;
+        color: #34465C;
     }
 
     .tabs>li:before {
@@ -760,7 +756,8 @@
     }
 
     .tabs>li.active {
-        color: #50555a;
+        color: #fff;
+        background-color: #34465C;
     }
 
     .tabs>li.active:before {

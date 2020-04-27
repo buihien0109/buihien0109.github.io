@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./resources/fontawesome/all.min.css">
+    <link rel="stylesheet" href="./resources/fontawesome/all.min.css"> 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://techmaster.vn/media/resources/css/style.css">
     <link rel="stylesheet" href="./resources/css/main.css">
@@ -33,7 +34,7 @@
             <section id="video">
                 <div class="v-video video--container">
                     <div class="video--full-screen">
-                        <video src="/resources/image/bg-video.mp4" autoplay="true" loop="true" muted></video>
+                        <video src="./resources/image/bg-video.mp4" autoplay="true" loop="true" muted></video>
                     </div>
                     <div class="video--overlay"></div>
                     <div class="video__content">
@@ -70,7 +71,7 @@
                         <div class="track--container">
                             <div class="track__item animate-box fadeInUp animated" data-animate-effect="fadeInUp">
                                 <div class="track__thubnail">
-                                    <img src="/resources/image/web-frontend" alt="Lo-trinh-dao-tao-web-frontend" />
+                                    <img src="./resources/image/web-frontend" alt="Lo-trinh-dao-tao-web-frontend" />
                                 </div>
                                 <div class="track__info">
                                     <span class="track__name">Lộ trình đào tạo Web Front End chuyên sâu</span>
@@ -84,7 +85,7 @@
                             </div>
                             <div class="track__item animate-box fadeInUp animated" data-animate-effect="fadeInUp">
                                 <div class="track__thubnail">
-                                    <img src="/resources/image/java" alt="Lo-trinh-dao-tao-java-fullstack" />
+                                    <img src="./resources/image/java" alt="Lo-trinh-dao-tao-java-fullstack" />
                                 </div>
                                 <div class="track__info">
                                     <span class="track__name">Lộ trình đào tạo Java Web Fullstack</span>
@@ -98,7 +99,7 @@
                             </div>
                             <div class="track__item animate-box fadeInUp animated" data-animate-effect="fadeInUp">
                                 <div class="track__thubnail">
-                                    <img src="/resources/image/mobile" alt="Lo-trinh-dao-tao-mobile" />
+                                    <img src="./resources/image/mobile" alt="Lo-trinh-dao-tao-mobile" />
                                 </div>
                                 <div class="track__info">
                                     <span class="track__name">Lộ trình đào tạo lập trình di động mobile</span>
@@ -120,7 +121,7 @@
                     <div class="highlight--wrapper">
                         <div class="highlight__item">
                             <div class="item__image">
-                                <img src="/resources/image/a-job.png" alt="">
+                                <img src="./resources/image/a-job.png" alt="">
                             </div>
                             <div class="item__content">
                                 <h2 class="item__content__title">Cam kết việc làm</h2>
@@ -141,7 +142,7 @@
                         </div>
                         <div class="highlight__item">
                             <div class="item__image">
-                                <img src="/resources/image/a-time.png" alt="">
+                                <img src="./resources/image/a-time.png" alt="">
                             </div>
                             <div class="item__content">
                                 <h2 class="item__content__title">Thời lượng - Phương pháp đào tạo</h2>
@@ -165,7 +166,7 @@
                         </div>
                         <div class="highlight__item">
                             <div class="item__image">
-                                <img src="/resources/image/a-advantage.png" alt="">
+                                <img src="./resources/image/a-advantage.png" alt="">
                             </div>
                             <div class="item__content">
                                 <h2 class="item__content__title">Điểm nổi bật</h2>
@@ -197,12 +198,12 @@
             </section>
 
             <section id="person">
-                <img class="image__decorate01" src="/resources/image/person-1.png" alt="doi-tuong-tham-gia">
-                <img class="image__decorate02" src="/resources/image/person2.png" alt="doi-tuong-tham-gia">
+                <img class="image__decorate01" src="./resources/image/person-1.png" alt="doi-tuong-tham-gia">
+                <img class="image__decorate02" src="./resources/image/person2.png" alt="doi-tuong-tham-gia">
                 <div class="container body-content">
                     <div class="person--wrapper">
                         <div class="person__background">
-                            <img src="/resources/image/person.png" alt="doi-tuong-tham-gia">
+                            <img src="./resources/image/person.png" alt="doi-tuong-tham-gia">
                         </div>
                         <div class="person__info--wrapper">
                             <div class="person__info">
@@ -865,6 +866,15 @@
 
     <script src="./resources/jquery/jquery-3.4.1.min.js"></script>
     <script src="./resources/js/jquery.waypoints.min.js"></script>
+    <script>
+        (function() {
+            var cssFontawesome = document.createElement('link');
+            cssFontawesome.href = '/resources/fontawesome/all.min.css';
+            cssFontawesome.rel = 'stylesheet';
+            cssFontawesome.type = 'text/css';
+            document.head.appendChild(cssFontawesome);
+        })();
+    </script>
     <script>
         //Hightlight Image
         const panels = document.querySelectorAll('.panel');
