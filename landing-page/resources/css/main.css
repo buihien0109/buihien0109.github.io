@@ -261,7 +261,7 @@
     ============================= */
     #highlight {
         background-color: #fff;
-        background-image: url("/resources/image/Wave-14.3s-1920px.svg");
+        background-image: url("./resources/image/Wave-14.3s-1920px.svg");
         background-repeat: no-repeat;
         background-size: cover;
         
@@ -931,7 +931,7 @@
     /////////==CONTACT==//////////
     ============================= */
     #contact {
-        background-image: url("/resources/image/bg.JPG");
+        background-image: url("./resources/image/bg.JPG");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
