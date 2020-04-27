@@ -1,4 +1,4 @@
-;(function () {
+(function () {
 	
 	'use strict';
 
@@ -34,28 +34,6 @@
 			});
 		}
 
-	};
-
-
-	var counter = function() {
-		$('.js-counter').countTo({
-			 formatter: function (value, options) {
-	      return value.toFixed(options.decimals);
-	    },
-		});
-	};
-
-
-	var counterWayPoint = function() {
-		if ($('#cv-counter').length > 0 ) {
-			$('#cv-counter').waypoint( function( direction ) {
-										
-				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
-					setTimeout( counter , 400);					
-					$(this.element).addClass('animated');
-				}
-			} , { offset: '90%' } );
-		}
 	};
 
 	// Animations
@@ -202,33 +180,6 @@
 	};
 
 
-
-
-
-
-	var sliderMain = function() {
-		
-	  	$('#cv-hero .flexslider').flexslider({
-			animation: "fade",
-			slideshowSpeed: 5000,
-			directionNav: true,
-			start: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			},
-			before: function(){
-				setTimeout(function(){
-					$('.slider-text').removeClass('animated fadeInUp');
-					$('.flex-active-slide').find('.slider-text').addClass('animated fadeInUp');
-				}, 500);
-			}
-
-	  	});
-
-	};
-
 	var stickyFunction = function() {
 
 		var h = $('.image-content').outerHeight();
@@ -264,42 +215,17 @@
 
 	};
 
-	var owlCrouselFeatureSlide = function() {
-		$('.owl-carousel').owlCarousel({
-			animateOut: 'fadeOut',
-		   animateIn: 'fadeIn',
-		   autoplay: true,
-		   loop:true,
-		   margin:0,
-		   nav:true,
-		   dots: false,
-		   autoHeight: true,
-		   items: 1,
-		   navText: [
-		      "<i class='icon-arrow-left3 owl-direction'></i>",
-		      "<i class='icon-arrow-right3 owl-direction'></i>"
-	     	]
-		})
-	};
-
 	// Document on load.
 	$(function(){
 		fullHeight();
-		counter();
-		counterWayPoint();
 		contentWayPoint();
 		burgerMenu();
 
 		clickMenu();
-		// navActive();
 		navigationSection();
-		// windowScroll();
-
 
 		mobileMenuOutsideClick();
-		sliderMain();
 		stickyFunction();
-		owlCrouselFeatureSlide();
 	});
 
 
