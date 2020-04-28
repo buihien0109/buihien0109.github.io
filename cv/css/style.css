@@ -278,6 +278,7 @@ body.offcanvas #cv-aside {
     background: #f2f3f7;
     z-index: 999;
     position: fixed;
+    height: 100%;
 }
 
 body.offcanvas #cv-main,
@@ -590,6 +591,18 @@ body.offcanvas .cv-nav-toggle {
     }
     .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
         margin-left: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .timeline-centered .timeline-entry {
+        margin-left: 17px;
+    }
+    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
+        margin-left: 46px;
+    }
+    .timeline-centered:before {
+        margin-left: 17px;
     }
 }
 
