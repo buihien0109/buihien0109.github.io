@@ -551,10 +551,6 @@ body.offcanvas .cv-nav-toggle {
     margin-left: -9px;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p+p {
-    margin-top: 15px;
-}
-
 .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
     font-size: 20px;
     font-family: 'Roboto', sans-serif;
@@ -574,6 +570,10 @@ body.offcanvas .cv-nav-toggle {
     font-size: 16px;
     display: inline-block;
     margin-top: 1rem;
+}
+
+.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
+    margin-bottom: 10px;
 }
 
 @media (max-width: 768px) {
