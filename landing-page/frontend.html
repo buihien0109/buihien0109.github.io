@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./resources/css/cubrportfolio.min.css">
-    <script src="http://themesindustry.com/html/trax-2020/css/animate.min.css"></script>
+    <script src="./resources/css/animate.css"></script>
     <link rel="stylesheet" href="./resources/css/frontend.css">
 
     <title>Document</title>
@@ -320,7 +320,7 @@
                 <div class="student--wrapper">
                     <h1 class="fe__title">Sinh viên đã tốt nghiệp</h1>
                     <div class="student--container">
-                        <div class="student__cmt wow fadeInUp" data-wow-delay="300ms">
+                        <div class="student__cmt wow fadeInUp" data-wow-delay="1000ms">
                             <div class="cmt__content--wrapper">
                                 <div class="cmt__rate">
                                     <span><i class="fas fa-star"></i></span>
@@ -414,7 +414,7 @@
 
     <script src="./resources/jquery/jquery-3.4.1.min.js"></script>
     <script src="./resources/js/jquery.cubeportfolio.min.js"></script>
-    <script src="/resources/js/wow.js"></script>
+    <script src="./resources/js/wow.js"></script>
     <script src="./resources/js/jquery.waypoints.min.js"></script>
     <script>
         (function () {
@@ -440,20 +440,31 @@
             $(".cmt-content").height(maxHeight);
         }
 
+        if ($(".wow").length && $(window).outerWidth() >= 567) {
+            let wow = new WOW({
+                boxClass: 'wow',
+                animateClass: 'animated',
+                offset: 0,
+                mobile: false,
+                live: true
+            });
+            wow.init();
+        }
+
         $(document).ready(function () {
             setEqualHeight();
 
             /*Wow Animations*/
-            if ($(".wow").length && $(window).outerWidth() >= 567) {
-                let wow = new WOW({
-                    boxClass: 'wow',
-                    animateClass: 'animated',
-                    offset: 0,
-                    mobile: false,
-                    live: true
-                });
-                wow.init();
-            }
+            // if ($(".wow").length && $(window).outerWidth() >= 567) {
+            // let wow = new WOW({
+            //     boxClass: 'wow',
+            //     animateClass: 'animated',
+            //     offset: 0,
+            //     mobile: false,
+            //     live: true
+            // });
+            // wow.init();
+            // }
         })
     </script>
 </body>
