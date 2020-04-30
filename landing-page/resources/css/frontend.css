@@ -530,7 +530,7 @@ p {
 /////Cam nhan hoc vien/////
 =========================== */
 #price {
-    background-image: url('/resources/image/bg-price.png');
+    background-image: url('/resources/image/background-price.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
