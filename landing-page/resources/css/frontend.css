@@ -90,6 +90,19 @@ p {
     border-color: #44a4f2 !important;
 }
 
+.btn-primary.btn-outline {
+    background: transparent;
+    color: #2c98f0;
+    border: 2px solid #2c98f0;
+}
+
+.btn-primary.btn-outline:hover,
+.btn-primary.btn-outline:focus,
+.btn-primary.btn-outline:active {
+    background: #2c98f0;
+    color: #fff;
+}
+
 .position--center {
     display: flex;
     justify-content: center;
@@ -104,11 +117,16 @@ p {
     .body-content {
         padding: 0 0 3rem 0;
     }
+
     .fe__title {
         font-size: 24px;
         margin-bottom: 2rem;
     }
-
+}
+@media screen and (max-width: 576px) {
+    .body-content {
+        padding: 0;
+    }
 }
 
 /* ===========================
@@ -150,10 +168,11 @@ p {
     .person__img {
         width: 100%;
     }
-    
+
     .person__img {
         padding: 1rem;
     }
+
     .person__img--container {
         border: 2px solid #f9f9f9;
     }
@@ -197,9 +216,11 @@ p {
     .content__img {
         width: 100%;
     }
+
     .content__img {
         padding: 1rem;
     }
+
     .content__img--container {
         border: 2px solid #f9f9f9;
     }
@@ -285,9 +306,11 @@ p {
     #project {
         padding: 3rem 1rem;
     }
+
     #project .body-content {
         padding-top: 1rem;
     }
+
     .project .desc {
         opacity: 1;
         background: rgba(0, 0, 0, 0.4);
@@ -460,35 +483,44 @@ p {
     margin-top: 0 !important;
     margin-bottom: 1.5rem !important;
 }
+
 @media (max-width:576px) {
     #track {
         padding: 3rem 1rem;
     }
+
     .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
         margin-left: 45px;
     }
+
     .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
         width: 30px;
         height: 30px;
         line-height: 30px;
     }
+
     .timeline-centered .timeline-entry .timeline-entry-inner {
         margin-left: 0px;
     }
+
     .timeline-centered .timeline-entry {
         margin-left: 0px;
     }
+
     .timeline-centered:before {
         width: 2px;
         margin-left: 14px;
     }
+
     .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
         padding: 1rem;
     }
+
     .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
         font-size: 18px;
         margin-bottom: 1rem !important;
     }
+
     .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
         margin-left: 5px;
     }
@@ -497,43 +529,190 @@ p {
 /* ===========================
 /////Cam nhan hoc vien/////
 =========================== */
+#price {
+    background-image: url(/resources/image/bg-price.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    overflow: hidden;
+}
+
+#price .body-content{
+    padding: 3rem 0;
+}
+
+#price .fe__title {
+    color: #fff;
+}
+
+.price--wrapper {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+
+.price {
+    flex: 0 0 50%;
+}
+
+.price p {
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+.price__number {
+    display: inline-block;
+    font-size: 40px;
+    display: inline-block;
+    margin-bottom: 2.5rem;
+}
+
+.price__month {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.price__btns .btn {
+    font-size: 14px;
+    letter-spacing: 0;
+    margin: 0;
+}
+
+.price__btns .btn.btn__register {
+    margin-right: 1rem;
+}
+
+.highlight {
+    flex: 0 0 50%;
+}
+
+.highlight h1 {
+    font-size: 32px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.highlight p {
+    display: flex;
+    font-weight: 300;
+}
+
+.highlight p span {
+    display: inline-block;
+    color: var(--icon-clor);
+    margin-right: .8rem;
+}
+
+@media (max-width:768px) {
+    #price {
+        padding: 3rem 1rem;
+    }
+
+    #price .body-content {
+        padding: 0;
+    }
+
+    .price--wrapper {
+        flex-direction: column;
+    }
+
+    .price,
+    .highlight {
+        width: 100%;
+    }
+
+    .price {
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgb(0, 0, 0, .125);
+    }
+
+    .highlight {
+        padding-top: 2rem;
+    }
+}
+
+@media (max-width:576px) {
+    .price__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    .price p {
+        text-align: center;
+    }
+    .price__number {
+        margin-bottom: 0;
+        font-size: 32px;
+    }
+    .price__btns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .btn__register, .btn__advisory {
+        flex: 0 0 48%;
+    }
+    .highlight h1 {
+        font-size: 28px;
+    }
+}
+
+
+/* ===========================
+/////Cam nhan hoc vien/////
+=========================== */
 .student--container {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
+
 .student__cmt {
-    max-width: 350px;
-    border: 1px solid rgb(0, 0, 0, .125);
+    width: 320px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    border: 1px solid rgb(0, 0, 0, .125);
+    margin: 1rem;
 }
+
 .cmt__content--wrapper {
-    background-color: #fff;
     padding: 1.5rem 2rem 1rem 2rem;
 }
+
 .cmt__rate {
     margin-bottom: 1.5rem;
 }
+
 .cmt__rate span {
     display: inline-block;
     color: #FFC107;
 }
+
 .cmt-content h2 {
     font-size: 20px;
     color: var(--icon-clor);
     margin-bottom: 1rem;
 }
+
 .cmt__author {
     display: flex;
     flex-direction: row;
     align-items: center;
     background-color: #F6F9FE;
     padding: 1.5rem 2rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
 }
+
 .cmt__author:before {
-    opacity: 1;
+    content: '';
+    opacity: 0;
     visibility: hidden;
     position: absolute;
     left: 0;
@@ -547,8 +726,10 @@ p {
     -o-transform: translateY(100%);
     transform: translateY(100%);
     background-size: 200% auto;
-    background-image: linear-gradient(to right, #5192e1 0%, #23ced5 51%, #5192e1 100%);
+    background-color: #5192e1;
+    transition: transform .4s ease-out;
 }
+
 .student__cmt:hover .cmt__author:before {
     opacity: 1;
     visibility: visible;
@@ -558,21 +739,50 @@ p {
     -o-transform: translateY(0);
     transform: translateY(0);
 }
+
+.student__cmt:hover .cmt__author-name h3,
+.student__cmt:hover .cmt__author-name p {
+    color: #fff;
+}
+
 .cmt__author-avatar {
     margin-right: 1rem;
 }
-.cmt__author-avatar img{
+
+.cmt__author-avatar img {
     width: 80px;
     height: 80px;
-    border-radius: 50%;
+    border-radius: 100px;
+    object-fit: cover;
 }
 
 .cmt__author-name h3 {
-    font-size: 20px;
+    font-size: 18px;
     color: var(--main-color);
     font-weight: 500;
 }
+
 .cmt__author-name p {
     font-size: 14px;
     color: #8596AC;
+}
+
+@media (max-width: 768px) {
+    #student {
+        padding: 3rem 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .student__cmt {
+        width: 100%;
+        margin: 0;
+        margin-bottom: 2rem;
+    }
+    .cmt__content--wrapper {
+        padding: 1.5rem 1rem 1rem 1rem;
+    }
+    .cmt__author {
+        padding: 1.5rem 1rem;
+    }
 }
