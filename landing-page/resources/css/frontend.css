@@ -493,3 +493,86 @@ p {
         margin-left: 5px;
     }
 }
+
+/* ===========================
+/////Cam nhan hoc vien/////
+=========================== */
+.student--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.student__cmt {
+    max-width: 350px;
+    border: 1px solid rgb(0, 0, 0, .125);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cmt__content--wrapper {
+    background-color: #fff;
+    padding: 1.5rem 2rem 1rem 2rem;
+}
+.cmt__rate {
+    margin-bottom: 1.5rem;
+}
+.cmt__rate span {
+    display: inline-block;
+    color: #FFC107;
+}
+.cmt-content h2 {
+    font-size: 20px;
+    color: var(--icon-clor);
+    margin-bottom: 1rem;
+}
+.cmt__author {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #F6F9FE;
+    padding: 1.5rem 2rem;
+}
+.cmt__author:before {
+    opacity: 1;
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    -webkit-transform: translateY(100%);
+    -moz-transform: translateY(100%);
+    -ms-transform: translateY(100%);
+    -o-transform: translateY(100%);
+    transform: translateY(100%);
+    background-size: 200% auto;
+    background-image: linear-gradient(to right, #5192e1 0%, #23ced5 51%, #5192e1 100%);
+}
+.student__cmt:hover .cmt__author:before {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+}
+.cmt__author-avatar {
+    margin-right: 1rem;
+}
+.cmt__author-avatar img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.cmt__author-name h3 {
+    font-size: 20px;
+    color: var(--main-color);
+    font-weight: 500;
+}
+.cmt__author-name p {
+    font-size: 14px;
+    color: #8596AC;
+}
