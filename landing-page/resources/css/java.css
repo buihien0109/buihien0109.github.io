@@ -257,40 +257,40 @@ p {
 }
 
 .form__input.success input {
-	border-color: #2ecc71;
+    border-color: #2ecc71;
 }
 
 .form__input.error input {
-	border-color: #e74c3c;
+    border-color: #e74c3c;
 }
 
 .form__input i {
-	visibility: hidden;
-	position: absolute;
-	top: 13px;
-	right: 10px;
+    visibility: hidden;
+    position: absolute;
+    top: 13px;
+    right: 10px;
 }
 
 .form__input.success i.fa-check-circle {
-	color: #2ecc71;
-	visibility: visible;
+    color: #2ecc71;
+    visibility: visible;
 }
 
 .form__input.error i.fa-exclamation-circle {
-	color: #e74c3c;
-	visibility: visible;
+    color: #e74c3c;
+    visibility: visible;
 }
 
 .form__input small {
-	color: #e74c3c;
-	position: absolute;
-	bottom: -22px;
-	left: 0;
-	visibility: hidden;
+    color: #e74c3c;
+    position: absolute;
+    bottom: -22px;
+    left: 0;
+    visibility: hidden;
 }
 
 .form__input.error small {
-	visibility: visible;
+    visibility: visible;
 }
 
 .form__input input {
@@ -431,6 +431,76 @@ p {
     .person__img--container {
         padding: 0;
     }
+}
+
+/* ===========================
+/////Số liệu/////
+=========================== */
+#number-counter {
+    position: relative;
+    clear: both;
+    margin-bottom: 5em;
+}
+
+.number-counters {
+    padding: 3em 0;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+}
+
+.number-counters .overlay {
+    z-index: 0;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.number-counters .icon {
+    width: 100px;
+    height: 100px;
+    display: table;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.number-counters .icon i {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    color: #2c98f0;
+    background: #fff;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.number-counters .counter-wrap {
+    border: 1px solid red !important;
+}
+
+.number-counters .number-counter {
+    font-size: 40px;
+    display: block;
+    color: white;
+    font-family: "Quicksand", Arial, sans-serif;
+    width: 100%;
+    font-weight: 700;
+    margin-bottom: .3em;
+}
+
+.number-counters .number-counter-label {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 14px;
+    margin-bottom: 2em;
+    display: block;
 }
 
 /* ===========================
@@ -1230,20 +1300,22 @@ p {
     #student {
         padding: 3rem 1rem
     }
+
     .owl-prev,
     .owl-next {
         display: none;
-    } 
+    }
 }
 
 @media (max-width:576px) {
     #student {
         padding: 3rem 1rem;
     }
+
     .owl-prev,
     .owl-next {
         display: inline-block;
-    } 
+    }
 }
 
 

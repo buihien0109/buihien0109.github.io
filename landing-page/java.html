@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./resources/css/cubeportfolio.min.css">
     <link rel="stylesheet" href="./resources/css/animate.css">
     <link rel="stylesheet" href="./resources/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./resources/css/flexslider.css">
     <link rel="stylesheet" href="./resources/css/java.css">
 
     <title>Document</title>
@@ -58,7 +59,8 @@
                                         <small>Error message</small>
                                     </div>
                                     <div class="form__input">
-                                        <button class="btn btn__advisory btn--animate" id="btn__advisory">Nhận tư vấn</button>
+                                        <button class="btn btn__advisory btn--animate" id="btn__advisory">Nhận tư
+                                            vấn</button>
                                     </div>
                                 </div>
                             </div>
@@ -109,6 +111,44 @@
                             </div>
                         </div>
                     </div>
+            </section>
+
+            <section id=number>
+                <div class="container">
+                    <div class="number--wrapper">
+                        <div id="number-counter" class="number-counters"
+                            style="background-image: url(./resources/image/cover_bg_1.jpg);"
+                            data-stellar-background-ratio="0.5">
+                            <div class="overlay"></div>
+                            <div class="number-narrow-content">
+                                <div class="row">
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-3 text-center animate-box">
+                                        <span class="number-counter js-counter" data-from="0" data-to="100"
+                                            data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="number-counter-label">Giờ thực hành LAB</span>
+                                    </div>
+                                    <div class="col-md-3 text-center animate-box">
+                                        <span class="number-counter js-counter" data-from="0" data-to="40"
+                                            data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="number-counter-label">Giờ hỗ trợ trực tuyến</span>
+                                    </div>
+                                    <div class="col-md-3 text-center animate-box">
+                                        <span class="number-counter js-counter" data-from="0" data-to="50"
+                                            data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="number-counter-label">Video hướng dẫn</span>
+                                    </div>
+                                    <div class="col-md-3 text-center animate-box">
+                                        <span class="number-counter js-counter" data-from="0" data-to="45"
+                                            data-speed="5000" data-refresh-interval="50"></span>
+                                        <span class="number-counter-label">Dự án mẫu</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </section>
 
             <section id="service">
@@ -581,6 +621,8 @@
     <script src="./resources/js/wow.js"></script>
     <script src="./resources/js/jquery.waypoints.min.js"></script>
     <script src="./resources/js/owl.carousel.min.js"></script>
+    <script src="./resources/js/jquery.flexslider-min.js"></script>
+    <script src="./resources/js/jquery.countTo.js"></script>
     <script>
         (function () {
             var cssFontawesome = document.createElement('link');
@@ -617,6 +659,14 @@
 
             $(".service__item--wrapper").height(maxHeight);
         }
+
+        var counter = function () {
+            $('.js-counter').countTo({
+                formatter: function (value, options) {
+                    return value.toFixed(options.decimals);
+                },
+            });
+        };
 
         var carousel = function () {
             $('.carousel-testimony').owlCarousel({
@@ -717,6 +767,7 @@
             setEqualHeight();
             setEqualHeightService();
             carousel();
+            counter();
 
 
         })
