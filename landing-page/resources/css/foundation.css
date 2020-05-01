@@ -722,178 +722,69 @@ p {
 /* ===========================
 /////Lộ trình/////
 =========================== */
-.timeline-centered {
-    position: relative;
-    margin-bottom: 30px;
+.fancy-collapse-panel .panel-default>.panel-heading {
+    padding: 0;
 }
 
-.timeline-centered:before,
-.timeline-centered:after {
-    content: " ";
-    display: table;
-}
-
-.timeline-centered:after {
-    clear: both;
-}
-
-.timeline-centered:before,
-.timeline-centered:after {
-    content: " ";
-    display: table;
-}
-
-.timeline-centered:after {
-    clear: both;
-}
-
-.timeline-centered:before {
-    content: '';
-    position: absolute;
+.panel-heading a {
+    padding: 20px 25px;
     display: block;
-    width: 4px;
-    background: #f2f3f7;
-    top: 20px;
-    bottom: 20px;
-    margin-left: 29px;
-}
-
-.timeline-centered .timeline-entry {
-    position: relative;
-    margin-top: 5px;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    clear: both;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner {
-    position: relative;
-    margin-left: -20px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
-    display: block;
-    width: 40px;
-    height: 40px;
-    background: #2c98f0;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    border-radius: 50%;
-    text-align: center;
-    -moz-box-shadow: 0 0 0 5px #f2f3f7;
-    -webkit-box-shadow: 0 0 0 5px #f2f3f7;
-    box-shadow: 0 0 0 5px #f2f3f7;
-    line-height: 40px;
-    float: left;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon i {
+    width: 100%;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-family: "Quicksand", Arial, sans-serif;
+    background-color: var(--icon-clor);
     color: #fff;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-2 {
-    background: #ec5453;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-3 {
-    background: #f9bf3f;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-4 {
-    background: #a84cb8;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-5 {
-    background: #2fa499;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
-    background: #fff;
-    width: 20px;
-    height: 20px;
-    margin-left: 10px;
-}
-
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
     position: relative;
-    background: #f2f3f7;
-    padding: 1.5em;
-    margin-left: 60px;
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding;
-    background-clip: padding-box;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label:after {
-    content: '';
-    display: block;
+.panel {
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -ms-box-shadow: none !important;
+    -o-box-shadow: none !important;
+    box-shadow: none !important;
+    border: none;
+}
+
+.panel-heading a:after {
+    font-family: "icomoon";
+    content: "\e115";
     position: absolute;
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 9px 9px 9px 0;
-    border-color: transparent #f2f3f7 transparent transparent;
-    left: 0;
-    top: 10px;
-    margin-left: -9px;
+    right: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    top: 50%;
+    line-height: 1;
+    margin-top: -7px;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p+p {
-    margin-top: 15px;
+.panel-heading a.collapsed:after {
+    content: "\e114";
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label p {
-    font-size: 15px;
-    color: rgb(0, 0, 0, .7);
+.panel-heading a.collapsed {
+    background: #f2f3f7;
+    border: 1px solid #e6e6e6 !important;
+    color: #333333;
 }
 
-.timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 0 !important;
-    margin-bottom: 1.5rem !important;
+.panel-body {
+    padding: 1.5em;
+    margin-top: 5px;
+    border: 1px solid #e6e6e6 !important;
 }
 
 @media (max-width:576px) {
     #track {
         padding: 3rem 1rem;
-    }
-
-    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
-        margin-left: 45px;
-    }
-
-    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon {
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-    }
-
-    .timeline-centered .timeline-entry .timeline-entry-inner {
-        margin-left: 0px;
-    }
-
-    .timeline-centered .timeline-entry {
-        margin-left: 0px;
-    }
-
-    .timeline-centered:before {
-        width: 2px;
-        margin-left: 14px;
-    }
-
-    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label {
-        padding: 1rem;
-    }
-
-    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-label h2 {
-        font-size: 18px;
-        margin-bottom: 1rem !important;
-    }
-
-    .timeline-centered .timeline-entry .timeline-entry-inner .timeline-icon.color-none {
-        margin-left: 5px;
     }
 }
 
@@ -1229,6 +1120,7 @@ p {
 #gallery {
     background-color: #f6f6f6;
 }
+
 @media (max-width: 991.98px) {
     .main-content {
         width: 100%;
@@ -1337,21 +1229,25 @@ p {
 .heading {
     margin: 0 0 60px;
 }
+
 .heading h2 {
     font-weight: 800;
     margin-bottom: 20px;
     font-size: 36px !important;
     line-height: 46px;
 }
+
 .contact-info {
     overflow: hidden;
     margin: 0 0 10px;
 }
+
 .contact-info h5 {
     font-weight: 700;
     font-size: 18px !important;
     line-height: 28px;
 }
+
 .contact-form {
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
     padding: 50px;
@@ -1453,10 +1349,12 @@ p {
     #advisory {
         padding: 3rem 1rem;
     }
+
     .contact-form {
         padding: 40px 25px 35px;
         margin: 40px 0 0;
     }
+
     .heading h2 {
         font-size: 28px !important;
         line-height: 38px;
