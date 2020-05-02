@@ -471,6 +471,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    #services {
+        padding: 3rem 1rem
+    }
     .services {
         margin-bottom: 4em;
     }
@@ -744,7 +747,7 @@ p {
         font-style: 28px;
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
-        color: #000;
+        color: #fff;
     }
 
     .project .desc span {
@@ -1374,7 +1377,11 @@ p {
     margin-bottom: 20px;
     transition: all .3s ease;
 }
-
+@media (max-width: 768px) {
+    #gallery {
+        padding: 3rem 1rem;
+    }
+}
 @media (max-width: 575.98px) {
     .main-content .photos .photo-item img {
         height: 200px;
