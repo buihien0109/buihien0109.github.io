@@ -853,9 +853,12 @@
         const email = document.getElementById('email');
         const phone = document.getElementById('phone');
         const btn = document.getElementById('btn__submit-form');
+        const input = document.getElementsByClassName('f_input-validate')
 
         btn.addEventListener('click', e => {
             e.preventDefault();
+            Array.from(input).map(e => e.classList.remove('error'))
+            Array.from(input).map(e => e.classList.remove('success'))
             checkInputs();
         });
 
