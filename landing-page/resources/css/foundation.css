@@ -152,7 +152,7 @@ p {
     }
 
     .java__title {
-        font-size: 24px;
+        font-size: 24px !important;
         margin-bottom: 2rem;
     }
 }
@@ -411,8 +411,8 @@ p {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000;
-    opacity: .4;
+    background-color: #333;
+    opacity: .8;
     z-index: 1;
 }
 
@@ -1209,7 +1209,6 @@ p {
 .student__quote {
     font-style: italic;
     font-weight: 300;
-    /* border: 1px solid rgba(0,0,0,.125); */
     padding: 3rem 1rem 2rem 1rem;
     background-color: #fff;
     position: relative;
@@ -1405,6 +1404,7 @@ p {
 @media (max-width: 575.98px) {
     .main-content .photos .photo-item img {
         height: 200px;
+        object-fit: cover;
     }
 }
 
@@ -1559,7 +1559,7 @@ p {
     }
 
     .heading h2 {
-        font-size: 28px !important;
+        font-size: 24px !important;
         line-height: 38px;
     }
 }
