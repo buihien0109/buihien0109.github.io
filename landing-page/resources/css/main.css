@@ -273,7 +273,7 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: #225470;
+    background-color: #333;
     z-index: 1;
     opacity: .85;
 }
@@ -372,13 +372,13 @@ p {
 }
 
 .track--container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 2rem 2rem;
 }
 
 .track__item {
+    display: inline-block;
     max-width: 370px;
     background-color: #fff;
     border-radius: 4px;
@@ -388,10 +388,6 @@ p {
 
 .track__item:hover {
     box-shadow: none;
-}
-
-.track__item:nth-child(2) {
-    margin: 0 3rem;
 }
 
 .track__thubnail img {
@@ -424,18 +420,16 @@ p {
     justify-content: space-between;
 }
 
-.track__btn--read-more,
-.track__btn--register {
-    flex: 0 0 48%;
+.track__btn--read-more {
+    flex: 0 0 100%;
 }
 
 .track__btn--read-more {
     display: inline-block;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
     text-align: center;
-    padding: 6px 12px;
-    color: #34465C;
-    background-color: #fff;
-    border: 2px solid #34465C;
     outline: none;
     cursor: pointer;
     text-decoration: none !important;
@@ -444,24 +438,8 @@ p {
     overflow: hidden;
 }
 
-.track__btn--register {
-    display: inline-block;
-    text-align: center;
-    padding: 6px 12px;
-    margin-right: .5rem;
-    color: #fff;
-    background-color: #34465C;
-    border: 2px solid #34465C;
-    outline: none;
-    cursor: pointer;
-    text-decoration: none !important;
-    position: relative;
-    z-index: 20;
-    overflow: hidden;
-    transition: all .3s ease-out;
-}
 
-.track__btn--register:after {
+.track__btn--read-more:after {
     background: #fff;
     content: "";
     height: 155px;
@@ -475,16 +453,11 @@ p {
     z-index: -10;
 }
 
-.track__btn--register:hover {
-    color: #fff;
-}
-
 .track__btn--read-more:hover {
     color: #fff;
-    background-color: #34465C;
 }
 
-.track__btn--register:hover:after {
+.track__btn--read-more:hover:after {
     left: 120%;
     transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
 }
@@ -767,10 +740,110 @@ p {
 }
 
 /* ===========================
-/////Time line/////
+/////Foundation/////
 =========================== */
+#tl-foundation {
+    min-height: 500px;
+    background-color: #f9f9f9;
+    position: relative;
+}
+.tl-foundation__arrow--down {
+    position: absolute;
+    display: block;
+    background: #fff;
+    color: var(--icon-color);
+    font-size: 25px;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+    visibility: visible;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+   
+    cursor: pointer;
+    border: none;
+    outline: 0 !important;
+    z-index: 99;
+    transition: all .3s ease-in-out;
+}
 
+.tl-foundation__arrow--down:hover,
+.tl-foundation__arrow--down:active,
+.tl-foundation__arrow--down:focus {
+    outline: 0 !important;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+}
 
+.tl-foundation__arrow--down span {
+    display: block;
+    vertical-align: middle;
+}
+
+/* ===========================
+/////Track/////
+=========================== */
+#tl-track {
+    min-height: 500px;
+    
+}
+
+/* ===========================
+/////Học phí/////
+=========================== */
+.price__item {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+.price__item-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 0;
+}
+.price__status {
+    display: inline-block;
+    padding: .5rem 1rem;
+    background-color: peru;
+    margin-bottom: 2rem;
+}
+.price__item-content {
+    padding: 1rem;
+}
+.price__item-content p {
+    display: flex;
+}
+.price__item-content p span {
+    display: inline-block;
+    color: var(--icon-color);
+    margin-right: .5rem;
+}
+.price__number {
+    font-size: 2rem;
+}
+.price__item-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    overflow: hidden;
+}
+.price__btn--register {
+    display: inline-block;
+    letter-spacing: 0;
+    font-size: 14px;
+    padding: 8px 30px !important;
+    margin: 0;
+}
 
 /* ===========================
 /////Liên hệ/////
