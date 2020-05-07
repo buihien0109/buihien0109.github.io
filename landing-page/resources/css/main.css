@@ -785,6 +785,13 @@ p {
 /* ===========================
 /////Track/////
 =========================== */
+#tl-track {
+	background-image: url(../image/gray-bg.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
 .tl__detail--wrapper {
 	margin-bottom: 2rem;
 }
