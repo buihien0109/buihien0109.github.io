@@ -89,6 +89,7 @@ $(document).ready(function(){
         resetExpInput()
     })
 
+    //Function effect
     function updateExpInput() {
         expInput.text(exp)
     }
@@ -105,10 +106,39 @@ $(document).ready(function(){
 })
 
 //Toggle Theme
+let whiteBg = {
+    '--primary-color': '#2980B9',
+    '--bold-color': '#2255A4',
+    '--bolder-color': '#1B308F',
+    '--boldest-color': '#241062',
+    '--light-color': '#44A9C4',
+    '--lighter-color': '#7AD9CA',
+    '--bg-color': '#fff',
+    '--text-color': '#414141',
+    '--bg-sub-color': '#464646'
+}
+
+let darkBg = {
+    '--primary-color': '#333333',
+    '--bold-color': '#262626',
+    '--bolder-color': '#202020',
+    '--boldest-color': '#1A1A1A',
+    '--light-color': '#4E4E4E',
+    '--lighter-color': '#858585',
+    '--bg-color': '#223239',
+    '--text-color': '#fff',
+    '--bg-sub-color': '#bbd7e4'
+}
+
 $('.toggle__container').click(function(){
     if(!$('#toggle__handle').is(':checked')) {
-        $('.container--wrapper').addClass('dark')
+        for(let color in darkBg) {
+            document.documentElement.style.setProperty(color, darkBg[color]);
+        }
+        
     } else {
-        $('.container--wrapper').removeClass('dark')
+        for(let color in whiteBg) {
+            document.documentElement.style.setProperty(color, whiteBg[color]);
+        }
     }
 })

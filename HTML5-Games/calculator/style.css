@@ -13,6 +13,10 @@
     --boldest-color: #241062;
     --light-color: #44A9C4;
     --lighter-color: #7AD9CA;
+
+    --bg-color: #fff;
+    --text-color: #414141;
+    --bg-sub-color: #464646;
 }
 
 html {
@@ -20,7 +24,7 @@ html {
 }
 
 body {
-    background-image: url(./pngwing.com.png);
+    background-image: url('./pngwing.com.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -36,7 +40,7 @@ body::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--bg-sub-color);
     opacity: 0.9;
 }
 
@@ -46,8 +50,12 @@ body::before {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #fff;
+    background-color: var(--bg-color);
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: var(--text-color)
 }
 
 .c_input {
@@ -56,6 +64,7 @@ body::before {
     padding: .3rem 1rem;
     display: flex;
     flex-direction: column;
+    margin-bottom: 1rem;
 }
 
 .c_ex {
@@ -75,10 +84,10 @@ body::before {
 
 span {
     display: inline-block;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     background-color: var(--light-color);
-    line-height: 50px;
+    line-height: 60px;
     text-align: center;
     margin: 4px;
     border-radius: 4px;
@@ -88,8 +97,8 @@ span {
 }
 
 tr:nth-child(1) span {
-    height: 40px;
-    line-height: 40px;
+    height: 46px;
+    line-height: 46px;
 }
 
 span:hover {
@@ -97,7 +106,7 @@ span:hover {
 }
 
 span.enter {
-    width: 108px;
+    width: 128px;
     text-transform: uppercase;
     color: #fff;
     background-color: var(--boldest-color);
@@ -121,7 +130,7 @@ span.enter {
 }
 
 .toggle__handle:checked+.toggle__container::before {
-    box-shadow: inset 0px 0px 0px 20px #1bc67c;
+    box-shadow: inset 0px 0px 0px 20px #222;
 }
 
 .toggle__handle:checked+.toggle__container::after {
@@ -137,7 +146,7 @@ span.enter {
     display: block;
     width: 40px;
     height: 20px;
-    background-color: #b0afaf;
+    background-color: #fff;
     border-radius: 20px;
 }
 
