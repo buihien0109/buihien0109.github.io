@@ -71,7 +71,8 @@ body::before {
     font-size: 1.5rem;
     color: var(--primary-color);
     min-height: 36px;
-    text-overflow: ellipsis:
+    text-overflow: ellipsis;
+    letter-spacing: 3px;
 }
 
 .c_result {
@@ -84,9 +85,10 @@ body::before {
 
 span {
     display: inline-block;
+    background-color: var(--light-color);
+    font-size: 1.2rem;
     width: 60px;
     height: 60px;
-    background-color: var(--light-color);
     line-height: 60px;
     text-align: center;
     margin: 4px;
@@ -119,7 +121,7 @@ span.enter {
 
 .char {
     background-color: var(--light-color);
-    color: var(--primary-color);
+    color: var(--bolder-color);
 }
 
 
