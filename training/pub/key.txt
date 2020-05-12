@@ -1,0 +1,10 @@
+pug -w . -o ./html -P
+
+-w xem những thay đổi trong thư mục hiện tại
+-o ./html đầu ra là trong thư mục html
+-P làm đẹp code đầu ra
+
+
+pug -w ./ -o ../ -p ./template -P
+
+pug -w ./ -o ../ -P
