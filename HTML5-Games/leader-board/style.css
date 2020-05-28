@@ -238,6 +238,58 @@ span {
     transition: transform .3s ease-out;
 }
 
+.card__thumbnail {
+    margin-top: 2rem;
+}
+.card__thumbnail img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.card__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    margin-top: 1rem;
+}
+.card__info__name {
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+.card__result {
+    display: flex;
+    color: #fff;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.card__result__item {
+    flex: 0 0 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card__result__item:nth-child(2) {
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+}
+.card__result__item p:first-child {
+    margin-bottom: 1rem;
+}
+.card__note {
+    padding: 1rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
 .lb--wrapper--active {
     transform: translateX(0);
 }
@@ -319,11 +371,22 @@ span {
 
 
 .ribbon-2 {
-    width: 150px;
-    height: 50px;
+    width: 120px;
+    height: 40px;
     background: #21749a;
     top: 20px;
     left: -8px;
+}
+
+.ribbon-2 p {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: 700;
 }
 
 .ribbon-2:before {
@@ -337,8 +400,8 @@ span {
 .ribbon-2:after {
     height: 0;
     width: 0;
-    border-top: 25px solid transparent;
-    border-bottom: 25px solid transparent;
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
     border-left: 15px solid #21749a;
     right: -15px;
 }
