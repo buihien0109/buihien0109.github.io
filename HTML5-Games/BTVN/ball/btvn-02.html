@@ -70,6 +70,7 @@
             /* Bổ xung logic chặn bóng không đi quá tường trái và phải
             */
             move() {
+                console.log('move');
                 if (this.x > canvas.width - this.radius - 1) {
                     this.dx = - this.dx;
                 }
@@ -99,7 +100,7 @@
         //Di chuyển sang trái và phải 
         addEventListener('keydown', function (event) {
             if (event.keyCode == 39) {
-                ball.dx += 10;;
+                ball.dx += 10;
             }
             if (event.keyCode == 37) {
                 ball.dx += -10;
