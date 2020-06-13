@@ -289,14 +289,14 @@ ul li {
     border: 1px solid transparent;
     cursor: pointer;
     display: flex;
-    padding: 7px 24px 7px 16px;
+    padding: 10px 24px 10px 16px;
     position: relative;
     align-items: center;
     border-right: 0;
     text-decoration: none;
     -webkit-box-align: center;
     flex: 1;
-    font-size: 14px;
+    font-size: 16px;
     word-break: break-word;
     font-weight: 500;
     line-height: 1.5;
