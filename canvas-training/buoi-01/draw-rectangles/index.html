@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangles</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById('canvas')
+        var CANVAS_WIDTH = 700
+        var CANVAS_HEIGHT = 700
+        canvas.width = CANVAS_WIDTH
+        canvas.height = CANVAS_HEIGHT
+        canvas.style.border = '2px solid blue'
+
+        var ctx = canvas.getContext('2d');
+        //Định nghĩa 1 hình chữ nhật
+        // ctx.rect(dx, dy, width, height);
+        // dx : Vị trí của hình theo chiều x
+        // dy : Vị trí của hình theo chiều y
+        // width : Kích thước chiều ngang của hình chữ nhật
+        // width : Kích thước chiều cao của hình chữ nhật
+
+        //Cách 1
+        // ctx.fillStyle='red';
+        // ctx.rect(0, 0, 200, 100);
+        // ctx.fill()
+
+        //Cách 2
+        ctx.fillStyle='red';
+        ctx.fillRect(0, 0, 200, 100);
+
+        ctx.fillStyle='blue';
+        ctx.fillRect(300, 200, 200, 100);
+
+        ctx.fillStyle='yellow';
+        ctx.fillRect(500, 600, 200, 100);
+
+        //Khi kích thước của hình vượt quá kích thước của canvas thì sẽ bị ẩn đi
+
+        //Bài tập 1 : Vẽ hình ở các điểm đặc biệt trong thẻ canvas
+        //Bài tập 2 : Vẽ quốc kỳ của Thái Lan
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Line</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById('canvas')
+        var CANVAS_WIDTH = 700
+        var CANVAS_HEIGHT = 700
+        canvas.width = CANVAS_WIDTH
+        canvas.height = CANVAS_HEIGHT
+        canvas.style.border = '2px solid blue'
+
+        var ctx = canvas.getContext('2d');
+        // Để vẽ line thì cần 2 điểm để nối với nhau
+        // Method :
+        // moveTo(x,y) định điểm bắt đầu
+        // lineTo(x,y) định điểm kết thúc
+        // lineWidth = ? : width của line
+        // lineCap = butt | round | square : radius của line
+        // lineJoin = '' : Create a rounded corner when the two lines meet:
+
+
+        //Vẽ 1 đoạn thẳng
+        ctx.beginPath()
+        ctx.strokeStyle = "#072448"
+        ctx.lineWidth=20;
+        ctx.lineCap='square';
+        ctx.moveTo(20,500);
+        ctx.lineTo(500,500);
+        ctx.stroke()
+
+        //Bài tập : Vẽ một hình vuông bằng đoạn thẳng
+        ctx.beginPath()
+        ctx.fillStyle='#54d2d2';
+        ctx.strokeStyle = "#ff6150"
+        ctx.lineWidth=20;
+        ctx.lineCap='square';
+        ctx.moveTo(20,20);
+        ctx.lineTo(200,20);
+        ctx.lineTo(200,200)
+        ctx.lineTo(20,200)
+        ctx.lineTo(20,20)
+        ctx.stroke()
+        ctx.fill()
+
+    </script>
+</body>
+</html>

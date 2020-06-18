@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Circle</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById('canvas')
+        var CANVAS_WIDTH = 700
+        var CANVAS_HEIGHT = 700
+        canvas.width = CANVAS_WIDTH
+        canvas.height = CANVAS_HEIGHT
+        canvas.style.border = '2px solid blue'
+
+        var ctx = canvas.getContext('2d');
+        //Định nghĩa một hình tròn
+        // ctx.arc(x, y, radius, startAngle, endAngle, counterClockwise)
+        // x : Vị trí tâm chiều x
+        // x : Vị trí tâm chiều y
+        // radius : Bán kính
+        // startAngle : Góc bắt đầu
+        // endAngle : Góc kết thúc
+        // counterClockwise : Vẽ theo chiều ngược kim đồng hồ không?
+
+        // ctx.fillStyle = '#f5f5f5'
+        // ctx.strokeStyle = 'red'
+        // ctx.arc(300, 300, 200, 0, 2 * Math.PI, false)
+        // //Có thể giải thích radius
+        // ctx.stroke()
+        // ctx.fill()
+        
+        // Bài tập 1 : Vẽ quốc kỳ của Nhật Bản
+        // Bài tập 2 : sử dụng vòng lặp để vẽ hình tròn
+
+
+        //Vòng lặp hiển thị hình tròn
+        var color = ["#072448", "#54d2d2", "#ffcb00", "#f8aa4b","#ff6150"]
+        var minRadius = 50
+        var maxRadius = 150
+        var numberCircle = 5
+
+        function renderCircle() {
+            setInterval(() => {
+                ctx.clearRect(0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
+                for(var i = 0; i < numberCircle; i++) {
+                    drawCircle()
+                }
+            },2000)
+        }
+
+        renderCircle()
+
+        function randomNumber(min, max) {
+            return Math.ceil(Math.random() * (max - min) + min)
+        }
+        function drawCircle() { 
+            var randomRadius = randomNumber(minRadius, maxRadius)
+            var randomX = randomNumber(0, CANVAS_WIDTH)
+            var randomY = randomNumber(0, CANVAS_HEIGHT)
+            var randomColor = randomNumber(0, color.length)
+            var randomStroke = randomNumber(0, color.length)
+            ctx.beginPath()
+            ctx.fillStyle = color[randomColor]
+            ctx.strokeStyle = color[randomStroke]
+            ctx.arc(randomX, randomY, randomRadius, 0, 2 * Math.PI, false)
+            ctx.stroke()
+            ctx.fill()
+            ctx.closePath()
+        }
+    </script>
+</body>
+</html>

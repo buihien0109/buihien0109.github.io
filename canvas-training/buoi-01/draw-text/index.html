@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById('canvas')
+        var CANVAS_WIDTH = 700
+        var CANVAS_HEIGHT = 700
+        canvas.width = CANVAS_WIDTH
+        canvas.height = CANVAS_HEIGHT
+        canvas.style.border = '2px solid blue'
+
+        var ctx = canvas.getContext('2d');
+
+        //Text
+        var text = "Canvas Text";
+        ctx.fillStyle = "#FF0000";
+        ctx.font = "30px Arial";
+        ctx.fillText(text, 100, 50);
+
+        //Text + boxshaw
+        var textShadow = "Canvas Text Shawdow";
+        ctx.fillStyle = "#54d2d2";
+        ctx.font = "50px Arial";
+
+        ctx.shadowColor = 'rgba(0,0,0,0.8)';
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        ctx.shadowBlur    = 40;
+
+        ctx.fillText(text, 300, 200);
+        
+    </script>
+</body>
+</html>

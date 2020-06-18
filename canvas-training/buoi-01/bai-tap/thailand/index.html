@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thailand</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        let canvas = document.getElementById('canvas')
+        canvas.width = window.innerWidth
+        canvas.height = window.innerHeight
+        canvas.style.background = '#f9f9f9'
+
+        let ctx = canvas.getContext('2d');
+        // Màu cờ thái lan :  #ED2124, #fff, #241D4F, #fff, #ED2124
+        const WIDTH = 900
+        const HEIGHT = 600
+
+        ctx.beginPath()
+        ctx.fillStyle = "#ED2124"
+        ctx.fillRect(510,0, WIDTH, 100)
+        ctx.closePath()
+
+        ctx.beginPath()
+        ctx.fillStyle = "#fff"
+        ctx.fillRect(510,100, WIDTH, 100)
+        ctx.closePath()
+
+        ctx.beginPath()
+        ctx.fillStyle = "#241D4F"
+        ctx.fillRect(510,200, WIDTH, 200)
+        ctx.closePath()
+
+        ctx.beginPath()
+        ctx.fillStyle = "#fff"
+        ctx.fillRect(510,400, WIDTH, 100)
+        ctx.closePath()
+
+        ctx.beginPath()
+        ctx.fillStyle = "#ED2124"
+        ctx.fillRect(510,500, WIDTH, 100)
+        ctx.closePath()
+    </script>
+</body>
+</html>

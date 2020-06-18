@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rectangles</title>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById('canvas')
+        var CANVAS_WIDTH = 700
+        var CANVAS_HEIGHT = 700
+        canvas.width = CANVAS_WIDTH
+        canvas.height = CANVAS_HEIGHT
+        canvas.style.border = '2px solid blue'
+
+        var ctx = canvas.getContext('2d');
+
+        ctx.fillStyle='red';
+        ctx.shadowColor = 'rgba(0,0,0,0.8)';
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        ctx.shadowBlur    = 10;
+        ctx.fillRect(0, 0, 200, 100);
+
+        ctx.fillStyle='blue';
+        ctx.shadowColor = 'rgba(0,0,0,0.6)';
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        ctx.shadowBlur    = 20;
+        ctx.fillRect(300, 200, 200, 100);
+
+        ctx.fillStyle='yellow';
+        ctx.shadowColor = 'rgba(0,0,0,0.4)';
+        ctx.shadowOffsetX = 5;
+        ctx.shadowOffsetY = 5;
+        ctx.shadowBlur    = 40;
+        ctx.fillRect(500, 600, 200, 100);       
+    </script>
+</body>
+</html>

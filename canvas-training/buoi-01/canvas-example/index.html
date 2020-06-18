@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Example</title>
+</head>
+<body>
+    <!-- Tạo tag canvas có id là "canvas" -->
+    <canvas id="canvas"></canvas>
+
+    <script>
+        //Truy cập vào ele có id là canvas
+        var canvas = document.getElementById('canvas')
+        // var canvas = document.querySelector('#canvas')
+        console.log(canvas);
+
+        //Mặc định canvas có width : 300, height: 150, background-color: #fff
+        //Thay đổi propery của canvas
+        canvas.width = 700
+        canvas.height = 700
+        // canvas.style.background = 'red'
+        canvas.style.border = '2px solid blue'
+        // canvas.style.borderRadius = '700px'
+
+        var ctx = canvas.getContext('2d');
+        console.log(ctx);
+         
+    </script>
+</body>
+</html>
