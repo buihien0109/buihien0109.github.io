@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+
+    <script>
+        var canvas = document.getElementById('canvas')
+        var CANVAS_WIDTH = 700
+        var CANVAS_HEIGHT = 700
+        canvas.width = CANVAS_WIDTH
+        canvas.height = CANVAS_HEIGHT
+        canvas.style.border = '2px solid blue'
+
+        var ctx = canvas.getContext('2d');
+
+        // Bước 1 : Chọn loại gradient. Có hai loại gradient khác nhau dùng trong tô màu được thể hiện qua hai phương thức sau đây:
+        // Ø  Phương thức createLinearGradient(x,y,x1,y1) dùng để tạo gradient dạng thẳng
+        // Ø  Phương thức createRadialGradient(x,y,r,x1,y1,r1) dùng để tạo gradient dạng cong.
+        // Bước 2 : Xác định các điểm dừng màu sắc. Để xác định các điểm dừng màu sắc của gradient ta cần sử dụng phương thức addColorStop(). Các điểm dừng màu sắc của gradient nằm trong đoạn [0-1].
+        // Bước 3 : Ví dụ 1: Sử dụng phương thức createLinearGradient() để vẽ gradient dạng thẳng.
+        //-------------------------------------------------------------------------------
+
+        // Phương thức createLinearGradient() dùng để tạo một đối tượng dải màu dạng đường thẳng
+        // Dải màu này có thể dùng để đổ lên hình chữ nhật, hình tròn, đường thẳng, chữ, v.v…
+        // Có thể sử dụng đối tượng này làm giá trị cho thuộc tính strokeStyle hoặc fillStyle.
+        // createLinearGradient(x0,y0,x1,y1)
+        // x0	Tọa độ X của điểm bắt đầu dải màu
+        // y0	Tọa độ Y của điểm bắt đầu dải màu
+        // x1	Tọa độ X của điểm kết thúc dải màu
+        // y1	Tọa độ Y của điểm kết thúc dải màu
+        //-------------------------------------------------------------------------------
+
+        // Phương thức createRadialGradient() dùng để tạo ra một đối tượng dải màu dạng tròn.
+        // createRadialGradient(x,y,r,x1,y1,r1)
+        // x0	Tọa độ X của tâm đường tròn bắt đầu dải màu
+        // y0	Tọa độ Y của tâm đường tròn bắt đầu dải màu
+        // r0	Bán kính của đường tròn bắt đầu
+        // x1	Tọa độ X của tâm đường tròn kết thúc dải màu
+        // y1	Tọa độ Y của tâm đường tròn kết thúc dải màu
+        // r1	Bán kính của đường tròn kết thúc
+        //-------------------------------------------------------------------------------
+
+        // Phương thức addColorStop() quy định màu sắc và vị trí của màu trong dải màu.
+        // Phương thức addColorStop() được sử dụng cùng với createLinearGradient() hoặc createRadialGradient().
+        // Lưu ý: Bạn có thể gọi phương thức addColorStop() nhiều lần để thay đổi màu sắc trong dải màu.Nếu bạn thiếu phương thức này, dài màu sẽ không hiển thị.Bạn cần tạo ít nhất một phương thức addColorStop() để hiển thị dải màu.
+        //-------------------------------------------------------------------------------
+        var grd = ctx.createLinearGradient(0, 0, 500, 0)
+        grd.addColorStop(0, "red")
+        grd.addColorStop(0.5, "blue")
+        grd.addColorStop(1, "white")
+
+        ctx.fillStyle = grd;
+        ctx.rect(0, 0, 700, 600);
+        ctx.fill()
+        ctx.stroke()
+
+
+        // var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+        // grd.addColorStop(0, "red");
+        // grd.addColorStop(1, "white");
+        // ctx.fillStyle = grd;
+        // ctx.fillRect(10, 10, 150, 100);
+
+    </script>
+</body>
+
+</html>

@@ -40,7 +40,47 @@
         ctx.fillRect(500, 600, 200, 100);
 
         //Khi kích thước của hình vượt quá kích thước của canvas thì sẽ bị ẩn đi
+        
+        //----------------------------------------------------------------------
+        //Mô hình hóa bằng đối tượng
+        // Cách 1 : Sử dụng JS prototype
+        // function Rect(dx, dy, width, height, color) {
+        //     this.dx = dx
+        //     this.dy = dy
+        //     this.width = width
+        //     this.height = height
+        //     this.color = color
+        // }
+        // rect.prototype.draw = function() {
+        //     ctx.fillStyle= this.color;
+        //     ctx.fillRect(this.dx, this.dy, this.width, this.width);
+        // }
 
+        // var rectViolet = new Rect(0,300,100,200,'violet')
+        // console.log(rectViolet)
+        // rectViolet.draw()
+        
+        //----------------------------------------------------------------------
+        //Cách 2: Sử dụng Class trong ES6
+        class Rect {
+            constructor(dx, dy, width, height, color) {
+                this.dx = dx
+                this.dy = dy
+                this.width = width
+                this.height = height
+                this.color = color
+            }
+            draw() {
+                ctx.fillStyle= this.color;
+                ctx.fillRect(this.dx, this.dy, this.width, this.width);
+            }
+        }
+
+        var rectViolet = new Rect(0,300,100,200,'violet')
+        console.log(rectViolet)
+        rectViolet.draw()
+
+        //----------------------------------------------------------------------
         //Bài tập 1 : Vẽ hình ở các điểm đặc biệt trong thẻ canvas
         //Bài tập 2 : Vẽ quốc kỳ của Thái Lan
 
