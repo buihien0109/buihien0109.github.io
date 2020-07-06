@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .text-red {
+            color: red; 
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <p>data : {{ title }}</p>
+        <p>method : {{ sayHello() }}</p>
+        <div v-html="message">
+            
+        </div>
+
+    </div>
+
+    <script src="https://unpkg.com/vue/dist/vue.js"></script>
+    <script>
+        new Vue({
+            el : '#app',
+            data : {
+                title : 'Hello',
+                message : '<p class="text-red">This is text red</p>'
+            },
+            methods : {
+                sayHello : function() {
+                    return "Hello"
+                }
+            }
+        })
+    </script>
+</body>
+</html>
