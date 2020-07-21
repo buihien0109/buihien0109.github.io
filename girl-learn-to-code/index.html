@@ -4,12 +4,12 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Musico</title>
+    <title>GirlsLearn2Code</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- <link rel="manifest" href="site.webmanifest"> -->
-    <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.png"> -->
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
@@ -30,10 +30,6 @@
 </head>
 
 <body>
-    <!--[if lte IE 9]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-        <![endif]-->
-
     <!-- header-start -->
     <header>
         <div class="header-area ">
@@ -44,7 +40,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo.png" alt="">
+                                        <img src="./img/logo-main1.png" alt="logo">
                                     </a>
                                 </div>
                             </div>
@@ -52,12 +48,12 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a class="active" href="index.html">home</a></li>
-                                            <li><a href="about.html">About</a></li>
-                                            <li><a href="track.html">tracks</a></li>
-                                            <li><a href="#">blog</a> </li>
-                                            <li><a href="#">pages</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a class="active" href="#">Giới thiệu</a></li>
+                                            <li><a href="#">Phần thưởng</a></li>
+                                            <li><a href="#">Học viên</a></li>
+                                            <li><a href="#">Giảng viên</a> </li>
+                                            <li><a href="#">Tài trợ</a></li>
+                                            <li><a href="#">Blog</a></li>
                                         </ul>
                                     </nav>
                                 </div>
@@ -66,8 +62,8 @@
                                 <div class="social_icon text-right">
                                     <ul>
                                         <li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
-                                        <li><a href="#"> <i class="fa fa-instagram"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-youtube-play"></i> </a></li>
+                                        <li><a href="#"> <i class="fa fa-envelope"></i> </a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -90,7 +86,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="slider_text text-center ">
-                            <h3>Girl learn to code </h3>
+                            <h3>Girls learn to code </h3>
                         </div>
                     </div>
                 </div>
@@ -102,7 +98,7 @@
     <!-- about_area  -->
     <div class="about_area">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row">
                 <div class="col-xl-5 col-md-6">
                     <div class="about_thumb">
                         <img class="img-fluid" src="https://colorlib.com/preview/theme/accent/images/hero_3.jpg" alt="">
@@ -111,11 +107,29 @@
                 <div class="col-xl-7 col-md-6">
                     <div class="about_info">
                         <h3>Giới thiệu chương trình</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore perspiciatis hic vitae
-                            architecto impedit recusandae?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore perspiciatis hic vitae
-                            architecto impedit recusandae?</p>
+                        <p class="d-flex">
+                            <span><i class="fa fa-check"></i></span>
+                            Đối tượng tham gia: Nữ học sinh, sinh viên từ cấp 3 đến sau đại học 5 năm
+                        </p>
+                        <p class="d-flex">
+                            <span><i class="fa fa-check"></i></span>
+                            Khi tham gia chương trình, các nữ học viên được miễn 100% học phí
+                        </p>
+                        <p class="d-flex">
+                            <span><i class="fa fa-check"></i></span>
+                            Thời gian: Chương trình diễn ra trong vòng 3 tuần, vào thứ 7 và chủ nhật (&nbsp;3&nbsp;tiếng
+                            / buổi&nbsp;)
+                        </p>
+
+                        <div id="form__student--register" class="white-popup mfp-hide">
+                            <h2>Popup content</h2>
+                            <p>Some text here..</p>
+                        </div>
+
+                        <a href="form__student--register" class="btn btn__effect btn-open-form-student-register">
+                            <span><i class="fa fa-paper-plane" aria-hidden="true"></i></span>
+                            Tham gia ngay
+                        </a>
                     </div>
                 </div>
             </div>
@@ -123,29 +137,72 @@
     </div>
     <!--/ about_area  -->
 
-    <!-- about_area  -->
-    <div class="about_area">
+    <section class="best-pricing pricing-padding">
         <div class="container">
-            <div class="row align-items-center">
-                <div class="col-xl-7 col-md-6">
-                    <div class="about_info">
-                        <h3>Phần thưởng</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore perspiciatis hic vitae
-                            architecto impedit recusandae?</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia labore perspiciatis hic vitae
-                            architecto impedit recusandae?</p>
+            <!-- Section Tittle -->
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-6 col-md-8">
+                    <div class="java__title text-center wow fadeInUp" data-wow-delay="400ms">
+                        <h2 class="java__title">Phần thưởng</h2>
                     </div>
                 </div>
-                <div class="col-xl-5 col-md-6">
-                    <div class="about_thumb">
-                        <img class="img-fluid" src="https://colorlib.com/preview/theme/accent/images/hero_3.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- gift_area  -->
+    <div class="gift_area">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-4 col-md-6">
+                    <div class="gift_item">
+                        <div class="gift_thumbnail">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                                alt="">
+                        </div>
+                        <div class="gift_content">
+                            <h3>Khóa học lập trình online</h3>
+                            <p>Dù bạn muốn xây dựng nên một trang web đơn giản hay phức tạp đều không thể thiếu chúng.
+                                Khóa học này sẽ cung cấp cho bạn những kiến thức cơ bản, cần thiết nhất để bắt đầu trên
+                                con đường trở thành một lập trình viên web chuyên nghiệp.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="gift_item">
+                        <div class="gift_thumbnail">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1521123845560-14093637aa7d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="">
+                        </div>
+                        <div class="gift_content">
+                            <h3>Bộ sách ebook</h3>
+                            <p>Với kho tài liệu phong phú bạn có thể tự mình học lập trình mà không cần đến trường lớp
+                                hay tham gia vào các khóa học chính quy. Nếu bạn nằm trong số những người đang tự mày mò
+                                học code thì đây là kho sách ebook mà chắc chắn bạn không muốn bỏ qua..</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6">
+                    <div class="gift_item">
+                        <div class="gift_thumbnail">
+                            <img class="img-fluid"
+                                src="https://images.unsplash.com/photo-1595044786953-63deb4f50454?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                                alt="">
+                        </div>
+                        <div class="gift_content">
+                            <h3>Áo thun in hình ngộ nghĩnh</h3>
+                            <p>Những chiếc áo thun không chỉ giúp cho bạn nữ cảm thấy dễ chịu, thoải mái, với những mẫu
+                                áo thun có in hình ngộ nghĩnh còn đem lại cho bạn nữ những nét duyên dáng, đang yêu và
+                                cực cá tính nữa.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!--/ about_area  -->
+    <!--/ gift_area  -->
 
     <!-- youtube_video_area  -->
     <div class="youtube_video_area">
@@ -153,7 +210,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-65">
-                        <h3>Phỏng vấn người trong cuộc</h3>
+                        <h3>Phỏng vấn học viên</h3>
                     </div>
                 </div>
             </div>
@@ -253,9 +310,9 @@
                     </div>
                 </div>
             </div>
-            <div class="row grid">
-                <div class="col-xl-5 col-lg-5 grid-item cat1 col-md-6">
-                    <div class="single-gallery mb-30">
+            <div class="row grid grid__photo">
+                <div class="col-xl-5 col-lg-5 grid-item col-md-6">
+                    <div class="single-gallery mb-30 photo__item">
                         <div class="portfolio-img">
                             <img src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
                                 alt="">
@@ -269,8 +326,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-7 col-lg-7 grid-item cat3 cat4 col-md-6">
-                    <div class="single-gallery mb-30">
+                <div class="col-xl-7 col-lg-7 grid-item col-md-6">
+                    <div class="single-gallery mb-30 photo__item">
                         <div class="portfolio-img">
                             <img src=https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
                                 alt="">
@@ -284,8 +341,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 grid-item cat4 col-md-6">
-                    <div class="single-gallery mb-30">
+                <div class="col-xl-4 col-lg-6 grid-item col-md-6">
+                    <div class="single-gallery mb-30 photo__item">
                         <div class="portfolio-img">
                             <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
                                 alt="">
@@ -299,8 +356,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
-                    <div class="single-gallery mb-30">
+                <div class="col-xl-4 col-lg-6 grid-item col-md-6">
+                    <div class="single-gallery mb-30 photo__item">
                         <div class="portfolio-img">
                             <img src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
                                 alt="">
@@ -314,8 +371,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-lg-6 grid-item cat2 col-md-6">
-                    <div class="single-gallery mb-30">
+                <div class="col-xl-4 col-lg-6 grid-item col-md-6">
+                    <div class="single-gallery mb-30 photo__item">
                         <div class="portfolio-img">
                             <img src="https://images.unsplash.com/photo-1522202757859-7472b0973c69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1350&q=80"
                                 alt="">
@@ -330,6 +387,16 @@
                     </div>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="position--center">
+                        <a href="#" class="btn btn__effect btn-load-image">Xem
+                            thêm
+                            <span class="total__image"></span>
+                        </a>
+                    </p>
+                </div>
+            </div>
         </div>
     </div>
     <!--/ gallery -->
@@ -340,7 +407,7 @@
             <div class="row">
                 <div class="col-xl-12">
                     <div class="section_title text-center mb-65">
-                        <h3>Girl to code blog</h3>
+                        <h3>GirlsLearn2code Blog</h3>
                     </div>
                 </div>
             </div>
@@ -351,10 +418,10 @@
                             <img class="card-img rounded-0"
                                 src="https://images.unsplash.com/photo-1557425493-6f90ae4659fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
                                 alt="">
-                            <a href="#" class="blog_item_date">
+                            <div class="blog_item_date">
                                 <h3>02</h3>
-                                <p>Tháng 06</p>
-                            </a>
+                                <p>Th 06</p>
+                            </div>
                         </div>
 
                         <div class="blog_details">
@@ -376,10 +443,10 @@
                             <img class="card-img rounded-0"
                                 src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80"
                                 alt="">
-                            <a href="#" class="blog_item_date">
-                                <h3>12</h3>
-                                <p>Tháng 06</p>
-                            </a>
+                            <div class="blog_item_date">
+                                <h3>06</h3>
+                                <p>Th 06</p>
+                            </div>
                         </div>
 
                         <div class="blog_details">
@@ -401,10 +468,10 @@
                             <img class="card-img rounded-0"
                                 src="https://images.unsplash.com/photo-1522202757859-7472b0973c69?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjF9&auto=format&fit=crop&w=1350&q=80"
                                 alt="">
-                            <a href="#" class="blog_item_date">
-                                <h3>23</h3>
-                                <p>Tháng 06</p>
-                            </a>
+                            <div class="blog_item_date">
+                                <h3>12</h3>
+                                <p>Th06</p>
+                            </div>
                         </div>
 
                         <div class="blog_details">
@@ -425,7 +492,26 @@
     </section>
     <!--================Blog Area =================-->
 
-    <!-- link that opens popup -->
+    <!--================Teacher Area =================-->
+    <section class="teacher_area section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-65">
+                        <h3>Tuyển giảng viên</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+            </div>
+        </div>
+    </section>
+    <!--================Teacher Area =================-->
+
+    <button class="back-to-top" type="button">
+        <span><i class="fa fa-chevron-up"></i></span>
+    </button>
 
     <!-- JS here -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -462,10 +548,133 @@
 
     <script>
         $(function () {
+            let amountScrolled = 200
+
+            $(window).scroll(function () {
+                $(window).scrollTop() > amountScrolled ? $("button.back-to-top").addClass("show") : $("button.back-to-top").removeClass("show")
+            }), $("button.back-to-top").click(function () {
+                return $("html, body").animate({
+                    scrollTop: 0
+                }, 800), !1
+            });
+
             $('audio').audioPlayer({
 
             });
         });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            //LOAD MORE IMAGE
+            let images = [
+                {
+                    link: "./img/techmaster/hd-06.jpg",
+                    size: "col-xl-7 col-lg-7"
+                },
+                {
+                    link: "./img/techmaster/hd-07.jpg",
+                    size: "col-xl-5 col-lg-5"
+                },
+                {
+                    link: "./img/techmaster/hd-08.jpg",
+                    size: "col-xl-5 col-lg-5"
+                },
+                {
+                    link: "./img/techmaster/hd-09.jpg",
+                    size: "col-xl-7 col-lg-7"
+                },
+                {
+                    link: "./img/techmaster/hd-10.jpg",
+                    size: "col-xl-4 col-lg-6"
+                },
+                {
+                    link: "./img/techmaster/hd-11.jpg",
+                    size: "col-xl-4 col-lg-6"
+                },
+                {
+                    link: "./img/techmaster/hd-12.jpg",
+                    size: "col-xl-4 col-lg-6"
+                },
+                {
+                    link: "./img/techmaster/hd-13.jpg",
+                    size: "col-xl-7 col-lg-7"
+                },
+                {
+                    link: "./img/techmaster/hd-14.jpg",
+                    size: "col-xl-5 col-lg-5"
+                },
+                {
+                    link: "./img/techmaster/hd-15.jpg",
+                    size: "col-xl-4 col-lg-6"
+                },
+                {
+                    link: "./img/techmaster/hd-16.jpg",
+                    size: "col-xl-4 col-lg-6"
+                },
+                {
+                    link: "./img/techmaster/hd-17.jpg",
+                    size: "col-xl-4 col-lg-6"
+                },
+                {
+                    link: "./img/techmaster/hd-18.jpg",
+                    size: "col-xl-5 col-lg-5"
+                },
+                {
+                    link: "./img/techmaster/hd-19.jpg",
+                    size: "col-xl-7 col-lg-7"
+                }
+            ]
+            const NUM_INC = 5
+            const NUM_IMAGE_WEB = 6
+            const TOTAL_IMAGE = 19
+            let countNum = 0
+
+            function getImage() {
+                let totalImageInWeb = $('.photo__item').length
+                return TOTAL_IMAGE - totalImageInWeb
+            }
+
+            let totalImageLoadMore = getImage()
+            $('.total__image').text(`(${totalImageLoadMore})`)
+
+            $('.btn-load-image').click(function (e) {
+                e.preventDefault()
+
+                let content = ''
+                let imageLoad = images.slice(countNum * NUM_INC, (countNum + 1) * NUM_INC)
+                countNum += 1
+
+                for (let i = 0; i < imageLoad.length; i++) {
+                    let img = imageLoad[i]
+                    content += `
+                                <div class="col-xl-4 col-lg-6 grid-item ${img.size}">
+                                    <div class="single-gallery mb-30 photo__item">
+                                        <div class="portfolio-img">
+                                            <img src="${img.link}"
+                                                alt="logo">
+                                        </div>
+                                        <div class="gallery_hover">
+                                            <a class="popup-image"
+                                                href="${img.link}"
+                                                class="hover_inner">
+                                                <i class="ti-plus"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            `
+                }
+                $('.grid__photo').append(content)
+
+                let imageEnable = getImage()
+                $('.total__image').text(`(${imageEnable})`)
+
+                if (imageEnable <= 0) {
+                    $('.btn-load-image').remove()
+                }
+            })
+        })
     </script>
 </body>
 
