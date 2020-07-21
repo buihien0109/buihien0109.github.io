@@ -1315,7 +1315,7 @@ h3 {
 	cursor: pointer;
 	text-decoration: none !important;
 	position: relative;
-	z-index: 20;
+	z-index: 0;
 	overflow: hidden;
 }
 
@@ -1419,6 +1419,7 @@ h3 {
 }
 
 .gift_content {
+	background-color: #fff;
 	padding: 30px 0 20px 10px;
 	box-shadow: 0 10px 20px 0 rgba(221, 221, 221, 0.3);
 }
