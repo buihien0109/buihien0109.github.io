@@ -1,0 +1,77 @@
+.site-section {
+    padding: 2.5em 0;
+}
+
+@media (min-width: 768px) {
+    .site-section {
+        padding: 5em 0;
+    }
+}
+
+.site-section.site-section-sm {
+    padding: 4em 0;
+}
+
+.heading .caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: .2rem;
+}
+
+.heading h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #0779e4;
+}
+
+.post-entry-1 h2 {
+    font-size: 20px;
+}
+
+.post-entry-1 h2 a {
+    color: #000;
+}
+
+.post-entry-1 .thumbnail-link {
+    display: block;
+}
+
+
+.post-entry-1 .meta {
+    color: #ccc;
+}
+
+.post-entry-1 .post-entry-1-contents {
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+.post-entry-1 .post-entry-1-contents h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.post-entry-1 .post-entry-1-contents h2 a {
+    color: #000;
+}
+
+.post-entry-1 .post-entry-1-contents h2 a:hover {
+    color: #0779e4;
+}
+
+.post-entry-1.person-1 {
+    text-align: center;
+}
+
+.post-entry-1.person-1 img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 0 auto -45px auto;
+}
+
+.post-entry-1.person-1 .post-entry-1-contents {
+    padding-top: 4rem;
+}
