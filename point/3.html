@@ -20,6 +20,18 @@
                 <p><a href="./5.html">5.Di chuyển quả bóng khi va vào thành</a></p>
                 <p><a href="./6.html">6.Di chuyển quả bóng để ăn điểm</a></p>
             </div>
+
+            <div class="suggest">
+                <h3>Yêu cầu bước 3:</h3>
+                <p>- Render các point ngẫu nhiên trên màn hình</p>
+                <p>- Vì các point có hình dạng giống nhau chỉ có vị trí tâm (x,y)
+                    khác nhau nên cần 2 method <b>createX(), createY()</b> để random tọa độ theo chiều x, y của các point (lần trước đã giới thiệu hàm này, xem lại trong giáo trình phần random hình tròn)</p>
+                <p>- Các công việc cần thực hiện:</p>
+                <p>1. Tạo 1 mảng rỗng (<b>arrayPoint = []</b>) </p>
+                <p>2. Xác định số lượng point cần render ra (vd: 70)</p>
+                <p>3. Sử dụng vòng lặp for (số lần lặp < số point), qua mỗi lần lặp, khởi tạo 1 đối tượng hình tròn. Sau đó <b>push</b> đối tượng mới khởi tạo vào trong mảng <b>arrayPoint</b></p>
+                <p>4. Sử dụng vòng lặp for duyệt qua từng đối tượng trong mảng arrayPoint. Với mỗi đối tượng, render đối tượng đó ra màn hình bằng method <b>draw()</b></p>
+            </div>
         </div>
         <div class="game">
             <p>3.Vẽ các điểm</p>
@@ -90,15 +102,15 @@
             arrayAvatar = [];
 
             canvas = document.getElementById('canvas')
-            canvas.width = window.innerWidth * 0.7
-            canvas.height = window.innerHeight * 0.7
+            canvas.width = window.innerWidth * 0.5
+            canvas.height = window.innerHeight * 0.6
 
             c = canvas.getContext('2d')
 
             for (let i = 0; i < 70; i++) {
                 arrayAvatar.push(new Avatar(createX(), createY(), 6, "red"));
             }
-            
+
             arrayAvatar.forEach(ava => { ava.draw(c) });
 
             const avatar = new Avatar(20, 20, 20, "orange")

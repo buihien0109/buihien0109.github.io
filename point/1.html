@@ -20,6 +20,16 @@
                 <p><a href="./5.html">5.Di chuyển quả bóng khi va vào thành</a></p>
                 <p><a href="./6.html">6.Di chuyển quả bóng để ăn điểm</a></p>
             </div>
+            <div class="suggest">
+                <h3>Yêu cầu bước 1:</h3>
+                <p>- Tạo class hình tròn</p>
+                <p>- Trong đó có 2 method:</p>
+                <p>+ <b>draw()</b> dùng để vẽ hình tròn nói chung (tổng quát)</p>
+                <p>+ <b>drawBoss()</b> dùng để vẽ hình tròn Boss để ăn điểm</p>
+                <p>- Các hình tròn được vẽ ra đều có shadow</p>
+                <p>- Riêng hình tròn Boss có thêm text ở giữa</p>
+                <p>- Vị trí hình tròn Boss nằm ở góc trên bên trái màn hình</p>
+            </div>
         </div>
         <div class="game">
             <p>1.Vẽ quả bóng</p>
@@ -65,22 +75,48 @@
                 c.fillText("HAHA", this.x, this.y + 5);
                 c.closePath();
             }
+
+            // drawPackman(c) {
+            //     c.beginPath();
+            //     c.arc(20, 20, 20, 0.25 * Math.PI, 1.25 * Math.PI, false);
+            //     c.fillStyle = "rgb(255, 255, 0)";
+            //     c.fill();
+            //     c.beginPath();
+            //     c.arc(20, 20, 20, 0.75 * Math.PI, 1.75 * Math.PI, false);
+            //     c.fill();
+            //     c.beginPath();
+            //     c.arc(20, 10, 4, 0, 2 * Math.PI, false);
+            //     c.fillStyle = "rgb(0, 0, 0)";
+            //     c.fill();
+            // }
         }
 
         function init() {
             const canvas = document.getElementById('canvas')
-            canvas.width = window.innerWidth * 0.7
-            canvas.height = window.innerHeight * 0.7
+            canvas.width = window.innerWidth * 0.5
+            canvas.height = window.innerHeight * 0.6
 
             const c = canvas.getContext('2d')
 
             const avatar = new Avatar(20, 20, 20, "orange")
             avatar.drawPiPo(c)
+            // avatar.drawPackman(c)
         }
 
         init()
         
-
+        // Draw Packman
+        // ctx.beginPath();
+        // ctx.arc(100, 100, 50, 0.25 * Math.PI, 1.25 * Math.PI, false);
+        // ctx.fillStyle = "rgb(255, 255, 0)";
+        // ctx.fill();
+        // ctx.beginPath();
+        // ctx.arc(100, 100, 50, 0.75 * Math.PI, 1.75 * Math.PI, false);
+        // ctx.fill();
+        // ctx.beginPath();
+        // ctx.arc(100, 75, 10, 0, 2 * Math.PI, false);
+        // ctx.fillStyle = "rgb(0, 0, 0)";
+        // ctx.fill();
     </script>
 </body>
 

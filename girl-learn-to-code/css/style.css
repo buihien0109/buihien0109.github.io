@@ -27,6 +27,15 @@
 700i,
 900&display=swap);
 
+
+:root {
+	--main-color: #f97794;
+	--sub-color: #565656;
+	--icon-color: #34B1C4;
+	--hover-color: #623aa2
+}
+
+
 *,
 *::before,
 *::after {
@@ -383,10 +392,10 @@ h3 {
 	font-size: 16px;
 	font-weight: 600;
 	border: 0;
-	border: 1px solid #615cfd;
+	border: 1px solid var(--main-color);
 	letter-spacing: 0;
 	text-align: center;
-	color: #615cfd !important;
+	color: var(--main-color) !important;
 	text-transform: capitalize;
 	cursor: pointer;
 }
@@ -398,9 +407,9 @@ h3 {
 }
 
 .boxed-btn:hover {
-	background: #615cfd;
+	background: var(--main-color);
 	color: #fff !important;
-	border: 1px solid #615cfd;
+	border: 1px solid var(--main-color);
 }
 
 .boxed-btn:focus {
@@ -502,11 +511,11 @@ h3 {
 
 .slicknav_menu .slicknav_nav a:hover {
 	background: 0 0;
-	color: #615cfd;
+	color: var(--main-color);
 }
 
 .slicknav_menu .slicknav_nav a.active {
-	color: #615cfd;
+	color: var(--main-color);
 }
 
 @media (max-width: 767px) {
@@ -691,8 +700,12 @@ h3 {
 	margin-left: 6px;
 }
 
+.header-area .main-header-area.sticky .social_icon ul li a {
+	color: #001d38;
+}
+
 .header-area .main-header-area .social_icon ul li a:hover {
-	color: #615cfd;
+	color: var(--main-color);
 }
 
 .header-area .main-header-area .Appointment {
@@ -803,7 +816,9 @@ h3 {
 	position: relative;
 	text-transform: uppercase;
 }
-
+.header-area .main-header-area.sticky .main-menu ul li a {
+	color: #001d38;
+}
 @media (min-width: 992px) and (max-width: 1200px) {
 	.header-area .main-header-area .main-menu ul li a {
 		font-size: 15px;
@@ -843,7 +858,7 @@ h3 {
 }
 
 .header-area .main-header-area .main-menu ul li a:hover {
-	color: #615cfd;
+	color: var(--main-color);
 }
 
 .header-area .main-header-area .main-menu ul li .submenu {
@@ -914,7 +929,7 @@ h3 {
 	-webkit-transition: transform 0.5s ease, background 0.5s ease;
 	box-shadow: 0 3px 16px 0 rgba(0, 0, 0, 0.1);
 	background: rgba(255, 255, 255, 0.96);
-	background: #001d38;
+	background: #fff;
 	padding-bottom: 0;
 	padding: 20px 150px;
 }
@@ -1106,7 +1121,7 @@ h3 {
 
 .about_area .about_info p span {
 	display: inline-block;
-	color: #615cfd;
+	color: var(--hover-color);
 	margin-right: 7px;
 	font-size: 16px;
 	line-height: 28px;
@@ -1115,8 +1130,8 @@ h3 {
 .btn.btn__effect {
 	display: inline-block;
 	color: #fff;
-	background-color: #615cfd;
-	border: 2px solid #615cfd;
+	background-color: var(--main-color);
+	border: 2px solid var(--main-color);
 	border-radius: 2px;
 	padding: 8px 15px;
 	outline: none;
@@ -1297,7 +1312,7 @@ button.back-to-top span {
 button.back-to-top.show {
 	display: block;
 	background: #fff;
-	color: #615cfd;
+	color: var(--main-color);
 	font-size: 25px;
 	right: 25px;
 	bottom: 50px;
@@ -1347,26 +1362,21 @@ button.back-to-top.show:active {
 }
 .footer-section .social_icon ul li a {
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    color: #fff;
+    color: #727277;
     text-align: center;
-    line-height: 50px;
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%;
-    border: 1px solid #615cfd;
-    font-size: 20px;
-	margin-left: 12px;
-	background-color: #615cfd;
+    border: 1px solid transparent;
+    font-size: 24px;
+	margin-right: 15px;
+	background-color: transparent;
 }
 .footer-section .social_icon ul li:first-child a {
 	margin-left: 0;
 }
 
 .footer-section .social_icon ul li a:hover {
-	background-color: #fff;
-	color: #615cfd;
+	color: var(--main-color);
 }
 .form-contact .form-control {
     border: 1px solid #e5e6e9;
@@ -1887,7 +1897,7 @@ button.back-to-top.show:active {
 }
 
 .youtube_video_area .single_video .hover_elements .video a {
-	background: #615cfd;
+	background: var(--main-color);
 	width: 58px;
 	height: 58px;
 	-webkit-border-radius: 50%;
@@ -1935,7 +1945,7 @@ button.back-to-top.show:active {
 .youtube_video_area .single_video .hover_elements .hover_inner span {
 	font-size: 14px;
 	font-weight: 400;
-	color: #615cfd;
+	color: var(--main-color);
 	font-family: Muli, sans-serif;
 	-webkit-transition: 0.4s;
 	-moz-transition: 0.4s;
@@ -2075,7 +2085,7 @@ del,
 sub,
 sup,
 u {
-	color: #615cfd;
+	color: var(--main-color);
 }
 
 h1 {
@@ -2139,7 +2149,7 @@ h6 {
 
 .blog_area a :hover,
 .blog_area a:hover {
-	background: -webkit-linear-gradient(131deg, #615cfd 0, #615cfd 99%);
+	background: -webkit-linear-gradient(131deg, var(--hover-color) 0, var(--hover-color) 99%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	text-decoration: none;
@@ -2171,7 +2181,7 @@ h6 {
 }
 
 .blog_details a:hover {
-	color: #615cfd;
+	color: var(--main-color);
 }
 
 .blog_details h2 {
@@ -2223,7 +2233,7 @@ h6 {
 	left: 10px;
 	display: block;
 	color: #fff;
-	background-color: #615cfd;
+	background-color: var(--main-color);
 	padding: 8px 15px;
 	border-radius: 5px;
 }
@@ -2538,7 +2548,7 @@ h6 {
 }
 
 .single-post-area .blog-author a:hover {
-	color: #615cfd;
+	color: var(--main-color);
 }
 
 .single-post-area .blog-author p {

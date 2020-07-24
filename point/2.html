@@ -20,6 +20,13 @@
                 <p><a href="./5.html">5.Di chuyển quả bóng khi va vào thành</a></p>
                 <p><a href="./6.html">6.Di chuyển quả bóng để ăn điểm</a></p>
             </div>
+            <div class="suggest">
+                <h3>Yêu cầu bước 2:</h3>
+                <p>- Trong class hình tròn tạo 1 method drawScore() để hiển thị điểm</p>
+                <p>- Điểm khi khởi tạo là 0</p>
+                <p>- Điểm khi khởi tạo nằm trong constructor() của class (thêm property : score)</p>
+                <p>- Vị trí của điểm nằm tương đối chính xác với vị trí trong hình demo</p>
+            </div>
         </div>
         <div class="game">
             <p>2.Vẽ ô tính điểm</p>
@@ -77,8 +84,8 @@
 
         function init() {
             const canvas = document.getElementById('canvas')
-            canvas.width = window.innerWidth * 0.7
-            canvas.height = window.innerHeight * 0.7
+            canvas.width = window.innerWidth * 0.5
+            canvas.height = window.innerHeight * 0.6
 
             const c = canvas.getContext('2d')
 
