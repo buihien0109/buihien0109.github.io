@@ -339,6 +339,7 @@ function timetableWeek(el, tiva_timetables, firstDayWeek) {
 															+ '<div class="timetable-title-wrap">'
 																+ '<div class="timetable-name">' + timetables[t].name + '</div>'
 																+ '<div class="timetable-time">' + timetables[t].start_time + ' - ' + timetables[t].end_time + '</div>'
+																+ '<div class="timetable-time">' + timetables[t].class + '</div>'
 															+ '</div>'
 														+ '</a>'
 														+ '<div id="' + el.attr('id') + '-popup-' + timetables[t].id + '" class="timetable-popup zoom-anim-dialog mfp-hide">'
