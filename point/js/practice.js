@@ -10,9 +10,9 @@ function checkStringExist(str, subStr) {
     return false
 }
 
-// function checkStringExist(str,subStr) {
-//     return str.includes(subStr)
-// }
+function checkStringExist(str,subStr) {
+    return str.includes(subStr)
+}
 
 
 // Bài 2. Viết hàm rút ngắn chuỗi bằng cách cắt ra 8 ký tự đầu của 1 chuỗi và thêm dấu ba chấm ở cuối chuỗi. 
@@ -37,9 +37,9 @@ function capitalizeString(str) {
 console.log(capitalizeString('chÀo MừnG đẾn với techMaster'))
 
 // Bài 4. Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần.
-// function repeatStringTenTimes(str) {
-//     return str.repeat(10)
-// }
+function repeatStringTenTimes(str) {
+    return str.repeat(10)
+}
 
 function repeatStringTenTimes(str) {
     let result = ""
@@ -53,21 +53,22 @@ console.log(repeatStringTenTimes('a-'))
 
 // Bài 5. Cho 1 chuỗi, hãy viết hàm có tác dụng sao chép đó chuỗi lên 10 lần, ngăn cách nhau bởi dấu gạch ngang. 
 // Ví dụ: repeatString('a') => Kết quả trả về là 'a-a-a-a-a-a-a-a-a-a'
-// function repeatString(str) {
-//     let result = str
-//     for(let i =0; i< 9; i++) {
-//         result += `-${str}`
-//     }
-//     return result
-// }
 
-// function repeatString(str) {
-//     let result = ""
-//     for(let i =0; i< 10; i++) {
-//         result += `-${str}`
-//     }
-//     return result.slice(1)
-// }
+function repeatString(str) {
+    let result = str
+    for(let i =0; i< 9; i++) {
+        result += `-${str}`
+    }
+    return result
+}
+
+function repeatString(str) {
+    let result = ""
+    for(let i =0; i< 10; i++) {
+        result += `-${str}`
+    }
+    return result.slice(1)
+}
 
 
 // Bài 6. Cho 1 chuỗi và 1 số nguyên n > 1, hãy viết hàm có tác dụng sao chép đó chuỗi lên n lần, ngăn cách nhau bởi dấu gạch ngang. 
@@ -81,21 +82,20 @@ function repeatStringNTimes(str, n) {
     return result
 }
 
-
-
 // Bài 7. Viết hàm đảo ngược chuỗi. Viết dunction với đầu vào là 1 chuỗi string. Trả về chuỗi đảo ngược của chuỗi đó
 // Ví dụ: reverseString('Hello') => Kết quả trả về là 'olleH'
-// function reverseString(str) {
-//     return str.split('').reverse().join('')
-// }
 
-// function reverseString(str) {
-//     let result = ""
-//     for(let i of str) {
-//         result = i + result
-//     }
-//     console.log(result)
-// }
+function reverseString(str) {
+    return str.split('').reverse().join('')
+}
+
+function reverseString(str) {
+    let result = ""
+    for(let i of str) {
+        result = i + result
+    }
+    console.log(result)
+}
 
 function reverseString(str) {
     let result = ""
