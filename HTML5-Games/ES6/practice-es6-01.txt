@@ -1,0 +1,17 @@
+Bài 1: Sắp xếp các ký tự của 1 chuỗi theo vần Alphabeticall
+
+const sortCharactersInString = str => [...str].sort((a, b) => a.localeCompare(b)).join('');
+console.log(sortCharactersInString('cabbage'));
+console.log(sortCharactersInString('a7fs23l1n4o6x'));
+
+****
+
+Bài 2: Lấy 1 giá trị bất kỳ từ mảng
+const sample = arr => arr[Math.floor(Math.random() * arr.length)];
+console.log(sample([3, 7, 9, 11]));
+
+****
+
+Bài 3: Viết hàm lấy ra giá trị xuất hiện trong cả 2 mảng. Các giá trị được lưu trong mảng mới
+const similarity = (arr, values) => arr.filter(v => values.includes(v));
+console.log(similarity([1, 2, 3], [1, 2, 4]));

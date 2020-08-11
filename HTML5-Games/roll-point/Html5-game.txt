@@ -1,0 +1,48 @@
+Html 5 -game
+1. Giới thiệu về canvas
+- Canvas là gì?
+- Ứng dụng của canvas ra sao?
+
+2. Vẽ các đối tượng trong canvas
+- Truy cập vào đối tượng canvas và sử dụng các method của canvas.Context('2d')
+- Hình chữ nhật
+- Hình tròn
+- Line
+- Gradient
+- Shadown
+- Image
+- Text
+- Transform
+- ...
+
+2.1 Lập trình OOP trong Javascript
+- Lập trình OOP là gì?
+- OOP trong Javascript như thế nào?
+- OOP function
+- OOP class ES6
+
+3. Các chuyển động cơ bản
+- Hứng sự kiện từ chuột
+- Hứng sự kiện từ bàn phím
+- Hứng sự kiện thay đổi kích thước màn hình
+- Các hàm chức năng để animation iframe : setInterVal(), requestAnimationFrame
+- Các chuyển động cơ bản
+ + Quả bóng di chuyển 1 hướng
+ + Quả bóng di chuyển 1 hướng có sự va đập
+ + Quả bóng di chuyển nhiều hướng có sự va đập
+ + Quả bóng rơi tự do
+ + Quả bóng rơi tự do trên thanh đệm
+ + Quả bóng di chuyển theo con trỏ chuột
+ + Quả bóng bay theo quỹ đạo Parabone
+
+4. Game point
+5  Game brick
+6  Game paint
+6.1 Đồng hồ
+7  Game XO
+8  Đồng hồ
+9  Game memory-card
+10 Game Piano
+11 Game flappy-bird
+12 Rắn săn mồi
+13 Pac-man
