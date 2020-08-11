@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        document.addEventListener('keyup', function (event) {
+            console.log('Đã nhấn phím')
+        })
+
+        document.addEventListener('keyup', function (event) {
+            if (event.keyCode == 13) {
+                console.log('Bạn thật đẹp trai')
+            } else {
+                console.log('Nhấn phím enter đi. Có điều bất ngờ đó')
+            }
+        })
+    </script>
+</body>
+
+</html>

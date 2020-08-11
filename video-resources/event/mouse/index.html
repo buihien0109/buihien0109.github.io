@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <canvas id="canvas" width="600" height="600" style="border: 2px solid #000"></canvas>
+
+    <script>
+        const canvas = document.getElementById('canvas')
+        const ctx = canvas.getContext('2d')
+
+        // canvas.addEventListener('click', function (event) {
+        //     console.log('Vẽ hình tròn')
+        //     ctx.beginPath()
+        //     ctx.fillStyle = "blue"
+        //     ctx.arc(event.clientX, event.clientY, 20, 0, Math.PI * 2, false)
+        //     ctx.fill()
+        // })
+
+        canvas.addEventListener('mousemove', function (event) {
+            console.log('Vẽ hình tròn')
+            ctx.beginPath()
+            ctx.fillStyle = "blue"
+            ctx.arc(event.clientX, event.clientY, 20, 0, Math.PI * 2, false)
+            ctx.fill()
+        })
+    </script>
+</body>
+
+</html>

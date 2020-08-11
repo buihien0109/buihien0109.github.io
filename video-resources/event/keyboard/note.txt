@@ -1,0 +1,42 @@
+Bài học ngày hôm nay tôi sẽ giới thiệu cho các về sự kiện bàn phím trong js
+Nói đến sự kiện bàn phím các mọi người nghĩ luôn đến hành động gõ phím phải không nào
+Vậy thì hành động này diễn ra như thế nào
+Trong js thì sự kiện bàn phím chia ra các loại event sau
+Thứ 1: keydown: được gọi khi bạn nhấn xuống một phím
+Thứ 2: keyup: được gọi khi bạn nhả phím đó ra
+Thứ 3: keypress: được gọi khi bạn nhấn và giữ phím
+
+Vậy chúng ta cùng thực hành để xem sự kiện bàn phím như thế nào
+Đầu tiên thì chúng ta tạo 1 file index.html
+Ở đây thì tôi dùng vscode, sau đó tạo nhanh 1 cấu trúc html như sau
+Ở trong phần body tôi tạo ra thẻ script để viết mã script ở đây
+
+Tiếp đến để lắng nghe 1 sự kiện trong javascript thì chúng ta có hàm addEventLister. Trong hàm này ta cần truyền tham số thứ nhất là tên sự kiện, tham số thứ 2 là 1 function dùng để xử lý sự kiện
+
+Với ví dụ này thì tôi sẽ dùng hàm addEventLister để lắng nghe sự kiện keyup từ bàn phím - keyup: được gọi khi bạn nhả phím đó ra
+- trong hàm sự kiện tôi sẽ in ra 1 chuỗi gì. Ví dụ "Đã nhấn phím"
+
+- Rồi chúng ta mở file này lên. sau đó bật f12 vào phần console của trình duyệt để xem kết quả
+- Phần console đang trắng đúng không. Vì tôi chưa gõ phím nào cả
+- bây giờ tôi thử gõ phím bất kỳ xem điều gì sẽ xảy ra
+
+- Đối với mỗi hàm sử lý sự kiện thì nó cung cấp cho chúng ta 1 biến event
+- tôi thử log biến event ra xem bên trong có gì
+
+Bên trong có rất nhiều thông tin đúng không. Ở đây thì chúng ta quan tâm đến các thông tin sau
+key : tên phím. Chắc nhìn đây các bạn cũng biết tôi vừa nhấn phím nào Rồi
+keycode : giá trị Unicode của phím bàn phím đã nhấn:
+
+Các bạn có thể tra nhanh thông tin 1 phím đã nhấn ở http://keycode.info/
+
+Ở đây thì tôi có thể làm thêm 1 ví dụ nho nhỏ. Tôi sẽ lắng nghe sự kiện keyup từ bàn phím
+
+document.addEventListener('keyup', function(event) {
+    if(event.keyCode == 13) {
+        console.log('Bạn rất đẹp trai')
+    } else {
+        console.log('Nhấn phím enter đi. Có điều bất ngờ đó')
+    }
+})
+
+Vưa rồi thì tôi đã cùng các bạn tìm hiểu về sự kiện bàn phím ở trong javascript. Hẹn gặp lại các bạn ở bài học tiếp theo.
