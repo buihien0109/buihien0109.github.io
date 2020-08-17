@@ -67,21 +67,21 @@ canvas.onmousedown = (event) => {
     y = event.offsetY;
     c.strokeStyle = color;
     c.lineWidth = size;
-  }
+}
 
 // onmousemove là sự kiện di chuyển chuột
 // vẽ từ điểm đầu tiên được click => điểm được di chuyển tới
 // Sau đó lại cập nhật vị trí x,y của con trỏ chuột đang di chuyển tới, đồng thời vẽ lại đường
 canvas.onmousemove = (event) => {
     if (isDraw) {
-      c.beginPath();
-      c.moveTo(x, y);
-      c.lineCap = 'round';
-      c.lineTo(event.offsetX, event.offsetY);
-      c.stroke();
+        c.beginPath();
+        c.moveTo(x, y);
+        c.lineCap = 'round';
+        c.lineTo(event.offsetX, event.offsetY);
+        c.stroke();
 
-      x = event.offsetX;
-      y = event.offsetY;
+        x = event.offsetX;
+        y = event.offsetY;
     }
 }
 
