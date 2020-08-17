@@ -1,114 +1,128 @@
 {
     "items": [
 		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
-			"date": "10",
-			"month": "8",
-			"year": "2020",
-			"start_time": "18:30",
-			"end_time": "21:30",
-			"color": "4",
-			"description": "Cho học viên tiếp tục hoàn thành bài brick game. Sau đó làm roll dice game",
-			"class" : "Foundation[2] Game (Buổi cuối)"
-			
-		},
-		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
-			"date": "12",
-			"month": "8",
-			"year": "2020",
-			"start_time": "18:30",
-			"end_time": "21:30",
-			"color": "1",
-			"description": "Đầu tiên làm bài quiz tầm 30 câu. Sau đó tiếp tục làm bài brick game. Game tiếp theo là Paint",
-			"class" : "Foundation[2] Game (Buổi 11)"
-		},
-		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
-			"date": "14",
-			"month": "8",
-			"year": "2020",
-			"start_time": "18:30",
-			"end_time": "21:30",
-			"color": "3",
-			"description": "Hoàn thiện ứng dụng Paint. Bài tập về nhà (4 bài trong bài tập giữa kỳ)",
-			"class" : "Foundation[3] Game (Buổi 12)"
-		},
-		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
-			"date": "14",
+			"name" : "BÙI HIÊN",
+			"date": "20",
 			"month": "8",
 			"year": "2020",
 			"start_time": "14:00",
 			"end_time": "17:00",
-			"color": "2",
-			"description": "Làm quiz - Chữa bài tập Array +  String - Cho học viên làm code learn - Cho bài tập về nhà Object",
-			"class" : "Foundation[4] Javascript (Buổi 3)"
+			"color": "1",
+			"description": "Dạy Figma",
+			"class" : "Foundation[1] Web cơ bản (Học bù)"
 		},
 		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
-			"date": "15",
+			"name" : "BÙI HIÊN",
+			"date": "22",
+			"month": "8",
+			"year": "2020",
+			"start_time": "14:00",
+			"end_time": "17:00",
+			"color": "1",
+			"description": "Dạy Figma",
+			"class" : "Foundation[1] Web cơ bản (Học bù)"
+		},
+		{
+			"name" : "BÙI HIÊN",
+			"date": "27",
+			"month": "8",
+			"year": "2020",
+			"start_time": "14:00",
+			"end_time": "17:00",
+			"color": "1",
+			"description": "Kiểm tra web cơ bản",
+			"class" : "Foundation[1] Web cơ bản (Kiểm tra)"
+		},
+		{
+			"name" : "BÙI HIÊN",
+			"date": "1",
+			"month": "9",
+			"year": "2020",
+			"start_time": "14:00",
+			"end_time": "17:00",
+			"color": "1",
+			"description": "Kiểm tra Game",
+			"class" : "Foundation[1] Kiểm tra Game"
+		},
+
+		{
+			"name" : "BÙI HIÊN",
+			"date": "17",
 			"month": "8",
 			"year": "2020",
 			"start_time": "18:30",
 			"end_time": "21:30",
-			"color": "4",
-			"description": "Làm bài tập trong Codelearn",
-			"class" : "Foundation[5] Javascript (Buổi 1)"
+			"color": "2",
+			"description": "Web cơ bản",
+			"class" : "Foundation[2] Web cơ bản (Học bù)"
 		},
 		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
+			"name" : "BÙI HIÊN",
 			"date": "19",
 			"month": "8",
 			"year": "2020",
 			"start_time": "18:30",
 			"end_time": "21:30",
-			"color": "1",
-			"description": "Làm ứng dụng Clock",
-			"class" : "Foundation[2] Game (Buổi 13)"
+			"color": "2",
+			"description": "Web cơ bản",
+			"class" : "Foundation[2] Web cơ bản (Học bù)"
 		},
 		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
+			"name" : "BÙI HIÊN",
+			"date": "21",
+			"month": "8",
+			"year": "2020",
+			"start_time": "18:30",
+			"end_time": "21:30",
+			"color": "2",
+			"description": "Web cơ bản",
+			"class" : "Foundation[2] Web cơ bản (Học bù)"
+		},
+		{
+			"name" : "BÙI HIÊN",
+			"date": "24",
+			"month": "8",
+			"year": "2020",
+			"start_time": "18:30",
+			"end_time": "21:30",
+			"color": "2",
+			"description": "Web cơ bản",
+			"class" : "Foundation[2] Web cơ bản (Học bù)"
+		},
+
+		{
+			"name" : "BÙI HIÊN",
+			"date": "19",
+			"month": "8",
+			"year": "2020",
+			"start_time": "18:30",
+			"end_time": "21:30",
+			"color": "3",
+			"description": "Game",
+			"class" : "Foundation[3] Game (Buổi 13)"
+		},
+		{
+			"name" : "BÙI HIÊN",
 			"date": "21",
 			"month": "8",
 			"year": "2020",
 			"start_time": "18:30",
 			"end_time": "21:30",
 			"color": "3",
-			"description": "Hoàn thiện ứng dụng Clock + Nếu học viên muốn có thể dạy Dom",
-			"class" : "Foundation[3] Game (Buổi cuối)"
+			"description": "Web cơ bản",
+			"class" : "Foundation[3] Game (Buổi 14)"
 		},
+
 		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
-			"date": "21",
+			"name" : "BÙI HIÊN",
+			"date": "22",
 			"month": "8",
 			"year": "2020",
 			"start_time": "14:00",
 			"end_time": "17:00",
-			"color": "2",
-			"description": "Giới thiệu về ES6 => Làm bài tập trong FreeCodeCamp => Giao bài tập về nhà",
-			"class" : "Foundation[4] Javascript (Buổi 4)"
-		},
-		{
-			"name": "Bùi Hiên",
-			"image": "avatar.jpg",
-			"date": "22",
-			"month": "8",
-			"year": "2020",
-			"start_time": "18:30",
-			"end_time": "21:30",
 			"color": "4",
-			"description": "Quiz + Chữa bài array, string => Tiếp tục học code learn => Bài tập number + object",
-			"class" : "Foundation[5] Javascript (Buổi 2)"
+			"description": "Javascript cơ bản",
+			"class" : "Foundation[4] Javascript (Buổi 4)"
 		}
-
 	]
 }
