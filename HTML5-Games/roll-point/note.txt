@@ -1,4 +1,4 @@
-BƯỚC 1: TẠO GIAO DIỆN NGƯỜI CHƠI
+BƯỚC 1: TẠO GIAO DIỆN NGƯỜI CHƠI (Học viên tự thiết kế)
 - Game bao gồm 2 người chơi
 - Mỗi người chơi bao gồm các thông tin sau:
     + Tên người chơi
