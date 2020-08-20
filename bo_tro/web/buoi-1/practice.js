@@ -106,21 +106,70 @@ console.log(endOfMonth(dt).toString());
 const sample = arr => arr[Math.floor(Math.random() * arr.length)];
 console.log(sample([3, 7, 9, 11]));
 
-// Bài 2:
+// Bài 2: Viết chương trình đổi chỗ ngẫu nhiên vị trí của các phần tử trong mảng
 
-// Bài 3:
+// Bài 3: Viết chương trình JavaScript để lấy một mảng các phần tử xuất hiện trong cả hai mảng
+const similarity = (arr, values) => arr.filter(v => values.includes(v));
+console.log(similarity([1, 2, 3], [1, 2, 4]));
 
-// Bài 4:
+// Bài 4: Viết một chương trình JavaScript để lấy sự phần tử không xuất hiện ở cả 2 mảng
+const symmetricDifference = (a, b) => {
+  const sA = new Set(a),
+    sB = new Set(b);
+  return [...a.filter(x => !sB.has(x)), ...b.filter(x => !sA.has(x))];
+};
+console.log(symmetricDifference([1, 2, 3], [1, 2, 4]));
 
-// Bài 5:
+// Bài 5: Xóa n phần tử khỏi phần cuối của một mảng nhất định
+const takeRight = (arr, n = 1) => arr.slice(arr.length - n, arr.length);
 
-// Bài 6:
+console.log(takeRight([1, 2, 3], 2));
+console.log(takeRight([1, 2, 3]));
 
-// Bài 7:
+// Bài 6: Viết function lấy tất cả các phần tử không trùng nhau trong cả 2 mảng
+const union = (a, b) => Array.from(new Set([...a, ...b]));
+console.log(union([1, 2, 3], [4, 3, 2]));
+console.log(union([1, 2, 3], [1, 2, 3]));
 
-// Bài 8:
+// Bài 7: Viết chương trình JavaScript để tạo mã màu HEX ngẫu nhiên.
+const random_hex_color_code = () => {
+  let n = (Math.random() * 0xfffff * 1000000).toString(16);
+  return '#' + n.slice(0, 6);
+};
 
-// Bài 9:
+console.log(random_hex_color_code())
 
-// Bài 10:
+// Bài 8: Viết một chương trình JavaScript trả về một tập hợp con của một chuỗi.
+String.prototype.sub_String = function() 
+{
+  var subset = [];
+  for (var m = 0; m < this.length; m++) 
+  {
+    for (var n = m+1; n<this.length+1; n++) 
+    {
+      subset.push(this.slice(m,n));
+    }
+  }
+  return subset;
+};
+
+console.log("dog".sub_String()); // => ["d","do","dog","o","og","g"]
+
+// Bài 9: Bài 3: Viết hàm có 2 tham số, tham số đầu tiên là 1 chuỗi thời gian t dạng ''giờ:phút:giây'', tham số thứ 2 là 1 số x <= 1000. Kết quả trả về là 1 chuỗi biểu thị thời gian sau x giây kể từ thời điểm t. Ví dụ với t = ''9:20:56'' và x = 7 thì kết quả là ''9:21:3''.
+
+// Bài 10: Cho 1 số nguyên, hãy viết hàm sắp xếp lại các chữ số trong số nguyên đó sao cho ra 1 số nhỏ nhất có thể (không tính số 0 đầu tiên). Ví dụ với tham số 53751 thì kết quả là 13557.
+
+// Bài 11: Kiểm tra 1 chuỗi có phải là chuỗi viết hoa hay không?
+function isUpperCaseAt(str, index) {
+  return str.charAt(index).toUpperCase() === str.charAt(index);
+     }
+ console.log(isUpperCaseAt('Js STRING EXERCISES', 1));
+
+ // Bài 12: Kiểm tra mảng xem có phải mảng tăng dần hay không
+
+ // Bài 13 Kiểm tra mảng xem có phải mảng sô lẻ giảm dần hay không
+
+ // Bài 14 Viết hàm đếm ngược thời gian đến tết dương lịch
+
+
 
