@@ -50,14 +50,8 @@ body {
 .menu-item {
     display: inline-block;
     padding: 6px 15px;
-}
-
-.btn-contact {
-    background-color: #f05510;
-    border-radius: 30px;
-    color: #fff;
-    margin-left: 40px;
-    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 
 .container {
