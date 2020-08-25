@@ -1,0 +1,32 @@
+.about {
+    margin-left: 300px;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.about-wrapper {
+    max-width: 950px;
+}
+
+.about-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.about-wrapper h2 {
+    margin-bottom: 16px;
+    font-size:32px;
+    font-weight: 500;
+}
+
+.about-wrapper p {
+    margin-bottom: 16px;
+}
