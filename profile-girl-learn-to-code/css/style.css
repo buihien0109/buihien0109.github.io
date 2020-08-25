@@ -33,10 +33,14 @@ body {
 }
 
 .sidebar-menu a {
-    padding-left: 20px;
     font-size: 20px;
     padding: 10px 20px;
     display: block;
+}
+
+.menu-active {
+    color: #72b626;
+    font-weight: 500;
 }
 
 .social {
@@ -75,7 +79,7 @@ body {
 }
 
 .intro-content-inner {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .intro-content-inner h6 {
@@ -126,7 +130,13 @@ body {
 .author-page {
     position: absolute;
     bottom: 30px;
-    left: 85px;
-    font-weight: 700;
-    font-size: 20px;
+    left: 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 300px;
+    text-align: center;
+    background-color: #72b626;
+    display: inline-block;
+    padding: 10px 0;
+    color: #fff;
 }

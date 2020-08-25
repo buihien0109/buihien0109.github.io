@@ -5,10 +5,32 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+    background-image: url(../images/photo-01.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
+.about:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #72b626;
+    opacity: .7;
+}
+
 
 .about-wrapper {
     max-width: 950px;
+    position: relative;
+    z-index: 2;
+    color: #fff;
 }
 
 .about-avatar {
