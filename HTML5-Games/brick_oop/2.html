@@ -15,7 +15,7 @@
             <div class="box">
                 <p><a href="./1.html">1.Vẽ quả bóng</a></p>
                 <p><a href="./3.html">2.Vẽ thanh đệm</a></p>
-                <p><a href="./2.html">3.Di chuyển quả bóng</a></p>
+                <p><a href="./2.html" class="active-step">3.Di chuyển quả bóng</a></p>
                 <p><a href="./4.html">4.Kiểm tra khi bóng di chuyển va vào thành</a></p>
                 <p><a href="./5.html">5.Kiểm tra khi bóng di chuyển va vào thành dưới</a></p>
                 <p><a href="./6.html">6.Di chuyển thanh đệm</a></p>
@@ -23,6 +23,11 @@
                 <p><a href="./8.html">8.Vẽ hàng gạch</a></p>
                 <p><a href="./9.html">9.Bóng va chạm với hàng gạch</a></p>
             </div>
+        </div>
+        <div class="required">
+            <h3>Yêu cầu</h3>
+            <p>- Cung cấp vận tốc để quả bóng có thể di chuyển</p>
+            <p>- Chưa cần kiểm tra va chạm với thành canvas</p>
         </div>
         <div class="game">
             <p>3. Di chuyển quả bóng</p>
@@ -63,14 +68,11 @@
 
         class Rect {
             constructor(left, top, width, height, color) {
-                // this.MAX_SPEED = 4;
                 this.width = width;
                 this.height = height;
 
                 this.left = left;
                 this.top = top;
-                // this.right = this.left + width;
-                // this.bottom = this.top + height;
 
                 this.color = color;
             }
