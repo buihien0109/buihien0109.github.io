@@ -24,7 +24,20 @@ h3 {
 
 .game {
     background-color: #fff;
-    margin-left: 2rem;
     padding: 2rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+}
+
+.required {
+    width: 400px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .15);
+}
+
+.active-step {
+    color: #e74c3c;
+    font-weight: bold;
 }
