@@ -87,10 +87,10 @@ console.log(diff_minutes(dt1, dt2));
 function startOfWeek(date) {
   var diff = date.getDate() - date.getDay() + (date.getDay() === 0 ? -6 : 1);
   return new Date(date.setDate(diff));
-
 }
 dt = new Date();
 console.log(startOfWeek(dt).toString());
+
 
 // Bài 10: Viết một hàm JavaScript để lấy ngày kết thúc tháng
 function endOfMonth(date) {
