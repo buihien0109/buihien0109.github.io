@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: #212529;
+            text-align: left;
+            background-color: #fff;
+        }
+
+        #btn {
+            display: inline-block;
+            padding: 15px 20px;
+            border: 2px solid #000000;
+            color: #000;
+            background-color: #fff;
+            font-size: 24px;
+            text-transform: uppercase;
+            cursor: pointer;
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-uppercase">hex color :<span id="hex-value"></span></h1>
+    <button id="btn">Click</button>
+    <script>
+        (function () {
+            const button = document.querySelector('#btn')
+            const body = document.querySelector('body')
+            const hexValues = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F']
+            const value = document.querySelector('#hex-value')
+
+            button.addEventListener('click', changeHex)
+
+            function changeHex() {
+                let hex = '#'
+
+                for (let i = 0; i < 6; i++) {
+                    const index = Math.floor(Math.random() * hexValues.length)
+                    hex += hexValues[index]
+                }
+                value.textContent = hex
+                body.style.backgroundColor = hex
+            }
+        })()
+    </script>
+</body>
+
+</html>

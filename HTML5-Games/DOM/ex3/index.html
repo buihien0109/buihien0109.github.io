@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: #6c757d;
+            background-color: #fff;
+        }
+
+        .quote-container {
+            width: 600px;
+            overflow: hidden;
+            background-color: #f4f4f4;
+            border-radius: 4px;
+            padding: 30px;
+        }
+
+        svg {
+            width: 50px;
+            display: inline-block;
+            margin-right: 15px;
+        }
+
+        .btn-box {
+            text-align: center;
+        }
+
+        #generate-btn {
+            display: inline-block;
+            padding: 15px 20px;
+            border: 2px solid #6c757d;
+            color: #6c757d;
+            background-color: #fff;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            outline: none;
+        }
+
+        #generate-btn:hover {
+            background-color: #6c757d;
+            color: #fff;
+        }
+
+        .author {
+            color: #64b6ac;
+            font-size: 24px;
+            text-align: right;
+        }
+
+        #quote {
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="quote-container">
+        <div class="btn-box">
+            <button id="generate-btn">Random quote</button>
+        </div>
+
+        <h3 class="text-muted">
+            <span class="quote-icon mr-3">
+                <svg class="svg-inline--fa fa-quote-left fa-w-16 fa-3x" aria-hidden="true" data-prefix="fas"
+                    data-icon="quote-left" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"
+                    data-fa-i2svg="">
+                    <path fill="currentColor"
+                        d="M464 256h-80v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8c-88.4 0-160 71.6-160 160v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48zm-288 0H96v-64c0-35.3 28.7-64 64-64h8c13.3 0 24-10.7 24-24V56c0-13.3-10.7-24-24-24h-8C71.6 32 0 103.6 0 192v240c0 26.5 21.5 48 48 48h128c26.5 0 48-21.5 48-48V304c0-26.5-21.5-48-48-48z">
+                    </path>
+                </svg>
+            </span>
+            <span id="quote">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla similique sunt voluptatem reprehenderit
+                temporibus sapiente vitae aperiam aliquid cupiditate hic facilis laborum officiis in odit provident,
+                eaque quo exercitationem cumque.
+            </span>
+        </h3>
+        <h5 class="text-right text-capitalize author">-<span class="quote-author ml-3 ">author</span></h5>
+    </div>
+
+    <script>
+        (function () {
+            const quotes = [
+                {
+                    quote: "Life is too short and sweet to be spent by cribbing and complaining about things. Here are some random quotes about the most wonderful gift that we've got",
+                    author: " Life"
+                },
+                {
+                    quote: "Humor is richly rewarding to the person who employs it. It has some value in gaining and holding attention. But it has no persuasive value at all",
+                    author: "John Kenneth Galbraith"
+                },
+                {
+                    quote: "God save me from my friends. I can protect myself from my enemies.",
+                    author: "Claude Louis Hector de Villars "
+                },
+                {
+                    quote: "The price of anything is the amount of life you exchange for it.",
+                    author: "David Thoreau"
+                },
+                {
+                    quote: "Life is like a landscape. You live in the midst of it but can describe it only from the vantage point of distance. ",
+                    author: "Charles Lindbergh"
+                },
+                {
+                    quote: "A critic is someone who never actually goes to the battle, yet who afterwards comes out shooting the wounded.",
+                    author: " Tyne Daly"
+                }
+            ];
+
+            const btn = document.getElementById("generate-btn");
+
+            btn.addEventListener("click", function () {
+                let random = Math.floor(Math.random() * quotes.length);
+
+                document.getElementById("quote").textContent = quotes[random].quote;
+                document.querySelector(".author").textContent = quotes[random].author;
+            });
+        })();
+
+    </script>
+</body>
+
+</html>
