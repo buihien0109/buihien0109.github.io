@@ -1,0 +1,3 @@
+- Tạo giao diện
+- Khi bấm nút kiểm tra xem đầu vào có hợp lệ không (đầu vào hợp lệ: số nguyên, có giá trị từ  0 -> 255)
+- Sau đó thay đổi background của trang thành màu rgb đã nhập ở trên

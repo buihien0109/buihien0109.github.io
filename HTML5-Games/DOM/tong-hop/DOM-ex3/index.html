@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .box {
+            display: block;
+            background-color: #f3f3f3;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            float: left;
+            margin: 5px;
+        }
+
+        .box:hover {
+            transform: scale(.9);
+            transition-duration: .5s;
+            opacity: .8;
+            cursor: pointer;
+        }
+
+        .box:active {
+            transform: scale(1.5);
+            transition-duration: .5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="wrap">
+            <h1> JS DOM</h1>
+            <button id="btn">More boxes</button>
+            <h4 id="score"> Total box:<span class="points"></span></h4>
+
+
+            <div class="boxes">
+            </div>
+        </div>
+    </body>
+
+    <script>
+        let colors = [
+            '#3498db',
+            '#9b59b6',
+            '#e74c3c',
+            '#2c3e50',
+            '#d35400',
+        ]
+
+        let total = document.querySelector('.points');
+        total.innerText = colors.length
+
+        function createBoxes(numOf) {
+            let colorAmount = colors.length;
+            let currentColor = 0;
+            let newElement;
+            let boxes = document.querySelector('.boxes');
+            /*creating the number of boxes based on the parameter(numOf), boxes passed through.*/
+            for (let i = 0; i < numOf; i++) {
+                //inside the loop we will create a new div element as i increases
+                newElement = document.createElement('div');
+                //inside the new div created we give it a class of box    
+                newElement.className = 'box';
+                //and give that class .box the style we have set in css
+                newElement.style = 'background-color:' + colors[currentColor];
+
+                //append a child within boxes
+
+                boxes.appendChild(newElement);
+
+                newElement.addEventListener('click', function (e) {
+                    this.remove()
+                    total.innerText = document.querySelectorAll('.box').length
+                })
+
+                //if the currentColor is equal to the amount of colors reset to zero
+                if (currentColor === colorAmount - 1) {
+                    currentColor = 0;
+                }
+                else {
+                    currentColor++;
+                }
+            }
+
+        }
+
+        //call the function by passing whatever number of arguments you want ie 10, 20, 50
+        createBoxes(colors.length);
+
+        /*add event listener to button. when clicked it will generate a random number of boxes*/
+        let button = document.getElementById('btn');
+
+        button.addEventListener('click', function randomize() {
+            //i want to generate a random number of squares when button is clicked.
+            createBoxes(colors.length);
+            total.innerText = document.querySelectorAll('.box').length
+        })
+    </script>
+</body>
+
+</html>

@@ -172,4 +172,20 @@ function isUpperCaseAt(str, index) {
  // Bài 14 Viết hàm đếm ngược thời gian đến tết dương lịch
 
 
+// Bài 3: Viết chương trình JavaScript để lấy một mảng các phần tử xuất hiện trong cả hai mảng
+const similarity = (arr, values) => arr.filter(v => values.includes(v));
+
+ // Bài 4: Viết một chương trình JavaScript để lấy sự phần tử không xuất hiện ở cả 2 mảng
+ const symmetricDifference1 = (a, b) => {
+   let arr1 = a.filter(u => !b.includes(u))
+   let arr2 = b.filter(v => !a.includes(v))
+   return [...arr1, ...arr2]
+ }
+
+// Bài 5: Viết function lấy tất cả các phần tử không trùng nhau trong cả 2 mảng
+const union = (a, b) => Array.from(new Set([...a, ...b]));
+
+
+
+
 
