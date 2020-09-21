@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            font-family: "Roboto";
+            color: #696969;
+        }
+
+        .container-fluid {
+            background-color: #82DACA;
+        }
+
+        .hero {
+            height: 300px;
+            padding: 50px;
+            
+        }
+
+        header {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .logo {
+            flex: 1;
+        }
+
+        .menu {
+            flex: 2;
+        }
+
+        h1 {
+            letter-spacing: 2px;
+            font-weight: 900;
+            margin: 0;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            display: flex;
+            width: 100%;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .menu li {
+            margin: 0 10px;
+        }
+
+        input {
+            padding: 5px;
+            outline: none;
+            border: none;
+        }
+
+        button#show-all {
+            padding: 5px 10px;
+            color: white;
+            border: 1px solid #fff;
+            background-color: transparent;
+            transition: all .3s ease-in;
+        }
+
+        button#show-all:hover {
+            background-color: white;
+            color: #696969;
+        }
+
+        .jobs {
+            padding: 25px 50px;
+            display: flex;
+        }
+
+        .job-card {
+            text-align: center;
+            border-radius: 8px;
+            margin: 0 15px;
+            padding: 30px;
+            box-shadow: 0 0 32px 8px rgba(0, 0, 0, .1);
+        }
+
+        .job-card h3 {
+            font-size: 1.3rem;
+            text-transform: capitalize;
+        }
+
+        .job-card h4 {
+            font-size: 2rem;
+            color: #82DACA;
+            margin-bottom: 1rem;
+            margin-top: 1rem;
+        }
+
+        .job-card ul {
+            margin: 0;
+            padding: 15px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="hero">
+                <header>
+                    <div class="logo">
+                        <h1>Job Board</h1>
+                        <p>Find your dream job.</p>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li><button id="show-all">All jobs</button></li>
+                            <li><input id="search" type="text" placeholder="Search"></li>
+                        </ul>
+                    </div>
+
+                </header>
+
+                <h2 id="jobs-listed"><span>300</span> Jobs Listed</h2>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="jobs">
+            <div class="job-card">
+                <h3>Software Engineer</h3>
+                <h4>$50</h4>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Git</li>
+                    <li>AWS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+
+</html>
