@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<!-- Sự khác nhau giữa innerHTML, innerText, textContent :
+	https://dblog24h.com/javascript/khac-biet-giua-innerhtml-innertext-textcontent-trong-javascript-25/#:~:text=Kh%C3%A1c%20bi%E1%BB%87t%20gi%E1%BB%AFa%20innerText%2C%20innerHTML%2C%20textContent%20trong%20Javascript&text=Ta%20th%E1%BA%A5y%20innerHTML%20s%E1%BA%BD%20in,b%C3%AAn%20trong%20div%20n%C3%A0y%20lu%C3%B4n.
+
+	- DOM là gì
+	- Truy cập vào các phần tử của DOM
+	- Lấy data trong DOM : innerHTML, innerText, textContent
+	- Class: add, remove, contains, toggle
+	- attribute: setAttribute, getAttribute
+	- Lắng nghe sự kiện -->
+
+	
+	1. Tìm một phần tử theo id của và thay đổi phần tử đó <br>
+	Trên đoạn văn có id="text":<br>
+
+	Thực hiện những công việc sau<br><br>
+
+	- Đặt màu văn bản thành #777<br>
+	- Đặt kích thước phông chữ thành 2rem<br>
+	- Đặt nội dung HTML thành Tôi có thể làm <em> bất cứ điều gì </em> tôi muốn với JavaScript.<br><br>
+
+
+	2. Tìm các phần tử trong danh sách và thay đổi chúng<br>
+	Lấy các phần tử có chung class "blue" và sử dụng vòng lặp để đặt màu văn bản của mỗi phần tử thành màu blue.<br>
+	<ul>
+		<li>Item 1</li>
+		<li>Item 2</li>
+		<li>Item 3</li>
+	</ul>
+
+	3. Cho 1 đoạn văn và 1 nút button<br>
+	Ấn vào button thì toggle ẩn/hiện đoạn văn<br><br>
+
+	4. Lắng nghe sự kiện "change" của ô input. <br>
+	Thay đổi background-image của div = giá trị trong ô input<br><br>
+	<div>
+		<label for="texture-selector">Choose a texture:</label>
+		<select id="texture-selector">
+			<option value="https://upload.wikimedia.org/wikipedia/commons/4/48/BLANK_ICON.png">&mdash;</option>
+			<option value="https://image.freepik.com/free-vector/memphis-seamless-patterns_9202-768.jpg">Memphis
+				Seamless
+				</value>
+			<option value="https://image.freepik.com/free-vector/retro-styled-pattern-background_1048-6593.jpg">
+				Retro-styled
+				</value>
+			<option value="https://image.freepik.com/free-vector/abstract-background-with-3d-pattern_1319-68.jpg">3D
+				Cubes
+				</value>
+		</select>
+	</div>
+
+	<div id="texture-background" class="texture-sample"></div>
+
+
+</body>
+
+</html>

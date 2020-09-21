@@ -27,7 +27,7 @@
 
         .hero {
             height: 300px;
-            padding: 50px;
+            padding: 50px 0;
             
         }
 
@@ -49,6 +49,15 @@
             letter-spacing: 2px;
             font-weight: 900;
             margin: 0;
+        }
+
+        #jobs-listed {
+            font-size: 16px;
+            margin-top: 2rem;
+        }
+
+        #jobs-listed span {
+            font-size: 2rem;
         }
 
         p {
@@ -74,11 +83,13 @@
         }
 
         button#show-all {
-            padding: 5px 10px;
+            padding: 10px 20px;
             color: white;
-            border: 1px solid #fff;
-            background-color: transparent;
+            border: 1px solid #696969;
+            background-color: #696969;
             transition: all .3s ease-in;
+            outline: none;
+            cursor: pointer;
         }
 
         button#show-all:hover {
@@ -86,22 +97,35 @@
             color: #696969;
         }
 
+        #search {
+            height: 46px;
+            line-height: 46px;
+            padding-left: 10px;
+        }
+
         .jobs {
-            padding: 25px 50px;
+            padding: 50px 0px 100px;
             display: flex;
         }
 
         .job-card {
             text-align: center;
             border-radius: 8px;
-            margin: 0 15px;
-            padding: 30px;
-            box-shadow: 0 0 32px 8px rgba(0, 0, 0, .1);
+            
+        }
+
+        .job-card-inner {
+            background-color: #f4f4f4;
+            padding-top: 0px;
+            padding-bottom: 20px;
         }
 
         .job-card h3 {
             font-size: 1.3rem;
             text-transform: capitalize;
+            background-color: #82DACA;
+            color: #fff;
+            padding: 1rem 0;
         }
 
         .job-card h4 {
@@ -125,33 +149,40 @@
             <div class="hero">
                 <header>
                     <div class="logo">
-                        <h1>Job Board</h1>
-                        <p>Find your dream job.</p>
+                        <h1>Bảng công việc</h1>
+                        <p>Tìm kiếm công việc phù hợp với bạn</p>
                     </div>
                     <div class="menu">
                         <ul>
-                            <li><button id="show-all">All jobs</button></li>
-                            <li><input id="search" type="text" placeholder="Search"></li>
+                            <li><button id="show-all">Tất cả công việc</button></li>
+                            <li><input id="search" type="text" placeholder="Tìm kiếm"></li>
                         </ul>
                     </div>
 
                 </header>
 
-                <h2 id="jobs-listed"><span>300</span> Jobs Listed</h2>
+                <h2 id="jobs-listed"><span>300</span> công việc có trong danh sách</h2>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <div class="jobs">
-            <div class="job-card">
-                <h3>Software Engineer</h3>
-                <h4>$50</h4>
-                <ul>
-                    <li>Node.js</li>
-                    <li>Git</li>
-                    <li>AWS</li>
-                </ul>
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center mt-5">Danh sách công việc hiện có</h2>
+            </div>
+        </div>
+        <div class="row jobs">
+            <div class="col-md-3 job-card">
+                <div class="job-card-inner">
+                    <h3>Software Engineer</h3>
+                    <h4>$50</h4>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Git</li>
+                        <li>AWS</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -161,6 +192,20 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="./main.js"></script>
+
+    <script>
+        // Yêu cầu: Sử dụng Javascript để thực hiện các công việc sau
+
+        // 1. Thêm 3 job bổ sung vào phần 'job' của trang bằng cách sao chép 'job-card' ban đầu.
+
+        // 2. Cập nhật tiêu đề của các job mới thành : JavaScript Developer, Java Developer, Python Developer
+
+        // 3. Cập nhật Jobs listed thành tổng số công việc hiện có trong trang
+
+        // 4. Nhập tên công việc vào ô tìm kiếm để lọc các công việc (lọc theo tên công việc). Những công việc được tìm thấy sẽ hiển thị ra, còn lại sẽ bị ẩn đi
+
+        // 5. Bấm vào Nút "All jobs" để reset ô tìm kiếm và hiển thị ra tất cả các công việc
+    </script>
 </body>
 
 </html>

@@ -24,6 +24,10 @@
             font-family: "Roboto";
             color: #696969;
         }
+
+        .bg-dark {
+            color: #fff;
+        }
     </style>
 </head>
 
@@ -31,47 +35,43 @@
     <div class="container-fluid">
         <div class="container">
             <table class="table">
-                <thead>
-                    <tr>
-                      <th scope="col">#</th>
-                      <th scope="col">First</th>
-                      <th scope="col">Last</th>
-                      <th scope="col">Handle</th>
-                    </tr>
-                </thead>
-                
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Samuel</td>
-                        <td>Johnson</td>
-                        <td>@samjohnson</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Sally</td>
-                        <td>Simpson</td>
-                        <td>@ssimpson</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>Leona</td>
-                        <td>Dixon</td>
-                        <td>@ldixon</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>Rosa</td>
-                        <td>Reed</td>
-                        <td>@rreed</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>Enrique</td>
-                        <td>Jimenez</td>
-                        <td>@ejimenez</td>
-                    </tr>
-                </tbody>
+                <tr>
+                    <th>#</th>
+                    <th>First</th>
+                    <th>Last</th>
+                    <th>Handle</th>
+                </tr>
+
+                <tr>
+                    <td>1</td>
+                    <td>Samuel</td>
+                    <td>Johnson</td>
+                    <td>@samjohnson</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Sally</td>
+                    <td>Simpson</td>
+                    <td>@ssimpson</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Leona</td>
+                    <td>Dixon</td>
+                    <td>@ldixon</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Rosa</td>
+                    <td>Reed</td>
+                    <td>@rreed</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Enrique</td>
+                    <td>Jimenez</td>
+                    <td>@ejimenez</td>
+                </tr>
             </table>
         </div>
     </div>
@@ -82,6 +82,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="./main.js"></script>
+
+    <script>
+        // Yêu cầu: Sử dụng Javascript để thực hiện các công việc sau
+
+        // 1. Thêm class "table-bordered" cho <table>
+
+        // 2. Thêm class "thead-dark" cho <thead>
+
+        // 3. Thêm 1 hàng mới trong table với nội dung như sau : 'Sean Reyes' (@sreyes)
+
+        // 4. Cập nhật "Leona Dixon's handle" thành "@dixonl" (hàng 3 - cột Handle)
+
+        // 5. Di chuyển "Rosa Reed" lên đầu bảng và đảm bảo tất cả các mục nhập số trong cột đầu tiên được cập nhật tương ứng.
+
+        // 6. Đổi chỗ 2 "First" và "Handle" cho nhau
+
+        // 7. Các hàng có index là số lẻ thì có background = "#f2f2f2"
+    </script>
 </body>
 
 </html>

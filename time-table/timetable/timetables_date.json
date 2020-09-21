@@ -123,6 +123,17 @@
 			"color": "4",
 			"description": "Javascript cơ bản",
 			"class" : "Foundation[4] Javascript (Buổi 4)"
+		},
+		{
+			"name" : "BÙI HIÊN",
+			"date": "22",
+			"month": "8",
+			"year": "2020",
+			"start_time": "14:00",
+			"end_time": "17:00",
+			"color": "1",
+			"description": "Javascript cơ bản",
+			"class" : "Foundation[4] Javascript (Buổi 4)"
 		}
 	]
 }

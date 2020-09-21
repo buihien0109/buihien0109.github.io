@@ -1,0 +1,49 @@
+=============================
+=============DOM=============
+=============================
+
+Buổi 1 (8/14):
+- Giới thiệu về DOM
+- Bài tập:
+    + Note.html
+
+- Bài tập về nhà:
+    + DOM-ex1-paragraph
+
+-----------------------------
+
+Buổi 2 (9/14):
+- Bài tập : 
+    + DOM-ex7-list-ul
+    + DOM-ex2-form
+
+- Bài tập về nhà:
+    + Hoàn thiện DOM-ex2-form
+    + DOM-ex15-counter
+
+-----------------------------
+
+Buổi 3 (10/14): Dự kiến
+- Bài tập : 
+    + DOM-ex9-card
+    + DOM-ex10-job
+    + DOM-ex11-table
+
+- Bài tập về nhà:
+    + DOM-ex3-random-box
+    + DOM-ex4-get-input
+    + DOM-ex5-get-length-word
+
+-----------------------------
+
+Buổi 4 (11/14): Dự kiến (Kết thúc phần DOM -> qua làm project)
+- Bài tập:
+    + DOM-ex16-cake (Luyện tập tạo giao diện)
+    + DOM-ex16-filter-search
+    + DOM-ex6-random-calculator
+
+- Bài tập về nhà:
+    + DOM-ex18-tip-calculator
+    + DOM-ex19-stop-watch
+
+-----------------------------
