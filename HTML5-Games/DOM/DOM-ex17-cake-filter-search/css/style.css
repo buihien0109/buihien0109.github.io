@@ -6,6 +6,7 @@
 
 body {
     background-color: #f4f4f4;
+    font-family: "Roboto";
 }
 
 img {
@@ -21,7 +22,9 @@ img {
 
 .box-btn {
     display: flex;
-    justify-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .btn {
@@ -30,10 +33,23 @@ img {
     border-radius: 4px;
     margin-left: 16px;
     margin-right: 16px;
+    border: 1px solid tomato;
+    background-color: #fff;
+    color: tomato;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all 0.2s ease-in;
+}
+
+.btn:hover {
+    opacity: 0.5;
+}
+
+.btn-active {
     background-color: tomato;
     color: #fff;
-    text-decoration: none;
 }
+
 
 .item-container {
     display: flex;
@@ -72,10 +88,33 @@ img {
 .name {
     color: slategray;
     text-transform: capitalize;
+    font-size: 1.3rem;
+    font-weight: 500;
 }
 
 .price {
     color: orangered;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
+}
+
+.box-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+#search-item {
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    width: 400px;
+    outline: none;
+    transition: all 0.2s ease-in;
+}
+
+#search-item:focus {
+    border: 1px solid tomato;
 }

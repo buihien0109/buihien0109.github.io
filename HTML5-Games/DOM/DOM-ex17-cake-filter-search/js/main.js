@@ -80,6 +80,13 @@ for (let i = 0; i < items.length; i++) {
     `
 }
 
+let prices = document.querySelectorAll('.price')
+
+prices.forEach(function (price) {
+    let money = price.innerText
+    price.innerText = money.replace(/\D/g, "").replace(/\B(?=(\d{3})+(?!\d))/g, ",")
+});
+
 
 const buttons = document.querySelectorAll('.btn')
 const storeItems = document.querySelectorAll('.card-item')
@@ -89,7 +96,8 @@ buttons.forEach((button) => {
         e.preventDefault()
         const filter = this.getAttribute('filter')
 
-        console.log(filter)
+        Array.from(buttons).map(btn => btn.classList.remove('btn-active'))
+        button.classList.add('btn-active')
 
         storeItems.forEach((item) => {
             if (filter === 'all') {
@@ -105,25 +113,18 @@ buttons.forEach((button) => {
     })
 })
 
+const searchBox = document.querySelector('#search-item')
+const cardItems = document.querySelectorAll('.card-item')
 
-//wire up filter search box
-// (function(){
-
-//     const searchBox = document.querySelector('#search-item')
-//     const storeItems = document.querySelectorAll('.store-item')
-
-//     searchBox.addEventListener('keyup', (e) => {
-
-//         const searchFilter = e.target.value.toLowerCase().trim()
-//         //display only items that contain filter input
-
-//         storeItems.forEach((item) => {
-//             if (item.textContent.includes(searchFilter)){
-//                 item.style.display = 'block'
-//             } else {
-//                 item.style.display = 'none'
-//             }
-//         })
-//     })
-
-// })();
+searchBox.addEventListener('keyup', (e) => {
+    if(e.keyCode == 13) {
+        const searchFilter = e.target.value.toLowerCase().trim()
+        storeItems.forEach((item) => {
+            if (item.textContent.includes(searchFilter)){
+                item.style.display = 'block'
+            } else {
+                item.style.display = 'none'
+            }
+        })
+    }
+})
