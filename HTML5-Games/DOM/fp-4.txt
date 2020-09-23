@@ -23,7 +23,7 @@ Buổi 2 (9/14):
 
 -----------------------------
 
-Buổi 3 (10/14): Dự kiến
+Buổi 3 (10/14):
 - Bài tập : 
     + DOM-ex9-card
     + DOM-ex10-job
@@ -31,18 +31,20 @@ Buổi 3 (10/14): Dự kiến
 
 - Bài tập về nhà:
     + DOM-ex3-random-box
-    + DOM-ex4-get-input
-    + DOM-ex5-get-length-word
 
 -----------------------------
 
-Buổi 4 (11/14): Dự kiến (Kết thúc phần DOM -> qua làm project)
+Buổi 4 (11/14): Kết thúc phần DOM -> chuyển qua Project
 - Bài tập:
+    + Render Table
     + DOM-ex16-cake (Luyện tập tạo giao diện)
     + DOM-ex16-filter-search
     + DOM-ex6-random-calculator
 
 - Bài tập về nhà:
+    + DOM-ex4-get-input
+    + DOM-ex5-get-length-word
+    + DOM-ex8-input-rgb
     + DOM-ex18-tip-calculator
     + DOM-ex19-stop-watch
 
