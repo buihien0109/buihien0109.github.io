@@ -46,7 +46,6 @@ $(document).ready(function(){
         } else {
             renderUI(cards)
         }
-        
     })
 
     function filterCard(category) {
