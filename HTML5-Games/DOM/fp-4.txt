@@ -6,6 +6,9 @@ Buổi 1 (8/14):
 - Giới thiệu về DOM
 - Bài tập:
     + Note.html
+    + DOM-ex12-random-background
+    + DOM-ex13-random-HEX-color
+    + DOM-ex14-random-quote
 
 - Bài tập về nhà:
     + DOM-ex1-paragraph
@@ -23,7 +26,7 @@ Buổi 2 (9/14):
 
 -----------------------------
 
-Buổi 3 (10/14)
+Buổi 3 (10/14):
 - Bài tập : 
     + DOM-ex9-card
     + DOM-ex10-job
@@ -33,12 +36,41 @@ Buổi 3 (10/14)
     + DOM-ex3-random-box
 
 -----------------------------
+Đã làm: 1,2,3,7,9,10,11,12,13,14,15
+Chưa làm: 4,5,8,16,17,18,19,20
 
-Buổi 4 (11/14)
+Buổi 4 (11/14 - 23/09/2020):
 - Bài tập:
+    + DOM-ex20-render-table
     + DOM-ex16-cake (Luyện tập tạo giao diện)
-    
+
+Buổi 5 (12/14 - 25/09/2020)
+- Bài tập:
+    + DOM-ex17-filter-search
+    + DOM-pagination
 - Bài tập về nhà:
-    + DOM-ex6-random-calculator
 
 -----------------------------
+
+Buổi 6 (13/14 - 28/09/2020)
+- Làm ứng dụng Todolist
+Buổi 7 (14/14 - 30/09/2020)
+- Làm ứng dụng Roll Dice
+
+Buổi 8 (15/14 - 7/10/2020)
+- Làm ứng dụng BMI
+
+Buổi 9 (16/14 - 14/10/2020)
+- Làm ứng dụng Memory Card Game
+
+Buổi 10 (17/14 - 21/10/2020)
+- Làm ứng dụng Memory Card App
+
+Buổi 11 (18/14 - 28/10/2020)
+- Làm ứng dụng Calculator + Switch Theme
+
+Buổi 12 (19/14 - 04/11/2020)
+- Làm ứng dụng Xử lý User (thêm sửa xóa user API)
+
+Buổi 13 (20/14 - 11/11/2020)
+- Đồ Án Game
