@@ -6,12 +6,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #696969;
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: linear-gradient(102.7deg, #fddaff 8.2%, #dfadfc 19.6%, #adcdfc 36.8%, #adfcf4 73.2%, #caf8d0 90.9%);
+    background:#f7f1f1;
 }
 
 img {
@@ -21,24 +21,72 @@ img {
 }
 
 .container {
-    background-color: #fff;
-    padding: 30px;
+    background-color: #FF6666;
+    padding: 50px 0;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+    position: relative;
+    z-index: 2;
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-top: 20px solid #FF6666;
+    border-left: 20px solid #FF6666;
+    transition: all .2s ease-in;
+    z-index: -1;
+    opacity: 0;
+}
+
+.container::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 20px solid #FF6666;
+    border-right: 20px solid #FF6666;
+    transition: all .2s ease-in;
+    z-index: -1;
+    opacity: 0;
+}
+
+.container:hover::before {
+    top: -50px;
+    left: -50px;
+    opacity: 0.2;
+}
+
+.container:hover::after {
+    bottom: -50px;
+    right: -50px;
+    opacity: 0.2;
 }
 
 h1 {
-    text-transform: uppercase;
+    text-transform: capitalize;
     text-align: center;
     margin-bottom: 30px;
+    font-weight: normal;
+    font-size: 2.6rem;
+    letter-spacing: 0.05em;
+    color: #fff;
 }
 
 .todo-input {
-    border-bottom: 2px solid #ccc;
+    height: 3rem;
+    padding: 0 50px;
 }
+
 .todo-input input {
     min-width: 350px;
-    height: 40px;
+    height: 100%;
     line-height: 40px;
     border: none;
     padding-left: 6px;
@@ -49,29 +97,30 @@ h1 {
     outline: none;
 }
 .todo-input button {
+    text-transform: uppercase;
     display: inline-block;
-    height: 30px;
-    padding-left: 15px;
-    padding-right: 15px;
-    border: 1px solid #f2eeef;
-    background-color: #a4a1b5;
+    height: 100%;
+    padding: 0 1.3rem;
+    border: 1px solid rgba(255,255,255,.3);
+    background-color: #FF6666;
     color: #fff;
     cursor: pointer;
     transition: all .3s ease;
+    outline: none;
 }
 
 .todo-input button:hover {
-
+    background-color: #FF5E5E;
 }
 
 .todo-option {
     display: flex;
     justify-content: flex-end;
-    padding: 1rem 0 0;
+    padding: 1rem 50px 0;
 }
 
 .todo-option-item {
-    border: 1px solid #ccc;
+    border: 1px solid rgba(255,255,255,.3);
     padding: 6px;
     margin-left: 6px;
     font-size: 14px;
@@ -83,6 +132,7 @@ h1 {
     margin-right: 4px;
 }
 
+
 .todo-container {
     margin-top: 20px;
 }
@@ -92,8 +142,9 @@ h1 {
     justify-content: space-between;
     border-bottom: 1px solid #f4f4f4;
     margin-bottom: 6px;
-    padding: 10px 6px;
-    font-size: 14px;
+    padding: 15px 50px;
+    font-size: 16px;
+    background-color: rgba(255,255,255,0.1);
 }
 
 .todo-item.active-todo .todo-item-title p{
@@ -108,7 +159,7 @@ h1 {
     top: 50%;
     height: 2px;
     width: 100%;
-    background-color: #399980;
+    background-color: #fff;
 }
 
 .todo-item-title {
@@ -137,4 +188,9 @@ h1 {
     display: inline-block;
     width: 20px;
     height: 20px;
+}
+
+.todos-empty {
+    padding-left: 50px;
+    font-style: italic;
 }
