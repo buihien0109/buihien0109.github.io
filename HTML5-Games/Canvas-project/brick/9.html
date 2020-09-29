@@ -72,29 +72,42 @@
 
             collide(rect) {
                 if (!this.running) return;
-                rect.top = rect.y;
-                rect.bottom = rect.y + rect.height;
-                rect.left = rect.x;
-                rect.right = rect.x + rect.width;
+                let p = {
+                    x: this.x,
+                    y: this.y
+                };
 
-                this.top = this.y - this.radius;
-                this.bottom = this.y + this.radius;
-                this.left = this.x - this.radius;
-                this.right = this.x + this.radius;
+                if (p.x < rect.left) {
+                    p.x = rect.left;
+                } else if (p.x > rect.right) {
+                    p.x = rect.right;
+                }
 
-                let check = rect.left < this.right && rect.top < this.bottom && rect.right > this.left && rect.bottom > this.top;
+                if (p.y < rect.top) {
+                    p.y = rect.top;
+                }
+                else if (p.y > rect.bottom) {
+                    p.y = rect.bottom;
+                }
 
-                if(check) {
-                    if (this.x == rect.left || this.x == rect.right) {
+                let dx = this.x - p.x;
+                let dy = this.y - p.y;
+
+                let isCollided = (dx * dx + dy * dy) <= this.radius * this.radius;
+
+                if (isCollided) {
+
+                    if (p.x == rect.left || p.x == rect.right) {
                         this.speedX = -this.speedX;
                     }
 
-                    if (this.y == rect.top || this.y == rect.bottom) {
+                    if (p.y == rect.top || p.y == rect.bottom) {
                         this.speedY = -this.speedY;
                     }
-                }
 
-                return check
+                }
+                console.log(isCollided)
+                return isCollided;
             }
         }
 
@@ -147,7 +160,7 @@
 
             for (let i = 0; i < BRICK_ROWS; i++) {
                 for (let j = 0; j < BRICK_COLS; j++) {
-                    if (bricks[i][j]) {
+                    if(bricks[i][j]) {
                         bricks[i][j].draw(c);
                     }
                 }
@@ -160,15 +173,15 @@
         function update() {
             ball.update()
 
-            for (let i = 0; i < BRICK_ROWS; i++) {
-                for (let j = 0; j < BRICK_COLS; j++) {
-                    if (bricks[i][j] && ball.collide(bricks[i][j])) {
-                        bricks[i].splice(j, 1);
-                    }
-                }
-            }
+            // for (var i = 0; i < BRICK_ROWS; i++) {
+            //     for (var j = 0; j < BRICK_COLS; j++) {
+            //         if (bricks[i][j] && ball.collide(bricks[i][j])) {
+            //             bricks[i][j] = null;
+            //         }
+            //     }
+            // }
 
-            ball.collide(paddle)
+            ball.collide(paddle);
             
             draw();
         }
@@ -205,7 +218,7 @@
             animate(); 
         }
 
-        init()
+        window.onload = init()
 
     </script>
 </body>
