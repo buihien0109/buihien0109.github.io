@@ -1,59 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-        #start, #game, #end {
-            font-size: 100px;
-            width: 100vw;
-            height: 100vh;
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
         }
-        #start {
-            background-color: blue;
+        body {
+            overflow: hidden;
         }
-        #game {
-            background-color: yellow;
-            display: none;
-        }
+
+        #start,
+        #game,
         #end {
-            background-color: green;
-            display: none;
+            font-size: 60px;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        #start {
+            background-color: lightcoral;
+        }
+
+        #game {
+            background-color: lightseagreen;
+        }
+
+        #end {
+            background-color: lightskyblue;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 24px;
         }
     </style>
 </head>
+
 <body>
     <div id="start">
-        Start Game
-        <button id="btn-start-game">Chơi game</button>
+        <div class="container">
+            <h1>Start Game</h1>
+            <div class="text-center">
+                <button id="btn-start">Chơi game</button>
+            </div>
+        </div>
     </div>
     <div id="game">
-        Chơi Game
+        <div class="container">
+            <h1>Chơi Game</h1>
+            <!-- Đặt thẻ canvas tại đây
+            <canvas id="canvas"></canvas> -->
+        </div>
     </div>
     <div id="end">
-        End Game
+        <div class="container">
+            <h1>End Game</h1>
+            <div class="text-center">
+                <button id="btn-restart">Chơi lại</button>
+                <button id="btn-reload">Thoát game</button>
+            </div>
+        </div>
     </div>
 
     <script>
-        const startGame = document.getElementById('start')
-        const game = document.getElementById('game')
-        const endGame = document.getElementById('end')
+        const startGame = document.getElementById("start");
+        const game = document.getElementById("game");
+        const endGame = document.getElementById("end");
 
-        const btn_start_game = document.getElementById('btn-start-game')
+        const btn_start = document.getElementById("btn-start");
+        const btn_restart = document.getElementById("btn-restart");
+        const btn_reload = document.getElementById("btn-reload");
 
-        btn_start_game.addEventListener('click', function() {
-            startGame.style.display = 'none'
-            game.style.display = 'block'
-        })
+        // Bắt đầu game
+        btn_start.addEventListener("click", function () {
+            startGame.style.display = "none";
+            game.style.display = "block";
+            playGame();
+        });
 
         // Chơi game
-        setTimeout(function() {
-            game.style.display = 'none'
-            endGame.style.display = 'block'
-        },5000)
+        function playGame() {
+            setTimeout(function () {
+                game.style.display = "none";
+                endGame.style.display = "block";
+            }, 3000);
+        }
+
+        // Chơi lại
+        btn_restart.addEventListener("click", function () {
+            endGame.style.display = "none";
+            game.style.display = "block";
+            playGame()
+        });
+
+        // Thoát game
+        btn_reload.addEventListener("click", function () {
+            window.location.reload();
+        });
     </script>
-    
 </body>
+
 </html>
