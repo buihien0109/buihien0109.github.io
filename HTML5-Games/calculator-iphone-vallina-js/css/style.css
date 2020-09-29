@@ -1,0 +1,289 @@
+*,
+*:before,
+*:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.container--wrapper {
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.phone {
+    max-width: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.calculator--wrapper {
+    position: absolute;
+    top: 159px;
+    left: 85px;
+    width: 324px;
+    height: 574px;
+    overflow: hidden;
+}
+
+.iphone__ui {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.show-iphone--wapper {
+    position: absolute;
+    top: 21px;
+    left: 98px;
+    width: 52px;
+    height: 52px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+}
+
+/* suggest */
+
+.talkbubble {
+    width: 120px;
+    height: 80px;
+    background: #fff;
+    position: absolute;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    z-index: 10;
+    padding: .5rem;
+    font-size: 14px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+}
+
+.talkbubble1 {
+    top: 5rem;
+    left: -1rem;
+    animation: animate1 5s linear ;
+}
+
+@keyframes animate1 {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        top: 4.5rem;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        top: 5.5rem;
+    }
+}
+
+.talkbubble1:before {
+    content: "";
+    position: absolute;
+    bottom: 98%;
+    left: 30px;
+    width: 0;
+    height: 0;
+    border-left: 8px solid transparent;
+    border-bottom: 12px solid #fff;
+    border-right: 8px solid transparent;
+}
+
+.talkbubble.hide-talkbubble {
+    display: none;
+}
+
+.iphone__ui .show-iphone {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    color: #000;
+    opacity: 0;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.calculator {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all .3s ease;
+}
+
+.screen {
+    background-color: #202020;
+    height: calc(100% - 405px);
+}
+
+.navigation {
+    height: 24px;
+    line-height: 24px;
+    display: flex;
+}
+
+.screen-calculator {
+    height: calc(100% - 24px);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 100;
+    text-align: right;
+    padding: 4.5rem .5rem .5rem .5rem;
+    overflow: hidden;
+}
+
+.navigation span {
+    display: inline-block;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 300;
+}
+
+.icon {
+    flex: 0 0 33.33%
+}
+
+.icon.icon-left {
+    text-align: left;
+    padding-left: .5rem;
+}
+
+.icon.icon-center {
+    text-align: center;
+}
+
+.icon.icon-right {
+    text-align: right;
+    padding-right: .5rem;
+}
+
+.bluetooth {
+    opacity: .5;
+}
+
+table,
+tr {
+    width: 100%;
+}
+
+.board span {
+    display: inline-block;
+    width: 81px;
+    height: 81px;
+    line-height: 81px;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 300;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.num-0 {
+    width: 162px !important;
+}
+
+tr td:not(:last-child) span {
+    background-color: #C9CACC;
+    color: #414141;
+    border-right: 1px solid rgba(0, 0, 0, 0.125);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+tr td:not(:last-child) span:hover {
+    background-color: #D0D2D3;
+}
+
+tr td:last-child span {
+    background-color: #F97C0E;
+    color: #fff;
+}
+
+tr td:last-child span:hover {
+    background-color: #FD662B;
+}
+
+.back-home--wrapper {
+    position: absolute;
+    left: calc(50% - 39px);
+    bottom: 82px;
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+}
+.btn_back-home {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.talkbubble2 {
+    top: 0rem;
+    left: 6rem;
+    animation: animate2 5s linear ;
+}
+
+.talkbubble2:before {
+    content: "";
+    position: absolute;
+    right: 98%;
+    top: 30px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-right: 12px solid #fff;
+    border-bottom: 8px solid transparent;
+}
+
+@keyframes animate2 {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        top: 0.5rem;
+    }
+    10%, 30%, 50%, 70%, 90% {
+        top: -0.5rem;
+    }
+}
+
+.iphone__ui .show-iphone:active,
+.btn_back-home:active,
+.iphone__ui .show-iphone:focus,
+.btn_back-home:focus {
+    outline: none;
+}
+
+.show {
+    left: 0;
+}
+
+.hide {
+    left: -100%;
+}
+
