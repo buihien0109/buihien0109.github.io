@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Point Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h3>Hướng dẫn Point Game</h3>
+            <div class="box">
+                <p><a href="./1.html">1.Vẽ quả bóng</a></p>
+                <p><a href="./2.html">2.Vẽ ô tính điểm</a></p>
+                <p><a href="./3.html">3.Vẽ các điểm</a></p>
+                <p><a href="./4.html">4.Di chuyển quả bóng</a></p>
+                <p><a href="./5.html">5.Di chuyển quả bóng khi va vào thành</a></p>
+                <p><a href="./6.html">6.Di chuyển quả bóng để ăn điểm</a></p>
+                <p><a href="./7.html">7.Tạo màn hình game: START - GAME - END</a></p>
+            </div>
+            <div class="suggest">
+                <h3>Yêu cầu bước 6:</h3>
+                <p>- Viết 1 method để tính toán khả năng va chạm của 2 vật thể</p>
+                <img src="./image/circle.png" alt="">
+                <p>- Khi va chạm các point sẽ biến mất đồng thời nhạc kêu lên, score thêm 1 điểm</p>
+                <p>- Khi Boss ăn được số bóng % 5 thì tăng kích thước của Boss lên 1 ít</p>
+                <p>- Khi Boss ăn hết số bóng trên màn hình, thông báo thắng cuộc</p>
+            </div>
+        </div>
+        <div class="game">
+            <p>6.Di chuyển quả bóng để ăn điểm</p>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+    <script>
+        class Avatar {
+            constructor(x, y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.velocity = {
+                    x: 0,
+                    y: 0,
+                };
+                this.score = 0;
+            }
+
+            draw(c) {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                c.shadowColor = "white";
+                c.shadowBlur = 10;
+                c.fillStyle = this.color;
+                c.fill();
+                c.closePath();
+            }
+
+            drawPiPo(c) {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                c.shadowColor = "white";
+                c.shadowBlur = 10;
+                c.fillStyle = this.color;
+                c.fill();
+                c.closePath();
+                c.beginPath();
+                c.font = "12px source sanc pro";
+                c.fillStyle = "white";
+                c.textAlign = "center";
+                c.fillText("HAHA", this.x, this.y + 5);
+                c.closePath();
+            }
+
+            drawScore(c) {
+                c.beginPath();
+                c.font = "30px Arial";
+                c.fillText(
+                    this.score,
+                    canvas.width * 0.1,
+                    canvas.height - canvas.height * 0.05
+                );
+                c.closePath();
+            }
+
+            update() {
+                if (this.x >= canvas.width) {
+                    this.velocity.x = -2;
+                }
+                if (this.x <= 0) {
+                    this.velocity.x = 2;
+                }
+                if (this.y >= canvas.height) {
+                    this.velocity.y = -1;
+                }
+                if (this.y <= 0) {
+                    this.velocity.y = 1;
+                }
+
+                this.x += this.velocity.x;
+                this.y += this.velocity.y;
+            }
+
+            touch(avatar) {
+                let kc = Math.sqrt((this.x - avatar.x) ** 2 + (this.y - avatar.y) ** 2)
+                let r = this.radius + avatar.radius
+                if(kc < r) {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
+
+        let canvas;
+        let c;
+        let avatar;
+        let arrayAvatar;
+        let numPoint = 70
+
+        function createX() {
+            return Math.floor(Math.random() * canvas.width);
+        }
+        function createY() {
+            return Math.floor(Math.random() * canvas.height);
+        }
+
+        function clear() {
+            c.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function updateGame(c) {
+            clear();
+
+            arrayAvatar.forEach((ava, index) => {
+                ava.draw(c);
+
+                if(ava.touch(avatar)) {
+                    arrayAvatar.splice(index,1)
+                    avatar.score++;
+                    new Audio('http://dight310.byu.edu/media/audio/FreeLoops.com/5/5/Mouse%20Click%20Fast.wav-23232-Free-Loops.com.mp3').play();
+                    if (avatar.score % 5 == 0) {
+                        avatar.radius += 2;
+                    }
+                    if (avatar.score == numPoint) {
+                        alert('Thắng rồi. Chàng trai ơi !!!!!!!!!');
+                    }
+                }
+            });
+
+            avatar.update();
+
+            avatar.drawPiPo(c);
+            avatar.drawScore(c);
+        }
+
+        function init() {
+            arrayAvatar = [];
+
+            canvas = document.getElementById("canvas");
+            canvas.width = window.innerWidth * 0.5
+            canvas.height = window.innerHeight * 0.6
+
+            c = canvas.getContext("2d");
+
+            for (var i = 0; i < numPoint; i++) {
+                arrayAvatar.push(new Avatar(createX(), createY(), 6, "red"));
+            }
+
+            avatar = new Avatar(20, 20, 20, "orange");
+            avatar.drawPiPo(c);
+            avatar.drawScore(c);
+
+            document.addEventListener("keydown", (event) => {
+                if (event.keyCode === 37) {
+                    avatar.velocity.x = -2;
+                    avatar.velocity.y = 0;
+                }
+                if (event.keyCode === 38) {
+                    avatar.velocity.y = -2;
+                    avatar.velocity.x = 0;
+                }
+                if (event.keyCode === 40) {
+                    avatar.velocity.y = 2;
+                    avatar.velocity.x = 0;
+                }
+                if (event.keyCode === 39) {
+                    avatar.velocity.x = 2;
+                    avatar.velocity.y = 0;
+                }
+            });
+
+            function animate() {
+                requestAnimationFrame(animate);
+                updateGame(c);
+            }
+            animate();
+        }
+
+        window.onload = init();
+    </script>
+</body>
+
+</html>
