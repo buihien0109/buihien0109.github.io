@@ -28,6 +28,26 @@
             background-color: lightcoral;
         }
 
+        #start input {
+            display: inline-block;
+            height: 60px;
+            line-height: 60px;
+            padding-left: 10px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            outline: none;
+            border-radius: 4px;
+            font-size: 24px;
+            width: 400px;
+            margin-right: 10px;
+        }
+
+        #start .text-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         #game {
             background-color: lightseagreen;
             display: none;
@@ -51,6 +71,7 @@
 
         h1 {
             margin-bottom: 30px;
+            width: 100%;
         }
 
         button {
@@ -71,13 +92,18 @@
         <div class="container">
             <h1>Bắt đầu Game</h1>
             <div class="text-center">
+                <input type="text" placeholder="Nhập tên người chơi" id="input">
                 <button id="btn-start">Chơi game</button>
             </div>
+
         </div>
     </div>
     <div id="game">
         <div class="container">
-            <h1>Chơi Game</h1>
+            <h1>
+                Chơi Game <br>
+                Xin chào "<span id="player"></span>"
+            </h1> 
             <!-- Đặt thẻ canvas tại đây
             <canvas id="canvas"></canvas> -->
         </div>
@@ -101,32 +127,46 @@
         const btn_restart = document.getElementById("btn-restart");
         const btn_reload = document.getElementById("btn-reload");
 
-        // Bắt đầu game
-        btn_start.addEventListener("click", function () {
-            startGame.style.display = "none";
-            game.style.display = "block";
-            playGame();
-        });
+        const input = document.getElementById('input')
+        const player = document.getElementById('player')
 
-        // Chơi game
+        let inputValue
+
+        btn_start.addEventListener('click', function() {
+            inputValue = input.value
+            if(!inputValue) {
+                alert('Tên người chơi không được để trống')
+                return
+            }
+
+            player.innerText = inputValue
+
+            startGame.style.display = 'none'
+            game.style.display = 'block'
+
+            playGame()
+        })
+
         function playGame() {
-            setTimeout(function () {
-                game.style.display = "none";
-                endGame.style.display = "block";
-            }, 3000);
+            setTimeout(function() {
+                game.style.display = 'none'
+                endGame.style.display = 'block'
+            }, 60000)
         }
 
-        // Chơi lại
-        btn_restart.addEventListener("click", function () {
-            endGame.style.display = "none";
-            game.style.display = "block";
+        btn_restart.addEventListener('click', function() {
+            game.style.display = 'block'
+            endGame.style.display = 'none'
             playGame()
-        });
+        })
 
-        // Thoát game
-        btn_reload.addEventListener("click", function () {
-            window.location.reload();
-        });
+        btn_reload.addEventListener('click', function() {
+            window.location.reload()
+        })
+
+
+
+        
     </script>
 </body>
 
