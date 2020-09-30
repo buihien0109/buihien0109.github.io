@@ -1,34 +1,49 @@
-var scores, roundScore, activePlayer, gamePlaying;
-
-init();
-
-var lastDice;
+let scores, roundScore, activePlayer, gamePlaying;
 
 document.querySelector('.btn-roll').addEventListener('click', function() {
     if(gamePlaying) {
         // 1. Random số nút của 2 con xúc xắc
-        var dice1 = Math.floor(Math.random() * 6) + 1;
-        var dice2 = Math.floor(Math.random() * 6) + 1;
+        let dice1 = Math.floor(Math.random() * 6) + 1;
+        let dice2 = Math.floor(Math.random() * 6) + 1;
 
         //2. Hiển thị kết quả bằng hình ảnh lên trên màn hình
         document.getElementById('dice-1').style.display = 'block';
         document.getElementById('dice-2').style.display = 'block';
-        document.getElementById('dice-1').src = 'dice-' + dice1 + '.png';
-        document.getElementById('dice-2').src = 'dice-' + dice2 + '.png';
+        document.getElementById('dice-1').classList.remove('fail');
+        document.getElementById('dice-2').classList.remove('fail');
+        document.getElementById('dice-1').src = './img/dice-' + dice1 + '.png';
+        document.getElementById('dice-2').src = './img/dice-' + dice2 + '.png';
 
         //3. Update điểm của lượt chơi hiện tại nếu 1 trong 2 con súc sắc có giá trị khác 1
         if (dice1 !== 1 && dice2 !== 1) {
-            //Add score
+            // Thêm nhạc
+            document.getElementById('success-music').play();
+
+            //Cập nhật điểm và hiển thị
             roundScore += dice1 + dice2;
             document.querySelector('#current-' + activePlayer).textContent = roundScore;
         } else {
-            // Đổi lượt chơi
-            nextPlayer();
+            // Thêm class fail vào ô xúc sắc có giá trị = 1
+            if(dice1 == 1) {
+                document.getElementById('dice-1').classList.add('fail')
+            }
+            if(dice2 == 1) {
+                document.getElementById('dice-2').classList.add('fail')
+            }
+
+            // Thêm nhạc
+            document.getElementById('failed-music').play();
+
+            // Đổi lượt chơi sau 1.5s
+            setTimeout(() => {
+                nextPlayer();
+            },1500)
+            
         }
     }    
 });
 
-
+// Xử lý khi ấn lưu trữ điểm
 document.querySelector('.btn-hold').addEventListener('click', function() {
     if (gamePlaying) {
         // Update số lượng điểm của người chơi hiện tại (điểm tích trữ qua cát lần chơi trước + điểm của lần chơi hiện tại)
@@ -37,8 +52,8 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         // Update UI
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
         
-        var input = document.querySelector('.final-score').value;
-        var winningScore;
+        let input = document.querySelector('.final-score').value;
+        let winningScore;
         
         // Undefined, 0, null or "" => false
         // Anything else is COERCED => true
@@ -52,8 +67,10 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
         
         // Kiểm tra nếu người chơi nào đó thắng cuộc
         // Hiển thị giao diện người thắng cuộc (text + giao diện)
-        // Ẩn hết con súc sắc
+        // Ẩn hết con xúc sắc
         if (scores[activePlayer] >= winningScore) {
+            document.getElementById('victory-music').play();
+
             document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
             document.getElementById('dice-1').style.display = 'none';
             document.getElementById('dice-2').style.display = 'none';
@@ -104,9 +121,12 @@ function init() {
     document.getElementById('current-1').textContent = '0';
     document.getElementById('name-0').textContent = 'Player 1';
     document.getElementById('name-1').textContent = 'Player 2';
+
     document.querySelector('.player-0-panel').classList.remove('winner');
     document.querySelector('.player-1-panel').classList.remove('winner');
     document.querySelector('.player-0-panel').classList.remove('active');
     document.querySelector('.player-1-panel').classList.remove('active');
     document.querySelector('.player-0-panel').classList.add('active');
 }
+
+window.onload = init();

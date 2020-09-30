@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
         <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
-        <link type="text/css" rel="stylesheet" href="style.css">
+        <link type="text/css" rel="stylesheet" href="./css/style.css">
         
         <title>Roll Point</title>
     </head>
@@ -35,10 +35,21 @@
             
             <input type="text" placeholder="Mức điểm" class="final-score">
             
-            <img src="dice-5.png" alt="Dice" class="dice" id="dice-1">
-            <img src="dice-5.png" alt="Dice" class="dice" id="dice-2">
+            <img src="./img/dice-5.png" alt="Dice" class="dice" id="dice-1">
+            <img src="./img/dice-5.png" alt="Dice" class="dice" id="dice-2">
+
+            <!-- Các thể loại nhạc -->
+            <audio id="failed-music">
+                <source src="audio/failed.mp3" type="audio/mpeg" />
+            </audio>
+            <audio id="success-music">
+                <source src="audio/success.mp3" type="audio/mpeg" />
+            </audio>
+            <audio id="victory-music">
+                <source src="audio/victory.mp3" type="audio/mpeg" />
+            </audio>
         </div>
     
-        <script src="main.js"></script>
+        <script src="./js/main.js"></script>
     </body>
 </html>
