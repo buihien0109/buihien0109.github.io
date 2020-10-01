@@ -1,1 +1,0 @@
-export const url = 'https://carpo.herokuapp.com/products'
