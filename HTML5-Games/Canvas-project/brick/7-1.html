@@ -111,8 +111,8 @@
                 c.fillRect(this.x, this.y, this.width, this.height);
             }
 
-            moveTo(x) {
-                this.x = x
+            update(ball) {
+                this.x = ball.x - this.width / 2
             }
         }
 
@@ -123,12 +123,6 @@
         let paddleHeight = 20;
         let ball;
         let paddle;
-
-        function canvas_mousemove(e) {
-            let x = e.offsetX - paddleWidth/2
-
-            paddle.moveTo(x);
-        }
 
         function clear() {
             c.clearRect(0, 0, canvas.width, canvas.height);
@@ -143,6 +137,7 @@
 
         function update() {
             ball.update()
+            paddle.update(ball)
             ball.collide(paddle)
             
             draw();
@@ -152,8 +147,6 @@
             canvas = document.getElementById("canvas");
             canvas.width = innerWidth * 0.3
             canvas.height = innerHeight * 0.6
-
-            canvas.onmousemove = canvas_mousemove;
 
             c = canvas.getContext("2d");
 

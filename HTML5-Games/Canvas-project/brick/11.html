@@ -21,8 +21,8 @@
                 <p><a href="./6.html">6.Di chuyển thanh đệm</a></p>
                 <p><a href="./7.html">7.Kiểm tra va chạm của bóng với đệm</a></p>
                 <p><a href="./8.html">8.Vẽ hàng gạch</a></p>
-                <p><a href="./9.html" class="active-step">9.Bóng va chạm với hàng gạch</a></p>
-                <p><a href="./10.html">10. Tăng level cho gạch</a></p>
+                <p><a href="./9.html">9.Bóng va chạm với hàng gạch</a></p>
+                <p><a href="./10.html" class="active-step">10. Tăng level cho gạch</a></p>
             </div>
         </div>
         <div class="game">
@@ -73,7 +73,7 @@
 
             collide(rect) {
                 if (!this.running) return;
-                var p = {
+                let p = {
                     x: this.x,
                     y: this.y
                 };
@@ -96,20 +96,34 @@
                     p.y = rect.bottom;
                 }
 
-                var dx = this.x - p.x;
-                var dy = this.y - p.y;
+                let dx = this.x - p.x;
+                let dy = this.y - p.y;
 
-                var isCollided = (dx * dx + dy * dy) <= this.radius * this.radius;
+                let isCollided = (dx * dx + dy * dy) <= this.radius * this.radius;
 
                 if (isCollided) {
 
-                    if (p.x == rect.left || p.x == rect.right) {
-                        this.speedX = -this.speedX;
-                    }
+                    // if (p.x == rect.left || p.x == rect.right) {
+                    //     this.speedX = -this.speedX;
+                    // }
 
-                    if (p.y == rect.top || p.y == rect.bottom) {
-                        this.speedY = -this.speedY;
-                    }
+                    // if (p.y == rect.top || p.y == rect.bottom) {
+                    //     this.speedY = -this.speedY;
+                    // }
+
+                     // Tìm vị trí của điểm va chạm
+                    let collidePoint = (this.y - (rect.y + rect.height / 2));
+                    collidePoint = collidePoint / (rect.height / 2);
+
+                    // Góc trong khoảng từ 0 -> 45
+                    let angleRad = (Math.PI / 4) * collidePoint;
+
+                    // Kiểm tra xem bóng đang bên vị trí của bên nào (người hay máy)
+                    // Nếu bên gạch là 1
+                    // Nếu bên paddle là -1
+                    let direction = (this.y + this.radius < canvas.height / 2) ? 1 : -1;
+                    this.speedY = direction * this.speedY * Math.sin(angleRad);
+                    this.speedX = this.speedX * Math.cos(angleRad);
 
                 }
                 return isCollided;
@@ -123,11 +137,19 @@
                 this.width = width;
                 this.height = height;
                 this.color = color;
+                this.level = null
             }
 
             draw(c) {
                 c.fillStyle = this.color;
                 c.fillRect(this.x, this.y, this.width, this.height);
+            }
+
+            drawLevel(c) {
+                c.fillStyle = "black";
+                c.font = "15px Arial";
+                c.fillText(this.level, this.x + 25, this.y + 20);
+                c.fill();
             }
 
             moveTo(x) {
@@ -150,6 +172,9 @@
 
         let bricks = [];
 
+        // Array color level
+        let color = ["blue", "red", "green", "yellow", "pink"]
+
         function canvas_mousemove(e) {
             let x = e.offsetX - paddleWidth/2
 
@@ -167,6 +192,7 @@
                 for (let j = 0; j < BRICK_COLS; j++) {
                     if (bricks[i][j]) {
                         bricks[i][j].draw(c);
+                        bricks[i][j].drawLevel(c);
                     }
                 }
             }
@@ -181,7 +207,13 @@
             for (var i = 0; i < BRICK_ROWS; i++) {
                 for (var j = 0; j < BRICK_COLS; j++) {
                     if (bricks[i][j] && ball.collide(bricks[i][j])) {
-                        bricks[i].splice(j, 1)
+                        if(bricks[i][j].level == 0) {
+                            bricks[i].splice(j, 1)
+                        } else {
+                            bricks[i][j].level--
+                            bricks[i][j].color = color[bricks[i][j].level]
+                        }
+
                     }
                 }
             }
@@ -191,10 +223,15 @@
             draw();
         }
 
+        function random(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
         function init() {
             canvas = document.getElementById("canvas");
-            canvas.width = innerWidth * 0.3
-            canvas.height = innerHeight * 0.6
+            canvas.width = innerWidth * 0.3;
+            canvas.height = innerHeight * 0.6;
+            canvas.style.backgroundColor = "#000";
 
             canvas.onmousemove = canvas_mousemove;
 
@@ -202,14 +239,27 @@
 
             ball = new Ball(canvas.width/2, canvas.height-100, 10, 'green');
 
-            paddle = new Rect((canvas.width - paddleWidth) / 2, canvas.height - paddleHeight - 20, paddleWidth, paddleHeight, "brown");
+            paddle = new Rect(
+                (canvas.width - paddleWidth) / 2, 
+                canvas.height - paddleHeight - 20, 
+                paddleWidth, 
+                paddleHeight, 
+                "brown"
+            );
 
             // Khởi tạo hàng gạch
             bricks = new Array(BRICK_ROWS);
             for (let i = 0; i < BRICK_ROWS; i++) {
                 bricks[i] = new Array(BRICK_COLS);
                 for (let j = 0; j < BRICK_COLS; j++) {
-                    bricks[i][j] = new Rect(j * (BRICK_WIDTH + 5) + 10, i * (BRICK_HEIGHT + 5) + 10, BRICK_WIDTH, BRICK_HEIGHT, "blue");
+                    let numberRandom = random(0,4)
+                    bricks[i][j] = new Rect(
+                        j * (BRICK_WIDTH + 5) + 10, 
+                        i * (BRICK_HEIGHT + 5) + 10, 
+                        BRICK_WIDTH, BRICK_HEIGHT, 
+                        color[numberRandom]
+                    );
+                    bricks[i][j].level = numberRandom
                 }
             }
 

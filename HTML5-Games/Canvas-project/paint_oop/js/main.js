@@ -1,29 +1,31 @@
 let canvas = document.getElementById("canvas");
 
-let btnColors = document.querySelectorAll(".color_btn")
-let btnSizes = document.querySelectorAll(".size_btn")
-let btnReset = document.querySelector('.btn_reset')
-let btnEraser = document.querySelector('.btn_eraser')
+let btnColors = document.querySelectorAll(".color_btn");
+let btnSizes = document.querySelectorAll(".size_btn");
+let btnReset = document.querySelector(".btn_reset");
+let btnEraser = document.querySelector(".btn_eraser");
 
 // Duyệt qua tất cả các 'color_btn' để lắng nghe sự kiện Click
-btnColors.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-        Array.from(btnColors).map(ele => ele.classList.remove('color_btn_active'))
-        this.classList.add('color_btn_active')
-        let colorValue = this.getAttribute('color')
-        freehand.context.strokeStyle = colorValue
-    })
-})
+btnColors.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        Array.from(btnColors).map((ele) =>
+            ele.classList.remove("color_btn_active")
+        );
+        this.classList.add("color_btn_active");
+        let colorValue = this.getAttribute("color");
+        freehand.context.strokeStyle = colorValue;
+    });
+});
 
 // Duyệt qua tất cả các 'size_btn' để lắng nghe sự kiện Click
-btnSizes.forEach(function(btn) {
-    btn.addEventListener('click', function() {
-        Array.from(btnColors).map(ele => ele.classList.remove('size_btn_active'))
-        this.classList.add('size_btn_active')
-        let sizeValue = this.getAttribute('size')
-        freehand.context.lineWidth = Number(sizeValue)
-    })
-})
+btnSizes.forEach(function (btn) {
+    btn.addEventListener("click", function () {
+        Array.from(btnSizes).map((ele) => ele.classList.remove("size_btn_active"));
+        this.classList.add("size_btn_active");
+        let sizeValue = this.getAttribute("size");
+        freehand.context.lineWidth = Number(sizeValue);
+    });
+});
 
 // Xóa toàn bộ canvas
 btnReset.onclick = () => {
@@ -91,7 +93,9 @@ class FreeHand {
         if (this.points.length < 6) return;
 
         ctx.beginPath(), ctx.moveTo(this.points[0].x, this.points[0].y);
-        let i;
+
+        let i
+
         for (i = 1; i < this.points.length - 2; i++) {
             var c = (this.points[i].x + this.points[i + 1].x) / 2;
             var d = (this.points[i].y + this.points[i + 1].y) / 2;

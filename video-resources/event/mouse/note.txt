@@ -1,0 +1,24 @@
+Bài học ngày hôm nay tôi sẽ giới thiệu cho các về sự kiện chuột trong js
+Vậy thì hành động này diễn ra như thế nào
+Trong js thì sự kiện bàn phím chia ra các loại event sau
+Thứ 1: click: được gọi khi bạn click chuột
+Thứ 2: mousedown: được gọi khi bạn ấn chuột
+Thứ 3: mousemove: được gọi khi bạn di chuyển chuột
+Thứ 4: mouseup: được gọi khi bạn nhả chuột ra
+
+Ở đây tôi có ví dụ minh họa cho sự kiện chuột trong Javascript
+- Đầu tiên mình mở vscode, tạo 1 file index.html
+- Tạo nhanh cấu trúc của html5 sử dụng snippet
+- Tiếp theo tạo thẻ script để có thể viết mã script ở đó
+
+Để lắng nghe sự kiện ta sử dụng hàm addEventListener, ở đây t sẽ lắng nghe sự kiện 'click' chuột, truyền tên sự kiện vào, và có 1 hàm để xử lý sự kiện khi click chuột, ok
+
+- Ở trong hàm xử lý sự kiện, ta log ra 1 đoạn "say hello" chẳng hạn
+- Rồi mở file lên và thử click chuột xem sao
+- Chúng ta thấy mỗi lần click chuột thì dòng chữ say hello lại được hiện ra ở console
+- Như bài học trước t có giới thiệu thì Đối với mỗi hàm sử lý sự kiện thì nó cung cấp cho chúng ta 1 biến event
+- Rồi giờ ta truyền biến event cho hàm xử lý sự kiện của chúng ta, sau đó log ra biến event xem sao
+
+- Ở đây có khá nhiều thuộc tính về tọa độ
+- Chúng ta cần chú ý đến các thuộc tính sau: clientX, clientY, screenX, screenY, offsetX, offsetY
+
