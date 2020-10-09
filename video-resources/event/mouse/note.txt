@@ -22,3 +22,10 @@ Thứ 4: mouseup: được gọi khi bạn nhả chuột ra
 - Ở đây có khá nhiều thuộc tính về tọa độ
 - Chúng ta cần chú ý đến các thuộc tính sau: clientX, clientY, screenX, screenY, offsetX, offsetY
 
+clientX : Tọa độ x của con trỏ chuột so với cửa sổ trình duyệt
+clientY : Tọa độ y của con trỏ chuột so với cửa sổ trình duyệt.
+screenX : Tọa độ x của màn hình máy tính của người dùng
+screenY : Tọa độ y của màn hình máy tính của người dùng
+offsetX : Tọa độ x của con trỏ chuột so với phần tử offsetParent của phần tử kích hoạt sự kiện.
+offsetY : Tọa độ y của con trỏ chuột so với phần tử offsetParent của phần tử kích hoạt sự kiện.
+

@@ -52,6 +52,10 @@ class FreeHand {
     }
 
     onmousedown(event) {
+        // Khi bấm chuột xuống
+        // Lấy tọa độ của điểm
+        // Lưu obj tọa độ đó vào mảng point
+        // Cho vẽ
         this.x = event.offsetX;
         this.y = event.offsetY;
 
@@ -64,6 +68,13 @@ class FreeHand {
     }
 
     onmousemove(event) {
+        // Khi di chuyển chuột
+        // isDraw == true thì vẽ, không thì thôi
+        // Xóa trắng canvas hiện tại
+        // Lấy dữ liệu từ memory canvas đổ vào canvas hiện tại
+        // push các obj position vào mảng point
+        // Gọi method drawPoints() để vẽ hình
+
         if (this.isDraw) {
             this.context.clearRect(0, 0, this.canvas.width, this.canvas.height);
             // put back the saved content
@@ -77,6 +88,10 @@ class FreeHand {
     }
 
     onmouseup(event) {
+        // Khi nhắc chuột lên
+        // Ngừng vẽ => isDraw = false
+        // Xóa trắng memory canvas
+        // xong vẽ canvas lên trên memory canvas để lưu các điểm
         if (this.isDraw) {
             this.isDraw = false;
             // When the pen is done, save the resulting context
@@ -92,15 +107,21 @@ class FreeHand {
 
         if (this.points.length < 6) return;
 
-        ctx.beginPath(), ctx.moveTo(this.points[0].x, this.points[0].y);
+        ctx.beginPath();
+        
+        // Bắt đầu vẽ từ điểm đầu tiên
+        ctx.moveTo(this.points[0].x, this.points[0].y);
 
         let i
 
+        // Duyệt từ điểm thứ 2 => this.points.length - 2
         for (i = 1; i < this.points.length - 2; i++) {
             var c = (this.points[i].x + this.points[i + 1].x) / 2;
             var d = (this.points[i].y + this.points[i + 1].y) / 2;
             ctx.quadraticCurveTo(this.points[i].x, this.points[i].y, c, d);
         }
+
+        // Giữ lại điểm cuối để vẽ
         ctx.quadraticCurveTo(
             this.points[i].x,
             this.points[i].y,
