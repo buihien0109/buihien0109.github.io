@@ -37,10 +37,16 @@
             </div>
             <div class="game">
                 <p>Nhập nội dung sau:</p>
-                <h1 id="word"></h1>
+                <div class="word-container">
+                    <h1 id="word"></h1>
+                </div>
                 <input type="text" id="text" autocomplete="off" placeholder="Nhập từ ở đây..." />
             </div>
-            <div id="end-game-container" class="end-game-container"></div>
+            <div id="end-game-container" class="end-game-container">
+                <h1>Hết giờ</h1>
+                <p>Điểm của bạn là: <span class="score"></span></p>
+                <button id="btn-reload-game">Chơi lại</button>
+            </div>
         </div>
     </div>
 

@@ -129,3 +129,11 @@ input:focus {
     height: 100%;
     z-index: 1;
 }
+
+.word-fail {
+    background-color: red;
+}
+
+.word-container h1 {
+    display: inline-block;
+}

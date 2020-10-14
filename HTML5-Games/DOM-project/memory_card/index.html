@@ -1,73 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<title>Memory card</title>
-	<link rel="stylesheet" href="css/style.css">
+    <meta charset="utf-8">
+    <title>Memory Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-	<!-- Hình nền cho game -->
-	<div class="bg">
-		<img src="images/bg.jpg" alt="background image">
-	</div>
 
-	<!-- Popup replay game khi chuẩn bị chơi game
-	<div class="dialog_start">
-		<div class="content">
-			<h1>Memory Card Game</h1>
-			<h2 id="info_time">Time: 30 seconds</h2>
-			<br>
-			<button class="start" id="start" onclick="start()">Start</button>
-		</div>
-	</div> -->
-
-	<!-- Thanh progressBar đếm thời gian -->
-	<div class="timer">
-		<progress max="" value="" id="timer"></progress>
-	</div>
-
-	<div class="wrapper">
-		<!-- Nơi để render card -->
-	</div>
-
-	<!-- Các thể loại nhạc -->
-	<audio id="failed-music">
-		<source src="audio/failed.mp3" type="audio/mpeg" />
-	</audio>
-	<audio id="success-music">
-		<source src="audio/success.mp3" type="audio/mpeg" />
-	</audio>
-	<audio id="victory-music">
-		<source src="audio/victory.mp3" type="audio/mpeg" />
-	</audio>
-	<audio id="gameover-music">
-		<source src="audio/gameover.mp3" type="audio/mpeg" />
-	</audio>
-
-	<!-- Popup replay game khi chiến thắng -->
-	<!-- <div class="congrat_dialog">
-		<div class="content">
-			<img src="images/congrat.png" alt="Congrat">
-			<br>
-			<button class="replay" id="replay" onclick="replay()">Replay</button>
-		</div>
-	</div> -->
-
-	<!-- Popup replay game khi thất bại -->
-	<!-- <div class="lose_dialog">
-		<div class="content">
-			<div class="img_content1">
-				<img src="images/gameover.png" alt="Game over">
+    <div class="container">
+        <div class="header">
+			<div class="header-inner">
+				<h1>Memory Game</h1>
+				<div class="score-panel">
+					<div class="score-panel-left">
+						<ul class="stars">
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+							<li><i class="fa fa-star"></i></li>
+						</ul>
+			
+						<p><span class="moves">0</span> lượt</p>
+					</div>
+					
+					<div class="score-panel-right">
+						<div class="timer">
+						</div>
+			
+						<div class="restart" onclick=startGame()>
+							<i class="fa fa-repeat"></i>
+						</div>
+					</div>
+				</div>
 			</div>
-			<br>
-			<button class="replay" id="replay" onclick="replay()">Replay</button>
-		</div>
-	</div> -->
+        </div>
 
-	<script src="js/main.js"></script>
-	<script src="js/jquery.js"></script>
+        <ul class="deck" id="card-deck">
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card match" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="bolt" >
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+            <li class="card match" type="anchor">
+                <i class="fa fa-anchor"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="diamond">
+                <i class="fa fa-diamond"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card" type="leaf">
+                <i class="fa fa-leaf"></i>
+            </li>
+            <li class="card" type="bomb">
+                <i class="fa fa-bomb"></i>
+            </li>
+            <li class="card open show" type="bolt">
+                <i class="fa fa-bolt"></i>
+            </li>
+            <li class="card" type="bicycle">
+                <i class="fa fa-bicycle"></i>
+            </li>
+            <li class="card" type="plane">
+                <i class="fa fa-paper-plane-o"></i>
+            </li>
+            <li class="card" type="cube">
+                <i class="fa fa-cube"></i>
+            </li>
+        </ul>
+
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>Congratulations</h2>
+                <a class="close" href=# >×</a>
+                <div class="content-1">
+                    Xin chúc mừng bạn là người chiến thắng 🎉🎉
+                </div>
+                <div class="content-2">
+                    <p>Bạn đã thực hiện <span id=finalMove> </span> bước </p>
+                    <p>trong thời gian: <span id=totalTime> </span> </p>
+                    <p>Rating:  <span id=starRating></span></p>
+                </div>
+                <button id="play-again"onclick="playAgain()">
+                    Chơi lại</a>
+                </button>
+            </div>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
 </body>
-
 </html>

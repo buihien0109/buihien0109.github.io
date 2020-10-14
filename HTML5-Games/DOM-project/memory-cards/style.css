@@ -20,8 +20,7 @@ body {
   align-items: center;
 }
 
-h1 {
-  position: relative;
+.container h1 {
   color: #fff;
 }
 
@@ -44,7 +43,6 @@ h1 {
 }
 
 .cards {
-  perspective: 1000px;
   position: relative;
   height: 300px;
   width: 500px;
@@ -128,6 +126,8 @@ h1 {
   color: #ddd;
 }
 
+ /* =============================== */
+
 .navigation {
   display: flex;
   margin: 20px 0;
@@ -145,6 +145,8 @@ h1 {
   margin: 0 25px;
   color: #fff;
 }
+
+/* =======ADD Card======= */
 
 .add-container {
   opacity: 0;

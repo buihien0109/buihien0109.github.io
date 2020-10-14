@@ -3,12 +3,11 @@ const text = document.getElementById("text");
 const scoreEl = document.getElementById("score");
 const timeEl = document.getElementById("time");
 const endgameEl = document.getElementById("end-game-container");
-const startGame = document.getElementById("start-game");
-const game = document.querySelector('.container');
+const startGameEl = document.getElementById("start-game");
+const gameEl = document.querySelector('.container');
 const btnStartGame = document.getElementById('btn-start-game');
+const btnReloadGame = document.getElementById('btn-reload-game');
 const selectEl = document.getElementById('level');
-
-
 
 // danh sách các từ
 const words = [
@@ -43,12 +42,8 @@ let score = 0;
 // Khởi tạo thời gian
 let time = 20;
 
-// Set difficulty to value in ls or medium
+// Khởi tạo score
 let level;
-
-
-// Focus text khi bắt đầu game
-text.focus();
 
 // Đếm ngược thời gian
 const timeInterval = setInterval(updateTime, 1000);
@@ -85,31 +80,36 @@ function updateTime() {
     }
 }
 
-// Game over, show end screen
+// Khi game kết thúc thì show màn end game
 function gameOver() {
-    endgameEl.innerHTML = `
-    <h1>Hết giờ</h1>
-    <p>Điểm của bạn là: ${score}</p>
-    <button onclick="location.reload()">Chơi lại</button>
-  `;
-
+    endgameEl.querySelector('.score').innerText = score;
     endgameEl.style.display = "flex";
 }
 
 addWordToDOM();
 
-// Event listeners
-
 // Typing
 text.addEventListener("input", (e) => {
     const insertedText = e.target.value;
 
+    // Nếu không đúng thì thêm background đỏ
+    if(!randomWord.startsWith(insertedText)) {
+        word.classList.add('word-fail');
+    } else {
+        word.classList.remove('word-fail');
+    }
+
+    // handle khi gõ đúng từ
     if (insertedText === randomWord) {
         addWordToDOM();
         updateScore();
 
-        // Clear
+        // Clear input
         e.target.value = "";
+
+        // Nếu level khó thì + thêm 2s
+        // Nếu level trung bình thì + thêm 3s
+        // Nếu level dễ thì + thêm 5s
 
         if (level === "hard") {
             time += 2;
@@ -119,12 +119,20 @@ text.addEventListener("input", (e) => {
             time += 5;
         }
 
+        // Update lại thời gian
         updateTime();
     }
 });
 
 btnStartGame.addEventListener('click', function() {
     level = selectEl.value;
-    startGame.classList.add('hide');
-    game.classList.remove('hide');
+    startGameEl.classList.add('hide');
+    gameEl.classList.remove('hide');
+
+    // Focus text khi bắt đầu game
+    text.focus();
 })
+
+btnReloadGame.addEventListener('click', function() {
+    window.location.reload();
+}) 

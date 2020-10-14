@@ -1,196 +1,346 @@
-* {
-	border: 0;
-	padding: 0;
-	margin: 0;
+html {
 	box-sizing: border-box;
 }
 
-.clear {
-	clear: both;
-} 
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
 
-html, body {
+html,
+body {
 	width: 100%;
 	height: 100%;
+	margin: 0;
+	padding: 0;
 }
 
-.bg {
-	position: absolute;
-	left: 0;
-	top: 0;
+body {
+	background: #2c3e50;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 16px;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.header {
 	width: 100%;
-	height: 100%;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-bottom: 20px;
+	display: flex;
+	justify-content: center;
 }
 
-.bg img {
-	width: 100%;
-	height: 100%;
-	vertical-align: middle;
+.header-inner {
+	width: 660px;
 }
 
-.dialog_start {
-	position: fixed;
-	animation: 3s start_dialog ease 1;
-	top: 20%;
-	width: 30%;
-	left: 35%;
-	opacity: 0.9;
-	background-color: #eee;
-	z-index: 2;
-	border-radius: 10px;
-	padding: 2%;
-}
-
-.content {
-	width: 100%;
+.header-inner h1 {
+	color: #fff;
+	font-weight: normal;
 	text-align: center;
-	margin-top: 10%;
 }
 
-.content img {
-	width: 100%;
+/*
+ * Styles for the deck of cards
+ */
+
+.deck {
+	width: 85%;
+	background: #fff;
+	padding: 1rem;
+	border-radius: 4px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 0 3em;
 }
 
-.lose_dialog, .congrat_dialog {
-	animation: 3s start ease 1;
-	position: fixed;
-	top: 20%;
-	width: 30%;
-	left: 35%;
-	opacity: 0.9;
-	background-color: #eee;
-	z-index: 2;
-	border-radius: 10px;
-	padding: 2%;
-}
-
-.content {
-	width: 100%;
-	text-align: center;
-	margin-top: 10%;
-}
-
-.img_content1 {
-	width:60%;
-	margin-right: 20%;
-	margin-left: 20%;
-}
-
-.content img {
-	width: 100%;
-}
-
-.dialog_start button, .replay {
-	padding: 5px;
-	background: green;
+.deck .card {
+	height: 3.7rem;
+	width: 3.7rem;
+	margin: 0.2rem 0.2rem;
+	background: #34495e;
+	font-size: 0;
+	color: #ffffff;
 	border-radius: 5px;
-	width: 20%;
-	color: white;
-	font-size: 1.2em;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-.dialog_start button:hover, .lose_dialog button:hover, .congrat_dialog button:hover {
-	box-shadow: 0 0 10px 5px gray;
+.deck .card.open {
+	transform: rotateY(0);
+	background: #02b3e4;
+	cursor: default;
+	animation-name: flipInY;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: 0.75s;
 }
 
-@keyframes start_dialog {
-	0% {	
-		display: none;
-	}
-	50% {
-		margin-top: -500%;	
-	}
-	100% {
-		margin-top: 0;	
-	}
+.deck .card.show {
+	font-size: 33px;
+}
+
+.deck .card.match {
+	cursor: default;
+	background: #e5f720;
+	font-size: 33px;
+	animation-name: rubberBand;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: 0.75s;
+}
+
+.deck .card.unmatched {
+	animation-name: pulse;
+	-webkit-backface-visibility: visible !important;
+	backface-visibility: visible !important;
+	animation-duration: 0.75s;
+	background: #e2043b;
+}
+
+.deck .card.disabled {
+	pointer-events: none;
+	opacity: 0.9;
+}
+
+/*
+ * Styles for the Score Panel
+ */
+
+.score-panel {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	color: #fff;
+}
+
+.score-panel-left,
+.score-panel-right {
+	display: flex;
+	align-items: center;
+}
+
+.score-panel .stars {
+	margin: 0;
+	padding: 0;
+	display: inline-block;
+	margin: 0 5px 0 0;
+}
+
+.score-panel .stars li {
+	list-style: none;
+	display: inline-block;
+}
+
+.score-panel .restart {
+	cursor: pointer;
+	color: seagreen;
+}
+
+.fa-star {
+	color: #ffd700;
 }
 
 .timer {
-	position: absolute;
+	display: inline-block;
+	margin: 0 1rem;
+}
+
+/*
+ * Styles for congratulations modal
+ */
+
+.overlay {
+	position: fixed;
 	top: 0;
-	width: 70%;
-	left: 15%;
-	height: 10%;
-	animation: 2s start ease 1;
-	padding: 2%;
-}
-
-.timer progress {
-	width: 100%;
-	opacity: 0.8;
-}
-
-progress[value] {
-	background-color: #eee;
-	border-radius: 2px;
-	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
-}
-
-.wrapper {
-	width: 70%;
-	position: absolute;
-	left: 15%;
-	top: 10%;
-	height: 90%;
-}
-
-.thumb {
-	float: left;
-	width: 20%;
-	padding: 2%;
-}
-
-.card {
-	width: 100%;
-	position: relative;
-	animation: 2s start ease 1;
-}
-
-.card img {
-	width: 100%;
-	vertical-align: middle;
-	transition: all 0.5s linear;
-}
-
-.card img:hover {
-	box-shadow: 0 0 10px 5px white;
-}
-
-@keyframes start {
-	0% {
-		margin-top: -500%;	
-	}
-	100% {
-		margin-top: 0;	
-	}
-}
-
-.back {
-	backface-visibility: hidden;
-	transition: all 0.5s linear;
-}
-
-.front {
-	backface-visibility: hidden;
-	transform: rotateY(180deg);
-	transition: all 0.5s linear;
-	position: absolute;
-	top: 0;
+	bottom: 0;
 	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity: 0;
 }
 
-.card.flipped .front {
-	transform: rotateY(0deg);
-	box-shadow: 0 0 10px 5px white;
+.overlay:target {
+	visibility: visible;
+	opacity: 1;
 }
 
-.card.flipped .back {
-	transform: rotateY(180deg);
+.popup {
+	margin: 70px auto;
+	padding: 20px;
+	background: #ffffff;
+	border-radius: 5px;
+	width: 85%;
+	position: relative;
+	transition: all 5s ease-in-out;
 }
 
-.snowflake {
-	color: #fff;
-	font-size: 1em;
-	font-family: Arial;
-	text-shadow: 0 0 1px #000;
+.popup h2 {
+	margin-top: 0;
+	color: #333;
+	text-align: center;
+}
+
+.popup .close {
+	position: absolute;
+	top: 20px;
+	right: 30px;
+	transition: all 200ms;
+	font-size: 30px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+.popup .close:hover {
+	color: #e5f720;
+}
+
+.popup .content-1,
+.content-2 {
+	max-height: 30%;
+	overflow: auto;
+	text-align: center;
+}
+
+.show {
+	visibility: visible !important;
+	opacity: 100 !important;
+}
+
+#starRating li {
+	display: inline-block;
+}
+
+#play-again {
+	background-color: #141214;
+	padding: 0.7rem 1rem;
+	font-size: 1.1rem;
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+	color: #ffffff;
+	border-radius: 5px;
+}
+
+/* animations */
+@keyframes flipInY {
+	from {
+		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+		animation-timing-function: ease-in;
+		opacity: 0;
+	}
+
+	40% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+		animation-timing-function: ease-in;
+	}
+
+	60% {
+		transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+		opacity: 1;
+	}
+
+	80% {
+		transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+	}
+
+	to {
+		transform: perspective(400px);
+	}
+}
+
+@keyframes rubberBand {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	30% {
+		transform: scale3d(1.25, 0.75, 1);
+	}
+
+	40% {
+		transform: scale3d(0.75, 1.25, 1);
+	}
+
+	50% {
+		transform: scale3d(1.15, 0.85, 1);
+	}
+
+	65% {
+		transform: scale3d(0.95, 1.05, 1);
+	}
+
+	75% {
+		transform: scale3d(1.05, 0.95, 1);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+@keyframes pulse {
+	from {
+		transform: scale3d(1, 1, 1);
+	}
+
+	50% {
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+
+	to {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+/****** Media queries
+***************************/
+
+@media (max-width: 320px) {
+	.deck {
+		width: 85%;
+	}
+
+	.deck .card {
+		height: 4.7rem;
+		width: 4.7rem;
+	}
+}
+
+/* For Tablets and larger screens
+****************/
+
+@media (min-width: 768px) {
+	.container {
+		font-size: 22px;
+	}
+
+	.deck {
+		width: 660px;
+		height: 680px;
+	}
+
+	.deck .card {
+		height: 125px;
+		width: 125px;
+	}
+
+	.popup {
+		width: 60%;
+	}
 }
