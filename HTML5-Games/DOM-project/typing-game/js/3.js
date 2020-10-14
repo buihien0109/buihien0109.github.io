@@ -2,12 +2,15 @@ const word = document.getElementById("word");
 const text = document.getElementById("text");
 const scoreEl = document.getElementById("score");
 const timeEl = document.getElementById("time");
-const endgameEl = document.getElementById("end-game-container");
+
 const startGameEl = document.getElementById("start-game");
 const gameEl = document.querySelector('.container');
+const endgameEl = document.getElementById("end-game-container");
 const btnStartGame = document.getElementById('btn-start-game');
 const btnReloadGame = document.getElementById('btn-reload-game');
+
 const selectEl = document.getElementById('level');
+
 
 // danh sách các từ
 const words = [
@@ -46,7 +49,7 @@ let time = 20;
 let level;
 
 // Đếm ngược thời gian
-const timeInterval = setInterval(updateTime, 1000);
+let timeInterval
 
 // Random 1 từ trong mảng
 function getRandomWord() {
@@ -90,50 +93,21 @@ function gameOver() {
 
 addWordToDOM();
 
-// Typing
-text.addEventListener("input", (e) => {
-    const insertedText = e.target.value;
-
-    // Nếu không đúng thì thêm background đỏ
-    if(!randomWord.startsWith(insertedText)) {
-        word.classList.add('word-fail');
-    } else {
-        word.classList.remove('word-fail');
-    }
-
-    // handle khi gõ đúng từ
-    if (insertedText === randomWord) {
-        addWordToDOM();
-        updateScore();
-
-        // Clear input
-        e.target.value = "";
-
-        // Nếu level khó thì + thêm 2s
-        // Nếu level trung bình thì + thêm 3s
-        // Nếu level dễ thì + thêm 5s
-
-        if (level === "hard") {
-            time += 2;
-        } else if (level === "medium") {
-            time += 3;
-        } else {
-            time += 5;
-        }
-
-        // Update lại thời gian
-        updateTime();
-    }
-});
-
 btnStartGame.addEventListener('click', function() {
-    level = selectEl.value;
     startGameEl.classList.add('hide');
     gameEl.classList.remove('hide');
 
     // Focus text khi bắt đầu game
     text.focus();
+
+    timeInterval = setInterval(updateTime, 1000);
+
+    // Giả định thời gian kết thúc game là 3s
+    // setTimeout(() => {
+    //     endgameEl.style.display = "flex";
+    // }, 3000)
 })
+
 
 btnReloadGame.addEventListener('click', function() {
     window.location.reload();

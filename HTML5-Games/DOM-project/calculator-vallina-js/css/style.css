@@ -54,7 +54,10 @@ body::before {
 }
 
 .title {
-    color: var(--text-color)
+    color: var(--text-color);
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: .5rem;
 }
 
 .c_input {
