@@ -3,82 +3,79 @@ const text = document.getElementById("text");
 const scoreEl = document.getElementById("score");
 const timeEl = document.getElementById("time");
 const endgameEl = document.getElementById("end-game-container");
-const settingsBtn = document.getElementById("settings-btn");
-const settings = document.getElementById("settings");
-const settingsForm = document.getElementById("settings-form");
-const difficultySelect = document.getElementById("difficulty");
+const startGame = document.getElementById("start-game");
+const game = document.querySelector('.container');
+const btnStartGame = document.getElementById('btn-start-game');
+const selectEl = document.getElementById('level');
 
-// List of words for game
+
+
+// danh sách các từ
 const words = [
-    "sigh",
-    "tense",
-    "airplane",
-    "ball",
-    "pies",
-    "juice",
-    "warlike",
-    "bad",
-    "north",
-    "dependent",
-    "steer",
-    "silver",
-    "highfalutin",
-    "superficial",
-    "quince",
-    "eight",
-    "feeble",
-    "admit",
-    "drag",
-    "loving",
+    "write",
+    "began",
+    "he",
+    "sea",
+    "eye",
+    "learn",
+    "have",
+    "love",
+    "dog",
+    "game",
+    "element",
+    "read",
+    "such",
+    "up",
+    "them",
+    "every",
+    "point",
+    "all",
+    "form",
+    "thing",
 ];
 
-// Init word
+// Khởi tạo từ
 let randomWord;
 
-// Init score
+// Khởi tạo score
 let score = 0;
 
-// Init time
-let time = 10;
+// Khởi tạo thời gian
+let time = 20;
 
 // Set difficulty to value in ls or medium
-let difficulty =
-    localStorage.getItem("difficulty") !== null ?
-    localStorage.getItem("difficulty") :
-    "medium";
+let level;
 
-// Set difficulty select value
-difficultySelect.value =
-    localStorage.getItem("difficulty") !== null ?
-    localStorage.getItem("difficulty") :
-    "medium";
 
-// Focus on text on start
+// Focus text khi bắt đầu game
 text.focus();
 
-// Start counting down
+// Đếm ngược thời gian
 const timeInterval = setInterval(updateTime, 1000);
 
-// Generate random word from array
+// Random 1 từ trong mảng
 function getRandomWord() {
     return words[Math.floor(Math.random() * words.length)];
 }
 
-// Add word to DOM
+// Thêm từ vào trong DOM
 function addWordToDOM() {
     randomWord = getRandomWord();
     word.innerHTML = randomWord;
 }
 
-// Update score
+// Update điểm
 function updateScore() {
     score++;
     scoreEl.innerHTML = score;
 }
 
-// Update time
+// Update thời gian
 function updateTime() {
     time--;
+    if(time <= 5) {
+        timeEl.style.color = "red";
+    }
     timeEl.innerHTML = time + "s";
 
     if (time === 0) {
@@ -91,9 +88,9 @@ function updateTime() {
 // Game over, show end screen
 function gameOver() {
     endgameEl.innerHTML = `
-    <h1>Time ran out</h1>
-    <p>Your final score is ${score}</p>
-    <button onclick="location.reload()">Reload</button>
+    <h1>Hết giờ</h1>
+    <p>Điểm của bạn là: ${score}</p>
+    <button onclick="location.reload()">Chơi lại</button>
   `;
 
     endgameEl.style.display = "flex";
@@ -114,9 +111,9 @@ text.addEventListener("input", (e) => {
         // Clear
         e.target.value = "";
 
-        if (difficulty === "hard") {
+        if (level === "hard") {
             time += 2;
-        } else if (difficulty === "medium") {
+        } else if (level === "medium") {
             time += 3;
         } else {
             time += 5;
@@ -126,11 +123,8 @@ text.addEventListener("input", (e) => {
     }
 });
 
-// Settings btn click
-settingsBtn.addEventListener("click", () => settings.classList.toggle("hide"));
-
-// Settings select
-settingsForm.addEventListener("change", (e) => {
-    difficulty = e.target.value;
-    localStorage.setItem("difficulty", difficulty);
-});
+btnStartGame.addEventListener('click', function() {
+    level = selectEl.value;
+    startGame.classList.add('hide');
+    game.classList.remove('hide');
+})

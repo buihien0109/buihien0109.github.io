@@ -12,36 +12,36 @@
 </head>
 
 <body>
-    <button id="settings-btn" class="settings-btn">
-        <i class="fas fa-cog"></i>
-    </button>
-
-    <div id="settings" class="settings">
-        <form id="settings-form">
-            <div>
-                <label for="difficulty">Difficulty</label>
-                <select id="difficulty">
-                    <option value="easy">Easy</option>
-                    <option value="medium">Medium</option>
-                    <option value="hard">Hard</option>
-                </select>
-            </div>
-        </form>
+    <div id="start-game">    
+        <div id="settings" class="settings">
+            <h1>Chọn level Game</h1>
+            <form id="settings-form">
+                <div>
+                    <select id="level">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+                </div>
+            </form>
+            <button id="btn-start-game">Bắt đầu</button>
+        </div>
     </div>
 
-    <div class="container">
-        <h2>👩‍💻 Speed Typer 👨‍💻</h2>
-        <small>Type the following:</small>
-
-        <h1 id="word"></h1>
-
-        <input type="text" id="text" autocomplete="off" placeholder="Type the word here..." />
-
-        <p class="time-container">Time left: <span id="time">10s</span></p>
-
-        <p class="score-container">Score: <span id="score">0</span></p>
-
-        <div id="end-game-container" class="end-game-container"></div>
+    <div class="container hide">
+        <div class="container-inner">
+            <h2>Typing Game</h2>
+            <div class="option">
+                <p class="time-container">Thời gian: <span id="time">20s</span></p>
+                <p class="score-container">Điểm: <span id="score">0</span></p>
+            </div>
+            <div class="game">
+                <p>Nhập nội dung sau:</p>
+                <h1 id="word"></h1>
+                <input type="text" id="text" autocomplete="off" placeholder="Nhập từ ở đây..." />
+            </div>
+            <div id="end-game-container" class="end-game-container"></div>
+        </div>
     </div>
 
     <script src="./js/main.js"></script>
