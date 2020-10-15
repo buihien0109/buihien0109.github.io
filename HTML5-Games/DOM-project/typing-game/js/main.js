@@ -45,8 +45,7 @@ let time = 20;
 // Khởi tạo score
 let level;
 
-// Đếm ngược thời gian
-const timeInterval = setInterval(updateTime, 1000);
+let timeInterval
 
 // Random 1 từ trong mảng
 function getRandomWord() {
@@ -131,6 +130,9 @@ btnStartGame.addEventListener('click', function() {
 
     // Focus text khi bắt đầu game
     text.focus();
+
+    // Đếm ngược thời gian
+    timeInterval = setInterval(updateTime, 1000);
 })
 
 btnReloadGame.addEventListener('click', function() {

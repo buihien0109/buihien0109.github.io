@@ -12,18 +12,6 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-#start-game, .container {
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hide {
-    display: none !important;
-}
-
 button {
     cursor: pointer;
     font-size: 14px;
@@ -50,6 +38,20 @@ button:focus {
     outline: 0;
 }
 
+#start-game, .container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none !important;
+}
+
+/* =========================== */
+
 .settings {
     width: 100%;
     padding: 30px;
@@ -68,6 +70,8 @@ button:focus {
     margin-bottom: 30px;
 }
 
+/* =========================== */
+
 .container-inner {
     background-color: #34495e;
     padding: 50px 20px;
@@ -79,7 +83,7 @@ button:focus {
     position: relative;
 }
 
-h2 {
+.container-inner h2 {
     background-color: rgba(0, 0, 0, 0.3);
     padding: 8px;
     border-radius: 4px;
@@ -90,7 +94,7 @@ h1 {
     margin: 1rem 0;
 }
 
-input {
+.container-inner input {
     border-radius: 4px;
     font-size: 14px;
     width: 300px;
@@ -100,10 +104,21 @@ input {
     border: 1px solid #fff;
 }
 
-input:focus {
+.container-inner input:focus {
     border: 1px solid rgba(0, 0, 0, 1);
 }
 
+/* ==== Nhập sai từ ==== */
+
+.word-fail {
+    background-color: red;
+}
+
+.word-container h1 {
+    display: inline-block;
+}
+
+/* ==== Thời gian + điểm ==== */
 .option {
     display: flex;
     justify-content: space-between;
@@ -116,6 +131,7 @@ input:focus {
     border-radius: 4px;
 }
 
+/* ==== Màn hình end game ==== */
 .end-game-container {
     background-color: inherit;
     display: none;
@@ -128,12 +144,4 @@ input:focus {
     width: 100%;
     height: 100%;
     z-index: 1;
-}
-
-.word-fail {
-    background-color: red;
-}
-
-.word-container h1 {
-    display: inline-block;
 }
