@@ -1,17 +1,17 @@
 let canvas = document.getElementById("canvas");
 
-let btnColors = document.querySelectorAll(".color_btn");
-let btnSizes = document.querySelectorAll(".size_btn");
-let btnReset = document.querySelector(".btn_reset");
-let btnEraser = document.querySelector(".btn_eraser");
+let btnColors = document.querySelectorAll(".color-btn");
+let btnSizes = document.querySelectorAll(".size-btn");
+let btnReset = document.querySelector(".btn-reset");
+let btnEraser = document.querySelector(".btn-eraser");
 
 // Duyệt qua tất cả các 'color_btn' để lắng nghe sự kiện Click
 btnColors.forEach(function (btn) {
     btn.addEventListener("click", function () {
         Array.from(btnColors).map((ele) =>
-            ele.classList.remove("color_btn_active")
+            ele.classList.remove("color-btn-active")
         );
-        this.classList.add("color_btn_active");
+        this.classList.add("color-btn-active");
         let colorValue = this.getAttribute("color");
         freehand.context.strokeStyle = colorValue;
     });
@@ -20,8 +20,8 @@ btnColors.forEach(function (btn) {
 // Duyệt qua tất cả các 'size_btn' để lắng nghe sự kiện Click
 btnSizes.forEach(function (btn) {
     btn.addEventListener("click", function () {
-        Array.from(btnSizes).map((ele) => ele.classList.remove("size_btn_active"));
-        this.classList.add("size_btn_active");
+        Array.from(btnSizes).map((ele) => ele.classList.remove("size-btn-active"));
+        this.classList.add("size-btn-active");
         let sizeValue = this.getAttribute("size");
         freehand.context.lineWidth = Number(sizeValue);
     });

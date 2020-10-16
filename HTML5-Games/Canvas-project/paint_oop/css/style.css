@@ -44,7 +44,7 @@ body::before {
     display: flex;
     justify-content: space-between;
 }
-.color_btn {
+.color-btn, .size-btn {
     width: 40px;
     height: 40px;
     border: 2px solid #ccc;
@@ -53,39 +53,39 @@ body::before {
     transition: all .3s ease-in;
 }
 
-.color_btn:hover {
+.color-btn:hover {
     opacity: 1;
     border: 2px solid #000;
 }
 
-.color_btn-1 {
+.color-btn-1 {
     background-color: brown;
 }
 
-.color_btn-2 {
+.color-btn-2 {
     background-color: royalblue;
 }
 
-.color_btn-3 {
+.color-btn-3 {
     background-color: green;
 }
 
-.color_btn-4 {
+.color-btn-4 {
     background-color: yellow;
 }
 
-.color_btn-5 {
+.color-btn-5 {
     background-color: violet;
 }
 
-.color_btn-6 {
+.color-btn-6 {
     background-color: white;
 }
 
-.tool_control {
+.tool-control {
     display: flex;
 }
-.control_btn {
+.control-btn {
     border: 1px solid #ccc;
     height: 40px;
     padding: 0 1rem;
@@ -94,96 +94,62 @@ body::before {
     transition: all .3s ease-in;
 }
 
-.control_btn img {
+.control-btn img {
     width: 30px;
     margin-right: 6px;
 }
 
-.control_btn {
+.control-btn {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.size_btn {
-    width: 40px;
-    height: 40px;
-    border: 2px solid #ccc;
-    opacity: 0.5;
+.size-btn {
     position: relative;
-    cursor: pointer;
-    transition: all .3s ease-in;
 }
 
-.size_btn:hover {
+.size-btn::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    background-color: #000;
+    transform: rotate(-45deg);
+}
+
+.size-btn:hover {
     border: 2px solid #000;
     opacity: 1;
 }
 
-.size_btn-1::before {
-    content: "";
-    position: absolute;
-    width: 35px;
+.size-btn-1::before {
     height: 10px;
-    background-color: #000;
     top: 13px;
     left: 2px;
-    transform: rotate(-45deg);
 }
 
-.size_btn-1::before {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 10px;
-    background-color: #000;
-    top: 13px;
-    left: 2px;
-    transform: rotate(-45deg);
-}
-
-.size_btn-2::before {
-    content: "";
-    position: absolute;
-    width: 35px;
+.size-btn-2::before {
     height: 8px;
-    background-color: #000;
     top: 13px;
     left: 2px;
-    transform: rotate(-45deg);
 }
 
-.size_btn-3::before {
-    content: "";
-    position: absolute;
-    width: 35px;
+.size-btn-3::before {
     height: 6px;
-    background-color: #000;
     top: 14px;
     left: 2px;
-    transform: rotate(-45deg);
 }
 
-.size_btn-4::before {
-    content: "";
-    position: absolute;
-    width: 35px;
+.size-btn-4::before {
     height: 4px;
-    background-color: #000;
     top: 15px;
     left: 2px;
-    transform: rotate(-45deg);
 }
 
-.size_btn-5::before {
-    content: "";
-    position: absolute;
-    width: 35px;
+.size-btn-5::before {
     height: 2px;
-    background-color: #000;
     top: 16px;
     left: 2px;
-    transform: rotate(-45deg);
 }
 
 .paint {
@@ -195,12 +161,12 @@ body::before {
     cursor: crosshair;
 }
 
-.color_btn_active {
+.color-btn-active {
     border: 2px solid #000;
     opacity: 1;
 }
 
-.size_btn_active {
+.size-btn-active {
     border: 2px solid #000;
     opacity: 1;
 }
