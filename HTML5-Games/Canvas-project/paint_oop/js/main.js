@@ -87,7 +87,7 @@ class FreeHand {
         }
     }
 
-    onmouseup(event) {
+    onmouseup() {
         // Khi nhắc chuột lên
         // Ngừng vẽ => isDraw = false
         // Xóa trắng memory canvas
@@ -105,17 +105,32 @@ class FreeHand {
     drawPoints() {
         let ctx = this.context;
 
-        if (this.points.length < 6) return;
+        // Trường hợp có ít hơn 2 điểm
+        if (this.points.length <= 1) {
+            ctx.beginPath();
+            ctx.moveTo(this.points[0].x, this.points[0].y);
+            ctx.lineTo(this.points[0].x, this.points[0].y);
+            ctx.stroke();
+            return true;
+        }
+
+         // Trường hợp có 2 điểm
+        if (this.points.length == 2) {
+            ctx.beginPath();
+            ctx.moveTo(this.points[0].x, this.points[0].y);
+            ctx.lineTo(this.points[1].x, this.points[1].y);
+            ctx.stroke();
+            return true;
+        }
+
+        // Các trường hợp còn lại
 
         ctx.beginPath();
-        
         // Bắt đầu vẽ từ điểm đầu tiên
         ctx.moveTo(this.points[0].x, this.points[0].y);
 
-        let i
-
         // Duyệt từ điểm thứ 2 => this.points.length - 2
-        for (i = 1; i < this.points.length - 2; i++) {
+        for (var i = 1; i < this.points.length - 2; i++) {
             var c = (this.points[i].x + this.points[i + 1].x) / 2;
             var d = (this.points[i].y + this.points[i + 1].y) / 2;
             ctx.quadraticCurveTo(this.points[i].x, this.points[i].y, c, d);
@@ -147,6 +162,6 @@ canvas.onmousemove = (event) => {
     freehand.onmousemove(event);
 };
 
-canvas.onmouseup = (event) => {
-    freehand.onmouseup(event);
+canvas.onmouseup = () => {
+    freehand.onmouseup();
 };
