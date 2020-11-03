@@ -166,7 +166,7 @@ body {
 
 .add-container.show {
   opacity: 1;
-  z-index: 2;
+  z-index: 9999;
 }
 
 .add-container h3 {
