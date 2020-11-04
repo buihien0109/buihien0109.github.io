@@ -17,7 +17,6 @@ let openedCards = [];
 
 let second = 0
 let minute = 0
-let hour = 0
 let timer = document.querySelector(".timer");
 let interval;
 
@@ -32,13 +31,12 @@ function startGame() {
     deck.innerHTML = "";
     for (let i = 0; i < cards.length; i++) {
         deck.appendChild(cards[i]);
-        cards[i].classList.remove("show", "open", "match", "disabled");
+        cards[i].classList.remove("open", "match", "disabled");
     }
 }
 
 function displayCard() {
     this.classList.toggle("open");
-    this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
 
@@ -62,7 +60,6 @@ function moveCounter() {
     if (moves == 1) {
         second = 0;
         minute = 0;
-        hour = 0;
         startTimer();
     }
 }
@@ -75,18 +72,14 @@ function startTimer() {
             minute++;
             second = 0;
         }
-        if (minute == 60) {
-            hour++;
-            minute = 0;
-        }
     }, 1000);
 }
 
 function matched() {
     openedCards[0].classList.add("match", "disabled");
     openedCards[1].classList.add("match", "disabled");
-    openedCards[0].classList.remove("show", "open", "no-event");
-    openedCards[1].classList.remove("show", "open", "no-event");
+    openedCards[0].classList.remove("open");
+    openedCards[1].classList.remove("open");
     openedCards = [];
 }
 
@@ -95,8 +88,8 @@ function unmatched() {
     openedCards[1].classList.add("unmatched");
     disable();
     setTimeout(function () {
-        openedCards[0].classList.remove("show", "open", "no-event", "unmatched");
-        openedCards[1].classList.remove("show", "open", "no-event", "unmatched");
+        openedCards[0].classList.remove("open", "unmatched");
+        openedCards[1].classList.remove("open", "unmatched");
         enable();
         openedCards = [];
     }, 1100);
@@ -114,7 +107,7 @@ function enable() {
 }
 
 function congratulations() {
-    if (matchedCard.length == 4) {
+    if (matchedCard.length == 16) {
         clearInterval(interval);
         finalTime = timer.innerHTML;
 
@@ -123,18 +116,15 @@ function congratulations() {
         document.getElementById("finalMove").innerHTML = moves;
         document.getElementById("totalTime").innerHTML = finalTime;
 
-        closeModal();
+        closeicon.addEventListener("click", playAgain);
     }
 }
 
-function closeModal() {
-    closeicon.addEventListener("click", function (e) {
-        window.location.reload();
-    });
-}
+document.querySelector('.restart').addEventListener("click", playAgain);
+document.querySelector('#play-again').addEventListener("click", playAgain);
 
 function playAgain() {
-   window.location.reload();
+    window.location.reload();
 }
 
 for (let i = 0; i < cards.length; i++) {

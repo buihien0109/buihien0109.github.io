@@ -21,13 +21,12 @@ function startGame() {
     deck.innerHTML = "";
     for (let i = 0; i < cards.length; i++) {
         deck.appendChild(cards[i]);
-        cards[i].classList.remove("show", "open", "match", "disabled");
+        cards[i].classList.remove("open", "match", "disabled");
     }
 }
 
 function displayCard() {
     this.classList.toggle("open");
-    this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
 
@@ -52,8 +51,8 @@ function moveCounter() {
 function matched() {
     openedCards[0].classList.add("match", "disabled");
     openedCards[1].classList.add("match", "disabled");
-    openedCards[0].classList.remove("show", "open", "no-event");
-    openedCards[1].classList.remove("show", "open", "no-event");
+    openedCards[0].classList.remove("open");
+    openedCards[1].classList.remove("open");
     openedCards = [];
 }
 
@@ -62,8 +61,8 @@ function unmatched() {
     openedCards[1].classList.add("unmatched");
     disable();
     setTimeout(function () {
-        openedCards[0].classList.remove("show", "open", "no-event", "unmatched");
-        openedCards[1].classList.remove("show", "open", "no-event", "unmatched");
+        openedCards[0].classList.remove("open", "unmatched");
+        openedCards[1].classList.remove("open", "unmatched");
         enable();
         openedCards = [];
     }, 1100);

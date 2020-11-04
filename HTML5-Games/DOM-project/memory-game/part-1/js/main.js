@@ -17,6 +17,6 @@ function startGame() {
     deck.innerHTML = "";
     for (let i = 0; i < cards.length; i++) {
         deck.appendChild(cards[i]);
-        cards[i].classList.remove("show", "open", "match", "disabled");
+        cards[i].classList.remove("open", "match", "disabled");
     }
 }

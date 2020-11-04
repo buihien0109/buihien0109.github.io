@@ -19,17 +19,17 @@ function create_UUID() {
 // TODO : Danh sách công việc sau này được lưu vào local storage trong máy người dùng
 let todos = [{
         id: create_UUID(),
-        title: "Đi sang nhà chị rồi đi thăm người ốm",
+        title: "Đi ăn tối với bạn",
         status: true,
     },
     {
         id: create_UUID(),
-        title: "Làm bài tập Javascript (Phần Array +  String)",
+        title: "Làm bài tập về nhà",
         status: false,
     },
     {
         id: create_UUID(),
-        title: "Dạy Javascript cho lớp Foundation Programming 4",
+        title: "Học lập trình Game",
         status: true,
     },
 ];

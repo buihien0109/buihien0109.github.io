@@ -17,13 +17,12 @@ function startGame() {
     for (let i = 0; i < cards.length; i++) {
 
         deck.appendChild(cards[i]);
-        cards[i].classList.remove("show", "open", "match", "disabled");
+        cards[i].classList.remove("open", "match", "disabled");
     }
 }
 
 function displayCard() {
     this.classList.toggle("open");
-    this.classList.toggle("show");
     this.classList.toggle("disabled");
 };
 

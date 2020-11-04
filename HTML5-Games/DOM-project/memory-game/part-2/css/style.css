@@ -48,7 +48,7 @@ body {
 }
 
 /*
- * Styles for the deck of cards
+ * Styles cards
  */
 
 .deck {
@@ -79,6 +79,7 @@ body {
 }
 
 .deck .card.open {
+	font-size: 33px;
 	transform: rotateY(0);
 	background: #02b3e4;
 	cursor: default;
@@ -86,10 +87,6 @@ body {
 	-webkit-backface-visibility: visible !important;
 	backface-visibility: visible !important;
 	animation-duration: 0.75s;
-}
-
-.deck .card.show {
-	font-size: 33px;
 }
 
 .deck .card.match {
@@ -116,7 +113,7 @@ body {
 }
 
 /*
- * Styles for the Score Panel
+ * Styles Score Panel
  */
 
 .score-panel {
@@ -132,25 +129,15 @@ body {
 	align-items: center;
 }
 
-.score-panel .stars {
-	margin: 0;
-	padding: 0;
-	display: inline-block;
-	margin: 0 5px 0 0;
-}
-
-.score-panel .stars li {
-	list-style: none;
-	display: inline-block;
-}
 
 .score-panel .restart {
+	display: inline-block;
 	cursor: pointer;
 	color: seagreen;
-}
-
-.fa-star {
-	color: #ffd700;
+	background-color: transparent;
+	border: none;
+	font-size: 22px;
+	outline: none;
 }
 
 .timer {
@@ -159,7 +146,7 @@ body {
 }
 
 /*
- * Styles for congratulations modal
+ * Styles modal
  */
 
 .overlay {
@@ -222,10 +209,6 @@ body {
 	opacity: 100 !important;
 }
 
-#starRating li {
-	display: inline-block;
-}
-
 #play-again {
 	background-color: #141214;
 	padding: 0.7rem 1rem;
@@ -237,7 +220,6 @@ body {
 	border-radius: 5px;
 }
 
-/* animations */
 @keyframes flipInY {
 	from {
 		transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
@@ -307,23 +289,6 @@ body {
 		transform: scale3d(1, 1, 1);
 	}
 }
-
-/****** Media queries
-***************************/
-
-@media (max-width: 320px) {
-	.deck {
-		width: 85%;
-	}
-
-	.deck .card {
-		height: 4.7rem;
-		width: 4.7rem;
-	}
-}
-
-/* For Tablets and larger screens
-****************/
 
 @media (min-width: 768px) {
 	.container {
