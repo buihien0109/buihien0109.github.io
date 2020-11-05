@@ -1,75 +1,76 @@
-let numInput = document.querySelectorAll(".num__input");
-let expInput = document.querySelector(".c_ex");
-let resultInput = document.querySelector(".c_result");
+let nums = document.querySelectorAll(".num__input");
+let expEle = document.querySelector(".c_ex");
+let resultEle = document.querySelector(".c_result");
 
 let enter = document.querySelector(".enter");
 let clear = document.querySelector(".clear");
 let del = document.querySelector(".del");
 
 let exp = "";
+let result = null;
 
 // Khi ấn các nút số + biểu thức
-Array.from(numInput).forEach((num) => {
+Array.from(nums).forEach((num) => {
     num.addEventListener("click", function () {
         let char = num.getAttribute("char");
         exp += char;
-        updateExpInput();
+        updateExpEle();
     });
 });
 
 // Xử lý ấn phím enter
 enter.addEventListener("click", function () {
     try {
-        if(exp != "") {
-            result = eval(exp);
-            updateExpResult();
+        if(exp == "") {
+            resultEle.innerText = "0"; 
         } else {
-            resultInput.innerText = "0";
+            result = eval(exp);
+            updateResultEle();
         }
 
     } catch {
-        expInput.innerText = "Error";
+        expEle.innerText = "Error";
         exp = "";
-        resetExpResult();
+        resetResultEle();
     }
 });
 
 // Xử lý ấn phím clear
 clear.addEventListener("click", function () {
-    resetExpInput();
-    resetExpResult();
+    resetExpEle();
+    resetResultEle();
 });
 
 // Xử lý ấn phím del
 del.addEventListener("click", function () {
     if (exp.length > 0) {
         exp = exp.slice(0, exp.length - 1);
-        updateExpInput();
+        updateExpEle();
     } else {
-        resetExpInput();
+        resetExpEle();
         return
     }
 });
 
 //Function effect
-function updateExpInput() {
+function updateExpEle() {
     let expCopy = exp;
     expCopy = expCopy.replace(/\*/g, "×");
     expCopy = expCopy.replace(/\//g, "÷");
     expCopy = expCopy.replace(/\-/g, "−");
     expCopy = expCopy.replace(/\+/g, "+");
-    expInput.innerText = expCopy;
+    expEle.innerText = expCopy;
 }
 
-function updateExpResult() {
-    resultInput.innerText = result;
+function updateResultEle() {
+    resultEle.innerText = result;
 }
 
-function resetExpInput() {
+function resetExpEle() {
     exp = ""
-    expInput.innerText = exp
+    expEle.innerText = exp
 }
 
-function resetExpResult() {
-    resultInput.innerText = ""
+function resetResultEle() {
+    resultEle.innerText = ""
 }

@@ -59,7 +59,6 @@ function matched() {
 function unmatched() {
     openedCards[0].classList.add("unmatched");
     openedCards[1].classList.add("unmatched");
-    disable();
     setTimeout(function () {
         openedCards[0].classList.remove("open", "unmatched");
         openedCards[1].classList.remove("open", "unmatched");
@@ -69,14 +68,12 @@ function unmatched() {
 }
 
 function disable() {
-    cards.filter(card => card.classList.add("disabled"))
+    cards.map(card => card.classList.add("disabled"));
 }
 
 function enable() {
-    cards.filter(card => {
-        card.classList.remove("disabled");
-        Array.from(matchedCard).map(card => card.classList.add("disabled"))
-    })
+    cards.map(card => { card.classList.remove("disabled")})
+    Array.from(matchedCard).map(card => card.classList.add("disabled"))
 }
 
 for (let i = 0; i < cards.length; i++) {

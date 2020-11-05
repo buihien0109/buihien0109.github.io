@@ -1,35 +1,54 @@
-let numInput = document.querySelectorAll(".num__input");
-let expInput = document.querySelector(".c_ex");
-let resultInput = document.querySelector(".c_result");
+let nums = document.querySelectorAll(".num__input");
+let expEle = document.querySelector(".c_ex");
+let resultEle = document.querySelector(".c_result");
 
 let enter = document.querySelector(".enter");
+let clear = document.querySelector(".clear");
+let del = document.querySelector(".del");
 
 let exp = "";
+let result = null;
 
 // Khi ấn các nút số + biểu thức
-Array.from(numInput).forEach((num) => {
+Array.from(nums).forEach((num) => {
     num.addEventListener("click", function () {
         let char = num.getAttribute("char");
         exp += char;
-        updateExpInput();
+        updateExpEle();
     });
 });
 
+// Xử lý ấn phím enter
 enter.addEventListener("click", function () {
-    result = eval(exp);
-    updateExpResult();
+    try {
+        if(exp == "") {
+            resultEle.innerText = "0"; 
+        } else {
+            result = eval(exp);
+            updateResultEle();
+        }
+
+    } catch {
+        expEle.innerText = "Error";
+        exp = "";
+        resetResultEle();
+    }
 });
 
 //Function effect
-function updateExpInput() {
+function updateExpEle() {
     let expCopy = exp;
     expCopy = expCopy.replace(/\*/g, "×");
     expCopy = expCopy.replace(/\//g, "÷");
     expCopy = expCopy.replace(/\-/g, "−");
     expCopy = expCopy.replace(/\+/g, "+");
-    expInput.innerText = expCopy;
+    expEle.innerText = expCopy;
 }
 
-function updateExpResult() {
-    resultInput.innerText = result;
+function updateResultEle() {
+    resultEle.innerText = result;
+}
+
+function resetResultEle() {
+    resultEle.innerText = ""
 }
