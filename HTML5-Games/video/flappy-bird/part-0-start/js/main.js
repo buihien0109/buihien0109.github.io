@@ -13,21 +13,24 @@ let game = 'start'
 //Draw
 function draw() {
     if(game == 'start') {
-        start.draw()
+        bg.draw();
+        drawArrGround();
+        start.draw();
+        bird.draw();
     }
     
 }
 
-function update() {
-    updateArrGround();
-    updateArrPipes();
-}
+// function update() {
+//     bird.update();
+// }
 
 function animate() {
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    frame++;
     draw();
-    update();
+    // update();
 }
 
 animate();
