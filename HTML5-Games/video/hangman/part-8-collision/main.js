@@ -130,7 +130,7 @@ function moveBall() {
                         ball.dy *= -1;
                         brick.visible = false;
 
-                        increaseScore();
+                        updateScore();
                     }
                 }
             });
@@ -144,15 +144,15 @@ function moveBall() {
     }
 }
 
-// Increase score
-function increaseScore() {
+// update score
+function updateScore() {
     score++;
   
     if (score % (brickRowCount * brickRowCount) === 0) {
         console.log("Win game");
         isRunning = false;
     }
-  }
+}
   
 
 function movePaddle() {
