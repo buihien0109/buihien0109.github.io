@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Paint</title>
+</head>
+<body>
+    <div class="container">
+        <div class="tool">
+            <div class="tool-color">
+                <button class="color-btn color-btn-1"></button>
+                <button class="color-btn color-btn-2"></button>
+                <button class="color-btn color-btn-3"></button>
+                <button class="color-btn color-btn-4"></button>
+                <button class="color-btn color-btn-5"></button>
+                <button class="color-btn color-btn-6 color-btn-active"></button>
+            </div>
+
+            <div class="tool-control">
+                <button class="control-btn btn-reset">
+                    <img src="./img/reset.svg" alt="icon">
+                    Reset
+                </button>
+            </div>
+
+            <div class="tool-size">
+                <button class="size-btn size-btn-1"></button>
+                <button class="size-btn size-btn-2"></button>
+                <button class="size-btn size-btn-3"></button>
+                <button class="size-btn size-btn-4"></button>
+                <button class="size-btn size-btn-5 size-btn-active"></button>
+            </div>
+        </div>
+
+        <div class="paint">
+            <canvas id="canvas" width="940" height="600"></canvas>
+        </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>

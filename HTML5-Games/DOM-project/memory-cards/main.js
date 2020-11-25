@@ -16,29 +16,27 @@ const clearBtn = document.getElementById('clear');
 
 const addContainer = document.getElementById('add-container');
 
-// Keep track of current card
+// Card hiện tại
 let currentActiveCard = 0;
 
-// Store DOM cards
-const cardsEl = [];
+// Lưu trữ DOM cards
+let cardsEl = [];
 
-// Store card data
-const cardsData = getCardsData();
-
-// const cardsData = [
-//   {
-//     question: 'What must a variable begin with?',
-//     answer: 'A letter, $ or _'
-//   },
-//   {
-//     question: 'What is a variable?',
-//     answer: 'Container for a piece of data'
-//   },
-//   {
-//     question: 'Example of Case Sensitive Variable',
-//     answer: 'thisIsAVariable'
-//   }
-// ];
+// Mảng card ban đầu
+let cardsData = [
+  {
+    question: 'Thủ đô của Việt Nam là gì?',
+    answer: 'Hà Nội'
+  },
+  {
+    question: 'Đố biết 1 + 1 = ?',
+    answer: 'Mình sẽ không nói là bằng 2 đâu'
+  },
+  {
+    question: 'Hôm nay là thứ mấy',
+    answer: 'Thứ sáu'
+  }
+];
 
 // Tạo tất cả card
 function createCards() {
@@ -50,7 +48,7 @@ function createCard(data, index) {
 	const card = document.createElement('div');
 	card.classList.add('card');
 
-	if (index === 0) {
+	if (index === 0 || cardsEl == 0) {
 		card.classList.add('active');
 	}
 
@@ -84,50 +82,46 @@ function updateCurrentText() {
 	currentEl.innerText = `${currentActiveCard + 1}/${cardsEl.length}`;
 }
 
-// Lấy dữ liệu từ local storage
-function getCardsData() {
-	const cards = JSON.parse(localStorage.getItem('cards'));
-	return cards === null ? [] : cards;
-}
-
-// Thêm dữ liệu vào localstorage
-function setCardsData(cards) {
-	localStorage.setItem('cards', JSON.stringify(cards));
-	window.location.reload();
-}
-
 createCards();
 
 // Event listeners
 
 // Next button
 nextBtn.addEventListener('click', () => {
-	cardsEl[currentActiveCard].className = 'card left';
+	if(cardsEl.length == 0) {
+		return
+	} else {
+		cardsEl[currentActiveCard].className = 'card left';
 
-	currentActiveCard = currentActiveCard + 1;
-
-	if (currentActiveCard > cardsEl.length - 1) {
-		currentActiveCard = cardsEl.length - 1;
+		currentActiveCard = currentActiveCard + 1;
+	
+		if (currentActiveCard > cardsEl.length - 1) {
+			currentActiveCard = cardsEl.length - 1;
+		}
+	
+		cardsEl[currentActiveCard].className = 'card active';
+	
+		updateCurrentText();
 	}
-
-	cardsEl[currentActiveCard].className = 'card active';
-
-	updateCurrentText();
 });
 
 // Prev button
 prevBtn.addEventListener('click', () => {
-	cardsEl[currentActiveCard].className = 'card right';
+	if(cardsEl.length == 0) {
+		return
+	} else {
+		cardsEl[currentActiveCard].className = 'card right';
 
-	currentActiveCard = currentActiveCard - 1;
-
-	if (currentActiveCard < 0) {
-		currentActiveCard = 0;
+		currentActiveCard = currentActiveCard - 1;
+	
+		if (currentActiveCard < 0) {
+			currentActiveCard = 0;
+		}
+	
+		cardsEl[currentActiveCard].className = 'card active';
+	
+		updateCurrentText();
 	}
-
-	cardsEl[currentActiveCard].className = 'card active';
-
-	updateCurrentText();
 });
 
 // Show add container
@@ -151,13 +145,14 @@ addCardBtn.addEventListener('click', () => {
 		addContainer.classList.remove('show');
 
 		cardsData.push(newCard);
-		setCardsData(cardsData);
 	}
 });
 
 // Xử lý khi xóa tất cả card
 clearBtn.addEventListener('click', () => {
-	localStorage.clear();
+	currentActiveCard = 0;
+	cardsEl = [];
+	cardsData = [];
 	cardsContainer.innerHTML = '';
-	window.location.reload();
+	currentEl.innerText = '';
 });
