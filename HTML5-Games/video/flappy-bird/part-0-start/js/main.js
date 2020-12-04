@@ -8,11 +8,9 @@ canvas.style.border = '1px solid black'
 const sprites = new Image()
 sprites.src = './sprites.png'
 
-let game = 'start'
-
 //Draw
 function draw() {
-    if(game == 'start') {
+    if(state.current == state.getReady) {
         bg.draw();
         drawArrGround();
         start.draw();

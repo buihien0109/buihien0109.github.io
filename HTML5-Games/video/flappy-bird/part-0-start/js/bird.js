@@ -17,16 +17,15 @@ class Bird {
     }
     draw() {
         ctx.beginPath();
-        if(game == 'start') {
+        if(state.current == state.getReady) {
             if(frame % 35 == 0) {
                 this.i++;
-                if(this.i > 2) {
-                    this.i = 0
-                }
+                this.i = this.i % 3;
             }
         }
         
         ctx.drawImage(sprites, this.animate[this.i].sX, this.animate[this.i].sY, this.sW, this.sH, this.cX, this.cY, this.cW, this.cH)
     }
 }
+
 let bird = new Bird(150, 340)
