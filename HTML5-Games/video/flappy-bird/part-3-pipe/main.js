@@ -9,6 +9,11 @@ sprites.src = './img/sprites.png'
 
 let game = 'start'
 
+//Random
+function random(min, max) {
+    return Math.ceil(Math.random() * (max - min) + min)
+}
+
 //Screen
 const start = {
     draw: function() {
@@ -48,6 +53,7 @@ class Ground {
         this.sH = 143;
         this.cW = 215;
         this.cH = 143;
+        this.dx = -2;
     }
     draw() {
         ctx.beginPath();
@@ -66,6 +72,66 @@ function drawArrGround(){
     arrGround.forEach(ground => {
         ground.draw()
     })
+}
+
+function updateArrGround() {
+    arrGround.forEach(ground => {
+        ground.cX += ground.dx
+    })
+    if(arrGround[0].cX <= -336){
+        arrGround.splice(0, 1)
+        let ground = new Ground(arrGround[2].cX + 215, 625);
+        arrGround.push(ground)
+    }
+}
+
+//Pipes
+class Pipes {
+    constructor(cX, cY, space) {
+        this.cX = cX;
+        this.cY = cY;
+        this.space = space;
+        this.sXt = 0;
+        this.sYt = 0;
+        this.sXb = 1261;
+        this.sYb = 0;
+        this.sW = 82;
+        this.sH = 710;
+        this.cW = 82;
+        this.cH = 710;
+        this.dx = -2
+    }
+    draw() {
+        ctx.beginPath();
+        ctx.drawImage(sprites, this.sXt, this.sYt, this.sW, this.sH, this.cX, this.cY, this.cW, this.cH);
+        ctx.drawImage(sprites, this.sXb, this.sYb, this.sW, this.sH, this.cX, this.cY + this.cH + this.space, this.cW, this.cH);
+    }
+}
+
+let arrPipes = [];
+function newPipes() {
+    for(let i = 1; i < 4; i ++) {
+        let pipes = new Pipes(random(530, 600)*i, random(-660, -300), 200)
+        arrPipes.push(pipes);
+    }
+}
+newPipes();
+
+function drawArrPipes() {
+    arrPipes.forEach(pipes => {
+        pipes.draw()
+    })
+}
+
+function updateArrPipes() {
+    arrPipes.forEach(pipes => {       
+        pipes.cX += pipes.dx
+    })
+    if(arrPipes[0].cX <= -82){
+        arrPipes.splice(0, 1)
+        let pipes = new Pipes(arrPipes[arrPipes.length - 1].cX + random(400, 500), random(-660, -300), random(200, 150));
+        arrPipes.push(pipes)
+    }
 }
 
 // Bird
@@ -91,13 +157,17 @@ class Bird {
         if(game == 'start') {
             if(frame % 35 == 0) {
                 this.i++;
-                this.i = this.i % 3;
+                if(this.i > 2) {
+                    this.i = 0
+                }
             }
         }
         if(game == 'play') {
             if(frame % 16 == 0) {
                 this.i++;
-                this.i = this.i % 3;
+                if(this.i > 2) {
+                    this.i = 0
+                }
             }
         }
 
@@ -107,21 +177,46 @@ class Bird {
 }
 let bird = new Bird(150, canvas.height / 2 - 12)
 
+addEventListener('click', function click() {
+    switch (game) {
+        case 'start':
+            game = 'play';
+            break;
+        case 'play':
+            console.log('Chơi game');
+            break;
+        case 'end':
+            console.log('End game');
+            break
+    }
+})
+
 
 //Draw
 function draw() {
     bg.draw();
+    drawArrPipes();
     drawArrGround();
-    start.draw();
+    if(game == 'start') {
+        start.draw()
+    }
     bird.draw();
 }
 
-// Tạo game loop
+// Update 
+function update() {
+    if(game == 'play') {
+        updateArrPipes();
+        updateArrGround();
+    }
+}
+
 function animate() {
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     frame ++;
     draw();
+    update();
 }
 
 animate();

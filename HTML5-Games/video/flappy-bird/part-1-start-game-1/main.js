@@ -3,10 +3,9 @@ let ctx = canvas.getContext('2d')
 
 canvas.height = 710;
 canvas.width = 530;
-canvas.style.border = '1px solid black';
 
 const sprites = new Image()
-sprites.src = './sprites.png'
+sprites.src = './img/sprites.png'
 
 //Screen
 const start = {

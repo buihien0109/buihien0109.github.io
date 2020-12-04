@@ -3,10 +3,9 @@ let ctx = canvas.getContext('2d')
 
 canvas.height = 710;
 canvas.width = 530;
-canvas.style.border = '1px solid black';
 
 const sprites = new Image()
-sprites.src = './sprites.png'
+sprites.src = './img/sprites.png'
 
 let game = 'start'
 
@@ -49,6 +48,7 @@ class Ground {
         this.sH = 143;
         this.cW = 215;
         this.cH = 143;
+        this.dx = -2;
     }
     draw() {
         ctx.beginPath();
@@ -67,6 +67,17 @@ function drawArrGround(){
     arrGround.forEach(ground => {
         ground.draw()
     })
+}
+
+function updateArrGround() {
+    arrGround.forEach(ground => {
+        ground.cX += ground.dx
+    })
+    if(arrGround[0].cX <= -336){
+        arrGround.splice(0, 1)
+        let ground = new Ground(arrGround[2].cX + 215, 625);
+        arrGround.push(ground)
+    }
 }
 
 // Bird
@@ -112,13 +123,36 @@ class Bird {
 }
 let bird = new Bird(150, canvas.height / 2 - 12)
 
+addEventListener('click', function click() {
+    switch (game) {
+        case 'start':
+            game = 'play';
+            break;
+        case 'play':
+            console.log('Chơi game');
+            break;
+        case 'end':
+            console.log('End game');
+            break
+    }
+})
+
 
 //Draw
 function draw() {
     bg.draw();
     drawArrGround();
-    start.draw();
+    if(game == 'start') {
+        start.draw()
+    }
     bird.draw();
+}
+
+// Update 
+function update() {
+    if(game == 'play') {
+        updateArrGround();
+    }
 }
 
 function animate() {
@@ -126,6 +160,7 @@ function animate() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
     frame ++;
     draw();
+    update();
 }
 
 animate();
