@@ -74,8 +74,8 @@ class Board {
     }
 
     drawXO() {
-        for (let i in this.data) {
-            for (let j in this.data[i]) {
+        for(let i = 0; i < this.data.length; i++) {
+            for(let j = 0; j < this.data.length; j++) {
                 if (this.data[i][j] === 1) {
                     this.drawX(i, j);
                 } else if (this.data[i][j] === 2) {

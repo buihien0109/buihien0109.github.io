@@ -17,11 +17,13 @@ class Board {
     }
 
     create2DArray() {
-        // Loop to create 2D array using 1D array
         for (let i = 0; i < this.row; i++) {
-            this.data[i] = new Array(this.col);
-            this.data[i].fill(0, 0);
+            this.data[i] = []
+            for (let j = 0; j < this.col; j++) {
+                this.data[i][j] = 0;
+            }
         }
+        console.log(this.data);
     }
 
     //Vẽ lại
@@ -79,4 +81,4 @@ board.drawGrid();
 
 canvas.addEventListener("click", function(e) {
       board.handleClick(e);
-}, false);
+});
