@@ -19,7 +19,7 @@ const start = {
 
 // Background
 const bg = {
-    sX: [163, 393],
+    sX: 163,
     sY: 0,
     sW: 229,
     sH: 625,
@@ -29,9 +29,9 @@ const bg = {
     cH: 625,
     draw: function () {
         ctx.beginPath();
-        ctx.drawImage(sprites, this.sX[0], this.sY, this.sW, this.sH, this.cX, this.cY, this.cW, this.cH)
-        ctx.drawImage(sprites, this.sX[0], this.sY, this.sW, this.sH, this.cX + 229, this.cY, this.cW, this.cH)
-        ctx.drawImage(sprites, this.sX[0], this.sY, this.sW, this.sH, this.cX + 458, this.cY, this.cW, this.cH)
+        ctx.drawImage(sprites, this.sX, this.sY, this.sW, this.sH, this.cX, this.cY, this.cW, this.cH)
+        ctx.drawImage(sprites, this.sX, this.sY, this.sW, this.sH, this.cX + 229, this.cY, this.cW, this.cH)
+        ctx.drawImage(sprites, this.sX, this.sY, this.sW, this.sH, this.cX + 458, this.cY, this.cW, this.cH)
     }
 }
 
@@ -41,7 +41,7 @@ class Ground {
         this.cX = cX;
         this.cY = cY;
         this.sX = 624, 
-        this.sY = [0, 144, 288];
+        this.sY = 0;
         this.sW = 215;
         this.sH = 143;
         this.cW = 215;
@@ -49,7 +49,7 @@ class Ground {
     }
     draw() {
         ctx.beginPath();
-        ctx.drawImage(sprites, this.sX, this.sY[0], this.sW, this.sH, this.cX, this.cY, this.cW, this.cH)
+        ctx.drawImage(sprites, this.sX, this.sY, this.sW, this.sH, this.cX, this.cY, this.cW, this.cH)
     }
 }
 
