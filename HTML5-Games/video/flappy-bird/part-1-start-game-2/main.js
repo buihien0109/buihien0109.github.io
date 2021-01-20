@@ -3,10 +3,9 @@ let ctx = canvas.getContext('2d')
 
 canvas.height = 710;
 canvas.width = 530;
-canvas.style.border = '1px solid black';
 
 const sprites = new Image()
-sprites.src = './sprites.png'
+sprites.src = './img/sprites.png'
 
 let game = 'start'
 
@@ -92,17 +91,13 @@ class Bird {
         if(game == 'start') {
             if(frame % 35 == 0) {
                 this.i++;
-                if(this.i > 2) {
-                    this.i = 0
-                }
+                this.i = this.i % 3;
             }
         }
         if(game == 'play') {
             if(frame % 16 == 0) {
                 this.i++;
-                if(this.i > 2) {
-                    this.i = 0
-                }
+                this.i = this.i % 3;
             }
         }
 
@@ -121,6 +116,7 @@ function draw() {
     bird.draw();
 }
 
+// Tạo game loop
 function animate() {
     requestAnimationFrame(animate);
     ctx.clearRect(0, 0, canvas.width, canvas.height);
