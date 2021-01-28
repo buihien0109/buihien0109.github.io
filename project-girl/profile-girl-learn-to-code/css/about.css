@@ -8,7 +8,7 @@
     overflow: hidden;
     position: relative;
 
-    background-image: url(../images/photo-01.jpg);
+    background-image: url(https://images.unsplash.com/photo-1515516089376-88db1e26e9c0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -21,8 +21,10 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #72b626;
-    opacity: .7;
+    /* background-color: #72b626;
+    opacity: .7; */
+    background-color: #222;
+    opacity: 0.8;
 }
 
 

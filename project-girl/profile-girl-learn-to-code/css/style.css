@@ -47,7 +47,7 @@ body {
     margin-top: 20px;
 }
 
-.social span {
+.social a {
     display: inline-block;
     padding-left: 20px;
     font-size: 20px;
@@ -61,10 +61,11 @@ body {
     max-height: 100vh;
     height: 100vh;
     padding: 40px;
+    overflow: hidden;
 }
 
 .intro-thumnail {
-    flex: 0 0 33.33%;
+    flex: 0 0 50%;
 }
 
 .intro-thumnail img {
@@ -73,7 +74,7 @@ body {
 }
 
 .intro-content {
-    flex: 0 0 66.66%;
+    flex: 0 0 50%;
     display: flex;
     justify-content: center;
 }
