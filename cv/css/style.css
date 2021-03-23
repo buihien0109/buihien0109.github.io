@@ -11,9 +11,10 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.8;
     color: rgba(0, 0, 0, 0.7);
+    background-image: linear-gradient(to bottom right, #67b26f, #4ca2cd);
 }
 
 @media screen and (max-width: 992px) {
@@ -179,7 +180,7 @@ figure figcaption {
     margin: 0 0 10px 0;
     padding: 0;
     list-style: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -317,7 +318,8 @@ body.offcanvas .cv-nav-toggle {
     clear: both;
     width: 100%;
 	display: block;
-	border-bottom: 10px solid rgba(74, 74, 74, 0.08);
+    border-bottom: 10px solid rgba(74, 74, 74, 0.08);
+    background-color: #fff;
 }
 .cv-contact {
 	border-bottom: none;
