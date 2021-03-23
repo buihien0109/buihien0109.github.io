@@ -1,0 +1,33 @@
+.contact-banner {
+    background-image: url(https://images.unsplash.com/photo-1585130451336-b0ac5daa3495?ixid=MXwxMjA3fDB8MHxzZWFyY2h8OTB8fGRvZ3xlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    margin-top: 20px;
+}
+
+.contact-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    padding: 0 40px;
+}
+
+.contact-item h2 {
+    color: #f05510;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-item p {
+    margin-bottom: 15px;
+}
+
+.contact-map {
+    flex: 0 0 46%;
+}

@@ -1,0 +1,43 @@
+.banner-wrapper {
+    background-image: url(https://images.unsplash.com/photo-1598188306155-25e400eb5078?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTd8fGNhdHxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    min-height: 400px;
+    margin-top: 20px;
+}
+.title-main {
+    font-size: 36px;
+    line-height: 1.1;
+    color: #f05510;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-item {
+    width: 262px;
+    margin-bottom: 30px;
+}
+
+.card-info {
+    padding: 30px 20px 30px;
+    background-color: #FEF9F7;
+    text-align: center;
+}
+
+.card-name {
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.2;
+}
+
+.card-price {
+    font-weight: 700;
+    margin: 20px auto 0;
+}
