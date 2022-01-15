@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #111;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #111;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.sidebar {
+    width: 300px;
+    padding: 40px 20px 20px 20px;
+    background-color:#FEF9F7;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.sidebar-menu a {
+    font-size: 20px;
+    padding: 10px 20px;
+    display: block;
+}
+
+.menu-active {
+    color: #72b626;
+    font-weight: 500;
+}
+
+.social {
+    margin-top: 20px;
+}
+
+.social a {
+    display: inline-block;
+    padding-left: 20px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.intro {
+    margin-left: 300px;
+    display: flex;
+    align-items: center;
+    max-height: 100vh;
+    height: 100vh;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.intro-thumnail {
+    flex: 0 0 50%;
+}
+
+.intro-thumnail img {
+    box-shadow: 0 0 7px rgba(0,0,0,.3);
+    border-radius: 15px;
+}
+
+.intro-content {
+    flex: 0 0 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.intro-content-inner {
+    max-width: 700px;
+}
+
+.intro-content-inner h6 {
+    color: #777;
+    font-size: 22px;
+    font-weight: 400;
+    display: block;
+    text-transform: uppercase;
+}
+
+.intro-content-inner h1 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 700;
+    margin: 18px 0 10px;
+    color: #72b626;
+    text-transform: uppercase;
+}
+
+.intro-content-inner h1 span {
+    color: #666;
+    font-weight: 600;
+}
+
+.intro-content-inner p {
+    margin: 10px 0 23px;
+    font-size: 16px;
+    line-height: 32px;
+}
+
+.intro-content-inner a {
+    border-radius: 26px;
+    font-weight: 500;
+    height: 46px;
+    line-height: 46px;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 0 40px;
+    outline: none;
+    overflow: hidden;
+    display: inline-block;
+    letter-spacing: .5px;
+    border: 0;
+    background-color: #72b626;
+}
+
+.author-page {
+    position: absolute;
+    bottom: 30px;
+    left: 0px;
+    font-size: 16px;
+    text-transform: uppercase;
+    width: 300px;
+    text-align: center;
+    background-color: #72b626;
+    display: inline-block;
+    padding: 10px 0;
+    color: #fff;
+}

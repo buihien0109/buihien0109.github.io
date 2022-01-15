@@ -1,0 +1,19 @@
+.photos {
+    margin-left: 300px;
+    padding: 40px;
+}
+.photos-inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.photo-item {
+    flex: 0 0 33.33%;
+}
+
+.photo-item img {
+    height: 400px;
+    width: 94%;
+    object-fit: cover;
+    margin-bottom: 30px;
+}
