@@ -1,0 +1,19 @@
+div.container
+    div.tool
+        div.tool_color
+            button.color_btn.color_btn_1
+            button.color_btn.color_btn_2
+            button.color_btn.color_btn_3
+            button.color_btn.color_btn_4
+            button.color_btn.color_btn_5
+            button.color_btn.color_btn_6
+        div.tool_control
+            button.control_btn
+        div.tool_btn
+            button.size_btn.size_btn_1
+            button.size_btn.size_btn_2
+            button.size_btn.size_btn_3
+            button.size_btn.size_btn_4
+            button.size_btn.size_btn_5
+    div.paint
+        canvas#canvas

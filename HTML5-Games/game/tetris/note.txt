@@ -1,0 +1,7 @@
+Bước 1: Render Game Board
+Bước 2: Hiển thị 1 shape và cho di chuyển xuống bên dưới
+Bước 3: Cho di chuyển sang 2 bên
+Bước 4: Kiểm tra va chạm với thành
+Bước 5: Khóa chuyển động khi va chạm với thành dưới
+Bước 6: Xử lý quay hình
+Bước 7: Xử lý tính điểm

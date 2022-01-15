@@ -1,0 +1,218 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: #eee;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+canvas {
+    background-color: black;
+}
+
+.show {
+    display: block !important;
+}
+
+.show-flex {
+    display: flex !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+#start-game {
+    width: 100%;
+    background-image: url(../image/bg-start-game.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    height: 100vh;
+}
+
+.flex-row-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column-center {
+    display: flex;
+    flex-direction: column;
+}
+
+#start-game h1 {
+    font-size: 5rem;
+    color: #fff;
+}
+
+#start-game h1 .highlight {
+    display: inline-block;
+    color: #faf540;
+    text-transform: uppercase;
+}
+
+#btn-start {
+    display: inline-block;
+    border: 2px solid #faf540;
+    background-color: transparent;
+    color: #faf540;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    outline: none;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#btn-start:hover {
+    background-color: #faf540;
+    color: #222;
+}
+
+#game {
+    padding: 2rem;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.box {
+    padding: 0 2rem;
+}
+
+h3 {
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+.game {
+    background-color: #fff;
+    margin-left: 2rem;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.game p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: bisque;
+    padding: 1rem;
+    
+}
+
+.suggest {
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.suggest h3 {
+    margin-left: 0rem;
+}
+
+#end-game {
+    width: 100%;
+    background-image: url(../image/bg-end-game.jpg);
+    background-size: cover;
+    background-position: center 150px;
+    position: relative;
+    height: 100vh;
+}
+
+.box-end {
+    padding: 2rem;
+    width: 500px;
+    position: absolute;
+    border-radius: 4px;
+    overflow: hidden;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+
+.box-end::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: .5;
+}
+
+.box-end h1 {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+}
+
+.btns {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+#btn-reload {
+    display: inline-block;
+    border: 2px solid #faf540;
+    background-color: transparent;
+    color: #faf540;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    outline: none;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    padding: 1rem 3.5rem;
+    margin-top: 2rem;
+}
+
+#btn-reload:hover {
+    background-color: #faf540;
+    color: #222;
+}
+
+#btn-restart {
+    display: inline-block;
+    border: 2px solid #faf540;
+    background-color: transparent;
+    color: #faf540;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    outline: none;
+    transition: all .3s ease-in;
+    cursor: pointer;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+#btn-restart:hover {
+    background-color: #faf540;
+    color: #222;
+}
+
+
+

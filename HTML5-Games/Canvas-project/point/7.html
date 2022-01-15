@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Point Game</title>
+    <link rel="stylesheet" href="./css/7.css" />
+</head>
+
+<body>
+    <div id="start-game" class="flex-row-center">
+        <div class="box-start flex-column-center">
+            <h1>
+                <span class="highlight">Point</span>
+                <span>Game</span>
+            </h1>
+
+            <button id="btn-start">Bắt đầu</button>
+        </div>
+    </div>
+
+    <div id="end-game" class="flex-row-center hide">
+        <div class="box-end flex-column-center">
+            <h1>
+                <span class="highlight">End</span>
+                <span>Game</span>
+            </h1>
+
+            <div class="btns">
+                <button id="btn-reload">Chơi lại</button>
+                <button id="btn-restart">Thoát game</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="game" class="hide">
+        <div class="container">
+            <h3>Hướng dẫn Point Game</h3>
+            <div class="box">
+                <p><a href="./1.html">1.Vẽ quả bóng</a></p>
+                <p><a href="./2.html">2.Vẽ ô tính điểm</a></p>
+                <p><a href="./3.html">3.Vẽ các điểm</a></p>
+                <p><a href="./4.html">4.Di chuyển quả bóng</a></p>
+                <p><a href="./5.html">5.Di chuyển quả bóng khi va vào thành</a></p>
+                <p><a href="./6.html">6.Di chuyển quả bóng để ăn điểm</a></p>
+                <p><a href="./7.html">7.Tạo màn hình game: START - GAME - END</a></p>
+            </div>
+            <div class="suggest">
+                <p>Yêu cầu có 3 màn hình: <b>START - GAME - END</b></p>
+                <p>Màn hình <b>START</b> có nút <b>'Bắt đầu'</b> để chơi game</p>
+                <p>
+                    Màn hình <b>END</b> có nút <b>'Chơi lại'</b> để chơi lại game và nút
+                    <b>'Thoát game'</b> để trở về màn hình <b>START</b>
+                </p>
+            </div>
+        </div>
+        <div class="game">
+            <p>7.Tạo màn hình start game</p>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+
+    <script>
+        class Avatar {
+            constructor(x, y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.velocity = {
+                    x: 0,
+                    y: 0,
+                };
+                this.score = 0;
+            }
+
+            draw(c) {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                c.shadowColor = "white";
+                c.shadowBlur = 10;
+                c.fillStyle = this.color;
+                c.fill();
+                c.closePath();
+            }
+
+            drawPiPo(c) {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                c.shadowColor = "white";
+                c.shadowBlur = 10;
+                c.fillStyle = this.color;
+                c.fill();
+                c.closePath();
+                c.beginPath();
+                c.font = "12px source sanc pro";
+                c.fillStyle = "white";
+                c.textAlign = "center";
+                c.fillText("HAHA", this.x, this.y + 5);
+                c.closePath();
+            }
+
+            drawScore(c) {
+                c.beginPath();
+                c.font = "30px Arial";
+                c.fillText(
+                    this.score,
+                    canvas.width * 0.1,
+                    canvas.height - canvas.height * 0.05
+                );
+                c.closePath();
+            }
+
+            update() {
+                if (this.x >= canvas.width) {
+                    this.velocity.x = -2;
+                }
+                if (this.x <= 0) {
+                    this.velocity.x = 2;
+                }
+                if (this.y >= canvas.height) {
+                    this.velocity.y = -1;
+                }
+                if (this.y <= 0) {
+                    this.velocity.y = 1;
+                }
+
+                this.x += this.velocity.x;
+                this.y += this.velocity.y;
+            }
+
+            reset() {
+                this.velocity.x = 0;
+                this.velocity.y = 0;
+                this.score = 0;
+            }
+
+            touch(avatar) {
+                let kc = Math.sqrt(
+                    (this.x - avatar.x) ** 2 + (this.y - avatar.y) ** 2
+                );
+                let r = this.radius + avatar.radius;
+                if (kc < r) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+        }
+
+        // Khởi tạo các biến toàn cục
+        let canvas;
+        let c;
+        let avatar;
+        let arrayAvatar;
+        let numPoint = 10;
+
+        let startGame = document.getElementById("start-game");
+        let game = document.getElementById("game");
+        let endGame = document.getElementById("end-game");
+        let btnStart = document.getElementById("btn-start");
+        let btnRestart = document.getElementById("btn-restart");
+        let btnReload = document.getElementById("btn-reload");
+
+        let audio = new Audio(
+            "http://dight310.byu.edu/media/audio/FreeLoops.com/5/5/Mouse%20Click%20Fast.wav-23232-Free-Loops.com.mp3"
+        );
+
+        function createX() {
+            return Math.floor(Math.random() * canvas.width);
+        }
+
+        function createY() {
+            return Math.floor(Math.random() * canvas.height);
+        }
+
+        function clear() {
+            c.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function updateGame(c) {
+            clear();
+
+            arrayAvatar.forEach((ava, index) => {
+                ava.draw(c);
+
+                if (ava.touch(avatar)) {
+                    arrayAvatar.splice(index, 1);
+                    avatar.score++;
+
+                    audio.play();
+
+                    if (avatar.score % 5 == 0) {
+                        avatar.radius += 2;
+                    }
+                    if (avatar.score == numPoint) {
+                        game.classList.remove("show-flex");
+                        game.classList.add("hide");
+
+                        endGame.classList.remove("hide");
+                        endGame.classList.add("show");
+                    }
+                }
+            });
+
+            avatar.update();
+
+            avatar.drawPiPo(c);
+            avatar.drawScore(c);
+        }
+
+        function init() {
+            arrayAvatar = [];
+
+            canvas = document.getElementById("canvas");
+            canvas.width = window.innerWidth * 0.5;
+            canvas.height = window.innerHeight * 0.6;
+
+            c = canvas.getContext("2d");
+
+            for (var i = 0; i < numPoint; i++) {
+                arrayAvatar.push(new Avatar(createX(), createY(), 6, "red"));
+            }
+
+            avatar = new Avatar(20, 20, 20, "orange");
+            avatar.drawPiPo(c);
+            avatar.drawScore(c);
+
+            document.addEventListener("keydown", (event) => {
+                if (event.keyCode === 37) {
+                    avatar.velocity.x = -2;
+                    avatar.velocity.y = 0;
+                }
+                if (event.keyCode === 38) {
+                    avatar.velocity.y = -2;
+                    avatar.velocity.x = 0;
+                }
+                if (event.keyCode === 40) {
+                    avatar.velocity.y = 2;
+                    avatar.velocity.x = 0;
+                }
+                if (event.keyCode === 39) {
+                    avatar.velocity.x = 2;
+                    avatar.velocity.y = 0;
+                }
+            });
+
+            function animate() {
+                requestAnimationFrame(animate);
+                updateGame(c);
+            }
+            animate();
+        }
+
+        function resetGame() {
+            endGame.classList.remove("show");
+            endGame.classList.add("hide");
+
+            game.classList.remove("hide");
+            game.classList.add("show-flex");
+
+            avatar.x = 20;
+            avatar.y = 20;
+            avatar.radius = 20;
+            avatar.velocity.x = 0;
+            avatar.velocity.y = 0;
+            avatar.score = 0;
+
+            arrayAvatar = [];
+            for (var i = 0; i < 10; i++) {
+                arrayAvatar.push(new Avatar(createX(), createY(), 6, "blue"));
+            }
+        }
+
+        btnStart.addEventListener("click", function () {
+            startGame.classList.add("hide");
+
+            game.classList.remove("hide");
+            game.classList.add("show-flex");
+
+            init();
+        });
+
+        btnRestart.addEventListener("click", function () {
+            window.location.reload();
+        });
+
+        btnReload.addEventListener("click", function () {
+            resetGame();
+        });
+    </script>
+</body>
+
+</html>

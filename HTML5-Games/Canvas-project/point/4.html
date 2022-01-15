@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Point Game</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h3>Hướng dẫn Point Game</h3>
+            <div class="box">
+                <p><a href="./1.html">1.Vẽ quả bóng</a></p>
+                <p><a href="./2.html">2.Vẽ ô tính điểm</a></p>
+                <p><a href="./3.html">3.Vẽ các điểm</a></p>
+                <p><a href="./4.html">4.Di chuyển quả bóng</a></p>
+                <p><a href="./5.html">5.Di chuyển quả bóng khi va vào thành</a></p>
+                <p><a href="./6.html">6.Di chuyển quả bóng để ăn điểm</a></p>
+                <p><a href="./7.html">7.Tạo màn hình game: START - GAME - END</a></p>
+            </div>
+
+            <div class="suggest">
+                <h3>Yêu cầu bước 4:</h3>
+                <p>- Di chuyển vị trí của quả bóng</p>
+                <p>- Sử dụng 4 nút mũi tên để di chuyển quả bóng</p>
+                <p>- Chưa cần chạm vào thành đập lại</p>
+                <p><b>Giống bài ball</b></p>
+            </div>
+        </div>
+        <div class="game">
+            <p>4.Di chuyển quả bóng</p>
+            <canvas id="canvas"></canvas>
+        </div>
+    </div>
+
+    <script>
+        class Avatar {
+            constructor(x, y, radius, color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+                this.velocity = {
+                    x: 0,
+                    y: 0,
+                };
+                this.score = 0;
+            }
+
+            draw(c) {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                c.shadowColor = "white";
+                c.shadowBlur = 10;
+                c.fillStyle = this.color;
+                c.fill();
+                c.closePath();
+            }
+
+            drawPiPo(c) {
+                c.beginPath();
+                c.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+                c.shadowColor = "white";
+                c.shadowBlur = 10;
+                c.fillStyle = this.color;
+                c.fill();
+                c.closePath();
+                c.beginPath();
+                c.font = "12px source sanc pro";
+                c.fillStyle = "white";
+                c.textAlign = "center";
+                c.fillText("HAHA", this.x, this.y + 5);
+                c.closePath();
+            }
+
+            drawScore(c) {
+                c.beginPath();
+                c.font = "30px Arial";
+                c.fillText(
+                    this.score,
+                    canvas.width * 0.1,
+                    canvas.height - canvas.height * 0.05
+                );
+                c.closePath();
+            }
+
+            update() {
+                this.x += this.velocity.x;
+                this.y += this.velocity.y;
+            }
+        }
+
+        let canvas;
+        let c;
+        let avatar;
+        let arrayAvatar;
+
+        function createX() {
+            return Math.floor(Math.random() * canvas.width);
+        }
+        function createY() {
+            return Math.floor(Math.random() * canvas.height);
+        }
+
+        function clear() {
+            c.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function updateGame() {
+            clear();
+
+            arrayAvatar.forEach((ava) => {
+                ava.update();
+                ava.draw(c);
+            });
+            avatar.update();
+
+            avatar.drawPiPo(c);
+            avatar.drawScore(c);
+        }
+
+        function init() {
+            arrayAvatar = [];
+
+            canvas = document.getElementById("canvas");
+            canvas.width = window.innerWidth * 0.5
+            canvas.height = window.innerHeight * 0.6
+
+            c = canvas.getContext("2d");
+
+            for (var i = 0; i < 70; i++) {
+                arrayAvatar.push(new Avatar(createX(), createY(), 6, "red"));
+            }
+
+            avatar = new Avatar(20, 20, 20, "orange");
+            avatar.drawPiPo(c);
+            avatar.drawScore(c);
+
+            document.addEventListener("keydown", (event) => {
+                if (event.which == 37) {
+                    avatar.velocity.x = -2;
+                    avatar.velocity.y = 0;
+                }
+                if (event.which == 38) {
+                    avatar.velocity.y = -2;
+                    avatar.velocity.x = 0;
+                }
+                if (event.which == 40) {
+                    avatar.velocity.y = 2;
+                    avatar.velocity.x = 0;
+                }
+                if (event.which == 39) {
+                    avatar.velocity.x = 2;
+                    avatar.velocity.y = 0;
+                }
+            });
+
+            function animate() {
+                requestAnimationFrame(animate);
+                updateGame();
+            }
+            animate();
+        }
+
+        init();
+    </script>
+</body>
+
+</html>

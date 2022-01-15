@@ -1,0 +1,2 @@
+- Render ngẫu nhiên 1 câu châm ngôn ra màn hình
+- Yêu cầu có giao diện trông dễ nhìn

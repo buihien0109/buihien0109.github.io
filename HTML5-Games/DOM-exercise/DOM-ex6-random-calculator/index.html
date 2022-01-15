@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #74b9ff;
+            height: 100vh;
+        }
+
+        #canvas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            padding: 100px;
+            padding-top: 0;
+        }
+
+        h2 {
+            margin-bottom: 50px;
+            padding: 20px;
+            background-color: #0984e3;
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        .main {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #primary-number,
+        #secondary-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+            font-weight: bold;
+            width: 125px;
+            height: 125px;
+            box-sizing: border-box;
+        }
+
+        #primary-number {
+            border: solid 4px #0984e3;
+        }
+
+        #secondary-number {
+            border: solid 4px #0984e3;
+        }
+
+        #add,
+        #equal {
+            font-weight: bold;
+            font-size: 40px;
+            padding: 30px;
+        }
+
+        input {
+            border: solid 4px #0984e3;
+            width: 125px;
+            height: 125px;
+            text-align: center;
+            outline: none;
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        button {
+            width: 100px;
+            height: 40px;
+            border: solid 2px #0984e3;
+            background: #0984e3;
+            color: white;
+            cursor: pointer;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="canvas">
+        <h2>Thử tài tính toán nào bạn ơi!</h2>
+        <div class="main">
+            <div id="primary-number">7</div>
+            <div id="add">+</div>
+            <div id="secondary-number">10</div>
+            <div id="equal">=</div>
+            <div>
+                <input type="text" id="guess">
+            </div>
+            <div>
+                <button id="btn">Kiểm tra</button>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        //generate random numbers
+        let firstNumber = parseInt(Math.random() * 10);
+        let secondNumber = parseInt(Math.random() * 10);
+
+        //get the total
+        let total = firstNumber + secondNumber;
+
+        //display numbers on the canvas
+        let primary = document.getElementById('primary-number');
+        primary.innerHTML = `<p>${firstNumber}</p>`;
+
+        let secondary = document.getElementById('secondary-number');
+        secondary.innerHTML = `<p>${secondNumber}</p>`
+
+
+        //get guess from user
+        let button = document.getElementById('btn')
+
+        button.addEventListener('click', function () {
+
+            let guess = document.getElementById('guess').value;
+            guess = Number(guess);
+            //check answer
+            if (guess === total) {
+                alert('Correct');
+                window.location.reload()
+            } else {
+                alert('Sorry. Incorrect. The correct answer was ' + total + '.')
+                window.location.reload()
+
+            }
+        });
+    </script>
+</body>
+
+</html>

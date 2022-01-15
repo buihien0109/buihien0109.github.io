@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arrUser = [
+            {
+                name : "Nguyễn Văn A",
+                age : 23,
+                isStatus : true
+            },
+            {
+                name : "Bùi Văn B",
+                age : 30,
+                isStatus : true
+            },
+            {
+                name : "Ngô Văn C",
+                age : 40,
+                isStatus : false
+            },
+            {
+                name : "Đặng Thị D",
+                age : 18,
+                isStatus : true
+            }
+        ];
+
+        function getUser(arr) {
+            let data = []
+            for(let i = 0; i < arr.length; i++) {
+                if(arr[i].age > 25 && arr[i].isStatus == true) {
+                    data.push(arr[i])
+                }
+            }
+            return data
+        }
+
+        console.log(getUser(arrUser));
+
+        function sortUser(arr) {
+            return arr.sort(function(a,b) {
+                return a.age - b.age
+            })
+        }
+
+        console.log(sortUser(arrUser));
+    </script>
+</body>
+
+</html>

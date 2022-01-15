@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Tính chỉ số cân nặng</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="image-box">
+            <div class="img">
+                <img src="https://images.unsplash.com/photo-1540206395-68808572332f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=562&q=80"
+                    alt="" class="img__bg">
+            </div>
+            <div class="result--wrapper">
+                <span class="say-hello text-center show">
+                    Techmaster Việt Nam <br />
+                    Xin chào các bạn !
+                </span>
+                <div class="result--container hide">
+                    <span class="result__label">Chỉ số BMI của bạn:</span>
+                    <span class="result__num"></span>
+                </div>
+                <div class="result__content--wapper">
+                    <span class="result__title"></span>
+                    <span class="result__content"></span>
+                </div>
+            </div>
+        </div>
+        <div class="content-box">
+            <h3 class="title text-center">
+                Tính chỉ số cơ thể BMI
+            </h3>
+            <div class="intro">
+                <p><strong>Chỉ số BMI là gì?</strong></p>
+                <p>Chỉ số BMI (Body Mass Index) hay còn gọi là chỉ số khối cơ thể, chỉ số thể trọng, là một công cụ
+                    thường được sử dụng để đo lượng mỡ trong cơ thể. Chỉ số BMI chuẩn được tính dựa trên chiều cao và
+                    cân nặng, áp dụng cho nam và nữ trưởng thành.</p>
+            </div>
+            <div class="input-box">
+                <div class="input">
+                    <input type="text" placeholder="Nhập chiều cao (cm)" id="height" class="height" required>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="Nhập cân nặng (kg)" id="weight" class="weight" required>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="input">
+                    <button class="btn-submit" id="btn-submit">Kiểm tra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+    object-fit: cover;
+}
+body {
+    background-color: #eee;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    overflow: hidden;
+}
+
+canvas {
+    background-color: black;
+}
+
+.wrapper {
+    display: flex;
+    padding: 2rem;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    width: 400px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.box {
+    padding: 0 2rem;
+}
+
+h3 {
+    margin-left: 2rem;
+    text-transform: uppercase;
+}
+
+.game {
+    background-color: #fff;
+    margin-left: 2rem;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.game p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color: bisque;
+    padding: 1rem;
+    
+}
+
+.suggest {
+    padding: 1rem 2rem;
+    background-color: #f9f9f9;
+}
+
+.suggest h3 {
+    margin-left: 0rem;
+}

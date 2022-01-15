@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Brick game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h3>Hướng dẫn Brick Game</h3>
+            <div class="box">
+                <p><a href="./1.html">1.Vẽ quả bóng</a></p>
+                <p><a href="./3.html">2.Vẽ thanh đệm</a></p>
+                <p><a href="./2.html">3.Di chuyển quả bóng</a></p>
+                <p><a href="./4.html">4.Kiểm tra khi bóng di chuyển va vào thành</a></p>
+                <p><a href="./5.html" class="active-step">5.Kiểm tra khi bóng di chuyển va vào thành dưới</a></p>
+                <p><a href="./6.html">6.Di chuyển thanh đệm</a></p>
+                <p><a href="./7.html">7.Kiểm tra va chạm của bóng với đệm</a></p>
+                <p><a href="./8.html">8.Vẽ hàng gạch</a></p>
+                <p><a href="./9.html">9.Bóng va chạm với hàng gạch</a></p>
+            </div>
+        </div>
+        <div class="required">
+            <h3>Yêu cầu</h3>
+            <p>- Kiểm tra điều kiện khi quả bóng va chạm vào thành dưới của canvas</p>
+            <p>- Khi quả bóng va chạm vào thành dưới thông báo <b>"Người chơi thua cuộc"</b></p>
+        </div>
+        <div class="game">
+            <p>5. Di chuyển quả bóng khi va vào thành bên dưới</p>
+            <canvas id="canvas" width="400px" height="350px" style="border: 2px solid"></canvas>
+        </div>
+    </div>
+
+    <script>
+        class Ball {
+            constructor(mapWidth, mapHeight) {
+                this.mapWidth = mapWidth;
+                this.mapHeight = mapHeight;
+
+                this.radius = 10;
+                this.speedX = 3;
+                this.speedY = -3;
+
+                this.cx = Math.floor(mapWidth / 2);
+                this.cy = mapHeight - 100;
+
+                this.color = "green";
+                this.running = true;
+            }
+
+            draw(context) {
+                context.beginPath();
+                context.fillStyle = this.color;
+                context.arc(this.cx, this.cy, this.radius, 0, Math.PI * 2, true);
+                context.closePath();
+                context.fill();
+            }
+
+            update() {
+                if (this.running) {
+                    this.cx += this.speedX;
+                    this.cy += this.speedY;
+
+                    if (this.cx - this.radius < 0 || this.cx + this.radius > this.mapWidth) {
+                        this.speedX = -this.speedX;
+                    }
+
+                    if (this.cy - this.radius < 0) {
+                        this.speedY = -this.speedY;
+                    } else if (this.cy + this.radius > this.mapHeight){
+                        this.running = false;
+                        console.log('GAME OVER');
+                    }
+                }
+            }
+        }
+
+        class Rect {
+            constructor(left, top, width, height, color) {
+                this.MAX_SPEED = 4;
+                this.width = width;
+                this.height = height;
+
+                this.left = left;
+                this.top = top;
+                this.right = this.left + width;
+                this.bottom = this.top + height;
+
+                this.color = color;
+            }
+
+            draw(context) {
+                context.fillStyle = this.color;
+                context.fillRect(this.left, this.top, this.width, this.height);
+            }
+        }
+
+        // main
+        var canvas;
+        var c;
+        var ball;
+        var paddle;
+
+        function clear() {
+            c.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function draw() {
+            clear();
+
+            ball.draw(c);
+            paddle.draw(c);
+        }
+
+        function update() {
+            ball.update()
+            draw();
+        }
+
+        function init() {
+            var paddleWidth = 100;
+            var paddleHeight = 20;
+            canvas = document.getElementById("canvas");
+            c = canvas.getContext("2d");
+
+            ball = new Ball(canvas.width, canvas.height);
+
+            paddle = new Rect((canvas.width - paddleWidth) / 2, canvas.height - paddleHeight - 20, paddleWidth, paddleHeight, "brown");
+
+            function animate() {
+                requestAnimationFrame(animate);
+                update()
+            }
+            animate();
+        }
+        init()
+
+    </script>
+</body>
+
+</html>

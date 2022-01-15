@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Brick game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h3>Hướng dẫn Brick Game</h3>
+            <div class="box">
+                <p><a href="./1.html">1.Vẽ quả bóng</a></p>
+                <p><a href="./3.html">2.Vẽ thanh đệm</a></p>
+                <p><a href="./2.html">3.Di chuyển quả bóng</a></p>
+                <p><a href="./4.html">4.Kiểm tra khi bóng di chuyển va vào thành</a></p>
+                <p><a href="./5.html">5.Kiểm tra khi bóng di chuyển va vào thành dưới</a></p>
+                <p><a href="./6.html">6.Di chuyển thanh đệm</a></p>
+                <p><a href="./7.html">7.Kiểm tra va chạm của bóng với đệm</a></p>
+                <p><a href="./8.html">8.Vẽ hàng gạch</a></p>
+                <p><a href="./9.html" class="active-step">9.Bóng va chạm với hàng gạch</a></p>
+            </div>
+        </div>
+        <div class="game">
+            <p>9. Bóng va chạm với hàng gạch</p>
+            <canvas id="canvas" width="400px" height="350px" style="border: 2px solid"></canvas>
+        </div>
+    </div>
+
+    <script>
+        class Ball {
+            constructor(mapWidth, mapHeight) {
+                this.mapWidth = mapWidth;
+                this.mapHeight = mapHeight;
+
+                this.radius = 10;
+                this.speedX = 3;
+                this.speedY = -3;
+
+                this.cx = Math.floor(mapWidth / 2);
+                this.cy = mapHeight - 100;
+
+                this.color = "green";
+                this.running = true;
+            }
+
+            draw(context) {
+                context.beginPath();
+                context.fillStyle = this.color;
+                context.arc(this.cx, this.cy, this.radius, 0, Math.PI * 2, true);
+                context.closePath();
+                context.fill();
+            }
+
+            update() {
+                if (this.running) {
+                    this.cx += this.speedX;
+                    this.cy += this.speedY;
+
+                    if (this.cx - this.radius < 0 || this.cx + this.radius > this.mapWidth) {
+                        this.speedX = -this.speedX;
+                    }
+
+                    if (this.cy - this.radius < 0) {
+                        this.speedY = -this.speedY;
+                    } else if (this.cy + this.radius > this.mapHeight) {
+                        this.running = false;
+                        console.log('GAME OVER');
+                    }
+                }
+            }
+
+            collide(rect) {
+                if (!this.running) return;
+                var p = {
+                    x: this.cx,
+                    y: this.cy
+                };
+
+                if (p.x < rect.left) {
+                    p.x = rect.left;
+                } else if (p.x > rect.right) {
+                    p.x = rect.right;
+                }
+
+                if (p.y < rect.top) {
+                    p.y = rect.top;
+                }
+                else if (p.y > rect.bottom) {
+                    p.y = rect.bottom;
+                }
+
+                var dx = this.cx - p.x;
+                var dy = this.cy - p.y;
+
+                var isCollided = (dx * dx + dy * dy) <= this.radius * this.radius;
+
+                if (isCollided) {
+
+                    if (p.x == rect.left || p.x == rect.right) {
+                        this.speedX = -this.speedX;
+                    }
+
+                    if (p.y == rect.top || p.y == rect.bottom) {
+                        this.speedY = -this.speedY;
+                    }
+
+                }
+                return isCollided;
+            }
+
+        }
+
+        class Rect {
+            constructor(left, top, width, height, color) {
+                this.MAX_SPEED = 4;
+                this.width = width;
+                this.height = height;
+
+                this.left = left;
+                this.top = top;
+                this.right = this.left + width;
+                this.bottom = this.top + height;
+
+                this.color = color;
+            }
+
+            draw(context) {
+                context.fillStyle = this.color;
+                context.fillRect(this.left, this.top, this.width, this.height);
+            }
+
+            moveTo(x) {
+                this.left = x - this.width / 2;
+                this.right = this.left + this.width;
+            }
+        }
+
+        // main------------------
+        var BRICK_WIDTH = 40;
+        var BRICK_HEIGHT = 20;
+        var BRICK_ROWS = 3;
+        var BRICK_COLS = 8;
+
+        var canvas;
+        var c;
+        var ball;
+        var paddle;
+        var bricks = [];
+
+        function canvas_mousemove(e) {
+            var x = e.pageX - canvas.offsetLeft;
+
+            paddle.moveTo(x);
+        }
+
+        function clear() {
+            c.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function draw() {
+            clear();
+
+            for (var i = 0; i < BRICK_ROWS; i++) {
+                for (var j = 0; j < BRICK_COLS; j++) {
+                    if (bricks[i][j]) bricks[i][j].draw(c);
+                }
+            }
+
+            ball.draw(c);
+            paddle.draw(c);
+        }
+
+        function update() {
+            ball.update()
+
+            for (var i = 0; i < BRICK_ROWS; i++) {
+                for (var j = 0; j < BRICK_COLS; j++) {
+                    if (bricks[i][j] && ball.collide(bricks[i][j])) bricks[i][j] = null;
+                }
+            }
+
+            ball.collide(paddle);
+            draw();
+        }
+
+        function init() {
+            var paddleWidth = 100;
+            var paddleHeight = 20;
+            canvas = document.getElementById("canvas");
+            canvas.onmousemove = canvas_mousemove;
+            c = canvas.getContext("2d");
+
+            ball = new Ball(canvas.width, canvas.height);
+
+            paddle = new Rect((canvas.width - paddleWidth) / 2, canvas.height - paddleHeight - 20, paddleWidth, paddleHeight, "brown");
+
+            // Khởi tạo hàng gạch
+            bricks = new Array(BRICK_ROWS);
+            for (var i = 0; i < BRICK_ROWS; i++) {
+                bricks[i] = new Array(BRICK_COLS);
+                for (var j = 0; j < BRICK_COLS; j++) {
+                    bricks[i][j] = new Rect(j * (BRICK_WIDTH + 5) + 10, i * (BRICK_HEIGHT + 5) + 10, BRICK_WIDTH, BRICK_HEIGHT, "blue");
+                }
+            }
+
+            function animate() {
+                requestAnimationFrame(animate);
+                update()
+            }
+            animate();
+        }
+        init()
+
+    </script>
+</body>
+
+</html>

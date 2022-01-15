@@ -1,0 +1,4 @@
+1. part 1.1 : Vẽ màn hình start game
+2. part 1.2 : Vẽ màn hình start game có bird đang vỗ cánh
+3. part 2 : Update ground
+4. part 3 : Update draw pipe

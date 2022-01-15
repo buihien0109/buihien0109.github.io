@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/themes/prism-okaidia.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>JavascriptByExamples</title>
+</head>
+
+<body>
+    <section id="header">
+        <div class="header--wrapper">
+            <div class="header__banner">
+                <div class="banner__brand">
+                    <img src="./image/logo.jpg" alt="logo_techmaster">
+                </div>
+                <div class="banner__name">
+                    <a href="http://techmaster.vn" target="_blank">Techmaster VietNam</a>
+                </div>
+            </div>
+            <div class="header__inner"></div>
+            <div class="header__search">
+                <div class="search--inner">
+                    <div class="search__icon">
+                        <svg preserveAspectRatio="xMidYMid meet" height="1em" width="1em" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" stroke="currentColor" class="icon-svg">
+                            <g>
+                                <circle cx="10.5" cy="10.5" r="7.5"></circle>
+                                <line x1="21" y1="21" x2="15.8" y2="15.8"></line>
+                            </g>
+                        </svg>
+                    </div>
+                    <div class="search__input">
+                        <input type="text" placeholder="Tìm kiếm...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="main-content">
+        <div class="menu--wrapper">
+            <div class="menu--container">
+                <ul>
+                    <li class="menu__item"><a class="menu__link menu__link--active" href="#">Hello World!</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Hello</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Values</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Variables</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">For Loops</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">While Loops</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">If / Else</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Ternary</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Switch</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Exceptions</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Array</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Object</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Set</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Functions</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Function Parameters</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">IIFE (pronounced iffy)</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Scope</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Window</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Closures</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Context, this</a></li>
+                    <li class="menu__item"><a class="menu__link" href="#">Bind</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content--wrapper">
+            <div class="content--container">
+                <div class="content__title">
+                    <h1>Hello World!</h1>
+                </div>
+                <div class="content__main">
+                    <pre>
+                        <code class="language-javascript">
+if (!$(element).hasClass('is-invalid') && !$(element).hasClass('is-valid') ) {
+    if (value.length > 0) {
+        $(element).removeClass('is-invalid');
+        $(element).addClass('is-valid');
+    } else {
+        $(element).removeClass('is-valid');
+        $(element).addClass('is-invalid');
+    }
+}
+                        </code>
+                    </pre>
+                    <pre>
+                        <code class="language-javascript">
+class Animal {
+    constructor(name) {
+        this.name = name
+    }
+    
+    greet() {
+        return `Hello, my name is ${this.name}`
+    }
+}
+    
+class Cat extends Animal {
+    constructor(name, breed) {
+        super(name)
+        this.breed = breed
+    }
+    
+    purr() {
+        return 'purrrrr'
+    }
+}
+    
+const nora = new Cat('Nora', 'tabby')
+nora.greet()
+nora.purr()
+                        </code>
+                    </pre>
+                </div>
+            </div>
+            <div class="content__menu"></div>
+        </div>
+    </section>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.16.0/prism.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>

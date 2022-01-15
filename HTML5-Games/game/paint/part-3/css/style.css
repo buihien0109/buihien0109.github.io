@@ -1,0 +1,157 @@
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1568832359672-e36cf5d74f54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #696969;
+    opacity: 0.5;
+}
+
+.container {
+    width: 1000px;
+    padding: 30px;
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 1;
+}
+
+.tool {
+    display: flex;
+    justify-content: space-between;
+}
+
+.color-btn, .size-btn {
+    width: 40px;
+    height: 40px;
+    border: 2px solid #ccc;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: all .3s ease-in;
+}
+
+.color-btn:hover, .size-btn:hover {
+    opacity: 1;
+    border: 2px solid #000;
+}
+
+.color-btn-1 {
+    background-color: brown;
+}
+
+.color-btn-2 {
+    background-color: royalblue;
+}
+
+.color-btn-3 {
+    background-color: green;
+}
+
+.color-btn-4 {
+    background-color: yellow;
+}
+
+.color-btn-5 {
+    background-color: violet;
+}
+
+.color-btn-6 {
+    background-color: white;
+}
+
+.tool-control {
+    display: flex;
+}
+
+.control-btn {
+    border: 1px solid #ccc;
+    height: 40px;
+    padding: 0 16px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: all .3s ease-in;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-btn img {
+    width: 30px;
+    margin-right: 6px;
+}
+
+.size-btn {
+    position: relative;
+}
+
+.size-btn::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    background-color: #000;
+    transform: rotate(-45deg)
+}
+
+.size-btn-1::before {
+    height: 10px;
+    top: 13px;
+    left: 2px;
+}
+
+.size-btn-2::before {
+    height: 8px;
+    top: 13px;
+    left: 2px;
+}
+
+.size-btn-3::before {
+    height: 6px;
+    top: 14px;
+    left: 2px;
+}
+
+.size-btn-4::before {
+    height: 4px;
+    top: 15px;
+    left: 2px;
+}
+
+.size-btn-5::before {
+    height: 2px;
+    top: 16px;
+    left: 2px;
+}
+
+.color-btn-active, .size-btn-active {
+    opacity: 1;
+    border: 2px solid #000;
+}
+
+.paint {
+    padding: 32px 0 0;
+}
+
+#canvas {
+    border: 2px solid #ccc;
+    background-color: #000;
+    cursor: crosshair;
+}

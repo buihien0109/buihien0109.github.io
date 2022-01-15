@@ -1,0 +1,41 @@
+Cho trang html có cấu trúc như sau
+Yêu cầu
+// Bài 1: Thêm label cho các trường username, password, confirm password
+// Bài 2: Kiểm tra xem password và confirm pass có trùng nhau hay không
+// Bài 3: Đảm bảo nút ‘Đăng ký’ bị disable cho đến khi người dùng nhập dữ liệu hợp lệ vào tất cả các trường đầu vào. Sau khi nhập đầy đủ thì ‘Đăng ký’ được enable.
+// Bài 4: Khi user nhập đủ thông tin và bấm vào nút submit thì tạo 1 hộp thoại thông báo đăng ký thành công
+
+
+        const input = document.querySelectorAll('input')
+        let labelArr = ['Username', 'Password', 'Confirm Password']
+        Array.from(input).map((input, index) => input.insertAdjacentHTML('beforeBegin', `<label>${labelArr[index]}</label>`))
+
+                document.getElementById('confirmPassword')
+            .addEventListener('blur', function(e) {
+                if(e.target.value != document.getElementById('password').value) {
+                    event.target.insertAdjacentHTML('afterEnd', '<span class="error">Pass không trùng nhau</span>')
+                }
+            })
+
+                    let btn = document.querySelector('button')
+        btn.setAttribute('disabled', 'disabled')
+        document.getElementById('registrationForm')
+            .addEventListener('change', function() {
+                const formIsFilled = Array.from(document.querySelectorAll('input'))
+                    .every(input => input.value)
+
+                if(formIsFilled) {
+                    btn.removeAttribute('disabled')
+                }
+            })
+
+                    const form = document.getElementById('registrationForm')
+
+        form.addEventListener('submit', function(e) {
+            e.preventDefault()
+            console.log('abc');
+            let alertBox = document.createElement('div')
+            alertBox.classList.add('success')
+            alertBox.innerText = "Đăng lý thành công"
+            form.prepend(alertBox)
+        })

@@ -1,0 +1,5 @@
+1	Tạo giao diện
+2	Ẩn / Hiện giữa các màn chơi
+3	Chọn level game và render word, time, score
+4	Xử lý sự kiên khi gõ phím
+5	Thông báo kết quả người chơi

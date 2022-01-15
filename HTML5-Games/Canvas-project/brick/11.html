@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Brick game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h3>Hướng dẫn Brick Game</h3>
+            <div class="box">
+                <p><a href="./1.html">1.Vẽ quả bóng</a></p>
+                <p><a href="./3.html">2.Vẽ thanh đệm</a></p>
+                <p><a href="./2.html">3.Di chuyển quả bóng</a></p>
+                <p><a href="./4.html">4.Kiểm tra khi bóng di chuyển va vào thành</a></p>
+                <p><a href="./5.html">5.Kiểm tra khi bóng di chuyển va vào thành dưới</a></p>
+                <p><a href="./6.html">6.Di chuyển thanh đệm</a></p>
+                <p><a href="./7.html">7.Kiểm tra va chạm của bóng với đệm</a></p>
+                <p><a href="./8.html">8.Vẽ hàng gạch</a></p>
+                <p><a href="./9.html">9.Bóng va chạm với hàng gạch</a></p>
+                <p><a href="./10.html" class="active-step">10. Tăng level cho gạch</a></p>
+            </div>
+        </div>
+        <div class="game">
+            <p>9.Bóng va chạm với hàng gạch</p>
+            <canvas id="canvas" width="400px" height="350px" style="border: 2px solid"></canvas>
+        </div>
+    </div>
+
+    <script>
+        class Ball {
+            constructor(x,y,radius,color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+
+                this.speedX = 3;
+                this.speedY = -3;
+
+                this.running = true
+            }
+
+            draw(c) {
+                c.beginPath();
+                c.fillStyle = this.color;
+                c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+                c.closePath();
+                c.fill();
+            }
+
+            update() {
+                if(this.running) {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+
+                    if (this.x - this.radius < 0 || this.x + this.radius > canvas.width) {
+                        this.speedX = -this.speedX;
+                    }
+
+                    if (this.y - this.radius < 0) {
+                        this.speedY = -this.speedY;
+                    } else if (this.y + this.radius > canvas.height){
+                        this.running = false;
+                        console.log('GAME OVER');
+                    }
+                }
+            }
+
+            collide(rect) {
+                if (!this.running) return;
+                let p = {
+                    x: this.x,
+                    y: this.y
+                };
+
+                rect.left = rect.x
+                rect.right = rect.x + rect.width
+                rect.top = rect.y
+                rect.bottom = rect.y + rect.height
+
+                if (p.x < rect.left) {
+                    p.x = rect.left;
+                } else if (p.x > rect.right) {
+                    p.x = rect.right;
+                }
+
+                if (p.y < rect.top) {
+                    p.y = rect.top;
+                }
+                else if (p.y > rect.bottom) {
+                    p.y = rect.bottom;
+                }
+
+                let dx = this.x - p.x;
+                let dy = this.y - p.y;
+
+                let isCollided = (dx * dx + dy * dy) <= this.radius * this.radius;
+
+                if (isCollided) {
+
+                    // if (p.x == rect.left || p.x == rect.right) {
+                    //     this.speedX = -this.speedX;
+                    // }
+
+                    // if (p.y == rect.top || p.y == rect.bottom) {
+                    //     this.speedY = -this.speedY;
+                    // }
+
+                     // Tìm vị trí của điểm va chạm
+                    let collidePoint = (this.y - (rect.y + rect.height / 2));
+                    collidePoint = collidePoint / (rect.height / 2);
+
+                    // Góc trong khoảng từ 0 -> 45
+                    let angleRad = (Math.PI / 4) * collidePoint;
+
+                    // Kiểm tra xem bóng đang bên vị trí của bên nào (người hay máy)
+                    // Nếu bên gạch là 1
+                    // Nếu bên paddle là -1
+                    let direction = (this.y + this.radius < canvas.height / 2) ? 1 : -1;
+                    this.speedY = direction * this.speedY * Math.sin(angleRad);
+                    this.speedX = this.speedX * Math.cos(angleRad);
+
+                }
+                return isCollided;
+            }
+        }
+
+        class Rect {
+            constructor(x, y, width, height, color) {
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
+                this.color = color;
+                this.level = null
+            }
+
+            draw(c) {
+                c.fillStyle = this.color;
+                c.fillRect(this.x, this.y, this.width, this.height);
+            }
+
+            drawLevel(c) {
+                c.fillStyle = "black";
+                c.font = "15px Arial";
+                c.fillText(this.level, this.x + 25, this.y + 20);
+                c.fill();
+            }
+
+            moveTo(x) {
+                this.x = x
+            }
+        }
+
+        // Khởi tạo các biến toàn cục
+        let canvas
+        let c
+        let paddleWidth = 100;
+        let paddleHeight = 20;
+        let ball;
+        let paddle;
+
+        let BRICK_WIDTH = 65;
+        let BRICK_HEIGHT = 25;
+        let BRICK_ROWS = 3;
+        let BRICK_COLS = 8;
+
+        let bricks = [];
+
+        // Array color level
+        let color = ["blue", "red", "green", "yellow", "pink"]
+
+        function canvas_mousemove(e) {
+            let x = e.offsetX - paddleWidth/2
+
+            paddle.moveTo(x);
+        }
+
+        function clear() {
+            c.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function draw() {
+            clear();
+
+            for (let i = 0; i < BRICK_ROWS; i++) {
+                for (let j = 0; j < BRICK_COLS; j++) {
+                    if (bricks[i][j]) {
+                        bricks[i][j].draw(c);
+                        bricks[i][j].drawLevel(c);
+                    }
+                }
+            }
+
+            ball.draw(c);
+            paddle.draw(c);
+        }
+
+        function update() {
+            ball.update()
+
+            for (var i = 0; i < BRICK_ROWS; i++) {
+                for (var j = 0; j < BRICK_COLS; j++) {
+                    if (bricks[i][j] && ball.collide(bricks[i][j])) {
+                        if(bricks[i][j].level == 0) {
+                            bricks[i].splice(j, 1)
+                        } else {
+                            bricks[i][j].level--
+                            bricks[i][j].color = color[bricks[i][j].level]
+                        }
+
+                    }
+                }
+            }
+
+            ball.collide(paddle)
+            
+            draw();
+        }
+
+        function random(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function init() {
+            canvas = document.getElementById("canvas");
+            canvas.width = innerWidth * 0.3;
+            canvas.height = innerHeight * 0.6;
+            canvas.style.backgroundColor = "#000";
+
+            canvas.onmousemove = canvas_mousemove;
+
+            c = canvas.getContext("2d");
+
+            ball = new Ball(canvas.width/2, canvas.height-100, 10, 'green');
+
+            paddle = new Rect(
+                (canvas.width - paddleWidth) / 2, 
+                canvas.height - paddleHeight - 20, 
+                paddleWidth, 
+                paddleHeight, 
+                "brown"
+            );
+
+            // Khởi tạo hàng gạch
+            bricks = new Array(BRICK_ROWS);
+            for (let i = 0; i < BRICK_ROWS; i++) {
+                bricks[i] = new Array(BRICK_COLS);
+                for (let j = 0; j < BRICK_COLS; j++) {
+                    let numberRandom = random(0,4)
+                    bricks[i][j] = new Rect(
+                        j * (BRICK_WIDTH + 5) + 10, 
+                        i * (BRICK_HEIGHT + 5) + 10, 
+                        BRICK_WIDTH, BRICK_HEIGHT, 
+                        color[numberRandom]
+                    );
+                    bricks[i][j].level = numberRandom
+                }
+            }
+
+            function animate() {
+                requestAnimationFrame(animate);
+                update()
+            }
+
+            animate(); 
+        }
+
+        init()
+
+    </script>
+</body>
+
+</html>

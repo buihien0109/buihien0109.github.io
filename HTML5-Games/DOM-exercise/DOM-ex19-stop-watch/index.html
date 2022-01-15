@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: #ffa600;
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .wrapper {
+            width: 800px;
+            margin: 30px auto;
+            color: #fff;
+            text-align: center;
+            border: 1px solid #fff;
+            padding-top: 60px;
+            padding-bottom: 60px;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 100;
+            font-size: 2.6em;
+            text-transform: uppercase;
+        }
+
+        #seconds,
+        #tens {
+            font-size: 2em;
+        }
+
+        button {
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            border-radius: 5px;
+            -khtml-border-radius: 5px;
+            background: #ffa600;
+            color: #fff;
+            border: solid 1px #fff;
+            text-decoration: none;
+            cursor: pointer;
+            font-size: 1.2em;
+            padding: 18px 10px;
+            width: 180px;
+            margin: 10px;
+            outline: none;
+        }
+
+        button:hover {
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            background: #fff;
+            border: solid 1px #fff;
+            color: #ffa600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>Đồng hồ bấm giờ</h1>
+        <p><span id="seconds">00</span>:<span id="tens">00</span></p>
+        <button id="button-start">Bắt đầu</button>
+        <button id="button-stop">Dừng</button>
+        <button id="button-reset">Reset</button>
+    </div>
+
+    <script>
+        window.onload = function () {
+
+            let seconds = 00;
+            let tens = 00;
+            let appendTens = document.getElementById("tens")
+            let appendSeconds = document.getElementById("seconds")
+            let buttonStart = document.getElementById('button-start');
+            let buttonStop = document.getElementById('button-stop');
+            let buttonReset = document.getElementById('button-reset');
+            let Interval;
+
+            buttonStart.onclick = function () {
+                clearInterval(Interval);
+                Interval = setInterval(startTimer, 10);
+            }
+
+            buttonStop.onclick = function () {
+                clearInterval(Interval);
+            }
+
+            buttonReset.onclick = function () {
+                clearInterval(Interval);
+                tens = "00";
+                seconds = "00";
+                appendTens.innerHTML = tens;
+                appendSeconds.innerHTML = seconds;
+            }
+
+            function startTimer() {
+                tens++;
+
+                if (tens < 9) {
+                    appendTens.innerHTML = "0" + tens;
+                }
+
+                if (tens > 9) {
+                    appendTens.innerHTML = tens;
+                }
+
+                if (tens > 99) {
+                    seconds++;
+                    appendSeconds.innerHTML = "0" + seconds;
+                    tens = 0;
+                    appendTens.innerHTML = "0" + 0;
+                }
+
+                if (seconds > 9) {
+                    appendSeconds.innerHTML = seconds;
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>

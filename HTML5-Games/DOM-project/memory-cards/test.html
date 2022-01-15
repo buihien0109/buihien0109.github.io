@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="heading">
+        Đây là thẻ Heading
+        <span style="display:none;">Span 1</span>
+        <span>Span 2</span><p>Đoạn văn</p>
+    </h1>
+
+    <!-- <input type="text" placeholder="Nhập giá trị"> -->
+    
+    <p class="para">para 1</p>
+
+    <!-- <button>Click</button> -->
+
+    <p class="para">para 2</p>
+    <p class="para">para 3</p>
+    <ul>
+        <!-- <li>
+            <a href="https://facebook.com" target="_blank">facebook</a>
+        </li> -->
+        <li>Item1</li>
+        <li>Item2</li>
+        <li><p>Para 4</p></li>
+    </ul>
+
+    <script>
+        const h1 = document.getElementById('heading');
+        console.log(h1.innerHTML);
+        console.log(h1.innerText);
+        console.log(h1.textContent);
+
+        h1.innerHTML = "<em>Xin chào các bạn<em>";
+        h1.innerText = "Các bạn có khỏe không?";
+        h1.textContent = "Say hello";
+
+        h1.style.color = 'red';
+        h1.style.backgroundColor = 'black';
+        h1.style.fontSize = "50px";
+
+        let link = document.createElement('a');
+        link.href = 'https://facebook.com';
+        link.target = '_blank';
+        link.innerText = 'facebook';
+        console.log(link);
+
+        document.body.appendChild(link)
+        
+        let li = document.createElement('li');
+        li.innerHTML = '<a href="https://facebook.com" target="_blank">facebook</a>'
+        document.querySelector('ul').prepend(li)
+        
+        // new node
+        let input = document.createElement('input')
+        input.type = 'text';
+        input.placeholder = 'Nhập giá trị';
+
+        //refer node
+        let para1 = document.querySelector('.para');
+
+        // document.body.insertBefore(input, para1);
+        para1.parentNode.insertBefore(input, para1);
+
+        let button = document.createElement('button');
+        button.innerText = 'click'
+
+        // para1.insertAdjacentElement('afterend', button);
+        para1.insertAdjacentHTML('afterend', '<button style="background: red">Click</button>')
+    </script>
+</body>
+
+</html>

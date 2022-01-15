@@ -1,0 +1,1 @@
+- tương tự bài 1, hiển thị thêm mã màu ra màn hình khi bấm vào nút + đổi màu background

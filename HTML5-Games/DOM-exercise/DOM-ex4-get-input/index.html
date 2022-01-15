@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+    <title>DOM</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row max-height align-items-center">
+            <div class="col-10 mx-auto col-md-8 message-container text-center p-5">
+                <h4 class="text-capitalize">Bạn muốn nói điều gì?</h4>
+                <form id="message-form">
+                    <input type="text" name="" id="message" class="w-100 my-3 p-2">
+                    <input type="submit" id="submitBtn" class="btn btn-lg" value="Bấm thử xem">
+                </form>
+                <h5 class="p-2 alert alert-danger my-3 text-capitalize feedback">Hãy nhập điều bạn muốn nói</h5>
+                <h4 class="mt-4 message-content text-uppercase">Xin chào mọi người !!!</h4>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+
+        (function () {
+            //Select the input element
+            const form = document.querySelector('#message-form')
+            //Set up Submit Button
+            form.addEventListener('submit', function (e) {
+                // prevent the form's default submission action
+                e.preventDefault()
+                //Get user's input from from
+                const message = document.querySelector('#message')
+                const feedback = document.querySelector('.feedback')
+                const messageContent = document.querySelector('.message-content')
+
+                if (message.value === '') {
+                    feedback.classList.add('show')
+                    setTimeout(function () {
+                        feedback.classList.remove('show')
+                    }, 2000)
+                } else {
+                    //Change message content and clear the message input
+                    messageContent.textContent = message.value
+                    message.value = ''
+                }
+            })
+        })()
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Brick game</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h3>Hướng dẫn Brick Game</h3>
+            <div class="box">
+                <p><a href="./1.html">1.Vẽ quả bóng</a></p>
+                <p><a href="./3.html">2.Vẽ thanh đệm</a></p>
+                <p><a href="./2.html">3.Di chuyển quả bóng</a></p>
+                <p><a href="./4.html">4.Kiểm tra khi bóng di chuyển va vào thành</a></p>
+                <p><a href="./5.html">5.Kiểm tra khi bóng di chuyển va vào thành dưới</a></p>
+                <p><a href="./6.html">6.Di chuyển thanh đệm</a></p>
+                <p><a href="./7.html" class="active-step">7.Kiểm tra va chạm của bóng với đệm</a></p>
+                <p><a href="./8.html">8.Vẽ hàng gạch</a></p>
+                <p><a href="./9.html">9.Bóng va chạm với hàng gạch</a></p>
+                <p><a href="./10.html">10. Tăng level cho gạch</a></p>
+            </div>
+        </div>
+        <div class="game">
+            <p>7. Kiểm tra va chạm của bóng với đệm</p>
+            <canvas id="canvas" width="400px" height="350px" style="border: 2px solid"></canvas>
+        </div>
+    </div>
+
+    <script>
+        class Ball {
+            constructor(x,y,radius,color) {
+                this.x = x;
+                this.y = y;
+                this.radius = radius;
+                this.color = color;
+
+                this.speedX = 3;
+                this.speedY = -3;
+
+                this.running = true
+            }
+
+            draw(c) {
+                c.beginPath();
+                c.fillStyle = this.color;
+                c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, true);
+                c.closePath();
+                c.fill();
+            }
+
+            update() {
+                if(this.running) {
+                    this.x += this.speedX;
+                    this.y += this.speedY;
+
+                    if (this.x - this.radius < 0 || this.x + this.radius > canvas.width) {
+                        this.speedX = -this.speedX;
+                    }
+
+                    if (this.y - this.radius < 0) {
+                        this.speedY = -this.speedY;
+                    } else if (this.y + this.radius > canvas.height){
+                        this.running = false;
+                        console.log('GAME OVER');
+                    }
+                }
+            }
+
+            collide(rect) {
+                if (!this.running) return;
+                rect.top = rect.y;
+                rect.bottom = rect.y + rect.height;
+                rect.left = rect.x;
+                rect.right = rect.x + rect.width;
+
+                this.top = this.y - this.radius;
+                this.bottom = this.y + this.radius;
+                this.left = this.x - this.radius;
+                this.right = this.x + this.radius;
+
+                let check = rect.left < this.right && rect.top < this.bottom && rect.right > this.left && rect.bottom > this.top;
+
+                if(check) {
+                    if (this.x == rect.left || this.x == rect.right) {
+                        this.speedX = -this.speedX;
+                    }
+
+                    if (this.y == rect.top || this.y == rect.bottom) {
+                        this.speedY = -this.speedY;
+                    }
+                }
+            }
+        }
+
+        class Rect {
+            constructor(x, y, width, height, color) {
+                this.x = x;
+                this.y = y;
+                this.width = width;
+                this.height = height;
+                this.color = color;
+            }
+
+            draw(c) {
+                c.fillStyle = this.color;
+                c.fillRect(this.x, this.y, this.width, this.height);
+            }
+
+            moveTo(x) {
+                this.x = x
+            }
+        }
+
+        // Khởi tạo các biến toàn cục
+        let canvas
+        let c
+        let paddleWidth = 100;
+        let paddleHeight = 20;
+        let ball;
+        let paddle;
+
+        function canvas_mousemove(e) {
+            let x = e.offsetX - paddleWidth/2
+
+            paddle.moveTo(x);
+        }
+
+        function clear() {
+            c.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function draw() {
+            clear();
+
+            ball.draw(c);
+            paddle.draw(c);
+        }
+
+        function update() {
+            ball.update()
+            ball.collide(paddle)
+            
+            draw();
+        }
+
+        function init() {
+            canvas = document.getElementById("canvas");
+            canvas.width = innerWidth * 0.3
+            canvas.height = innerHeight * 0.6
+
+            canvas.onmousemove = canvas_mousemove;
+
+            c = canvas.getContext("2d");
+
+            ball = new Ball(canvas.width/2, canvas.height-100, 10, 'green');
+
+            paddle = new Rect((canvas.width - paddleWidth) / 2, canvas.height - paddleHeight - 20, paddleWidth, paddleHeight, "brown");
+
+            function animate() {
+                requestAnimationFrame(animate);
+                update()
+            }
+
+            animate(); 
+        }
+
+        init()
+
+    </script>
+</body>
+
+</html>

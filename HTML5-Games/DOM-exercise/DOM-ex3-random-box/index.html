@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+        .box {
+            display: block;
+            background-color: #f3f3f3;
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            float: left;
+            margin: 5px;
+        }
+
+        .box:hover {
+            transform: scale(0.9);
+            transition-duration: 0.5s;
+            opacity: 0.8;
+            cursor: pointer;
+        }
+
+        .box:active {
+            transform: scale(1.5);
+            transition-duration: 0.5s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <body>
+        <div class="wrap">
+            <h1>JS DOM</h1>
+            <button id="btn">Tạo thêm box</button>
+            <h4 id="score">Tổng số box:<span class="points"></span></h4>
+
+            <div class="boxes"></div>
+        </div>
+    </body>
+
+    <script>
+        let colors = ["#3498db", "#9b59b6", "#e74c3c", "#2c3e50", "#d35400"];
+
+        let total = document.querySelector(".points");
+        total.innerText = colors.length;
+
+        function createBoxes(numOf) {
+            let colorAmount = colors.length;
+            let currentColor = 0;
+            let newElement;
+            let boxes = document.querySelector(".boxes");
+            // Tạo box phụ thược vào số lượng tham số đầu vào
+            for (let i = 0; i < numOf; i++) {
+                // Tạo 1 thẻ div
+                newElement = document.createElement("div");
+                // Gán class "box" cho thẻ div vừa tạo
+                newElement.className = "box";
+                // Gán background cho box
+                newElement.style = "background-color:" + colors[currentColor];
+
+                boxes.appendChild(newElement);
+
+                // Lắng nghe sự kiện click thì remove box được click
+                // Cập nhật lại số lượng box hiện có
+                newElement.addEventListener("click", function (e) {
+                    this.remove();
+                    total.innerText = document.querySelectorAll(".box").length;
+                });
+
+                //Nếu currentColor = colorAmount thì reset
+                if (currentColor === colorAmount - 1) {
+                    currentColor = 0;
+                } else {
+                    currentColor++;
+                }
+            }
+        }
+
+        //Gọi function để tạo box
+        // Số lượng box = độ dài của mảng color
+        createBoxes(colors.length);
+
+        // Lắng nghe sự kiện để tạo them box mới
+        let button = document.getElementById("btn");
+
+        button.addEventListener("click", function randomize() {
+            createBoxes(colors.length);
+            total.innerText = document.querySelectorAll(".box").length;
+        });
+    </script>
+</body>
+
+</html>
