@@ -30,9 +30,15 @@ Tham khảo 1 số thuộc tính position ở đây : https://viblo.asia/helps/c
 Tham khảo 1 số thuộc tính position [ở đây](https://viblo.asia/helps/cach-su-dung-markdown-bxjvZYnwkJZ)
 
 Các thuộc tính của postion:
+
 - Relative
 - Fix
 
 Các thuộc tính của postion:
+
 1. Relative
 2. Fix
+
+Ghi nhớ
+
+![](./img-1.png)
