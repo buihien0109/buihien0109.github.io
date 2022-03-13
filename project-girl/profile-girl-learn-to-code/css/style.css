@@ -81,6 +81,7 @@ body {
 
 .intro-content-inner {
     max-width: 700px;
+    padding: 20px;
 }
 
 .intro-content-inner h6 {
@@ -92,8 +93,7 @@ body {
 }
 
 .intro-content-inner h1 {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 36px;
     font-weight: 700;
     margin: 18px 0 10px;
     color: #72b626;
