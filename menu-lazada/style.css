@@ -32,11 +32,12 @@ ul {
 
 .menu {
     background-color: #fff;
+    position: relative;
 }
 
 .menu-item {
     width: 200px;
-    position: relative;
+    /* position: relative; */
 }
 
 .menu-item p {
@@ -74,6 +75,7 @@ ul {
     left: 200px;
     background-color: aquamarine;
     display: none;
+    height: 100%;
 }
 
 .menu-item:hover .sub-menu {
