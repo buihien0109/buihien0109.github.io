@@ -20,3 +20,9 @@ const btn = document.querySelector(".btn")
 btn.addEventListener("click", function() {
     toastr.success('Have fun storming the castle!', 'Miracle Max Says')
 })
+
+link.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    // Code xử lý khi bấm vào link
+})
