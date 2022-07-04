@@ -1,11 +1,3 @@
-/* 
-
-TemplateMo 551 Stand Blog
-
-https://templatemo.com/tm-551-stand-blog
-
-*/
-
 body {
   font-family: 'Roboto', sans-serif;
   overflow-x: hidden;
@@ -405,13 +397,19 @@ header .navbar {
 	margin-bottom: 30px;
 }
 
+.blog-posts .blog-thumb {
+	height: 200px;
+}
+
 .blog-posts .blog-thumb img {
 	width: 100%;
+	height: 100%;
+	object-fit: cover;
 	overflow: hidden;
 }
 
 .blog-posts .down-content {
-	padding: 40px;
+	padding: 16px;
 	border-right: 1px solid #eee;
 	border-left: 1px solid #eee;
 	border-bottom: 1px solid #eee;
@@ -431,7 +429,7 @@ header .navbar {
 	letter-spacing: 0.5px;
 	font-weight: 900;
 	color: #20232e;
-	margin: 10px 0px 12px 0px;
+	margin: 0px 0px 12px 0px;
 }
 
 .blog-posts .down-content ul.post-info li {
@@ -474,10 +472,9 @@ header .navbar {
 }
 
 .blog-posts .down-content p {
-	padding: 25px 0px;
-	margin: 25px 0px;
+	padding: 16px 0px 0px;
+	margin: 16px 0px 0px;
 	border-top: 1px solid #eee;
-	border-bottom: 1px solid #eee;
 }
 
 .blog-posts .down-content ul.post-share {
