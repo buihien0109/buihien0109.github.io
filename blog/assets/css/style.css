@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+    --color-primary: #292929;
+    --color-secondary: #4a4a4a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    color: var(--color-primary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* HEADER STYLE */
+
+header {
+    background-color: #111;
+}
+
+header .menu {
+    background-color: #ffd00e;
+}
+
+header .menu ul li a {
+    letter-spacing: 0.01rem;
+    line-height: 1.75em;
+    font-size: 14px;
+    padding: 0.5em 0.5em;
+    margin-left: 0.4em;
+    margin-right: 0.4em;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+    color: var(--color-secondary);
+    transition: color ease 0.3s;
+}
+
+header ul li:hover a {
+    background: #545454;
+    color: #fff;
+}
+
+/* BLOG STYLE */
+.blog-item {
+    border-top: 1px solid #e6e6e6;
+    padding: 24px 0;
+}
+.blog-item:first-child {
+    border-top: none;
+    padding-top: 0;
+}
+.blog-item .blog-public-date {
+    color: var(--color-secondary);
+    font-size: 14px;
+}
+
+.blog-item .blog-info {
+    flex-basis: calc(100% - 180px);
+}
+
+.blog-item .blog-link {
+    cursor: pointer;
+}
+
+.blog-item .blog-link:hover {
+    color: #292929;
+}
+
+.blog-item .blog-content h2 {
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 700;
+}
+
+.blog-item .blog-content p {
+    line-height: 24px;
+}
+
+.blog-item .blog-tag a {
+    display: inline-block;
+    font-size: 13px;
+    border-radius: 100px;
+    padding: 2px 8px;
+    background-color: rgba(242, 242, 242, 1);
+}
+
+.blog-item .blog-image {
+    width: 120px;
+    height: 120px;
+    margin-right: 42px;
+    flex-basis: 120px;
+}
+
+.blog-item .blog-image img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Recent post style */
+.sidebar {
+    position: sticky;
+    top: 0;
+}
+.recent-blog-item .time,
+.hot-blog-item .time {
+    font-size: 13px;
+    color: var(--color-secondary);
+    margin-bottom: 0;
+}
+
+.recent-blog-item .title,
+.hot-blog-item .title {
+    color: var(--color-primary);
+    font-weight: 600;
+}
