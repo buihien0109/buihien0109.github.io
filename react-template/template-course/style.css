@@ -25,16 +25,6 @@ ul {
 }
 
 
-/* Header style */
-.header {
-    height: 60px;
-    background-color: #30598c;
-}
-
-.logo img {
-    width: 120px;
-}
-
 /* Trang danh sách */
 .course-item-image {
     height: 190px;
@@ -48,17 +38,4 @@ ul {
 
 .course-item-info h2 {
     height: 48px;
-}
-
-/* Trang chi tiết */
-.supporter-image img {
-    width: 120px;
-    height: 120px;
-    object-fit: cover;
-}
-
-footer {
-    background-color: #30598c;
-    font-size: 14px;
-    color: #fff;
 }
