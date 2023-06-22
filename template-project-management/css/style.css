@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #111 !important;
+}
+
+body.active #sidebar {
+    width: 300px;
+    padding: 24px 48px;
+}
+
+body.active #sidebar .element-interacted {
+    display: block;
+    opacity: 1;
+}
+
+body.active #sidebar .list-project .element-interacted {
+    text-align: center;
+}
+
+body.active #sidebar .list-project .col-sm-3 {
+    width: 25%;
+    text-align: left;
+}
+
+body.active #sidebar .list-project .col-sm-9 {
+    width: 75%;
+    text-align: left;
+}
+
+body.active #sidebar .avatar-preview img {
+    width: 100px;
+    height: 100px;
+}
+
+body.active #main-content {
+    margin-left: 300px;
+}
+
+#sidebar {
+    width: 100px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ddd;
+    transition: all 0.3s;
+    padding: 24px 12px;
+}
+
+#sidebar .element-interacted {
+    display: none;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+#sidebar .list-project .col-sm-3 {
+    width: 100%;
+    text-align: center;
+}
+
+#sidebar .list-project .col-sm-9 {
+    width: 100%;
+    text-align: center;
+}
+
+#sidebar .avatar-preview img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+#main-content {
+    margin-left: 100px;
+    transition: all 0.3s;
+}
+
+header .navbar-brand {
+    cursor: pointer;
+}
+
+#navbarNav img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.hr-dash {
+    border-bottom: 2px dashed #ddd;
+}
+
+.project-item {
+    transition: all 0.3s;
+}
+
+.project-item:hover {
+    background-color: #eee;
+}
+
+#input-change-avatar {
+    cursor: pointer;
+}
+
+#input-change-avatar img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
