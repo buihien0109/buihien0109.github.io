@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="bg-slate-800">
+        <div class="max-w-6xl mx-auto py-3">
+            <div class="flex items-center">
+                <div class="w-40">
+                    <img src="./image/logo.webp" alt="" class="w-full">
+                </div>
+                <div class="ms-7 flex items-center justify-between flex-grow-1 text-white font-semibold grow">
+                    <ul class="flex items-center">
+                        <li class="me-4 hover:text-gray-300"><a href="#">Lịch chiếu</a></li>
+                        <li class="me-4 hover:text-gray-300"><a href="#">Phim chiếu</a></li>
+                        <li class="me-4 hover:text-gray-300"><a href="#">Review phim</a></li>
+                        <li class="me-4 hover:text-gray-300"><a href="#">Blog phim</a></li>
+                    </ul>
+                    <a href="#" class="hover:text-gray-300">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="max-w-6xl mx-auto my-5">
+        <ol class="flex flex-nowrap items-center">
+            <li class="relative shrink-0 px-3 text-sm pl-0 text-gray-800 hover:text-pink-700">
+                <a class="whitespace-nowrap">
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li class="text-sm text-gray-500">></li>
+            <li class="relative shrink-0 px-3 text-sm text-gray-800 hover:text-pink-700">
+                <a class="flex items-center whitespace-nowrap md:space-x-2" href="/cinema">
+                    <span>Cinema</span>
+                </a>
+            </li>
+            <li class="text-sm text-gray-500">></li>
+            <li class="relative shrink-0 px-3 text-sm text-gray-800 hover:text-pink-700">
+                <a class="flex items-center whitespace-nowrap md:space-x-2" href="/cinema">
+                    <span>Phim chiếu</span>
+                </a>
+            </li>
+            <li class="text-sm text-gray-500">></li>
+            <li class="relative shrink-0 px-3 text-sm text-gray-800 hover:text-pink-700">
+                <span class="flex items-center whitespace-nowrap text-gray-500">
+                    <span>Mật Vụ Ong</span>
+                </span>
+            </li>
+        </ol>
+    </div>
+    <div class="relative z-10 flex items-center justify-center bg-black py-10 text-white text-opacity-95">
+        <div class="absolute top-0 z-0 h-full w-full overflow-hidden bg-cover bg-center bg-no-repeat after:content-[''] after:z-2 after:absolute after:w-full after:h-full after:top-0 after:left-0 opacity-15"
+            style="background-image: url(&quot;https://cinema.momocdn.net/img/29774942585394620-tL8fzn7JaBzRJKsE1W6GrVxmMQj.jpg&quot;);">
+            &quot;</div>
+        <div class="mx-auto w-full max-w-6xl">
+            <div class="flex flex-wrap items-center md:flex-nowrap md:space-x-10 lg:items-start">
+                <div class="relative mb-4 w-full md:mb-0 md:w-auto">
+                    <div class="w-28 md:mx-auto md:w-64">
+                        <div class="after:z-1 flex overflow-hidden border border-white/20 md:relative ">
+                            <span
+                                style="box-sizing: border-box; display: inline-block; overflow: hidden; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; position: relative; max-width: 100%;">
+                                <span
+                                    style="box-sizing: border-box; display: block; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px; max-width: 100%;">
+                                    <img alt="" aria-hidden="true"
+                                        src="data:image/svg+xml,%3csvg%20xmlns=%27http://www.w3.org/2000/svg%27%20version=%271.1%27%20width=%27300%27%20height=%27450%27/%3e"
+                                        style="display: block; max-width: 100%; width: initial; height: initial; background: none; opacity: 1; border: 0px; margin: 0px; padding: 0px;"></span><img
+                                    alt="Mật Vụ Ong"
+                                    src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg"
+                                    decoding="async" data-nimg="intrinsic" class=""
+                                    style="position: absolute; inset: 0px; box-sizing: border-box; padding: 0px; border: none; margin: auto; display: block; width: 0px; height: 0px; min-width: 100%; max-width: 100%; min-height: 100%; max-height: 100%;">
+                            </span>
+                            <div
+                                class="z-12 absolute top-1/2 left-1/2 h-14 w-14 -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-transform hover:scale-110 md:h-16 md:w-16">
+                                <span
+                                    class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white">
+                                    <i class="fa-regular fa-circle-play"></i>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative z-10 w-full md:w-auto">
+                    <div class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-red-600"
+                        style="min-width: 20px;">18+</div>
+                    <h1 class=" mt-2 text-2xl font-bold text-white md:text-4xl">Mật Vụ Ong</h1>
+                    <ul class=" mt-1 flex flex-wrap items-center text-sm text-white text-opacity-60 md:text-base">
+                        <li>The Beekeeper</li>
+                        <li class="mx-2 text-base font-normal">·</li>
+                        <li>2024</li>
+                        <li class="mx-2 text-base font-normal">·</li>
+                        <li>105 phút</li>
+                    </ul>
+                    <div
+                        class=" flex flex-nowrap items-center space-x-2 overflow-x-auto overflow-y-hidden pb-2 pt-2 text-sm sm:pt-3 md:space-x-3 md:text-base">
+                        <div class="cine__score mr-2 flex shrink-0 flex-nowrap items-center space-x-0.5 pb-1">
+                            <span class="text-yellow-400 text-2xl"><i class="fa-solid fa-star"></i></span>
+                            <div class="flex items-center space-x-1 text-xl">
+                                <div class="text-2xl font-bold">9.9</div>
+                                <div class="text-[10px] text-gray-400" style="line-height: 10px;">
+                                    <span class=" block">28</span><span class=" block">đánh giá</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="font-bold text-white text-opacity-90 sm:text-base">Nội dung</h3>
+                    <div class="mt-1 text-sm leading-relaxed text-white text-opacity-70">Jason
+                        Statham vào vai Adam Clay, một người nuôi ong cần mẫn và đơn độc. Anh có mối quan hệ tốt với bà
+                        chủ nhà, thậm chí coi bà như người thân duy nhất
+                        <span class="read-or-hide cursor-pointer pl-1 hover:underline text-yellow-300">...Xem
+                            thêm</span>
+                    </div>
+                    <div class="mt-3 text-sm text-gray-700 ">
+                        <div class="mb-2 flex flex-nowrap space-x-4 md:space-x-5">
+                            <div>
+                                <div class="whitespace-nowrap text-white text-opacity-50">Ngày chiếu</div>
+                                <div class=" mt-1 font-bold text-white text-opacity-90">12/01/2024</div>
+                            </div>
+                            <div>
+                                <div class="whitespace-nowrap text-white text-opacity-50">Thể loại</div>
+                                <div class=" mt-1 font-bold text-white text-opacity-90">Gay cấn, Hành động, Giật gân
+                                </div>
+                            </div>
+                            <div>
+                                <div class="whitespace-nowrap text-white text-opacity-50">Quốc gia</div>
+                                <div class="mt-1 font-bold text-white text-opacity-90">Mỹ</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-3 flex items-center space-x-4">
+                        <div
+                            class="tracking-click-play-trailer tracking-focus flex cursor-pointer items-center space-x-1.5 py-2 text-sm hover:underline">
+                            <div class="h-6 w-6 rounded-full border-2 border-pink-600 text-white/80">
+                                <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+                                    <g fill="none" fill-rule="evenodd">
+                                        <path
+                                            d="M34.667 24.335c0 .515-.529.885-.529.885l-14.84 9.133c-1.08.704-1.965.182-1.965-1.153V15.467c0-1.338.884-1.856 1.968-1.153L34.14 23.45c-.002 0 .527.37.527.885Z"
+                                            fill="currentColor" fill-rule="nonzero"></path>
+                                    </g>
+                                </svg>
+                            </div>
+                            <span>Xem trailer</span>
+                        </div>
+                        <a target="_blank"
+                            class="tracking-click-view-review tracking-focus flex items-center space-x-1.5 py-2 text-sm hover:underline"
+                            href="/cinema/the-beekeeper-23731/review">
+                            <div
+                                class="flex h-6 w-6 items-center justify-center rounded-full border-2 border-yellow-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"
+                                    aria-hidden="true" class="text-white/85 h-4 w-4 ">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span>Xem review</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mx-auto w-full max-w-6xl px-5 md:px-8 lg:px-8">
+        <div class="-mt-16 grid grid-cols-1 pt-16 lg:grid-cols-3 lg:gap-12">
+            <div class="lg:col-span-2 lg:col-start-1">
+
+                <section class="border-t border-gray-200 pb-8 pt-4 md:py-8">
+                    <h3 class="mb-3 text-xl font-bold">Bình luận từ người xem</h3>
+                    <div class="relative mb-1 flex items-center font-semibold">
+                        <span class="text-yellow-500 text-3xl"><i class="fa-solid fa-star"></i></span>
+                        <div class="pl-2 pr-0.5 text-3xl text-gray-600 sm:text-4xl">9.9</div>
+                        <div class="mr-1 self-end pb-1 text-sm font-normal text-gray-600">/10</div>
+                        <div class="self-end pb-1 text-sm font-normal text-gray-600">· 28 đánh giá</div>
+                    </div>
+                    <div class="grid grid-cols-1 divide-y divide-gray-200">
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+                        <div class="relative w-full py-5">
+                            <div class="relative flex items-center">
+                                <img src="https://avatar.momocdn.net/avatar/b519/2c4dac35ad6d4be5f06c9ecaac1326c149ae34eabcd9bc9d97fdef481fa3.png"
+                                    alt="Nguyễn Phạm Huy Hoàng" width="44" height="44" loading="lazy"
+                                    class="z-2 overflow-hidden rounded-full object-cover h-9 w-9">
+                                <div class="ml-2 sm:ml-3">
+                                    <div class="text-[15px] text-gray-800">Nguyễn Phạm Huy Hoàng</div>
+                                    <div class="mt-0.5 flex items-center">
+                                        <div class="text-xs text-gray-500">5 giờ trước</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative mt-3">
+                                <div class="flex items-center mb-0.5 text-[15px] font-semibold text-gray-900">
+                                    <span class="text-yellow-500"><i class="fa-solid fa-star"></i></span>
+                                    <span class="pl-0.5">10/10</span><span> · Cực phẩm!</span>
+                                </div>
+                                <p class="whitespace-pre-wrap break-words text-[15px] leading-relaxed text-gray-900">Ko
+                                    mua vé xem cũng đánh giá 5 sao trước luôn rồi xem sau.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="mb-3 mt-1 text-center">
+                        <button type="button"
+                            class="rounded-full border border-pink-500 bg-white/10 py-1 pl-4 pr-6 font-semibold text-pink-500 transition-all hover:text-pink-600">
+                            <span><i class="fa-solid fa-arrow-down"></i></span>
+                            Xem tiếp nhé!
+                        </button>
+                    </div>
+                </section>
+
+                <section id="phimStaff" class="border-t border-gray-200 py-8">
+                    <h3 class="text-xl font-bold">Diễn viên & Đoàn làm phim</h3>
+                    <div class="mt-4">
+                        <div class="relative">
+                            <div class="flex w-full overflow-auto flex-nowrap">
+                                <div class="actor-col mx-3">
+                                    <div class="text-center">
+                                        <div class="mx-auto h-20 w-20">
+                                            <div class="w-full h-full overflow-hidden rounded-full bg-gray-200">
+                                                <img src="https://cinema.momocdn.net/img/29774939466365599-whNwkEQYWLFJA8ij0WyOOAD5xhQ.jpg"
+                                                    alt="Jason Statham" class="w-full h-full object-cover"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="mt-1 mb-1 text-sm leading-tight ">Jason Statham</div>
+                                        <div class="text-xs text-gray-500">Mr. Clay</div>
+                                    </div>
+                                </div>
+                                <div class="actor-col mx-3">
+                                    <div class="text-center">
+                                        <div class="mx-auto h-20 w-20">
+                                            <div class="w-full h-full overflow-hidden rounded-full bg-gray-200">
+                                                <img src="https://cinema.momocdn.net/img/29774939466365599-whNwkEQYWLFJA8ij0WyOOAD5xhQ.jpg"
+                                                    alt="Jason Statham" class="w-full h-full object-cover"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="mt-1 mb-1 text-sm leading-tight ">Jason Statham</div>
+                                        <div class="text-xs text-gray-500">Mr. Clay</div>
+                                    </div>
+                                </div>
+                                <div class="actor-col mx-3">
+                                    <div class="text-center">
+                                        <div class="mx-auto h-20 w-20">
+                                            <div class="w-full h-full overflow-hidden rounded-full bg-gray-200">
+                                                <img src="https://cinema.momocdn.net/img/29774939466365599-whNwkEQYWLFJA8ij0WyOOAD5xhQ.jpg"
+                                                    alt="Jason Statham" class="w-full h-full object-cover"
+                                                    loading="lazy">
+                                            </div>
+                                        </div>
+                                        <div class="mt-1 mb-1 text-sm leading-tight ">Jason Statham</div>
+                                        <div class="text-xs text-gray-500">Mr. Clay</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="phimBlog" class="border-t border-gray-200 py-8">
+                    <h3 class="mb-4 text-xl font-bold">Blog phim</h3>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 sm:gap-6 lg:grid-cols-3">
+                        <div class="group h-full cursor-pointer ">
+                            <a href="/cinema/blog/danh-sach-phim-hay-netflix-thang-12-421">
+                                <div class="flex flex-wrap border-b border-gray-200 pb-3 sm:border-none sm:pb-2 ">
+                                    <div class="order-2 w-28 pt-3 sm:order-1 sm:w-full sm:flex-auto sm:pt-0">
+                                        <div class="relative flex overflow-hidden rounded bg-gray-100 ">
+                                            <img alt="Danh sách phim hay Netflix tháng 12/2023"
+                                                src="https://homepage.momocdn.net/blogscontents/s770x370/momo-upload-api-231127144102-638366928622778818.jpg" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="order-1 flex-1 pr-6 sm:order-2 sm:w-full sm:flex-auto sm:pr-0">
+                                        <div class="pb-2 pt-3 font-semibold leading-snug group-hover:text-pink-600">
+                                            Danh sách phim hay Netflix tháng 12/2023
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group h-full cursor-pointer ">
+                            <a href="/cinema/blog/danh-sach-phim-hay-netflix-thang-12-421">
+                                <div class="flex flex-wrap border-b border-gray-200 pb-3 sm:border-none sm:pb-2 ">
+                                    <div class="order-2 w-28 pt-3 sm:order-1 sm:w-full sm:flex-auto sm:pt-0">
+                                        <div class="relative flex overflow-hidden rounded bg-gray-100 ">
+                                            <img alt="Danh sách phim hay Netflix tháng 12/2023"
+                                                src="https://homepage.momocdn.net/blogscontents/s770x370/momo-upload-api-231127144102-638366928622778818.jpg" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="order-1 flex-1 pr-6 sm:order-2 sm:w-full sm:flex-auto sm:pr-0">
+                                        <div class="pb-2 pt-3 font-semibold leading-snug group-hover:text-pink-600">
+                                            Danh sách phim hay Netflix tháng 12/2023
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group h-full cursor-pointer ">
+                            <a href="/cinema/blog/danh-sach-phim-hay-netflix-thang-12-421">
+                                <div class="flex flex-wrap border-b border-gray-200 pb-3 sm:border-none sm:pb-2 ">
+                                    <div class="order-2 w-28 pt-3 sm:order-1 sm:w-full sm:flex-auto sm:pt-0">
+                                        <div class="relative flex overflow-hidden rounded bg-gray-100 ">
+                                            <img alt="Danh sách phim hay Netflix tháng 12/2023"
+                                                src="https://homepage.momocdn.net/blogscontents/s770x370/momo-upload-api-231127144102-638366928622778818.jpg" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="order-1 flex-1 pr-6 sm:order-2 sm:w-full sm:flex-auto sm:pr-0">
+                                        <div class="pb-2 pt-3 font-semibold leading-snug group-hover:text-pink-600">
+                                            Danh sách phim hay Netflix tháng 12/2023
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group h-full cursor-pointer ">
+                            <a href="/cinema/blog/danh-sach-phim-hay-netflix-thang-12-421">
+                                <div class="flex flex-wrap border-b border-gray-200 pb-3 sm:border-none sm:pb-2 ">
+                                    <div class="order-2 w-28 pt-3 sm:order-1 sm:w-full sm:flex-auto sm:pt-0">
+                                        <div class="relative flex overflow-hidden rounded bg-gray-100 ">
+                                            <img alt="Danh sách phim hay Netflix tháng 12/2023"
+                                                src="https://homepage.momocdn.net/blogscontents/s770x370/momo-upload-api-231127144102-638366928622778818.jpg" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="order-1 flex-1 pr-6 sm:order-2 sm:w-full sm:flex-auto sm:pr-0">
+                                        <div class="pb-2 pt-3 font-semibold leading-snug group-hover:text-pink-600">
+                                            Danh sách phim hay Netflix tháng 12/2023
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group h-full cursor-pointer ">
+                            <a href="/cinema/blog/danh-sach-phim-hay-netflix-thang-12-421">
+                                <div class="flex flex-wrap border-b border-gray-200 pb-3 sm:border-none sm:pb-2 ">
+                                    <div class="order-2 w-28 pt-3 sm:order-1 sm:w-full sm:flex-auto sm:pt-0">
+                                        <div class="relative flex overflow-hidden rounded bg-gray-100 ">
+                                            <img alt="Danh sách phim hay Netflix tháng 12/2023"
+                                                src="https://homepage.momocdn.net/blogscontents/s770x370/momo-upload-api-231127144102-638366928622778818.jpg" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="order-1 flex-1 pr-6 sm:order-2 sm:w-full sm:flex-auto sm:pr-0">
+                                        <div class="pb-2 pt-3 font-semibold leading-snug group-hover:text-pink-600">
+                                            Danh sách phim hay Netflix tháng 12/2023
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="group h-full cursor-pointer ">
+                            <a href="/cinema/blog/danh-sach-phim-hay-netflix-thang-12-421">
+                                <div class="flex flex-wrap border-b border-gray-200 pb-3 sm:border-none sm:pb-2 ">
+                                    <div class="order-2 w-28 pt-3 sm:order-1 sm:w-full sm:flex-auto sm:pt-0">
+                                        <div class="relative flex overflow-hidden rounded bg-gray-100 ">
+                                            <img alt="Danh sách phim hay Netflix tháng 12/2023"
+                                                src="https://homepage.momocdn.net/blogscontents/s770x370/momo-upload-api-231127144102-638366928622778818.jpg" class="w-full h-full object-cover">
+                                        </div>
+                                    </div>
+                                    <div class="order-1 flex-1 pr-6 sm:order-2 sm:w-full sm:flex-auto sm:pr-0">
+                                        <div class="pb-2 pt-3 font-semibold leading-snug group-hover:text-pink-600">
+                                            Danh sách phim hay Netflix tháng 12/2023
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="pt-6 text-center">
+                        <button type="button"
+                            class="rounded-full border border-pink-500 bg-white/10 py-1 pl-4 pr-6 font-semibold text-pink-500 transition-all hover:text-pink-600">
+                            <span><i class="fa-solid fa-arrow-down"></i></span>
+                            Xem tiếp nhé!
+                        </button>
+                    </div>
+                </section>
+            </div>
+            <div class="lg:grid-start-3">
+                <div class="mb-6 mt-7" style="position: sticky; top: 20px;">
+                    <h3 class="mb-2 flex-1 text-xl font-bold">Phim đang chiếu</h3>
+                    <div class="relative divide-y divide-gray-200">
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="py-3">
+                            <div class="flex flex-nowrap">
+                                <div class="w-16 h-24 flex-none overflow-hidden rounded">
+                                    <a class="group block h-full" href="/cinema/alienoid-2-23726">
+                                        <div class="background-gray-100 wrap-next-img relative z-10 h-full">
+                                            <img alt="Alienoid 2"
+                                                src="https://cinema.momocdn.net/img/29183087232355004-Untitled-1.jpg"
+                                                class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105">
+                                            <div
+                                                class=" absolute bottom-1 left-1 z-10 text-xl font-bold text-white text-opacity-95 md:text-2xl">
+                                                1</div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="flex-1 pl-4">
+                                    <div class="mb-1 flex origin-left scale-90 flex-row flex-nowrap space-x-2">
+                                        <div
+                                            class="inline-flex h-5 items-center justify-center rounded-sm bg-opacity-80 px-1 text-xs font-semibold text-white text-opacity-95 bg-orange-500">
+                                            16+</div>
+                                    </div>
+                                    <a class="line-clamp-2 text-sm font-semibold leading-tight text-gray-800 hover:text-pink-500"
+                                        href="/cinema/alienoid-2-23726">Alienoid 2: Đa Chiều Hỗn Chiến</a>
+                                    <div class="mt-1 text-xs leading-tight text-gray-500">Khoa Học Viễn Tưởng, Phiêu Lưu
+                                    </div>
+                                    <div class="mt-1 flex items-center text-xs text-gray-600">
+                                        <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                                        <span> 8.7</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>

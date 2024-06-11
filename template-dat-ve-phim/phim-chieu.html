@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header class="bg-slate-800">
+        <div class="max-w-6xl mx-auto py-3">
+            <div class="flex items-center">
+                <div class="w-40">
+                    <img src="./image/logo.webp" alt="" class="w-full">
+                </div>
+                <div class="ms-7 flex items-center justify-between flex-grow-1 text-white font-semibold grow">
+                    <ul class="flex items-center">
+                        <li class="me-4 hover:text-gray-300"><a href="#">Lịch chiếu</a></li>
+                        <li class="me-4 hover:text-gray-300"><a href="#">Phim chiếu</a></li>
+                        <li class="me-4 hover:text-gray-300"><a href="#">Review phim</a></li>
+                        <li class="me-4 hover:text-gray-300"><a href="#">Blog phim</a></li>
+                    </ul>
+                    <a href="#" class="hover:text-gray-300">Đăng nhập</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="max-w-6xl mx-auto my-5">
+        <ol class="flex flex-nowrap items-center">
+            <li class="relative shrink-0 px-3 text-sm pl-0 text-gray-800 hover:text-pink-700">
+                <a class="whitespace-nowrap">
+                    <span>Trang chủ</span>
+                </a>
+            </li>
+            <li class="text-sm text-gray-500">></li>
+            <li class="relative shrink-0 px-3 text-sm text-gray-800 hover:text-pink-700">
+                <a class="flex items-center whitespace-nowrap md:space-x-2" href="/cinema">
+                    <span>Cinema</span>
+                </a>
+            </li>
+            <li class="text-sm text-gray-500">></li>
+            <li class="relative shrink-0 px-3 text-sm text-gray-800 hover:text-pink-700">
+                <span class="flex items-center whitespace-nowrap text-gray-500">
+                    <span>Phim chiếu</span>
+                </span>
+            </li>
+        </ol>
+    </div>
+    <div class="bg-[url('./image/bg-showing-now.jpeg')] bg-cover bg-no-repeat bg-center">
+        <div class="max-w-6xl mx-auto py-7">
+            <h2 class="text-3xl text-center text-white mb-7">Phim đang chiếu</h2>
+            <div class="grid grid-cols-5 gap-x-3 gap-y-5 my-5">
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-white leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-white">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-white leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-white">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-white leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-white">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-white leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-white">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-white leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-white">9.5</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="max-w-6xl mx-auto py-7">
+        <h2 class="text-3xl text-center text-gray-800 mb-7">Phim sắp chiếu</h2>
+        <div class="grid grid-cols-5 gap-x-3 gap-y-5 my-5">
+            <a href="#">
+                <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                    <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                        class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                    <span
+                        class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                </div>
+                <div class="group">
+                    <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                        Mật Vụ Ong</p>
+                    <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                    <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                        class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                    <span
+                        class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                </div>
+                <div class="group">
+                    <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                        Mật Vụ Ong</p>
+                    <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                    <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                        class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                    <span
+                        class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                </div>
+                <div class="group">
+                    <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                        Mật Vụ Ong</p>
+                    <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                    <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                        class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                    <span
+                        class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                </div>
+                <div class="group">
+                    <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                        Mật Vụ Ong</p>
+                    <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                </div>
+            </a>
+            <a href="#">
+                <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                    <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                        class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                    <span
+                        class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                        <i class="fa-regular fa-circle-play"></i>
+                    </span>
+                </div>
+                <div class="group">
+                    <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                        Mật Vụ Ong</p>
+                    <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="bg-gray-50">
+        <div class="max-w-6xl mx-auto py-7">
+            <h2 class="text-3xl text-gray-800 mb-7">Tìm phim chiếu rạp</h2>
+            <div class="grid grid-cols-5 gap-x-3 gap-y-5 my-5">
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="group rounded overflow-hidden relative w-full h-72 cursor-pointer">
+                        <img src="https://cinema.momocdn.net/img/29774942072600973-t49Kka8IDIxuweOLdPDDtYreavW.jpg" alt=""
+                            class="w-full h-full object-cover transition-all duration-300 group-hover:scale-110">
+                        <span
+                            class="inline-block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl text-white transition-all duration-300 group-hover:scale-125">
+                            <i class="fa-regular fa-circle-play"></i>
+                        </span>
+                    </div>
+                    <div class="group">
+                        <p class="text-sm text-gray-800 leading-tight font-semibold mt-2 transition-all duration-300 group-hover:text-pink-700">
+                            Mật Vụ Ong</p>
+                        <p class="text-sm text-gray-400 leading-tight my-1 transition-all duration-300 group-hover:text-pink-700">Gay cấn, Hành động</p>
+                        <p class="text-sm leading-tight flex items-center">
+                            <span class="text-yellow-500 me-1"><i class="fa-solid fa-star"></i></span>
+                            <span class="text-gray-800">9.5</span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</body>
+
+</html>
